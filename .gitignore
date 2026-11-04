@@ -62,3 +62,7 @@ __pycache__/
 venv/
 env/
 .DS_Store
+
+# -- experiments: generated submissions, reports, caches ------------------------------------------
+experiments/*/out/
+experiments/_cache/
