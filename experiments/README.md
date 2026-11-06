@@ -5,6 +5,7 @@ numbered `[n]` sections: markdown intro, code, markdown reading of the result).
 
     00_eda.ipynb                 data understanding (no tuning on the public GT)
     001_baseline/001_baseline.ipynb
+    002_possession_dp/run.py     possession DP with gated dead-ball evidence (public window: sanity only)
     <NNN_name>/<NNN_name>.ipynb  one folder per idea; writes only to its own out/ (gitignored)
 
 - `common.py`: `cached()` (parsed-tracking cache in `_cache/`), `save()`, `score()`.
