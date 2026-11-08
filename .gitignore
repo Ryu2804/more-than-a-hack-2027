@@ -66,3 +66,17 @@ env/
 # -- experiments: generated submissions, reports, caches ------------------------------------------
 experiments/*/out/
 experiments/_cache/
+
+# -- loop runtime artifacts (keep loop.py, tasks.py, run_loop.sh, run_one.py) -----------
+experiments/012_spellf1/loop/cache/
+experiments/012_spellf1/loop/runs/
+experiments/012_spellf1/loop/__pycache__/
+experiments/012_spellf1/loop/*.log
+experiments/012_spellf1/loop/*.pid
+experiments/012_spellf1/loop/*.lock
+experiments/012_spellf1/loop/HEARTBEAT
+experiments/012_spellf1/loop/STATE.json
+experiments/012_spellf1/loop/INDEX.tsv
+experiments/012_spellf1/loop/SUMMARY.md
+experiments/012_spellf1/loop/MORNING_REPORT.md
+experiments/012_spellf1/loop/SUPERVISOR_LOG.md
