@@ -1,0 +1,310 @@
+{
+  "bootstrap": "paired match bootstrap, 1000 draws, seed 20261108, 95% percentile interval",
+  "table": [
+    {
+      "variant": "setseq_const",
+      "description": "exp_1 SetSeq + constant-penalty Viterbi (gamma=0)",
+      "mean_spell_f1": 0.6555836221990121,
+      "min_spell_f1": 0.6161832061068703,
+      "mean_macro_f1": 0.917824432316963,
+      "mean_abs_count_error": 0.21193173900632795,
+      "max_abs_count_error": 0.34246575342465757,
+      "delta_vs_baseline": 0.4694538244789989,
+      "ci95_low": 0.4497986438677648,
+      "ci95_high": 0.48710150197975416
+    },
+    {
+      "variant": "setseq_bd",
+      "description": "exp_1 SetSeq + boundary-aware Viterbi (main)",
+      "mean_spell_f1": 0.6555836221990121,
+      "min_spell_f1": 0.6161832061068703,
+      "mean_macro_f1": 0.917824432316963,
+      "mean_abs_count_error": 0.21193173900632795,
+      "max_abs_count_error": 0.34246575342465757,
+      "delta_vs_baseline": 0.4694538244789989,
+      "ci95_low": 0.4497986438677648,
+      "ci95_high": 0.48710150197975416
+    },
+    {
+      "variant": "setseq_bd_forced",
+      "description": "post-hoc diagnostic: SetSeq + boundary-aware Viterbi with gamma>0 forced",
+      "mean_spell_f1": 0.6486379012180221,
+      "min_spell_f1": 0.6155316606929511,
+      "mean_macro_f1": 0.9176704203138073,
+      "mean_abs_count_error": 0.23701054916707776,
+      "max_abs_count_error": 0.3620352250489237,
+      "delta_vs_baseline": 0.4625081034980089,
+      "ci95_low": 0.44617169243753774,
+      "ci95_high": 0.47733671442463493
+    },
+    {
+      "variant": "setseq_argmax",
+      "description": "exp_1 SetSeq, no decoder (argmax)",
+      "mean_spell_f1": 0.6239935547146738,
+      "min_spell_f1": 0.5574468085106383,
+      "mean_macro_f1": 0.9176367233985483,
+      "mean_abs_count_error": 0.08890083392250145,
+      "max_abs_count_error": 0.1819960861056752,
+      "delta_vs_baseline": 0.4378637569946605,
+      "ci95_low": 0.41050113218492384,
+      "ci95_high": 0.4601171555041327
+    },
+    {
+      "variant": "setseq_noaug_bd",
+      "description": "exp_1 SetSeq without corruption/mirror augmentation + BD decoder",
+      "mean_spell_f1": 0.6004717647910239,
+      "min_spell_f1": 0.5078260869565218,
+      "mean_macro_f1": 0.8950923891755188,
+      "mean_abs_count_error": 0.23000514031696379,
+      "max_abs_count_error": 0.3522504892367906,
+      "delta_vs_baseline": 0.41434196707101073,
+      "ci95_low": 0.37835364866711557,
+      "ci95_high": 0.4440937707105362
+    },
+    {
+      "variant": "ryu_final",
+      "description": "ryu final: shipped TCN (Metrica+SkillCorner) + rate-calibrated 2-state Viterbi, zero-shot",
+      "mean_spell_f1": 0.48737313223786644,
+      "min_spell_f1": 0.4042609853528628,
+      "mean_macro_f1": 0.8786956578658643,
+      "mean_abs_count_error": 0.4569754390803838,
+      "max_abs_count_error": 0.528375733855186,
+      "delta_vs_baseline": 0.30124333451785323,
+      "ci95_low": 0.27144201504801857,
+      "ci95_high": 0.32685355468994476
+    },
+    {
+      "variant": "gbm_const",
+      "description": "exp_0: hand features + LightGBM + constant-penalty Viterbi",
+      "mean_spell_f1": 0.45765827549444626,
+      "min_spell_f1": 0.4019728729963009,
+      "mean_macro_f1": 0.8677814392774822,
+      "mean_abs_count_error": 0.34170011650024634,
+      "max_abs_count_error": 0.43248532289628183,
+      "delta_vs_baseline": 0.27152847777443306,
+      "ci95_low": 0.24924617044146707,
+      "ci95_high": 0.2911570166350488
+    },
+    {
+      "variant": "rasya_c08",
+      "description": "rasya 012 C08: touch-hold + long-slow dead cue + merge150",
+      "mean_spell_f1": 0.3249378217032487,
+      "min_spell_f1": 0.3075324675324675,
+      "mean_macro_f1": 0.5914670094661499,
+      "mean_abs_count_error": 0.41070839072150217,
+      "max_abs_count_error": 0.4892367906066536,
+      "delta_vs_baseline": 0.13880802398323544,
+      "ci95_low": 0.1254906498524614,
+      "ci95_high": 0.15164846571821228
+    },
+    {
+      "variant": "rasya_c06",
+      "description": "rasya 012 C06: touch-hold + out_or_slow2 dead cue + merge150",
+      "mean_spell_f1": 0.3222624740242721,
+      "min_spell_f1": 0.3012594458438287,
+      "mean_macro_f1": 0.634182197329033,
+      "mean_abs_count_error": 0.3571009703362554,
+      "max_abs_count_error": 0.4637964774951076,
+      "delta_vs_baseline": 0.13613267630425882,
+      "ci95_low": 0.12809173868405177,
+      "ci95_high": 0.14629060404121064
+    },
+    {
+      "variant": "baseline",
+      "description": "starter rule: nearest player + +-50 majority (organisers)",
+      "mean_spell_f1": 0.18612979772001323,
+      "min_spell_f1": 0.167094017094017,
+      "mean_macro_f1": 0.4578634010165881,
+      "mean_abs_count_error": 0.17904581339603196,
+      "max_abs_count_error": 0.3541147132169575,
+      "delta_vs_baseline": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0
+    }
+  ],
+  "pairwise_main_vs": [
+    {
+      "a": "setseq_bd",
+      "b": "baseline",
+      "mean_delta": 0.4694538244789989,
+      "ci95": [
+        0.4497986438677648,
+        0.48710150197975416
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "a": "setseq_bd",
+      "b": "ryu_final",
+      "mean_delta": 0.16821048996114568,
+      "ci95": [
+        0.1320836790690651,
+        0.20188791609007606
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "a": "setseq_bd",
+      "b": "rasya_c06",
+      "mean_delta": 0.33332114817474007,
+      "ci95": [
+        0.314986301098036,
+        0.3493622440514427
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "a": "setseq_bd",
+      "b": "rasya_c08",
+      "mean_delta": 0.3306458004957635,
+      "ci95": [
+        0.30899042672227855,
+        0.3513562668003685
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "a": "setseq_bd",
+      "b": "gbm_const",
+      "mean_delta": 0.19792534670456582,
+      "ci95": [
+        0.1690158434335314,
+        0.22481158194322395
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "a": "setseq_bd",
+      "b": "setseq_argmax",
+      "mean_delta": 0.03159006748433838,
+      "ci95": [
+        0.022231367049096507,
+        0.04263753927368148
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "a": "setseq_bd",
+      "b": "setseq_const",
+      "mean_delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "decision": "inconclusive"
+    },
+    {
+      "a": "setseq_bd",
+      "b": "setseq_noaug_bd",
+      "mean_delta": 0.05511185740798822,
+      "ci95": [
+        0.04024843573538184,
+        0.07344217857791396
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "a": "setseq_bd",
+      "b": "setseq_bd_forced",
+      "mean_delta": 0.006945720980990016,
+      "ci95": [
+        0.0025787511403377946,
+        0.011124803489531794
+      ],
+      "wins": 6,
+      "decision": "supported"
+    }
+  ],
+  "ablations": [
+    {
+      "ablation": "boundary_aware_decoding",
+      "a": "setseq_bd",
+      "b": "setseq_const",
+      "mean_delta": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "decision": "inconclusive"
+    },
+    {
+      "ablation": "temporal_decoder",
+      "a": "setseq_const",
+      "b": "setseq_argmax",
+      "mean_delta": 0.03159006748433838,
+      "ci95": [
+        0.022231367049096507,
+        0.04263753927368148
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "ablation": "augmentation",
+      "a": "setseq_bd",
+      "b": "setseq_noaug_bd",
+      "mean_delta": 0.05511185740798822,
+      "ci95": [
+        0.04024843573538184,
+        0.07344217857791396
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "ablation": "set_model_vs_gbm_same_decoder",
+      "a": "setseq_const",
+      "b": "gbm_const",
+      "mean_delta": 0.19792534670456582,
+      "ci95": [
+        0.1690158434335314,
+        0.22481158194322395
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    {
+      "ablation": "forced_boundary_decoding_posthoc",
+      "a": "setseq_bd_forced",
+      "b": "setseq_const",
+      "mean_delta": -0.006945720980990016,
+      "ci95": [
+        -0.011124803489531796,
+        -0.002578751140337796
+      ],
+      "wins": 1,
+      "decision": "worse"
+    }
+  ],
+  "gates": {
+    "variant": "setseq_bd",
+    "delta": {
+      "a": "setseq_bd",
+      "b": "baseline",
+      "mean_delta": 0.4694538244789989,
+      "ci95": [
+        0.4497986438677648,
+        0.48710150197975416
+      ],
+      "wins": 7,
+      "decision": "supported"
+    },
+    "macro_delta": 0.45996103130037486,
+    "checks": {
+      "gain_at_least_005": true,
+      "ci_lower_above_zero": true,
+      "macro_regression_at_most_001": true,
+      "all_match_counts_within_30pct": false
+    },
+    "quality_gate_pass": false
+  }
+}

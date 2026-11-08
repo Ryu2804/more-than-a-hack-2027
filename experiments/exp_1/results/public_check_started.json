@@ -1,0 +1,20 @@
+{
+  "predictor_sources": {
+    "exp1_arms.py": "b23dd053f952f9a576ce4d78e7fcd3681b3667e47187f3e1ab67d2f32d3c241e",
+    "exp1_common.py": "0bc79f9e99dfc27b3bb0d4e71a9f90c175f294296bc1f6e318e53dccf94d66b0",
+    "exp1_decode.py": "fe0d117e013449b63406eb5c84be661a848cf35d690859d047ff0c17f67637b4",
+    "exp1_net.py": "6f93fa1d951218b8445ad278ef42d575e60fe27ff3b7a763a48cb590236dd6d6",
+    "exp1_protocol.py": "465fd8bf567fa8d469d7c456253debf7a80334f1ae125d0429f4f47cae68c012",
+    "exp1_report.py": "a784575b6bfc68b94ed4aa1788eee36601e20c90fb5c9c902de62d01e145b2d5",
+    "exp1_ryu.py": "c8a785ef1c4eaff88f08166c2f1739623ad1f8e7d7cc96d101d3fcb7e4083b65",
+    "exp1_target.py": "2d6f509818764d66992bf4459935af1cbd3386b0d17ef1a447e326b8ecf1bdbc",
+    "exp1_tokens.py": "72b3ef20648974aa64a1dba6dd6a29666155ef4f6b4007d2e18cdfd38cc4f075"
+  },
+  "candidate_sha256": "b2d127de205c2f69a51adbb64c90eec830121acc132ec1fb1a0e4d47359d6570",
+  "decoder": {
+    "temperature": 1.3028667333854622,
+    "lambda_team": 0.5,
+    "lambda_dead": 0.5,
+    "gamma": 0.0
+  }
+}

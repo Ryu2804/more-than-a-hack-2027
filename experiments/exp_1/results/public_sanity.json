@@ -1,0 +1,11 @@
+{
+  "purpose": "sanity check, not used for selection",
+  "macro_f1": 0.7250328960762616,
+  "spell_f1_mean": 0.5818181818181818,
+  "spell_bootstrap_low": 0.4,
+  "spell_bootstrap_high": 0.7515151515151515,
+  "n_gt_spells": 17,
+  "n_pred_spells": 16,
+  "alive_dead_f1": 0.9204852793447184,
+  "team_acc_both_alive": 0.9138683680322364
+}

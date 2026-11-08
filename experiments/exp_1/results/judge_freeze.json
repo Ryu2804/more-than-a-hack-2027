@@ -1,0 +1,37 @@
+{
+  "hashes": {
+    "judge/experiment_data.py": "e2b4034baa721ec7f0faf820626e6bb164325b55bf44595607612ab4c2cff7f1",
+    "judge/experiment_model.py": "243dfe93ba4aa051d271bd59f21091c972abdf02baae58ac37423139b5333fbd",
+    "official_metric": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+  },
+  "frozen_proxy": [
+    {
+      "match": "J03WMX",
+      "frozen_copy_matches_degrader": true
+    },
+    {
+      "match": "J03WN1",
+      "frozen_copy_matches_degrader": true
+    },
+    {
+      "match": "J03WOH",
+      "frozen_copy_matches_degrader": true
+    },
+    {
+      "match": "J03WOY",
+      "frozen_copy_matches_degrader": true
+    },
+    {
+      "match": "J03WPY",
+      "frozen_copy_matches_degrader": true
+    },
+    {
+      "match": "J03WQQ",
+      "frozen_copy_matches_degrader": true
+    },
+    {
+      "match": "J03WR9",
+      "frozen_copy_matches_degrader": true
+    }
+  ]
+}

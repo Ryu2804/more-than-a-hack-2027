@@ -1,0 +1,7 @@
+{
+  "prereg_file": "PREREG_followup.md",
+  "prereg_sha256": "1d9211c2c00f6d907f64c80f5b70c0a1459d7324aee86aa784ff630b22e61d52",
+  "frozen_before_evaluation": true,
+  "lambdas": [0.0625, 0.125, 0.25, 0.5, 1.0, 2.0, 4.0, 8.0, 16.0],
+  "arms": {"setseq_const_wide": [0.0], "setseq_cbd_wide": [0.0, 0.5, 1.0, 2.0]}
+}

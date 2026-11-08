@@ -1,0 +1,69 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "setseq_argmax",
+      "spell_f1": 0.6006458557588805,
+      "macro_f1": 0.9201232165252188,
+      "n_true": 511,
+      "n_pred": 418,
+      "count_error_ratio": -0.1819960861056752
+    },
+    {
+      "match": "J03WN1",
+      "variant": "setseq_argmax",
+      "spell_f1": 0.6072033898305085,
+      "macro_f1": 0.9025980373832501,
+      "n_true": 500,
+      "n_pred": 444,
+      "count_error_ratio": -0.11199999999999999
+    },
+    {
+      "match": "J03WOH",
+      "variant": "setseq_argmax",
+      "spell_f1": 0.6563968668407311,
+      "macro_f1": 0.9208283961719631,
+      "n_true": 402,
+      "n_pred": 364,
+      "count_error_ratio": -0.09452736318407962
+    },
+    {
+      "match": "J03WOY",
+      "variant": "setseq_argmax",
+      "spell_f1": 0.6383073496659243,
+      "macro_f1": 0.9202064818153645,
+      "n_true": 456,
+      "n_pred": 442,
+      "count_error_ratio": -0.030701754385964897
+    },
+    {
+      "match": "J03WPY",
+      "variant": "setseq_argmax",
+      "spell_f1": 0.6597590361445784,
+      "macro_f1": 0.9272209969733725,
+      "n_true": 421,
+      "n_pred": 409,
+      "count_error_ratio": -0.028503562945368155
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "setseq_argmax",
+      "spell_f1": 0.6481955762514553,
+      "macro_f1": 0.9214288700128371,
+      "n_true": 401,
+      "n_pred": 458,
+      "count_error_ratio": 0.14214463840398994
+    },
+    {
+      "match": "J03WR9",
+      "variant": "setseq_argmax",
+      "spell_f1": 0.5574468085106383,
+      "macro_f1": 0.9110510649078325,
+      "n_true": 370,
+      "n_pred": 382,
+      "count_error_ratio": 0.03243243243243232
+    }
+  ],
+  "selections": {},
+  "final_config": null
+}

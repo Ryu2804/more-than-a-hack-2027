@@ -1,0 +1,82 @@
+{
+  "matches": [
+    "J03WMX",
+    "J03WN1",
+    "J03WOH",
+    "J03WOY",
+    "J03WPY",
+    "J03WQQ",
+    "J03WR9"
+  ],
+  "evaluation_corruption_seed": "BASE_SEED + index (exp_0 frozen)",
+  "augmentation_rounds": [
+    1,
+    2
+  ],
+  "augmentation_seed": "BASE_SEED + 1000 * round + index (training matches only)",
+  "model_fps": 5,
+  "setseq_train_config": {
+    "window": 300,
+    "batch": 32,
+    "epochs": 14,
+    "coverage": 2.0,
+    "lr": 0.002,
+    "weight_decay": 0.0001,
+    "width": 64,
+    "hidden": 64,
+    "boundary_weight": 0.5,
+    "boundary_pos_weight": 3.0,
+    "mirror": true,
+    "seed": 20261108
+  },
+  "decoder_lambdas": [
+    0.5,
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    16.0
+  ],
+  "decoder_gammas": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "selection_objective": "mean spellF1 - 0.15 * mean excess |count error| above 0.30 (exp_0)",
+  "selection_scope": "inner validation = six non-held-out matches, predicted by pair models trained without h and v",
+  "bootstrap": "1000 paired match draws, seed 20261108, 95% percentile",
+  "quality_gates": {
+    "spell_gain": 0.05,
+    "ci_low": 0.0,
+    "macro_regression": -0.01,
+    "max_abs_count_error": 0.3
+  },
+  "model_variants": {
+    "setseq_bd": [
+      "setseq",
+      "(0.0, 0.5, 1.0, 2.0)"
+    ],
+    "setseq_const": [
+      "setseq",
+      "(0.0,)"
+    ],
+    "setseq_argmax": [
+      "setseq",
+      "None"
+    ],
+    "setseq_noaug_bd": [
+      "setseq_noaug",
+      "(0.0, 0.5, 1.0, 2.0)"
+    ],
+    "gbm_const": [
+      "gbm",
+      "(0.0,)"
+    ]
+  },
+  "rule_arms": [
+    "baseline",
+    "rasya_c06",
+    "rasya_c08"
+  ]
+}
