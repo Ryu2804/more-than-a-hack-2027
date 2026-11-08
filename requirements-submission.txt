@@ -1,0 +1,5 @@
+# Environment used to produce the submission (Python 3.13.13, Linux, NVIDIA RTX 4060 laptop GPU, CUDA build of torch).
+# Training/inference runs on CPU too (slower; see TECHNICAL_DOCUMENT.md, "Reproduction", for the exact-file caveat).
+numpy==2.5.0
+pandas==3.0.3
+torch==2.12.1

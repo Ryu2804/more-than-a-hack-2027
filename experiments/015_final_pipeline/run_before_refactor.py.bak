@@ -1,0 +1,143 @@
+"""One command regenerates the submission from the provided data.
+
+    python experiments/015_final_pipeline/run.py [--out experiments/015_final_pipeline/out/submission.csv]
+
+Inputs: data/tactical/BAR-ATH_tactical_atd.{xml,txt} (Smart Tagging and video are NOT used).
+Model: weights/ holds a 3-seed ensemble of a two-head TCN (dead ball, team) trained ONLY on other matches (Metrica public sample
+games 1-3, https://github.com/metrica-sports/sample-data) by train_model.py (run on a marimo/molab sandbox for the submitted weights).
+`--retrain` retrains locally instead (downloads those public games into experiments/_cache/ext_metrica).
+
+Method (details in experiments/013..014 notebooks, experiments/RESEARCH.md):
+  1. p(dead) > 0.5 for >= 2 s -> D; ball evidence (nearest-player team, only within 1.0 m) + the TCN's ball-free team evidence
+     (kappa 0.02) -> two-state Viterbi; switch cost lambda calibrated so the number of possessions equals the possession rate of the
+     other matches' event-derived labels (mean of the training games, stored in weights/meta.npz);
+  2. X outside the two graded halves, D before the second-half kick-off.
+"""
+import argparse
+import os
+import sys
+from pathlib import Path
+
+import numpy as np
+import torch
+
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
+for p in (ROOT, ROOT / "starter", ROOT / "evaluation", ROOT / "experiments", HERE):
+    sys.path.insert(0, str(p))
+
+import common  # noqa: E402
+import features as ft  # noqa: E402
+import possession_metrics as pm  # noqa: E402
+import train_model as tm  # noqa: E402
+from baseline import write_submission  # noqa: E402
+from games import GAME, GAMES, anchor_video_frame, half_video_blocks, source_frames  # noqa: E402
+
+FPS, STRIDE = 25, 5
+GATE_R, DEAD_THR, MIN_DEAD_S, KAPPA = 1.0, 0.5, 2.0, 0.02       # priors fixed in advance (notebooks 012, 014)
+# Prior shift for dead ball: the event-derived training labels (24-36% dead) miss stoppages such as injuries, VAR and celebrations,
+# while "ball not in play" in La Liga is ~40.7% of match time (effective playing time 59.3%, Football Observatory / CIES, 37 competitions).
+# Standard prior adaptation: add logit(target prior) - logit(training prior) to the model's log-odds. No ground truth involved.
+TARGET_DEAD_SHARE = 0.407
+LAMBDAS = [2, 3, 5, 8, 12, 20, 30, 50, 80, 120]
+WEIGHTS = HERE / "weights"
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=str(HERE / "out" / "submission.csv"))
+    ap.add_argument("--retrain", action="store_true", help="retrain the ensemble locally instead of loading weights/")
+    ap.add_argument("--device", default=None, help="cpu or cuda (default: auto)")
+    args = ap.parse_args()
+    dev = args.device or ("cuda" if torch.cuda.is_available() else "cpu")
+
+    if args.retrain:
+        games = tm.build_games()
+        mu, sd = tm.standardiser(games)
+        rate = float(np.mean([G["poss_per_min"] for G in games.values()]))
+        inputs = tm.make_inputs(mu, sd)
+        nets = [tm.train(games, inputs, s, dev) for s in tm.SEEDS]
+    else:
+        meta = np.load(WEIGHTS / "meta.npz")
+        mu, sd, rate = meta["mu"], meta["sd"], float(meta["rate_mean"])
+        dil = tuple(int(x) for x in meta["dil"]) if "dil" in meta.files else tm.DIL
+        inputs = tm.make_inputs(mu, sd)
+        nets = []
+        for s in tm.SEEDS:
+            net = tm.TCN2(tm.NCH, dil=dil).to(dev)
+            net.load_state_dict(torch.load(WEIGHTS / f"tcn_seed{s}.pt", map_location=dev)); nets.append(net.eval())
+
+    import json
+    rep = json.loads((WEIGHTS / "training_report.json").read_text())
+    train_dead = float(np.mean([g["dead_share"] for g in rep["games"].values()]))
+    logit = lambda p: np.log(p / (1 - p))
+    shift = float(logit(TARGET_DEAD_SHARE) - logit(train_dead))
+
+    n_frames = source_frames("tactical")
+    blocks3 = half_video_blocks(GAME)
+    graded = np.zeros(n_frames, bool); half = np.zeros(n_frames, int)
+    for h, a, b in blocks3:
+        graded[a:b + 1] = True; half[a:b + 1] = h
+    graded_min = graded.sum() / FPS / 60
+    kickoff2 = anchor_video_frame(GAMES[GAME]["kickoff_2nd"]) + 1
+    assert kickoff2 == 113742
+
+    P, B, T = common.load_atd_arrays()
+    F = ft.build(P[..., :2], B[:, :2], T, half)
+    p_dead = np.full(n_frames, np.nan); p_team = np.full(n_frames, 0.5)
+    for h, a, b in blocks3:
+        ix = np.arange(a, b + 1, STRIDE); full = np.arange(a, b + 1)
+        pl, bl_, vd = F["player"][:, ix], F["ball"][:, ix], F["pvalid"][:, ix]
+        p_dead[a:b + 1] = np.interp(full, ix, np.mean([tm.predict(n, inputs, pl, bl_, vd, False, dev)[0] for n in nets], 0))
+        p_team[a:b + 1] = np.interp(full, ix, np.mean([tm.predict(n, inputs, pl, bl_, vd, True, dev)[1] for n in nets], 0))
+
+    pdc = np.clip(p_dead, 1e-4, 1 - 1e-4)
+    p_dead = 1 / (1 + np.exp(-(np.log(pdc / (1 - pdc)) + shift)))             # prior-shifted probability (NaN outside the halves stays NaN)
+    dead = np.zeros(n_frames, bool)
+    for _, a, b in blocks3:
+        s, e = common.runs(p_dead[a:b + 1] > DEAD_THR)
+        for si, ei in zip(s, e):
+            if ei - si >= MIN_DEAD_S * FPS:
+                dead[a + si:a + ei] = True
+
+    dist = common.team_distances(); dH, dA = dist[:, 0], dist[:, 1]
+    obs = np.isfinite(dH) & np.isfinite(dA)
+    near = np.where(obs, np.minimum(dH, dA), np.inf)
+    e_ = np.zeros(n_frames); e_[obs] = np.clip((dA[obs] - dH[obs]) / 3.0, -10, 10)
+    lpb_h, lpb_a = -np.logaddexp(0, -e_), -np.logaddexp(0, e_); lpb_h[~obs] = 0; lpb_a[~obs] = 0
+    pc = np.clip(p_team, 1e-3, 1 - 1e-3)
+    gate = near <= GATE_R
+    h_ev = np.where(gate, lpb_h, 0.0) + KAPPA * np.log(pc)
+    a_ev = np.where(gate, lpb_a, 0.0) + KAPPA * np.log(1 - pc)
+
+    def decode(lam):
+        lab = np.full(n_frames, "X", dtype="<U1")
+        for (h, a, b) in blocks3:
+            path = common.viterbi_2state(h_ev[a:b + 1], a_ev[a:b + 1], lam)
+            lab[a:b + 1] = np.where(path == 0, "H", "A")
+            if h == 2:
+                lab[a:kickoff2] = "D"
+        lab[dead & graded] = "D"
+        return lab
+
+    def n_possessions(lab):
+        return sum(len(common.runs(lab[a:b + 1] == t)[0]) for _, a, b in blocks3 for t in ("H", "A"))
+
+    target = rate * graded_min
+    sweep = [(lam, n_possessions(decode(lam))) for lam in LAMBDAS]
+    x = np.log([l for l, _ in sweep]); y = np.array([n for _, n in sweep], float)
+    lam_star = float(np.exp(np.interp(-target, -y, x))) if y[-1] < target < y[0] else float(np.exp(x[0] if target >= y[0] else x[-1]))
+    lab = decode(lam_star)
+
+    os.makedirs(os.path.dirname(args.out), exist_ok=True)
+    write_submission(args.out, lab)
+    problems = pm.validate_submission(pm.read_label_csv(args.out), n_frames)
+    print(f"wrote {args.out}")
+    print(f"dead-ball prior shift {shift:+.3f} (training dead share {train_dead:.1%} -> target {TARGET_DEAD_SHARE:.1%})")
+    print(f"possession rate {rate:.2f}/min -> target {target:.0f}; lambda* {lam_star:.2f} -> {n_possessions(lab)} possessions | "
+          f"D {np.mean(lab[graded] == 'D'):.1%} H {np.mean(lab[graded] == 'H'):.1%} A {np.mean(lab[graded] == 'A'):.1%} of graded frames")
+    print("validation:", "OK" if not problems else problems)
+
+
+if __name__ == "__main__":
+    main()
