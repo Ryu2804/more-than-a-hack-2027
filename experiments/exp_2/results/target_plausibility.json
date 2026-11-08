@@ -1,0 +1,60 @@
+{
+  "exp1_setseq_shipped": {
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.34881056547712724,
+      "A": 0.2671899884802055,
+      "D": 0.3839994460426673
+    },
+    "possession_count": 437,
+    "dead_share": 0.3839994460426673,
+    "possessions_per_min": 4.126352631612079,
+    "mean_possession_s": 8.957070938215104,
+    "dead_share_minus_prior": -0.023000553957332692
+  },
+  "exp2_aug": {
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.323190038839963,
+      "A": 0.2692673284778134,
+      "D": 0.4075426326822236
+    },
+    "possession_count": 378,
+    "abstain_frames_graded": 0,
+    "dead_share": 0.4075426326822236,
+    "possessions_per_min": 3.5692478140717756,
+    "mean_possession_s": 9.95936507936508,
+    "dead_share_minus_prior": 0.0005426326822236538
+  },
+  "exp2_aug_hsmm": {
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.32341036277910323,
+      "A": 0.2674103124193457,
+      "D": 0.40917932480155106
+    },
+    "possession_count": 391,
+    "abstain_frames_graded": 0,
+    "dead_share": 0.40917932480155106,
+    "possessions_per_min": 3.691999723021334,
+    "mean_possession_s": 9.601636828644502,
+    "dead_share_minus_prior": 0.0021793248015510858
+  },
+  "exp2_aug_ens3": {
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.3481810685081551,
+      "A": 0.24418187426427543,
+      "D": 0.40763705722756943
+    },
+    "possession_count": 397,
+    "abstain_frames_graded": 0,
+    "dead_share": 0.40763705722756943,
+    "possessions_per_min": 3.7486544502288224,
+    "mean_possession_s": 9.481209068010076,
+    "dead_share_minus_prior": 0.0006370572275694597
+  },
+  "published_dead_share_prior": 0.407,
+  "ball_coverage_graded": 0.593074274347369,
+  "mean_p_dead_exp2_aug": 0.39757248759269714
+}

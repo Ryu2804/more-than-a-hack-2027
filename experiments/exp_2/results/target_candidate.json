@@ -1,0 +1,28 @@
+{
+  "sha256": "a59128e642d94e2dee60398498ba7c6a5304fcb068cbe223fce38128aee80aed",
+  "format_valid": true,
+  "decoder": {
+    "temperature": 1.2822955751739529,
+    "lambda_team": 1.0,
+    "lambda_dead": 4.0,
+    "gamma": 0.0
+  },
+  "public_labels_used": false,
+  "graded_frames": 158857,
+  "share_graded": {
+    "H": 0.323190038839963,
+    "A": 0.2692673284778134,
+    "D": 0.4075426326822236
+  },
+  "possession_count": 378,
+  "abstain_frames_graded": 0,
+  "dead_share": 0.4075426326822236,
+  "possessions_per_min": 3.5692478140717756,
+  "mean_possession_s": 9.95936507936508,
+  "dead_share_minus_prior": 0.0005426326822236538,
+  "reproduction": {
+    "first_sha256": "a59128e642d94e2dee60398498ba7c6a5304fcb068cbe223fce38128aee80aed",
+    "second_sha256": "a59128e642d94e2dee60398498ba7c6a5304fcb068cbe223fce38128aee80aed",
+    "byte_identical": true
+  }
+}

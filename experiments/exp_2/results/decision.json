@@ -1,0 +1,107 @@
+{
+  "rules": {
+    "H1a_transfer_target_like": {
+      "view": "target_like",
+      "a": "exp2_aug",
+      "b": "exp1_ref",
+      "mean_delta": 0.008737955802174053,
+      "ci95": [
+        0.0009657088171498958,
+        0.018155064939567783
+      ],
+      "wins": 5,
+      "ties": 0,
+      "decision": "better",
+      "rule": "CI lower > 0",
+      "passed": true
+    },
+    "H1b_in_domain_original": {
+      "view": "original",
+      "a": "exp2_aug",
+      "b": "exp1_ref",
+      "mean_delta": 0.0010702821835275125,
+      "ci95": [
+        -0.007634491692396308,
+        0.010193334912714902
+      ],
+      "wins": 3,
+      "ties": 0,
+      "decision": "inconclusive",
+      "rule": "mean delta >= -0.02",
+      "passed": true
+    },
+    "H2_count_gate_target_like": {
+      "max_abs_count_error": 0.3405088062622309,
+      "rule": "all 7 matches within +-30%",
+      "passed": false
+    },
+    "H2_non_inferiority_target_like": {
+      "view": "target_like",
+      "a": "exp2_aug_hsmm",
+      "b": "exp2_aug_const",
+      "mean_delta": -0.0022456008997761012,
+      "ci95": [
+        -0.006367605235168161,
+        0.001412647339812819
+      ],
+      "wins": 4,
+      "ties": 0,
+      "decision": "inconclusive",
+      "rule": "CI lower > -0.01 vs constant decoder",
+      "passed": true
+    },
+    "H3_ensemble_target_like": {
+      "view": "target_like",
+      "a": "exp2_aug_ens3",
+      "b": "exp2_aug",
+      "mean_delta": 0.007490034193133274,
+      "ci95": [
+        0.001366980199571331,
+        0.013770939238786023
+      ],
+      "wins": 5,
+      "ties": 0,
+      "decision": "better",
+      "seed_spread": 0.00748288412439746,
+      "rule": "|mean delta| > seed spread and CI excludes 0",
+      "passed": true
+    }
+  },
+  "supported": {
+    "H1": true,
+    "H2": false,
+    "H3": true
+  },
+  "adopt_exp2_candidate": true,
+  "candidate_variant": "exp2_aug",
+  "candidate_view_for_final_config": "target_like",
+  "secondary_report_only": {
+    "H2_original_view": {
+      "view": "original",
+      "a": "exp2_aug_hsmm",
+      "b": "exp2_aug_const",
+      "mean_delta": -0.0004354387603661136,
+      "ci95": [
+        -0.003309820382579939,
+        0.0015356460391447893
+      ],
+      "wins": 5,
+      "ties": 0,
+      "decision": "inconclusive"
+    },
+    "H3_original_view": {
+      "view": "original",
+      "a": "exp2_aug_ens3",
+      "b": "exp2_aug",
+      "mean_delta": 0.009498177992098527,
+      "ci95": [
+        0.0020535786598917844,
+        0.016358696089879037
+      ],
+      "wins": 5,
+      "ties": 0,
+      "decision": "better",
+      "seed_spread": 0.0057074790322335645
+    }
+  }
+}

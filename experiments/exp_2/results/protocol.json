@@ -1,0 +1,134 @@
+{
+  "prereg_sha256": "154a10f7cda6821eb7322801fc1788d6170bcf81680e5d7164ba11564a0acb52",
+  "frozen_at_utc": "2026-11-08T13:06:55+00:00",
+  "judge": {
+    "judge/experiment_data.py": "e2b4034baa721ec7f0faf820626e6bb164325b55bf44595607612ab4c2cff7f1",
+    "judge/experiment_model.py": "243dfe93ba4aa051d271bd59f21091c972abdf02baae58ac37423139b5333fbd",
+    "official_metric": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+  },
+  "constants": {
+    "target_like": {
+      "k_out_frames": 37,
+      "slow_speed": 1.0,
+      "slow_window_frames": 51,
+      "slow_min_frames": 125,
+      "nan_speed": 2.0
+    },
+    "target_aug": {
+      "rounds": [
+        1,
+        2
+      ],
+      "k_max_frames": 74,
+      "dead_min_frames": 125,
+      "dead_probability": 0.5,
+      "dead_margin_frames": 25,
+      "seed_offset": 7000000
+    },
+    "train_config": {
+      "window": 300,
+      "batch": 32,
+      "epochs": 14,
+      "coverage": 2.0,
+      "lr": 0.002,
+      "weight_decay": 0.0001,
+      "width": 64,
+      "hidden": 64,
+      "boundary_weight": 0.5,
+      "boundary_pos_weight": 3.0,
+      "mirror": true,
+      "seed": 20261108
+    },
+    "model_arms": {
+      "exp1_ref": {
+        "recipe": "original",
+        "seed": 20261108
+      },
+      "exp2_aug": {
+        "recipe": "target_aug",
+        "seed": 20261108
+      },
+      "exp2_aug_s1": {
+        "recipe": "target_aug",
+        "seed": 20261109
+      },
+      "exp2_aug_s2": {
+        "recipe": "target_aug",
+        "seed": 20261110
+      }
+    },
+    "variants": {
+      "exp1_ref": [
+        "exp1_ref",
+        "bd"
+      ],
+      "exp2_aug": [
+        "exp2_aug",
+        "bd"
+      ],
+      "exp2_aug_const": [
+        "exp2_aug",
+        "const"
+      ],
+      "exp2_aug_hsmm": [
+        "exp2_aug",
+        "hsmm"
+      ],
+      "exp2_aug_s1": [
+        "exp2_aug_s1",
+        "bd"
+      ],
+      "exp2_aug_s2": [
+        "exp2_aug_s2",
+        "bd"
+      ],
+      "exp2_aug_ens3": [
+        "ens3",
+        "bd"
+      ]
+    },
+    "ensemble": [
+      "exp2_aug",
+      "exp2_aug_s1",
+      "exp2_aug_s2"
+    ],
+    "bd_lambdas": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "bd_gammas": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "hsmm": {
+      "d_max": 1100,
+      "weights": [
+        0.25,
+        0.5,
+        1.0
+      ],
+      "lambdas": [
+        0.0,
+        0.5,
+        1.0,
+        2.0
+      ]
+    },
+    "bootstrap": {
+      "draws": 1000,
+      "seed": 20261108,
+      "interval": 0.95
+    },
+    "views": [
+      "original",
+      "target_like"
+    ],
+    "primary_view": "target_like"
+  }
+}
