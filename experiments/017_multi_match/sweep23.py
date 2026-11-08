@@ -10,11 +10,11 @@ for k, vs in {"merge": [0.0, 0.25, 1.0, 1.5], "gate_r": [0.25, 0.5, 0.75], "kapp
               "tau": [2.0, 5.0], "rate_scale": [0.7, 0.85, 1.15, 1.3], "min_dead_s": [1.0, 3.0, 4.0]}.items():
     cfgs += [{**base, k: v} for v in vs]
 out = f"{W}/{name}/sweep23.json"
-print(len(cfgs), "configs", sb.run_bg(W, f"python -u remote_eval.py --games-dir {W}/games --preds-dir {W}/{name}/preds --configs '{json.dumps(cfgs)}' --out {out}", f"sweep_{name}.log"))
+print(len(cfgs), "configs", sb.run_bg(f"{W}/{name}", f"python -u remote_eval.py --games-dir {W}/games --preds-dir {W}/{name}/preds --configs '{json.dumps(cfgs)}' --out {out}", f"sweep_{name}.log"))
 t0 = time.time()
 while time.time() - t0 < 1800:
     if sb.execute(f"import os; print('YES' if os.path.exists('{out}') and os.path.getsize('{out}')>100 else 'NO')").strip().endswith("YES"): break
-    log = sb.tail(W, f"sweep_{name}.log", 400)
+    log = sb.tail(f"{W}/{name}", f"sweep_{name}.log", 400)
     if "Traceback" in log: print(log); sys.exit(1)
     time.sleep(10)
 d = json.loads(sb.get_bytes(out).decode()); json.dump(d, open(f"/tmp/claude-1000/-home-ryz-data-dev-competitive-hackathon-More-Than-hack-more-than-a-hack-2027/4e0e52fc-7701-4438-b772-64ecfaeb1ac3/scratchpad/sweep23_{name}.json", "w"))

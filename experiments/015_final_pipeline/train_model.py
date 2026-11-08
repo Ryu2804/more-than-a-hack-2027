@@ -25,6 +25,9 @@ import other_games as og  # noqa: E402
 FPS, STRIDE = 25, 5
 GAME_IDS = (1, 2, 3)
 SEEDS = (0, 1, 2)
+import os as _os
+CHANGE_HEAD = _os.environ.get("CHANGE_HEAD", "0") == "1"     # experiment 019: third output = possession change within +/-1 s (view-invariant)
+CHANGE_W = 5
 CH, MASK_FULL, NOISE = 64, 0.5, 0.0   # channel width, probability a training crop hides the ball entirely, input-noise std (standardised units)
 DIL = (1, 2, 4, 8, 16, 1)          # dilations of the TCN blocks (receptive field = 1 + 4 * sum(DIL) steps at 5 fps)
 CROP = 384
@@ -43,10 +46,19 @@ class TCN2(nn.Module):
         self.inp = nn.Conv1d(cin, ch, 1)
         self.blocks = nn.ModuleList([nn.Sequential(nn.Conv1d(ch, ch, k, padding=d * (k // 2), dilation=d), nn.GELU(), nn.Dropout(p)) for d in dil])
         self.norm = nn.ModuleList([nn.GroupNorm(8, ch) for _ in dil])
-        self.head = nn.Conv1d(ch, 2, 1)             # channel 0: dead ball, channel 1: team a in possession
+        if ft.USE_PP:
+            self.ppnet = nn.Sequential(nn.Linear(ft.PP_F, 48), nn.GELU(), nn.Linear(48, 48)); self.ppatt = nn.Linear(48, 1); self.ppproj = nn.Conv1d(96, ch, 1)
+        self.head = nn.Conv1d(ch, 3 if CHANGE_HEAD else 2, 1)             # channel 0: dead ball, channel 1: team a in possession
 
-    def forward(self, x):
+    def forward(self, x, pp=None, ppm=None):
         h = self.inp(x)
+        if pp is not None and ft.USE_PP:
+            e = self.ppnet(pp)                                                         # (B,T,K,48)
+            a = torch.softmax(self.ppatt(e).squeeze(-1).masked_fill(~ppm, -1e4), -1)   # attention over present players
+            pooled = (a.unsqueeze(-1) * e).sum(2)
+            mx = e.masked_fill(~ppm.unsqueeze(-1), -1e4).max(2).values
+            mx = torch.where(ppm.any(-1, keepdim=True), mx, torch.zeros_like(mx))
+            h = h + self.ppproj(torch.cat([pooled, mx], -1).permute(0, 2, 1))
         for blk, nm in zip(self.blocks, self.norm):
             h = h + blk(nm(h))
         return self.head(h)
@@ -106,31 +118,50 @@ def train(games, inputs, seed, dev, steps=1500, bs=32, crop=None):
     sched = torch.optim.lr_scheduler.OneCycleLR(opt, max_lr=2e-3, total_steps=steps)
     bce = nn.functional.binary_cross_entropy_with_logits
     for _ in range(steps):
-        X, Yd, Yt, Md, Mt = [], [], [], [], []
+        X, Yd, Yt, Md, Mt, Yc, PPs, PPm = [], [], [], [], [], [], [], []
         for _ in range(bs):
             G, s = seqs[int(rng.integers(len(seqs)))]
             st = int(rng.integers(0, len(s) - crop)); sl = s[st:st + crop]; v = int(rng.integers(0, 2))
             y = G["y"][sl]
-            X.append(inputs(G["player"][v][sl], G["ball"][v][sl], G["valid"][v][sl], random_mask(crop, rng)))
+            mk = random_mask(crop, rng)
+            X.append(inputs(G["player"][v][sl], G["ball"][v][sl], G["valid"][v][sl], mk))
+            if ft.USE_PP:
+                q = G["pp"][v][sl].copy(); q[mk, :, 6:9] = 0.0
+                PPs.append(q); PPm.append(G["ppm"][v][sl])
             Yd.append((y == 2).astype(np.float32)); Yt.append((y == v).astype(np.float32))
             Md.append((y >= 0).astype(np.float32)); Mt.append(((y == 0) | (y == 1)).astype(np.float32))
+            if CHANGE_HEAD:
+                al = (y == 0) | (y == 1); last = np.maximum.accumulate(np.where(al, np.arange(len(y)), -1))
+                tf = np.where(last >= 0, y[np.clip(last, 0, None)], -1); ch_ = ((tf[1:] != tf[:-1]) & (tf[1:] >= 0) & (tf[:-1] >= 0)).astype(np.float32)
+                ev = np.zeros(len(y), np.float32); ev[1:] = ch_
+                Yc.append(np.convolve(ev, np.ones(2 * CHANGE_W + 1), "same").clip(0, 1).astype(np.float32))
         X = np.stack(X)
         if NOISE > 0:
             X[:, :, :len(ft.PLAYER_FEATS)] += NOISE * rng.standard_normal(X[:, :, :len(ft.PLAYER_FEATS)].shape).astype(np.float32)
         X = torch.tensor(X).permute(0, 2, 1).to(dev)
         Yd, Yt, Md, Mt = [torch.tensor(np.stack(a)).to(dev) for a in (Yd, Yt, Md, Mt)]
-        out = net(X)
+        out = net(X, *(torch.tensor(np.stack(PPs)).to(dev), torch.tensor(np.stack(PPm)).to(dev))) if ft.USE_PP else net(X)
         loss = (bce(out[:, 0], Yd, reduction="none") * Md).sum() / Md.sum().clamp(min=1) + (bce(out[:, 1], Yt, reduction="none") * Mt).sum() / Mt.sum().clamp(min=1)
+        if CHANGE_HEAD:
+            Yc = torch.tensor(np.stack(Yc)).to(dev)
+            loss = loss + (bce(out[:, 2], Yc, reduction="none") * Md).sum() / Md.sum().clamp(min=1)
         opt.zero_grad(); loss.backward(); opt.step(); sched.step()
     return net.eval()
 
 
 @torch.no_grad()
-def predict(net, inputs, pl, bl, valid, mask_all, dev):
+def predict(net, inputs, pl, bl, valid, mask_all, dev, pp=None, ppm=None):
     outs = []
     for v in (0, 1):
         x = torch.tensor(inputs(pl[v], bl[v], valid[v], np.full(len(pl[v]), mask_all))).T[None].to(dev)
-        outs.append(torch.sigmoid(net(x))[0].cpu().numpy())
+        if ft.USE_PP and pp is not None:
+            q = pp[v].copy()
+            if mask_all: q[:, :, 6:9] = 0.0
+            outs.append(torch.sigmoid(net(x, torch.tensor(q)[None].to(dev), torch.tensor(ppm[v])[None].to(dev)))[0].cpu().numpy())
+        else:
+            outs.append(torch.sigmoid(net(x))[0].cpu().numpy())
+    if CHANGE_HEAD:
+        return 0.5 * (outs[0][0] + outs[1][0]), 0.5 * (outs[0][1] + 1 - outs[1][1]), 0.5 * (outs[0][2] + outs[1][2])
     return 0.5 * (outs[0][0] + outs[1][0]), 0.5 * (outs[0][1] + 1 - outs[1][1])     # p_dead, p_team_H
 
 

@@ -9,7 +9,7 @@ ROOT = EXP.parent
 URL = os.environ.get("MARIMO_URL", "https://sb-d6694a8e9e3fd822.sb.molab.run/")
 SCRIPT = os.environ.get("EXEC_SCRIPT", "/tmp/claude-1000/-home-ryz-data-dev-competitive-hackathon-More-Than-hack-more-than-a-hack-2027/4e0e52fc-7701-4438-b772-64ecfaeb1ac3/scratchpad/marimo/execute-code.sh")
 BUNDLE = {"common.py": EXP / "common.py", "features.py": EXP / "features.py", "other_games.py": EXP / "other_games.py",
-          "skillcorner_games.py": EXP / "skillcorner_games.py", "train_model.py": EXP / "015_final_pipeline" / "train_model.py",
+          "skillcorner_games.py": EXP / "skillcorner_games.py", "idsse_games.py": EXP / "idsse_games.py", "train_model.py": EXP / "015_final_pipeline" / "train_model.py",
           "decoder.py": EXP / "015_final_pipeline" / "decoder.py", "possession_metrics.py": ROOT / "evaluation" / "possession_metrics.py",
           "remote_pipeline.py": HERE / "remote_pipeline.py", "remote_eval.py": HERE / "remote_eval.py"}
 

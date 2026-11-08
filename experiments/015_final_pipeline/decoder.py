@@ -80,7 +80,7 @@ def n_possessions(lab, blocks):
     return sum(len(common.runs(lab[a:b + 1] == t)[0]) for _, a, b in blocks for t in ("H", "A"))
 
 
-def calibrate_lambda(make_labels, blocks, target, lambdas=(0.25, 0.5, 0.75, 1, 1.5, 2, 3, 5, 8, 12, 20, 30, 50, 80, 120)):
+def calibrate_lambda(make_labels, blocks, target, lambdas=(0.05, 0.1, 0.15, 0.25, 0.5, 0.75, 1, 1.5, 2, 3, 5, 8, 12, 20, 30, 50, 80, 120)):
     """lambda at which the number of possessions equals target (log-linear interpolation; clipped to the grid)."""
     ys = np.array([n_possessions(make_labels(l), blocks) for l in lambdas], float)
     x = np.log(lambdas)
@@ -89,3 +89,32 @@ def calibrate_lambda(make_labels, blocks, target, lambdas=(0.25, 0.5, 0.75, 1, 1
     if target <= ys[-1]:
         return float(lambdas[-1])
     return float(np.exp(np.interp(-target, -ys, x)))
+
+
+def viterbi_2state_t(lp_h, lp_a, cost):
+    """2-state Viterbi with a per-frame switch cost array (nats)."""
+    n = len(lp_h); em = np.stack([lp_h, lp_a], 1).astype(np.float64); back = np.zeros((n, 2), np.int8)
+    s0, s1 = em[0]
+    for t in range(1, n):
+        c = cost[t]; a0, a1 = s0, s1
+        if a0 >= a1 - c: b0, p0 = a0, 0
+        else: b0, p0 = a1 - c, 1
+        if a1 >= a0 - c: b1, p1 = a1, 1
+        else: b1, p1 = a0 - c, 0
+        back[t, 0], back[t, 1] = p0, p1; s0, s1 = b0 + em[t, 0], b1 + em[t, 1]
+    path = np.zeros(n, np.int8); path[-1] = 0 if s0 >= s1 else 1
+    for t in range(n - 1, 0, -1): path[t - 1] = back[t, path[t]]
+    return path
+
+
+def decode_t(n_frames, blocks, h_ev, a_ev, lam, dead, p_change, gamma):
+    """decode() with switch cost lam * (1 - gamma * p_change_t): switching is cheap where the model expects a possession change."""
+    lab = np.full(n_frames, "X", dtype="<U1")
+    for _, a, b in blocks:
+        cost = lam * (1 - gamma * np.nan_to_num(p_change[a:b + 1]))
+        path = viterbi_2state_t(h_ev[a:b + 1], a_ev[a:b + 1], cost)
+        lab[a:b + 1] = np.where(path == 0, "H", "A")
+    graded = np.zeros(n_frames, bool)
+    for _, a, b in blocks: graded[a:b + 1] = True
+    lab[dead & graded] = "D"
+    return lab

@@ -27,6 +27,15 @@ ROOT = HERE.parents[1]
 for p in (ROOT, ROOT / "starter", ROOT / "evaluation", ROOT / "experiments", HERE):
     sys.path.insert(0, str(p))
 
+def _weights_dir():
+    a = sys.argv
+    return Path(a[a.index("--weights") + 1]) if "--weights" in a else HERE / "weights_nometrica"
+
+
+_meta_path = _weights_dir() / "meta.npz"
+if "--retrain" not in sys.argv and _meta_path.exists() and "use_pp" in np.load(_meta_path).files and bool(np.load(_meta_path)["use_pp"]):
+    os.environ["USE_PP"] = "1"          # the weights were trained with the per-player set encoder: features.py must build it too
+
 import common  # noqa: E402
 import decoder as dc  # noqa: E402
 import features as ft  # noqa: E402
@@ -36,9 +45,9 @@ from baseline import write_submission  # noqa: E402
 from games import GAME, GAMES, anchor_video_frame, half_video_blocks, source_frames  # noqa: E402
 
 FPS, STRIDE = 25, 5
-GATE_R, DEAD_THR, MIN_DEAD_S, KAPPA, MERGE_S = 0.35, 0.5, 2.0, 0.02, 0.5      # chosen on held-out matches (experiments/016, 017)
+GATE_R, DEAD_THR, MIN_DEAD_S, KAPPA, MERGE_S, RATE_SCALE = 0.35, 0.5, 2.0, 0.05, 1.0, 1.0   # chosen on held-out matches (experiments/016, 017); KAPPA 0.05 and MERGE_S 1.0 hold with true spells <2 s or <4 s excluded; RATE_SCALE 1.0 = the unscaled training-match rate (1.2 helped only when short spells count)
 TARGET_DEAD_SHARE = 0.407       # La Liga effective playing time 59.3% (Football Observatory / CIES): ball not in play ~40.7% of match time
-WEIGHTS = HERE / "weights"
+WEIGHTS = HERE / "weights_nometrica"      # 3-seed ensemble, per-player set encoder, trained on 27 other matches: SkillCorner open data (MIT) + IDSSE/DFL (CC BY 4.0); no Metrica (experiments/017, 020)
 
 
 def merge_short(lab, blocks, min_s):
@@ -114,7 +123,11 @@ def main():
     for h, a, b in blocks:
         ix = np.arange(a, b + 1, STRIDE); full = np.arange(a, b + 1)
         pl, bl_, vd = F["player"][:, ix], F["ball"][:, ix], F["pvalid"][:, ix]
-        out = [tm.predict(n, inputs, pl, bl_, vd, False, dev) for n in nets]      # ball channels as tracked (validated: better than hiding them)
+        if ft.USE_PP:
+            pp, ppm = ft.player_set(P[..., :2], B[:, :2], T, half, ix)
+            out = [tm.predict(n, inputs, pl, bl_, vd, False, dev, pp, ppm) for n in nets]
+        else:
+            out = [tm.predict(n, inputs, pl, bl_, vd, False, dev) for n in nets]      # ball channels as tracked (validated: better than hiding them)
         p_dead[a:b + 1] = np.interp(full, ix, np.mean([o[0] for o in out], 0))
         p_team[a:b + 1] = np.interp(full, ix, np.mean([o[1] for o in out], 0))
 
@@ -123,7 +136,7 @@ def main():
     lp_h, lp_a = dc.ball_evidence(dist, GATE_R)
     h_ev, a_ev = dc.evidence(lp_h, lp_a, p_team, KAPPA)
     make = lambda lam: dc.decode(n_frames, blocks, h_ev, a_ev, lam, dead, forced_dead=[(second_first, kickoff2)])
-    target = rate * graded_min
+    target = rate * RATE_SCALE * graded_min
     lam_star = dc.calibrate_lambda(make, blocks, target)           # lambda is calibrated WITHOUT the merge (validated order) ...
     lab = merge_short(make(lam_star), blocks, MERGE_S)              # ... and slivers are merged afterwards
 

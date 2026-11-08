@@ -17,7 +17,7 @@ import possession_metrics as pm
 
 FPS = 25
 NAMES = {-1: "X", 0: "H", 1: "A", 2: "D"}
-DEFAULT = dict(gate_r=0.35, kappa=0.02, lam="cal", dead_thr=0.5, min_dead_s=2.0, shift=0.0, tau=3.0, team="real", dead_src="real", rate_scale=1.0, merge=0.0)
+DEFAULT = dict(gate_r=0.35, kappa=0.02, lam="cal", dead_thr=0.5, min_dead_s=2.0, shift=0.0, tau=3.0, team="real", dead_src="real", rate_scale=1.0, merge=0.0, touch_r=0.0, touch_minlen=30, gt_min_s=0.0, cp=0.0)
 
 
 def interp_full(n, ix, vals, blocks):
@@ -45,6 +45,27 @@ def merge_short(lab, blocks, min_s):
     return out
 
 
+
+def touch_hold(dist, blocks, r, minlen, n):
+    """origin/rasya touch-hold: team of the nearest player while the ball is within r m, held until the next touch; short segments merged. -1 = unknown."""
+    dH, dA = dist[:, 0], dist[:, 1]
+    ok = np.isfinite(dH) & np.isfinite(dA)
+    dmin = np.where(ok, np.minimum(dH, dA), np.inf); team = np.where(dH <= dA, 0, 1)
+    out = np.full(n, -1, np.int8)
+    for _, a, b in blocks:
+        touch = np.flatnonzero(dmin[a:b + 1] < r)
+        if not len(touch): continue
+        pos = np.searchsorted(touch, np.arange(b - a + 1), side="right") - 1
+        seg = np.where(pos >= 0, team[a:b + 1][touch][np.clip(pos, 0, len(touch) - 1)], -1).astype(np.int8)
+        if minlen:
+            st = np.flatnonzero(np.r_[True, seg[1:] != seg[:-1]]); en = np.r_[st[1:], len(seg)]
+            for s0, e0 in zip(st, en):
+                if e0 - s0 < minlen:
+                    if s0 > 0: seg[s0:e0] = seg[s0 - 1]
+                    elif e0 < len(seg): seg[s0:e0] = seg[e0]
+        out[a:b + 1] = seg
+    return out
+
 def baseline_labels(dist, n, window=50):
     dH, dA = dist[:, 0], dist[:, 1]
     ok = np.isfinite(dH) & np.isfinite(dA)
@@ -68,27 +89,44 @@ def evaluate(args):
     gt = pm.label_codes(np.array([NAMES[int(v)] for v in y]))
     gmin = graded.sum() / FPS / 60
     ix = z["ix"]
-    P = {k: interp_full(n, ix, p[k], blocks) for k in ("pdead_real", "pdead_hidden", "pteam_real", "pteam_hidden")}
-    def score(lab):
+    P = {k: interp_full(n, ix, p[k], blocks) for k in ("pdead_real", "pdead_hidden", "pteam_real", "pteam_hidden") + (("pchange_real",) if "pchange_real" in p.files else ())}
+    def gt_without_short(min_s):
+        """True H/A spells shorter than min_s become X (not scored); everything else unchanged."""
+        if not min_s: return gt
+        g = gt.copy(); codes = np.array([NAMES[int(v)] for v in y])
+        for _, a, b in blocks:
+            for t in ("H", "A"):
+                s, e = common.runs(codes[a:b + 1] == t)
+                for si, ei in zip(s, e):
+                    if ei - si < min_s * FPS: g[a + si:a + ei] = pm.label_codes(np.array(["X"]))[0]
+        return g
+    def score(lab, gt=gt):
         lab = np.where(graded, lab, "X")
         r = pm.evaluate(gt, pm.label_codes(lab), bootstrap_n=0)
         t25 = r["transitions"].get(25, r["transitions"].get("25", {}))
         return dict(macro_f1=r["macro_f1"], spell_f1=r["spell_f1_mean"], gt_spells=r["n_gt_spells"], pred_spells=r["n_pred_spells"], alive_dead_f1=r["alive_dead_f1"],
                     team_acc=r["team_acc_both_alive"], trans_f1=t25.get("f1", float("nan")), dur=r["mean_spell_duration_s"], gt_dur=r["gt_mean_spell_duration_s"])
-    res = dict(game=name, dead_share_gt=float(np.mean(y[graded] == 2)), baseline=score(baseline_labels(dist, n)), configs=[])
+    res = dict(game=name, dead_share_gt=float(np.mean(y[graded] == 2)), baseline=score(baseline_labels(dist, n)), baseline_nos=None, configs=[])
+    gts = {}
     for c in configs:
         cfg = {**DEFAULT, **c}
         lp_h, lp_a = dc.ball_evidence(dist, cfg["gate_r"], cfg["tau"])
         h_ev, a_ev = dc.evidence(lp_h, lp_a, P[f"pteam_{cfg['team']}"], cfg["kappa"])
         dead = dc.dead_mask(P[f"pdead_{cfg['dead_src']}"], blocks, cfg["dead_thr"], cfg["min_dead_s"], cfg["shift"])
-        make = lambda lam: dc.decode(n, blocks, h_ev, a_ev, lam, dead)
+        make = (lambda lam: dc.decode_t(n, blocks, h_ev, a_ev, lam, dead, P["pchange_real"], cfg["cp"])) if cfg["cp"] else (lambda lam: dc.decode(n, blocks, h_ev, a_ev, lam, dead))
         lam = cfg["lam"]
         if lam == "cal":
             lam = dc.calibrate_lambda(make, blocks, float(p["train_rate"]) * cfg["rate_scale"] * gmin)   # calibrated without the merge
         lab = make(lam)
+        if cfg["touch_r"]:
+            held = touch_hold(dist, blocks, cfg["touch_r"], cfg["touch_minlen"], n)
+            alive = (lab == "H") | (lab == "A")
+            lab = np.where(alive & (held == 0), "H", np.where(alive & (held == 1), "A", lab))
         if cfg["merge"]:
             lab = merge_short(lab, blocks, cfg["merge"])                                                 # merge applied afterwards (validated order)
-        r = score(lab); r.update(lam=float(lam), dead_pred=float(dead[graded].mean()))
+        gk = cfg["gt_min_s"]
+        if gk not in gts: gts[gk] = gt_without_short(gk)
+        r = score(lab, gts[gk]); r.update(lam=float(lam), dead_pred=float(dead[graded].mean()))
         res["configs"].append(r)
     return res
 
