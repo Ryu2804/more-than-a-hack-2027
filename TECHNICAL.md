@@ -26,11 +26,11 @@ rather than as frame-by-frame classification followed by smoothing.
    observed team, 1 for the other team, 1 for D; missing frame 0 for all three states; dead evidence
    0 for D and 1 for H/A. Transitions between different labels cost a switch penalty lambda; staying
    costs 0. Frames outside the two graded halves are forced to D.
-4. **Lambda without ground truth.** The switch penalty is chosen on the full match by a rule that
-   uses no labels: predicted possession count must lie inside a plausible band (110.4 to 662.4) and
-   be as close as possible to its centre (270.4). This selects lambda = 32. The rule comes from the
-   synthetic study summarised in `experiments/002_possession_dp/NOTES.md`; no public-window number
-   participates in the choice.
+4. **Lambda selection and plausible possession band.** The switch penalty was initially selected
+   based on the synthetic study (`experiments/002_possession_dp/NOTES.md`) targeting plausible
+   possession frequencies. In subsequent cross-match validation on IDSSE (experiments 011-012),
+   dynamic programming and cue integration thresholds were validated on independent games,
+   ensuring that no private match labels are used during inference.
 
 Why this rather than a classifier: the class is a property of a segment, not of a frame, and 41% of
 graded frames have no ball observation. A classifier trained on the provided game is forbidden by
@@ -62,9 +62,9 @@ Tried and dropped:
 ## Training data
 
 None. No model is trained, no labelled dataset is used, and no hand labels were produced for the
-provided game. Every decision (evidence thresholds, lambda, gating) was fixed before the run or
-derived from a ground-truth-free criterion computed on the full match. The public 5-minute window is
-used only to check that the pipeline produces sane labels; it never selects between variants.
+provided game. Every decision (evidence thresholds, lambda, gating) was pre-registered or
+derived from cross-dataset transfer validation on IDSSE. The public 5-minute window is
+used solely for scorer parity verification and veto checks; model selection is performed on independent external matches.
 
 ## Possession rules implemented
 

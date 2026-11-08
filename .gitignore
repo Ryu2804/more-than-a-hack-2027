@@ -66,6 +66,9 @@ env/
 # -- experiments: generated submissions, reports, caches ------------------------------------------
 experiments/*/out/
 experiments/_cache/
+# -- experiment scratch outputs (full-match labels, must never be committed) ---------------------
+experiments/012_spellf1/starter_touch_out.csv
+experiments/012_spellf1/starter_touch_all_out.json
 
 # -- loop runtime artifacts (keep loop.py, tasks.py, run_loop.sh, run_one.py) -----------
 experiments/012_spellf1/loop/cache/

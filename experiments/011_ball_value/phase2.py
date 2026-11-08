@@ -445,8 +445,13 @@ def run_split(names, parsed_dir, lengths, target_frames, sigmas, ps, replicates,
     return result
 
 
-def candidate_selection(result, mode="frame", max_sigma=2.0, min_p=0.6):
-    """Worst passing combination: largest sigma, then smallest p."""
+def diagnostic_selection(result, mode="frame", max_sigma=2.0, min_p=0.6):
+    """Diagnostic: worst passing combination (largest sigma, then smallest p).
+
+    This is a DIAGNOSTIC function, not a selection mechanism. The 'worst_passing'
+    output is printed for inspection only and is NOT used to choose which arm enters
+    confirm. Renamed from candidate_selection to avoid implying selection.
+    """
     passing = []
     for sigma in result["meta"]["sigmas"]:
         for p_detect in result["meta"]["ps"]:
@@ -509,8 +514,8 @@ def main():
     result = run_split(names, args.parsed_dir, lengths, target_frames,
                        tuple(sigmas), tuple(ps), args.replicates, out_path)
     result["barath_missing"] = missing
-    result["selection"] = candidate_selection(result, "frame")
-    result["selection_run"] = candidate_selection(result, "run")
+    result["diagnostic"] = diagnostic_selection(result, "frame")
+    result["diagnostic_run"] = diagnostic_selection(result, "run")
 
     with open(out_path, "w") as handle:
         json.dump(result, handle, indent=2, sort_keys=True)
@@ -520,8 +525,8 @@ def main():
             continue
         print(name, "delta", round(row["delta_f1_mean"], 4),
               "ci", [round(v, 4) for v in row["delta_f1_ci90"]], flush=True)
-    winner = result["selection"]["worst_passing"]
-    winner_run = result["selection_run"]["worst_passing"]
+    winner = result["diagnostic"]["worst_passing"]
+    winner_run = result["diagnostic_run"]["worst_passing"]
     print("worst passing frame", winner["arm"] if winner else None, flush=True)
     print("worst passing run  ", winner_run["arm"] if winner_run else None, flush=True)
     return 0

@@ -49,8 +49,9 @@ Longest sustained colour disagreement with the ATD team, per slot, in seconds:
 
 ## Verdict
 
-Supported (mechanism): the video does carry a strong, label-free team signal, and a large
-fraction of slot-time is colour-inconsistent with the slot's static team. That is consistent with
-slot reuse / identity switches rather than with a broken homography (projections land on players).
+Exploratory, mechanism plausible (bukan "supported" — tidak ada pra-registrasi): the video does
+carry a strong, label-free team signal, and a large fraction of slot-time is colour-inconsistent
+with the slot's static team. That is consistent with slot reuse / identity switches rather than
+with a broken homography (projections land on players).
 
 Not yet shown: that repairing the label with this signal improves spellF1. That is 005.

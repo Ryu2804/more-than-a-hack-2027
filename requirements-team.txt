@@ -1,0 +1,7 @@
+# Research loop & team tooling dependencies (Audit 2026-11-08 / A-R6)
+# Standard evaluation only requires requirements.txt (numpy, pandas).
+# Research tasks (loop 012, cue detection, bootstrap CI) require scipy.
+
+-r requirements.txt
+
+scipy==1.18.1

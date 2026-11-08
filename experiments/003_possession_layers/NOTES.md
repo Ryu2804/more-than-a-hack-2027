@@ -13,6 +13,14 @@ prior slightly worse on the public window and not separable; identity repair ine
 penalty (0 frames changed post-DP). `ev_smooth125` remains the public-window leader. Full report:
 `../research_loop/riset_methodology/experiments/possession_layers_v3/REPORT.md`.
 
+## Compliance — Catatan Audit
+
+- **Tabel angka numerik per arm tidak ada di NOTES.md.** Hasil per arm (spellF1, CI, lambda)
+  hanya ada di `out/results.json` dan laporan lengkap di `research_loop/`. Untuk reproducibility,
+  seharusnya ada tabel ringkasan di sini. Ditambahkan saat audit 2026-11-08.
+- Semua evaluasi di public window (diagnostik). Tidak ada pra-registrasi.
+- Tidak ada kandidat yang dipilih dari eksperimen ini.
+
 Run (from repo root):
 
 ```

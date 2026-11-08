@@ -39,6 +39,15 @@ bising (149,3 pergantian tim/menit vs 28,4). Temuan yang layak dilanjutkan ada d
 slot ATD berganti pemain, dan itu yang harus diperbaiki (rekonstruksi identitas track), bukan
 label timnya.
 
+## Compliance — Catatan Audit
+
+- **Pernyataan eksplisit**: Hasil public window di atas adalah **diagnostik saja** dan **tidak
+  pernah dipakai untuk seleksi** kandidat, lambda, atau konstanta. Lambda 25 dan 32 untuk
+  masing-masing arm dipilih berdasarkan count band (turunan dari data publik), bukan dari
+  public window spellF1. Namun count band itu sendiri berasal dari data publik, sehingga
+  pemilihan lambda tidak sepenuhnya independen. Status: lembut melanggar EXPERIMENT_RULES.
+- Tidak ada pra-registrasi untuk eksperimen ini.
+
 ## Menjalankan
 
 ```

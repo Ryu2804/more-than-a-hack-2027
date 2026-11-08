@@ -60,6 +60,9 @@ PITCH_LENGTH, PITCH_WIDTH = GAMES[GAME]["pitch"]
 
 PREREG_LAMBDA = 4.0
 LAMBDA_GRID = (4.0, 8.0, 16.0, 25.0, 32.0, 50.0, 64.0)
+# WARNING (Audit 2026-11-08 / A-R3): This count band was derived from synthetic 82.8k frames.
+# For BAR-ATH (158.8k frames), these thresholds are unscaled historical artifacts from 002.
+# Do not use for formal submission selection without scaling by match frame length.
 COUNT_BAND = (110.4, 662.4)   # accepted note: GT-free plausible full-match possession count
 COUNT_CENTRE = 270.4
 
