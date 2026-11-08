@@ -1,0 +1,49 @@
+{
+  "selection_sha256": "533ef90270e3d9de42a088c1f269861ccf82012ba8d2ac6125056aa3f969279b",
+  "results": [
+    {
+      "spell_f1_mean": 0.5996638655462185,
+      "macro_f1": 0.8427759271885308,
+      "accuracy": 0.8437118950510869,
+      "n_gt_spells": 343,
+      "n_pred_spells": 252,
+      "mean_spell_duration_s": 16.25603174603175,
+      "candidate": "wave2_selected",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.4749354005167959,
+      "macro_f1": 0.7865959182090698,
+      "accuracy": 0.7919662504029489,
+      "n_gt_spells": 343,
+      "n_pred_spells": 431,
+      "mean_spell_duration_s": 9.491322505800463,
+      "candidate": "wave1_selected",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.43398230088495576,
+      "macro_f1": 0.7663024165524884,
+      "accuracy": 0.7657430377440468,
+      "n_gt_spells": 343,
+      "n_pred_spells": 222,
+      "mean_spell_duration_s": 17.404144144144144,
+      "candidate": "wave2_selected",
+      "regime": "occluded"
+    },
+    {
+      "spell_f1_mean": 0.3745341614906832,
+      "macro_f1": 0.6899093822712073,
+      "accuracy": 0.6903320298812877,
+      "n_gt_spells": 343,
+      "n_pred_spells": 301,
+      "mean_spell_duration_s": 11.550697674418604,
+      "candidate": "wave1_selected",
+      "regime": "occluded"
+    }
+  ],
+  "reproduced_sha256": "45e03662fccbeb238e9df723c99829df60e3d8d641d539be9f6d1e1fd59b0446",
+  "identical_target_rows": 199319,
+  "selection_changed": false,
+  "warning": "Two frozen candidates only; no selection or tuning on Game3."
+}

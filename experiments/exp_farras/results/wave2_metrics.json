@@ -1,0 +1,2877 @@
+{
+  "batch": "wave2",
+  "source": "Completed original campaign; relocated reproduction checked separately.",
+  "selected": {
+    "method": "w08_symmetric_boost",
+    "config": {
+      "name": "cost6",
+      "switch_cost": 6
+    }
+  },
+  "public_is_diagnostic_only": true,
+  "records": [
+    {
+      "method": "w08_symmetric_boost",
+      "config": {
+        "name": "cost6",
+        "switch_cost": 6
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.594266441821248,
+          "macro_f1": 0.7851774255392079,
+          "accuracy": 0.7852435132510059,
+          "n_gt_spells": 322,
+          "n_pred_spells": 271,
+          "mean_spell_duration_s": 14.919261992619926,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.42025316455696204,
+          "macro_f1": 0.6888213231260808,
+          "accuracy": 0.6884140419037047,
+          "n_gt_spells": 322,
+          "n_pred_spells": 231,
+          "mean_spell_duration_s": 15.947705627705627,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5984435797665368,
+          "macro_f1": 0.8116924040983494,
+          "accuracy": 0.8115712908348457,
+          "n_gt_spells": 295,
+          "n_pred_spells": 219,
+          "mean_spell_duration_s": 16.419360730593606,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.4567901234567901,
+          "macro_f1": 0.7235509749600347,
+          "accuracy": 0.7241166628856625,
+          "n_gt_spells": 295,
+          "n_pred_spells": 191,
+          "mean_spell_duration_s": 16.716439790575915,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.5174383274003842,
+      "external_mean_macroF1": 0.7523105319309182,
+      "submission_sha256": "45e03662fccbeb238e9df723c99829df60e3d8d641d539be9f6d1e1fd59b0446",
+      "code_sha256": "c34f7bdfeeafa2282991f26a10a92686f3a09be6ac79d0525ddeef407ec057af",
+      "public": {
+        "selected": true,
+        "spellF1": 0.46060606060606074,
+        "macroF1": 0.7118304375211587,
+        "possessions": 16
+      }
+    },
+    {
+      "method": "w14_feature_ablation",
+      "config": {
+        "name": "control",
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          7,
+          14,
+          15
+        ]
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.6135181975736569,
+          "macro_f1": 0.8131834625581517,
+          "accuracy": 0.8130498126821146,
+          "n_gt_spells": 322,
+          "n_pred_spells": 255,
+          "mean_spell_duration_s": 14.184941176470588,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.36691729323308275,
+          "macro_f1": 0.6490962675852288,
+          "accuracy": 0.6524420702095185,
+          "n_gt_spells": 322,
+          "n_pred_spells": 210,
+          "mean_spell_duration_s": 11.247428571428573,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.6090019569471624,
+          "macro_f1": 0.8173001109356584,
+          "accuracy": 0.8169734006352087,
+          "n_gt_spells": 295,
+          "n_pred_spells": 216,
+          "mean_spell_duration_s": 15.862222222222222,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.41443736730360936,
+          "macro_f1": 0.6341010431102653,
+          "accuracy": 0.6342091084392014,
+          "n_gt_spells": 295,
+          "n_pred_spells": 176,
+          "mean_spell_duration_s": 12.037727272727272,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.5009687037643779,
+      "external_mean_macroF1": 0.7284202210473261,
+      "submission_sha256": "daa47000ae56c6d739aa2ed87681468ca4b1e79bb9118802738e06d760cbe761",
+      "code_sha256": "ae597d0b4e0a8a588e2dafca35b7c32c5a5b6d76c63c9e74d44167420f2bbd3d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.56,
+        "macroF1": 0.6505202364380355,
+        "possessions": 13
+      }
+    },
+    {
+      "method": "w08_symmetric_boost",
+      "config": {
+        "name": "cost12",
+        "switch_cost": 12
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5615094339622642,
+          "macro_f1": 0.7766354791525875,
+          "accuracy": 0.7768835854030803,
+          "n_gt_spells": 322,
+          "n_pred_spells": 208,
+          "mean_spell_duration_s": 19.59096153846154,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.4032,
+          "macro_f1": 0.6995946386510393,
+          "accuracy": 0.6991536006660192,
+          "n_gt_spells": 322,
+          "n_pred_spells": 178,
+          "mean_spell_duration_s": 20.90067415730337,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5624742268041236,
+          "macro_f1": 0.808903760538215,
+          "accuracy": 0.808919861615245,
+          "n_gt_spells": 295,
+          "n_pred_spells": 190,
+          "mean_spell_duration_s": 18.909684210526315,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.4304250559284116,
+          "macro_f1": 0.7266929129428247,
+          "accuracy": 0.7270658461887477,
+          "n_gt_spells": 295,
+          "n_pred_spells": 152,
+          "mean_spell_duration_s": 20.942368421052635,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4894021791736999,
+      "external_mean_macroF1": 0.7529566978211667,
+      "submission_sha256": "0ffde5a7b0c03af60a3e0be9b410ccfc24007e3a6ba12052d0dd64293e14c312",
+      "code_sha256": "c34f7bdfeeafa2282991f26a10a92686f3a09be6ac79d0525ddeef407ec057af",
+      "public": {
+        "selected": false,
+        "spellF1": 0.33333333333333337,
+        "macroF1": 0.6832275337051028,
+        "possessions": 7
+      }
+    },
+    {
+      "method": "w08_symmetric_boost",
+      "config": {
+        "name": "cost2",
+        "switch_cost": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5265359477124183,
+          "macro_f1": 0.7720001546496302,
+          "accuracy": 0.7722492021645623,
+          "n_gt_spells": 322,
+          "n_pred_spells": 443,
+          "mean_spell_duration_s": 9.183566591422121,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.37524613220815756,
+          "macro_f1": 0.6633141778978224,
+          "accuracy": 0.6640627168031081,
+          "n_gt_spells": 322,
+          "n_pred_spells": 389,
+          "mean_spell_duration_s": 9.47228791773779,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5710806697108067,
+          "macro_f1": 0.8072315231452222,
+          "accuracy": 0.8070978901996371,
+          "n_gt_spells": 295,
+          "n_pred_spells": 362,
+          "mean_spell_duration_s": 9.94817679558011,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.41200000000000003,
+          "macro_f1": 0.7078053131592457,
+          "accuracy": 0.7093636569872959,
+          "n_gt_spells": 295,
+          "n_pred_spells": 305,
+          "mean_spell_duration_s": 10.350295081967213,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4712156874078456,
+      "external_mean_macroF1": 0.7375877922129801,
+      "submission_sha256": "7804c75410b7b6770649c8de4f8ae7193f93991b591a5174482b2333013c2f79",
+      "code_sha256": "c34f7bdfeeafa2282991f26a10a92686f3a09be6ac79d0525ddeef407ec057af",
+      "public": {
+        "selected": false,
+        "spellF1": 0.3652173913043478,
+        "macroF1": 0.6956174265467706,
+        "possessions": 29
+      }
+    },
+    {
+      "method": "w03_temporal_viterbi",
+      "config": {
+        "name": "context7",
+        "context_s": 7
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5414634146341464,
+          "macro_f1": 0.76554081237799,
+          "accuracy": 0.7657416400721521,
+          "n_gt_spells": 322,
+          "n_pred_spells": 252,
+          "mean_spell_duration_s": 15.963174603174602,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3478260869565218,
+          "macro_f1": 0.6626817333844404,
+          "accuracy": 0.6644859164700985,
+          "n_gt_spells": 322,
+          "n_pred_spells": 253,
+          "mean_spell_duration_s": 14.993359683794468,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5751434034416827,
+          "macro_f1": 0.800511461430793,
+          "accuracy": 0.8004480490018149,
+          "n_gt_spells": 295,
+          "n_pred_spells": 228,
+          "mean_spell_duration_s": 15.976315789473682,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.396917148362235,
+          "macro_f1": 0.6838321726587969,
+          "accuracy": 0.6866776315789473,
+          "n_gt_spells": 295,
+          "n_pred_spells": 224,
+          "mean_spell_duration_s": 15.15625,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4653375133486465,
+      "external_mean_macroF1": 0.728141544963005,
+      "submission_sha256": "62c0c5aab706b23556f86b9262fdf760ec0180de142c3948fa7aa4d18a4ac61a",
+      "code_sha256": "500b10d7895608779ebc91ed6a7b0d5c15cc62f6bc59ba2ef58cbedcb5c3fc59",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5066666666666667,
+        "macroF1": 0.677317414263305,
+        "possessions": 13
+      }
+    },
+    {
+      "method": "w10_boost_cascade",
+      "config": {
+        "name": "dead05",
+        "dead_strength": 0.5
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5707563025210084,
+          "macro_f1": 0.7772868741249517,
+          "accuracy": 0.777591230747884,
+          "n_gt_spells": 322,
+          "n_pred_spells": 273,
+          "mean_spell_duration_s": 13.778461538461539,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34529914529914535,
+          "macro_f1": 0.622367163089477,
+          "accuracy": 0.6300541140557792,
+          "n_gt_spells": 322,
+          "n_pred_spells": 263,
+          "mean_spell_duration_s": 11.574600760456274,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5734767025089604,
+          "macro_f1": 0.8046933149183945,
+          "accuracy": 0.804361388384755,
+          "n_gt_spells": 295,
+          "n_pred_spells": 263,
+          "mean_spell_duration_s": 12.672243346007603,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3598513011152416,
+          "macro_f1": 0.6456940990012922,
+          "accuracy": 0.6521098003629764,
+          "n_gt_spells": 295,
+          "n_pred_spells": 243,
+          "mean_spell_duration_s": 10.925925925925926,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4623458628610889,
+      "external_mean_macroF1": 0.7125103627835289,
+      "submission_sha256": "79bfc8064e5035a094a27a35879b23a83a20396c74fd9d95b51ef2eeee2212af",
+      "code_sha256": "0a5582631098e724c5ca6ceb5821473594fb0d3d80f06f4fbb13a7c6895c3d5e",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5241379310344827,
+        "macroF1": 0.7063895476195166,
+        "possessions": 12
+      }
+    },
+    {
+      "method": "w03_temporal_viterbi",
+      "config": {
+        "name": "context3",
+        "context_s": 3
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5589576547231271,
+          "macro_f1": 0.7582050409840685,
+          "accuracy": 0.7586166227279034,
+          "n_gt_spells": 322,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 14.168493150684931,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3616883116883117,
+          "macro_f1": 0.6493062758076541,
+          "accuracy": 0.6505619536561676,
+          "n_gt_spells": 322,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 13.061904761904762,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.559132007233273,
+          "macro_f1": 0.7845524494652603,
+          "accuracy": 0.7848443171506352,
+          "n_gt_spells": 295,
+          "n_pred_spells": 258,
+          "mean_spell_duration_s": 14.606976744186047,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3630550621669627,
+          "macro_f1": 0.6785768506270848,
+          "accuracy": 0.6818426724137931,
+          "n_gt_spells": 295,
+          "n_pred_spells": 268,
+          "mean_spell_duration_s": 12.517164179104476,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.46070825895291867,
+      "external_mean_macroF1": 0.7176601542210169,
+      "submission_sha256": "8a29500b9046671ea848db629514ebe097ec046610025faec8d680dbeeae1242",
+      "code_sha256": "500b10d7895608779ebc91ed6a7b0d5c15cc62f6bc59ba2ef58cbedcb5c3fc59",
+      "public": {
+        "selected": false,
+        "spellF1": 0.4216216216216216,
+        "macroF1": 0.6905030776960328,
+        "possessions": 20
+      }
+    },
+    {
+      "method": "w02_extra_viterbi",
+      "config": {
+        "name": "cost6",
+        "switch_cost": 6
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5448529411764705,
+          "macro_f1": 0.8043894296730335,
+          "accuracy": 0.805085333703344,
+          "n_gt_spells": 322,
+          "n_pred_spells": 222,
+          "mean_spell_duration_s": 16.875675675675677,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3573831775700934,
+          "macro_f1": 0.6666158630211042,
+          "accuracy": 0.6784653808797003,
+          "n_gt_spells": 322,
+          "n_pred_spells": 213,
+          "mean_spell_duration_s": 14.543661971830986,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.554786150712831,
+          "macro_f1": 0.8064148855211473,
+          "accuracy": 0.806119555353902,
+          "n_gt_spells": 295,
+          "n_pred_spells": 196,
+          "mean_spell_duration_s": 17.85408163265306,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.38524590163934425,
+          "macro_f1": 0.6708224504150108,
+          "accuracy": 0.677858439201452,
+          "n_gt_spells": 295,
+          "n_pred_spells": 193,
+          "mean_spell_duration_s": 15.358549222797928,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.46056704277468485,
+      "external_mean_macroF1": 0.737060657157574,
+      "submission_sha256": "14cf498fb842291d0ffa6d6e161d093e90660720868859c927d0af0257dcb014",
+      "code_sha256": "6c853ae3e8bca80d689f181e06fdbc80eeff1511d033af4138ebed225338489c",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5466666666666666,
+        "macroF1": 0.7116859141072243,
+        "possessions": 13
+      }
+    },
+    {
+      "method": "w11_emission_ensemble",
+      "config": {
+        "name": "hist50",
+        "hist_weight": 0.5
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5459807073954984,
+          "macro_f1": 0.7779765415923632,
+          "accuracy": 0.7783890661856528,
+          "n_gt_spells": 322,
+          "n_pred_spells": 300,
+          "mean_spell_duration_s": 13.115733333333333,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.35945945945945945,
+          "macro_f1": 0.6478260861847275,
+          "accuracy": 0.6544054391563757,
+          "n_gt_spells": 322,
+          "n_pred_spells": 270,
+          "mean_spell_duration_s": 12.987111111111112,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5460674157303371,
+          "macro_f1": 0.791956868024632,
+          "accuracy": 0.7918273593466425,
+          "n_gt_spells": 295,
+          "n_pred_spells": 239,
+          "mean_spell_duration_s": 15.002677824267783,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3714285714285714,
+          "macro_f1": 0.6633691597438641,
+          "accuracy": 0.6691739450998185,
+          "n_gt_spells": 295,
+          "n_pred_spells": 237,
+          "mean_spell_duration_s": 13.32,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4557340385034666,
+      "external_mean_macroF1": 0.7202821638863968,
+      "submission_sha256": "ad9febed1f968b8bf9fc7290dd42b48ff410c5e370bbf35c012da3cab54ef83f",
+      "code_sha256": "db15af3dbf9f4660922caa185407e2ae31656df9dce405361ff229fa63f235fe",
+      "public": {
+        "selected": false,
+        "spellF1": 0.411764705882353,
+        "macroF1": 0.6997268215987223,
+        "possessions": 17
+      }
+    },
+    {
+      "method": "w10_boost_cascade",
+      "config": {
+        "name": "dead10",
+        "dead_strength": 1.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5470967741935484,
+          "macro_f1": 0.7695376203828284,
+          "accuracy": 0.7698071319550437,
+          "n_gt_spells": 322,
+          "n_pred_spells": 298,
+          "mean_spell_duration_s": 13.130604026845639,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.343402225755167,
+          "macro_f1": 0.6316898804115287,
+          "accuracy": 0.6367698071319551,
+          "n_gt_spells": 322,
+          "n_pred_spells": 307,
+          "mean_spell_duration_s": 11.133941368078176,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5647469458987784,
+          "macro_f1": 0.8046848147490525,
+          "accuracy": 0.8045031760435571,
+          "n_gt_spells": 295,
+          "n_pred_spells": 278,
+          "mean_spell_duration_s": 12.347482014388488,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.35438596491228064,
+          "macro_f1": 0.6598273969053438,
+          "accuracy": 0.6648210639745916,
+          "n_gt_spells": 295,
+          "n_pred_spells": 275,
+          "mean_spell_duration_s": 10.661090909090909,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4524079776899436,
+      "external_mean_macroF1": 0.7164349281121883,
+      "submission_sha256": "28709efb6f52a64536eaa96c4dda269924382d6ed53bfa0a5e5686256cc407b4",
+      "code_sha256": "0a5582631098e724c5ca6ceb5821473594fb0d3d80f06f4fbb13a7c6895c3d5e",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5241379310344827,
+        "macroF1": 0.7038517283679226,
+        "possessions": 12
+      }
+    },
+    {
+      "method": "w03_temporal_viterbi",
+      "config": {
+        "name": "context1",
+        "context_s": 1
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.549141965678627,
+          "macro_f1": 0.760202802680335,
+          "accuracy": 0.7606493686693493,
+          "n_gt_spells": 322,
+          "n_pred_spells": 319,
+          "mean_spell_duration_s": 12.950846394984326,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3459119496855346,
+          "macro_f1": 0.6444876534645769,
+          "accuracy": 0.6448799777993617,
+          "n_gt_spells": 322,
+          "n_pred_spells": 314,
+          "mean_spell_duration_s": 12.22968152866242,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5605633802816902,
+          "macro_f1": 0.791289651980799,
+          "accuracy": 0.791338191923775,
+          "n_gt_spells": 295,
+          "n_pred_spells": 273,
+          "mean_spell_duration_s": 13.257289377289379,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.35174825174825175,
+          "macro_f1": 0.6766565527940743,
+          "accuracy": 0.6805524047186933,
+          "n_gt_spells": 295,
+          "n_pred_spells": 277,
+          "mean_spell_duration_s": 11.75826714801444,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4518413868485259,
+      "external_mean_macroF1": 0.7181591652299464,
+      "submission_sha256": "77b5521028df3eb51d9a39c15365e8cc84fe487ca0d1b43f8acb298843800ebc",
+      "code_sha256": "500b10d7895608779ebc91ed6a7b0d5c15cc62f6bc59ba2ef58cbedcb5c3fc59",
+      "public": {
+        "selected": false,
+        "spellF1": 0.42857142857142855,
+        "macroF1": 0.6798478292946085,
+        "possessions": 25
+      }
+    },
+    {
+      "method": "w07_control_gate",
+      "config": {
+        "name": "radius40",
+        "radius": 4.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5354058721934369,
+          "macro_f1": 0.7960907389706846,
+          "accuracy": 0.7972318579159151,
+          "n_gt_spells": 322,
+          "n_pred_spells": 257,
+          "mean_spell_duration_s": 14.60591439688716,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3833017077798862,
+          "macro_f1": 0.7182334906180895,
+          "accuracy": 0.7224989593450811,
+          "n_gt_spells": 322,
+          "n_pred_spells": 205,
+          "mean_spell_duration_s": 15.104000000000001,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5152941176470589,
+          "macro_f1": 0.7915146040455077,
+          "accuracy": 0.7913594600725953,
+          "n_gt_spells": 295,
+          "n_pred_spells": 215,
+          "mean_spell_duration_s": 16.10604651162791,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3616204690831557,
+          "macro_f1": 0.6857277565596536,
+          "accuracy": 0.6883719941016334,
+          "n_gt_spells": 295,
+          "n_pred_spells": 174,
+          "mean_spell_duration_s": 17.156321839080462,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4489055416758844,
+      "external_mean_macroF1": 0.7478916475484838,
+      "submission_sha256": "5bccbd3a6be43675e7eece5b7ee1408b532aa38c217405ede568f23c7266c037",
+      "code_sha256": "62799926071402cb73f9449fd81182b9f0e9362b91087a562057615db001b95c",
+      "public": {
+        "selected": false,
+        "spellF1": 0.425,
+        "macroF1": 0.6921346796115158,
+        "possessions": 15
+      }
+    },
+    {
+      "method": "w07_control_gate",
+      "config": {
+        "name": "radius25",
+        "radius": 2.5
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5422718808193668,
+          "macro_f1": 0.8010287941103927,
+          "accuracy": 0.8019148050506452,
+          "n_gt_spells": 322,
+          "n_pred_spells": 215,
+          "mean_spell_duration_s": 17.46846511627907,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.38955823293172687,
+          "macro_f1": 0.7219082262443428,
+          "accuracy": 0.7259331205772166,
+          "n_gt_spells": 322,
+          "n_pred_spells": 176,
+          "mean_spell_duration_s": 17.5575,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5072765072765073,
+          "macro_f1": 0.7940178066776536,
+          "accuracy": 0.7938336547186933,
+          "n_gt_spells": 295,
+          "n_pred_spells": 186,
+          "mean_spell_duration_s": 18.64516129032258,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34805194805194806,
+          "macro_f1": 0.686789838978353,
+          "accuracy": 0.6892510775862069,
+          "n_gt_spells": 295,
+          "n_pred_spells": 167,
+          "mean_spell_duration_s": 17.90059880239521,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.44678964226988727,
+      "external_mean_macroF1": 0.7509361665026856,
+      "submission_sha256": "d9880e653359b51161f0d97a0096c4bf12fd3f35046f874a76725398677b1be7",
+      "code_sha256": "62799926071402cb73f9449fd81182b9f0e9362b91087a562057615db001b95c",
+      "public": {
+        "selected": false,
+        "spellF1": 0.48571428571428565,
+        "macroF1": 0.712438878988908,
+        "possessions": 11
+      }
+    },
+    {
+      "method": "w02_extra_viterbi",
+      "config": {
+        "name": "cost2",
+        "switch_cost": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5356223175965665,
+          "macro_f1": 0.797634589863021,
+          "accuracy": 0.7984528930206743,
+          "n_gt_spells": 322,
+          "n_pred_spells": 377,
+          "mean_spell_duration_s": 9.939522546419099,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3241481481481482,
+          "macro_f1": 0.6561063104207582,
+          "accuracy": 0.6684681559594838,
+          "n_gt_spells": 322,
+          "n_pred_spells": 353,
+          "mean_spell_duration_s": 8.68385269121813,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5519071310116086,
+          "macro_f1": 0.8036549298684088,
+          "accuracy": 0.8034893942831216,
+          "n_gt_spells": 295,
+          "n_pred_spells": 308,
+          "mean_spell_duration_s": 11.321428571428571,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.364685908319185,
+          "macro_f1": 0.6553305467783287,
+          "accuracy": 0.6636513157894737,
+          "n_gt_spells": 295,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 9.983673469387755,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4440908762688771,
+      "external_mean_macroF1": 0.7281815942326292,
+      "submission_sha256": "2681191fdae48e4c5fee7207ef94eef3bd741960b41accd997f33528be76f70c",
+      "code_sha256": "6c853ae3e8bca80d689f181e06fdbc80eeff1511d033af4138ebed225338489c",
+      "public": {
+        "selected": false,
+        "spellF1": 0.43809523809523804,
+        "macroF1": 0.6699959186846169,
+        "possessions": 25
+      }
+    },
+    {
+      "method": "w10_boost_cascade",
+      "config": {
+        "name": "dead20",
+        "dead_strength": 2.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5380804953560372,
+          "macro_f1": 0.764722581182507,
+          "accuracy": 0.7650686832246427,
+          "n_gt_spells": 322,
+          "n_pred_spells": 324,
+          "mean_spell_duration_s": 12.375061728395062,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3311178247734139,
+          "macro_f1": 0.6303288419122142,
+          "accuracy": 0.6342167337310948,
+          "n_gt_spells": 322,
+          "n_pred_spells": 340,
+          "mean_spell_duration_s": 10.496235294117646,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5591766723842195,
+          "macro_f1": 0.8034764256613812,
+          "accuracy": 0.8034326792196007,
+          "n_gt_spells": 295,
+          "n_pred_spells": 288,
+          "mean_spell_duration_s": 12.202083333333333,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34084033613445375,
+          "macro_f1": 0.6618641511955886,
+          "accuracy": 0.6662672980943739,
+          "n_gt_spells": 295,
+          "n_pred_spells": 300,
+          "mean_spell_duration_s": 10.194666666666667,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.44230383216203106,
+      "external_mean_macroF1": 0.7150979999879227,
+      "submission_sha256": "d2939462bc37cbd98c15e862314ef50172a07285776b491b345a033879dc3479",
+      "code_sha256": "0a5582631098e724c5ca6ceb5821473594fb0d3d80f06f4fbb13a7c6895c3d5e",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5466666666666666,
+        "macroF1": 0.6961408358101489,
+        "possessions": 13
+      }
+    },
+    {
+      "method": "w14_feature_ablation",
+      "config": {
+        "name": "no_position",
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          14,
+          15
+        ]
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.561609907120743,
+          "macro_f1": 0.7983993573071069,
+          "accuracy": 0.7987026502011932,
+          "n_gt_spells": 322,
+          "n_pred_spells": 324,
+          "mean_spell_duration_s": 11.957283950617285,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3608087091757387,
+          "macro_f1": 0.6637855897453118,
+          "accuracy": 0.6702095185236575,
+          "n_gt_spells": 322,
+          "n_pred_spells": 321,
+          "mean_spell_duration_s": 10.728847352024923,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5223776223776224,
+          "macro_f1": 0.7881503932265675,
+          "accuracy": 0.7879423774954628,
+          "n_gt_spells": 295,
+          "n_pred_spells": 277,
+          "mean_spell_duration_s": 13.170541516245487,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.32056239015817223,
+          "macro_f1": 0.6550677997966222,
+          "accuracy": 0.658915607985481,
+          "n_gt_spells": 295,
+          "n_pred_spells": 274,
+          "mean_spell_duration_s": 12.090656934306569,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4413396572080691,
+      "external_mean_macroF1": 0.726350785018902,
+      "submission_sha256": "55b3a68161f85b7feece551b80971e0e9f856ec87c00fe5a0f22931c6c57692c",
+      "code_sha256": "ae597d0b4e0a8a588e2dafca35b7c32c5a5b6d76c63c9e74d44167420f2bbd3d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.4108108108108107,
+        "macroF1": 0.6949661542160105,
+        "possessions": 20
+      }
+    },
+    {
+      "method": "w11_emission_ensemble",
+      "config": {
+        "name": "hist25",
+        "hist_weight": 0.25
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5432343234323433,
+          "macro_f1": 0.797075606405859,
+          "accuracy": 0.7980713195504371,
+          "n_gt_spells": 322,
+          "n_pred_spells": 284,
+          "mean_spell_duration_s": 13.368028169014085,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.33883161512027493,
+          "macro_f1": 0.6635558560907999,
+          "accuracy": 0.6730400999028722,
+          "n_gt_spells": 322,
+          "n_pred_spells": 260,
+          "mean_spell_duration_s": 12.54123076923077,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5277882797731569,
+          "macro_f1": 0.7940990260194525,
+          "accuracy": 0.7940179786751361,
+          "n_gt_spells": 295,
+          "n_pred_spells": 234,
+          "mean_spell_duration_s": 14.994017094017094,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34517374517374516,
+          "macro_f1": 0.6559709269624693,
+          "accuracy": 0.66275805353902,
+          "n_gt_spells": 295,
+          "n_pred_spells": 223,
+          "mean_spell_duration_s": 13.823318385650225,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.43875699087488007,
+      "external_mean_macroF1": 0.7276753538696452,
+      "submission_sha256": "bd24ebfc515b1a47477c261e85c7a042cb61206f09d9900c9a1f9a00ba029a11",
+      "code_sha256": "db15af3dbf9f4660922caa185407e2ae31656df9dce405361ff229fa63f235fe",
+      "public": {
+        "selected": false,
+        "spellF1": 0.4222222222222222,
+        "macroF1": 0.6865439649428646,
+        "possessions": 19
+      }
+    },
+    {
+      "method": "w05_hist_duration",
+      "config": {
+        "name": "dur20",
+        "min_seconds": 2.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5444270015698588,
+          "macro_f1": 0.7525699166613707,
+          "accuracy": 0.7528305813792147,
+          "n_gt_spells": 322,
+          "n_pred_spells": 315,
+          "mean_spell_duration_s": 13.053079365079366,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34340222575516693,
+          "macro_f1": 0.6264736796463962,
+          "accuracy": 0.6288608297488553,
+          "n_gt_spells": 322,
+          "n_pred_spells": 307,
+          "mean_spell_duration_s": 12.289641693811074,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5171428571428571,
+          "macro_f1": 0.785825324810368,
+          "accuracy": 0.7858297413793104,
+          "n_gt_spells": 295,
+          "n_pred_spells": 265,
+          "mean_spell_duration_s": 13.886188679245283,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3257443082311734,
+          "macro_f1": 0.6615237457441216,
+          "accuracy": 0.6641475725952813,
+          "n_gt_spells": 295,
+          "n_pred_spells": 276,
+          "mean_spell_duration_s": 11.917536231884057,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.432679098174764,
+      "external_mean_macroF1": 0.7065981667155641,
+      "submission_sha256": "c7cee0b3661bba8c613964b6ce78349a7347634a46e4a7c6c998c582981ccf30",
+      "code_sha256": "cd07019da0911803745bdaf13d9679d7b703bed673cb37aa1d34fc207cdaf9b1",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5257142857142857,
+        "macroF1": 0.7154491710921924,
+        "possessions": 18
+      }
+    },
+    {
+      "method": "w11_emission_ensemble",
+      "config": {
+        "name": "hist75",
+        "hist_weight": 0.75
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5371069182389937,
+          "macro_f1": 0.7621626305889094,
+          "accuracy": 0.7623976689329818,
+          "n_gt_spells": 322,
+          "n_pred_spells": 314,
+          "mean_spell_duration_s": 12.900382165605095,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34649265905383364,
+          "macro_f1": 0.6338197273148104,
+          "accuracy": 0.6376925211599833,
+          "n_gt_spells": 322,
+          "n_pred_spells": 291,
+          "mean_spell_duration_s": 12.682886597938145,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5132352941176469,
+          "macro_f1": 0.7927757159451302,
+          "accuracy": 0.792770247277677,
+          "n_gt_spells": 295,
+          "n_pred_spells": 249,
+          "mean_spell_duration_s": 14.623453815261044,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3336976320582878,
+          "macro_f1": 0.6631642128074731,
+          "accuracy": 0.6676568171506352,
+          "n_gt_spells": 295,
+          "n_pred_spells": 254,
+          "mean_spell_duration_s": 12.634015748031494,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4326331258671905,
+      "external_mean_macroF1": 0.7129805716640808,
+      "submission_sha256": "5ef3c26890b3f74b6f44f171bb07d65c1299f239bd320364bbea1b95e3e740c9",
+      "code_sha256": "db15af3dbf9f4660922caa185407e2ae31656df9dce405361ff229fa63f235fe",
+      "public": {
+        "selected": false,
+        "spellF1": 0.4685714285714287,
+        "macroF1": 0.6927223905071213,
+        "possessions": 18
+      }
+    },
+    {
+      "method": "w07_control_gate",
+      "config": {
+        "name": "radius15",
+        "radius": 1.5
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5231372549019608,
+          "macro_f1": 0.8058635899797549,
+          "accuracy": 0.8053767170806161,
+          "n_gt_spells": 322,
+          "n_pred_spells": 188,
+          "mean_spell_duration_s": 19.981489361702128,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3771428571428572,
+          "macro_f1": 0.7248227654295506,
+          "accuracy": 0.7283266268905231,
+          "n_gt_spells": 322,
+          "n_pred_spells": 168,
+          "mean_spell_duration_s": 18.36857142857143,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4812095032397409,
+          "macro_f1": 0.7923567223879312,
+          "accuracy": 0.7922456329401089,
+          "n_gt_spells": 295,
+          "n_pred_spells": 168,
+          "mean_spell_duration_s": 20.566666666666666,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3458980044345898,
+          "macro_f1": 0.6896880318037436,
+          "accuracy": 0.6919663112522686,
+          "n_gt_spells": 295,
+          "n_pred_spells": 156,
+          "mean_spell_duration_s": 19.147435897435898,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4318469049297872,
+      "external_mean_macroF1": 0.7531827774002451,
+      "submission_sha256": "460651f71e06c33755fb3d8d822dd9040d62dbdc6338a23d075a3a434be45fb4",
+      "code_sha256": "62799926071402cb73f9449fd81182b9f0e9362b91087a562057615db001b95c",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41538461538461535,
+        "macroF1": 0.70960219154701,
+        "possessions": 9
+      }
+    },
+    {
+      "method": "w01_hist_viterbi",
+      "config": {
+        "name": "cost12",
+        "switch_cost": 12
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5181019332161687,
+          "macro_f1": 0.7534375187659008,
+          "accuracy": 0.7536908561121132,
+          "n_gt_spells": 322,
+          "n_pred_spells": 247,
+          "mean_spell_duration_s": 16.662024291497975,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.33824057450628364,
+          "macro_f1": 0.6335135625640572,
+          "accuracy": 0.635881781601221,
+          "n_gt_spells": 322,
+          "n_pred_spells": 235,
+          "mean_spell_duration_s": 16.032,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5184313725490196,
+          "macro_f1": 0.7869209186211102,
+          "accuracy": 0.7870845621597096,
+          "n_gt_spells": 295,
+          "n_pred_spells": 215,
+          "mean_spell_duration_s": 17.293209302325582,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.33530571992110453,
+          "macro_f1": 0.6699276725439803,
+          "accuracy": 0.672264916061706,
+          "n_gt_spells": 295,
+          "n_pred_spells": 212,
+          "mean_spell_duration_s": 15.590754716981133,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4275199000481441,
+      "external_mean_macroF1": 0.7109499181237622,
+      "submission_sha256": "1a131e747a0d93307f85e525bedf0b69d2cefca8e59d5643ad5ad76876ec8bf6",
+      "code_sha256": "8bb5472a5e2ad99b2e6eb79b075526f0a0d31accb55c03ca802b36a59971cc10",
+      "public": {
+        "selected": false,
+        "spellF1": 0.2833333333333333,
+        "macroF1": 0.6739935498493709,
+        "possessions": 7
+      }
+    },
+    {
+      "method": "w05_hist_duration",
+      "config": {
+        "name": "dur10",
+        "min_seconds": 1.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5415765069551777,
+          "macro_f1": 0.7531048782350643,
+          "accuracy": 0.7533439711391703,
+          "n_gt_spells": 322,
+          "n_pred_spells": 325,
+          "mean_spell_duration_s": 12.6416,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34553990610328633,
+          "macro_f1": 0.6252467166772556,
+          "accuracy": 0.6276606077424726,
+          "n_gt_spells": 322,
+          "n_pred_spells": 317,
+          "mean_spell_duration_s": 11.886813880126184,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.492,
+          "macro_f1": 0.7835665638402971,
+          "accuracy": 0.7835824069872959,
+          "n_gt_spells": 295,
+          "n_pred_spells": 305,
+          "mean_spell_duration_s": 12.069639344262296,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.31768707482993197,
+          "macro_f1": 0.6600803172917044,
+          "accuracy": 0.662821857985481,
+          "n_gt_spells": 295,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 11.22948805460751,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.424200871972099,
+      "external_mean_macroF1": 0.7054996190110804,
+      "submission_sha256": "19ab3ffaa820264436fff5db64c4d2d8c9aea62c99d1f3ce48a4bab5e07906a9",
+      "code_sha256": "cd07019da0911803745bdaf13d9679d7b703bed673cb37aa1d34fc207cdaf9b1",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5257142857142857,
+        "macroF1": 0.7154491710921924,
+        "possessions": 18
+      }
+    },
+    {
+      "method": "w01_hist_viterbi",
+      "config": {
+        "name": "cost6",
+        "switch_cost": 6
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5368258859784284,
+          "macro_f1": 0.7524641221976206,
+          "accuracy": 0.7527057027889552,
+          "n_gt_spells": 322,
+          "n_pred_spells": 327,
+          "mean_spell_duration_s": 12.566727828746178,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34152410575427683,
+          "macro_f1": 0.624179739493491,
+          "accuracy": 0.6265713889274317,
+          "n_gt_spells": 322,
+          "n_pred_spells": 321,
+          "mean_spell_duration_s": 11.741183800623054,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4895522388059702,
+          "macro_f1": 0.7835344037126711,
+          "accuracy": 0.7835469600725953,
+          "n_gt_spells": 295,
+          "n_pred_spells": 308,
+          "mean_spell_duration_s": 11.952727272727273,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3167512690355331,
+          "macro_f1": 0.6600527121899077,
+          "accuracy": 0.6627864110707804,
+          "n_gt_spells": 295,
+          "n_pred_spells": 296,
+          "mean_spell_duration_s": 11.116351351351351,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.42116337489355216,
+      "external_mean_macroF1": 0.7050577443984226,
+      "submission_sha256": "3dc26fb8295a06cbc80ae245e4a00d3d20c6d9f79a3aa7594a360d4424f78a6c",
+      "code_sha256": "8bb5472a5e2ad99b2e6eb79b075526f0a0d31accb55c03ca802b36a59971cc10",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5257142857142857,
+        "macroF1": 0.7154491710921924,
+        "possessions": 18
+      }
+    },
+    {
+      "method": "w05_hist_duration",
+      "config": {
+        "name": "dur04",
+        "min_seconds": 0.4
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5368258859784284,
+          "macro_f1": 0.7524641221976206,
+          "accuracy": 0.7527057027889552,
+          "n_gt_spells": 322,
+          "n_pred_spells": 327,
+          "mean_spell_duration_s": 12.566727828746178,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.34152410575427683,
+          "macro_f1": 0.624179739493491,
+          "accuracy": 0.6265713889274317,
+          "n_gt_spells": 322,
+          "n_pred_spells": 321,
+          "mean_spell_duration_s": 11.741183800623054,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4895522388059702,
+          "macro_f1": 0.7835344037126711,
+          "accuracy": 0.7835469600725953,
+          "n_gt_spells": 295,
+          "n_pred_spells": 308,
+          "mean_spell_duration_s": 11.952727272727273,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3167512690355331,
+          "macro_f1": 0.6600527121899077,
+          "accuracy": 0.6627864110707804,
+          "n_gt_spells": 295,
+          "n_pred_spells": 296,
+          "mean_spell_duration_s": 11.116351351351351,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.42116337489355216,
+      "external_mean_macroF1": 0.7050577443984226,
+      "submission_sha256": "3dc26fb8295a06cbc80ae245e4a00d3d20c6d9f79a3aa7594a360d4424f78a6c",
+      "code_sha256": "cd07019da0911803745bdaf13d9679d7b703bed673cb37aa1d34fc207cdaf9b1",
+      "public": {
+        "selected": false,
+        "spellF1": 0.5257142857142857,
+        "macroF1": 0.7154491710921924,
+        "possessions": 18
+      }
+    },
+    {
+      "method": "w04_learned_markov",
+      "config": {
+        "name": "strength20",
+        "strength": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5053763440860216,
+          "macro_f1": 0.7854429813448003,
+          "accuracy": 0.7864992368530596,
+          "n_gt_spells": 322,
+          "n_pred_spells": 236,
+          "mean_spell_duration_s": 16.034406779661015,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30703125,
+          "macro_f1": 0.6584435405424794,
+          "accuracy": 0.6689191064243097,
+          "n_gt_spells": 322,
+          "n_pred_spells": 190,
+          "mean_spell_duration_s": 16.96484210526316,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4995951417004048,
+          "macro_f1": 0.7891677675363598,
+          "accuracy": 0.789126304446461,
+          "n_gt_spells": 295,
+          "n_pred_spells": 199,
+          "mean_spell_duration_s": 17.81206030150754,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.33749999999999997,
+          "macro_f1": 0.6573666432759443,
+          "accuracy": 0.6634457236842105,
+          "n_gt_spells": 295,
+          "n_pred_spells": 185,
+          "mean_spell_duration_s": 16.951351351351352,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.41237568394660656,
+      "external_mean_macroF1": 0.7226052331748959,
+      "submission_sha256": "68a32eb416fc383ab1d544570e28468a498600647820146ee1b84ef3c79d3a37",
+      "code_sha256": "ca0504cb8a8b3c896f9576bfcf9d1992c62876d5fc598662896e17aaa8a207d3",
+      "public": {
+        "selected": false,
+        "spellF1": 0.4121212121212121,
+        "macroF1": 0.6831556732088969,
+        "possessions": 16
+      }
+    },
+    {
+      "method": "w09_logistic_cascade",
+      "config": {
+        "name": "dead05",
+        "dead_strength": 0.5
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.4982817869415809,
+          "macro_f1": 0.7904151380974581,
+          "accuracy": 0.7926252254752324,
+          "n_gt_spells": 322,
+          "n_pred_spells": 260,
+          "mean_spell_duration_s": 13.14,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.31865671641791044,
+          "macro_f1": 0.619228328072558,
+          "accuracy": 0.6351602608574997,
+          "n_gt_spells": 322,
+          "n_pred_spells": 214,
+          "mean_spell_duration_s": 10.207476635514018,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5005847953216375,
+          "macro_f1": 0.7603367384769744,
+          "accuracy": 0.7605135549001815,
+          "n_gt_spells": 295,
+          "n_pred_spells": 218,
+          "mean_spell_duration_s": 14.336697247706422,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3298969072164949,
+          "macro_f1": 0.5864637682936016,
+          "accuracy": 0.598570780399274,
+          "n_gt_spells": 295,
+          "n_pred_spells": 190,
+          "mean_spell_duration_s": 11.968421052631578,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.41185505147440593,
+      "external_mean_macroF1": 0.689110993235148,
+      "submission_sha256": "be89237ba7c5622e646c6fce315a088a2bcea0e35e27b1475ca1aac95bf264ac",
+      "code_sha256": "35de6a83b23efa3f9099a4627dede1a30fd3369cb02d70744442e74168da97b9",
+      "public": {
+        "selected": false,
+        "spellF1": 0.37714285714285717,
+        "macroF1": 0.7136570875136728,
+        "possessions": 18
+      }
+    },
+    {
+      "method": "w09_logistic_cascade",
+      "config": {
+        "name": "dead10",
+        "dead_strength": 1.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.497029702970297,
+          "macro_f1": 0.7900696620505611,
+          "accuracy": 0.7923060913001249,
+          "n_gt_spells": 322,
+          "n_pred_spells": 284,
+          "mean_spell_duration_s": 12.440845070422535,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3122625215889464,
+          "macro_f1": 0.634357765607428,
+          "accuracy": 0.6512973497988067,
+          "n_gt_spells": 322,
+          "n_pred_spells": 257,
+          "mean_spell_duration_s": 10.013229571984436,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5163227016885553,
+          "macro_f1": 0.7740642742055419,
+          "accuracy": 0.7742386002722323,
+          "n_gt_spells": 295,
+          "n_pred_spells": 238,
+          "mean_spell_duration_s": 13.73109243697479,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.312810707456979,
+          "macro_f1": 0.6142149575240358,
+          "accuracy": 0.6256805807622504,
+          "n_gt_spells": 295,
+          "n_pred_spells": 228,
+          "mean_spell_duration_s": 11.566666666666668,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40960640842619445,
+      "external_mean_macroF1": 0.7031766648468917,
+      "submission_sha256": "8c1c1b3733cd7ee385be3592f63f1e84976998e2d8b6482fbddb4b7136b40517",
+      "code_sha256": "35de6a83b23efa3f9099a4627dede1a30fd3369cb02d70744442e74168da97b9",
+      "public": {
+        "selected": false,
+        "spellF1": 0.39999999999999997,
+        "macroF1": 0.7074192136572027,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w06_asymmetric_dwell",
+      "config": {
+        "name": "dead20",
+        "dead_seconds": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.488235294117647,
+          "macro_f1": 0.7822267813499068,
+          "accuracy": 0.7833980851949494,
+          "n_gt_spells": 322,
+          "n_pred_spells": 290,
+          "mean_spell_duration_s": 13.041793103448276,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3046956521739131,
+          "macro_f1": 0.6525882907449937,
+          "accuracy": 0.6636811433328709,
+          "n_gt_spells": 322,
+          "n_pred_spells": 253,
+          "mean_spell_duration_s": 12.54909090909091,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5012939001848429,
+          "macro_f1": 0.7857598408326677,
+          "accuracy": 0.7857304900181489,
+          "n_gt_spells": 295,
+          "n_pred_spells": 246,
+          "mean_spell_duration_s": 14.289430894308943,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.327831094049904,
+          "macro_f1": 0.6473551882635324,
+          "accuracy": 0.6547045145190563,
+          "n_gt_spells": 295,
+          "n_pred_spells": 226,
+          "mean_spell_duration_s": 13.507964601769912,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40551398513157677,
+      "external_mean_macroF1": 0.7169825252977752,
+      "submission_sha256": "b5c7199a688b4c6c1c053cdc3a16d54a504b755405c127c48efdba811b0f221c",
+      "code_sha256": "2d18498179e9edaf7676fd7f1a880ccbdc6c7238b9cff0803b8c7c3ac2023b43",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w06_asymmetric_dwell",
+      "config": {
+        "name": "dead04",
+        "dead_seconds": 0.4
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.48743882544861333,
+          "macro_f1": 0.7822861822751169,
+          "accuracy": 0.7834535867906203,
+          "n_gt_spells": 322,
+          "n_pred_spells": 291,
+          "mean_spell_duration_s": 12.994914089347079,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3046956521739131,
+          "macro_f1": 0.6526238136620478,
+          "accuracy": 0.6637158318301651,
+          "n_gt_spells": 322,
+          "n_pred_spells": 253,
+          "mean_spell_duration_s": 12.5498814229249,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5012939001848429,
+          "macro_f1": 0.7857598408326677,
+          "accuracy": 0.7857304900181489,
+          "n_gt_spells": 295,
+          "n_pred_spells": 246,
+          "mean_spell_duration_s": 14.289430894308943,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.327831094049904,
+          "macro_f1": 0.6473555579176437,
+          "accuracy": 0.6547045145190563,
+          "n_gt_spells": 295,
+          "n_pred_spells": 226,
+          "mean_spell_duration_s": 13.51061946902655,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40531486796431837,
+      "external_mean_macroF1": 0.7170063486718691,
+      "submission_sha256": "5a2579dcb7b081112e0f20b920859622e26dc7f396aed329ef9fa2dc7d4ec8ef",
+      "code_sha256": "2d18498179e9edaf7676fd7f1a880ccbdc6c7238b9cff0803b8c7c3ac2023b43",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w06_asymmetric_dwell",
+      "config": {
+        "name": "dead10",
+        "dead_seconds": 1
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.48743882544861333,
+          "macro_f1": 0.7822861822751169,
+          "accuracy": 0.7834535867906203,
+          "n_gt_spells": 322,
+          "n_pred_spells": 291,
+          "mean_spell_duration_s": 12.994914089347079,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3046956521739131,
+          "macro_f1": 0.6526238136620478,
+          "accuracy": 0.6637158318301651,
+          "n_gt_spells": 322,
+          "n_pred_spells": 253,
+          "mean_spell_duration_s": 12.5498814229249,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5012939001848429,
+          "macro_f1": 0.7857598408326677,
+          "accuracy": 0.7857304900181489,
+          "n_gt_spells": 295,
+          "n_pred_spells": 246,
+          "mean_spell_duration_s": 14.289430894308943,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.327831094049904,
+          "macro_f1": 0.6473555579176437,
+          "accuracy": 0.6547045145190563,
+          "n_gt_spells": 295,
+          "n_pred_spells": 226,
+          "mean_spell_duration_s": 13.51061946902655,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40531486796431837,
+      "external_mean_macroF1": 0.7170063486718691,
+      "submission_sha256": "5a2579dcb7b081112e0f20b920859622e26dc7f396aed329ef9fa2dc7d4ec8ef",
+      "code_sha256": "2d18498179e9edaf7676fd7f1a880ccbdc6c7238b9cff0803b8c7c3ac2023b43",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w15_dead_bridge",
+      "config": {
+        "name": "bridge20",
+        "max_dead_s": 2.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.4865040650406504,
+          "macro_f1": 0.7823691331132799,
+          "accuracy": 0.7835437768835855,
+          "n_gt_spells": 322,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 12.908259385665529,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30486111111111114,
+          "macro_f1": 0.6525861749795161,
+          "accuracy": 0.6637505203274594,
+          "n_gt_spells": 322,
+          "n_pred_spells": 254,
+          "mean_spell_duration_s": 12.503622047244093,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.49889298892988937,
+          "macro_f1": 0.7852156502018195,
+          "accuracy": 0.7851987862976406,
+          "n_gt_spells": 295,
+          "n_pred_spells": 247,
+          "mean_spell_duration_s": 14.23157894736842,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3256704980842912,
+          "macro_f1": 0.6468105563855345,
+          "accuracy": 0.654172810798548,
+          "n_gt_spells": 295,
+          "n_pred_spells": 227,
+          "mean_spell_duration_s": 13.451101321585902,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40398216579148555,
+      "external_mean_macroF1": 0.7167453786700375,
+      "submission_sha256": "801c50427e50c6337447a7fe6c779fb21b9b313d2ce2e9b086eda36bd7897c90",
+      "code_sha256": "099e5340ab10d98a8cd8a46ae542d7d87a42b25702cca7a9742ef4e5011ab7a5",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w15_dead_bridge",
+      "config": {
+        "name": "bridge10",
+        "max_dead_s": 1.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.4865040650406504,
+          "macro_f1": 0.7823691331132799,
+          "accuracy": 0.7835437768835855,
+          "n_gt_spells": 322,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 12.908259385665529,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30433275563258233,
+          "macro_f1": 0.6522665717426269,
+          "accuracy": 0.6634383238518108,
+          "n_gt_spells": 322,
+          "n_pred_spells": 255,
+          "mean_spell_duration_s": 12.447529411764705,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.49889298892988937,
+          "macro_f1": 0.7852156502018195,
+          "accuracy": 0.7851987862976406,
+          "n_gt_spells": 295,
+          "n_pred_spells": 247,
+          "mean_spell_duration_s": 14.23157894736842,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3256704980842912,
+          "macro_f1": 0.6468105563855345,
+          "accuracy": 0.654172810798548,
+          "n_gt_spells": 295,
+          "n_pred_spells": 227,
+          "mean_spell_duration_s": 13.451101321585902,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4038500769218534,
+      "external_mean_macroF1": 0.7166654778608152,
+      "submission_sha256": "801c50427e50c6337447a7fe6c779fb21b9b313d2ce2e9b086eda36bd7897c90",
+      "code_sha256": "099e5340ab10d98a8cd8a46ae542d7d87a42b25702cca7a9742ef4e5011ab7a5",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w15_dead_bridge",
+      "config": {
+        "name": "bridge04",
+        "max_dead_s": 0.4
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.48571428571428565,
+          "macro_f1": 0.7823547901805825,
+          "accuracy": 0.7835299014846677,
+          "n_gt_spells": 322,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 12.86095238095238,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30433275563258233,
+          "macro_f1": 0.6522665717426269,
+          "accuracy": 0.6634383238518108,
+          "n_gt_spells": 322,
+          "n_pred_spells": 255,
+          "mean_spell_duration_s": 12.447529411764705,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.49889298892988937,
+          "macro_f1": 0.7852156502018195,
+          "accuracy": 0.7851987862976406,
+          "n_gt_spells": 295,
+          "n_pred_spells": 247,
+          "mean_spell_duration_s": 14.23157894736842,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3256704980842912,
+          "macro_f1": 0.6468105563855345,
+          "accuracy": 0.654172810798548,
+          "n_gt_spells": 295,
+          "n_pred_spells": 227,
+          "mean_spell_duration_s": 13.451101321585902,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40365263209026214,
+      "external_mean_macroF1": 0.7166618921276409,
+      "submission_sha256": "801c50427e50c6337447a7fe6c779fb21b9b313d2ce2e9b086eda36bd7897c90",
+      "code_sha256": "099e5340ab10d98a8cd8a46ae542d7d87a42b25702cca7a9742ef4e5011ab7a5",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w16_occlusion_cost",
+      "config": {
+        "name": "factor1",
+        "factor": 1
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.48571428571428565,
+          "macro_f1": 0.7823547901805825,
+          "accuracy": 0.7835299014846677,
+          "n_gt_spells": 322,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 12.86095238095238,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30433275563258233,
+          "macro_f1": 0.6522665717426269,
+          "accuracy": 0.6634383238518108,
+          "n_gt_spells": 322,
+          "n_pred_spells": 255,
+          "mean_spell_duration_s": 12.447529411764705,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.49889298892988937,
+          "macro_f1": 0.7852156502018195,
+          "accuracy": 0.7851987862976406,
+          "n_gt_spells": 295,
+          "n_pred_spells": 247,
+          "mean_spell_duration_s": 14.23157894736842,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3256704980842912,
+          "macro_f1": 0.6468105563855345,
+          "accuracy": 0.654172810798548,
+          "n_gt_spells": 295,
+          "n_pred_spells": 227,
+          "mean_spell_duration_s": 13.451101321585902,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40365263209026214,
+      "external_mean_macroF1": 0.7166618921276409,
+      "submission_sha256": "801c50427e50c6337447a7fe6c779fb21b9b313d2ce2e9b086eda36bd7897c90",
+      "code_sha256": "4c7a1cfa2790ca658fd06959d286b300479ee9170c63befd2d1919c4fce50318",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w09_logistic_cascade",
+      "config": {
+        "name": "dead20",
+        "dead_strength": 2.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.4857600000000001,
+          "macro_f1": 0.7904210585937935,
+          "accuracy": 0.7925211599833495,
+          "n_gt_spells": 322,
+          "n_pred_spells": 303,
+          "mean_spell_duration_s": 11.977293729372937,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30394736842105263,
+          "macro_f1": 0.6424251460093683,
+          "accuracy": 0.6576661579020396,
+          "n_gt_spells": 322,
+          "n_pred_spells": 286,
+          "mean_spell_duration_s": 9.629090909090909,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5033210332103322,
+          "macro_f1": 0.7766197538326051,
+          "accuracy": 0.7768474931941923,
+          "n_gt_spells": 295,
+          "n_pred_spells": 247,
+          "mean_spell_duration_s": 13.564372469635627,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.31266055045871555,
+          "macro_f1": 0.6210949244109759,
+          "accuracy": 0.631968863430127,
+          "n_gt_spells": 295,
+          "n_pred_spells": 250,
+          "mean_spell_duration_s": 11.078399999999998,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4014222380225251,
+      "external_mean_macroF1": 0.7076402207116858,
+      "submission_sha256": "4828a9ab3531e40a0f80e14298a3e962fcc3b6538cef35b16a3f75b050e14ef3",
+      "code_sha256": "35de6a83b23efa3f9099a4627dede1a30fd3369cb02d70744442e74168da97b9",
+      "public": {
+        "selected": false,
+        "spellF1": 0.39999999999999997,
+        "macroF1": 0.6982484348084382,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w02_extra_viterbi",
+      "config": {
+        "name": "cost12",
+        "switch_cost": 12
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.49230769230769234,
+          "macro_f1": 0.7958131254001982,
+          "accuracy": 0.7966352157624532,
+          "n_gt_spells": 322,
+          "n_pred_spells": 172,
+          "mean_spell_duration_s": 21.759302325581395,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2928270042194093,
+          "macro_f1": 0.6747523057605473,
+          "accuracy": 0.685784653808797,
+          "n_gt_spells": 322,
+          "n_pred_spells": 152,
+          "mean_spell_duration_s": 20.66184210526316,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4697986577181208,
+          "macro_f1": 0.804793675282128,
+          "accuracy": 0.8048718239564429,
+          "n_gt_spells": 295,
+          "n_pred_spells": 152,
+          "mean_spell_duration_s": 23.155263157894737,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3475862068965518,
+          "macro_f1": 0.6813134119043837,
+          "accuracy": 0.6863515199637024,
+          "n_gt_spells": 295,
+          "n_pred_spells": 140,
+          "mean_spell_duration_s": 21.47285714285714,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40062989028544355,
+      "external_mean_macroF1": 0.7391681295868143,
+      "submission_sha256": "4d022bf066fcf7e18044767a007cd6bdff1d7ce175c9f149b5d4bc72481742c9",
+      "code_sha256": "6c853ae3e8bca80d689f181e06fdbc80eeff1511d033af4138ebed225338489c",
+      "public": {
+        "selected": false,
+        "spellF1": 0.33333333333333337,
+        "macroF1": 0.6628949378993699,
+        "possessions": 7
+      }
+    },
+    {
+      "method": "w16_occlusion_cost",
+      "config": {
+        "name": "factor4",
+        "factor": 4
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.488599348534202,
+          "macro_f1": 0.7828406976643159,
+          "accuracy": 0.7838559733592341,
+          "n_gt_spells": 322,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 12.960684931506849,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30489510489510485,
+          "macro_f1": 0.6497595042841647,
+          "accuracy": 0.6611488830303871,
+          "n_gt_spells": 322,
+          "n_pred_spells": 250,
+          "mean_spell_duration_s": 12.67648,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4955223880597015,
+          "macro_f1": 0.7847735720473823,
+          "accuracy": 0.7847450657894737,
+          "n_gt_spells": 295,
+          "n_pred_spells": 241,
+          "mean_spell_duration_s": 14.585892116182572,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.310597302504817,
+          "macro_f1": 0.6419675469433271,
+          "accuracy": 0.6499829854809437,
+          "n_gt_spells": 295,
+          "n_pred_spells": 224,
+          "mean_spell_duration_s": 13.591964285714287,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.39990353599845635,
+      "external_mean_macroF1": 0.7148353302347975,
+      "submission_sha256": "3dd8c8f35c504d0742d13fc7710b1c8ef27a6dea1573687afb6419b6e6ed5e77",
+      "code_sha256": "4c7a1cfa2790ca658fd06959d286b300479ee9170c63befd2d1919c4fce50318",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w16_occlusion_cost",
+      "config": {
+        "name": "factor2",
+        "factor": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.4879478827361564,
+          "macro_f1": 0.7828180337548152,
+          "accuracy": 0.783862911058693,
+          "n_gt_spells": 322,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 12.960684931506849,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3041958041958042,
+          "macro_f1": 0.6497774801792517,
+          "accuracy": 0.661155820729846,
+          "n_gt_spells": 322,
+          "n_pred_spells": 250,
+          "mean_spell_duration_s": 12.67648,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4955223880597015,
+          "macro_f1": 0.7847735720473823,
+          "accuracy": 0.7847450657894737,
+          "n_gt_spells": 295,
+          "n_pred_spells": 241,
+          "mean_spell_duration_s": 14.585892116182572,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.310597302504817,
+          "macro_f1": 0.6419675469433271,
+          "accuracy": 0.6499829854809437,
+          "n_gt_spells": 295,
+          "n_pred_spells": 224,
+          "mean_spell_duration_s": 13.591964285714287,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.3995658443741198,
+      "external_mean_macroF1": 0.7148341582311941,
+      "submission_sha256": "3dd8c8f35c504d0742d13fc7710b1c8ef27a6dea1573687afb6419b6e6ed5e77",
+      "code_sha256": "4c7a1cfa2790ca658fd06959d286b300479ee9170c63befd2d1919c4fce50318",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "w04_learned_markov",
+      "config": {
+        "name": "strength10",
+        "strength": 1
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.45852187028657615,
+          "macro_f1": 0.7792400007647354,
+          "accuracy": 0.7804356875260163,
+          "n_gt_spells": 322,
+          "n_pred_spells": 341,
+          "mean_spell_duration_s": 11.11824046920821,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30097087378640774,
+          "macro_f1": 0.651768523382196,
+          "accuracy": 0.6632579436658804,
+          "n_gt_spells": 322,
+          "n_pred_spells": 296,
+          "mean_spell_duration_s": 10.734864864864864,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.48566493955094997,
+          "macro_f1": 0.7827349573884641,
+          "accuracy": 0.7827529491833031,
+          "n_gt_spells": 295,
+          "n_pred_spells": 284,
+          "mean_spell_duration_s": 12.34718309859155,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3103825136612021,
+          "macro_f1": 0.6425447746889058,
+          "accuracy": 0.6503020077132486,
+          "n_gt_spells": 295,
+          "n_pred_spells": 254,
+          "mean_spell_duration_s": 12.014173228346456,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.38888504932128404,
+      "external_mean_macroF1": 0.7140720640560754,
+      "submission_sha256": "1008713b3c0ad8b495443403ae7912843f85e52c395e0ac99ac3178a34cbe38c",
+      "code_sha256": "ca0504cb8a8b3c896f9576bfcf9d1992c62876d5fc598662896e17aaa8a207d3",
+      "public": {
+        "selected": false,
+        "spellF1": 0.43999999999999995,
+        "macroF1": 0.6745371332607775,
+        "possessions": 23
+      }
+    },
+    {
+      "method": "w04_learned_markov",
+      "config": {
+        "name": "strength05",
+        "strength": 0.5
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.3778029445073613,
+          "macro_f1": 0.7753279487842107,
+          "accuracy": 0.7766962675176912,
+          "n_gt_spells": 322,
+          "n_pred_spells": 561,
+          "mean_spell_duration_s": 6.732477718360071,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2535714285714286,
+          "macro_f1": 0.6439529259381894,
+          "accuracy": 0.6559456084362425,
+          "n_gt_spells": 322,
+          "n_pred_spells": 462,
+          "mean_spell_duration_s": 6.8699567099567105,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.39786950732356857,
+          "macro_f1": 0.7766859987647715,
+          "accuracy": 0.7768829401088929,
+          "n_gt_spells": 295,
+          "n_pred_spells": 456,
+          "mean_spell_duration_s": 7.673245614035088,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.26162790697674415,
+          "macro_f1": 0.6312846246112662,
+          "accuracy": 0.6400294918330308,
+          "n_gt_spells": 295,
+          "n_pred_spells": 393,
+          "mean_spell_duration_s": 7.659033078880407,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.32271794684477567,
+      "external_mean_macroF1": 0.7068128745246095,
+      "submission_sha256": "7c79c044245d76954105a757d23811d9f44a3371f2da378cce2ed052a0a4f953",
+      "code_sha256": "ca0504cb8a8b3c896f9576bfcf9d1992c62876d5fc598662896e17aaa8a207d3",
+      "public": {
+        "selected": false,
+        "spellF1": 0.2596491228070176,
+        "macroF1": 0.660268261058773,
+        "possessions": 40
+      }
+    },
+    {
+      "method": "w12_confidence_gate",
+      "config": {
+        "name": "conf70",
+        "threshold": 0.7
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.35495251017639073,
+          "macro_f1": 0.7101480185677357,
+          "accuracy": 0.7103371721937005,
+          "n_gt_spells": 322,
+          "n_pred_spells": 415,
+          "mean_spell_duration_s": 10.01812048192771,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2758147512864494,
+          "macro_f1": 0.6342142017330716,
+          "accuracy": 0.6340294158457056,
+          "n_gt_spells": 322,
+          "n_pred_spells": 261,
+          "mean_spell_duration_s": 14.034176245210729,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.3875409836065574,
+          "macro_f1": 0.6924775012509826,
+          "accuracy": 0.6928595735027223,
+          "n_gt_spells": 295,
+          "n_pred_spells": 315,
+          "mean_spell_duration_s": 11.884571428571428,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.26401590457256463,
+          "macro_f1": 0.6128851670626106,
+          "accuracy": 0.6133946801270418,
+          "n_gt_spells": 295,
+          "n_pred_spells": 208,
+          "mean_spell_duration_s": 14.621346153846154,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.3205810374104905,
+      "external_mean_macroF1": 0.6624312221536002,
+      "submission_sha256": "b312c80a683d6fd3338418121e0cfbfd7a9c0d97d23ba505ced9c1ba5048003f",
+      "code_sha256": "fe6387ababf309c6850040153c81355da2494bc7f33f707ad09f4898012fde9d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.27555555555555555,
+        "macroF1": 0.475922636860747,
+        "possessions": 28
+      }
+    },
+    {
+      "method": "w01_hist_viterbi",
+      "config": {
+        "name": "cost2",
+        "switch_cost": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.34144329896907216,
+          "macro_f1": 0.7262973395806188,
+          "accuracy": 0.7261759400582767,
+          "n_gt_spells": 322,
+          "n_pred_spells": 648,
+          "mean_spell_duration_s": 6.349567901234568,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.24045197740112995,
+          "macro_f1": 0.6065482441978457,
+          "accuracy": 0.6093103926737894,
+          "n_gt_spells": 322,
+          "n_pred_spells": 563,
+          "mean_spell_duration_s": 6.659538188277087,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.34484304932735427,
+          "macro_f1": 0.7636109709765438,
+          "accuracy": 0.7635549001814882,
+          "n_gt_spells": 295,
+          "n_pred_spells": 597,
+          "mean_spell_duration_s": 6.200402010050251,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2190132370637786,
+          "macro_f1": 0.6399545036715568,
+          "accuracy": 0.6434040381125227,
+          "n_gt_spells": 295,
+          "n_pred_spells": 536,
+          "mean_spell_duration_s": 6.12544776119403,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.2864378906903337,
+      "external_mean_macroF1": 0.6841027646066413,
+      "submission_sha256": "008e401136542d35f6c2524096227dcb9054db2dc6b10a08ab8d05923ef43292",
+      "code_sha256": "8bb5472a5e2ad99b2e6eb79b075526f0a0d31accb55c03ca802b36a59971cc10",
+      "public": {
+        "selected": false,
+        "spellF1": 0.32799999999999996,
+        "macroF1": 0.6923025734088402,
+        "possessions": 33
+      }
+    },
+    {
+      "method": "w13_gaussian_markov",
+      "config": {
+        "name": "strength20",
+        "strength": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.3792592592592593,
+          "macro_f1": 0.7255367563719389,
+          "accuracy": 0.7320591091993894,
+          "n_gt_spells": 322,
+          "n_pred_spells": 218,
+          "mean_spell_duration_s": 16.227522935779817,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.24737793851717904,
+          "macro_f1": 0.5708837426416196,
+          "accuracy": 0.5968641598445955,
+          "n_gt_spells": 322,
+          "n_pred_spells": 231,
+          "mean_spell_duration_s": 9.458008658008659,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.23636363636363633,
+          "macro_f1": 0.562547559794521,
+          "accuracy": 0.6131252835753176,
+          "n_gt_spells": 295,
+          "n_pred_spells": 189,
+          "mean_spell_duration_s": 17.788359788359788,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.1700554528650647,
+          "macro_f1": 0.4325923219103211,
+          "accuracy": 0.48685628402903813,
+          "n_gt_spells": 295,
+          "n_pred_spells": 246,
+          "mean_spell_duration_s": 8.732520325203252,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.25826407175128485,
+      "external_mean_macroF1": 0.5728900951796001,
+      "submission_sha256": "c73588f342f9b1d0bf17a9d641aa1eccc0794d5da7d5b0cf8ee2c483aa8eda35",
+      "code_sha256": "3e3500f74cfa29fa2ca68a9dbc32b6792dc1086cce767ef81dc14d6c945eb7e8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.3466666666666666,
+        "macroF1": 0.6215054761994879,
+        "possessions": 13
+      }
+    },
+    {
+      "method": "w13_gaussian_markov",
+      "config": {
+        "name": "strength10",
+        "strength": 1
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.3752773375594295,
+          "macro_f1": 0.7247798673725586,
+          "accuracy": 0.7310531427778548,
+          "n_gt_spells": 322,
+          "n_pred_spells": 309,
+          "mean_spell_duration_s": 11.444660194174757,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2363636363636364,
+          "macro_f1": 0.5703488226002427,
+          "accuracy": 0.5966560288608298,
+          "n_gt_spells": 322,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 7.426530612244898,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.23643122676579925,
+          "macro_f1": 0.5745113123421479,
+          "accuracy": 0.6201508620689655,
+          "n_gt_spells": 295,
+          "n_pred_spells": 243,
+          "mean_spell_duration_s": 13.822222222222221,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.1636672325976231,
+          "macro_f1": 0.44053353714113125,
+          "accuracy": 0.49159908121597096,
+          "n_gt_spells": 295,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 7.295238095238095,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.2529348583216221,
+      "external_mean_macroF1": 0.5775433848640201,
+      "submission_sha256": "7d4b297cd1afc1994043d302ebce00cff37eb33ee2c29110c27484b64ee592be",
+      "code_sha256": "3e3500f74cfa29fa2ca68a9dbc32b6792dc1086cce767ef81dc14d6c945eb7e8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.28717948717948716,
+        "macroF1": 0.5792385403912499,
+        "possessions": 22
+      }
+    },
+    {
+      "method": "w12_confidence_gate",
+      "config": {
+        "name": "conf55",
+        "threshold": 0.55
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.2810102899906455,
+          "macro_f1": 0.7459646724167331,
+          "accuracy": 0.7469751630359373,
+          "n_gt_spells": 322,
+          "n_pred_spells": 747,
+          "mean_spell_duration_s": 5.161070950468541,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.20285714285714285,
+          "macro_f1": 0.6207909418912068,
+          "accuracy": 0.6280560566116276,
+          "n_gt_spells": 322,
+          "n_pred_spells": 518,
+          "mean_spell_duration_s": 6.173590733590734,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.29208472686733555,
+          "macro_f1": 0.734481634943406,
+          "accuracy": 0.7346231284029038,
+          "n_gt_spells": 295,
+          "n_pred_spells": 602,
+          "mean_spell_duration_s": 5.779069767441861,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.21964038727524202,
+          "macro_f1": 0.607607834060599,
+          "accuracy": 0.6146636796733213,
+          "n_gt_spells": 295,
+          "n_pred_spells": 428,
+          "mean_spell_duration_s": 6.752336448598132,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.24889813674759148,
+      "external_mean_macroF1": 0.6772112708279863,
+      "submission_sha256": "076f6282cd06db9975b513ae8371966ed85b53044ac121139a76dcd47c5ee772",
+      "code_sha256": "fe6387ababf309c6850040153c81355da2494bc7f33f707ad09f4898012fde9d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.18857142857142858,
+        "macroF1": 0.6737274507948022,
+        "possessions": 53
+      }
+    },
+    {
+      "method": "w13_gaussian_markov",
+      "config": {
+        "name": "strength05",
+        "strength": 0.5
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.3490909090909092,
+          "macro_f1": 0.7283541292618398,
+          "accuracy": 0.7341959206327182,
+          "n_gt_spells": 322,
+          "n_pred_spells": 448,
+          "mean_spell_duration_s": 7.889732142857143,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2118668596237337,
+          "macro_f1": 0.5678890991157091,
+          "accuracy": 0.5945816567226307,
+          "n_gt_spells": 322,
+          "n_pred_spells": 369,
+          "mean_spell_duration_s": 5.919783197831978,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.2320907617504052,
+          "macro_f1": 0.5789875617389266,
+          "accuracy": 0.6231071347549909,
+          "n_gt_spells": 295,
+          "n_pred_spells": 322,
+          "mean_spell_duration_s": 10.422981366459629,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.15950540958268933,
+          "macro_f1": 0.4448650951871893,
+          "accuracy": 0.4940590970961887,
+          "n_gt_spells": 295,
+          "n_pred_spells": 352,
+          "mean_spell_duration_s": 6.115340909090909,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.23813848501193435,
+      "external_mean_macroF1": 0.5800239713259162,
+      "submission_sha256": "3d480d5f1fb546b54b2b8e5ef3ea8f88bbb32c2152467b9e3aca6822383c0642",
+      "code_sha256": "3e3500f74cfa29fa2ca68a9dbc32b6792dc1086cce767ef81dc14d6c945eb7e8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.20408163265306123,
+        "macroF1": 0.5797640454995661,
+        "possessions": 32
+      }
+    },
+    {
+      "method": "w12_confidence_gate",
+      "config": {
+        "name": "conf85",
+        "threshold": 0.85
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.32559852670349915,
+          "macro_f1": 0.5193271598946443,
+          "accuracy": 0.5629596225891494,
+          "n_gt_spells": 322,
+          "n_pred_spells": 221,
+          "mean_spell_duration_s": 23.81049773755656,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.22403433476394854,
+          "macro_f1": 0.492086969082765,
+          "accuracy": 0.5157624531705286,
+          "n_gt_spells": 322,
+          "n_pred_spells": 144,
+          "mean_spell_duration_s": 34.46194444444444,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.22380952380952376,
+          "macro_f1": 0.6076640785340922,
+          "accuracy": 0.6152237409255898,
+          "n_gt_spells": 295,
+          "n_pred_spells": 125,
+          "mean_spell_duration_s": 34.283519999999996,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.14857142857142858,
+          "macro_f1": 0.579785618549573,
+          "accuracy": 0.58008166969147,
+          "n_gt_spells": 295,
+          "n_pred_spells": 90,
+          "mean_spell_duration_s": 43.136,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.23050345346210002,
+      "external_mean_macroF1": 0.5497159565152686,
+      "submission_sha256": "610728cb9c8b3ca16ea043ebe5ab551942ea5e7f1feae18c948c420a58b96ab0",
+      "code_sha256": "fe6387ababf309c6850040153c81355da2494bc7f33f707ad09f4898012fde9d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.27096774193548395,
+        "macroF1": 0.4878935639001994,
+        "possessions": 14
+      }
+    },
+    {
+      "method": "w14_feature_ablation",
+      "config": {
+        "name": "shape",
+        "columns": [
+          3,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.11024734982332156,
+          "macro_f1": 0.4745064404776967,
+          "accuracy": 0.47104898015817953,
+          "n_gt_spells": 322,
+          "n_pred_spells": 244,
+          "mean_spell_duration_s": 16.69950819672131,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.12504317789291883,
+          "macro_f1": 0.4566211777829892,
+          "accuracy": 0.46406271680310807,
+          "n_gt_spells": 322,
+          "n_pred_spells": 257,
+          "mean_spell_duration_s": 14.62988326848249,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.11710758377425043,
+          "macro_f1": 0.49778403789385656,
+          "accuracy": 0.5014462341197822,
+          "n_gt_spells": 295,
+          "n_pred_spells": 272,
+          "mean_spell_duration_s": 13.605294117647059,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.11289198606271775,
+          "macro_f1": 0.4698006588659953,
+          "accuracy": 0.4795045939201452,
+          "n_gt_spells": 295,
+          "n_pred_spells": 279,
+          "mean_spell_duration_s": 12.02021505376344,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.11632252438830215,
+      "external_mean_macroF1": 0.47467807875513446,
+      "submission_sha256": "32e5a612a8bf52ce94063622354744b9e0ef2e7ef2351c6faf1f1a5bf1cfa935",
+      "code_sha256": "ae597d0b4e0a8a588e2dafca35b7c32c5a5b6d76c63c9e74d44167420f2bbd3d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.11612903225806452,
+        "macroF1": 0.3491275848229474,
+        "possessions": 14
+      }
+    }
+  ]
+}
