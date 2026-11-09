@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp3_ctrl",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.5424588086185045,
+      "macro_f1": 0.9124545069599473,
+      "n_true": 511,
+      "n_pred": 278,
+      "count_error_ratio": -0.4559686888454012,
+      "temperature": 1.3762344622992153,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp3_ctrl",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.5675,
+      "macro_f1": 0.8938652680410385,
+      "n_true": 500,
+      "n_pred": 300,
+      "count_error_ratio": -0.4,
+      "temperature": 1.417808034875191,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp3_ctrl",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.5902439024390245,
+      "macro_f1": 0.9153413672578466,
+      "n_true": 402,
+      "n_pred": 254,
+      "count_error_ratio": -0.3681592039800995,
+      "temperature": 1.35918573971894,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp3_ctrl",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.5917222963951935,
+      "macro_f1": 0.9113487402256591,
+      "n_true": 456,
+      "n_pred": 293,
+      "count_error_ratio": -0.35745614035087714,
+      "temperature": 1.3922555199533162,
+      "lambda_team": 0.5,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp3_ctrl",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6099857346647648,
+      "macro_f1": 0.9190494631101456,
+      "n_true": 421,
+      "n_pred": 280,
+      "count_error_ratio": -0.334916864608076,
+      "temperature": 1.3929912123734438,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp3_ctrl",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6255072463768114,
+      "macro_f1": 0.9196181848766964,
+      "n_true": 401,
+      "n_pred": 289,
+      "count_error_ratio": -0.27930174563591026,
+      "temperature": 1.4109114674849046,
+      "lambda_team": 0.5,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp3_ctrl",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.559098228663446,
+      "macro_f1": 0.8963599764255146,
+      "n_true": 370,
+      "n_pred": 251,
+      "count_error_ratio": -0.32162162162162167,
+      "temperature": 1.3917405560937883,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.3762344622992153,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.417808034875191,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.35918573971894,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.3922555199533162,
+      "lambda_team": 0.5,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.3929912123734438,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.4109114674849046,
+      "lambda_team": 0.5,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.3917405560937883,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.4175071697733281,
+    "lambda_team": 0.5,
+    "lambda_dead": 1.0,
+    "gamma": 0.0
+  },
+  "source": "exp3_ctrl"
+}

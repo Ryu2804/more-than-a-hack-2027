@@ -1,0 +1,75 @@
+{
+  "exp1_setseq_shipped": {
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.34881056547712724,
+      "A": 0.2671899884802055,
+      "D": 0.3839994460426673
+    },
+    "possession_count": 437,
+    "dead_share": 0.3839994460426673,
+    "possessions_per_min": 4.126352631612079,
+    "mean_possession_s": 8.957070938215104,
+    "dead_share_minus_prior": -0.023000553957332692
+  },
+  "exp2_candidate_exp2_aug": {
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.323190038839963,
+      "A": 0.2692673284778134,
+      "D": 0.4075426326822236
+    },
+    "possession_count": 378,
+    "dead_share": 0.4075426326822236,
+    "possessions_per_min": 3.5692478140717756,
+    "mean_possession_s": 9.95936507936508,
+    "dead_share_minus_prior": 0.0005426326822236538,
+    "sha256": "a59128e642d94e2dee60398498ba7c6a5304fcb068cbe223fce38128aee80aed"
+  },
+  "exp3_ctrl_ens3__tactical": {
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.33149939883039464,
+      "A": 0.25107486607451984,
+      "D": 0.4174257350950855
+    },
+    "possession_count": 255,
+    "abstain_frames_graded": 0,
+    "dead_share": 0.4174257350950855,
+    "possessions_per_min": 2.407825906318261,
+    "mean_possession_s": 14.517019607843137,
+    "dead_share_minus_prior": 0.010425735095085542,
+    "possessions_per_min_minus_ryu": -0.562174093681739,
+    "mean_p_dead": 0.40162667632102966,
+    "decoder": {
+      "temperature": 1.199573805742188,
+      "lambda_team": 4.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.5
+    }
+  },
+  "exp3_ref_ens3__tactical": {
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.34918826365851047,
+      "A": 0.24040489245044286,
+      "D": 0.41040684389104665
+    },
+    "possession_count": 259,
+    "abstain_frames_graded": 0,
+    "dead_share": 0.41040684389104665,
+    "possessions_per_min": 2.445595724456587,
+    "mean_possession_s": 14.465019305019304,
+    "dead_share_minus_prior": 0.0034068438910466736,
+    "possessions_per_min_minus_ryu": -0.5244042755434131,
+    "mean_p_dead": 0.39753615856170654,
+    "decoder": {
+      "temperature": 1.169894951392387,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    }
+  },
+  "published_dead_share_prior": 0.407,
+  "ryu_possessions_per_min": 2.97
+}

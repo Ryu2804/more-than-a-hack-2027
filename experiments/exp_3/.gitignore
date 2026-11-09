@@ -1,0 +1,10 @@
+cache/
+predictions/
+kernels/
+*.error.txt
+__pycache__/
+.ruff_cache/
+# raw IDSSE event / match-information XML (CC BY 4.0, re-downloadable; see DATA_SOURCES.md)
+external/idsse_events/*.xml
+external/idsse_meta/*.xml
+external/figshare_files.json

@@ -1,0 +1,95 @@
+{
+  "oracles": [
+    {
+      "match": "J03WMX",
+      "ceiling_5fps": 0.9709198813056379,
+      "model": 0.6206896551724138,
+      "oracle_dead_alive": 0.6462253193960512,
+      "oracle_team_where_both_alive": 0.9200398803589233
+    },
+    {
+      "match": "J03WN1",
+      "ceiling_5fps": 0.9659617321248742,
+      "model": 0.6387243735763098,
+      "oracle_dead_alive": 0.662819089900111,
+      "oracle_team_where_both_alive": 0.9176946410515672
+    },
+    {
+      "match": "J03WOH",
+      "ceiling_5fps": 0.9795,
+      "model": 0.6683333333333332,
+      "oracle_dead_alive": 0.6852459016393443,
+      "oracle_team_where_both_alive": 0.9378109452736318
+    },
+    {
+      "match": "J03WOY",
+      "ceiling_5fps": 0.9815384615384616,
+      "model": 0.695754716981132,
+      "oracle_dead_alive": 0.7125581395348837,
+      "oracle_team_where_both_alive": 0.9431072210065645
+    },
+    {
+      "match": "J03WPY",
+      "ceiling_5fps": 0.9638323353293414,
+      "model": 0.6842242503259452,
+      "oracle_dead_alive": 0.7082051282051283,
+      "oracle_team_where_both_alive": 0.9230035756853396
+    },
+    {
+      "match": "J03WQQ",
+      "ceiling_5fps": 0.984,
+      "model": 0.6846054333764554,
+      "oracle_dead_alive": 0.7100257069408741,
+      "oracle_team_where_both_alive": 0.9334969325153375
+    },
+    {
+      "match": "J03WR9",
+      "ceiling_5fps": 0.9668478260869564,
+      "model": 0.604191616766467,
+      "oracle_dead_alive": 0.6167893961708394,
+      "oracle_team_where_both_alive": 0.9125333333333334
+    }
+  ],
+  "oracle_means": {
+    "ceiling_5fps": 0.973228605197896,
+    "model": 0.6566461970760081,
+    "oracle_dead_alive": 0.6774098116838901,
+    "oracle_team_where_both_alive": 0.926812361317814
+  },
+  "misses": {
+    "true_possessions": 3061,
+    "missed_iou05": 1210,
+    "missed_share_under_5s": 0.8661157024793389,
+    "share_of_possessions_under_2s": 0.3002286834367854,
+    "recall_under_2s_decoded": 0.2840043525571273,
+    "recall_under_2s_argmax": 0.32100108813928185,
+    "missed_with_ball_visible_ge_80pct": 0.4214876033057851,
+    "mean_p_true_team_under_2s_ball_visible": 0.6030348413788441
+  },
+  "exp2_aug_vs_label_sets": [
+    {
+      "label_set": "provider",
+      "spell_f1": 0.6566461970760081,
+      "macro_f1": 0.916617487027346,
+      "count_error_ratio": -0.19893922892442215
+    },
+    {
+      "label_set": "track_1",
+      "spell_f1": 0.692056559502951,
+      "macro_f1": 0.917183271949886,
+      "count_error_ratio": -0.047015324259616915
+    },
+    {
+      "label_set": "track_2",
+      "spell_f1": 0.6797283351002805,
+      "macro_f1": 0.9162111605333231,
+      "count_error_ratio": 0.20617194128258418
+    },
+    {
+      "label_set": "track_3",
+      "spell_f1": 0.6371627909857117,
+      "macro_f1": 0.9116648104819877,
+      "count_error_ratio": 0.4675384264196776
+    }
+  ]
+}

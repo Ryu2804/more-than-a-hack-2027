@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp1_ref",
+      "view": "target_like",
+      "label_set": "track_3",
+      "spell_f1": 0.7507430997876858,
+      "macro_f1": 0.9198062223980852,
+      "n_true": 241,
+      "n_pred": 230,
+      "count_error_ratio": -0.0456431535269709,
+      "temperature": 1.3311885072893026,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp1_ref",
+      "view": "target_like",
+      "label_set": "track_3",
+      "spell_f1": 0.7447731755424063,
+      "macro_f1": 0.9076671492537143,
+      "n_true": 266,
+      "n_pred": 241,
+      "count_error_ratio": -0.09398496240601506,
+      "temperature": 1.3692273893056865,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp1_ref",
+      "view": "target_like",
+      "label_set": "track_3",
+      "spell_f1": 0.7445727482678983,
+      "macro_f1": 0.9160832381744438,
+      "n_true": 232,
+      "n_pred": 201,
+      "count_error_ratio": -0.13362068965517238,
+      "temperature": 1.3299274006488342,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp1_ref",
+      "view": "target_like",
+      "label_set": "track_3",
+      "spell_f1": 0.7289256198347107,
+      "macro_f1": 0.9024154478810419,
+      "n_true": 248,
+      "n_pred": 236,
+      "count_error_ratio": -0.048387096774193505,
+      "temperature": 1.3242973359640726,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp1_ref",
+      "view": "target_like",
+      "label_set": "track_3",
+      "spell_f1": 0.7640256959314775,
+      "macro_f1": 0.9228897265480307,
+      "n_true": 231,
+      "n_pred": 236,
+      "count_error_ratio": 0.02164502164502169,
+      "temperature": 1.336618057698381,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp1_ref",
+      "view": "target_like",
+      "label_set": "track_3",
+      "spell_f1": 0.7556503198294243,
+      "macro_f1": 0.9199052020850266,
+      "n_true": 220,
+      "n_pred": 249,
+      "count_error_ratio": 0.13181818181818183,
+      "temperature": 1.3486251821967428,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp1_ref",
+      "view": "target_like",
+      "label_set": "track_3",
+      "spell_f1": 0.7219277108433735,
+      "macro_f1": 0.9064665047621158,
+      "n_true": 222,
+      "n_pred": 193,
+      "count_error_ratio": -0.13063063063063063,
+      "temperature": 1.3408568652618782,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.3311885072893026,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.3692273893056865,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    "J03WOH": {
+      "temperature": 1.3299274006488342,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.3242973359640726,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.336618057698381,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.3486251821967428,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.3408568652618782,
+      "lambda_team": 16.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.360084074173072,
+    "lambda_team": 16.0,
+    "lambda_dead": 8.0,
+    "gamma": 0.0
+  },
+  "source": "exp1_ref"
+}

@@ -1,0 +1,187 @@
+{
+  "prereg_sha256": "cff444fff0106e9c11600ae757fcdbc9002bc300b4ece5fd0353c51427d9ffda",
+  "frozen_at_utc": "2026-11-08T16:53:50+00:00",
+  "judge": {
+    "judge/experiment_data.py": "e2b4034baa721ec7f0faf820626e6bb164325b55bf44595607612ab4c2cff7f1",
+    "judge/experiment_model.py": "243dfe93ba4aa051d271bd59f21091c972abdf02baae58ac37423139b5333fbd",
+    "official_metric": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+  },
+  "code_sha256_at_freeze": {
+    "exp3_labels.py": "b22bd73418653168842badc2987bfac629b5e7b631c2d664be35b8c0544f5743",
+    "exp3_coverage.py": "361102c696c0a7297bb6ff37955c1a4de534c61ddf214d048d2a73ff1b5a69b6",
+    "exp3_fusion.py": "5c4867caf089ccbc5f61f3e5a6cee49488bffbfbad125fd2d49f1448953cd8e5",
+    "exp3_protocol.py": "d37f04021e9e26a265a6314e9f3078229cb7a6f67ce9d88acff6e4aa5cda1ca1",
+    "judge/exp0_fusion_candidate.py": "f5f165408e21cf9303f046a0e0d90485f84e6e175f0ee1d42c6ed2e7964eeeef"
+  },
+  "constants": {
+    "labels": {
+      "tau_hold_s": 2.0,
+      "event_margin_s": 0.5,
+      "track_taus_s": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "events_used": false,
+      "play_evaluations": [
+        "successfullyCompleted",
+        "successful"
+      ],
+      "claim_types": [
+        "InterceptedBall",
+        "BallClaimed",
+        "BallHeld"
+      ],
+      "tackle_results": [
+        "ballClaimed",
+        "ballControlRetained",
+        "dribbledAround"
+      ],
+      "snap": {
+        "before": 125,
+        "after": 50,
+        "max_distance_m": 2.0
+      },
+      "sync_acceptance": {
+        "median_abs_max": 5,
+        "p90_abs_max": 12
+      },
+      "label_sets": [
+        "ctrl",
+        "provider",
+        "track_1",
+        "track_2",
+        "track_3"
+      ],
+      "eval_label": "ctrl"
+    },
+    "train_config": {
+      "window": 300,
+      "batch": 32,
+      "epochs": 14,
+      "coverage": 2.0,
+      "lr": 0.002,
+      "weight_decay": 0.0001,
+      "width": 64,
+      "hidden": 64,
+      "boundary_weight": 0.5,
+      "boundary_pos_weight": 3.0,
+      "mirror": true,
+      "seed": 20261108
+    },
+    "recipe": [
+      [
+        0,
+        "original"
+      ],
+      [
+        1,
+        "target_aug"
+      ],
+      [
+        2,
+        "target_aug"
+      ]
+    ],
+    "model_arms": {
+      "exp3_ctrl": {
+        "seed": 20261108
+      },
+      "exp3_ctrl_s1": {
+        "seed": 20261109
+      },
+      "exp3_ctrl_s2": {
+        "seed": 20261110
+      }
+    },
+    "variants": {
+      "exp3_ctrl_ens3": [
+        "ctrl_ens3"
+      ],
+      "exp3_ref_ens3": [
+        "ref_ens3"
+      ],
+      "exp3_ctrl": [
+        "exp3_ctrl"
+      ],
+      "exp3_ctrl_s1": [
+        "exp3_ctrl_s1"
+      ],
+      "exp3_ctrl_s2": [
+        "exp3_ctrl_s2"
+      ],
+      "exp2_aug": [
+        "exp2_aug"
+      ],
+      "exp1_ref": [
+        "exp1_ref"
+      ]
+    },
+    "ensembles": {
+      "ref_ens3": [
+        "exp2_aug",
+        "exp2_aug_s1",
+        "exp2_aug_s2"
+      ],
+      "ctrl_ens3": [
+        "exp3_ctrl",
+        "exp3_ctrl_s1",
+        "exp3_ctrl_s2"
+      ]
+    },
+    "exp2_cached_fingerprints": {
+      "exp1_ref": "3f61fc0f3305",
+      "exp2_aug": "5cea8203869e",
+      "exp2_aug_s1": "01776e3c0b77",
+      "exp2_aug_s2": "fb137265b072"
+    },
+    "bd_lambdas": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "bd_gammas": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "coverage": {
+      "reveal_share": 0.12,
+      "seed_offset": 8000000
+    },
+    "fusion": {
+      "replay_speed_mps": 40.0,
+      "pin": {
+        "source": "exp_0/experiment_target.py",
+        "function": "fusion_candidate",
+        "source_file_sha256_at_pin": "5cc9b02aaa33e515769a5d6d0124127dcc01ffa68e1b6fb2d39c9ce3835b086b",
+        "function_text_sha256": "fee665228f52c3aa8ee3c15f3a79ab81777958cfacc4c23244db49036d8befa3",
+        "snapshot_file_sha256": "f5f165408e21cf9303f046a0e0d90485f84e6e175f0ee1d42c6ed2e7964eeeef",
+        "pinned_on": "2026-11-08"
+      }
+    },
+    "h1": {
+      "comparison": [
+        "exp3_ctrl_ens3",
+        "exp3_ref_ens3"
+      ],
+      "view": "target_like",
+      "label": "ctrl",
+      "rule": "paired 95% bootstrap CI lower bound > 0"
+    },
+    "bootstrap": {
+      "draws": 1000,
+      "seed": 20261108,
+      "interval": 0.95
+    },
+    "views": [
+      "original",
+      "target_like"
+    ],
+    "primary_view": "target_like"
+  }
+}

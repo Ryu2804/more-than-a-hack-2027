@@ -1,0 +1,31 @@
+{
+  "halves": [
+    {
+      "half": 1,
+      "hypothesized_offset_frames": 4014,
+      "overlap_frames": 38449,
+      "median_distance_m": 0.7894208431243896,
+      "p90_distance_m": 6.711266994476318,
+      "accepted": false,
+      "recovered_frames": 0
+    },
+    {
+      "half": 2,
+      "hypothesized_offset_frames": 26920,
+      "overlap_frames": 35752,
+      "median_distance_m": 0.8359662890434265,
+      "p90_distance_m": 6.313859939575195,
+      "accepted": false,
+      "recovered_frames": 0
+    }
+  ],
+  "accepted_both_halves": false,
+  "use_fused_input": false,
+  "recovered_before_guard": 0,
+  "kept_after_guard": 0,
+  "removed_by_replay_guard": 0,
+  "missing_ball_frames_graded": 64643,
+  "recovered_share_of_missing_graded": 0.0,
+  "ball_coverage_graded_tactical": 0.593074274347369,
+  "ball_coverage_graded_fused": 0.593074274347369
+}

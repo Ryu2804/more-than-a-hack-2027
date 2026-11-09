@@ -1,0 +1,8 @@
+{
+  "source": "exp_0/experiment_target.py",
+  "function": "fusion_candidate",
+  "source_file_sha256_at_pin": "5cc9b02aaa33e515769a5d6d0124127dcc01ffa68e1b6fb2d39c9ce3835b086b",
+  "function_text_sha256": "fee665228f52c3aa8ee3c15f3a79ab81777958cfacc4c23244db49036d8befa3",
+  "snapshot_file_sha256": "f5f165408e21cf9303f046a0e0d90485f84e6e175f0ee1d42c6ed2e7964eeeef",
+  "pinned_on": "2026-11-08"
+}

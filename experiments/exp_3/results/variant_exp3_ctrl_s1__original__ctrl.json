@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp3_ctrl_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7289520426287744,
+      "macro_f1": 0.9286843793268299,
+      "n_true": 298,
+      "n_pred": 265,
+      "count_error_ratio": -0.11073825503355705,
+      "temperature": 1.331185133457626,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp3_ctrl_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7265993265993266,
+      "macro_f1": 0.9098799617858707,
+      "n_true": 315,
+      "n_pred": 279,
+      "count_error_ratio": -0.11428571428571432,
+      "temperature": 1.390719848955547,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp3_ctrl_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7172962226640159,
+      "macro_f1": 0.9200828323529304,
+      "n_true": 279,
+      "n_pred": 224,
+      "count_error_ratio": -0.19713261648745517,
+      "temperature": 1.3564531504983748,
+      "lambda_team": 4.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp3_ctrl_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7098786828422876,
+      "macro_f1": 0.916325742332606,
+      "n_true": 302,
+      "n_pred": 275,
+      "count_error_ratio": -0.08940397350993379,
+      "temperature": 1.3551144262699732,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp3_ctrl_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7672654690618762,
+      "macro_f1": 0.9299277273891261,
+      "n_true": 272,
+      "n_pred": 229,
+      "count_error_ratio": -0.15808823529411764,
+      "temperature": 1.3562641565345728,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp3_ctrl_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7232974910394266,
+      "macro_f1": 0.9172849676412991,
+      "n_true": 284,
+      "n_pred": 274,
+      "count_error_ratio": -0.035211267605633756,
+      "temperature": 1.3480538623797518,
+      "lambda_team": 2.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp3_ctrl_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.6804878048780487,
+      "macro_f1": 0.9069052271287891,
+      "n_true": 267,
+      "n_pred": 225,
+      "count_error_ratio": -0.1573033707865169,
+      "temperature": 1.3299534882936839,
+      "lambda_team": 2.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.5
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.331185133457626,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    "J03WN1": {
+      "temperature": 1.390719848955547,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.3564531504983748,
+      "lambda_team": 4.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.3551144262699732,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    "J03WPY": {
+      "temperature": 1.3562641565345728,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.3480538623797518,
+      "lambda_team": 2.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.3299534882936839,
+      "lambda_team": 2.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.5
+    }
+  },
+  "final_config": {
+    "temperature": 1.3566857982474236,
+    "lambda_team": 4.0,
+    "lambda_dead": 2.0,
+    "gamma": 0.5
+  },
+  "source": "exp3_ctrl_s1"
+}

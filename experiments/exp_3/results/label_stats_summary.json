@@ -1,0 +1,52 @@
+[
+  {
+    "label_set": "ctrl",
+    "possessions": 288.14285714285717,
+    "possessions_per_min": 3.019925280901237,
+    "mean_possession_s": 11.028845641716908,
+    "frames_changed_share": 0.01707057109434114,
+    "agreement_with_ctrl": 1.0,
+    "dead_share": 0.44881922032880117,
+    "possessions_total": 2017
+  },
+  {
+    "label_set": "provider",
+    "possessions": 437.2857142857143,
+    "possessions_per_min": 4.581112162047712,
+    "mean_possession_s": 7.340044163472406,
+    "frames_changed_share": 0.0,
+    "agreement_with_ctrl": 0.9829294289056588,
+    "dead_share": 0.44881922032880117,
+    "possessions_total": 3061
+  },
+  {
+    "label_set": "track_1",
+    "possessions": 365.2857142857143,
+    "possessions_per_min": 3.8280581822737054,
+    "mean_possession_s": 8.731656479389056,
+    "frames_changed_share": 0.004522485945840372,
+    "agreement_with_ctrl": 0.9862878786346556,
+    "dead_share": 0.44881922032880117,
+    "possessions_total": 2557
+  },
+  {
+    "label_set": "track_2",
+    "possessions": 288.14285714285717,
+    "possessions_per_min": 3.019925280901237,
+    "mean_possession_s": 11.028845641716908,
+    "frames_changed_share": 0.01707057109434114,
+    "agreement_with_ctrl": 1.0,
+    "dead_share": 0.44881922032880117,
+    "possessions_total": 2017
+  },
+  {
+    "label_set": "track_3",
+    "possessions": 237.14285714285714,
+    "possessions_per_min": 2.485374736817518,
+    "mean_possession_s": 13.424927913375006,
+    "frames_changed_share": 0.031104394279637078,
+    "agreement_with_ctrl": 0.9827759458437654,
+    "dead_share": 0.44881922032880117,
+    "possessions_total": 1660
+  }
+]

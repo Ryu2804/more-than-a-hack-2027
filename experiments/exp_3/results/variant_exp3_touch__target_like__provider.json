@@ -1,0 +1,159 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.5335031847133758,
+      "macro_f1": 0.9092517312598535,
+      "n_true": 511,
+      "n_pred": 274,
+      "count_error_ratio": -0.46379647749510766,
+      "temperature": 1.275565447715526,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.5585000000000001,
+      "macro_f1": 0.8914303201000461,
+      "n_true": 500,
+      "n_pred": 300,
+      "count_error_ratio": -0.4,
+      "temperature": 1.3348787873367878,
+      "lambda_team": 0.5,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6027397260273973,
+      "macro_f1": 0.9133819155875345,
+      "n_true": 402,
+      "n_pred": 255,
+      "count_error_ratio": -0.3656716417910447,
+      "temperature": 1.2858994905639398,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6210663198959688,
+      "macro_f1": 0.9142632443858684,
+      "n_true": 456,
+      "n_pred": 313,
+      "count_error_ratio": -0.3135964912280702,
+      "temperature": 1.298087262702608,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6214492753623189,
+      "macro_f1": 0.919642022975868,
+      "n_true": 421,
+      "n_pred": 269,
+      "count_error_ratio": -0.36104513064133015,
+      "temperature": 1.295765422434427,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6795389048991354,
+      "macro_f1": 0.9293042438093558,
+      "n_true": 401,
+      "n_pred": 293,
+      "count_error_ratio": -0.26932668329177056,
+      "temperature": 1.3027889159653825,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.5617977528089887,
+      "macro_f1": 0.9005170413162924,
+      "n_true": 370,
+      "n_pred": 253,
+      "count_error_ratio": -0.3162162162162162,
+      "temperature": 1.2968579367724178,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.275565447715526,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.3348787873367878,
+      "lambda_team": 0.5,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.2858994905639398,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.298087262702608,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.295765422434427,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.3027889159653825,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.2968579367724178,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.3276001035616216,
+    "lambda_team": 0.5,
+    "lambda_dead": 1.0,
+    "gamma": 0.0
+  }
+}

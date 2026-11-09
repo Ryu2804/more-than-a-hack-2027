@@ -1,0 +1,93 @@
+[
+  {
+    "match": "J03WMX",
+    "ctrl_dead_untouched": true,
+    "ctrl_outside_halves_untouched": true,
+    "track_1_dead_untouched": true,
+    "track_1_outside_halves_untouched": true,
+    "track_2_dead_untouched": true,
+    "track_2_outside_halves_untouched": true,
+    "track_3_dead_untouched": true,
+    "track_3_outside_halves_untouched": true,
+    "ctrl_equals_track_2": true,
+    "degraded_labels_equal_clean": true
+  },
+  {
+    "match": "J03WN1",
+    "ctrl_dead_untouched": true,
+    "ctrl_outside_halves_untouched": true,
+    "track_1_dead_untouched": true,
+    "track_1_outside_halves_untouched": true,
+    "track_2_dead_untouched": true,
+    "track_2_outside_halves_untouched": true,
+    "track_3_dead_untouched": true,
+    "track_3_outside_halves_untouched": true,
+    "ctrl_equals_track_2": true,
+    "degraded_labels_equal_clean": true
+  },
+  {
+    "match": "J03WOH",
+    "ctrl_dead_untouched": true,
+    "ctrl_outside_halves_untouched": true,
+    "track_1_dead_untouched": true,
+    "track_1_outside_halves_untouched": true,
+    "track_2_dead_untouched": true,
+    "track_2_outside_halves_untouched": true,
+    "track_3_dead_untouched": true,
+    "track_3_outside_halves_untouched": true,
+    "ctrl_equals_track_2": true,
+    "degraded_labels_equal_clean": true
+  },
+  {
+    "match": "J03WOY",
+    "ctrl_dead_untouched": true,
+    "ctrl_outside_halves_untouched": true,
+    "track_1_dead_untouched": true,
+    "track_1_outside_halves_untouched": true,
+    "track_2_dead_untouched": true,
+    "track_2_outside_halves_untouched": true,
+    "track_3_dead_untouched": true,
+    "track_3_outside_halves_untouched": true,
+    "ctrl_equals_track_2": true,
+    "degraded_labels_equal_clean": true
+  },
+  {
+    "match": "J03WPY",
+    "ctrl_dead_untouched": true,
+    "ctrl_outside_halves_untouched": true,
+    "track_1_dead_untouched": true,
+    "track_1_outside_halves_untouched": true,
+    "track_2_dead_untouched": true,
+    "track_2_outside_halves_untouched": true,
+    "track_3_dead_untouched": true,
+    "track_3_outside_halves_untouched": true,
+    "ctrl_equals_track_2": true,
+    "degraded_labels_equal_clean": true
+  },
+  {
+    "match": "J03WQQ",
+    "ctrl_dead_untouched": true,
+    "ctrl_outside_halves_untouched": true,
+    "track_1_dead_untouched": true,
+    "track_1_outside_halves_untouched": true,
+    "track_2_dead_untouched": true,
+    "track_2_outside_halves_untouched": true,
+    "track_3_dead_untouched": true,
+    "track_3_outside_halves_untouched": true,
+    "ctrl_equals_track_2": true,
+    "degraded_labels_equal_clean": true
+  },
+  {
+    "match": "J03WR9",
+    "ctrl_dead_untouched": true,
+    "ctrl_outside_halves_untouched": true,
+    "track_1_dead_untouched": true,
+    "track_1_outside_halves_untouched": true,
+    "track_2_dead_untouched": true,
+    "track_2_outside_halves_untouched": true,
+    "track_3_dead_untouched": true,
+    "track_3_outside_halves_untouched": true,
+    "ctrl_equals_track_2": true,
+    "degraded_labels_equal_clean": true
+  }
+]

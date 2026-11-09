@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp3_ctrl",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7311355311355312,
+      "macro_f1": 0.9264898190469042,
+      "n_true": 298,
+      "n_pred": 248,
+      "count_error_ratio": -0.16778523489932884,
+      "temperature": 1.329126414677915,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp3_ctrl",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7218150087260036,
+      "macro_f1": 0.9079717160887618,
+      "n_true": 315,
+      "n_pred": 258,
+      "count_error_ratio": -0.18095238095238098,
+      "temperature": 1.3682580932044701,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp3_ctrl",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7566074950690336,
+      "macro_f1": 0.9289488774188498,
+      "n_true": 279,
+      "n_pred": 228,
+      "count_error_ratio": -0.18279569892473113,
+      "temperature": 1.2937597084551387,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp3_ctrl",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7380180180180179,
+      "macro_f1": 0.9212609973231786,
+      "n_true": 302,
+      "n_pred": 253,
+      "count_error_ratio": -0.16225165562913912,
+      "temperature": 1.3252194863710247,
+      "lambda_team": 4.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp3_ctrl",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7463510848126231,
+      "macro_f1": 0.927416778777267,
+      "n_true": 272,
+      "n_pred": 235,
+      "count_error_ratio": -0.13602941176470584,
+      "temperature": 1.329548775739782,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp3_ctrl",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7427522935779816,
+      "macro_f1": 0.9249314006599363,
+      "n_true": 284,
+      "n_pred": 261,
+      "count_error_ratio": -0.08098591549295775,
+      "temperature": 1.3313194153430956,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp3_ctrl",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.6612244897959184,
+      "macro_f1": 0.9045617161043022,
+      "n_true": 267,
+      "n_pred": 223,
+      "count_error_ratio": -0.16479400749063666,
+      "temperature": 1.3215508918952097,
+      "lambda_team": 2.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.329126414677915,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.5
+    },
+    "J03WN1": {
+      "temperature": 1.3682580932044701,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    "J03WOH": {
+      "temperature": 1.2937597084551387,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.3252194863710247,
+      "lambda_team": 4.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.5
+    },
+    "J03WPY": {
+      "temperature": 1.329548775739782,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.5
+    },
+    "J03WQQ": {
+      "temperature": 1.3313194153430956,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.3215508918952097,
+      "lambda_team": 2.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    }
+  },
+  "final_config": {
+    "temperature": 1.3497351077311213,
+    "lambda_team": 2.0,
+    "lambda_dead": 4.0,
+    "gamma": 0.0
+  },
+  "source": "exp3_ctrl"
+}

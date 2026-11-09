@@ -1,0 +1,37 @@
+{
+  "variant": "exp3_ref_ens3",
+  "members": [
+    "exp2_aug",
+    "exp2_aug_s1",
+    "exp2_aug_s2"
+  ],
+  "input": "tactical",
+  "sha256": "17eefbcc0833973ee7cf5c8cc57fb6a12685c620b88aee3516342c6648737c08",
+  "format_valid": true,
+  "decoder": {
+    "temperature": 1.169894951392387,
+    "lambda_team": 8.0,
+    "lambda_dead": 4.0,
+    "gamma": 0.0
+  },
+  "public_labels_used": false,
+  "graded_frames": 158857,
+  "share_graded": {
+    "H": 0.34918826365851047,
+    "A": 0.24040489245044286,
+    "D": 0.41040684389104665
+  },
+  "possession_count": 259,
+  "abstain_frames_graded": 0,
+  "dead_share": 0.41040684389104665,
+  "possessions_per_min": 2.445595724456587,
+  "mean_possession_s": 14.465019305019304,
+  "dead_share_minus_prior": 0.0034068438910466736,
+  "possessions_per_min_minus_ryu": -0.5244042755434131,
+  "reproduction": {
+    "first_sha256": "17eefbcc0833973ee7cf5c8cc57fb6a12685c620b88aee3516342c6648737c08",
+    "second_sha256": "17eefbcc0833973ee7cf5c8cc57fb6a12685c620b88aee3516342c6648737c08",
+    "byte_identical": true,
+    "independent_fits": 3
+  }
+}

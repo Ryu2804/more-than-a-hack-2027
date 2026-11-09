@@ -1,0 +1,159 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp3_touch",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.5397468354430379,
+      "macro_f1": 0.9087777149595812,
+      "n_true": 511,
+      "n_pred": 279,
+      "count_error_ratio": -0.45401174168297453,
+      "temperature": 1.2835780957804857,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp3_touch",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.5559748427672956,
+      "macro_f1": 0.8919305463416629,
+      "n_true": 500,
+      "n_pred": 295,
+      "count_error_ratio": -0.41000000000000003,
+      "temperature": 1.349110558892487,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp3_touch",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6052067381316999,
+      "macro_f1": 0.9145639642842524,
+      "n_true": 402,
+      "n_pred": 251,
+      "count_error_ratio": -0.3756218905472637,
+      "temperature": 1.2922466771728809,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp3_touch",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6153439153439153,
+      "macro_f1": 0.9159672235704788,
+      "n_true": 456,
+      "n_pred": 300,
+      "count_error_ratio": -0.3421052631578947,
+      "temperature": 1.31239826358248,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp3_touch",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6193921852387845,
+      "macro_f1": 0.9208481630124057,
+      "n_true": 421,
+      "n_pred": 270,
+      "count_error_ratio": -0.3586698337292161,
+      "temperature": 1.307572665435602,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp3_touch",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.67994227994228,
+      "macro_f1": 0.9296065384106681,
+      "n_true": 401,
+      "n_pred": 292,
+      "count_error_ratio": -0.27182044887780543,
+      "temperature": 1.3146243775901818,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp3_touch",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.5571658615136876,
+      "macro_f1": 0.9013749466645314,
+      "n_true": 370,
+      "n_pred": 251,
+      "count_error_ratio": -0.32162162162162167,
+      "temperature": 1.3032599633321857,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.2835780957804857,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.349110558892487,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.2922466771728809,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.31239826358248,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.307572665435602,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.3146243775901818,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.3032599633321857,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.3418327136710657,
+    "lambda_team": 0.5,
+    "lambda_dead": 2.0,
+    "gamma": 0.0
+  }
+}

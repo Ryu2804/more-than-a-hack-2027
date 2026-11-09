@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp3_ref_ens3",
+      "view": "original",
+      "label_set": "track_1",
+      "spell_f1": 0.7030470914127424,
+      "macro_f1": 0.9243943145600882,
+      "n_true": 395,
+      "n_pred": 327,
+      "count_error_ratio": -0.17215189873417724,
+      "temperature": 1.1598129970844178,
+      "lambda_team": 1.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp3_ref_ens3",
+      "view": "original",
+      "label_set": "track_1",
+      "spell_f1": 0.699182561307902,
+      "macro_f1": 0.9063981222784868,
+      "n_true": 397,
+      "n_pred": 337,
+      "count_error_ratio": -0.1511335012594458,
+      "temperature": 1.2024015475769716,
+      "lambda_team": 2.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp3_ref_ens3",
+      "view": "original",
+      "label_set": "track_1",
+      "spell_f1": 0.721669341894061,
+      "macro_f1": 0.9273822874075469,
+      "n_true": 343,
+      "n_pred": 280,
+      "count_error_ratio": -0.18367346938775508,
+      "temperature": 1.1575436739240714,
+      "lambda_team": 2.0,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp3_ref_ens3",
+      "view": "original",
+      "label_set": "track_1",
+      "spell_f1": 0.7152815013404825,
+      "macro_f1": 0.9232112673425629,
+      "n_true": 400,
+      "n_pred": 346,
+      "count_error_ratio": -0.135,
+      "temperature": 1.172443675385237,
+      "lambda_team": 2.0,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp3_ref_ens3",
+      "view": "original",
+      "label_set": "track_1",
+      "spell_f1": 0.7280125195618152,
+      "macro_f1": 0.930704764929231,
+      "n_true": 344,
+      "n_pred": 295,
+      "count_error_ratio": -0.1424418604651163,
+      "temperature": 1.173011871588698,
+      "lambda_team": 2.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp3_ref_ens3",
+      "view": "original",
+      "label_set": "track_1",
+      "spell_f1": 0.7118741058655221,
+      "macro_f1": 0.9261441219423293,
+      "n_true": 359,
+      "n_pred": 340,
+      "count_error_ratio": -0.05292479108635095,
+      "temperature": 1.161351187122905,
+      "lambda_team": 2.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp3_ref_ens3",
+      "view": "original",
+      "label_set": "track_1",
+      "spell_f1": 0.671186440677966,
+      "macro_f1": 0.9166964402769783,
+      "n_true": 319,
+      "n_pred": 271,
+      "count_error_ratio": -0.15047021943573669,
+      "temperature": 1.166917613374358,
+      "lambda_team": 2.0,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.1598129970844178,
+      "lambda_team": 1.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.2024015475769716,
+      "lambda_team": 2.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.1575436739240714,
+      "lambda_team": 2.0,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.172443675385237,
+      "lambda_team": 2.0,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.173011871588698,
+      "lambda_team": 2.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.161351187122905,
+      "lambda_team": 2.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.166917613374358,
+      "lambda_team": 2.0,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.1621546362347515,
+    "lambda_team": 4.0,
+    "lambda_dead": 2.0,
+    "gamma": 0.0
+  },
+  "source": "ref_ens3"
+}

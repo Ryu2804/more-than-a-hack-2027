@@ -1,0 +1,39 @@
+{
+  "variant": "exp3_ref_ens3",
+  "selected_on": "provider",
+  "pre_registered": false,
+  "members": [
+    "exp2_aug",
+    "exp2_aug_s1",
+    "exp2_aug_s2"
+  ],
+  "input": "tactical",
+  "sha256": "a6ebb94b1cda5a0bb70792d608c9b3244b1fe3cbafeb927381fa490a02cd96f3",
+  "format_valid": true,
+  "decoder": {
+    "temperature": 1.1525379897132906,
+    "lambda_team": 0.5,
+    "lambda_dead": 4.0,
+    "gamma": 0.0
+  },
+  "public_labels_used": false,
+  "graded_frames": 158857,
+  "share_graded": {
+    "H": 0.3481810685081551,
+    "A": 0.24418187426427543,
+    "D": 0.40763705722756943
+  },
+  "possession_count": 397,
+  "abstain_frames_graded": 0,
+  "dead_share": 0.40763705722756943,
+  "possessions_per_min": 3.7486544502288224,
+  "mean_possession_s": 9.481209068010076,
+  "dead_share_minus_prior": 0.0006370572275694597,
+  "possessions_per_min_minus_ryu": 0.7786544502288222,
+  "reproduction": {
+    "first_sha256": "a6ebb94b1cda5a0bb70792d608c9b3244b1fe3cbafeb927381fa490a02cd96f3",
+    "second_sha256": "a6ebb94b1cda5a0bb70792d608c9b3244b1fe3cbafeb927381fa490a02cd96f3",
+    "byte_identical": true,
+    "independent_fits": 3
+  }
+}

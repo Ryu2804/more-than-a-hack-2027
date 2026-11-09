@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp3_ref_ens3",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7479204339963834,
+      "macro_f1": 0.9259284693223734,
+      "n_true": 298,
+      "n_pred": 255,
+      "count_error_ratio": -0.14429530201342278,
+      "temperature": 1.163953234071381,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp3_ref_ens3",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7402376910016978,
+      "macro_f1": 0.9101799531772924,
+      "n_true": 315,
+      "n_pred": 274,
+      "count_error_ratio": -0.13015873015873014,
+      "temperature": 1.2066731639137358,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp3_ref_ens3",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7778656126482215,
+      "macro_f1": 0.9290898386073523,
+      "n_true": 279,
+      "n_pred": 227,
+      "count_error_ratio": -0.18637992831541217,
+      "temperature": 1.1598606215119314,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp3_ref_ens3",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7530224525043178,
+      "macro_f1": 0.924413639808107,
+      "n_true": 302,
+      "n_pred": 277,
+      "count_error_ratio": -0.08278145695364236,
+      "temperature": 1.1747827025199349,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp3_ref_ens3",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7580152671755725,
+      "macro_f1": 0.9283711519520068,
+      "n_true": 272,
+      "n_pred": 252,
+      "count_error_ratio": -0.07352941176470584,
+      "temperature": 1.1717917347396483,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp3_ref_ens3",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7548387096774194,
+      "macro_f1": 0.928267809908489,
+      "n_true": 284,
+      "n_pred": 274,
+      "count_error_ratio": -0.035211267605633756,
+      "temperature": 1.1648990119468463,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp3_ref_ens3",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7063291139240506,
+      "macro_f1": 0.9149442791291,
+      "n_true": 267,
+      "n_pred": 207,
+      "count_error_ratio": -0.2247191011235955,
+      "temperature": 1.1766154830426594,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.163953234071381,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.2066731639137358,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.1598606215119314,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.1747827025199349,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.1717917347396483,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.1648990119468463,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.1766154830426594,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.169894951392387,
+    "lambda_team": 8.0,
+    "lambda_dead": 4.0,
+    "gamma": 0.0
+  },
+  "source": "ref_ens3"
+}

@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp2_aug",
+      "view": "target_like",
+      "label_set": "track_1",
+      "spell_f1": 0.699579242636746,
+      "macro_f1": 0.9195761310244465,
+      "n_true": 395,
+      "n_pred": 318,
+      "count_error_ratio": -0.19493670886075953,
+      "temperature": 1.2760267950732822,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp2_aug",
+      "view": "target_like",
+      "label_set": "track_1",
+      "spell_f1": 0.6909090909090909,
+      "macro_f1": 0.8986010474581229,
+      "n_true": 397,
+      "n_pred": 340,
+      "count_error_ratio": -0.1435768261964736,
+      "temperature": 1.3238726342805565,
+      "lambda_team": 2.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp2_aug",
+      "view": "target_like",
+      "label_set": "track_1",
+      "spell_f1": 0.7166931637519874,
+      "macro_f1": 0.9257932509882365,
+      "n_true": 343,
+      "n_pred": 286,
+      "count_error_ratio": -0.16618075801749266,
+      "temperature": 1.2696020974420814,
+      "lambda_team": 2.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp2_aug",
+      "view": "target_like",
+      "label_set": "track_1",
+      "spell_f1": 0.6888583218707015,
+      "macro_f1": 0.9146292596206007,
+      "n_true": 400,
+      "n_pred": 327,
+      "count_error_ratio": -0.1825,
+      "temperature": 1.2708390369442273,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp2_aug",
+      "view": "target_like",
+      "label_set": "track_1",
+      "spell_f1": 0.7434991974317817,
+      "macro_f1": 0.9294661099431477,
+      "n_true": 344,
+      "n_pred": 279,
+      "count_error_ratio": -0.18895348837209303,
+      "temperature": 1.279313972009125,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp2_aug",
+      "view": "target_like",
+      "label_set": "track_1",
+      "spell_f1": 0.7225071225071226,
+      "macro_f1": 0.9215803151604488,
+      "n_true": 359,
+      "n_pred": 343,
+      "count_error_ratio": -0.04456824512534818,
+      "temperature": 1.2785867779967468,
+      "lambda_team": 2.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp2_aug",
+      "view": "target_like",
+      "label_set": "track_1",
+      "spell_f1": 0.6267605633802816,
+      "macro_f1": 0.9106692184435317,
+      "n_true": 319,
+      "n_pred": 249,
+      "count_error_ratio": -0.21943573667711602,
+      "temperature": 1.2784345321898223,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.5
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.2760267950732822,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.3238726342805565,
+      "lambda_team": 2.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.2696020974420814,
+      "lambda_team": 2.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.2708390369442273,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    "J03WPY": {
+      "temperature": 1.279313972009125,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.2785867779967468,
+      "lambda_team": 2.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.2784345321898223,
+      "lambda_team": 4.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.5
+    }
+  },
+  "final_config": {
+    "temperature": 1.2807296798773122,
+    "lambda_team": 2.0,
+    "lambda_dead": 4.0,
+    "gamma": 0.0
+  },
+  "source": "exp2_aug"
+}

@@ -1,0 +1,159 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7271402550091075,
+      "macro_f1": 0.9212321662463129,
+      "n_true": 298,
+      "n_pred": 251,
+      "count_error_ratio": -0.15771812080536918,
+      "temperature": 1.2147774819262263,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.6922535211267606,
+      "macro_f1": 0.8984857618172556,
+      "n_true": 315,
+      "n_pred": 253,
+      "count_error_ratio": -0.1968253968253968,
+      "temperature": 1.2674237603881362,
+      "lambda_team": 4.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7653543307086614,
+      "macro_f1": 0.9247858521650084,
+      "n_true": 279,
+      "n_pred": 229,
+      "count_error_ratio": -0.1792114695340502,
+      "temperature": 1.211647878868872,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7437499999999998,
+      "macro_f1": 0.9210777860055434,
+      "n_true": 302,
+      "n_pred": 274,
+      "count_error_ratio": -0.0927152317880795,
+      "temperature": 1.2275858223878027,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7816091954022989,
+      "macro_f1": 0.9308909889560143,
+      "n_true": 272,
+      "n_pred": 250,
+      "count_error_ratio": -0.08088235294117652,
+      "temperature": 1.222246015169784,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 1.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7663619744058501,
+      "macro_f1": 0.9327562612525965,
+      "n_true": 284,
+      "n_pred": 263,
+      "count_error_ratio": -0.073943661971831,
+      "temperature": 1.2260262791003984,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp3_touch",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.6846774193548387,
+      "macro_f1": 0.9089323858295085,
+      "n_true": 267,
+      "n_pred": 229,
+      "count_error_ratio": -0.14232209737827717,
+      "temperature": 1.2232447831899556,
+      "lambda_team": 2.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.2147774819262263,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.2674237603881362,
+      "lambda_team": 4.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    "J03WOH": {
+      "temperature": 1.211647878868872,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.2275858223878027,
+      "lambda_team": 2.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.222246015169784,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 1.0
+    },
+    "J03WQQ": {
+      "temperature": 1.2260262791003984,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    "J03WR9": {
+      "temperature": 1.2232447831899556,
+      "lambda_team": 2.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.247390325579654,
+    "lambda_team": 2.0,
+    "lambda_dead": 8.0,
+    "gamma": 0.0
+  }
+}
