@@ -1,0 +1,420 @@
+{
+  "prereg_sha256": "dc28ebfcacfa2676c0967d0c0407fa47996b1bea078684a3f6dc73e4d102e814",
+  "frozen_at_utc": "2026-11-10T09:06:10+00:00",
+  "judge": {
+    "judge/experiment_data.py": "e2b4034baa721ec7f0faf820626e6bb164325b55bf44595607612ab4c2cff7f1",
+    "judge/experiment_model.py": "243dfe93ba4aa051d271bd59f21091c972abdf02baae58ac37423139b5333fbd",
+    "official_metric": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+  },
+  "code_sha256_at_freeze": {
+    "exp5_common.py": "0453d95b992650835ac3dd9bb9c1bd84b6431fb180b38061718c7055515c48e3",
+    "exp5_protocol.py": "c240630591583fb446541c632ad03c9ba1fbee9d211ab940c4e1d1eed3e3638b",
+    "exp5_eval.py": "c8765b997b40fb66099338d434b6da3b14f43f1748b38b8205030b8794cf0240",
+    "exp5_diagnostics.py": "7ef86089f0c5d939945c0949f7b369eb4a550f9b6cfa48295e3161080ea118cb",
+    "exp5_report.py": "5df1c62fad67cb31ec4ce3606ab17fbe80dfeefc24051b2c7926b7cef564c10f",
+    "exp5_target.py": "a344aab71f6369458abfe300ee61a945f44a01a8c9b473964c9526f520e99694"
+  },
+  "constants": {
+    "train_config": {
+      "window": 300,
+      "batch": 32,
+      "epochs": 14,
+      "coverage": 2.0,
+      "lr": 0.002,
+      "weight_decay": 0.0001,
+      "width": 64,
+      "hidden": 64,
+      "boundary_weight": 0.5,
+      "boundary_pos_weight": 3.0,
+      "mirror": true,
+      "seed": 20261108
+    },
+    "recipe": [
+      [
+        0,
+        "original"
+      ],
+      [
+        1,
+        "target_aug"
+      ],
+      [
+        2,
+        "target_aug"
+      ]
+    ],
+    "train_label": "provider",
+    "arms": {
+      "exp5_touch": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.0,
+          "team_weight": 0.0,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261111,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261111
+        }
+      },
+      "exp5_touch_s1": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.0,
+          "team_weight": 0.0,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261112,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261112
+        }
+      },
+      "exp5_touch_s2": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.0,
+          "team_weight": 0.0,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261113,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261113
+        }
+      }
+    },
+    "fit_order": [
+      "exp5_touch",
+      "exp5_touch_s1",
+      "exp5_touch_s2"
+    ],
+    "fingerprints": {
+      "exp5_touch": "a10cacb15e87",
+      "exp5_touch_s1": "790052212544",
+      "exp5_touch_s2": "65d100808055"
+    },
+    "fit_code": [
+      "exp1_net.py",
+      "exp1_tokens.py",
+      "exp2_views.py",
+      "exp3_touch.py",
+      "exp4_aux.py",
+      "exp4_net.py",
+      "exp4_protocol.py",
+      "exp5_protocol.py"
+    ],
+    "ensembles": {
+      "exp5_touch_ens3": [
+        "exp5_touch",
+        "exp5_touch_s1",
+        "exp5_touch_s2"
+      ],
+      "exp4_touch_ens3": [
+        "exp4_touch",
+        "exp4_touch_s1",
+        "exp4_touch_s2"
+      ],
+      "exp45_touch_ens6": [
+        "exp4_touch",
+        "exp4_touch_s1",
+        "exp4_touch_s2",
+        "exp5_touch",
+        "exp5_touch_s1",
+        "exp5_touch_s2"
+      ],
+      "ref_ens3": [
+        "exp2_aug",
+        "exp2_aug_s1",
+        "exp2_aug_s2"
+      ]
+    },
+    "evaluated_variants": {
+      "exp5_touch_ens3": [
+        "provider",
+        "track_1",
+        "ctrl",
+        "track_3"
+      ],
+      "exp45_touch_ens6": [
+        "provider",
+        "track_1",
+        "ctrl",
+        "track_3"
+      ],
+      "exp5_touch": [
+        "provider",
+        "ctrl"
+      ],
+      "exp5_touch_s1": [
+        "provider",
+        "ctrl"
+      ],
+      "exp5_touch_s2": [
+        "provider",
+        "ctrl"
+      ]
+    },
+    "reused_variants": {
+      "exp3_ref_ens3": "exp_3/results",
+      "exp2_aug": "exp_3/results",
+      "exp4_touch_ens3": "exp_4/results"
+    },
+    "never_adopted": [
+      "exp45_touch_ens6",
+      "exp4_touch_ens3",
+      "exp5_touch",
+      "exp5_touch_s1",
+      "exp5_touch_s2"
+    ],
+    "aux": {
+      "ball_weight": 0.0,
+      "team_weight": 0.0,
+      "smooth_l1_beta": 1.0,
+      "head_seed_offset": 9000000
+    },
+    "touch": {
+      "names": [
+        "home_min_dist",
+        "away_min_dist",
+        "peak_dv",
+        "peak_team"
+      ],
+      "window_frames": 5,
+      "dist_scale": 10.0,
+      "dist_cap": 3.0,
+      "dv_scale": 20.0,
+      "dv_cap": 3.0
+    },
+    "reproduction_check": {
+      "arm": "exp4_touch",
+      "held_out": "J03WMX",
+      "seed": 20261108,
+      "max_abs_probability_diff": 0.001
+    },
+    "exp2_cached_fingerprints": {
+      "exp2_aug": "5cea8203869e",
+      "exp2_aug_s1": "01776e3c0b77",
+      "exp2_aug_s2": "fb137265b072"
+    },
+    "exp4_touch_cache_sha256": {
+      "exp4_touch": {
+        "folder": "exp4_touch_2d42a3706658",
+        "npz": {
+          "pair_J03WMX_J03WN1": "254e985a5867ed4e1e550329223d8271bc9ce25ca99b078b93421023320e7439",
+          "pair_J03WMX_J03WOH": "ddfb40cdd8c22e006202da7ecf492c1e10b21c9d812732e42c661b323d263293",
+          "pair_J03WMX_J03WOY": "e306edf26d15ebe5ed29549ff39829c9c4c81d4b17fd0c7d849f5d9e76105590",
+          "pair_J03WMX_J03WPY": "9b97c0b2482d1d1667c5780060a25831859ce7bdab8d45960f946a16c4701e68",
+          "pair_J03WMX_J03WQQ": "d860f09774d2ce5be89a8b428de58d4e12db30abff359f901c339893cc5c873b",
+          "pair_J03WMX_J03WR9": "03c7333301fa7d8cdeec8ec883f528bfe4a1075eaad3e24a7029f777f9d1d9c9",
+          "pair_J03WN1_J03WOH": "a2320ca15cad904a05fe7fc114a9521633d75cfe62684b44faaccc7b83b84794",
+          "pair_J03WN1_J03WOY": "c5a37623d0aa1b81f1216d29c1c3e6bcd99ca3a4e343e61630e0ecca7b8265c9",
+          "pair_J03WN1_J03WPY": "6e0e9ef423b214fb6d4dbde1b66c0a94adeb3880c33c8807fc9608b354294ad0",
+          "pair_J03WN1_J03WQQ": "3d7a12f10f9d9d641519a7acc63ee1b95a9245d568d51c57c8461279d2e793d0",
+          "pair_J03WN1_J03WR9": "8695dc1514237b740aa37decd53575c0b8c066af11d68aa3ae944dab5af3f27b",
+          "pair_J03WOH_J03WOY": "8f24688bc92cf482934faffd7bdcbcc11f232c80062ac4532d9b7803b4214233",
+          "pair_J03WOH_J03WPY": "8ce5c128ff8b41f29d13bcf3585273c4d963fd7da3b4e772f60a4d83214acb13",
+          "pair_J03WOH_J03WQQ": "a75ecd48e6b81d61e31bc1c224e90e942c7ec80534a4db3d7c2871cb8b96b99b",
+          "pair_J03WOH_J03WR9": "cbe38115e7847b426b72816aef94093df29588c77e642aa771296b7b85aef599",
+          "pair_J03WOY_J03WPY": "902f913d1470e3c9153e5f9e48095ea1b39743b25bfd32ed122dfc66dfb12090",
+          "pair_J03WOY_J03WQQ": "a8896eb47724c3ded385f55ec4677bec805f9d3c41ebb145703a7e43160579a2",
+          "pair_J03WOY_J03WR9": "247277d978389bdd8fc0f33ed1a4afe8c29bfe01a35cd46ca81a9af0ce070d13",
+          "pair_J03WPY_J03WQQ": "49603ac586951a65730ae20fae9f1b30541c419ec6444b727daec4747b417267",
+          "pair_J03WPY_J03WR9": "e354a6f3c2b4eeedc8ff4f0ed32452b76315fdf548d43015f8baf2ab4ab59017",
+          "pair_J03WQQ_J03WR9": "1eaf96a698bedc61bd6fc0c90713053f488277f33d9c02ca0b09eb964131178f",
+          "outer_J03WMX": "7b363949702a1c7932b79b81c92c7fb19e8d63ca3e331bdfa8c84095dd8dd430",
+          "outer_J03WN1": "7c39c407856c4ce2b0b9251f5fb8d21b72cce8539f4c002cc7daf0687576f86c",
+          "outer_J03WOH": "f80b7d1dfd229ef90928c221b07776f1086471c03c547f6240e16d714e50a3d1",
+          "outer_J03WOY": "10af66157920faaae9bb6346d5ff93b8aef3669b1c23540d2e296f37ff1293e1",
+          "outer_J03WPY": "6917042d5a73561e9cc82bb393593072da8fa6e3986b91c336daf620b7341d8e",
+          "outer_J03WQQ": "54495c3813746b9d76e0b69ace2bc7ccf866f10dfc71fbf737853c48f0268e37",
+          "outer_J03WR9": "28908a7c12111e739cb4e1a87be57720a46b3835e29c434a1657205cf2df0fa7"
+        }
+      },
+      "exp4_touch_s1": {
+        "folder": "exp4_touch_s1_78a2fbc5df96",
+        "npz": {
+          "pair_J03WMX_J03WN1": "5aa3b51edbdd31a640bdf1292e76466d41bd3bd585062df6799e1cb980787d42",
+          "pair_J03WMX_J03WOH": "ac4ad22f3d6d209f719a9b28a6efc5936e6e3e4eb7fbb41a085f6c94be587b82",
+          "pair_J03WMX_J03WOY": "3bd93c46e7a88c34ee0fccc99d3545e65af0ef278bcecfe09669c6170b1c0b4c",
+          "pair_J03WMX_J03WPY": "c3195b155824f2aa99d308f547cf57f4057dd6e09e93975656b104acec60d449",
+          "pair_J03WMX_J03WQQ": "e05be3c2ad4fe63f18b85d67ea2f384d31aab5b84d0b3cd9d3a3f5b468e3faf2",
+          "pair_J03WMX_J03WR9": "e1628d946c5b8135762e71b664d14d579da92bde51b3d49d80b60da43b2af181",
+          "pair_J03WN1_J03WOH": "46fb0ec6058bacfd0739a8fb26e5eaba1887c9b0e4858830821b55d78d7079b3",
+          "pair_J03WN1_J03WOY": "790f96799cdccc11094471cd9c1dfa25c1ab9b3615ae01956c3fffdb8ddd08a9",
+          "pair_J03WN1_J03WPY": "de17dd46fec2bc13ac680d33a2622be8b80424172bebae3239d648de1d81e624",
+          "pair_J03WN1_J03WQQ": "f2ce0ade1532aae7f268b1b52585f640f49719a44ec217bc75395abee103fbca",
+          "pair_J03WN1_J03WR9": "7fa808fda534d5d3593014f9d46c063b0e52756fe69887ec86fd5d91c9e247f6",
+          "pair_J03WOH_J03WOY": "6c8f6605de72312a7a1caeede703bb4896ba93dc98db72ea432db3952f887b62",
+          "pair_J03WOH_J03WPY": "5bc49daf407bbd046a61341c17003598200e235545134cbab5fa23f01b0f8b2c",
+          "pair_J03WOH_J03WQQ": "2697fdeb1cc71a2ad00afc47446778d3e0fa67b9916bb626b6eafccf8b0ee580",
+          "pair_J03WOH_J03WR9": "2f9ac0f8079b6a04f6138449244a1b07973242141358788b0c33d632b6201c01",
+          "pair_J03WOY_J03WPY": "f462336c120c2136d54fb01ba744873e721562ba46cc7d18554c1a78dc6aa962",
+          "pair_J03WOY_J03WQQ": "5b452a54d91f00bf8f157f09286bfa4c6594ee096f1b5120d32f5368995f88b2",
+          "pair_J03WOY_J03WR9": "64deff6572e205938ebb94aae0b8b29924e4dfc29e34031a3e34f6317675452a",
+          "pair_J03WPY_J03WQQ": "b7e72996d9840770168b862de66b3878fd128571a75d648bb76e54b7a05b47a4",
+          "pair_J03WPY_J03WR9": "3942ce8f718d261f1b0c9ca281d9a91f4cd50ebde6d845125e0a9683a0f39a41",
+          "pair_J03WQQ_J03WR9": "07a55dc752961dc46c6c704ea8d72b7d9eecaf8d4c477fbfccf99e9473dba862",
+          "outer_J03WMX": "7a35e15e920d04121f98f3a7a1651726c7f5fbfbaaa1d36059731371041ad744",
+          "outer_J03WN1": "470773d1fcbd29805d24839def85db5ab5a112978a48279eebfc4e359f9769c7",
+          "outer_J03WOH": "f2b841e69261b6a51df1cf0cb0355fe426be509c0fd614a9553fe0da41ef0f2f",
+          "outer_J03WOY": "2b9f99f7ac6550e9900466548bf12c33a20d47d36d994f48d2fa741c46afaf5e",
+          "outer_J03WPY": "bade53c8fac58c56159562d0177e73671670213147ae89963abcec0f2139f07f",
+          "outer_J03WQQ": "2e80fd9d449cb765f08be777989cb62ea4fa3ea48e73260d6cba1400c034cccf",
+          "outer_J03WR9": "346525aaf27c23defda7231733b602868f7344c6c648490c1ce906024ea2797a"
+        }
+      },
+      "exp4_touch_s2": {
+        "folder": "exp4_touch_s2_4329112f1f34",
+        "npz": {
+          "pair_J03WMX_J03WN1": "1b32fcbd3fd1dfcd36c0b53caef996ca651d2b35baa48211cdbf8d751be6cd23",
+          "pair_J03WMX_J03WOH": "dad75f2f7bbad35de31b3d6265c936eabd62080bea541625bb1699c3971dd4c4",
+          "pair_J03WMX_J03WOY": "c2733475651818e59cd1d39ae2a4e061d6d3cb7e22c16cef46ede48e7428c8cd",
+          "pair_J03WMX_J03WPY": "82a2aa6abc9cda464ef5ad810dbdfa9e258bc59f350802bdbb97a6dd0ef066b7",
+          "pair_J03WMX_J03WQQ": "94409721ec2dfa1a202d04ff507b9b9d09db8b4cef0bc28aaee0fe6457dcd82f",
+          "pair_J03WMX_J03WR9": "4a1c2cf7000bae9f28bbbdfd882eb4f047123b4725caa0d92aff5ef0d6617357",
+          "pair_J03WN1_J03WOH": "131bc7f373a4587d8f6c5e94c8145e340d4186754f765a73df1e4f938ed1c4ce",
+          "pair_J03WN1_J03WOY": "dd450de5dffcab9db3e7a976fd51c759761d14a2ed92db4fd2257cab7601e336",
+          "pair_J03WN1_J03WPY": "f211b9ed99a8e552a84ec6e53edb89a846aa9aaad856352256452979d4d0d4ec",
+          "pair_J03WN1_J03WQQ": "b10556237f44ab14a80580a8eb6c96c71210962217ce47f92df0938731a17585",
+          "pair_J03WN1_J03WR9": "ed241fd1c2b3fb19461cc13857fe42ed4ba791b2c33e96bda6102ca4fe2cd852",
+          "pair_J03WOH_J03WOY": "f20bfc97795107473c6d5433b5b8ddbcfcc67dfc43425978cc20c51d73d676c6",
+          "pair_J03WOH_J03WPY": "45e5d8e3855a6541d45414642766c453cafb9d1c6aaa7f7068d75a495e3ea604",
+          "pair_J03WOH_J03WQQ": "66ee2811ae75210154d269bf31d583f916e8009b9f7657ea34421d986f1affa2",
+          "pair_J03WOH_J03WR9": "11253696da4c36197a6889bd041740c096f3a92f40d61463d8b6c99d85cbc302",
+          "pair_J03WOY_J03WPY": "44a396a7f4acbe4a46fbc48fa00ea5a1b65e1ccdcba260df5b84a8225c288dc1",
+          "pair_J03WOY_J03WQQ": "5652829217c35e9d83793ff103cfe401f0f33a80aa38819074c8b07155719fb1",
+          "pair_J03WOY_J03WR9": "25303ff22bd1bbaab8ac0ad0564d47e62d269ec22baff2dbd6b1c6ebaae35b40",
+          "pair_J03WPY_J03WQQ": "24d607ce303968d68a600bce84c0b105e03eb6c1243ceb826c0241fb1027d5d4",
+          "pair_J03WPY_J03WR9": "2ba96e3e46dc23528c6b262dcb95abe68254ce2649840a3f5a92d94c9ec5cffa",
+          "pair_J03WQQ_J03WR9": "15c5104f39dd4c128595126b1e7b20e4ee1fceab501f9cc0fc29e6ed467d1404",
+          "outer_J03WMX": "7c34ed219b292fec50cc24477fdda210a0f8777fcf4c975be6410f0ea125a6e5",
+          "outer_J03WN1": "bd24d060bc93a84d6be482009332982aaa97006e9549e8dd225012a9e52d686a",
+          "outer_J03WOH": "f6a9907b6cbdf58b1c9a3abdf09550ebe83ee0f83bf361c94b8d9e0cf3e311bb",
+          "outer_J03WOY": "1fea4106cdd1d583ead39215c69fa1fe3fa2b5fdd21dbd4e5c10e3f19c146138",
+          "outer_J03WPY": "47f9fa58dea5665c39fb5bf525522052c2077f0898d3257a9893e1fb459c5edc",
+          "outer_J03WQQ": "aafee60cb84b10d11073cdb46b6d1b4dd9c45d1de4fd502977cf7d100b355ea6",
+          "outer_J03WR9": "792ebd817457db9e04961fec394abdf1e54fff2c128d851cddb5977399c64614"
+        }
+      }
+    },
+    "reused_result_sha256": {
+      "exp_3/exp3_ref_ens3__original__provider": "346cfce37e8f4234b86b08af246d8a87b9a0d48c79ca109faa251c9dec023874",
+      "exp_3/exp3_ref_ens3__original__track_1": "4652ace749d4367ffa62b8a09cb9c91af802ef749aac231820ff4cc3a9ac92f0",
+      "exp_3/exp3_ref_ens3__original__ctrl": "44b46285b4957ed67a71b5735c8251b3e80574a956008d9755effc06fb649f39",
+      "exp_3/exp3_ref_ens3__original__track_3": "0bff4d5cac8d22cab1ef7075a0d8605075f6de25742701c769cb4632988e5282",
+      "exp_3/exp3_ref_ens3__target_like__provider": "e3a4fbd9f7f6291490d19c3b6e87be36959d0f79dd668cae357c139374e4c9f2",
+      "exp_3/exp3_ref_ens3__target_like__track_1": "10b567fb8d03c223d690f2537030adc2034e0b16761f245165695464b826250b",
+      "exp_3/exp3_ref_ens3__target_like__ctrl": "01490be80c53a15e6268dd1213debfde01b2adb7673e258383ba977c1a5adbe0",
+      "exp_3/exp3_ref_ens3__target_like__track_3": "09d2f4859a22deb9d39cd14da8c533323b9d1c952bee3cffae30504631ecba53",
+      "exp_3/exp2_aug__original__provider": "d57f695b4ce05186b07bd302020af32888a2cf6167cad696624462251007f6d1",
+      "exp_3/exp2_aug__original__track_1": "f7e81d68c93ca866cb74cb3428d8d15be0002a7e1c502962b9da0672c9d5a59b",
+      "exp_3/exp2_aug__original__ctrl": "9d57b886022e7ecbf5625e673e33ad28aad07f84ff77b868ab50bb90703ee1ca",
+      "exp_3/exp2_aug__original__track_3": "80c6487379017a48c82e21a3998c245d96f884b65fd56e1dfdd98c83a3961014",
+      "exp_3/exp2_aug__target_like__provider": "8181cfbafdf05110ca0c33c41d08504be40eaab28639f5ea998e58b0ca803e80",
+      "exp_3/exp2_aug__target_like__track_1": "f911f9febf05875a0ef86ea60a48c2acefb2c574460710425df416c501ca7582",
+      "exp_3/exp2_aug__target_like__ctrl": "4b943d7b749069bbee3125c8a05be989eefff6a5b6ef5767c1b3c80bf69dfd75",
+      "exp_3/exp2_aug__target_like__track_3": "0dad3faba18ca01b774a54ef081084c64e6d48fd75de8db72db1fbf88e37a528",
+      "exp_3/reference_rows.csv": "16db536fd61ae1957912e392e5314d09f1498dd836c72e881bb816b7b4270505",
+      "exp_4/exp4_touch_ens3__original__provider": "b57e0859d26d8cc8190121cf2d6d1f26f59e5baaabdfbf3dc71c889539928ba6",
+      "exp_4/exp4_touch_ens3__original__track_1": "d4a2c6cf8f3287654f7d369f87f6d941e2f91b52f16e1851a0fbff92158e7ca6",
+      "exp_4/exp4_touch_ens3__original__ctrl": "54255d7b0a509e987866e1db8037fc88cf0c316eb5ab18d7482d46fc6f11a8bc",
+      "exp_4/exp4_touch_ens3__original__track_3": "fd196f849dc7886fc1464658f3c5189fbdd38e48ba0cef56aeec5ba8ab5486e1",
+      "exp_4/exp4_touch_ens3__target_like__provider": "82d81d7ba3ec61c9b0bb92f14280ef5e1b8f1580f5620852fded5bc345dba784",
+      "exp_4/exp4_touch_ens3__target_like__track_1": "e076d956ea8a277f29630a92a7e2daf8468dee68621acae9ee187b4d84d77a9f",
+      "exp_4/exp4_touch_ens3__target_like__ctrl": "c407163566554f4c3eafbb6c52e09bcad24c37185489229c40c019408ea7f1f3",
+      "exp_4/exp4_touch_ens3__target_like__track_3": "1af2c184f8a7bf42935abf0a4080154bd958ab22f4df6e62ef00ca28855c56f4",
+      "exp_4/ref_train_nll.csv": "9e784621202cf2965ffd623b33d0909e13886c1dd7edc3593be47333ae11a44a",
+      "exp_4/gap_table.csv": "b04b840d783d7151418c8f735405098e1e7a5536598f2562a13593ff4a82ea70"
+    },
+    "bd_lambdas": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "bd_gammas": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "views": [
+      "original",
+      "target_like"
+    ],
+    "primary_view": "target_like",
+    "s1_labels": [
+      "provider",
+      "track_1",
+      "ctrl",
+      "track_3"
+    ],
+    "decision_labels": [
+      "provider",
+      "ctrl"
+    ],
+    "h1": {
+      "comparison": [
+        "exp5_touch_ens3",
+        "exp3_ref_ens3"
+      ],
+      "labels": "provider",
+      "view": "target_like",
+      "ci_clause": "paired 95% CI lower bound > 0.0",
+      "seed_clause": "mean delta > seed spread (max - min single-seed mean) of exp5_touch, provider, target_like",
+      "ci_low": 0.0
+    },
+    "ctrl_file_rule": "L_ctrl target_like paired 95% CI lower bound > -0.01",
+    "ctrl_noninf_ci_low": -0.01,
+    "bootstrap": {
+      "draws": 1000,
+      "seed": 20261108,
+      "interval": 0.95
+    },
+    "gap_growth_flag": 0.25,
+    "fit_cap": 100,
+    "planned_fits": {
+      "reproduction_check": 1,
+      "proxy": 84,
+      "full_data": 3,
+      "rebuild": 3
+    }
+  }
+}

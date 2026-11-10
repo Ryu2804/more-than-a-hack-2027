@@ -1,0 +1,29 @@
+{
+  "taken_at_utc": "2026-11-10T09:06:13+00:00",
+  "folders": {
+    "exp_0": {
+      "files": 42630,
+      "digest": "375a46fc2274d1a18ae1aafc2206069ed45b3541909ba1090c6a9c0c4d4cef1c"
+    },
+    "exp_1": {
+      "files": 215,
+      "digest": "da223487a1caab01728f4fd6ffcc0ab123f605c8813bd842dd12b67ab9438642"
+    },
+    "exp_2": {
+      "files": 312,
+      "digest": "f32a989e87ae3ad2ba82d42566aca3e9dae40463658f4652527a80eb07424794"
+    },
+    "exp_3": {
+      "files": 407,
+      "digest": "65791d704ff870b542fb6ed094a378c9fbbab14f76c2b4fa008bbc46ae91ba9a"
+    },
+    "exp_4": {
+      "files": 638,
+      "digest": "0f01558c40ee99a8ed04a4a7241292af0e1fe371826800ed907c7d459487cb4a"
+    },
+    "data": {
+      "files": 12,
+      "digest": "5bfa377cfb36d0c2effa471976d0f67aacaf6eb912e69ccb40e5d26077888b3e"
+    }
+  }
+}

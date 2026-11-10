@@ -1,0 +1,81 @@
+{
+  "provider": {
+    "variant": "exp5_touch_ens3",
+    "members": [
+      "exp5_touch",
+      "exp5_touch_s1",
+      "exp5_touch_s2"
+    ],
+    "selected_on": "provider",
+    "file": "exp_5_candidate_provider.csv",
+    "sha256": "1b9795cb2cf75363518600cc4b6c7c14f1b053613d7a65d19ef5df3ba742da62",
+    "format_valid": true,
+    "decoder": {
+      "temperature": 1.1147855174930903,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "public_labels_used": false,
+    "graded_frames": 158857,
+    "share_graded": {
+      "H": 0.31220531673139995,
+      "A": 0.1994246397703595,
+      "D": 0.48837004349824054
+    },
+    "possession_count": 265,
+    "abstain_frames_graded": 0,
+    "dead_share": 0.48837004349824054,
+    "possessions_per_min": 2.5022504516640756,
+    "mean_possession_s": 12.268075471698115,
+    "dead_share_minus_prior": 0.08137004349824056,
+    "possessions_per_min_minus_ryu": -0.46774954833592464
+  },
+  "mean_p_dead": 0.47372737526893616,
+  "fusion": {
+    "accepted_both_halves": false,
+    "use_fused_input": false,
+    "recovered_before_guard": 0,
+    "kept_after_guard": 0,
+    "removed_by_replay_guard": 0,
+    "missing_ball_frames_graded": 64643,
+    "recovered_share_of_missing_graded": 0.0,
+    "ball_coverage_graded_tactical": 0.593074274347369,
+    "ball_coverage_graded_fused": 0.593074274347369,
+    "input": "tactical"
+  },
+  "reproduction": {
+    "independent_fits": 3,
+    "provider": {
+      "first_sha256": "1b9795cb2cf75363518600cc4b6c7c14f1b053613d7a65d19ef5df3ba742da62",
+      "second_sha256": "1b9795cb2cf75363518600cc4b6c7c14f1b053613d7a65d19ef5df3ba742da62",
+      "byte_identical": true
+    },
+    "byte_identical": true
+  },
+  "exp3_files": {
+    "target_candidate.json": {
+      "dead_share": 0.41040684389104665,
+      "possessions_per_min": 2.445595724456587,
+      "mean_possession_s": 14.465019305019304,
+      "possession_count": 259,
+      "sha256": "17eefbcc0833973ee7cf5c8cc57fb6a12685c620b88aee3516342c6648737c08"
+    },
+    "target_hedge_provider.json": {
+      "dead_share": 0.40763705722756943,
+      "possessions_per_min": 3.7486544502288224,
+      "mean_possession_s": 9.481209068010076,
+      "possession_count": 397,
+      "sha256": "a6ebb94b1cda5a0bb70792d608c9b3244b1fe3cbafeb927381fa490a02cd96f3"
+    }
+  },
+  "files_written": [
+    "exp_5_candidate_provider.csv"
+  ],
+  "fits_used": {
+    "proxy": 84,
+    "reproduction_check": 1,
+    "full_data": 3,
+    "rebuild": 3
+  }
+}

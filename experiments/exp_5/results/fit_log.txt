@@ -1,0 +1,96 @@
+REPRO CHECK exp4_touch outer_J03WMX bit_exact=True passed=True 52.1s
+FIT exp5_touch pair_J03WMX_J03WN1 49.5s train_nll 0.1174
+FIT exp5_touch pair_J03WMX_J03WOH 49.3s train_nll 0.1244
+FIT exp5_touch pair_J03WMX_J03WOY 49.4s train_nll 0.1206
+FIT exp5_touch pair_J03WMX_J03WPY 48.8s train_nll 0.1215
+FIT exp5_touch pair_J03WMX_J03WQQ 49.4s train_nll 0.1216
+FIT exp5_touch pair_J03WMX_J03WR9 49.0s train_nll 0.1219
+FIT exp5_touch pair_J03WN1_J03WOH 49.8s train_nll 0.1232
+FIT exp5_touch pair_J03WN1_J03WOY 49.4s train_nll 0.1201
+FIT exp5_touch pair_J03WN1_J03WPY 49.4s train_nll 0.1214
+FIT exp5_touch pair_J03WN1_J03WQQ 49.4s train_nll 0.1214
+FIT exp5_touch pair_J03WN1_J03WR9 49.4s train_nll 0.1165
+FIT exp5_touch pair_J03WOH_J03WOY 49.9s train_nll 0.1256
+FIT exp5_touch pair_J03WOH_J03WPY 49.4s train_nll 0.1282
+FIT exp5_touch pair_J03WOH_J03WQQ 50.0s train_nll 0.1259
+FIT exp5_touch pair_J03WOH_J03WR9 49.4s train_nll 0.1287
+FIT exp5_touch pair_J03WOY_J03WPY 49.4s train_nll 0.1257
+FIT exp5_touch pair_J03WOY_J03WQQ 49.4s train_nll 0.1260
+FIT exp5_touch pair_J03WOY_J03WR9 49.4s train_nll 0.1256
+FIT exp5_touch pair_J03WPY_J03WQQ 49.4s train_nll 0.1265
+FIT exp5_touch pair_J03WPY_J03WR9 48.9s train_nll 0.1274
+FIT exp5_touch pair_J03WQQ_J03WR9 49.4s train_nll 0.1223
+FIT exp5_touch outer_J03WMX 58.2s train_nll 0.1169
+FIT exp5_touch outer_J03WN1 58.4s train_nll 0.1146
+FIT exp5_touch outer_J03WOH 58.8s train_nll 0.1200
+FIT exp5_touch outer_J03WOY 58.4s train_nll 0.1190
+FIT exp5_touch outer_J03WPY 58.2s train_nll 0.1193
+FIT exp5_touch outer_J03WQQ 58.3s train_nll 0.1196
+FIT exp5_touch outer_J03WR9 57.9s train_nll 0.1170
+ARM DONE exp5_touch 1446s, proxy fits cached 28
+FIT exp5_touch_s1 pair_J03WMX_J03WN1 49.5s train_nll 0.1157
+ARM DONE exp5_touch 0s, proxy fits cached 29
+ARM DONE exp5_touch 0s, proxy fits cached 29
+ARM DONE exp5_touch 0s, proxy fits cached 29
+FIT exp5_touch_s1 pair_J03WMX_J03WOH 143.2s train_nll 0.1242
+FIT exp5_touch_s1 pair_J03WMX_J03WPY 140.0s train_nll 0.1224
+FIT exp5_touch_s1 pair_J03WMX_J03WOY 161.2s train_nll 0.1195
+FIT exp5_touch_s1 pair_J03WMX_J03WQQ 148.6s train_nll 0.1202
+FIT exp5_touch_s1 pair_J03WMX_J03WR9 146.1s train_nll 0.1220
+FIT exp5_touch_s1 pair_J03WN1_J03WOH 149.0s train_nll 0.1241
+FIT exp5_touch_s1 pair_J03WN1_J03WOY 149.5s train_nll 0.1221
+FIT exp5_touch_s1 pair_J03WN1_J03WPY 147.1s train_nll 0.1265
+FIT exp5_touch_s1 pair_J03WN1_J03WQQ 147.3s train_nll 0.1219
+FIT exp5_touch_s1 pair_J03WN1_J03WR9 149.3s train_nll 0.1177
+FIT exp5_touch_s1 pair_J03WOH_J03WOY 150.9s train_nll 0.1280
+FIT exp5_touch_s1 pair_J03WOH_J03WPY 148.8s train_nll 0.1334
+FIT exp5_touch_s1 pair_J03WOH_J03WQQ 150.2s train_nll 0.1290
+FIT exp5_touch_s1 pair_J03WOY_J03WPY 145.5s train_nll 0.1280
+FIT exp5_touch_s1 pair_J03WOH_J03WR9 150.3s train_nll 0.1295
+FIT exp5_touch_s1 pair_J03WOY_J03WQQ 149.2s train_nll 0.1247
+FIT exp5_touch_s1 pair_J03WOY_J03WR9 147.2s train_nll 0.1255
+FIT exp5_touch_s1 pair_J03WPY_J03WQQ 147.8s train_nll 0.1292
+FIT exp5_touch_s1 pair_J03WPY_J03WR9 156.5s train_nll 0.1289
+FIT exp5_touch_s1 pair_J03WQQ_J03WR9 154.9s train_nll 0.1260
+FIT exp5_touch_s1 outer_J03WMX 181.2s train_nll 0.1176
+FIT exp5_touch_s1 outer_J03WN1 177.5s train_nll 0.1167
+FIT exp5_touch_s1 outer_J03WOH 176.1s train_nll 0.1215
+FIT exp5_touch_s1 outer_J03WOY 177.3s train_nll 0.1200
+FIT exp5_touch_s1 outer_J03WPY 176.1s train_nll 0.1221
+FIT exp5_touch_s1 outer_J03WQQ 162.8s train_nll 0.1207
+FIT exp5_touch_s1 outer_J03WR9 135.7s train_nll 0.1211
+ARM DONE exp5_touch_s1 1420s, proxy fits cached 56
+ARM DONE exp5_touch_s1 1413s, proxy fits cached 56
+ARM DONE exp5_touch_s1 1397s, proxy fits cached 56
+FIT exp5_touch_s2 pair_J03WMX_J03WN1 147.7s train_nll 0.1184
+FIT exp5_touch_s2 pair_J03WMX_J03WOY 147.0s train_nll 0.1233
+FIT exp5_touch_s2 pair_J03WMX_J03WOH 150.7s train_nll 0.1257
+FIT exp5_touch_s2 pair_J03WMX_J03WPY 148.1s train_nll 0.1266
+FIT exp5_touch_s2 pair_J03WMX_J03WQQ 148.6s train_nll 0.1248
+FIT exp5_touch_s2 pair_J03WMX_J03WR9 147.4s train_nll 0.1210
+FIT exp5_touch_s2 pair_J03WN1_J03WOH 150.5s train_nll 0.1266
+FIT exp5_touch_s2 pair_J03WN1_J03WOY 146.9s train_nll 0.1232
+FIT exp5_touch_s2 pair_J03WN1_J03WPY 148.1s train_nll 0.1272
+FIT exp5_touch_s2 pair_J03WN1_J03WR9 101.4s train_nll 0.1192
+FIT exp5_touch_s2 pair_J03WOH_J03WOY 102.5s train_nll 0.1295
+FIT exp5_touch_s2 pair_J03WOH_J03WPY 100.7s train_nll 0.1333
+FIT exp5_touch_s2 pair_J03WOH_J03WQQ 100.2s train_nll 0.1298
+FIT exp5_touch_s2 pair_J03WOH_J03WR9 100.0s train_nll 0.1293
+FIT exp5_touch_s2 pair_J03WOY_J03WPY 99.7s train_nll 0.1295
+FIT exp5_touch_s2 pair_J03WOY_J03WQQ 100.0s train_nll 0.1281
+FIT exp5_touch_s2 pair_J03WOY_J03WR9 99.8s train_nll 0.1269
+FIT exp5_touch_s2 pair_J03WPY_J03WQQ 99.3s train_nll 0.1319
+FIT exp5_touch_s2 pair_J03WPY_J03WR9 98.4s train_nll 0.1311
+FIT exp5_touch_s2 pair_J03WQQ_J03WR9 107.7s train_nll 0.1274
+FIT exp5_touch_s2 outer_J03WMX 120.4s train_nll 0.1195
+FIT exp5_touch_s2 outer_J03WN1 118.5s train_nll 0.1190
+FIT exp5_touch_s2 outer_J03WOH 119.0s train_nll 0.1238
+FIT exp5_touch_s2 outer_J03WOY 118.4s train_nll 0.1222
+FIT exp5_touch_s2 outer_J03WPY 118.3s train_nll 0.1250
+FIT exp5_touch_s2 outer_J03WQQ 117.7s train_nll 0.1237
+FIT exp5_touch_s2 outer_J03WR9 105.6s train_nll 0.1225
+FIT exp5_touch_s2 pair_J03WN1_J03WQQ 49.7s train_nll 0.1258
+ARM DONE exp5_touch_s2 1476s, proxy fits cached 84
+ALL FITS DONE 2873s, exp_5 proxy fits cached 84 (+1 reproduction check)
+ARM DONE exp5_touch_s2 1490s, proxy fits cached 84
+ALL FITS DONE 2903s, exp_5 proxy fits cached 84 (+1 reproduction check)

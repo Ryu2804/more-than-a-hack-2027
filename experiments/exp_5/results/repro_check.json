@@ -1,0 +1,20 @@
+{
+  "arm": "exp4_touch",
+  "seed": 20261108,
+  "held_out": "J03WMX",
+  "fits": 1,
+  "exp4_cache": "exp_4/cache/predictions/exp4_touch_2d42a3706658/outer_J03WMX.npz",
+  "original": {
+    "max_abs_probability_diff": 0.0,
+    "max_abs_boundary_diff": 0.0,
+    "bit_exact": true
+  },
+  "target_like": {
+    "max_abs_probability_diff": 0.0,
+    "max_abs_boundary_diff": 0.0,
+    "bit_exact": true
+  },
+  "bit_exact": true,
+  "passed": true,
+  "seconds": 52.1
+}

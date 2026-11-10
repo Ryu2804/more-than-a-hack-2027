@@ -1,0 +1,20 @@
+[
+  {
+    "variant": "exp3_ref_ens3",
+    "view": "target_like",
+    "label_set": "provider",
+    "rows_equal": true,
+    "final_config_equal": true,
+    "mean_spell_f1": 0.6641362312691415,
+    "seconds": 90.9
+  },
+  {
+    "variant": "exp4_touch_ens3",
+    "view": "target_like",
+    "label_set": "provider",
+    "rows_equal": true,
+    "final_config_equal": true,
+    "mean_spell_f1": 0.6792810366889773,
+    "seconds": 91.3
+  }
+]

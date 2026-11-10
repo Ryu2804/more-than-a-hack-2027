@@ -1,0 +1,163 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp5_touch",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7352313167259786,
+      "macro_f1": 0.9241618752042858,
+      "n_true": 298,
+      "n_pred": 264,
+      "count_error_ratio": -0.11409395973154357,
+      "temperature": 1.219471569746721,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp5_touch",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7089316987740807,
+      "macro_f1": 0.9035733920917792,
+      "n_true": 315,
+      "n_pred": 256,
+      "count_error_ratio": -0.1873015873015873,
+      "temperature": 1.2659938244778899,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp5_touch",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7627184466019418,
+      "macro_f1": 0.9329057526117595,
+      "n_true": 279,
+      "n_pred": 236,
+      "count_error_ratio": -0.15412186379928317,
+      "temperature": 1.2282177616245618,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp5_touch",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7601398601398601,
+      "macro_f1": 0.9248455687195859,
+      "n_true": 302,
+      "n_pred": 270,
+      "count_error_ratio": -0.10596026490066224,
+      "temperature": 1.224757544202084,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp5_touch",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7931818181818182,
+      "macro_f1": 0.9313190859901964,
+      "n_true": 272,
+      "n_pred": 256,
+      "count_error_ratio": -0.05882352941176472,
+      "temperature": 1.229241763905592,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp5_touch",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7070234113712374,
+      "macro_f1": 0.9229703756004805,
+      "n_true": 284,
+      "n_pred": 314,
+      "count_error_ratio": 0.10563380281690149,
+      "temperature": 1.2164579532908597,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp5_touch",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7105590062111802,
+      "macro_f1": 0.920606044830917,
+      "n_true": 267,
+      "n_pred": 216,
+      "count_error_ratio": -0.1910112359550562,
+      "temperature": 1.2548524202680875,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.219471569746721,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.2659938244778899,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.2282177616245618,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    "J03WOY": {
+      "temperature": 1.224757544202084,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.229241763905592,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.2164579532908597,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.2548524202680875,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.2475428439319924,
+    "lambda_team": 16.0,
+    "lambda_dead": 2.0,
+    "gamma": 0.0
+  },
+  "source": "exp5_touch",
+  "members": [
+    "exp5_touch"
+  ]
+}
