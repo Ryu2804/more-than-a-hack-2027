@@ -1,0 +1,16 @@
+{
+  "held_out": "J03WMX",
+  "fits": 1,
+  "original": {
+    "max_abs_probability_diff": 0.0,
+    "max_abs_boundary_diff": 0.0,
+    "bit_exact": true
+  },
+  "target_like": {
+    "max_abs_probability_diff": 0.0,
+    "max_abs_boundary_diff": 0.0,
+    "bit_exact": true
+  },
+  "bit_exact": true,
+  "seconds": 59.9
+}

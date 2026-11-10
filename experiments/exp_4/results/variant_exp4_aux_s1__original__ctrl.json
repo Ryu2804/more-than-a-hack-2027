@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp4_aux_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7315696649029982,
+      "macro_f1": 0.922470864051227,
+      "n_true": 298,
+      "n_pred": 269,
+      "count_error_ratio": -0.09731543624161076,
+      "temperature": 1.2894649825559001,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp4_aux_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7133448873483534,
+      "macro_f1": 0.9064993207119718,
+      "n_true": 315,
+      "n_pred": 262,
+      "count_error_ratio": -0.1682539682539682,
+      "temperature": 1.3381178497256583,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp4_aux_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7436507936507938,
+      "macro_f1": 0.9263607775385742,
+      "n_true": 279,
+      "n_pred": 225,
+      "count_error_ratio": -0.19354838709677424,
+      "temperature": 1.2848114687174679,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp4_aux_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7532743362831859,
+      "macro_f1": 0.9226254649462972,
+      "n_true": 302,
+      "n_pred": 263,
+      "count_error_ratio": -0.1291390728476821,
+      "temperature": 1.3073604594514259,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp4_aux_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7584,
+      "macro_f1": 0.9222161446056797,
+      "n_true": 272,
+      "n_pred": 228,
+      "count_error_ratio": -0.16176470588235292,
+      "temperature": 1.3022347017006535,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp4_aux_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7563380281690142,
+      "macro_f1": 0.9250904621370104,
+      "n_true": 284,
+      "n_pred": 284,
+      "count_error_ratio": 0.0,
+      "temperature": 1.299663196092814,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp4_aux_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.675968992248062,
+      "macro_f1": 0.9135795358081609,
+      "n_true": 267,
+      "n_pred": 249,
+      "count_error_ratio": -0.0674157303370787,
+      "temperature": 1.2703364199164666,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.2894649825559001,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.3381178497256583,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.2848114687174679,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.3073604594514259,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.3022347017006535,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.299663196092814,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.2703364199164666,
+      "lambda_team": 4.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.3068865216105565,
+    "lambda_team": 8.0,
+    "lambda_dead": 4.0,
+    "gamma": 0.0
+  },
+  "source": "exp4_aux_s1"
+}

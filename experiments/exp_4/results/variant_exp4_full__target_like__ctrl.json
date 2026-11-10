@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp4_full",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7263537906137184,
+      "macro_f1": 0.9231540408984152,
+      "n_true": 298,
+      "n_pred": 256,
+      "count_error_ratio": -0.14093959731543626,
+      "temperature": 1.1884235340216047,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp4_full",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7337883959044369,
+      "macro_f1": 0.9096916051691825,
+      "n_true": 315,
+      "n_pred": 271,
+      "count_error_ratio": -0.13968253968253963,
+      "temperature": 1.2383134069220638,
+      "lambda_team": 16.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp4_full",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7505976095617528,
+      "macro_f1": 0.9252529425355749,
+      "n_true": 279,
+      "n_pred": 223,
+      "count_error_ratio": -0.2007168458781362,
+      "temperature": 1.199737241436784,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp4_full",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7372413793103447,
+      "macro_f1": 0.9205216709861519,
+      "n_true": 302,
+      "n_pred": 278,
+      "count_error_ratio": -0.07947019867549665,
+      "temperature": 1.1842072660884735,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp4_full",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7549618320610687,
+      "macro_f1": 0.9270194948273988,
+      "n_true": 272,
+      "n_pred": 252,
+      "count_error_ratio": -0.07352941176470584,
+      "temperature": 1.1855953272872781,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp4_full",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7573712255772647,
+      "macro_f1": 0.9267693046786496,
+      "n_true": 284,
+      "n_pred": 279,
+      "count_error_ratio": -0.017605633802816878,
+      "temperature": 1.199821718196509,
+      "lambda_team": 16.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp4_full",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7111111111111112,
+      "macro_f1": 0.9164875904113309,
+      "n_true": 267,
+      "n_pred": 219,
+      "count_error_ratio": -0.1797752808988764,
+      "temperature": 1.1936304970512437,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.1884235340216047,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.2383134069220638,
+      "lambda_team": 16.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.199737241436784,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.1842072660884735,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.1855953272872781,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    "J03WQQ": {
+      "temperature": 1.199821718196509,
+      "lambda_team": 16.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.1936304970512437,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.216253478293479,
+    "lambda_team": 8.0,
+    "lambda_dead": 8.0,
+    "gamma": 0.5
+  },
+  "source": "exp4_full"
+}

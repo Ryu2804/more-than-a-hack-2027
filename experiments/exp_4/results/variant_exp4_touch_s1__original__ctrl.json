@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp4_touch_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7354609929078013,
+      "macro_f1": 0.9260664819113721,
+      "n_true": 298,
+      "n_pred": 266,
+      "count_error_ratio": -0.10738255033557043,
+      "temperature": 1.2182237019518307,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp4_touch_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7087108013937282,
+      "macro_f1": 0.9039913634298196,
+      "n_true": 315,
+      "n_pred": 259,
+      "count_error_ratio": -0.1777777777777778,
+      "temperature": 1.260040785748524,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp4_touch_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7502912621359223,
+      "macro_f1": 0.9246556911825099,
+      "n_true": 279,
+      "n_pred": 236,
+      "count_error_ratio": -0.15412186379928317,
+      "temperature": 1.2168533533895356,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp4_touch_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7493055555555556,
+      "macro_f1": 0.9212929986589528,
+      "n_true": 302,
+      "n_pred": 274,
+      "count_error_ratio": -0.0927152317880795,
+      "temperature": 1.204910741561717,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp4_touch_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7618320610687023,
+      "macro_f1": 0.9264006140458135,
+      "n_true": 272,
+      "n_pred": 252,
+      "count_error_ratio": -0.07352941176470584,
+      "temperature": 1.2185677063184854,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp4_touch_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7377938517179023,
+      "macro_f1": 0.9281243258157069,
+      "n_true": 284,
+      "n_pred": 269,
+      "count_error_ratio": -0.052816901408450745,
+      "temperature": 1.2255892622619349,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp4_touch_s1",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.6967479674796747,
+      "macro_f1": 0.9171862304569114,
+      "n_true": 267,
+      "n_pred": 225,
+      "count_error_ratio": -0.1573033707865169,
+      "temperature": 1.22303853110819,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.2182237019518307,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    "J03WN1": {
+      "temperature": 1.260040785748524,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.2168533533895356,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.204910741561717,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.2185677063184854,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    "J03WQQ": {
+      "temperature": 1.2255892622619349,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.22303853110819,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    }
+  },
+  "final_config": {
+    "temperature": 1.222319417164406,
+    "lambda_team": 16.0,
+    "lambda_dead": 2.0,
+    "gamma": 0.0
+  },
+  "source": "exp4_touch_s1"
+}

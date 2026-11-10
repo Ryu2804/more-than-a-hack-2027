@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp4_full",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7277280858676207,
+      "macro_f1": 0.9234207243422289,
+      "n_true": 298,
+      "n_pred": 261,
+      "count_error_ratio": -0.12416107382550334,
+      "temperature": 1.193585143107761,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp4_full",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.729692832764505,
+      "macro_f1": 0.9082001600268023,
+      "n_true": 315,
+      "n_pred": 271,
+      "count_error_ratio": -0.13968253968253963,
+      "temperature": 1.251103885369038,
+      "lambda_team": 16.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp4_full",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7415204678362574,
+      "macro_f1": 0.9264031382076682,
+      "n_true": 279,
+      "n_pred": 234,
+      "count_error_ratio": -0.16129032258064513,
+      "temperature": 1.2038141355213856,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp4_full",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7500854700854702,
+      "macro_f1": 0.9231477272855345,
+      "n_true": 302,
+      "n_pred": 283,
+      "count_error_ratio": -0.0629139072847682,
+      "temperature": 1.19709834171624,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp4_full",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7520912547528517,
+      "macro_f1": 0.9281837165982548,
+      "n_true": 272,
+      "n_pred": 254,
+      "count_error_ratio": -0.06617647058823528,
+      "temperature": 1.1937189516427655,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp4_full",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.7607843137254902,
+      "macro_f1": 0.9281161015936781,
+      "n_true": 284,
+      "n_pred": 277,
+      "count_error_ratio": -0.02464788732394363,
+      "temperature": 1.202983473412894,
+      "lambda_team": 16.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp4_full",
+      "view": "original",
+      "label_set": "ctrl",
+      "spell_f1": 0.709016393442623,
+      "macro_f1": 0.917761187201851,
+      "n_true": 267,
+      "n_pred": 221,
+      "count_error_ratio": -0.17228464419475653,
+      "temperature": 1.1924584529404672,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.193585143107761,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    "J03WN1": {
+      "temperature": 1.251103885369038,
+      "lambda_team": 16.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.2038141355213856,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    "J03WOY": {
+      "temperature": 1.19709834171624,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.1937189516427655,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.5
+    },
+    "J03WQQ": {
+      "temperature": 1.202983473412894,
+      "lambda_team": 16.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.1924584529404672,
+      "lambda_team": 16.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.228302394661984,
+    "lambda_team": 8.0,
+    "lambda_dead": 8.0,
+    "gamma": 0.5
+  },
+  "source": "exp4_full"
+}

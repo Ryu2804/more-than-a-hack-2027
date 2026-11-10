@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp4_aux",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6191263282172372,
+      "macro_f1": 0.9158020673406089,
+      "n_true": 511,
+      "n_pred": 336,
+      "count_error_ratio": -0.34246575342465757,
+      "temperature": 1.2534510217684762,
+      "lambda_team": 1.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp4_aux",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6421892816419612,
+      "macro_f1": 0.900376865195977,
+      "n_true": 500,
+      "n_pred": 377,
+      "count_error_ratio": -0.246,
+      "temperature": 1.3018072822716442,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp4_aux",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6655462184873949,
+      "macro_f1": 0.9223507900767537,
+      "n_true": 402,
+      "n_pred": 312,
+      "count_error_ratio": -0.22388059701492535,
+      "temperature": 1.2620986139642079,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp4_aux",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6763906056860323,
+      "macro_f1": 0.9220680424029811,
+      "n_true": 456,
+      "n_pred": 353,
+      "count_error_ratio": -0.22587719298245612,
+      "temperature": 1.2645231292252936,
+      "lambda_team": 1.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp4_aux",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6806451612903226,
+      "macro_f1": 0.9281914258672074,
+      "n_true": 421,
+      "n_pred": 323,
+      "count_error_ratio": -0.2327790973871734,
+      "temperature": 1.2532286758099558,
+      "lambda_team": 1.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp4_aux",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6967088607594937,
+      "macro_f1": 0.9250131618830068,
+      "n_true": 401,
+      "n_pred": 389,
+      "count_error_ratio": -0.029925187032418976,
+      "temperature": 1.259450222931134,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp4_aux",
+      "view": "original",
+      "label_set": "provider",
+      "spell_f1": 0.6306525037936267,
+      "macro_f1": 0.920101642647949,
+      "n_true": 370,
+      "n_pred": 289,
+      "count_error_ratio": -0.2189189189189189,
+      "temperature": 1.254992560028178,
+      "lambda_team": 1.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.2534510217684762,
+      "lambda_team": 1.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.3018072822716442,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.2620986139642079,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.2645231292252936,
+      "lambda_team": 1.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.2532286758099558,
+      "lambda_team": 1.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.259450222931134,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.254992560028178,
+      "lambda_team": 1.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.264857066372642,
+    "lambda_team": 1.0,
+    "lambda_dead": 2.0,
+    "gamma": 0.0
+  },
+  "source": "exp4_aux"
+}

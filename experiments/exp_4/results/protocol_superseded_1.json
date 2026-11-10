@@ -1,0 +1,438 @@
+{
+  "prereg_sha256": "2746a92f0e9a43418c6bea112d88bbe54d3e2bbe2e1d439513b5f6fa914281a2",
+  "frozen_at_utc": "2026-11-09T17:06:46+00:00",
+  "judge": {
+    "judge/experiment_data.py": "e2b4034baa721ec7f0faf820626e6bb164325b55bf44595607612ab4c2cff7f1",
+    "judge/experiment_model.py": "243dfe93ba4aa051d271bd59f21091c972abdf02baae58ac37423139b5333fbd",
+    "official_metric": "341bad48904b489d6e875397b27687f5d6a4d22a397f3dc8af3a00d48f16874d"
+  },
+  "code_sha256_at_freeze": {
+    "exp4_common.py": "6a8dfd9ec227e1eac8370ddb020d681d0660c7b86c718214986ac06b9cd5adfb",
+    "exp4_net.py": "808e2c9fef5c6130bc3b5172194ef738c2dfb1ad612bf85ed6de6a373efed043",
+    "exp4_aux.py": "8bf673e0dba55fec22c8fe58f018b576ca1c23619ee777f2179d8eeb45867fcf",
+    "exp4_protocol.py": "9391d81719fbab28d778e9192d8c795f52a2e32cb0b73620258d271ed1e0a3b4"
+  },
+  "constants": {
+    "train_config": {
+      "window": 300,
+      "batch": 32,
+      "epochs": 14,
+      "coverage": 2.0,
+      "lr": 0.002,
+      "weight_decay": 0.0001,
+      "width": 64,
+      "hidden": 64,
+      "boundary_weight": 0.5,
+      "boundary_pos_weight": 3.0,
+      "mirror": true,
+      "seed": 20261108
+    },
+    "recipe": [
+      [
+        0,
+        "original"
+      ],
+      [
+        1,
+        "target_aug"
+      ],
+      [
+        2,
+        "target_aug"
+      ]
+    ],
+    "train_label": "provider",
+    "arms": {
+      "exp4_full": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.25,
+          "team_weight": 0.25,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261108,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261108
+        }
+      },
+      "exp4_full_s1": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.25,
+          "team_weight": 0.25,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261109,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261109
+        }
+      },
+      "exp4_full_s2": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.25,
+          "team_weight": 0.25,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261110,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261110
+        }
+      },
+      "exp4_touch": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.0,
+          "team_weight": 0.0,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261108,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261108
+        }
+      },
+      "exp4_touch_s1": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.0,
+          "team_weight": 0.0,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261109,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261109
+        }
+      },
+      "exp4_touch_s2": {
+        "touch": true,
+        "aux": {
+          "ball_weight": 0.0,
+          "team_weight": 0.0,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261110,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261110
+        }
+      },
+      "exp4_aux": {
+        "touch": false,
+        "aux": {
+          "ball_weight": 0.25,
+          "team_weight": 0.25,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261108,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261108
+        }
+      },
+      "exp4_aux_s1": {
+        "touch": false,
+        "aux": {
+          "ball_weight": 0.25,
+          "team_weight": 0.25,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261109,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261109
+        }
+      },
+      "exp4_aux_s2": {
+        "touch": false,
+        "aux": {
+          "ball_weight": 0.25,
+          "team_weight": 0.25,
+          "smooth_l1_beta": 1.0,
+          "head_seed_offset": 9000000
+        },
+        "seed": 20261110,
+        "config": {
+          "window": 300,
+          "batch": 32,
+          "epochs": 14,
+          "coverage": 2.0,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 64,
+          "hidden": 64,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "mirror": true,
+          "seed": 20261110
+        }
+      }
+    },
+    "ensembles": {
+      "exp4_full_ens3": [
+        "exp4_full",
+        "exp4_full_s1",
+        "exp4_full_s2"
+      ],
+      "exp4_touch_ens3": [
+        "exp4_touch",
+        "exp4_touch_s1",
+        "exp4_touch_s2"
+      ],
+      "exp4_aux_ens3": [
+        "exp4_aux",
+        "exp4_aux_s1",
+        "exp4_aux_s2"
+      ],
+      "ref_ens3": [
+        "exp2_aug",
+        "exp2_aug_s1",
+        "exp2_aug_s2"
+      ]
+    },
+    "variants": {
+      "exp4_full_ens3": [
+        "exp4_full_ens3"
+      ],
+      "exp4_touch_ens3": [
+        "exp4_touch_ens3"
+      ],
+      "exp4_aux_ens3": [
+        "exp4_aux_ens3"
+      ],
+      "exp4_full": [
+        "exp4_full"
+      ],
+      "exp4_full_s1": [
+        "exp4_full_s1"
+      ],
+      "exp4_full_s2": [
+        "exp4_full_s2"
+      ],
+      "exp4_touch": [
+        "exp4_touch"
+      ],
+      "exp4_touch_s1": [
+        "exp4_touch_s1"
+      ],
+      "exp4_touch_s2": [
+        "exp4_touch_s2"
+      ],
+      "exp4_aux": [
+        "exp4_aux"
+      ],
+      "exp4_aux_s1": [
+        "exp4_aux_s1"
+      ],
+      "exp4_aux_s2": [
+        "exp4_aux_s2"
+      ]
+    },
+    "reused_variants": [
+      "exp3_ref_ens3",
+      "exp2_aug"
+    ],
+    "aux": {
+      "on": {
+        "ball_weight": 0.25,
+        "team_weight": 0.25,
+        "smooth_l1_beta": 1.0,
+        "head_seed_offset": 9000000
+      },
+      "off": {
+        "ball_weight": 0.0,
+        "team_weight": 0.0,
+        "smooth_l1_beta": 1.0,
+        "head_seed_offset": 9000000
+      },
+      "head_outputs": [
+        "ball_x",
+        "ball_y",
+        "logit_home",
+        "logit_away"
+      ]
+    },
+    "touch": {
+      "names": [
+        "home_min_dist",
+        "away_min_dist",
+        "peak_dv",
+        "peak_team"
+      ],
+      "window_frames": 5,
+      "dist_scale": 10.0,
+      "dist_cap": 3.0,
+      "dv_scale": 20.0,
+      "dv_cap": 3.0
+    },
+    "fingerprints": {
+      "exp4_full": "c0e9108c21e9",
+      "exp4_full_s1": "6421ef0d80c5",
+      "exp4_full_s2": "33ec6ab4a628",
+      "exp4_touch": "447c2999ede6",
+      "exp4_touch_s1": "9f5d6d20e842",
+      "exp4_touch_s2": "90c1e492393a",
+      "exp4_aux": "3dd97f19240b",
+      "exp4_aux_s1": "0d11767b37a7",
+      "exp4_aux_s2": "8d84bc1b3928"
+    },
+    "exp2_cached_fingerprints": {
+      "exp2_aug": "5cea8203869e",
+      "exp2_aug_s1": "01776e3c0b77",
+      "exp2_aug_s2": "fb137265b072"
+    },
+    "reused_result_sha256": {
+      "exp3_ref_ens3__original__provider": "346cfce37e8f4234b86b08af246d8a87b9a0d48c79ca109faa251c9dec023874",
+      "exp3_ref_ens3__original__track_1": "4652ace749d4367ffa62b8a09cb9c91af802ef749aac231820ff4cc3a9ac92f0",
+      "exp3_ref_ens3__original__ctrl": "44b46285b4957ed67a71b5735c8251b3e80574a956008d9755effc06fb649f39",
+      "exp3_ref_ens3__original__track_3": "0bff4d5cac8d22cab1ef7075a0d8605075f6de25742701c769cb4632988e5282",
+      "exp3_ref_ens3__target_like__provider": "e3a4fbd9f7f6291490d19c3b6e87be36959d0f79dd668cae357c139374e4c9f2",
+      "exp3_ref_ens3__target_like__track_1": "10b567fb8d03c223d690f2537030adc2034e0b16761f245165695464b826250b",
+      "exp3_ref_ens3__target_like__ctrl": "01490be80c53a15e6268dd1213debfde01b2adb7673e258383ba977c1a5adbe0",
+      "exp3_ref_ens3__target_like__track_3": "09d2f4859a22deb9d39cd14da8c533323b9d1c952bee3cffae30504631ecba53",
+      "exp2_aug__original__provider": "d57f695b4ce05186b07bd302020af32888a2cf6167cad696624462251007f6d1",
+      "exp2_aug__original__track_1": "f7e81d68c93ca866cb74cb3428d8d15be0002a7e1c502962b9da0672c9d5a59b",
+      "exp2_aug__original__ctrl": "9d57b886022e7ecbf5625e673e33ad28aad07f84ff77b868ab50bb90703ee1ca",
+      "exp2_aug__original__track_3": "80c6487379017a48c82e21a3998c245d96f884b65fd56e1dfdd98c83a3961014",
+      "exp2_aug__target_like__provider": "8181cfbafdf05110ca0c33c41d08504be40eaab28639f5ea998e58b0ca803e80",
+      "exp2_aug__target_like__track_1": "f911f9febf05875a0ef86ea60a48c2acefb2c574460710425df416c501ca7582",
+      "exp2_aug__target_like__ctrl": "4b943d7b749069bbee3125c8a05be989eefff6a5b6ef5767c1b3c80bf69dfd75",
+      "exp2_aug__target_like__track_3": "0dad3faba18ca01b774a54ef081084c64e6d48fd75de8db72db1fbf88e37a528"
+    },
+    "bd_lambdas": [
+      0.5,
+      1.0,
+      2.0,
+      4.0,
+      8.0,
+      16.0
+    ],
+    "bd_gammas": [
+      0.0,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "views": [
+      "original",
+      "target_like"
+    ],
+    "primary_view": "target_like",
+    "s1_labels": [
+      "provider",
+      "track_1",
+      "ctrl",
+      "track_3"
+    ],
+    "h1": {
+      "comparison": [
+        "exp4_full_ens3",
+        "exp3_ref_ens3"
+      ],
+      "view": "target_like",
+      "provider_rule": "paired 95% CI lower bound > 0.0",
+      "ctrl_rule": "paired 95% CI lower bound > -0.01",
+      "provider_ci_low": 0.0,
+      "ctrl_ci_low": -0.01
+    },
+    "bootstrap": {
+      "draws": 1000,
+      "seed": 20261108,
+      "interval": 0.95
+    },
+    "gap_growth_flag": 0.25,
+    "fit_cap": 280
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp4_full_s1",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7220588235294118,
+      "macro_f1": 0.9197889921897615,
+      "n_true": 298,
+      "n_pred": 246,
+      "count_error_ratio": -0.17449664429530198,
+      "temperature": 1.1931919889141545,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp4_full_s1",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.6956239870340356,
+      "macro_f1": 0.906333685861786,
+      "n_true": 315,
+      "n_pred": 302,
+      "count_error_ratio": -0.041269841269841234,
+      "temperature": 1.221335540531206,
+      "lambda_team": 4.0,
+      "lambda_dead": 16.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp4_full_s1",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7404761904761905,
+      "macro_f1": 0.9238059126982535,
+      "n_true": 279,
+      "n_pred": 225,
+      "count_error_ratio": -0.19354838709677424,
+      "temperature": 1.1943930297735401,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp4_full_s1",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7411764705882352,
+      "macro_f1": 0.9208847869892192,
+      "n_true": 302,
+      "n_pred": 310,
+      "count_error_ratio": 0.026490066225165476,
+      "temperature": 1.2023723833669997,
+      "lambda_team": 4.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp4_full_s1",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7508506616257089,
+      "macro_f1": 0.9235491872443667,
+      "n_true": 272,
+      "n_pred": 257,
+      "count_error_ratio": -0.05514705882352944,
+      "temperature": 1.190356597538266,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp4_full_s1",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7418439716312056,
+      "macro_f1": 0.9252142768204458,
+      "n_true": 284,
+      "n_pred": 280,
+      "count_error_ratio": -0.014084507042253502,
+      "temperature": 1.1993864237798777,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp4_full_s1",
+      "view": "target_like",
+      "label_set": "ctrl",
+      "spell_f1": 0.7027027027027026,
+      "macro_f1": 0.9149593708569267,
+      "n_true": 267,
+      "n_pred": 214,
+      "count_error_ratio": -0.19850187265917607,
+      "temperature": 1.1934237209630867,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.1931919889141545,
+      "lambda_team": 8.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.221335540531206,
+      "lambda_team": 4.0,
+      "lambda_dead": 16.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.1943930297735401,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.2023723833669997,
+      "lambda_team": 4.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.190356597538266,
+      "lambda_team": 8.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.5
+    },
+    "J03WQQ": {
+      "temperature": 1.1993864237798777,
+      "lambda_team": 8.0,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.1934237209630867,
+      "lambda_team": 8.0,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.2074660062091436,
+    "lambda_team": 8.0,
+    "lambda_dead": 4.0,
+    "gamma": 0.0
+  },
+  "source": "exp4_full_s1"
+}
