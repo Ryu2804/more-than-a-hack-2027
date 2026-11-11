@@ -1,0 +1,177 @@
+{
+  "variant": "exp7_robust_ens3",
+  "selection_view": "target_like",
+  "label_set": "provider",
+  "views": [
+    "target_like"
+  ],
+  "rows": [
+    {
+      "match": "J03WMX",
+      "variant": "exp7_robust_ens3",
+      "view": "target_like",
+      "selection_view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.608695652173913,
+      "macro_f1": 0.9203697794412271,
+      "n_true": 511,
+      "n_pred": 340,
+      "count_error_ratio": -0.3346379647749511,
+      "temperature": 1.1560960830704345,
+      "lambda_team": 0.5,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WN1",
+      "variant": "exp7_robust_ens3",
+      "view": "target_like",
+      "selection_view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6492554410080184,
+      "macro_f1": 0.9013570072578876,
+      "n_true": 500,
+      "n_pred": 373,
+      "count_error_ratio": -0.254,
+      "temperature": 1.1798702708784539,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOH",
+      "variant": "exp7_robust_ens3",
+      "view": "target_like",
+      "selection_view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6806818181818183,
+      "macro_f1": 0.9253625697333471,
+      "n_true": 402,
+      "n_pred": 302,
+      "count_error_ratio": -0.24875621890547261,
+      "temperature": 1.1465806534525451,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WOY",
+      "variant": "exp7_robust_ens3",
+      "view": "target_like",
+      "selection_view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6836538461538462,
+      "macro_f1": 0.9243256973782826,
+      "n_true": 456,
+      "n_pred": 376,
+      "count_error_ratio": -0.17543859649122806,
+      "temperature": 1.1586128014240469,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WPY",
+      "variant": "exp7_robust_ens3",
+      "view": "target_like",
+      "selection_view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6790190735694822,
+      "macro_f1": 0.9255895019792755,
+      "n_true": 421,
+      "n_pred": 313,
+      "count_error_ratio": -0.2565320665083135,
+      "temperature": 1.1434480495102342,
+      "lambda_team": 1.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WQQ",
+      "variant": "exp7_robust_ens3",
+      "view": "target_like",
+      "selection_view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.7084656084656084,
+      "macro_f1": 0.9310803909025571,
+      "n_true": 401,
+      "n_pred": 355,
+      "count_error_ratio": -0.11471321695760595,
+      "temperature": 1.1513334196937188,
+      "lambda_team": 1.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    {
+      "match": "J03WR9",
+      "variant": "exp7_robust_ens3",
+      "view": "target_like",
+      "selection_view": "target_like",
+      "label_set": "provider",
+      "spell_f1": 0.6341040462427745,
+      "macro_f1": 0.9032153462101732,
+      "n_true": 370,
+      "n_pred": 322,
+      "count_error_ratio": -0.12972972972972974,
+      "temperature": 1.1448526675089454,
+      "lambda_team": 0.5,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    }
+  ],
+  "selections": {
+    "J03WMX": {
+      "temperature": 1.1560960830704345,
+      "lambda_team": 0.5,
+      "lambda_dead": 8.0,
+      "gamma": 0.0
+    },
+    "J03WN1": {
+      "temperature": 1.1798702708784539,
+      "lambda_team": 0.5,
+      "lambda_dead": 1.0,
+      "gamma": 0.0
+    },
+    "J03WOH": {
+      "temperature": 1.1465806534525451,
+      "lambda_team": 0.5,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WOY": {
+      "temperature": 1.1586128014240469,
+      "lambda_team": 0.5,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WPY": {
+      "temperature": 1.1434480495102342,
+      "lambda_team": 1.0,
+      "lambda_dead": 2.0,
+      "gamma": 0.0
+    },
+    "J03WQQ": {
+      "temperature": 1.1513334196937188,
+      "lambda_team": 1.0,
+      "lambda_dead": 4.0,
+      "gamma": 0.0
+    },
+    "J03WR9": {
+      "temperature": 1.1448526675089454,
+      "lambda_team": 0.5,
+      "lambda_dead": 0.5,
+      "gamma": 0.0
+    }
+  },
+  "final_config": {
+    "temperature": 1.1415867963793038,
+    "lambda_team": 0.5,
+    "lambda_dead": 2.0,
+    "gamma": 0.0
+  },
+  "members": [
+    "exp7_robust",
+    "exp7_robust_s1",
+    "exp7_robust_s2"
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "finished_at_utc": "2026-11-11T03:16:11+00:00",
+  "tasks": [
+    {
+      "task": [
+        "exp7_robust_ens3",
+        "target_like",
+        "provider"
+      ],
+      "seconds": 80.2,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_ens3",
+        "target_like",
+        "ctrl"
+      ],
+      "seconds": 80.1,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_ens3",
+        "measured",
+        "provider"
+      ],
+      "seconds": 95.3,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_ens3",
+        "measured",
+        "ctrl"
+      ],
+      "seconds": 81.8,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_ens3",
+        "clean25",
+        "provider"
+      ],
+      "seconds": 95.3,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_ens3",
+        "clean25",
+        "ctrl"
+      ],
+      "seconds": 80.6,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_ens3",
+        "clean50",
+        "provider"
+      ],
+      "seconds": 108.8,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_ens3",
+        "clean50",
+        "ctrl"
+      ],
+      "seconds": 71.9,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust",
+        "target_like",
+        "provider"
+      ],
+      "seconds": 78.9,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust",
+        "target_like",
+        "ctrl"
+      ],
+      "seconds": 65.4,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust",
+        "measured",
+        "provider"
+      ],
+      "seconds": 79.2,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust",
+        "measured",
+        "ctrl"
+      ],
+      "seconds": 66.3,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_s1",
+        "target_like",
+        "provider"
+      ],
+      "seconds": 92.5,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_s1",
+        "target_like",
+        "ctrl"
+      ],
+      "seconds": 79.9,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_s1",
+        "measured",
+        "provider"
+      ],
+      "seconds": 94.6,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_s1",
+        "measured",
+        "ctrl"
+      ],
+      "seconds": 81.8,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_s2",
+        "target_like",
+        "provider"
+      ],
+      "seconds": 92.9,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_s2",
+        "target_like",
+        "ctrl"
+      ],
+      "seconds": 79.7,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_s2",
+        "measured",
+        "provider"
+      ],
+      "seconds": 95.1,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp7_robust_s2",
+        "measured",
+        "ctrl"
+      ],
+      "seconds": 81.9,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp3_ref_ens3_msel",
+        "measured",
+        "provider"
+      ],
+      "seconds": 299.9,
+      "tag": "computed"
+    },
+    {
+      "task": [
+        "exp3_ref_ens3_msel",
+        "measured",
+        "ctrl"
+      ],
+      "seconds": 104.6,
+      "tag": "computed"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "finished_at_utc": "2026-11-11T02:38:33+00:00",
+  "arms": {
+    "exp7_robust": {
+      "fingerprint": "6fbb3c58f313",
+      "seed": 20261117,
+      "fitted_now": 28,
+      "seconds": 1344.7,
+      "jobs_missing_after": 0
+    },
+    "exp7_robust_s1": {
+      "fingerprint": "101817ff9e86",
+      "seed": 20261118,
+      "fitted_now": 28,
+      "seconds": 1332.7,
+      "jobs_missing_after": 0
+    },
+    "exp7_robust_s2": {
+      "fingerprint": "e5cee02bdc44",
+      "seed": 20261119,
+      "fitted_now": 28,
+      "seconds": 1339.3,
+      "jobs_missing_after": 0
+    }
+  },
+  "proxy_fits": 84,
+  "planned": {
+    "proxy": 84,
+    "full_data": 3,
+    "rebuild": 3
+  },
+  "cap": 100
+}

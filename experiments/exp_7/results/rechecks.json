@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-11-11T01:30:58+00:00",
+  "reference_vs_exp6_rows": {
+    "target_like": {
+      "rows": 14,
+      "max_abs_diff": 1.1102230246251565e-16,
+      "equal": true
+    },
+    "measured": {
+      "rows": 14,
+      "max_abs_diff": 6.938893903907228e-17,
+      "equal": true
+    },
+    "stress": {
+      "rows": 14,
+      "max_abs_diff": 9.020562075079397e-17,
+      "equal": true
+    },
+    "clean25": {
+      "rows": 14,
+      "max_abs_diff": 1.1102230246251565e-16,
+      "equal": true
+    },
+    "clean50": {
+      "rows": 14,
+      "max_abs_diff": 1.1102230246251565e-16,
+      "equal": true
+    },
+    "all_equal": true
+  }
+}

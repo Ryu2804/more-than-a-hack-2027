@@ -1,0 +1,30 @@
+{
+  "checked_at_utc": "2026-11-11T01:26:46+00:00",
+  "token_cache_seconds": 86.6,
+  "token_cache_files": 49,
+  "token_cache_mb": 834.8,
+  "unsimulated_target_aug_equals_exp2": {
+    "J03WMX_r1": true,
+    "J03WMX_r2": true,
+    "J03WN1_r1": true,
+    "J03WN1_r2": true,
+    "J03WOH_r1": true,
+    "J03WOH_r2": true,
+    "J03WOY_r1": true,
+    "J03WOY_r2": true,
+    "J03WPY_r1": true,
+    "J03WPY_r2": true,
+    "J03WQQ_r1": true,
+    "J03WQQ_r2": true,
+    "J03WR9_r1": true,
+    "J03WR9_r2": true
+  },
+  "all_unsimulated_equal": true,
+  "fingerprints": {
+    "exp7_robust": "6fbb3c58f313",
+    "exp7_robust_s1": "101817ff9e86",
+    "exp7_robust_s2": "e5cee02bdc44"
+  },
+  "tiny_synthetic_fit_seconds": 0.89,
+  "write_guard_unchanged": true
+}
