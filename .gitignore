@@ -66,3 +66,19 @@ env/
 # -- experiments: generated submissions, reports, caches ------------------------------------------
 experiments/*/out/
 experiments/_cache/
+
+# -- consolidation: generated experiment artifacts -------------------------------
+experiments/**/out/
+experiments/**/cache/
+experiments/**/predictions/
+experiments/**/models/
+experiments/**/runs/
+experiments/**/submission*.csv
+experiments/**/loop/HEARTBEAT
+experiments/**/loop/*.pid
+experiments/**/loop/*.lock
+experiments/**/loop/cache/
+*.pt
+*.pth
+*.pkl
+*.joblib
