@@ -1,0 +1,42 @@
+{
+  "graded_frames": 158857,
+  "hidden_graded": 64643,
+  "splits": {
+    "train": {
+      "frames": 56093,
+      "runs": 91,
+      "labelled_frames": 55967
+    },
+    "val": {
+      "frames": 19169,
+      "runs": 29,
+      "labelled_frames": 19169
+    },
+    "test": {
+      "frames": 18952,
+      "runs": 29,
+      "labelled_frames": 18893
+    },
+    "hidden": {
+      "frames": 64643,
+      "runs": 150,
+      "labelled_frames": 0
+    }
+  },
+  "g1": {
+    "visible_graded": 94214,
+    "inside_with_margin": 94029,
+    "share": 0.9980363852505997
+  },
+  "bbox_width_px": {
+    "median": 1920.0,
+    "min": 1704,
+    "max": 1920
+  },
+  "bbox_height_px": {
+    "median": 886.0,
+    "min": 526,
+    "max": 1078
+  },
+  "player_projection_inside_share": 0.9518913527200185
+}

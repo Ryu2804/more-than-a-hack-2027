@@ -1,0 +1,104 @@
+{
+  "feasibility": {
+    "reused_files": 59,
+    "missing": [],
+    "exp2_fingerprints": {
+      "exp2_aug": "5cea8203869e",
+      "exp2_aug_s1": "01776e3c0b77",
+      "exp2_aug_s2": "fb137265b072"
+    },
+    "exp2_folders": {
+      "exp2_aug": "exp2_aug_5cea8203869e",
+      "exp2_aug_s1": "exp2_aug_s1_01776e3c0b77",
+      "exp2_aug_s2": "exp2_aug_s2_fb137265b072"
+    },
+    "exp3_selection_matches": {
+      "provider": true,
+      "ctrl": true
+    },
+    "idsse_units_check": {
+      "match": "J03WMX",
+      "pitch": [
+        105.0,
+        68.0
+      ],
+      "ball_x_p99_over_length": 1.0244761875697546,
+      "ball_y_p99_over_width": 1.0147058823529411
+    }
+  },
+  "inputs": {
+    "graded_frames": 158857,
+    "hidden_graded": 64643,
+    "splits": {
+      "train": {
+        "frames": 56093,
+        "runs": 91,
+        "labelled_frames": 55967
+      },
+      "val": {
+        "frames": 19169,
+        "runs": 29,
+        "labelled_frames": 19169
+      },
+      "test": {
+        "frames": 18952,
+        "runs": 29,
+        "labelled_frames": 18893
+      },
+      "hidden": {
+        "frames": 64643,
+        "runs": 150,
+        "labelled_frames": 0
+      }
+    },
+    "g1": {
+      "visible_graded": 94214,
+      "inside_with_margin": 94029,
+      "share": 0.9980363852505997
+    },
+    "bbox_width_px": {
+      "median": 1920.0,
+      "min": 1704,
+      "max": 1920
+    },
+    "bbox_height_px": {
+      "median": 886.0,
+      "min": 526,
+      "max": 1078
+    },
+    "player_projection_inside_share": 0.9518913527200185
+  },
+  "region_median_hw": [
+    920.0,
+    1920.0
+  ],
+  "barath_units_check": {
+    "visible_graded_inside_pitch_share": 0.9580847857006389
+  },
+  "video_metadata": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 25.0,
+    "frame_count": 199319
+  },
+  "decode": {
+    "frames_read": 300,
+    "seconds_per_read": [
+      0.57,
+      0.48
+    ],
+    "frames_per_second": 625.5,
+    "deterministic": true
+  },
+  "gpu": {
+    "parameters": 537473,
+    "train_step_ms_batch64": 119.0,
+    "train_peak_mib": 1865.2,
+    "inference_input_hw": [
+      920,
+      1920
+    ],
+    "inference_ms_per_frame": 62.7,
+    "inference_peak_mib": 788.4
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "checked_at_utc": "2026-11-10T14:59:26+00:00",
+  "tokens": {
+    "per_match": {
+      "J03WMX": true,
+      "J03WN1": true,
+      "J03WOH": true,
+      "J03WOY": true,
+      "J03WPY": true,
+      "J03WQQ": true,
+      "J03WR9": true
+    },
+    "all_equal": true
+  },
+  "target_like_rows": {
+    "rows": 14,
+    "max_abs_diff": 0.0,
+    "rows_equal": true,
+    "max_cached_probability_diff": 0.0
+  },
+  "s2_coverage": {
+    "rows": 14,
+    "max_abs_diff": 1.1102230246251565e-16,
+    "rows_equal": false,
+    "delta_provider": {
+      "mine": 0.00951008389840023,
+      "stored": 0.00951008389840023
+    },
+    "delta_ctrl": {
+      "mine": 0.006918298233357466,
+      "stored": 0.006918298233357466
+    }
+  },
+  "touch_target_like_rows": {
+    "rows": 14,
+    "max_abs_diff": 0.0,
+    "rows_equal": true
+  }
+}
