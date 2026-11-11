@@ -1,0 +1,13 @@
+{
+  "dataset": "IDSSE",
+  "dev_matches": ["J03WMX", "J03WOH", "J03WOY", "J03WPY", "J03WQQ"],
+  "confirm_matches": ["J03WN1", "J03WR9"],
+  "bootstrap_n": 1000,
+  "bootstrap_seed": 20261108,
+  "spell_ious": [0.3, 0.4, 0.5, 0.6, 0.7],
+  "degrader": {
+    "source": "jeremy judge snapshot",
+    "hash": "TBD"
+  },
+  "scorer": "evaluation/possession_metrics.py"
+}
