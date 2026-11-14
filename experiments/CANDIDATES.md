@@ -23,6 +23,7 @@ Status values: `reference`, `exploratory`, `candidate`, `frozen`, `rejected`, `c
 |---|---|---:|---:|---:|
 | rasya | touch-hold + gated dead cue | 0.5205 | 0.8539 | -49.0 |
 | jeremy | SetSeq + boundary-aware decode | 0.5980 | 0.8935 | -100.1 |
+| farras | HGB + Viterbi (adapted) | 0.3330 | 0.7955 | -241.0 |
 
 ## Rules
 - Public spellF1 is diagnostic only and never selects a candidate.
