@@ -18,6 +18,12 @@ Status values: `reference`, `exploratory`, `candidate`, `frozen`, `rejected`, `c
 | ryu | final pipeline | TCN + Viterbi | event-derived | dead AUC 0.90-0.91 | - | 0.422 | 19 / 13.9s | - | candidate | Dead recall 49%, prior shift post-hoc |
 | ryu | 017 | multi-match | event-derived | 0.56-0.69 | - | 0.681-0.747 | - | - | exploratory | Public diagnostic only |
 
+## Common benchmark (IDSSE, 7 matches)
+| Branch | Method | Mean spellF1 | Mean macroF1 | Mean count error |
+|---|---|---:|---:|---:|
+| rasya | touch-hold + gated dead cue | 0.5205 | 0.8539 | -49.0 |
+| jeremy | SetSeq + boundary-aware decode | 0.5980 | 0.8935 | -100.1 |
+
 ## Rules
 - Public spellF1 is diagnostic only and never selects a candidate.
 - A claim of improvement requires CI excluding 0 and majority wins.

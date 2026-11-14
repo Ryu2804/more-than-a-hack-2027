@@ -64,20 +64,18 @@ for target in C.MATCH_IDS:
         "glob": tok["glob"],
         "half": tok["half"],
     }
-    preds = P.fit_predict("setseq", train_names, {target: item})
+    preds = P.fit_predict("setseq_noaug", train_names, {target: item})
     probability, boundary = preds[target]
     codes_5 = D.decode(probability, boundary, tok["half"], final_config)
     match = C.load_degraded(target)
     full = C.expand(codes_5, tok["indices"], match.half).astype(np.int8)
-    # align to rasya frame range 10000..175258
-    rasya_len = 165259
     base = 10000
-    aligned = np.full(rasya_len, 3, dtype=np.int8)
+    n_frames = int(match.frame.max()) - base + 1
+    aligned = np.full(n_frames, 3, dtype=np.int8)
     for idx, frame_id in enumerate(match.frame):
-        if frame_id >= base and frame_id < base + rasya_len:
-            aligned[frame_id - base] = full[idx]
+        if base <= frame_id < base + n_frames:
+            aligned[int(frame_id) - base] = full[idx]
     write_csv(out_pred, aligned)
     print(target, "done in", round(time.time() - t0, 1), "spell_proxy_n/a", flush=True)
 
 print("all jeremy predictions written to", OUT / "pred")
-PY
