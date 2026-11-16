@@ -1,0 +1,38 @@
+{
+  "selection_sha256": "b5269672e86cce891c7ce28054ce17a6acfa4c4979e11236757212d908acdd05",
+  "records": [
+    {
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.8959839885496844,
+      "possessions": 12
+    },
+    {
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.8993592719622008,
+      "possessions": 12
+    },
+    {
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "spellF1": 0.5756097560975609,
+      "macroF1": 0.7128435879738175,
+      "possessions": 24
+    },
+    {
+      "candidate": "shipped_ryu",
+      "family": "shipped_no_metrica",
+      "decoder": "ryu_rate",
+      "spellF1": 0.7600000000000001,
+      "macroF1": 0.9199322421257007,
+      "possessions": 13
+    }
+  ],
+  "warning": "Four fixed candidates only after freeze; no64-way public sweep. Shipped reference uses cached inputs/adapted decoder, not certified byte reproduction."
+}

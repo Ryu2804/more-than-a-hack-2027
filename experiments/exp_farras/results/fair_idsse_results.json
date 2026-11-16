@@ -1,0 +1,2772 @@
+{
+  "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+  "rows": [
+    {
+      "spell_f1_mean": 0.3001090512540894,
+      "macro_f1": 0.8038105412916914,
+      "accuracy": 0.8200209636424671,
+      "n_gt_spells": 511,
+      "n_pred_spells": 406,
+      "mean_spell_duration_s": 8.733004926108373,
+      "count_error_ratio": -0.2054794520547945,
+      "family": "hgb",
+      "match": "J03WMX",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.04167021729867916,
+      "macro_f1": 0.7281705365384868,
+      "accuracy": 0.7579110346859221,
+      "n_gt_spells": 511,
+      "n_pred_spells": 4183,
+      "mean_spell_duration_s": 0.7931149892421706,
+      "count_error_ratio": 7.185909980430528,
+      "family": "hgb",
+      "match": "J03WMX",
+      "mode": "argmax",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.5558312655086848,
+      "macro_f1": 0.9111782859296503,
+      "accuracy": 0.9190501962772407,
+      "n_gt_spells": 511,
+      "n_pred_spells": 295,
+      "mean_spell_duration_s": 11.535593220338983,
+      "count_error_ratio": -0.4227005870841487,
+      "family": "setseq",
+      "match": "J03WMX",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.5557603686635944,
+      "macro_f1": 0.9138476822708085,
+      "accuracy": 0.9215713140641378,
+      "n_gt_spells": 511,
+      "n_pred_spells": 357,
+      "mean_spell_duration_s": 9.5109243697479,
+      "count_error_ratio": -0.3013698630136986,
+      "family": "setseq",
+      "match": "J03WMX",
+      "mode": "argmax",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.5041025641025642,
+      "macro_f1": 0.9029305171975682,
+      "accuracy": 0.9124665164043928,
+      "n_gt_spells": 511,
+      "n_pred_spells": 269,
+      "mean_spell_duration_s": 12.586617100371747,
+      "count_error_ratio": -0.4735812133072407,
+      "family": "pp_tcn",
+      "match": "J03WMX",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.5046454767726161,
+      "macro_f1": 0.9032712370878325,
+      "accuracy": 0.9127199983557928,
+      "n_gt_spells": 511,
+      "n_pred_spells": 307,
+      "mean_spell_duration_s": 11.039087947882736,
+      "count_error_ratio": -0.39921722113502933,
+      "family": "pp_tcn",
+      "match": "J03WMX",
+      "mode": "argmax",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.5331713244228432,
+      "macro_f1": 0.9061859382779565,
+      "accuracy": 0.9152274144155871,
+      "n_gt_spells": 511,
+      "n_pred_spells": 312,
+      "mean_spell_duration_s": 10.920512820512819,
+      "count_error_ratio": -0.38943248532289626,
+      "family": "short_tcn",
+      "match": "J03WMX",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.5144811858608893,
+      "macro_f1": 0.9056077101795981,
+      "accuracy": 0.9146656436043763,
+      "n_gt_spells": 511,
+      "n_pred_spells": 366,
+      "mean_spell_duration_s": 9.308196721311475,
+      "count_error_ratio": -0.2837573385518591,
+      "family": "short_tcn",
+      "match": "J03WMX",
+      "mode": "argmax",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.1908045977011494,
+      "macro_f1": 0.6272851219606812,
+      "accuracy": 0.6318688470681729,
+      "n_gt_spells": 511,
+      "n_pred_spells": 533,
+      "mean_spell_duration_s": 7.6015009380863034,
+      "count_error_ratio": 0.043052837573385516,
+      "family": "touch_hold",
+      "match": "J03WMX",
+      "mode": "native_rule",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.469433037037287,
+        "dead_share": 0.45443098546947697
+      }
+    },
+    {
+      "spell_f1_mean": 0.30834260289210236,
+      "macro_f1": 0.7616734283105343,
+      "accuracy": 0.8076094404532321,
+      "n_gt_spells": 500,
+      "n_pred_spells": 399,
+      "mean_spell_duration_s": 6.932631578947369,
+      "count_error_ratio": -0.202,
+      "family": "hgb",
+      "match": "J03WN1",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.06135565757493925,
+      "macro_f1": 0.7080854579815301,
+      "accuracy": 0.7728187848348061,
+      "n_gt_spells": 500,
+      "n_pred_spells": 3203,
+      "mean_spell_duration_s": 0.7939806431470496,
+      "count_error_ratio": 5.406,
+      "family": "hgb",
+      "match": "J03WN1",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.5256441717791411,
+      "macro_f1": 0.8693723300552904,
+      "accuracy": 0.8950911621138591,
+      "n_gt_spells": 500,
+      "n_pred_spells": 315,
+      "mean_spell_duration_s": 8.215619047619048,
+      "count_error_ratio": -0.37,
+      "family": "setseq",
+      "match": "J03WN1",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.5362541073384446,
+      "macro_f1": 0.8749674308254397,
+      "accuracy": 0.8994638353783881,
+      "n_gt_spells": 500,
+      "n_pred_spells": 413,
+      "mean_spell_duration_s": 6.250169491525424,
+      "count_error_ratio": -0.174,
+      "family": "setseq",
+      "match": "J03WN1",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.5239570917759238,
+      "macro_f1": 0.8699878282787893,
+      "accuracy": 0.8961860964531192,
+      "n_gt_spells": 500,
+      "n_pred_spells": 339,
+      "mean_spell_duration_s": 7.877050147492626,
+      "count_error_ratio": -0.322,
+      "family": "pp_tcn",
+      "match": "J03WN1",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.508296943231441,
+      "macro_f1": 0.8698404769035847,
+      "accuracy": 0.896143711898051,
+      "n_gt_spells": 500,
+      "n_pred_spells": 416,
+      "mean_spell_duration_s": 6.383461538461538,
+      "count_error_ratio": -0.168,
+      "family": "pp_tcn",
+      "match": "J03WN1",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.5432098765432098,
+      "macro_f1": 0.8726437258293932,
+      "accuracy": 0.8979662477659808,
+      "n_gt_spells": 500,
+      "n_pred_spells": 391,
+      "mean_spell_duration_s": 6.885728900255755,
+      "count_error_ratio": -0.218,
+      "family": "short_tcn",
+      "match": "J03WN1",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.5198751300728408,
+      "macro_f1": 0.870474833617174,
+      "accuracy": 0.896638198373846,
+      "n_gt_spells": 500,
+      "n_pred_spells": 461,
+      "mean_spell_duration_s": 5.815444685466377,
+      "count_error_ratio": -0.078,
+      "family": "short_tcn",
+      "match": "J03WN1",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.2113502935420744,
+      "macro_f1": 0.5888637956763666,
+      "accuracy": 0.6003772225401064,
+      "n_gt_spells": 500,
+      "n_pred_spells": 522,
+      "mean_spell_duration_s": 7.2155555555555555,
+      "count_error_ratio": 0.044,
+      "family": "touch_hold",
+      "match": "J03WN1",
+      "mode": "native_rule",
+      "training_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.461619291802891,
+        "dead_share": 0.4374593326584275
+      }
+    },
+    {
+      "spell_f1_mean": 0.3256257449344458,
+      "macro_f1": 0.7868731124610954,
+      "accuracy": 0.8139111169414199,
+      "n_gt_spells": 402,
+      "n_pred_spells": 437,
+      "mean_spell_duration_s": 7.078260869565217,
+      "count_error_ratio": 0.08706467661691543,
+      "family": "hgb",
+      "match": "J03WOH",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.03474922006239501,
+      "macro_f1": 0.7301231392789326,
+      "accuracy": 0.7739006223854709,
+      "n_gt_spells": 402,
+      "n_pred_spells": 3765,
+      "mean_spell_duration_s": 0.775883134130146,
+      "count_error_ratio": 8.365671641791044,
+      "family": "hgb",
+      "match": "J03WOH",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.5954614220877458,
+      "macro_f1": 0.9073584975915958,
+      "accuracy": 0.9212325272931333,
+      "n_gt_spells": 402,
+      "n_pred_spells": 259,
+      "mean_spell_duration_s": 11.033976833976833,
+      "count_error_ratio": -0.35572139303482586,
+      "family": "setseq",
+      "match": "J03WOH",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.5839335180055402,
+      "macro_f1": 0.9088047476102138,
+      "accuracy": 0.9223402859766496,
+      "n_gt_spells": 402,
+      "n_pred_spells": 320,
+      "mean_spell_duration_s": 8.910625,
+      "count_error_ratio": -0.20398009950248755,
+      "family": "setseq",
+      "match": "J03WOH",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.6050822122571002,
+      "macro_f1": 0.9088381709981231,
+      "accuracy": 0.9222528313437405,
+      "n_gt_spells": 402,
+      "n_pred_spells": 267,
+      "mean_spell_duration_s": 10.795505617977529,
+      "count_error_ratio": -0.3358208955223881,
+      "family": "pp_tcn",
+      "match": "J03WOH",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.6158995815899582,
+      "macro_f1": 0.9104659783842374,
+      "accuracy": 0.9232221201918172,
+      "n_gt_spells": 402,
+      "n_pred_spells": 315,
+      "mean_spell_duration_s": 9.163174603174603,
+      "count_error_ratio": -0.21641791044776118,
+      "family": "pp_tcn",
+      "match": "J03WOH",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.6347949080622348,
+      "macro_f1": 0.9111528403134478,
+      "accuracy": 0.9236812570145904,
+      "n_gt_spells": 402,
+      "n_pred_spells": 305,
+      "mean_spell_duration_s": 9.52393442622951,
+      "count_error_ratio": -0.24129353233830847,
+      "family": "short_tcn",
+      "match": "J03WOH",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.6336375488917863,
+      "macro_f1": 0.9121315787603613,
+      "accuracy": 0.9243153031031819,
+      "n_gt_spells": 402,
+      "n_pred_spells": 365,
+      "mean_spell_duration_s": 7.958904109589041,
+      "count_error_ratio": -0.09203980099502487,
+      "family": "short_tcn",
+      "match": "J03WOH",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.1853763440860215,
+      "macro_f1": 0.5961133276549869,
+      "accuracy": 0.6012506012506013,
+      "n_gt_spells": 402,
+      "n_pred_spells": 528,
+      "mean_spell_duration_s": 7.1635606060606065,
+      "count_error_ratio": 0.31343283582089554,
+      "family": "touch_hold",
+      "match": "J03WOH",
+      "mode": "native_rule",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.612198305107962,
+        "dead_share": 0.44434358433708526
+      }
+    },
+    {
+      "spell_f1_mean": 0.32881745120551087,
+      "macro_f1": 0.7516020942744147,
+      "accuracy": 0.7763091429533592,
+      "n_gt_spells": 456,
+      "n_pred_spells": 415,
+      "mean_spell_duration_s": 8.151807228915663,
+      "count_error_ratio": -0.08991228070175439,
+      "family": "hgb",
+      "match": "J03WOY",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.04287593160894344,
+      "macro_f1": 0.7072007312144888,
+      "accuracy": 0.7467166189594208,
+      "n_gt_spells": 456,
+      "n_pred_spells": 4106,
+      "mean_spell_duration_s": 0.7722357525572333,
+      "count_error_ratio": 8.00438596491228,
+      "family": "hgb",
+      "match": "J03WOY",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.6165374677002584,
+      "macro_f1": 0.9060888759094426,
+      "accuracy": 0.9187713981029354,
+      "n_gt_spells": 456,
+      "n_pred_spells": 318,
+      "mean_spell_duration_s": 9.652830188679244,
+      "count_error_ratio": -0.3026315789473684,
+      "family": "setseq",
+      "match": "J03WOY",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.6025670945157526,
+      "macro_f1": 0.905979257744281,
+      "accuracy": 0.9184977830162204,
+      "n_gt_spells": 456,
+      "n_pred_spells": 401,
+      "mean_spell_duration_s": 7.649875311720698,
+      "count_error_ratio": -0.1206140350877193,
+      "family": "setseq",
+      "match": "J03WOY",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.5863157894736842,
+      "macro_f1": 0.8964520563694028,
+      "accuracy": 0.9095947690408037,
+      "n_gt_spells": 456,
+      "n_pred_spells": 304,
+      "mean_spell_duration_s": 10.170394736842105,
+      "count_error_ratio": -0.3333333333333333,
+      "family": "pp_tcn",
+      "match": "J03WOY",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.5669099756690998,
+      "macro_f1": 0.8960383938374127,
+      "accuracy": 0.9089773811528316,
+      "n_gt_spells": 456,
+      "n_pred_spells": 366,
+      "mean_spell_duration_s": 8.44535519125683,
+      "count_error_ratio": -0.19736842105263158,
+      "family": "pp_tcn",
+      "match": "J03WOY",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.6289926289926291,
+      "macro_f1": 0.9027601425047607,
+      "accuracy": 0.9145899983162149,
+      "n_gt_spells": 456,
+      "n_pred_spells": 358,
+      "mean_spell_duration_s": 8.672067039106146,
+      "count_error_ratio": -0.2149122807017544,
+      "family": "short_tcn",
+      "match": "J03WOY",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.5942987457240593,
+      "macro_f1": 0.9000791075736969,
+      "accuracy": 0.9122116517932312,
+      "n_gt_spells": 456,
+      "n_pred_spells": 421,
+      "mean_spell_duration_s": 7.380522565320665,
+      "count_error_ratio": -0.07675438596491228,
+      "family": "short_tcn",
+      "match": "J03WOY",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.22366863905325443,
+      "macro_f1": 0.6020740789094787,
+      "accuracy": 0.6048857832407252,
+      "n_gt_spells": 456,
+      "n_pred_spells": 558,
+      "mean_spell_duration_s": 7.177060931899641,
+      "count_error_ratio": 0.2236842105263158,
+      "family": "touch_hold",
+      "match": "J03WOY",
+      "mode": "native_rule",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.544832909940213,
+        "dead_share": 0.44615661390982164
+      }
+    },
+    {
+      "spell_f1_mean": 0.3169724770642202,
+      "macro_f1": 0.7573960720522835,
+      "accuracy": 0.7877177503744588,
+      "n_gt_spells": 421,
+      "n_pred_spells": 451,
+      "mean_spell_duration_s": 7.697560975609756,
+      "count_error_ratio": 0.07125890736342043,
+      "family": "hgb",
+      "match": "J03WPY",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.037276318847315824,
+      "macro_f1": 0.7059600399878257,
+      "accuracy": 0.7484730970993975,
+      "n_gt_spells": 421,
+      "n_pred_spells": 3882,
+      "mean_spell_duration_s": 0.8370427614631634,
+      "count_error_ratio": 8.220902612826603,
+      "family": "hgb",
+      "match": "J03WPY",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.5991240875912409,
+      "macro_f1": 0.9063789809420589,
+      "accuracy": 0.9203548296639787,
+      "n_gt_spells": 421,
+      "n_pred_spells": 264,
+      "mean_spell_duration_s": 11.995454545454544,
+      "count_error_ratio": -0.37292161520190026,
+      "family": "setseq",
+      "match": "J03WPY",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.5874499332443257,
+      "macro_f1": 0.9047285585457635,
+      "accuracy": 0.9189459069427061,
+      "n_gt_spells": 421,
+      "n_pred_spells": 328,
+      "mean_spell_duration_s": 9.60609756097561,
+      "count_error_ratio": -0.2209026128266033,
+      "family": "setseq",
+      "match": "J03WPY",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.5680232558139534,
+      "macro_f1": 0.9028667796227424,
+      "accuracy": 0.9190690166950503,
+      "n_gt_spells": 421,
+      "n_pred_spells": 267,
+      "mean_spell_duration_s": 12.149063670411985,
+      "count_error_ratio": -0.3657957244655582,
+      "family": "pp_tcn",
+      "match": "J03WPY",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.5614424410540916,
+      "macro_f1": 0.90391237284679,
+      "accuracy": 0.9199786609762604,
+      "n_gt_spells": 421,
+      "n_pred_spells": 300,
+      "mean_spell_duration_s": 10.799333333333333,
+      "count_error_ratio": -0.28741092636579574,
+      "family": "pp_tcn",
+      "match": "J03WPY",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.5873626373626374,
+      "macro_f1": 0.9038812602635623,
+      "accuracy": 0.9199102666694025,
+      "n_gt_spells": 421,
+      "n_pred_spells": 307,
+      "mean_spell_duration_s": 10.61498371335505,
+      "count_error_ratio": -0.27078384798099764,
+      "family": "short_tcn",
+      "match": "J03WPY",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.5685,
+      "macro_f1": 0.9035048563292577,
+      "accuracy": 0.919958142684203,
+      "n_gt_spells": 421,
+      "n_pred_spells": 379,
+      "mean_spell_duration_s": 8.585224274406333,
+      "count_error_ratio": -0.0997624703087886,
+      "family": "short_tcn",
+      "match": "J03WPY",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.2067085953878407,
+      "macro_f1": 0.6157553785449644,
+      "accuracy": 0.626779106907141,
+      "n_gt_spells": 421,
+      "n_pred_spells": 533,
+      "mean_spell_duration_s": 7.779737335834897,
+      "count_error_ratio": 0.2660332541567696,
+      "family": "touch_hold",
+      "match": "J03WPY",
+      "mode": "native_rule",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.624780776042964,
+        "dead_share": 0.4498124276610063
+      }
+    },
+    {
+      "spell_f1_mean": 0.3121177802944507,
+      "macro_f1": 0.7761627924609716,
+      "accuracy": 0.7889353331694123,
+      "n_gt_spells": 401,
+      "n_pred_spells": 482,
+      "mean_spell_duration_s": 7.409958506224067,
+      "count_error_ratio": 0.20199501246882792,
+      "family": "hgb",
+      "match": "J03WQQ",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.037028674644389255,
+      "macro_f1": 0.7241096601041526,
+      "accuracy": 0.7470652288454108,
+      "n_gt_spells": 401,
+      "n_pred_spells": 4028,
+      "mean_spell_duration_s": 0.8409136047666336,
+      "count_error_ratio": 9.044887780548628,
+      "family": "hgb",
+      "match": "J03WQQ",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.6165497896213183,
+      "macro_f1": 0.9090223314032606,
+      "accuracy": 0.9153184165232358,
+      "n_gt_spells": 401,
+      "n_pred_spells": 312,
+      "mean_spell_duration_s": 10.7525641025641,
+      "count_error_ratio": -0.22194513715710723,
+      "family": "setseq",
+      "match": "J03WQQ",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.6172284644194757,
+      "macro_f1": 0.9123173657883706,
+      "accuracy": 0.9184656995328252,
+      "n_gt_spells": 401,
+      "n_pred_spells": 400,
+      "mean_spell_duration_s": 8.357000000000001,
+      "count_error_ratio": -0.0024937655860349127,
+      "family": "setseq",
+      "match": "J03WQQ",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.6095238095238096,
+      "macro_f1": 0.9090282132296612,
+      "accuracy": 0.9161684639432365,
+      "n_gt_spells": 401,
+      "n_pred_spells": 292,
+      "mean_spell_duration_s": 11.459589041095889,
+      "count_error_ratio": -0.2718204488778055,
+      "family": "pp_tcn",
+      "match": "J03WQQ",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.5789613848202397,
+      "macro_f1": 0.9076234735231279,
+      "accuracy": 0.9147423513295163,
+      "n_gt_spells": 401,
+      "n_pred_spells": 350,
+      "mean_spell_duration_s": 9.559428571428572,
+      "count_error_ratio": -0.12718204488778054,
+      "family": "pp_tcn",
+      "match": "J03WQQ",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.6304993252361674,
+      "macro_f1": 0.9099588757536599,
+      "accuracy": 0.9166251009870385,
+      "n_gt_spells": 401,
+      "n_pred_spells": 340,
+      "mean_spell_duration_s": 9.90764705882353,
+      "count_error_ratio": -0.15211970074812967,
+      "family": "short_tcn",
+      "match": "J03WQQ",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.5820418204182041,
+      "macro_f1": 0.9069764835584614,
+      "accuracy": 0.9139695809476975,
+      "n_gt_spells": 401,
+      "n_pred_spells": 412,
+      "mean_spell_duration_s": 8.183980582524272,
+      "count_error_ratio": 0.02743142144638404,
+      "family": "short_tcn",
+      "match": "J03WQQ",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.19849906191369604,
+      "macro_f1": 0.5824944918862688,
+      "accuracy": 0.5838350486494082,
+      "n_gt_spells": 401,
+      "n_pred_spells": 665,
+      "mean_spell_duration_s": 6.253774436090225,
+      "count_error_ratio": 0.6583541147132169,
+      "family": "touch_hold",
+      "match": "J03WQQ",
+      "mode": "native_rule",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training_stats": {
+        "rate": 4.640356030473815,
+        "dead_share": 0.4557204953035728
+      }
+    },
+    {
+      "spell_f1_mean": 0.3180487804878048,
+      "macro_f1": 0.7626403595039152,
+      "accuracy": 0.7822151079626728,
+      "n_gt_spells": 370,
+      "n_pred_spells": 450,
+      "mean_spell_duration_s": 8.088444444444445,
+      "count_error_ratio": 0.21621621621621623,
+      "family": "hgb",
+      "match": "J03WR9",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    },
+    {
+      "spell_f1_mean": 0.03376865671641791,
+      "macro_f1": 0.7219957881348981,
+      "accuracy": 0.7517130985627682,
+      "n_gt_spells": 370,
+      "n_pred_spells": 3918,
+      "mean_spell_duration_s": 0.86579887697805,
+      "count_error_ratio": 9.58918918918919,
+      "family": "hgb",
+      "match": "J03WR9",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    },
+    {
+      "spell_f1_mean": 0.5410687022900763,
+      "macro_f1": 0.866233710267596,
+      "accuracy": 0.8858456508412234,
+      "n_gt_spells": 370,
+      "n_pred_spells": 285,
+      "mean_spell_duration_s": 11.782456140350877,
+      "count_error_ratio": -0.22972972972972974,
+      "family": "setseq",
+      "match": "J03WR9",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    },
+    {
+      "spell_f1_mean": 0.49066666666666664,
+      "macro_f1": 0.8676781151168007,
+      "accuracy": 0.8875144744908385,
+      "n_gt_spells": 370,
+      "n_pred_spells": 380,
+      "mean_spell_duration_s": 8.81842105263158,
+      "count_error_ratio": 0.02702702702702703,
+      "family": "setseq",
+      "match": "J03WR9",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    },
+    {
+      "spell_f1_mean": 0.6006230529595016,
+      "macro_f1": 0.9123018664239776,
+      "accuracy": 0.9237109188747361,
+      "n_gt_spells": 370,
+      "n_pred_spells": 272,
+      "mean_spell_duration_s": 12.41470588235294,
+      "count_error_ratio": -0.2648648648648649,
+      "family": "pp_tcn",
+      "match": "J03WR9",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    },
+    {
+      "spell_f1_mean": 0.5840236686390533,
+      "macro_f1": 0.9125134023011597,
+      "accuracy": 0.9240719297050609,
+      "n_gt_spells": 370,
+      "n_pred_spells": 306,
+      "mean_spell_duration_s": 11.044444444444444,
+      "count_error_ratio": -0.17297297297297298,
+      "family": "pp_tcn",
+      "match": "J03WR9",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    },
+    {
+      "spell_f1_mean": 0.6122571001494769,
+      "macro_f1": 0.9139604550844632,
+      "accuracy": 0.9249574279681221,
+      "n_gt_spells": 370,
+      "n_pred_spells": 299,
+      "mean_spell_duration_s": 11.352508361204013,
+      "count_error_ratio": -0.1918918918918919,
+      "family": "short_tcn",
+      "match": "J03WR9",
+      "mode": "shared_decoder",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    },
+    {
+      "spell_f1_mean": 0.585133239831697,
+      "macro_f1": 0.9127123761985358,
+      "accuracy": 0.9241809141066685,
+      "n_gt_spells": 370,
+      "n_pred_spells": 343,
+      "mean_spell_duration_s": 9.897376093294461,
+      "count_error_ratio": -0.07297297297297298,
+      "family": "short_tcn",
+      "match": "J03WR9",
+      "mode": "argmax",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    },
+    {
+      "spell_f1_mean": 0.18887765419615776,
+      "macro_f1": 0.5932467976140897,
+      "accuracy": 0.6070907976295893,
+      "n_gt_spells": 370,
+      "n_pred_spells": 619,
+      "mean_spell_duration_s": 6.6,
+      "count_error_ratio": 0.672972972972973,
+      "family": "touch_hold",
+      "match": "J03WR9",
+      "mode": "native_rule",
+      "training_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training_stats": {
+        "rate": 4.714564783928856,
+        "dead_share": 0.45381110296221766
+      }
+    }
+  ],
+  "summary": [
+    {
+      "family": "hgb",
+      "mean_spellF1": 0.31571912687608916,
+      "mean_macroF1": 0.7714512000507009,
+      "mean_count_error_ratio": 0.011306154272690157,
+      "panel": "shared_decoder"
+    },
+    {
+      "family": "setseq",
+      "mean_spellF1": 0.578602415225495,
+      "mean_macroF1": 0.8965190017284136,
+      "mean_count_error_ratio": -0.32509286302215434,
+      "panel": "shared_decoder"
+    },
+    {
+      "family": "pp_tcn",
+      "mean_spellF1": 0.5710896822723625,
+      "mean_macroF1": 0.9003436331600378,
+      "mean_count_error_ratio": -0.33817378291017003,
+      "panel": "shared_decoder"
+    },
+    {
+      "family": "short_tcn",
+      "mean_spellF1": 0.5957554001098855,
+      "mean_macroF1": 0.9029347482896061,
+      "mean_count_error_ratio": -0.23977624842628265,
+      "panel": "shared_decoder"
+    },
+    {
+      "family": "touch_hold",
+      "mean_spellF1": 0.20075502655431343,
+      "mean_macroF1": 0.6008332846066908,
+      "mean_count_error_ratio": 0.3173614608233652,
+      "panel": "native_rule"
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "first": "hgb",
+      "second": "setseq",
+      "mean_delta": -0.26288328834940594,
+      "lower": -0.28484394189991286,
+      "upper": -0.23999391047572355,
+      "wins": 0,
+      "ties": 0
+    },
+    {
+      "first": "hgb",
+      "second": "pp_tcn",
+      "mean_delta": -0.25537055539627324,
+      "lower": -0.2782816409247402,
+      "upper": -0.23070118233755035,
+      "wins": 0,
+      "ties": 0
+    },
+    {
+      "first": "hgb",
+      "second": "short_tcn",
+      "mean_delta": -0.2800362732337963,
+      "lower": -0.30287049576563935,
+      "upper": -0.25527118449593744,
+      "wins": 0,
+      "ties": 0
+    },
+    {
+      "first": "hgb",
+      "second": "touch_hold",
+      "mean_delta": 0.11496410032177572,
+      "lower": 0.10539752857727325,
+      "upper": 0.12556439157804436,
+      "wins": 7,
+      "ties": 0
+    },
+    {
+      "first": "setseq",
+      "second": "pp_tcn",
+      "mean_delta": 0.007512732953132674,
+      "lower": -0.01895879974863373,
+      "upper": 0.030560347150909998,
+      "wins": 5,
+      "ties": 0
+    },
+    {
+      "first": "setseq",
+      "second": "short_tcn",
+      "mean_delta": -0.017152984884390415,
+      "lower": -0.03895035281471499,
+      "upper": 0.0035531972796574002,
+      "wins": 2,
+      "ties": 0
+    },
+    {
+      "first": "setseq",
+      "second": "touch_hold",
+      "mean_delta": 0.3778473886711816,
+      "lower": 0.3515015087866134,
+      "upper": 0.40119088413832504,
+      "wins": 7,
+      "ties": 0
+    },
+    {
+      "first": "pp_tcn",
+      "second": "short_tcn",
+      "mean_delta": -0.02466571783752309,
+      "lower": -0.032108600787623245,
+      "upper": -0.01806042028523826,
+      "wins": 0,
+      "ties": 0
+    },
+    {
+      "first": "pp_tcn",
+      "second": "touch_hold",
+      "mean_delta": 0.37033465571804897,
+      "lower": 0.3407733930560077,
+      "upper": 0.39985305481690847,
+      "wins": 7,
+      "ties": 0
+    },
+    {
+      "first": "short_tcn",
+      "second": "touch_hold",
+      "mean_delta": 0.3950003735555721,
+      "lower": 0.36250216443302863,
+      "upper": 0.4246903268321517,
+      "wins": 7,
+      "ties": 0
+    }
+  ],
+  "jobs": [
+    {
+      "family": "hgb",
+      "heldout": "J03WMX",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "hgb",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 3.875,
+      "sha256": "179bb5b2749826775ff4a971fb288d268de4f8c834b0557c32195091c0a57c28"
+    },
+    {
+      "family": "setseq",
+      "heldout": "J03WMX",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "setseq",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 1747.6570000000065,
+      "sha256": "088250892a9b100a1db7b81ae0faf0fb8d638031a5ba74d89e92632569c0284c"
+    },
+    {
+      "family": "pp_tcn",
+      "heldout": "J03WMX",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "pp_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 82.48399999999674,
+      "sha256": "483ecd1fc13274c8fde11baee3ccdb6e2c7f661ba0e34903c25c3c6faa04911c"
+    },
+    {
+      "family": "short_tcn",
+      "heldout": "J03WMX",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "short_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 80.14100000000326,
+      "sha256": "d737f33ae2c738c30048e3add73f6e6859272b783bc12efd83ef68ce03a3a989"
+    },
+    {
+      "family": "touch_hold",
+      "heldout": "J03WMX",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "touch_hold",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [],
+      "seconds": 0.25,
+      "sha256": "cce4dbd4d817c5aeab27a32a4dc089da047bc9d0574e598ac76a5810081bdda9"
+    },
+    {
+      "family": "hgb",
+      "heldout": "J03WN1",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "hgb",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 4.3439999999827705,
+      "sha256": "aabeac9262e9795789da7d8d9ac9cb3cfc44ae93d5972829f96d25267f1e6f81"
+    },
+    {
+      "family": "setseq",
+      "heldout": "J03WN1",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "setseq",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 1612.0310000000172,
+      "sha256": "ec0500ef51dddab90b8f405957ba25f48371c27f722af0b862ad24a403178abd"
+    },
+    {
+      "family": "pp_tcn",
+      "heldout": "J03WN1",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "pp_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 70.57800000003772,
+      "sha256": "f1aea2cc0f305e6d31177935ecd209a4f0ae12ed9e2ecc554c63a41a44d17895"
+    },
+    {
+      "family": "short_tcn",
+      "heldout": "J03WN1",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "short_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 68.125,
+      "sha256": "d5069c083f9f5df2bd6a2bd0eebc0cc74e91f56cbe4bf34e06836f9c9a3ba5fb"
+    },
+    {
+      "family": "touch_hold",
+      "heldout": "J03WN1",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "touch_hold",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [],
+      "seconds": 0.25,
+      "sha256": "9fc8f851d0ca00722422c51b7839c280f9b1782eb19456410d7c4e32d99a2376"
+    },
+    {
+      "family": "hgb",
+      "heldout": "J03WOH",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "hgb",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 3.7189999999827705,
+      "sha256": "5ae100efab6588f03dc35567906fa3f1e1aeda71eb49a681adce15db2e242fec"
+    },
+    {
+      "family": "setseq",
+      "heldout": "J03WOH",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "setseq",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 1709.4219999999623,
+      "sha256": "e16c2ec081351739d70922a52aacb1590f62788ba3182a9f5355936e5392c66b"
+    },
+    {
+      "family": "pp_tcn",
+      "heldout": "J03WOH",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "pp_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 86.96899999998277,
+      "sha256": "f80fbbe4677595eb3dc7e04e0ae3cfdae85b10df9efd693c871124eff766842b"
+    },
+    {
+      "family": "short_tcn",
+      "heldout": "J03WOH",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "short_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 73.875,
+      "sha256": "35bd22a0a4f8a441db60207d2acd19bfaf7d69bd16d72255b76d7cb40a46e6c4"
+    },
+    {
+      "family": "touch_hold",
+      "heldout": "J03WOH",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "touch_hold",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [],
+      "seconds": 0.2190000000409782,
+      "sha256": "f691ee9f7be539110efac6b8c552ccf3ecab8801bd5e39594a8b12071a2169f3"
+    },
+    {
+      "family": "hgb",
+      "heldout": "J03WOY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "hgb",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 3.797000000020489,
+      "sha256": "49defb80698ff86bb41359b00ec90ea09a19f8c18a1616f347bc6af1ce2d1a7c"
+    },
+    {
+      "family": "setseq",
+      "heldout": "J03WOY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "setseq",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 1603.2660000000033,
+      "sha256": "da736326b61c5dd57d849387e0c7bef75fe124fe5dba233560589dd2fd311ec2"
+    },
+    {
+      "family": "pp_tcn",
+      "heldout": "J03WOY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "pp_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 70.85899999999674,
+      "sha256": "cc83ffa578ce624cbdc9a6d6cc1e21c3327bdaf0540d69cc743cefe982486763"
+    },
+    {
+      "family": "short_tcn",
+      "heldout": "J03WOY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "short_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 72.42199999996228,
+      "sha256": "421ce2f33cb572a160c16d39fa5fe61cc64c6cf68a93783ee58d7679f6ec3243"
+    },
+    {
+      "family": "touch_hold",
+      "heldout": "J03WOY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "touch_hold",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [],
+      "seconds": 0.2970000000204891,
+      "sha256": "f49e25766e27179322197d93994d276990f9002d3412a1e98f4d84be77b95a12"
+    },
+    {
+      "family": "hgb",
+      "heldout": "J03WPY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "hgb",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 3.7969999999622814,
+      "sha256": "db602a06cb451a1d5bfd8fc3d94017c39dfefe30385afaf692df41b4c8670f84"
+    },
+    {
+      "family": "setseq",
+      "heldout": "J03WPY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "setseq",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 1500.8119999999763,
+      "sha256": "f1faef64e5802421722559c5fce8bf1c55298063e041c8ffa7472fad8cf5d831"
+    },
+    {
+      "family": "pp_tcn",
+      "heldout": "J03WPY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "pp_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 66.125,
+      "sha256": "0ef5a7a66f490bc3f6e28b750d5b1b89784d0393952d3ab2cc392d8445c6142a"
+    },
+    {
+      "family": "short_tcn",
+      "heldout": "J03WPY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "short_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "seconds": 65.56300000002375,
+      "sha256": "4a38ed5706689590e491ecdca8990a854d02bdef2db1010a9d1290563f326c5d"
+    },
+    {
+      "family": "touch_hold",
+      "heldout": "J03WPY",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "touch_hold",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [],
+      "seconds": 0.25,
+      "sha256": "5c45d4f4a57536faad174c7dc435c7711eda79618b10cc57d9dee480047739da"
+    },
+    {
+      "family": "hgb",
+      "heldout": "J03WQQ",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "hgb",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "seconds": 3.6410000000032596,
+      "sha256": "739b134575f01d0aba13aeba1ab2400ff200f89d682172a4d8a662a56b7c4da2"
+    },
+    {
+      "family": "setseq",
+      "heldout": "J03WQQ",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "setseq",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "seconds": 1460.625,
+      "sha256": "30bf25b6dca55d9b26d26a180a66f25ab567df91c7b762233938a52d13b38263"
+    },
+    {
+      "family": "pp_tcn",
+      "heldout": "J03WQQ",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "pp_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "seconds": 62.71899999998277,
+      "sha256": "24eeb33181a3047ebaeaf9157afc9850016abe33a4f77f2581794eaa2828d481"
+    },
+    {
+      "family": "short_tcn",
+      "heldout": "J03WQQ",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "short_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "seconds": 65.79699999996228,
+      "sha256": "290b81a1e9b41ac94df7efd896607e0f34b8f749da6674af3cb9d60e6e5f30fd"
+    },
+    {
+      "family": "touch_hold",
+      "heldout": "J03WQQ",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "touch_hold",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [],
+      "seconds": 0.25,
+      "sha256": "2226eb5c8d2da47f1ac8205a7510b0a0619bd8c0bc547966cb5b224dc9aade2a"
+    },
+    {
+      "family": "hgb",
+      "heldout": "J03WR9",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "hgb",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "seconds": 3.9689999999827705,
+      "sha256": "f2d6071b9f032e66edfc8c4d54aa1db0b568082dc4a16a6586d667007be02817"
+    },
+    {
+      "family": "setseq",
+      "heldout": "J03WR9",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "setseq",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "seconds": 4157.780999999959,
+      "sha256": "0ee4d74eb81225fc5d696d46855493030b284d77254187320d677029850b9666"
+    },
+    {
+      "family": "pp_tcn",
+      "heldout": "J03WR9",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "pp_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "seconds": 69.26600000000326,
+      "sha256": "ff90b6278800b2b6e06293e4ffd1200db2722fcfeb3e2ac06defdae6a55966ce"
+    },
+    {
+      "family": "short_tcn",
+      "heldout": "J03WR9",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "short_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "seconds": 70.68799999996554,
+      "sha256": "2eec1742df8f5d2d2f1bfda710a7440882c538a2007ac2072a85760d233710f3"
+    },
+    {
+      "family": "touch_hold",
+      "heldout": "J03WR9",
+      "identity": {
+        "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+        "family": "touch_hold",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [],
+        "steps": null
+      },
+      "actual_fit_names": [],
+      "seconds": 0.2190000000409782,
+      "sha256": "5e169c749ad1e188c42f496b8725afff5811d25b00325720ceba389f24047b84"
+    }
+  ],
+  "decoded_sha256": {
+    "hgb/J03WMX/shared_decoder": "848ce8eefbea7a98a14b02a9b9d355116b387a9ffd6177c9483ba6234f6d6e3b",
+    "hgb/J03WMX/argmax": "a77577c866eb4420951a933e32f21be1620f828a5469b76db38c996b7dc65ce0",
+    "setseq/J03WMX/shared_decoder": "17efe6ff303dec8c61168ad39937aeea56968a65f87a1c0c57a3ab1fca0b8a33",
+    "setseq/J03WMX/argmax": "87b10b7377fec4416eb21acfbf8f3d29a95895c93f3bc8f6b899f01b642e1e4d",
+    "pp_tcn/J03WMX/shared_decoder": "f726e7bcdc0435182da302569c982d71527af120621cf2dc1743771c031ee480",
+    "pp_tcn/J03WMX/argmax": "42290dd964c0b336c4d9e0ee1148affdb4965275ed0e527d4a48c0d42274445e",
+    "short_tcn/J03WMX/shared_decoder": "2cebde0a7f26c8920bab9f02a47f3d6cd634ed803a40fb66a71f4190fb044b3c",
+    "short_tcn/J03WMX/argmax": "6d62aa2b6ed11452b00e259d8533a98fb6904d57f20ec44c8f1050c137a0a90c",
+    "touch_hold/J03WMX/native_rule": "88b3eea1ab1a9cbdfe1ed61e87d2f1c2dba2df3fb7bcd2188ac7c5d5ab45db98",
+    "hgb/J03WN1/shared_decoder": "81f36097f92f0ddf8c7cad4ee41267c830fb70f46f6e9f4b438f45e5463e7414",
+    "hgb/J03WN1/argmax": "abb4e0a3bd24e996477298417b43055a1a902394b493ccbaff6cb45011584e2f",
+    "setseq/J03WN1/shared_decoder": "b8962984c6bef37102c4c7372930aae86c81ca5fd2abcad6cf631445d98010a8",
+    "setseq/J03WN1/argmax": "6ba5e947a8d3e3c952aa8e55e399a655da6414986dbeeaf410c63eda65c0265a",
+    "pp_tcn/J03WN1/shared_decoder": "40582c9abe1c394da1befede78ff4dba7808ee921b8e5f810034c5c38bce3906",
+    "pp_tcn/J03WN1/argmax": "184cebcd7da1abff9d98052855e6364ae5815b5167495218c284d0d361de8f13",
+    "short_tcn/J03WN1/shared_decoder": "197950a3b820f4d9d1d50ecc2e6fbea5d7a86ed5df3de6b88eabaa173c1dd8fa",
+    "short_tcn/J03WN1/argmax": "6508e93ca922401a612d00b700bcba7993792d8faf1a33ab5c98bdfa0f2cac68",
+    "touch_hold/J03WN1/native_rule": "5a34411ff14f5612e60b4f7dcf408453d4d9a0c68c07db4b60579205a911b4e0",
+    "hgb/J03WOH/shared_decoder": "8eabfa2ebd55dfa1e20997f0ff4d98fce8671d20d4f12247852655897ca6a587",
+    "hgb/J03WOH/argmax": "3fa9b2d9f05ecd84690ef5377fa58c4e524093c848a7cc1c38b3316a302e5ca2",
+    "setseq/J03WOH/shared_decoder": "8dc56271b227a2c33f758a1875a5f59f0aad51d831302eb189e74b2f3b5a9d2e",
+    "setseq/J03WOH/argmax": "14ff4139826608e31302086564c36cd3dd1dbb89196c5547fd1cfde3f227c379",
+    "pp_tcn/J03WOH/shared_decoder": "72fcb16150dde58c917aac6f0d8939d6ba6789c95babc125fbdf411ad8f01535",
+    "pp_tcn/J03WOH/argmax": "4ecb082456db596baf8a1c35102dcabcf83d139d2050eb7644223abef108b0d7",
+    "short_tcn/J03WOH/shared_decoder": "01166387175b196e0f7de15e89ad3cf91980c2092396c097f08e3f3af858ff54",
+    "short_tcn/J03WOH/argmax": "653449f79159f0201c278fcfd2bfb9cf154874e5d84bfca116d620d8beef6dcc",
+    "touch_hold/J03WOH/native_rule": "4c1b66547a571ceee367f1f00fcd1d69df677a2c7446944cbfcf714ed2978dd2",
+    "hgb/J03WOY/shared_decoder": "fe481051156ab0643fae6c91c964c1bdce44e3df6c3355df053b6b4f139a2285",
+    "hgb/J03WOY/argmax": "5b3a6b16515c9d627e1970ab1e7f2632edfe7aecf460aea967f841524b21fef2",
+    "setseq/J03WOY/shared_decoder": "4e94cbba5450ddb90c0129003dc77557b7ac727f7316cbebdfecc57562202c57",
+    "setseq/J03WOY/argmax": "8860da09a8b0f9f24478dcf7fcccf0c320305dedf2375b05e1c9ac3d36b61150",
+    "pp_tcn/J03WOY/shared_decoder": "6e5a63d7d01edcb0399234a3ed03b83cb648203e328da98f3345810219affb8e",
+    "pp_tcn/J03WOY/argmax": "1196182c5fc4b9305e358d5aa5fa47894420a69f269efeff1a29b3f5ca6ce26c",
+    "short_tcn/J03WOY/shared_decoder": "45b4ff2e085ae8f6b698bca730e4d87ccec66b9044840d914c0c45a584ce2f38",
+    "short_tcn/J03WOY/argmax": "c1877d9705dc78b3b92490c75b4ed92a31898ad3b9452bc19d3699860721fa99",
+    "touch_hold/J03WOY/native_rule": "8e707963ab5172558a2df8cadce52548dfbe9eaf35a25880658d7478db2b05aa",
+    "hgb/J03WPY/shared_decoder": "5e9d2c7d802dbbc5179c3b31f18bcd15c207c5695d4d33ff2b4b836e24efa2d8",
+    "hgb/J03WPY/argmax": "82d3703025de19ebd670d132abe4976e256a9fd477f7bdf0ff0cb4ae60b42c11",
+    "setseq/J03WPY/shared_decoder": "b0d09a213f25625e9e6bfd2a7a42f1ab396b335df79329180ab65d2f3361816a",
+    "setseq/J03WPY/argmax": "fe203f63d63988ef90e740ee860ff04f5d7f2101a8fb96b97d9c667a144d45ee",
+    "pp_tcn/J03WPY/shared_decoder": "3432bcba76afd5b152efaf7ba11f3013d08e67dfea008c23915dc8bb2d0f2acc",
+    "pp_tcn/J03WPY/argmax": "38b89a90be834dcb2ae4f8dd5fa2c9ac511de2fc6d6a48b7af77512789c14746",
+    "short_tcn/J03WPY/shared_decoder": "d7a5424dd2dbcdb81bffd539210c1d8794861fdb66df04c8498bdf047a55d6aa",
+    "short_tcn/J03WPY/argmax": "d6ab3b45251f10f51efcfc5aa8a60a508dfaab5854e37932c2938f1134850808",
+    "touch_hold/J03WPY/native_rule": "e4dab2d11bc517ab274f248858d59edfb5771418baedd1195539e146b0cdb96e",
+    "hgb/J03WQQ/shared_decoder": "2687a08d76581e0ebba9c9eb496f955800188a9b15fc329139147d9ad7ce8902",
+    "hgb/J03WQQ/argmax": "a3209b88dd4a26472391b07ce9de4456023c11e49b3e94ec7b29444da231cab2",
+    "setseq/J03WQQ/shared_decoder": "ecd29ed3eeea7fd3a7aefd624b32e61fd5795194d4a89013fe7ec4a00300fa27",
+    "setseq/J03WQQ/argmax": "6c54589c7d5afad1d3a0306275e970fc8893d9350586fc07e0a7aedfc9018626",
+    "pp_tcn/J03WQQ/shared_decoder": "5fe9685fea6d3a27efb036ad187c3ae4137d74247c079b352013517dacd073f9",
+    "pp_tcn/J03WQQ/argmax": "423138c1b667a017e070528eb7796cff3d7099282be97d5b90b8487e67791ac7",
+    "short_tcn/J03WQQ/shared_decoder": "372efbbb9f78d5451c2b95ae97294d30de54de4a3474a6df88d37d6503f43389",
+    "short_tcn/J03WQQ/argmax": "546c7eb01fd946353900e8e264a8d8952fde5cf57f178ebd2c2c467a66e1f7dc",
+    "touch_hold/J03WQQ/native_rule": "27f6fc4bfb37414e3cd8c19b7bdb3d1794a38a35cf32e555c47b6ef3b4d6601a",
+    "hgb/J03WR9/shared_decoder": "5fd3e65fe66746c8c95f6e861800773b5f9a9d398682464eadfe4edb08f148d2",
+    "hgb/J03WR9/argmax": "5c768ccf13dbbbe950a69e23ff1dbf70fa99edfc8afa6854d8d1dde62cd56e50",
+    "setseq/J03WR9/shared_decoder": "80caf45d849c24431f2ad52e398059d9b01445ce83e344c68836a456f45d46e3",
+    "setseq/J03WR9/argmax": "4983cd538df6b0f391b7d07e6a24b26e4c4e3744a35fb9e439a5f0b710ee26c4",
+    "pp_tcn/J03WR9/shared_decoder": "4792b1551bf3540687b54b9cd5818db8d003df052fafd7ac5280800425990786",
+    "pp_tcn/J03WR9/argmax": "66522b3674ee856bc43b81c83d49470aaef8511eeb1f1a00466b38e375736332",
+    "short_tcn/J03WR9/shared_decoder": "42fa6c30145315f74f87ba9f9b9ff67e08df2b919d4a77c8e47d6e27497a120c",
+    "short_tcn/J03WR9/argmax": "f961da2a7a030577efecbadba64bade5c954eab1b9bfc59ef39747fa804fb190",
+    "touch_hold/J03WR9/native_rule": "cb1a6adc92faa1c19a63c9effff142c8ebac34c2adc5666de7f51efb3d475263"
+  },
+  "seconds": 15565.016000000003,
+  "neural_seed_fits": 63,
+  "neural_optimizer_updates": 31500,
+  "hgb_fits": 7,
+  "old_checkpoints_loaded": 0,
+  "same_input_same_labels": true,
+  "target_public_access": false,
+  "exact_team_submission_reproduction": false,
+  "inference_label_access": false
+}

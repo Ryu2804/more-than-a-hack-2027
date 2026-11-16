@@ -1,0 +1,7 @@
+{
+  "selection_sha256": "e387c08beef727217ffeb8385eeca722c1348a554d38e2b087cd1b4c2fa099ec",
+  "reproduced_sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+  "identical_target_rows": 199319,
+  "new_training_seed_fits": 0,
+  "rebuild": "Independent process; reloaded frozen probabilities and reran selected decoding, not a refit."
+}

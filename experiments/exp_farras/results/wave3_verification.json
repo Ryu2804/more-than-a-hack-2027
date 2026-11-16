@@ -1,0 +1,33 @@
+{
+  "configurations": 66,
+  "development_evaluations": 594,
+  "neural_fits": 18,
+  "idsse_tree_fits": 18,
+  "holdout_candidate_scenarios": 16,
+  "public_candidate_count": 4,
+  "input_packs": 34,
+  "regression_tests_passed": 6,
+  "target_rows": 199319,
+  "selected_csv_sha256": "337734b6bf9b70bda6c9a16b549e39e3c90bdbd53fc6073c140ab07cd06b6096",
+  "independent_refit_identical": true,
+  "selection_sha256": "47c023c3cea00842ca8b5cb7a112a1fd983605dac0b4bd4e0412ee867f16b686",
+  "selection_unchanged_after_holdout_and_public": true,
+  "jeremy_source_commit": "0e35aae54e09ca744441681fb076f656bbc88b5a",
+  "backend": "cpu, single thread per serialized fit",
+  "privacy": "Only aggregate scores, configuration, code/model/CSV digests; no training data, frame labels, raw tracking, or weights committed",
+  "target_team_mapping_validation": {
+    "atol_m": 0.001,
+    "finite_team_distances_checked": 37651,
+    "max_abs_discrepancy_m": 0.0,
+    "rtol": 0.0001,
+    "scope": "sampled graded frames at5fps; no team claim for omitted frames",
+    "unavailable_team_distances_on_visible_frames": 37,
+    "visible_frames_checked": 18844
+  },
+  "limits": [
+    "Adapted Jeremy architecture, not original checkpoint reproduction",
+    "Development selection over66 configurations is not an unbiased test estimate",
+    "IDSSE holdout influenced earlier Jeremy research; Metrica3 previously exposed",
+    "Historical and current public scores are sanity checks, not private-score evidence"
+  ]
+}

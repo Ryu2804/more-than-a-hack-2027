@@ -1,0 +1,23 @@
+{
+  "regression_cases": 40,
+  "initial_run": {
+    "passed": 39,
+    "errors": 1
+  },
+  "repair": "Isolated test import of wave6 runner instead of resolving wave5 run module",
+  "failed_case_rerun": {
+    "passed": 1,
+    "errors": 0
+  },
+  "development_configuration_rows": 37,
+  "new_configurations": 36,
+  "development_evaluations": 851,
+  "holdout_role_scenarios": 48,
+  "distinct_target_csvs": 2,
+  "selected_rebuild_rows": 199319,
+  "source_edits_after_preregistration": false,
+  "training_seed_fits": 0,
+  "selection_promoted": false,
+  "selection_sha256": "e387c08beef727217ffeb8385eeca722c1348a554d38e2b087cd1b4c2fa099ec",
+  "public_used_for_selection": false
+}

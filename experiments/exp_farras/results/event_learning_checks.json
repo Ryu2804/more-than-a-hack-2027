@@ -1,0 +1,635 @@
+{
+  "tests": 77,
+  "failures": 0,
+  "errors": 0,
+  "smoke": [
+    {
+      "family": "balanced",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "parameters": 135219,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 1.2743642330169678
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 1.5511465072631836
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 1.6428477764129639
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5,
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ]
+      },
+      "checkpoint_sha256": "f73fb847694b677f4eff529c5047ffcb00275c09217c92a23771c9d5bc7bb5e6",
+      "probability_sha256": "b89c22161ab62063bfd2821f8c4dc4d1f80b5b0e19bbc5ddd9172bbed63bebee",
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    },
+    {
+      "family": "focal",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "parameters": 135219,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 0.8416712880134583
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 1.1643577814102173
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 1.3396413326263428
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5,
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ]
+      },
+      "checkpoint_sha256": "81bd533e3c9d11446a26933f9b7a6347522ab445ae852a116024b389dc2ad1bf",
+      "probability_sha256": "e6c6daf414d9f6a8f5e8b8f5aa21a0344c50e8bf5fe1f771e9c58446bf21f3fb",
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    },
+    {
+      "family": "boundary",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "parameters": 135284,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135284,
+            "averaged_updates": 0,
+            "final_training_loss": 1.8073484897613525
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135284,
+            "averaged_updates": 0,
+            "final_training_loss": 1.8593958616256714
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135284,
+            "averaged_updates": 0,
+            "final_training_loss": 2.109447956085205
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5,
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ]
+      },
+      "checkpoint_sha256": "0d56b217df28e8264ae1fe0e85e4eeee80f0e97d98a743b6157bb3bdb994b42d",
+      "probability_sha256": "3051fee076a423b06a17bc662aeecd85009a6555b7f3f9b80a1f61bda1ae5a50",
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    },
+    {
+      "family": "ranking",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "parameters": 135219,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 1.5511536598205566
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 1.8637354373931885
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 0,
+            "final_training_loss": 2.0428149700164795
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5,
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ]
+      },
+      "checkpoint_sha256": "d0794d80fccbdbffc7f60b75bdfbbab44b168bb21f1de82c86bb5ba32647171e",
+      "probability_sha256": "30be45fe042fe6b50e225b0e9c7d22fe0157ce5548202cd916b86a061b667e67",
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    },
+    {
+      "family": "ema",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "parameters": 135219,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 1,
+            "final_training_loss": 1.4246091842651367
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 1,
+            "final_training_loss": 1.7339892387390137
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135219,
+            "averaged_updates": 1,
+            "final_training_loss": 1.9087457656860352
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5,
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ]
+      },
+      "checkpoint_sha256": "c0ec48ae3cb9e78cea222e2b34191d34335686973be6f9e127e4f4083bc46166",
+      "probability_sha256": "2d8cee886d62bbc5a4a6034902a6bb1bceba5efa86c0f63ee37ba1e4a3e33d11",
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    },
+    {
+      "family": "contact",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "parameters": 135667,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135667,
+            "averaged_updates": 0,
+            "final_training_loss": 1.6906497478485107
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135667,
+            "averaged_updates": 0,
+            "final_training_loss": 1.7232084274291992
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135667,
+            "averaged_updates": 0,
+            "final_training_loss": 1.7363841533660889
+          }
+        ],
+        "input_channels": 36,
+        "event_sampling_probability": 0.5,
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ]
+      },
+      "checkpoint_sha256": "3939adbe94aa1d4df4a595f5e0384f59d4401d464668d09d8a2aed35b57b5b5f",
+      "probability_sha256": "0d5fd695ba3155e3a4ef6e4d9905b078620a8a41dbf22ab161face9c3e3078db",
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    }
+  ],
+  "new_smoke_neural_seed_fits": 18,
+  "updates_per_smoke_fit": 1,
+  "metric_evaluation": false,
+  "seconds": 232.1720000000205
+}

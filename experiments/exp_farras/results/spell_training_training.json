@@ -1,0 +1,2825 @@
+{
+  "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca",
+  "jobs": [
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4903048872947693
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4160912036895752
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4765930473804474
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "f51d32af800e77acd127863f1345e5ca16fec3fc18ad058388294a6034685636",
+      "checkpoint_sha256": "26dc40088a5be48caa2239a9800eb51c36108f0dd7646f6da63e1a9f482b5bf0",
+      "seconds": 88.25
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5696814656257629
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4770793616771698
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.32790786027908325
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5
+      },
+      "sha256": "5fffaeab3637e2c8782581aa9c0a689f64ce0a6565185b75b42418c1620badd2",
+      "checkpoint_sha256": "592b0920dad6dc9a2fa3ac80ff86c15585422880fc26afd8065d98ae807ba5d0",
+      "seconds": 84.03100000001723
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5009551048278809
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.41698601841926575
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5395925045013428
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "0a06202c6059470c222047d1ee40e6e46bf3a09f85c23007a45c603e61c6ac80",
+      "checkpoint_sha256": "caa19eadd70ad549afab89d971066586116214e2e6bb8e9cae1d1b5bc62ce62c",
+      "seconds": 86.29700000002049
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4991465210914612
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4145486354827881
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5107085108757019
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "a4f00c8b645e72f27003034335cf9ad466fbf6fe4bddb7a5ff8ed6f410e9d306",
+      "checkpoint_sha256": "bb84a35cdb901a6c6d0da5cae3848410bfd463f4c6608e636fd7f41d213f457d",
+      "seconds": 83.20299999997951
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5254939794540405
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4528453052043915
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.3699973523616791
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 278
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5
+      },
+      "sha256": "5ca70248bf2fc08639115ef40a6055687cedd9b5ab86ea4ed9ea3d07cac98576",
+      "checkpoint_sha256": "17fc5eae537db782cfd2b6017780bf5fa3c126a2a667ec67dd80464bb08164cf",
+      "seconds": 83.06200000003446
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5044357180595398
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4157017767429352
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5658162236213684
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "cff35b9f0a2272bbdcefbddd46814ed4b4bb38d66e7329318bebb2615dde6360",
+      "checkpoint_sha256": "1dc0b23e3d56e5fe8a5b072bbb2022b550fb7a092079bac9d910f1142331e1b1",
+      "seconds": 84.5
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.49039599299430847
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4098682105541229
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.46482986211776733
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "3be20dc087f684bebbf0b77f9115bfda5724412b35e3d5b5c3f939fd0e455d64",
+      "checkpoint_sha256": "987b0471d5ed2bb505e5dd8950e5bbce86054dbeb185ed7490b6e3e69b81ef2d",
+      "seconds": 83.625
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.552434504032135
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4775890111923218
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4160241186618805
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 278
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5
+      },
+      "sha256": "d7b9c568408f47c1c676324433b4753dffe24290bb8de36c04b39d497991da5c",
+      "checkpoint_sha256": "df4b0daf92b10fa646e5c7f4100ee10c2b3f7ed32069ae7927f0df05fe19bcda",
+      "seconds": 83.54699999996228
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4913466274738312
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.41224759817123413
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.486053466796875
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "f4a405fb157a48414fe2cb2c714bcad1a8edb7766bf625c008aa79c104de7e27",
+      "checkpoint_sha256": "7f274ea88acb6c52ddcbff5b44205f7f57245dd77abb2f4d4cf81cfc71bcb3da",
+      "seconds": 85.78100000001723
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5281221866607666
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.39365121722221375
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4596596360206604
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "36b4fb0435cbd8d0090cc4af845cd288655fab551ddde8d0cb06bb7c45239779",
+      "checkpoint_sha256": "97a83e930d5dd3622961a89163dd46a388dfef9aa9a902b28a0391c1382f6c3f",
+      "seconds": 84.375
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4453948140144348
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.44334787130355835
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4624718129634857
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 278
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5
+      },
+      "sha256": "dd863d5b86195c898a1d4fe045d3c1eba34fd61f743443468992235c046c8a6d",
+      "checkpoint_sha256": "029398752bcf047aec104b392b4579e8921cccf3be45dfa00af041d24ac7a334",
+      "seconds": 84.68699999997625
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5352851748466492
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.3869042992591858
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.48292821645736694
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "b0043dc96a8e2874d05d0c573f2e6ab349decb398fa4b5cc12de57b5a26c8882",
+      "checkpoint_sha256": "9346a59984634b20235cf27276821893525060c7a2baa80a2834d44daceff3f9",
+      "seconds": 88.04700000002049
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.560295581817627
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4564844071865082
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.47389307618141174
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "7ed175e25f8430a77e668c3016c69a045fff6280f324cb6ac2e4b210e64ba8fc",
+      "checkpoint_sha256": "b3e1e878240d8fca13b32e988375357f9f86f4aca09297d480b913eead5dc0a9",
+      "seconds": 89.01600000000326
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.43709295988082886
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.46358293294906616
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.49109187722206116
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 278
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5
+      },
+      "sha256": "c347a45d6deb8072c02737c9c281fa8860de2f1b412601dc6cb65329bc13aeaf",
+      "checkpoint_sha256": "9b42c27f9ff025c3b50c0a6aafd37bb0ddfd095966f1b6bccb52717a8b71bfb6",
+      "seconds": 89.21900000004098
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5531703233718872
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4745919704437256
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4962509870529175
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "54216fdb3d951924934357b1a070fb75e6558274b9ccc468a26bc621be365753",
+      "checkpoint_sha256": "a0f74b19f231a90fb2b34e08f75cc901ce62e474071ce23bbfd9617b82aa1a69",
+      "seconds": 93.35999999998603
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.49999770522117615
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4952428936958313
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4520496129989624
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "d2982e7a18a0bdb9ffde1e41bf6c6dda7a7c1284802d1d5980d89df2631c7dfd",
+      "checkpoint_sha256": "ccc64489544260549ba3d256214288cff7cd93c8b024c0e924a2c2a161e5180d",
+      "seconds": 89.93800000002375
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.44923993945121765
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.48525524139404297
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5225804448127747
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 278
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5
+      },
+      "sha256": "510ecc56656b6b946ca5c797e11dd0fac64886f6f71e9ae1bbfdfc86cffd6cdf",
+      "checkpoint_sha256": "6d9e80a6bdfd7ed10ba88f0622e86c9e214b330f4b45d05076d77f5b7d795e6c",
+      "seconds": 89.26600000000326
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5000584721565247
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5207719206809998
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4711182415485382
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "60b4bae4abfce1add9aadea96f96b9fdaf9ec7dfe2ebce0fdafab1491f7183f5",
+      "checkpoint_sha256": "38d9db2a0f713f87af845d23651904e47619003a996d62a24fd5a1f68a4d5709",
+      "seconds": 90.48500000004424
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4744921326637268
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5192466378211975
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.44966602325439453
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "aae75c27fe218a081d7018a00ee18af0e2a9b7e7e4b607f990c7d5f19c65e21a",
+      "checkpoint_sha256": "5b3fb5e6998d282a9542f9a7b8ce855da32e7ebe3cd463aaea93db56d3182ad9",
+      "seconds": 83.98499999998603
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.44404202699661255
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5341722369194031
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.6127101182937622
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 278
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5
+      },
+      "sha256": "b81cf938a47b0a0db5921be43cee4e4f367729b7196f4d1f406aea46e67b6c12",
+      "checkpoint_sha256": "113cb44d24768c567e84bdf1e6d48bd349ffda3e2e4ad1ff3b1d022d70205024",
+      "seconds": 84.48399999999674
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4592632055282593
+          },
+          {
+            "seed": 1,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.5205780863761902
+          },
+          {
+            "seed": 2,
+            "updates": 500,
+            "parameters": 135219,
+            "final_training_loss": 0.4731578528881073
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WMX",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "sha256": "c6afcd0234b916977c17dfc14ec600f94c8e6b0df3dbf065e27f514e98b07597",
+      "checkpoint_sha256": "b5c340f0bd8b59e0c5ff973dff02947d9310fa23570e815c8862268b583600a1",
+      "seconds": 87.40700000000652
+    }
+  ],
+  "inference_replays": [
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "26dc40088a5be48caa2239a9800eb51c36108f0dd7646f6da63e1a9f482b5bf0",
+      "probability_sha256": "f51d32af800e77acd127863f1345e5ca16fec3fc18ad058388294a6034685636",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "592b0920dad6dc9a2fa3ac80ff86c15585422880fc26afd8065d98ae807ba5d0",
+      "probability_sha256": "5fffaeab3637e2c8782581aa9c0a689f64ce0a6565185b75b42418c1620badd2",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "caa19eadd70ad549afab89d971066586116214e2e6bb8e9cae1d1b5bc62ce62c",
+      "probability_sha256": "0a06202c6059470c222047d1ee40e6e46bf3a09f85c23007a45c603e61c6ac80",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "bb84a35cdb901a6c6d0da5cae3848410bfd463f4c6608e636fd7f41d213f457d",
+      "probability_sha256": "a4f00c8b645e72f27003034335cf9ad466fbf6fe4bddb7a5ff8ed6f410e9d306",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "17fc5eae537db782cfd2b6017780bf5fa3c126a2a667ec67dd80464bb08164cf",
+      "probability_sha256": "5ca70248bf2fc08639115ef40a6055687cedd9b5ab86ea4ed9ea3d07cac98576",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "1dc0b23e3d56e5fe8a5b072bbb2022b550fb7a092079bac9d910f1142331e1b1",
+      "probability_sha256": "cff35b9f0a2272bbdcefbddd46814ed4b4bb38d66e7329318bebb2615dde6360",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "987b0471d5ed2bb505e5dd8950e5bbce86054dbeb185ed7490b6e3e69b81ef2d",
+      "probability_sha256": "3be20dc087f684bebbf0b77f9115bfda5724412b35e3d5b5c3f939fd0e455d64",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "df4b0daf92b10fa646e5c7f4100ee10c2b3f7ed32069ae7927f0df05fe19bcda",
+      "probability_sha256": "d7b9c568408f47c1c676324433b4753dffe24290bb8de36c04b39d497991da5c",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "7f274ea88acb6c52ddcbff5b44205f7f57245dd77abb2f4d4cf81cfc71bcb3da",
+      "probability_sha256": "f4a405fb157a48414fe2cb2c714bcad1a8edb7766bf625c008aa79c104de7e27",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "97a83e930d5dd3622961a89163dd46a388dfef9aa9a902b28a0391c1382f6c3f",
+      "probability_sha256": "36b4fb0435cbd8d0090cc4af845cd288655fab551ddde8d0cb06bb7c45239779",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "029398752bcf047aec104b392b4579e8921cccf3be45dfa00af041d24ac7a334",
+      "probability_sha256": "dd863d5b86195c898a1d4fe045d3c1eba34fd61f743443468992235c046c8a6d",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "9346a59984634b20235cf27276821893525060c7a2baa80a2834d44daceff3f9",
+      "probability_sha256": "b0043dc96a8e2874d05d0c573f2e6ab349decb398fa4b5cc12de57b5a26c8882",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "b3e1e878240d8fca13b32e988375357f9f86f4aca09297d480b913eead5dc0a9",
+      "probability_sha256": "7ed175e25f8430a77e668c3016c69a045fff6280f324cb6ac2e4b210e64ba8fc",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "9b42c27f9ff025c3b50c0a6aafd37bb0ddfd095966f1b6bccb52717a8b71bfb6",
+      "probability_sha256": "c347a45d6deb8072c02737c9c281fa8860de2f1b412601dc6cb65329bc13aeaf",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "a0f74b19f231a90fb2b34e08f75cc901ce62e474071ce23bbfd9617b82aa1a69",
+      "probability_sha256": "54216fdb3d951924934357b1a070fb75e6558274b9ccc468a26bc621be365753",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "ccc64489544260549ba3d256214288cff7cd93c8b024c0e924a2c2a161e5180d",
+      "probability_sha256": "d2982e7a18a0bdb9ffde1e41bf6c6dda7a7c1284802d1d5980d89df2631c7dfd",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "6d9e80a6bdfd7ed10ba88f0622e86c9e214b330f4b45d05076d77f5b7d795e6c",
+      "probability_sha256": "510ecc56656b6b946ca5c797e11dd0fac64886f6f71e9ae1bbfdfc86cffd6cdf",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "38d9db2a0f713f87af845d23651904e47619003a996d62a24fd5a1f68a4d5709",
+      "probability_sha256": "60b4bae4abfce1add9aadea96f96b9fdaf9ec7dfe2ebce0fdafab1491f7183f5",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "spell_balanced_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "5b3fb5e6998d282a9542f9a7b8ce855da32e7ebe3cd463aaea93db56d3182ad9",
+      "probability_sha256": "aae75c27fe218a081d7018a00ee18af0e2a9b7e7e4b607f990c7d5f19c65e21a",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "event_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "113cb44d24768c567e84bdf1e6d48bd349ffda3e2e4ad1ff3b1d022d70205024",
+      "probability_sha256": "b81cf938a47b0a0db5921be43cee4e4f367729b7196f4d1f406aea46e67b6c12",
+      "identical_full_probabilities": true
+    },
+    {
+      "identity": {
+        "family": "dual_scale_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca"
+      },
+      "checkpoint_sha256": "b5c340f0bd8b59e0c5ff973dff02947d9310fa23570e815c8862268b583600a1",
+      "probability_sha256": "c6afcd0234b916977c17dfc14ec600f94c8e6b0df3dbf065e27f514e98b07597",
+      "identical_full_probabilities": true
+    }
+  ],
+  "summed_training_job_seconds": 1816.5650000001187,
+  "new_neural_seed_fits": 63,
+  "new_optimizer_updates": 31500,
+  "smoke_fits_excluded": 9
+}

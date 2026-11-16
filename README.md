@@ -10,6 +10,22 @@ question to answer with it.
 
 ---
 
+## Metode utama branch `farras`
+
+Metode utama untuk persiapan submission: **Farras wave5 `short_gru25/dead45`**.
+Pilihan kandidat, ekspor CSV, bukti seleksi, dan batas kesiapan ada di
+[submission/README.md](submission/README.md).
+
+```bash
+python -B submission/export.py
+```
+
+CSV wave5 frozen disertakan di `submission/artifacts/farras_wave5.csv` agar harness
+dapat langsung memeriksanya. Ekspor menghasilkan `submission/out/farras.csv`
+setelah pemeriksaan hash dan validasi resmi, tanpa cache/model lokal.
+Ini bukan inference dari raw bundle; paket belum siap untuk penyerahan resmi.
+Eksperimen lanjutan tetap terpisah sebagai riset, bukan pengganti otomatis metode utama.
+
 ## The task
 
 **For every frame of the match, say who has the ball.**

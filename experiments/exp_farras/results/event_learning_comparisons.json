@@ -1,0 +1,68 @@
+{
+  "status": "Post-run exploratory contrasts, do not change primary selection",
+  "bootstrap": {
+    "draws": 5000,
+    "seed": 20261118,
+    "unit": "unique match",
+    "multiple_comparison_adjusted": false
+  },
+  "previous_event_standalone_spellF1": 0.6080225797645553,
+  "pure_vs_previous_event": {
+    "balanced": {
+      "mean_delta": 0.006179029731644493,
+      "lower": -0.0010466050757539686,
+      "upper": 0.014312152792235713,
+      "wins": 5,
+      "ties": 0
+    },
+    "focal": {
+      "mean_delta": -0.027399874640731188,
+      "lower": -0.04104100342366279,
+      "upper": -0.013546500927216463,
+      "wins": 0,
+      "ties": 0
+    },
+    "boundary": {
+      "mean_delta": 0.0002025209897799085,
+      "lower": -0.005156895170112468,
+      "upper": 0.005124439053990464,
+      "wins": 3,
+      "ties": 0
+    },
+    "ranking": {
+      "mean_delta": 0.0028477643432610294,
+      "lower": -0.0009783562619372554,
+      "upper": 0.007167126517014106,
+      "wins": 5,
+      "ties": 0
+    },
+    "ema": {
+      "mean_delta": -0.0024304137683982064,
+      "lower": -0.006574599790635447,
+      "upper": 0.0016240509980100341,
+      "wins": 2,
+      "ties": 0
+    },
+    "contact": {
+      "mean_delta": 0.009962726522384138,
+      "lower": -0.006913382632825086,
+      "upper": 0.026013152901855113,
+      "wins": 5,
+      "ties": 0
+    }
+  },
+  "contact_replace_vs_same_decoder_control": {
+    "mean_delta": 0.004951737048442222,
+    "lower": -0.0014765822193128274,
+    "upper": 0.011773773425119951,
+    "wins": 4,
+    "ties": 0
+  },
+  "ranking_replace_vs_same_decoder_control": {
+    "mean_delta": 0.0025705249399012547,
+    "lower": -0.0003631786146264327,
+    "upper": 0.005429331168577739,
+    "wins": 5,
+    "ties": 0
+  }
+}

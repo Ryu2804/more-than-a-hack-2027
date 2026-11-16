@@ -1,0 +1,417 @@
+{
+  "sha256": {
+    "experiments/exp_farras/fair_idsse/bridge.py": "59cb4b03c6864e872b1e3a09a198c4fbc1f250c0132fa3fec8f80a9780377bc6",
+    "experiments/exp_farras/fair_idsse/check.py": "63548768debf17d78da9d37ce8a7e72d87e01f26c75bd6076456abef7f4af7c0",
+    "experiments/exp_farras/fair_idsse/classic.py": "61245f40b138960e365f708bd2327ad45caee390fecf8fc3a2e0c883b8efde32",
+    "experiments/exp_farras/fair_idsse/neural.py": "76f2eb759e43e6966e7dfbbb1ec8169603d5330cbf836664c766439f99472e42",
+    "experiments/exp_farras/fair_idsse/run.py": "2953df2d077854bbb0fddb521ea27d110c36df976e8157cf6b14bd581336b0ea",
+    "experiments/exp_farras/fair_idsse/test_bridge.py": "1bed8ab1c125cbd7621d4213a81da056fab3aab94c22b65839e8ae2ed9662b0f",
+    "experiments/exp_farras/fair_idsse/test_classic.py": "447c98816c4cecdc59bcc0fc3d80449ceb70886959b9880f7cbadb8c82bfd195",
+    "experiments/exp_farras/fair_idsse/test_neural.py": "62f202df6619062f9107ddd918eaf13fd6f5b935acacc5e10e6d1965fac5091d",
+    "experiments/exp_farras/fair_idsse/PLAN.md": "a8b3841d0e06cbdb9e8ec7949fe17c8ac8207887fb6c5d40b71afa4932052291",
+    "experiments/exp_farras/wave1/data.py": "89dc5ec84d8f43e70f62d4c047f78844c5c1455ba8ad7330083e84836897b31c",
+    "experiments/exp_farras/wave1/run.py": "875cb9826b100d0e103b333ad2fa99b890fe5079aef9f3c9e58ed0ce88ded368",
+    "experiments/exp_farras/wave2/prepare_holdout.py": "d2ae4717c80c56b5652adfc43ef195eb92f6c12549caaac8910f8b5273e0c845",
+    "experiments/exp_farras/wave2/run.py": "ea9e7ee411060061feda1bd55dcf1415e550dc60e70469cbdd7395bc50e8baf8",
+    "experiments/exp_farras/wave2/support.py": "e1b030ecfffddc1034335a567af6258de7b86fa7b4e37f805162538b6279401e",
+    "experiments/exp_farras/wave2/test_decoders.py": "1c3381d7e2d30ebeb1fea0be201b57c92afc60bc3eae0aad49856c12ab64e514",
+    "experiments/exp_farras/wave3/decode.py": "e19d473c69a212dfc9f2a195bc63eae0659a0d0b390100ac30322dbbf4a82b85",
+    "experiments/exp_farras/wave3/ensemble.py": "9ae989d4c38ec60ff89f60e59fd4c70ba52db28f347add7e87d719b4833f7176",
+    "experiments/exp_farras/wave3/models.py": "c2e7b5057c25d515058d8dff5d33051997a8fc443fa128b3241e77d6d444db89",
+    "experiments/exp_farras/wave3/prepare_idsse.py": "2e6d53cb68f485f0c077d0e9608044ccd752fc7158130b7523c520f7adfb4f29",
+    "experiments/exp_farras/wave3/prepare_local.py": "f1da522b4bd6b0526145f359989f88ceb95c592ad2dd27b281e266458b1ab2a9",
+    "experiments/exp_farras/wave3/run.py": "bc8767b9bdf073e0690b41890260e0127b51fd6c6e4456a392ba6e7d5ff8dfab",
+    "experiments/exp_farras/wave3/test_invariants.py": "f3d5c4e0c1796ad22cde1802740bf8600ab85f0b2254178d851feaa9170d1db9",
+    "experiments/exp_farras/wave3/tokens.py": "73d3f937a7cd1c333493a2f7d8543796b0f68d9aca106de6880b02538ab0865d",
+    "experiments/exp_farras/wave3/trees.py": "a102ac84c463eac8be67dffeaf513dfbabb0470f31debeaba3bd5c63fde06abb",
+    "experiments/exp_farras/wave4/campaign.py": "c41c804e1b1230ef03b9067c3541b44106fb375bb33943774900a4376ada50bd",
+    "experiments/exp_farras/wave4/decoder.py": "5951c599feb4b1197e273ec1114e3f24f653f783d07e7ced69b6c206f7e473af",
+    "experiments/exp_farras/wave4/features.py": "63c7c95e398c907434007c22c64a4aeca2c6705ed3963f4f231b0e9e91a3f4a1",
+    "experiments/exp_farras/wave4/fusion.py": "d9e8ac4691f1bb3fb4e3ae5ac2b936e89c487143261b1c9f86e2a03c9397bee9",
+    "experiments/exp_farras/wave4/models.py": "c9369f80b1701239cba60260a4e670fac2d342f1e9fa8b2462f4922df70d5728",
+    "experiments/exp_farras/wave4/prepare_features.py": "c59f661120a73204022dd60e3d76c2e181cb5df1e43a6b832b5ae7d05efa60e1",
+    "experiments/exp_farras/wave4/prepare_prior.py": "69f3ea081de590a3351da27c5c4e9246a86835c0ae9ef2b6d05f3bcf9ad10b55",
+    "experiments/exp_farras/wave4/prepare_skillcorner.py": "d09649c680b88b316ae67eb7fdf668b255406d5b45b89fc9a9ac4506d976bcd1",
+    "experiments/exp_farras/wave4/reference.py": "074828fbf12e7d1cbf078facbb859fee11b54729d4214b7729791206724047e5",
+    "experiments/exp_farras/wave4/run.py": "da71ca9db81dfb34d3ec424f7e16c51807416b17dcc05fcf316302ef86a3eb19",
+    "experiments/exp_farras/wave4/test_invariants.py": "5fa275c5a43ae46aac0d53a889633df3823448b21b4bb004aacf2bbf8d2edaf8",
+    "experiments/exp_farras/wave5/adaptive_fusion.py": "1d6b6c14eabd6386357689e4afb3b8493b5ea07c1effaea039e0a3142f80e25c",
+    "experiments/exp_farras/wave5/diagnostics.py": "39c369f64bbc22e70497b2101c8b8b09fddff364b46d6ff6910df7f65d6c1d8f",
+    "experiments/exp_farras/wave5/prepare_reference.py": "03a24b14fb36d1771c2bc0dbdbfcf76f0134be7a29b39aa15dcec3fa9efc6198",
+    "experiments/exp_farras/wave5/prepare_stress.py": "b9bc8ddc0285bf6e24bf52800a5e10a8a4ec8a48e9cdf2cdd4ccf713e8032516",
+    "experiments/exp_farras/wave5/run.py": "0a899af3723954376dd038c90a6234f722c727bc78cb574bb66753ce50c8192e",
+    "experiments/exp_farras/wave5/segment_decoder.py": "cb5b48dc7331a0df0729b992c7652cb6fa96923dc26e092e9c94a24ca8b88970",
+    "experiments/exp_farras/wave5/support.py": "257958ee4587b04b2c37e51069a3c362bb60f6bedefb72eea798428070af299d",
+    "experiments/exp_farras/wave5/test_invariants.py": "c8c0fb2d2a41dd34fa3b35648fd49e1498efc7263012fc53656fcb0ef877248c",
+    "experiments/exp_farras/wave5/training_models.py": "4de410e4106a9a5890cea8e2cfedea56143aa1aff7a3bcbe6e967c2fecf071b7",
+    "experiments/exp_farras/wave4/reference/common.py": "545981bc41461276ebff2bd113f19c060927fb8c04a285ce272743dcfd446b07",
+    "experiments/exp_farras/wave4/reference/decoder.py": "33b580e6b13cf72194584c1c5ccd30fd465e50f9833b5d74361ae1a5973a7b40",
+    "experiments/exp_farras/wave4/reference/features.py": "e30ff24bcc61e047051ed09206d67add653f55b5787013d5ef74ba62b2ab67d3",
+    "experiments/exp_farras/wave4/reference/skillcorner_games.py": "26a1739d8d5b7d16eb79403b73cd69281900a521697fd7138dd6244e8188bf74",
+    "experiments/exp_farras/wave4/reference/train_model.py": "f7165a6e655492ee412e4c5c6bf3f61aede9a51890ae4198cb79fba5e0c7bbb9",
+    "evaluation/possession_metrics.py": "32c878630c74fb52a90c301485d6dff806509d8e933b1177b6035ee8e8f42b80",
+    "experiments/exp_farras/wave3/cache/idsse_audit.json": "da53b55266cc1f2891a37dc4b3186f5ef14b87b307ecc263c4863f488cd39fb4",
+    "experiments/exp_farras/wave3/cache/data/J03WMX_r0.npz": "aad13b77e03cf799a2268834c65b0d51452bd65b6c7d95d6c27575d742c5f9fc",
+    "experiments/exp_farras/wave4/cache/features/J03WMX_r0.npz": "b63ec1524b1f98e0d6b71d13bfa4b659e4b44b0a2831e2e3b9de2586e2ab20d4",
+    "experiments/exp_farras/wave3/cache/data/J03WN1_r0.npz": "6ec624fabed1cc882dc05339457e8e5b9299738a982f7f332a4a468eb71063e7",
+    "experiments/exp_farras/wave4/cache/features/J03WN1_r0.npz": "475d49cae13df11c58f7f46a125216863f872c945600f150d15bbea622e6b92b",
+    "experiments/exp_farras/wave3/cache/data/J03WOH_r0.npz": "8d578cbeee331b84f397558875df4a8ee133a08bc209d196f75859198df83094",
+    "experiments/exp_farras/wave4/cache/features/J03WOH_r0.npz": "c6e25b08cf87586d0293f18154d80171476560522da43db53bcbbd28ce9365a7",
+    "experiments/exp_farras/wave3/cache/data/J03WOY_r0.npz": "583dbb5b1a8c075b7d0f8f4ddc33d997bf1bd9222e4f2fdcbc70755ac95a4b85",
+    "experiments/exp_farras/wave4/cache/features/J03WOY_r0.npz": "ae63571d7913a46e3a8005f0751d77f868ee0da22978097fb35c5213fc8cbc2e",
+    "experiments/exp_farras/wave3/cache/data/J03WPY_r0.npz": "2aeb2df0792ff9c8e1460b254912aaa4c5b818a272ba8567cf1c36e6d423ab3d",
+    "experiments/exp_farras/wave4/cache/features/J03WPY_r0.npz": "f763048e3f00b486d4dd2e5810ffa59e1b4901e58e983c729ab72d95f1556933",
+    "experiments/exp_farras/wave3/cache/data/J03WQQ_r0.npz": "3d3da4035d6ce63e35d79c0aaefae2349366749d8c912bb58b00f3d77be7baef",
+    "experiments/exp_farras/wave4/cache/features/J03WQQ_r0.npz": "19e671b3dae79cdef1fc61f7bc8ba736a2197ff8eacf3a406afd180a5c0a05a1",
+    "experiments/exp_farras/wave3/cache/data/J03WR9_r0.npz": "0662e441b365d6ccebac90282574b1b1899f3b37630ef1cbc56ac55e7b3a3ffe",
+    "experiments/exp_farras/wave4/cache/features/J03WR9_r0.npz": "09ae44ccdbd0a9fe132f7bd77157c7f85dcbe5ca807c47a3579c2c2d0d907558",
+    "experiments/exp_farras/cross_branch/bridge.py": "1348f957381a847d527af35464ca202062b02f8e1c1730ec5cc835bb761c47c8",
+    "experiments/exp_farras/cross_branch/check.py": "7926ce9c8729b6d7c3d9a92704f2cffeca12d55aeff06ccdc4076a41acf7aa0d",
+    "experiments/exp_farras/cross_branch/combine.py": "9e99031c8a4017bcec4de082c2a4bee6e6cb87b67078b0dd96c93765de2931f5",
+    "experiments/exp_farras/cross_branch/context.py": "3198301f393f8210286e53d25f275f4361b78cb75dde5e7ae88327030b2aff67",
+    "experiments/exp_farras/cross_branch/models.py": "5b6add722e50c6c50b41f92b4d439c3262379ab805a2a57e8f42e77f56684928",
+    "experiments/exp_farras/cross_branch/prepare.py": "64dc80985759adf156a8b8f9f69303ebec9b9f8be824b93caedff2076b88938a",
+    "experiments/exp_farras/cross_branch/run.py": "c9ab04c3a70e8c9c954af6807201c2e28083cfce1af9a4b51790eb05d12ffce2",
+    "experiments/exp_farras/cross_branch/test_combine.py": "0f7b3c5636b08b1570d51e4f4ba0aadf911cc2a0b66220451e210678d5bd18c9",
+    "experiments/exp_farras/cross_branch/test_context.py": "29857632006f30e0c13c80a63fd1ffe7d4825b2b42228c438860fadf30b478ba",
+    "experiments/exp_farras/cross_branch/PLAN.md": "d0278afe246bd2f5b4b87510b82796e1cfd4a9d1093cb206e9261481b108233e",
+    "experiments/exp_farras/cross_branch/out/preparation.json": "001e37d8232b3d23f3cb45a21eae4b306fd560c29f89f903f428d0a93e8fb7b7",
+    "experiments/exp_farras/fair_idsse/out/preregistered.json": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+    "experiments/exp_farras/fair_idsse/out/results.json": "48c7b766dee67a9f5ed96d650c3eaa6b3d171ce5c554c7ee9673f2a60312ae65",
+    "experiments/exp_farras/fair_idsse/out/verification.json": "c41edb90528040740cf8df489ac785278580ff0c245188fb9aefce41a58984ab",
+    "experiments/exp_farras/wave3/reference/jeremy_data.py": "e2b4034baa721ec7f0faf820626e6bb164325b55bf44595607612ab4c2cff7f1",
+    "experiments/exp_farras/wave3/cache/idsse_parser/cache/J03WMX_clean.npz": "0e15e962d5ff11867b089807eede21eb53195a62f9d06593acc0d5cd530cf806",
+    "experiments/exp_farras/cross_branch/cache/J03WMX.npz": "0769f9f02bba02a72e67825c7711dd8669353dfeb339a119f300a0836b14ba36",
+    "experiments/exp_farras/wave3/cache/idsse_parser/cache/J03WN1_clean.npz": "46b3d13e481dcf9c24f544205d84e91caedf8730decda280b62c669870e10113",
+    "experiments/exp_farras/cross_branch/cache/J03WN1.npz": "eac0084c1cc6e27b082b0563de1331465ab86239747a98ee5823c6cb957690a3",
+    "experiments/exp_farras/wave3/cache/idsse_parser/cache/J03WOH_clean.npz": "2f1af67bbd3aeaf871cbe58ed87632c0c380b49c5983305a2d93a61274a03f25",
+    "experiments/exp_farras/cross_branch/cache/J03WOH.npz": "52c0dc401620b03c2fc45cb7cc48471c5e4c7fe7a519338affb18ccc5c96af9c",
+    "experiments/exp_farras/wave3/cache/idsse_parser/cache/J03WOY_clean.npz": "b275f63823e57c77b499dce20f2e86a0b5734d272c6e3c6c4346d4542fda8e42",
+    "experiments/exp_farras/cross_branch/cache/J03WOY.npz": "add08f180aa23874cb9ac7c602da23393dcc9ec29c387d480913c18fe80407ef",
+    "experiments/exp_farras/wave3/cache/idsse_parser/cache/J03WPY_clean.npz": "f0e594dda3d5de9e4628d37fea2ba9e10780607e7a056c660bc620ed2ddffe10",
+    "experiments/exp_farras/cross_branch/cache/J03WPY.npz": "3ecfe8c460e1a608316ee3b6142d901451ca4d0599cf8bd6e76723170f53a1f5",
+    "experiments/exp_farras/wave3/cache/idsse_parser/cache/J03WQQ_clean.npz": "9161b596a6a169307bd15f4f8db62d4d4a36fda999ad22908e503d8aa92d1f20",
+    "experiments/exp_farras/cross_branch/cache/J03WQQ.npz": "5d768edc8e9af7e45097495b11d3f81ba81566e0e9540ee3c651fe7b8c4c4ae7",
+    "experiments/exp_farras/wave3/cache/idsse_parser/cache/J03WR9_clean.npz": "2adc7e67e6f246cf4cca9af1afb32ca09687844bb5d933005fc81ebc2ccae810",
+    "experiments/exp_farras/cross_branch/cache/J03WR9.npz": "21b5e892a433f8a55a036cc0e4fa744fd904115f15706a00e7278c8621e4cfcf",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WMX.npz": "d737f33ae2c738c30048e3add73f6e6859272b783bc12efd83ef68ce03a3a989",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WMX.json": "7dd3b97f7f9ae36ac0310e157d99974cf76041a7d52bedcc436f81f81da8c689",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WMX.npz": "483ecd1fc13274c8fde11baee3ccdb6e2c7f661ba0e34903c25c3c6faa04911c",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WMX.json": "7d47c50f2722dd661839b2ac175695d686b8e0fed4babd5b56ea83770b8f8830",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WMX.npz": "088250892a9b100a1db7b81ae0faf0fb8d638031a5ba74d89e92632569c0284c",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WMX.json": "05fb4693cc48e58fbb044719239214a5b494f981ea88433380e0a898a13f6116",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WN1.npz": "d5069c083f9f5df2bd6a2bd0eebc0cc74e91f56cbe4bf34e06836f9c9a3ba5fb",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WN1.json": "3958bb6ef2b7949ec0a97e831abf617b472b3e3a6810b3c0f8f6d266002d800a",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WN1.npz": "f1aea2cc0f305e6d31177935ecd209a4f0ae12ed9e2ecc554c63a41a44d17895",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WN1.json": "4d11e60c7608ac89fa1e90d37c74cf718cdc584c85d6e98747b7c82bddde7eca",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WN1.npz": "ec0500ef51dddab90b8f405957ba25f48371c27f722af0b862ad24a403178abd",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WN1.json": "b55addf6d3d519a5db0baf9d0a6fbec88b4075f438c68df2a7cba87f33863769",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WOH.npz": "35bd22a0a4f8a441db60207d2acd19bfaf7d69bd16d72255b76d7cb40a46e6c4",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WOH.json": "7c66217eb0642bae80a5065e610e76afd2ea88a792bb297ac633d96de1d8a148",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WOH.npz": "f80fbbe4677595eb3dc7e04e0ae3cfdae85b10df9efd693c871124eff766842b",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WOH.json": "5865137108c2326e76b8eaab30c9fe58aead95ae4a405cba0c6d2a5d72995e65",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WOH.npz": "e16c2ec081351739d70922a52aacb1590f62788ba3182a9f5355936e5392c66b",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WOH.json": "d7dd699295f764083d28d559f4997adf7f59c129886c55f8d26a1b8ef5d74b51",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WOY.npz": "421ce2f33cb572a160c16d39fa5fe61cc64c6cf68a93783ee58d7679f6ec3243",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WOY.json": "07f3b0192ff9b5a11067e781da8e89f402924ca9e089cb582d6c905ba8ee7f5d",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WOY.npz": "cc83ffa578ce624cbdc9a6d6cc1e21c3327bdaf0540d69cc743cefe982486763",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WOY.json": "b4e8ae7305cb013959a9e026b52a5a5246670d037cde0d750cc113ba239f6b6d",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WOY.npz": "da736326b61c5dd57d849387e0c7bef75fe124fe5dba233560589dd2fd311ec2",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WOY.json": "718515f54b87b98f81007d4f2bd67b8834e048cff84d1fe67c046c1104e9c57b",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WPY.npz": "4a38ed5706689590e491ecdca8990a854d02bdef2db1010a9d1290563f326c5d",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WPY.json": "bad5a0a320fb8d48b95f4f754f68c105170735433efe0da73b4874335e5f60d1",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WPY.npz": "0ef5a7a66f490bc3f6e28b750d5b1b89784d0393952d3ab2cc392d8445c6142a",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WPY.json": "d3db67bcdee20ab931c58abdb4944ae9cecc66627d8ec4191e83b39151c8bbea",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WPY.npz": "f1faef64e5802421722559c5fce8bf1c55298063e041c8ffa7472fad8cf5d831",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WPY.json": "8792cfc66afe493f2f833781018a0a60f15de53909f424078dabd4fccad6a01f",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WQQ.npz": "290b81a1e9b41ac94df7efd896607e0f34b8f749da6674af3cb9d60e6e5f30fd",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WQQ.json": "901ee7c94a50404ef70162f027f034f87e8a182d61e3a39936bf1f482b4a9974",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WQQ.npz": "24eeb33181a3047ebaeaf9157afc9850016abe33a4f77f2581794eaa2828d481",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WQQ.json": "64f51e076554754d7d5a8d91b47ed2f228db5a4c0bef28a20e9b2e3510b3b96d",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WQQ.npz": "30bf25b6dca55d9b26d26a180a66f25ab567df91c7b762233938a52d13b38263",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WQQ.json": "8b5e5c2a48ff7b463fe98503b2afa7c59c0a71b3a33c7ed288e6883ef26e27ef",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WR9.npz": "2eec1742df8f5d2d2f1bfda710a7440882c538a2007ac2072a85760d233710f3",
+    "experiments/exp_farras/fair_idsse/out/jobs/short_tcn_J03WR9.json": "9b30d1c4179162aefa9bf06fabcd34c6d63f43da4657d9ddd07bdebcb779692a",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WR9.npz": "ff90b6278800b2b6e06293e4ffd1200db2722fcfeb3e2ac06defdae6a55966ce",
+    "experiments/exp_farras/fair_idsse/out/jobs/pp_tcn_J03WR9.json": "f40084676cf2abfba5b37f43b45b005b8b87792a3de1c72c0044332e4d3d2515",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WR9.npz": "0ee4d74eb81225fc5d696d46855493030b284d77254187320d677029850b9666",
+    "experiments/exp_farras/fair_idsse/out/jobs/setseq_J03WR9.json": "916180f699c28564404737329c8a6d2d4f8896d4f9fe43f6dbc86944a09a2078",
+    "experiments/exp_farras/temporal_methods/boundaries.py": "3a63f9e47294b181c5d1b073e550b5bc0a041c59dce4dc8a31a2d510f5394f93",
+    "experiments/exp_farras/temporal_methods/bridge.py": "1f87aae2e6e599c072673afe0f9b19af90328e01403c5f20b6288f44b1ac7253",
+    "experiments/exp_farras/temporal_methods/check.py": "03e93cf30b57e7983075e4aa6d2efbd250fd40ad204e69c9855e197805f174b9",
+    "experiments/exp_farras/temporal_methods/consensus.py": "6f1ace7396998f55d474630a9de6d9a6f6931961526441c265833e28d3c074c5",
+    "experiments/exp_farras/temporal_methods/duration.py": "95a14c6a39d5a00bb408c76e61867fdd71f0adb5380ef788490b92432d028be6",
+    "experiments/exp_farras/temporal_methods/run.py": "ef0b385494dc84abf1b04dd4211859e651eef28903846580a83ebfebc9190223",
+    "experiments/exp_farras/temporal_methods/test_boundaries.py": "00a4cf0633e2496e2d133cbcfbe07177c6e21d846ef91b7bfda956fd580bb3f7",
+    "experiments/exp_farras/temporal_methods/test_consensus.py": "3e164d8467e3ca1abbab6457f685d7e34412e78e36f4baa0f0df0e33c3cd55aa",
+    "experiments/exp_farras/temporal_methods/test_duration.py": "92cbe0ca18692bf0408659c0c350d634e086294b4633af7c2845f40eb9d095af",
+    "experiments/exp_farras/temporal_methods/PLAN.md": "bd6bb9b02eabc48f2d5279d392fad7163d17f7c59e8819269828bb2ef2057a86",
+    "experiments/exp_farras/cross_branch/out/preregistered.json": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572",
+    "experiments/exp_farras/cross_branch/out/results.json": "1ed62174d73b36234098ba38c9f97da775fc522e1556cf60ec9222a158631ce6",
+    "experiments/exp_farras/cross_branch/out/verification.json": "8adb4e7789e31566c33f956ccdce8db7df881f618b01bd83533fdf6d64f4ac1d",
+    "experiments/exp_farras/temporal_methods/out/checks.json": "53b357c50a06b7b21fc715220354eba4b93a4534065146985122009493c8d00a"
+  },
+  "settings": [
+    {
+      "key": "control/dead45",
+      "method": "control",
+      "config": {
+        "name": "dead45"
+      }
+    },
+    {
+      "key": "duration/strength0.25_bias-0.5",
+      "method": "duration",
+      "config": {
+        "name": "strength0.25_bias-0.5",
+        "strength": 0.25,
+        "switch_bias": -0.5
+      }
+    },
+    {
+      "key": "duration/strength0.25_bias0",
+      "method": "duration",
+      "config": {
+        "name": "strength0.25_bias0",
+        "strength": 0.25,
+        "switch_bias": 0.0
+      }
+    },
+    {
+      "key": "duration/strength0.5_bias-0.5",
+      "method": "duration",
+      "config": {
+        "name": "strength0.5_bias-0.5",
+        "strength": 0.5,
+        "switch_bias": -0.5
+      }
+    },
+    {
+      "key": "duration/strength0.5_bias0",
+      "method": "duration",
+      "config": {
+        "name": "strength0.5_bias0",
+        "strength": 0.5,
+        "switch_bias": 0.0
+      }
+    },
+    {
+      "key": "duration/strength1_bias-0.5",
+      "method": "duration",
+      "config": {
+        "name": "strength1_bias-0.5",
+        "strength": 1.0,
+        "switch_bias": -0.5
+      }
+    },
+    {
+      "key": "duration/strength1_bias0",
+      "method": "duration",
+      "config": {
+        "name": "strength1_bias0",
+        "strength": 1.0,
+        "switch_bias": 0.0
+      }
+    },
+    {
+      "key": "consensus/alpha0.25_contact0",
+      "method": "consensus",
+      "config": {
+        "name": "alpha0.25_contact0",
+        "alpha": 0.25,
+        "contact_beta": 0.0
+      }
+    },
+    {
+      "key": "consensus/alpha0.25_contact0.5",
+      "method": "consensus",
+      "config": {
+        "name": "alpha0.25_contact0.5",
+        "alpha": 0.25,
+        "contact_beta": 0.5
+      }
+    },
+    {
+      "key": "consensus/alpha0.5_contact0",
+      "method": "consensus",
+      "config": {
+        "name": "alpha0.5_contact0",
+        "alpha": 0.5,
+        "contact_beta": 0.0
+      }
+    },
+    {
+      "key": "consensus/alpha0.5_contact0.5",
+      "method": "consensus",
+      "config": {
+        "name": "alpha0.5_contact0.5",
+        "alpha": 0.5,
+        "contact_beta": 0.5
+      }
+    },
+    {
+      "key": "consensus/alpha0.75_contact0",
+      "method": "consensus",
+      "config": {
+        "name": "alpha0.75_contact0",
+        "alpha": 0.75,
+        "contact_beta": 0.0
+      }
+    },
+    {
+      "key": "consensus/alpha0.75_contact0.5",
+      "method": "consensus",
+      "config": {
+        "name": "alpha0.75_contact0.5",
+        "alpha": 0.75,
+        "contact_beta": 0.5
+      }
+    },
+    {
+      "key": "boundaries/radius2_penalty0",
+      "method": "boundaries",
+      "config": {
+        "name": "radius2_penalty0",
+        "radius": 2,
+        "penalty": 0.0
+      }
+    },
+    {
+      "key": "boundaries/radius2_penalty0.05",
+      "method": "boundaries",
+      "config": {
+        "name": "radius2_penalty0.05",
+        "radius": 2,
+        "penalty": 0.05
+      }
+    },
+    {
+      "key": "boundaries/radius5_penalty0",
+      "method": "boundaries",
+      "config": {
+        "name": "radius5_penalty0",
+        "radius": 5,
+        "penalty": 0.0
+      }
+    },
+    {
+      "key": "boundaries/radius5_penalty0.05",
+      "method": "boundaries",
+      "config": {
+        "name": "radius5_penalty0.05",
+        "radius": 5,
+        "penalty": 0.05
+      }
+    },
+    {
+      "key": "boundaries/radius10_penalty0",
+      "method": "boundaries",
+      "config": {
+        "name": "radius10_penalty0",
+        "radius": 10,
+        "penalty": 0.0
+      }
+    },
+    {
+      "key": "boundaries/radius10_penalty0.05",
+      "method": "boundaries",
+      "config": {
+        "name": "radius10_penalty0.05",
+        "radius": 10,
+        "penalty": 0.05
+      }
+    }
+  ],
+  "primary": "duration/strength0.5_bias0",
+  "control": "control/dead45",
+  "matches": [
+    "J03WMX",
+    "J03WN1",
+    "J03WOH",
+    "J03WOY",
+    "J03WPY",
+    "J03WQQ",
+    "J03WR9"
+  ],
+  "folds": {
+    "J03WMX": [
+      "J03WN1",
+      "J03WOH",
+      "J03WOY",
+      "J03WPY",
+      "J03WQQ",
+      "J03WR9"
+    ],
+    "J03WN1": [
+      "J03WMX",
+      "J03WOH",
+      "J03WOY",
+      "J03WPY",
+      "J03WQQ",
+      "J03WR9"
+    ],
+    "J03WOH": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOY",
+      "J03WPY",
+      "J03WQQ",
+      "J03WR9"
+    ],
+    "J03WOY": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH",
+      "J03WPY",
+      "J03WQQ",
+      "J03WR9"
+    ],
+    "J03WPY": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH",
+      "J03WOY",
+      "J03WQQ",
+      "J03WR9"
+    ],
+    "J03WQQ": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH",
+      "J03WOY",
+      "J03WPY",
+      "J03WR9"
+    ],
+    "J03WR9": [
+      "J03WMX",
+      "J03WN1",
+      "J03WOH",
+      "J03WOY",
+      "J03WPY",
+      "J03WQQ"
+    ]
+  },
+  "old_manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572",
+  "baseline_mean_spellF1": 0.6154575861548992,
+  "probability_weights": {
+    "short": 0.75,
+    "setseq": 0.25
+  },
+  "new_neural_seed_fits": 0,
+  "training_prior_cap": 80,
+  "training_prior_fits": 7,
+  "bootstrap": {
+    "n": 5000,
+    "seed": 20261116,
+    "unit": "unique match",
+    "multiple_comparison_adjusted": false
+  },
+  "promotion": {
+    "min_gain": 0.005,
+    "min_wins": 5,
+    "lower_bound_positive": true
+  },
+  "new_public_evaluation": false,
+  "outer_label_meta_fit": false,
+  "exposure": "Repeatedly exposed matches; prior exploratory winner used as control. Not fresh blind data."
+}

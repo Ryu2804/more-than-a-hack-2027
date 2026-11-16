@@ -1,0 +1,8 @@
+{
+  "report_count": 50,
+  "intentional_denied_probes": 140,
+  "unexpected_forbidden_read_attempts": 0,
+  "python_hook_successful_forbidden_reads": 0,
+  "scope": "Trusted Python open-audit policy only, not OS sandbox or independent security verification",
+  "overfit_absence_established": false
+}

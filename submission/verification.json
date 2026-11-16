@@ -1,0 +1,23 @@
+{
+  "method_id": "farras_wave5_short_gru25_dead45",
+  "scope": "Primary selection and frozen CSV export; not raw-bundle inference",
+  "command": "python -B submission/export.py",
+  "output": "submission/out/farras.csv",
+  "official_validator_passed": true,
+  "rows": 199319,
+  "first_frame": 0,
+  "last_frame": 199318,
+  "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+  "matches_frozen_selection": true,
+  "identical_existing_destination_preserved": true,
+  "different_existing_destination_rejected_and_preserved": true,
+  "missing_local_artifact_rejected_without_fallback": true,
+  "altered_candidate_rejected_without_output": true,
+  "existing_local_documentation_links_checked": 61,
+  "training_executed": false,
+  "public_scoring_executed": false,
+  "private_scoring_executed": false,
+  "raw_bundle_reproduction_verified": false,
+  "submission_ready": false,
+  "commit_or_push_executed": false
+}

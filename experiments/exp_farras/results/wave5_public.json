@@ -1,0 +1,43 @@
+{
+  "selection_sha256": "6d69b0e4c702144a0ef2877c1522c2c6478f0ca5bb6b7089f315526bfc367b95",
+  "records": [
+    {
+      "candidate": "selected",
+      "family": "short_gru25",
+      "decoder": "dead45",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.9020586271571484,
+      "possessions": 12,
+      "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8"
+    },
+    {
+      "candidate": "best_new",
+      "family": "short_gru25",
+      "decoder": "dead45",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.9020586271571484,
+      "possessions": 12,
+      "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8"
+    },
+    {
+      "candidate": "previous_wave4",
+      "family": "old_gru25",
+      "decoder": "wave4",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.8959839885496844,
+      "possessions": 12,
+      "sha256": "ddd75416e7929183954d27191b11ddab1ac049fc0e703f802db2209884635e9a"
+    },
+    {
+      "candidate": "pure_boundary",
+      "family": "boundary_tcn",
+      "decoder": "wave4",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.9171889061485535,
+      "possessions": 12,
+      "sha256": "4e0c3feae32be562b1f6beb79b55a130e8819eb0e03563866412d4f932899a3a"
+    }
+  ],
+  "distinct_submission_hashes": 3,
+  "public_used_for_selection": false
+}

@@ -1,0 +1,314 @@
+{
+  "tests": 27,
+  "failures": 0,
+  "errors": 0,
+  "smoke": [
+    {
+      "family": "spell_balanced_tcn",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "parameters": 135219,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.5611274242401123
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.5475236177444458
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.7740498781204224
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "probability_sha256": "ce27acff474863538173880ac067130b5b359e3fd48f513bd4cf91e5a16cfa4e",
+      "checkpoint_sha256": "cfc7c757684049126274f2ba8a961d3ab7ce6caa86f1cd527b93fc1de3bd9972",
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    },
+    {
+      "family": "event_tcn",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "parameters": 135219,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.4246091842651367
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.7339892387390137
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.9087457656860352
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 284
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 196
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 249
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 206
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 178
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 170
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.5
+      },
+      "probability_sha256": "46db286b698f63d8fa06802c22c0b6a8d5d4380bbb208eef0132387e6f406048",
+      "checkpoint_sha256": "a6d64428e01251b67616269909e2085b942531ce96b41379bcf8a6046e0e4655",
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    },
+    {
+      "family": "dual_scale_tcn",
+      "heldout": "J03WMX",
+      "training_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "steps": 1,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "parameters": 135219,
+      "training": {
+        "matches": 6,
+        "names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "device": "cuda",
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 1,
+        "seed_fits": [
+          {
+            "seed": 0,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.7092983722686768
+          },
+          {
+            "seed": 1,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.6852607727050781
+          },
+          {
+            "seed": 2,
+            "updates": 1,
+            "parameters": 135219,
+            "final_training_loss": 1.956468105316162
+          }
+        ],
+        "match_audit": [
+          {
+            "match": "J03WN1",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOH",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WOY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WPY",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WQQ",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          },
+          {
+            "match": "J03WR9",
+            "source": "idsse",
+            "usable_halves": 2,
+            "eligible_short_events": 0
+          }
+        ],
+        "input_channels": 29,
+        "event_sampling_probability": 0.0
+      },
+      "probability_sha256": "fdef01c1bcbbcf36bf271ab5c63fb5f7c30e15a32e7e56b0ab965cd7da442559",
+      "checkpoint_sha256": "cd3a60dc9ec335928afdae6e59c37630f3a94e6c9616209b9647eed45d8cf1da",
+      "metric_evaluation": false,
+      "isolated_inference_identical": true
+    }
+  ],
+  "new_smoke_neural_seed_fits": 9,
+  "updates_per_smoke_fit": 1,
+  "metric_evaluation": false,
+  "seconds": 107.15600000001723
+}

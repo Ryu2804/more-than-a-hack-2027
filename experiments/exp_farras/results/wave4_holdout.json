@@ -1,0 +1,717 @@
+{
+  "selection_sha256": "b5269672e86cce891c7ce28054ce17a6acfa4c4979e11236757212d908acdd05",
+  "results": [
+    {
+      "spell_f1_mean": 0.6549132947976879,
+      "macro_f1": 0.9219123808440903,
+      "accuracy": 0.9284203870877095,
+      "n_gt_spells": 401,
+      "n_pred_spells": 291,
+      "mean_spell_duration_s": 11.435738831615119,
+      "count_error_ratio": -0.2743142144638404,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "J03WQQ",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6368045649072753,
+      "macro_f1": 0.9157662628529567,
+      "accuracy": 0.9223436018124979,
+      "n_gt_spells": 401,
+      "n_pred_spells": 300,
+      "mean_spell_duration_s": 11.150666666666666,
+      "count_error_ratio": -0.2518703241895262,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "J03WQQ",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6574202496532594,
+      "macro_f1": 0.9109896460531525,
+      "accuracy": 0.9167866802486916,
+      "n_gt_spells": 401,
+      "n_pred_spells": 320,
+      "mean_spell_duration_s": 10.486875,
+      "count_error_ratio": -0.20199501246882792,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "J03WQQ",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6336507936507937,
+      "macro_f1": 0.9206591281371476,
+      "accuracy": 0.9317212723928888,
+      "n_gt_spells": 370,
+      "n_pred_spells": 260,
+      "mean_spell_duration_s": 13.018461538461539,
+      "count_error_ratio": -0.2972972972972973,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "J03WR9",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6284810126582279,
+      "macro_f1": 0.9193985208201623,
+      "accuracy": 0.9303453443225939,
+      "n_gt_spells": 370,
+      "n_pred_spells": 262,
+      "mean_spell_duration_s": 13.000763358778627,
+      "count_error_ratio": -0.2918918918918919,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "J03WR9",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.537888198757764,
+      "macro_f1": 0.8671254093689981,
+      "accuracy": 0.8842858115932157,
+      "n_gt_spells": 370,
+      "n_pred_spells": 274,
+      "mean_spell_duration_s": 12.127007299270074,
+      "count_error_ratio": -0.2594594594594595,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "J03WR9",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6675324675324676,
+      "macro_f1": 0.9137271721799229,
+      "accuracy": 0.9240040968873152,
+      "n_gt_spells": 233,
+      "n_pred_spells": 229,
+      "mean_spell_duration_s": 14.638951965065504,
+      "count_error_ratio": -0.017167381974248927,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "skillcorner_2010085",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6696230598669624,
+      "macro_f1": 0.9121641268684652,
+      "accuracy": 0.922505070237199,
+      "n_gt_spells": 233,
+      "n_pred_spells": 218,
+      "mean_spell_duration_s": 15.462935779816513,
+      "count_error_ratio": -0.06437768240343347,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "skillcorner_2010085",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.5682758620689656,
+      "macro_f1": 0.8856267286553288,
+      "accuracy": 0.8971437098535566,
+      "n_gt_spells": 233,
+      "n_pred_spells": 347,
+      "mean_spell_duration_s": 9.831469740634006,
+      "count_error_ratio": 0.4892703862660944,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "skillcorner_2010085",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.7009523809523809,
+      "macro_f1": 0.9122033060729576,
+      "accuracy": 0.9280245022970903,
+      "n_gt_spells": 271,
+      "n_pred_spells": 254,
+      "mean_spell_duration_s": 10.876850393700789,
+      "count_error_ratio": -0.06273062730627306,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "skillcorner_2011166",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6982524271844659,
+      "macro_f1": 0.9079229233189855,
+      "accuracy": 0.9242263763989989,
+      "n_gt_spells": 271,
+      "n_pred_spells": 244,
+      "mean_spell_duration_s": 11.311967213114754,
+      "count_error_ratio": -0.0996309963099631,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "skillcorner_2011166",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.5629402756508423,
+      "macro_f1": 0.8740481564295814,
+      "accuracy": 0.8965735912191107,
+      "n_gt_spells": 271,
+      "n_pred_spells": 382,
+      "mean_spell_duration_s": 7.450052356020942,
+      "count_error_ratio": 0.4095940959409594,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "skillcorner_2011166",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6839797639123103,
+      "macro_f1": 0.8809223355144494,
+      "accuracy": 0.8892668737366267,
+      "n_gt_spells": 306,
+      "n_pred_spells": 287,
+      "mean_spell_duration_s": 11.189547038327525,
+      "count_error_ratio": -0.06209150326797386,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "skillcorner_2013725",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.676818950930626,
+      "macro_f1": 0.8797788750310959,
+      "accuracy": 0.8880977032138103,
+      "n_gt_spells": 306,
+      "n_pred_spells": 285,
+      "mean_spell_duration_s": 11.242105263157894,
+      "count_error_ratio": -0.06862745098039216,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "skillcorner_2013725",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.5955555555555555,
+      "macro_f1": 0.8607209991245318,
+      "accuracy": 0.8692008085588917,
+      "n_gt_spells": 306,
+      "n_pred_spells": 414,
+      "mean_spell_duration_s": 8.010144927536233,
+      "count_error_ratio": 0.35294117647058826,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "skillcorner_2013725",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6853333333333333,
+      "macro_f1": 0.895911449601306,
+      "accuracy": 0.9063276262720692,
+      "n_gt_spells": 296,
+      "n_pred_spells": 304,
+      "mean_spell_duration_s": 10.566184210526316,
+      "count_error_ratio": 0.02702702702702703,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "skillcorner_2015213",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6754325259515571,
+      "macro_f1": 0.8950841002396571,
+      "accuracy": 0.9053059643687065,
+      "n_gt_spells": 296,
+      "n_pred_spells": 282,
+      "mean_spell_duration_s": 11.462127659574469,
+      "count_error_ratio": -0.0472972972972973,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "skillcorner_2015213",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.5945636623748212,
+      "macro_f1": 0.8590815415046881,
+      "accuracy": 0.8705026843665696,
+      "n_gt_spells": 296,
+      "n_pred_spells": 403,
+      "mean_spell_duration_s": 8.271761786600496,
+      "count_error_ratio": 0.3614864864864865,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "skillcorner_2015213",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6609294320137694,
+      "macro_f1": 0.901974087919716,
+      "accuracy": 0.9095439222949115,
+      "n_gt_spells": 300,
+      "n_pred_spells": 281,
+      "mean_spell_duration_s": 11.881850533807828,
+      "count_error_ratio": -0.06333333333333334,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "skillcorner_2016236",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6586994727592268,
+      "macro_f1": 0.8992864091891125,
+      "accuracy": 0.9071322931794865,
+      "n_gt_spells": 300,
+      "n_pred_spells": 269,
+      "mean_spell_duration_s": 12.34646840148699,
+      "count_error_ratio": -0.10333333333333333,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "skillcorner_2016236",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.5959302325581395,
+      "macro_f1": 0.8765850809743321,
+      "accuracy": 0.885674123619309,
+      "n_gt_spells": 300,
+      "n_pred_spells": 388,
+      "mean_spell_duration_s": 8.860309278350515,
+      "count_error_ratio": 0.29333333333333333,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "skillcorner_2016236",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.658493870402802,
+      "macro_f1": 0.9000092383611399,
+      "accuracy": 0.9149667079538223,
+      "n_gt_spells": 283,
+      "n_pred_spells": 288,
+      "mean_spell_duration_s": 10.087916666666667,
+      "count_error_ratio": 0.0176678445229682,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "skillcorner_2017461",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6547445255474453,
+      "macro_f1": 0.8981041745062696,
+      "accuracy": 0.9131327370646886,
+      "n_gt_spells": 283,
+      "n_pred_spells": 265,
+      "mean_spell_duration_s": 10.98988679245283,
+      "count_error_ratio": -0.0636042402826855,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "skillcorner_2017461",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.5934379457917262,
+      "macro_f1": 0.8735949262861585,
+      "accuracy": 0.8929248414094203,
+      "n_gt_spells": 283,
+      "n_pred_spells": 418,
+      "mean_spell_duration_s": 7.138564593301436,
+      "count_error_ratio": 0.47703180212014135,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "skillcorner_2017461",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6716369529983792,
+      "macro_f1": 0.8490033159265962,
+      "accuracy": 0.8530533013777348,
+      "n_gt_spells": 343,
+      "n_pred_spells": 274,
+      "mean_spell_duration_s": 14.914306569343067,
+      "count_error_ratio": -0.20116618075801748,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "metrica3",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6537216828478963,
+      "macro_f1": 0.8430037466716421,
+      "accuracy": 0.8473559545333501,
+      "n_gt_spells": 343,
+      "n_pred_spells": 275,
+      "mean_spell_duration_s": 15.001163636363636,
+      "count_error_ratio": -0.19825072886297376,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "metrica3",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.7402298850574713,
+      "macro_f1": 0.8529190697798977,
+      "accuracy": 0.8578396333515537,
+      "n_gt_spells": 343,
+      "n_pred_spells": 353,
+      "mean_spell_duration_s": 11.738583569405101,
+      "count_error_ratio": 0.029154518950437316,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "metrica3",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6427184466019418,
+      "macro_f1": 0.8356245300264833,
+      "accuracy": 0.8388554850103015,
+      "n_gt_spells": 343,
+      "n_pred_spells": 275,
+      "mean_spell_duration_s": 14.561163636363636,
+      "count_error_ratio": -0.19825072886297376,
+      "candidate": "selected",
+      "family": "pp_gru25",
+      "decoder": "no_shift",
+      "match": "metrica3",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6262560777957861,
+      "macro_f1": 0.8297935234334582,
+      "accuracy": 0.8331651459726135,
+      "n_gt_spells": 343,
+      "n_pred_spells": 274,
+      "mean_spell_duration_s": 14.705547445255474,
+      "count_error_ratio": -0.20116618075801748,
+      "candidate": "new_pp_tcn",
+      "family": "pp_tcn",
+      "decoder": "ryu_rate",
+      "match": "metrica3",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6633385335413415,
+      "macro_f1": 0.8345472942840199,
+      "accuracy": 0.8380636028535788,
+      "n_gt_spells": 343,
+      "n_pred_spells": 298,
+      "mean_spell_duration_s": 13.2896644295302,
+      "count_error_ratio": -0.13119533527696792,
+      "candidate": "previous_wave3",
+      "family": "prior_combined",
+      "decoder": "previous_centered2",
+      "match": "metrica3",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6518032786885246,
+      "macro_f1": 0.8493684402175945,
+      "accuracy": 0.852471653421912,
+      "n_gt_spells": 343,
+      "n_pred_spells": 267,
+      "mean_spell_duration_s": 15.113558052434458,
+      "count_error_ratio": -0.22157434402332363,
+      "candidate": "shipped_ryu",
+      "family": "shipped_no_metrica",
+      "decoder": "ryu_rate",
+      "match": "metrica3",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6194805194805195,
+      "macro_f1": 0.8353053183910543,
+      "accuracy": 0.8377973061991058,
+      "n_gt_spells": 343,
+      "n_pred_spells": 273,
+      "mean_spell_duration_s": 14.529377289377289,
+      "count_error_ratio": -0.20408163265306123,
+      "candidate": "shipped_ryu",
+      "family": "shipped_no_metrica",
+      "decoder": "ryu_rate",
+      "match": "metrica3",
+      "regime": "r0"
+    }
+  ],
+  "submissions": {
+    "selected": {
+      "path": "out/candidates/selected.csv",
+      "sha256": "ddd75416e7929183954d27191b11ddab1ac049fc0e703f802db2209884635e9a",
+      "family": "pp_gru25",
+      "decoder": {
+        "name": "no_shift",
+        "gate_r": 0.35,
+        "kappa": 0.05,
+        "merge_s": 1.0,
+        "dead_threshold": 0.5,
+        "min_dead_s": 2.0,
+        "tau": 3.0,
+        "rate_scale": 1.0,
+        "shift": false,
+        "lambda_mode": "rate",
+        "fixed_lambda": 2.0
+      }
+    },
+    "new_pp_tcn": {
+      "path": "out/candidates/new_pp_tcn.csv",
+      "sha256": "3a5ac2d3e84d8765a5e988196740a32aa11fe6ce457dafad593e57c387f87d7e",
+      "family": "pp_tcn",
+      "decoder": {
+        "name": "ryu_rate",
+        "gate_r": 0.35,
+        "kappa": 0.05,
+        "merge_s": 1.0,
+        "dead_threshold": 0.5,
+        "min_dead_s": 2.0,
+        "tau": 3.0,
+        "rate_scale": 1.0,
+        "shift": true,
+        "lambda_mode": "rate",
+        "fixed_lambda": 2.0
+      }
+    },
+    "previous_wave3": {
+      "path": "out/candidates/previous_wave3.csv",
+      "sha256": "337734b6bf9b70bda6c9a16b549e39e3c90bdbd53fc6073c140ab07cd06b6096",
+      "family": "prior_combined",
+      "decoder": {
+        "name": "previous_centered2"
+      }
+    },
+    "shipped_ryu": {
+      "path": "out/candidates/shipped_ryu.csv",
+      "sha256": "de5d09f87f5e77c7ccaa26baba5048367a90215c03207fee05d854a6cf520966",
+      "family": "shipped_no_metrica",
+      "decoder": {
+        "name": "ryu_rate",
+        "gate_r": 0.35,
+        "kappa": 0.05,
+        "merge_s": 1.0,
+        "dead_threshold": 0.5,
+        "min_dead_s": 2.0,
+        "tau": 3.0,
+        "rate_scale": 1.0,
+        "shift": true,
+        "lambda_mode": "rate",
+        "fixed_lambda": 2.0
+      }
+    }
+  },
+  "reference_audits": {
+    "metrica3_clean": {
+      "input": "metrica3_clean",
+      "source_commit": "5eaf3e595e91fa0502aac48037d0cae8c356ec6f",
+      "weights": [
+        "cache/ryu_weights/tcn_seed0.pt",
+        "cache/ryu_weights/tcn_seed1.pt",
+        "cache/ryu_weights/tcn_seed2.pt"
+      ],
+      "architecture": {
+        "model": "pinned Ryu TCN2",
+        "channels": 64,
+        "dilations": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          1
+        ],
+        "player_set": true,
+        "crop": 384
+      },
+      "training_stats": {
+        "rate": 3.5828524013927936,
+        "dead_share": 0.45746829048396875,
+        "balance": "equal provider means; provider is training-report name prefix before underscore",
+        "providers": {
+          "idsse": {
+            "matches": 7,
+            "rate": 4.581112162047712,
+            "dead_share": 0.44881922032880117
+          },
+          "skillcorner": {
+            "matches": 20,
+            "rate": 2.584592640737875,
+            "dead_share": 0.4661173606391363
+          }
+        }
+      },
+      "source": "wave3 corrected Metrica3 full-match loader",
+      "full_frames": 143761,
+      "sampled_frames": 28540,
+      "blocks": 2,
+      "blocks25": [
+        [
+          360,
+          69594
+        ],
+        [
+          70089,
+          143553
+        ]
+      ],
+      "unknown_team_slots": [],
+      "network_labels_used": false,
+      "boundary_probability": "fixed 0.5; shipped Ryu has no boundary head",
+      "adaptations": [
+        "Target positions come from cached Ryu ATD; team assignments come from the W3 target_clean pack, and unknown slots are NaN across the full match.",
+        "Pinned Ryu feature and player-set code runs at 25 fps; predictions use the exact W3 5 fps sample grid, which differs from the original 25 fps decoder input.",
+        "The shipped weights were trained on IDSSE and SkillCorner; adapter rejects those provider names."
+      ],
+      "bit_exact_ryu_csv_claim": false
+    },
+    "metrica3_r0": {
+      "input": "metrica3_r0",
+      "source_commit": "5eaf3e595e91fa0502aac48037d0cae8c356ec6f",
+      "weights": [
+        "cache/ryu_weights/tcn_seed0.pt",
+        "cache/ryu_weights/tcn_seed1.pt",
+        "cache/ryu_weights/tcn_seed2.pt"
+      ],
+      "architecture": {
+        "model": "pinned Ryu TCN2",
+        "channels": 64,
+        "dilations": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          1
+        ],
+        "player_set": true,
+        "crop": 384
+      },
+      "training_stats": {
+        "rate": 3.5828524013927936,
+        "dead_share": 0.45746829048396875,
+        "balance": "equal provider means; provider is training-report name prefix before underscore",
+        "providers": {
+          "idsse": {
+            "matches": 7,
+            "rate": 4.581112162047712,
+            "dead_share": 0.44881922032880117
+          },
+          "skillcorner": {
+            "matches": 20,
+            "rate": 2.584592640737875,
+            "dead_share": 0.4661173606391363
+          }
+        }
+      },
+      "source": "wave3 corrected Metrica3 full-match loader; wave3 reference.degrade(seed=20262111)",
+      "full_frames": 143761,
+      "sampled_frames": 28540,
+      "blocks": 2,
+      "blocks25": [
+        [
+          360,
+          69594
+        ],
+        [
+          70089,
+          143553
+        ]
+      ],
+      "unknown_team_slots": [],
+      "network_labels_used": false,
+      "boundary_probability": "fixed 0.5; shipped Ryu has no boundary head",
+      "adaptations": [
+        "Target positions come from cached Ryu ATD; team assignments come from the W3 target_clean pack, and unknown slots are NaN across the full match.",
+        "Pinned Ryu feature and player-set code runs at 25 fps; predictions use the exact W3 5 fps sample grid, which differs from the original 25 fps decoder input.",
+        "The shipped weights were trained on IDSSE and SkillCorner; adapter rejects those provider names."
+      ],
+      "bit_exact_ryu_csv_claim": false
+    },
+    "target": {
+      "input": "target",
+      "source_commit": "5eaf3e595e91fa0502aac48037d0cae8c356ec6f",
+      "weights": [
+        "cache/ryu_weights/tcn_seed0.pt",
+        "cache/ryu_weights/tcn_seed1.pt",
+        "cache/ryu_weights/tcn_seed2.pt"
+      ],
+      "architecture": {
+        "model": "pinned Ryu TCN2",
+        "channels": 64,
+        "dilations": [
+          1,
+          2,
+          4,
+          8,
+          16,
+          1
+        ],
+        "player_set": true,
+        "crop": 384
+      },
+      "training_stats": {
+        "rate": 3.5828524013927936,
+        "dead_share": 0.45746829048396875,
+        "balance": "equal provider means; provider is training-report name prefix before underscore",
+        "providers": {
+          "idsse": {
+            "matches": 7,
+            "rate": 4.581112162047712,
+            "dead_share": 0.44881922032880117
+          },
+          "skillcorner": {
+            "matches": 20,
+            "rate": 2.584592640737875,
+            "dead_share": 0.4661173606391363
+          }
+        }
+      },
+      "source": "cached Ryu ATD; W3 target_clean pack team vector",
+      "full_frames": 199319,
+      "sampled_frames": 31772,
+      "blocks": 2,
+      "blocks25": [
+        [
+          11185,
+          90652
+        ],
+        [
+          110808,
+          190198
+        ]
+      ],
+      "unknown_team_slots": [
+        21,
+        22,
+        43
+      ],
+      "network_labels_used": false,
+      "boundary_probability": "fixed 0.5; shipped Ryu has no boundary head",
+      "adaptations": [
+        "Target positions come from cached Ryu ATD; team assignments come from the W3 target_clean pack, and unknown slots are NaN across the full match.",
+        "Pinned Ryu feature and player-set code runs at 25 fps; predictions use the exact W3 5 fps sample grid, which differs from the original 25 fps decoder input.",
+        "The shipped weights were trained on IDSSE and SkillCorner; adapter rejects those provider names."
+      ],
+      "bit_exact_ryu_csv_claim": false
+    }
+  },
+  "reproduced_sha256": "ddd75416e7929183954d27191b11ddab1ac049fc0e703f802db2209884635e9a",
+  "identical_target_rows": 199319,
+  "independent_refit_seconds": 221.73499999998603,
+  "selection_changed": false,
+  "warning": "Shipped Ryu never scored as heldout on its IDSSE/SkillCorner training matches; prior wave3 checkpoint refit proof inherited."
+}

@@ -1,0 +1,40 @@
+{
+  "tests": 47,
+  "failures": 0,
+  "errors": 0,
+  "smoke_settings": [
+    "control/dead45",
+    "duration/strength0.25_bias-0.5",
+    "duration/strength0.25_bias0",
+    "duration/strength0.5_bias-0.5",
+    "duration/strength0.5_bias0",
+    "duration/strength1_bias-0.5",
+    "duration/strength1_bias0",
+    "consensus/alpha0.25_contact0",
+    "consensus/alpha0.25_contact0.5",
+    "consensus/alpha0.5_contact0",
+    "consensus/alpha0.5_contact0.5",
+    "consensus/alpha0.75_contact0",
+    "consensus/alpha0.75_contact0.5",
+    "boundaries/radius2_penalty0",
+    "boundaries/radius2_penalty0.05",
+    "boundaries/radius5_penalty0",
+    "boundaries/radius5_penalty0.05",
+    "boundaries/radius10_penalty0",
+    "boundaries/radius10_penalty0.05"
+  ],
+  "heldout": "J03WMX",
+  "training_names": [
+    "J03WN1",
+    "J03WOH",
+    "J03WOY",
+    "J03WPY",
+    "J03WQQ",
+    "J03WR9"
+  ],
+  "observation_samples": 96,
+  "halves": 2,
+  "metric_evaluation": false,
+  "new_neural_seed_fits": 0,
+  "seconds": 14.360000000044238
+}

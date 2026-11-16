@@ -1,0 +1,11 @@
+{
+  "seconds": 7207.969000000041,
+  "neural_fits": 18,
+  "idsse_tree_fits": 18,
+  "configurations": 66,
+  "external_evaluations": 594,
+  "development_matches": 7,
+  "evaluation_scenarios": 9,
+  "parallel_fits": 1,
+  "train_device": "cpu"
+}

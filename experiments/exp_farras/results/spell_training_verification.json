@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "2db5b8e793cfd43559425d600aa282422558e135016178944b3c8bfaf3d306ca",
+  "identical_decoded_arrays": 140,
+  "verified_saved_model_inference_replays": 21,
+  "identical_predecessor_control": true,
+  "new_public_evaluation": false,
+  "full_training_refit": false
+}

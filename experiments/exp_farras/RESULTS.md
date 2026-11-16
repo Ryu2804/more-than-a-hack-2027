@@ -1,6 +1,30 @@
 # Hasil eksperimen Farras
 
-## Ringkasan
+## Penetapan metode utama
+
+Branch `farras` memakai **wave5 `short_gru25/dead45`** untuk persiapan submission dan laporan teknis. Penetapan ini memakai seleksi frozen yang sudah lolos aturan adopsi eksternal, bukan evaluasi publik atau training baru. [Identitas/hash kandidat](../../submission/method.json), [ekspor dan status kesiapan](../../submission/README.md), [hasil wave5](wave5/RESULTS.md).
+
+Wave6 dan campaign berikutnya tetap sebagai riset pembanding. Keputusan primary/kontrol di tiap benchmark hanya berlaku pada protokolnya sendiri. Histori di bawah tidak ditulis ulang. Paket belum siap untuk penyerahan resmi karena reproduksi raw bundle ke CSV yang sama belum lengkap.
+
+Untuk harness tim, satu CSV prediksi terpilih diterbitkan di `submission/artifacts/farras_wave5.csv`. Hash-nya tetap identik dengan kandidat wave5 frozen. Publikasi source/bukti campaign tidak melatih ulang model atau menjalankan scoring baru; cache, weights, raw data dan GT tidak ikut.
+
+## Riset lanjutan
+
+Generalisasi terbaru: [provider_generalization/RESULTS.md](provider_generalization/RESULTS.md). Source-provider-only training dua arah tanpa competition GT, 30 seed fits, lima resep. Kontrol equal-provider spellF1 **0.540864**; RDrop **0.540882**, selisih praktis nol dengan interval melintasi 0. Primary modality dropout **0.530378** gagal promosi. Kontrol dipertahankan. Sebanyak 58 tests lulus/1 skip, 300 artifacts tersegel sebelum scoring, 270 probability/decoded arrays dan metric rows direproduksi identik. **Tidak menjamin bebas overfit:** semua 27 external matches sudah terekspos historis; belum ada fresh blind cohort. Tidak sebanding langsung dengan angka ensemble IDSSE lama. [Audit paparan dan read-isolation limits](provider_generalization/EXPOSURE.md).
+
+Enam resep lanjutan: [event_learning/RESULTS.md](event_learning/RESULTS.md). Best exploratory event+contact ensemble mencapai mean spellF1 IDSSE **0.624577**, naik0.005014 dari strong research control0.619563, menang5/7; interval masih melintasi0. Primary event+balanced0.619192 gagal promosi, strong control tetap dipakai. Ranking/dead45 mencapai0.621512 dan menang7/7 versus strong consensus control; same-decoder contrast belum terpisah jelas.126fresh seed fits,77tests,42saved-model replays dan280decoded arrays identik. Tidak ada public/private score baru.
+
+Training baru terbaru: [spell_training/RESULTS.md](spell_training/RESULTS.md). Best exploratory event ensemble + consensus mencapai spellF1 IDSSE **0.619563**. Primary event ensemble/dead45 **0.618941**, naik0.003484 dari kontrol0.615458, menang5/7 dengan interval positif tetapi belum memenuhi gain minimum0.005. Kontrol tetap dipertahankan.63seedfits baru,27tests lulus,21saved-model inference replays dan140decoded arrays identik. Standalone event TCN juga membaik0.608023 versus short-TCN lama0.595755; tidak ada public/private score baru.
+
+Metode baru terbaru: [temporal_methods/RESULTS.md](temporal_methods/RESULTS.md). Best exploratory consensus mencapai spellF1 IDSSE **0.616970**, naik0.001512 dari kontrol0.615458 tetapi interval selisih masih melintasi0. Primary HSMM0.605838 gagal promosi; kontrol tetap dipertahankan.19settings/133evaluasi,47tests lulus,133decoded arrays dan7refittedpriors identik. Tidak ada public/private score baru.
+
+Adaptasi lintas branch terbaru: [cross_branch/RESULTS.md](cross_branch/RESULTS.md). Primary gabungan contact/memory/PP-TCN/short-loss/SetSeq mencapai spellF1 IDSSE **0.609030**, kontrol0.595755, menang6/7 dan lolos aturan riset. Best raw alternative short75+SetSeq25 mencapai **0.615458**, menang7/7; tidak mengganti primary post-hoc. Semua28settings dan hasil negatif tersedia; tidak ada public/private score baru.
+
+Benchmark bersama terbaru: [fair_idsse/RESULTS.md](fair_idsse/RESULTS.md). Mean spellF1 IDSSE: short-loss PP-TCN0.595755, SetSeq0.578602, PP-TCN0.571090, HGB0.315719. Semua learned arms training ulang pada6match lain tiap fold dan memakai decoder sama. Bukan ranking exact submission atau skor publik; interval short-TCN versus SetSeq masih melintasi0.
+
+Hasil public diagnostic terbaru tetap [wave6](wave6/RESULTS.md):0.786207 untuk best exploratory alternative, selected tetap wave5 (publik0.772414). Tidak memilih ulang dari GT publik. Audit fitur sebelumnya dikoreksi dalam laporan benchmark: reference Ryu dan builder aktual kita bukan fungsi sama. Riwayat: [wave5](wave5/RESULTS.md), [Ryu/wave4](wave4/RESULTS.md), [Jeremy/Farras/wave3](wave3/RESULTS.md). Laporan di bawah mempertahankan keputusan dan angka historis dua batch pertama.
+
+## Riwayat wave1 dan wave2
 
 72 konfigurasi dalam dua batch, 288 evaluasi development eksternal. Metrik utama spellF1; frame macroF1 hanya tie-breaker pemilihan. Seluruh skor publik di bawah adalah evaluasi lokal pada window GT publik yang sama, bukan hasil leaderboard private.
 

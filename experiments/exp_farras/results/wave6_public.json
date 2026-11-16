@@ -1,0 +1,30 @@
+{
+  "records": [
+    {
+      "candidate": "selected",
+      "variant": "control",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.9020586271571484,
+      "possessions": 12,
+      "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8"
+    },
+    {
+      "candidate": "best_new",
+      "variant": "m05_dead_hysteresis/low35_high50",
+      "spellF1": 0.7862068965517242,
+      "macroF1": 0.9253685161908107,
+      "possessions": 12,
+      "sha256": "2bf7cc52306740e4af5ca1e34c07d843e3d7705b0f166ad051d414bd5f4c5acf"
+    },
+    {
+      "candidate": "previous_wave5",
+      "variant": "control",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.9020586271571484,
+      "possessions": 12,
+      "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8"
+    }
+  ],
+  "selection_sha256": "e387c08beef727217ffeb8385eeca722c1348a554d38e2b087cd1b4c2fa099ec",
+  "public_used_for_selection": false
+}
