@@ -1,0 +1,836 @@
+{
+  "unique_external_matches": 27,
+  "paired_conditions": 54,
+  "metric_evaluation": false,
+  "target_game_used": false,
+  "records": [
+    {
+      "match": "J03WMX",
+      "provider": "idsse",
+      "regime": "r0",
+      "samples": 29194,
+      "original_pack": "experiments/exp_farras/wave3/cache/data/J03WMX_r0.npz",
+      "original_pack_sha256": "aad13b77e03cf799a2268834c65b0d51452bd65b6c7d95d6c27575d742c5f9fc",
+      "original_features": "experiments/exp_farras/wave4/cache/features/J03WMX_r0.npz",
+      "original_features_sha256": "b63ec1524b1f98e0d6b71d13bfa4b659e4b44b0a2831e2e3b9de2586e2ab20d4",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/J03WMX.npz",
+      "label_sha256": "bf5c0b0c51b954f47e5c0d110682685b8c41392af473ce150f3806265ca29a98",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WMX_clean.npz",
+          "observations_sha256": "6109b40c6aa9943ce5d78ca7b582203c2ecde88174e315094aedd59a7e60e177",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WMX_clean.npz",
+          "features_sha256": "b63ec1524b1f98e0d6b71d13bfa4b659e4b44b0a2831e2e3b9de2586e2ab20d4"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WMX_gap.npz",
+          "observations_sha256": "57a603652547728243f023bff1443f2f98eee924d01db1ea389fb92cf0978195",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WMX_gap.npz",
+          "features_sha256": "a0a22eb038212d58ee99a8309e1091211bf5235dffb5863230f2a182e046911a"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "J03WN1",
+      "provider": "idsse",
+      "regime": "r0",
+      "samples": 28313,
+      "original_pack": "experiments/exp_farras/wave3/cache/data/J03WN1_r0.npz",
+      "original_pack_sha256": "6ec624fabed1cc882dc05339457e8e5b9299738a982f7f332a4a468eb71063e7",
+      "original_features": "experiments/exp_farras/wave4/cache/features/J03WN1_r0.npz",
+      "original_features_sha256": "475d49cae13df11c58f7f46a125216863f872c945600f150d15bbea622e6b92b",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/J03WN1.npz",
+      "label_sha256": "80cd863380e4c52ec251ec53eba3a5da80444216a097c11e45fe7b4e19abd8ba",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WN1_clean.npz",
+          "observations_sha256": "e06529e0f2c251c0cb08c95a8d8d0b72c14f0109d856800d0fc147ad8d8b00b1",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WN1_clean.npz",
+          "features_sha256": "475d49cae13df11c58f7f46a125216863f872c945600f150d15bbea622e6b92b"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WN1_gap.npz",
+          "observations_sha256": "9f4eba5b5df963e8b5972c2b51af0ad69e2a1aa3a06c2cf22edb28c5e0adf68c",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WN1_gap.npz",
+          "features_sha256": "b631b0a9aca98cbb1e63c99d9c7ab6ad8143511c52f98f3ea4311cb359239c66"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "J03WOH",
+      "provider": "idsse",
+      "regime": "r0",
+      "samples": 27443,
+      "original_pack": "experiments/exp_farras/wave3/cache/data/J03WOH_r0.npz",
+      "original_pack_sha256": "8d578cbeee331b84f397558875df4a8ee133a08bc209d196f75859198df83094",
+      "original_features": "experiments/exp_farras/wave4/cache/features/J03WOH_r0.npz",
+      "original_features_sha256": "c6e25b08cf87586d0293f18154d80171476560522da43db53bcbbd28ce9365a7",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/J03WOH.npz",
+      "label_sha256": "b4e2d07d847bdc4153295d9c7bdaab4994287dd502fc9b1f5beb3a159ec59740",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WOH_clean.npz",
+          "observations_sha256": "7e1720c456046d0bfdb801718bc0888ecbe73feefabad22eb83048eeaa899a6a",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WOH_clean.npz",
+          "features_sha256": "c6e25b08cf87586d0293f18154d80171476560522da43db53bcbbd28ce9365a7"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WOH_gap.npz",
+          "observations_sha256": "5bdf12876b5f921df9684460b1a0898907db1afb17a858e39fe03e520a6e8579",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WOH_gap.npz",
+          "features_sha256": "ca6e78a831989e311933e87bace69d48ad4d6bf1e4d3c166ee9ffb8ab51bc370"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "J03WOY",
+      "provider": "idsse",
+      "regime": "r0",
+      "samples": 28508,
+      "original_pack": "experiments/exp_farras/wave3/cache/data/J03WOY_r0.npz",
+      "original_pack_sha256": "583dbb5b1a8c075b7d0f8f4ddc33d997bf1bd9222e4f2fdcbc70755ac95a4b85",
+      "original_features": "experiments/exp_farras/wave4/cache/features/J03WOY_r0.npz",
+      "original_features_sha256": "ae63571d7913a46e3a8005f0751d77f868ee0da22978097fb35c5213fc8cbc2e",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/J03WOY.npz",
+      "label_sha256": "d75237374f2e6073c4aa458ef6e6ca8c3517992f4d39cb3e44bb29bdbf7d5af8",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WOY_clean.npz",
+          "observations_sha256": "b29223690d3212ce86bfa29f2181d59b51f16a682ba230d3fa340f40bb6daf25",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WOY_clean.npz",
+          "features_sha256": "ae63571d7913a46e3a8005f0751d77f868ee0da22978097fb35c5213fc8cbc2e"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WOY_gap.npz",
+          "observations_sha256": "bce63664e50f6ed0a78349546afcf816b576115297a8ae9bd95a8edb5003215a",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WOY_gap.npz",
+          "features_sha256": "3ae8f627db6d1fcad401fc27c99a302aced2e35c34543a0b312ec2ff453cc1dd"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "J03WPY",
+      "provider": "idsse",
+      "regime": "r0",
+      "samples": 29243,
+      "original_pack": "experiments/exp_farras/wave3/cache/data/J03WPY_r0.npz",
+      "original_pack_sha256": "2aeb2df0792ff9c8e1460b254912aaa4c5b818a272ba8567cf1c36e6d423ab3d",
+      "original_features": "experiments/exp_farras/wave4/cache/features/J03WPY_r0.npz",
+      "original_features_sha256": "f763048e3f00b486d4dd2e5810ffa59e1b4901e58e983c729ab72d95f1556933",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/J03WPY.npz",
+      "label_sha256": "763167d037d6e993bb2095e7083f9fbc43580718ec11e32f2cea5fd341581ff7",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WPY_clean.npz",
+          "observations_sha256": "1bfa1c559e9fdfd3d767a9bbab070ba54ed127c33c81ec0fa015d1e63de5978f",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WPY_clean.npz",
+          "features_sha256": "f763048e3f00b486d4dd2e5810ffa59e1b4901e58e983c729ab72d95f1556933"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WPY_gap.npz",
+          "observations_sha256": "65fc6b8100205e53f9604c60464a43c8f730c25a227a1e5d5b70f27a43bd3062",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WPY_gap.npz",
+          "features_sha256": "fb611ba60c46012f2229904ceb961e39c362f34444af0e8018fa53f90e6e6701"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "J03WQQ",
+      "provider": "idsse",
+      "regime": "r0",
+      "samples": 28470,
+      "original_pack": "experiments/exp_farras/wave3/cache/data/J03WQQ_r0.npz",
+      "original_pack_sha256": "3d3da4035d6ce63e35d79c0aaefae2349366749d8c912bb58b00f3d77be7baef",
+      "original_features": "experiments/exp_farras/wave4/cache/features/J03WQQ_r0.npz",
+      "original_features_sha256": "19e671b3dae79cdef1fc61f7bc8ba736a2197ff8eacf3a406afd180a5c0a05a1",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/J03WQQ.npz",
+      "label_sha256": "af19e53d2536471c25e3c2e620dc5fceebbaf7024cd6a1bae500d6e6f372d7e7",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WQQ_clean.npz",
+          "observations_sha256": "4af79cf2ae23353c06d3941ab1a7454313d2e587a3b50518f6cf361ce708c290",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WQQ_clean.npz",
+          "features_sha256": "19e671b3dae79cdef1fc61f7bc8ba736a2197ff8eacf3a406afd180a5c0a05a1"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WQQ_gap.npz",
+          "observations_sha256": "0f137fb93799065d5c9fb05bc44bd03e6e6737ee8569d286e9beef24aaa26460",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WQQ_gap.npz",
+          "features_sha256": "9577fc03287735c8dead9bf84f1d2380306bc4a5d09710c362039ea200145261"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "J03WR9",
+      "provider": "idsse",
+      "regime": "r0",
+      "samples": 29363,
+      "original_pack": "experiments/exp_farras/wave3/cache/data/J03WR9_r0.npz",
+      "original_pack_sha256": "0662e441b365d6ccebac90282574b1b1899f3b37630ef1cbc56ac55e7b3a3ffe",
+      "original_features": "experiments/exp_farras/wave4/cache/features/J03WR9_r0.npz",
+      "original_features_sha256": "09ae44ccdbd0a9fe132f7bd77157c7f85dcbe5ca807c47a3579c2c2d0d907558",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/J03WR9.npz",
+      "label_sha256": "a5a3db52d0984dda0a4b7d453eecf7faec89e718873081b64fcf5f99826d8762",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WR9_clean.npz",
+          "observations_sha256": "3e7a6904d793fb1f95019ba2d7f4133154966f6ed63d8b071e7d24bd7ad56f43",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WR9_clean.npz",
+          "features_sha256": "09ae44ccdbd0a9fe132f7bd77157c7f85dcbe5ca807c47a3579c2c2d0d907558"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/J03WR9_gap.npz",
+          "observations_sha256": "4dd299255544428e9e41e39f065f88d9fcb8c61a738f90bf8c49c8f774821972",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/J03WR9_gap.npz",
+          "features_sha256": "2eaef932dafc1d819224bc0a33027b69e3d7a9689173175f2821fc76b06e958a"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1874553",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 30142,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1874553_clean.npz",
+      "original_pack_sha256": "146cc44701d5787bca512cab72da0106ec92f5017ddaf665c7703fb13fff8567",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1874553_clean.npz",
+      "original_features_sha256": "7920690cdce8d4258ad1e8c871e94d55ef91b65a2771b285b68b68c7a32cf718",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1874553.npz",
+      "label_sha256": "8ca3dfe5e1470d8d8587d280f6e23b964126f1f3399762aa672f44c90499a512",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1874553_clean.npz",
+          "observations_sha256": "1eeb08cf4fee45932501fc6d062b55ff286b3689806e5b506b319de4d2214ed8",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1874553_clean.npz",
+          "features_sha256": "7920690cdce8d4258ad1e8c871e94d55ef91b65a2771b285b68b68c7a32cf718"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1874553_gap.npz",
+          "observations_sha256": "9d6d92a8f775e086832da1b4f3168c522d0f050a2f665f198217d6b5300b5a7f",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1874553_gap.npz",
+          "features_sha256": "caca081a1e88c358acb2fbba32240d9e435e2fe510e35a175d52bac32faf4cd5"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1886347",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29522,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1886347_clean.npz",
+      "original_pack_sha256": "7d644e51f82f9e1133e59ba18e622882d3f288fb849807f1eefa2d1abd23b7ac",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1886347_clean.npz",
+      "original_features_sha256": "18065e0529e99b028db27ba13b1ef97c4c692558f19bc7c2019f83a17bcba112",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1886347.npz",
+      "label_sha256": "1b7a23830e8ca45e889dce2283ddfd4e3d413ab607bbd050a0c3349a4be554bc",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1886347_clean.npz",
+          "observations_sha256": "41fd9a3845147a7862df6b34c31d515ed4e990349ca96bb6be91da94cb1fa5ee",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1886347_clean.npz",
+          "features_sha256": "18065e0529e99b028db27ba13b1ef97c4c692558f19bc7c2019f83a17bcba112"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1886347_gap.npz",
+          "observations_sha256": "9eefd7a5bff344c624f3c41c7e974492f684aa3a1d3814bd14614cdaf1a51754",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1886347_gap.npz",
+          "features_sha256": "85f913ad1b36add233cfb7bd66aaddc9f50ed30f57c8c3e08e1c40599e8de17e"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1899585",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 30256,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1899585_clean.npz",
+      "original_pack_sha256": "36398cf4658345f233679498b8e61c93aa1705db1f1ce04a9f8dcfa2ab8451fa",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1899585_clean.npz",
+      "original_features_sha256": "3137f5c518fd2a404dd289403ebfa28634fd645fbe6442797bbd334d564b2a55",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1899585.npz",
+      "label_sha256": "8b6d924b25dd4fafebc7aa44446a843b5ae11d61a626c86ba9644519b07ae929",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1899585_clean.npz",
+          "observations_sha256": "1ba173661666894aef3533304fb730a03117263f03771e74e008e934770347f1",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1899585_clean.npz",
+          "features_sha256": "3137f5c518fd2a404dd289403ebfa28634fd645fbe6442797bbd334d564b2a55"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1899585_gap.npz",
+          "observations_sha256": "1822b1ac226e3aed94db67e9c65cfbe2ff8fb72156626e6120f0f3e213ae8ed6",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1899585_gap.npz",
+          "features_sha256": "ed6fd26168ee4886fdb0790ab1438b727d43427c06a2d48a962236671894b0be"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1925299",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 30642,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1925299_clean.npz",
+      "original_pack_sha256": "733537b252c36f81fafa03fba68130d41934ffa3a428ecc1c8c5ae789c894eef",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1925299_clean.npz",
+      "original_features_sha256": "dc0aa8b56e4d6be07c2fc348a60c5458d429626b666c4171d51cb7e92f7ffd22",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1925299.npz",
+      "label_sha256": "cb890bb0ee983be6fe813e63c71ffecd3437081441e7fc2917ad71cefd9bd2e3",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1925299_clean.npz",
+          "observations_sha256": "a4017e403d447a6115d32260a0bc6316fbe946bb60da07953ff1e985d0681bb6",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1925299_clean.npz",
+          "features_sha256": "dc0aa8b56e4d6be07c2fc348a60c5458d429626b666c4171d51cb7e92f7ffd22"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1925299_gap.npz",
+          "observations_sha256": "5f74bc776e98c9b32cfde2e0a3108ae3ae55b5b4e045ca869349b3173aaced95",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1925299_gap.npz",
+          "features_sha256": "202c73f3cee7294f14ddf9cb63734b7952176ed74fcbfab298b92c924f770fe6"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1927964",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29526,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1927964_clean.npz",
+      "original_pack_sha256": "d5f3dc2383ace29c519f68547543a20ff6b9e7384cf627387e9cf171c388f58a",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1927964_clean.npz",
+      "original_features_sha256": "ddc93483eb1bd381a0a5ba7d783b434452b7b4a1df6055d4d4e41375f2b867d9",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1927964.npz",
+      "label_sha256": "13c0ea72fe30ad51c5134809fef366c72c659fe4c18c540cc861d154aeb3b5f7",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1927964_clean.npz",
+          "observations_sha256": "6e67098f16a1b3d198cbbddb73855c5e673b74f102cb7fa21443c7f8bf1ee09d",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1927964_clean.npz",
+          "features_sha256": "ddc93483eb1bd381a0a5ba7d783b434452b7b4a1df6055d4d4e41375f2b867d9"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1927964_gap.npz",
+          "observations_sha256": "ba00942cec5cb491c37275c2df377ac993eb132da8ed5101b7ac95404f5b737b",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1927964_gap.npz",
+          "features_sha256": "b50ef27dd2882587e7b707dd8e8469b59950e13138bd302ce2b8a63d6bd95c8e"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1953632",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29616,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1953632_clean.npz",
+      "original_pack_sha256": "88ed731920c0bf8e55ca36541dbd684558ffc58c0e7d142b35009a5a195ec8ff",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1953632_clean.npz",
+      "original_features_sha256": "e0115afa79ecbe1ea951b950b7a30d6e2b9ed8ebc68657f8451c7664ba5d5cf5",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1953632.npz",
+      "label_sha256": "f3737555d4a227b79c051b7be98045d74693d07e5c73a34f1dd30adc0614b78c",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1953632_clean.npz",
+          "observations_sha256": "3cb7b8ba4d8c190ed438e49a24c779c0c700d598430f14ae8941cb13cd97ca41",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1953632_clean.npz",
+          "features_sha256": "e0115afa79ecbe1ea951b950b7a30d6e2b9ed8ebc68657f8451c7664ba5d5cf5"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1953632_gap.npz",
+          "observations_sha256": "04f92581f12433fe1fb37f970352ab9055cab9e9428d32a4d4142ab04477fc29",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1953632_gap.npz",
+          "features_sha256": "1ec14510e4a1a56ea416618a02e7f47757f6925c91dcbbd5c734eeaef86fbb9e"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1959846",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29267,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1959846_clean.npz",
+      "original_pack_sha256": "f4a676810fe3ec4677ce8d71eee90fafc285f5badd2ab33c8acc78949ab205f3",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1959846_clean.npz",
+      "original_features_sha256": "0dc170424320efe446eb8630f1d848d42afd3102d803897b3c62a0e1cd1bc5e3",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1959846.npz",
+      "label_sha256": "16ad9eb6d96f8aeed55191570b5d0fd83f9dadbdaaa54eaaca1532e2be89764b",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1959846_clean.npz",
+          "observations_sha256": "9f978084627ffc1fe64b449cf922520c3a5bc786a1e317ff805c02447f989dc1",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1959846_clean.npz",
+          "features_sha256": "0dc170424320efe446eb8630f1d848d42afd3102d803897b3c62a0e1cd1bc5e3"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1959846_gap.npz",
+          "observations_sha256": "6a26abe718812140429c94e0d0e850dc74a3c0efa1ad68e62281f9f16744766b",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1959846_gap.npz",
+          "features_sha256": "94b7fa6c5f3f29ddf8ea85a9c3c1f8b401b863bbe0bc3d7550d7abb606398e7a"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1986691",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29536,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1986691_clean.npz",
+      "original_pack_sha256": "8d3a15a0b3fe43d2c2a9461b4092cc3ee6ea05290aae754cdc2312735eb11977",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1986691_clean.npz",
+      "original_features_sha256": "1fae029001ef4fcad6b03d5126ac4d23991c819f22c2728d44b09370ef7f2a34",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1986691.npz",
+      "label_sha256": "6db8898a6edb5035dc8eca2c6bfaa799590624cd89d34a7d579a28c909fb0f96",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1986691_clean.npz",
+          "observations_sha256": "1d558ba0cea35ab071111a696a23a9932b09c9e0760b88fd6b49b6cd8e7b8a55",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1986691_clean.npz",
+          "features_sha256": "1fae029001ef4fcad6b03d5126ac4d23991c819f22c2728d44b09370ef7f2a34"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1986691_gap.npz",
+          "observations_sha256": "148fcf2ed55ea9bfa271477455f3d31addea0e6e42b52fffc81cde3a91962978",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1986691_gap.npz",
+          "features_sha256": "8bb289edec106af8906d11536f359bac4baff48d29710ad4b251eb6e035faffb"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1996435",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 28802,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1996435_clean.npz",
+      "original_pack_sha256": "c0163d0fa649fc47bc2509f6d0bb6b0bad35a651c2446d2c9874cddabaaaaf79",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1996435_clean.npz",
+      "original_features_sha256": "7f5e51058d3d1af3ce676d95a9d2ff3892980b54fd3e24bb9ee7eeaac09c7bc0",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1996435.npz",
+      "label_sha256": "3219f19105d2623deafdcfc5a779b3efbd75100191a631d7ed96ee2a843f4fac",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1996435_clean.npz",
+          "observations_sha256": "26d591f5925e5a1d426366decdd851c834d21afe862bcd19ddcc6433db91ad00",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1996435_clean.npz",
+          "features_sha256": "7f5e51058d3d1af3ce676d95a9d2ff3892980b54fd3e24bb9ee7eeaac09c7bc0"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1996435_gap.npz",
+          "observations_sha256": "3e1f982555952bdb10fce5c26549c28e380847e13b015b7db796d056d16e066c",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1996435_gap.npz",
+          "features_sha256": "9f483b8f096d7f912ff124315e87b65187a1a42a8ac2968f563c2bb6fe2be684"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_1996436",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 30131,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_1996436_clean.npz",
+      "original_pack_sha256": "02295b5704d5dda0a53b0b3ad1ae95b1f4107bfe7eeefabd6133357669fcfd87",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_1996436_clean.npz",
+      "original_features_sha256": "dc5ac26b95eb715ca9324c8c76c13a3940a4bef24b57d1ed116768828cb7a11b",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_1996436.npz",
+      "label_sha256": "1ab2de0d3f210842ace719bd061745ee59d1863437b7f5cd5487abcbef780faf",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1996436_clean.npz",
+          "observations_sha256": "c18eb074d2530caaa4cb7272aaaf8a24e74dab4d80d7038ae498aff3521e6a51",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1996436_clean.npz",
+          "features_sha256": "dc5ac26b95eb715ca9324c8c76c13a3940a4bef24b57d1ed116768828cb7a11b"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_1996436_gap.npz",
+          "observations_sha256": "3481a37469ac2c2e87cbd86d0677a21ebd48d57e056a6858a63473462724cce2",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_1996436_gap.npz",
+          "features_sha256": "f843670f6d4a57d1e0c7814732040c1cfc1d91df622d3eb666bb803f27accd3b"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2006229",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29626,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2006229_clean.npz",
+      "original_pack_sha256": "49545712f82b07d6fd69ea1eac4b4e58aa946d09c3997f2fee0b4311d3e63dff",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2006229_clean.npz",
+      "original_features_sha256": "a29c2ad7ebc13a3dbdbe13d2049d5a224745807e52192b5b82e69c26796e5760",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2006229.npz",
+      "label_sha256": "4f0b55892e1b7e393cc76f6c49db813bf655d173597eee8344e5fa0eb792763c",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2006229_clean.npz",
+          "observations_sha256": "abe8685f2777f2fc2bd8f097b95313679ea0fc5c17afc7b5045b75ad83e50ca8",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2006229_clean.npz",
+          "features_sha256": "a29c2ad7ebc13a3dbdbe13d2049d5a224745807e52192b5b82e69c26796e5760"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2006229_gap.npz",
+          "observations_sha256": "5a15138b15fa0913ad8394bdb0e838230fc653fd9271bd380d4f645f62a5fc17",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2006229_gap.npz",
+          "features_sha256": "8d8a4bb1f6c57e030a89f5dc8bd0f7537710d3af8e86462cd96ebc665a908495"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2006363",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29537,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2006363_clean.npz",
+      "original_pack_sha256": "84f4e02e7b3bb84f75dcdb9fc6b22fb40b8b37660ae6f536cb580a8c247d5ecf",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2006363_clean.npz",
+      "original_features_sha256": "7c7e0a6f6584772c35b89b57b9402dc42ba97bf8adbfc645946d362ff397a483",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2006363.npz",
+      "label_sha256": "20b24b216bc3be7288b75e90cd85e108b071078c94c00b2d150aa57d3a94e737",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2006363_clean.npz",
+          "observations_sha256": "9cf5806f9d0b501fdb37be4003d6499becc40f6b8bf4cce54db9b7a3c88df707",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2006363_clean.npz",
+          "features_sha256": "7c7e0a6f6584772c35b89b57b9402dc42ba97bf8adbfc645946d362ff397a483"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2006363_gap.npz",
+          "observations_sha256": "c2a706c922c7cd906384a7c80a214c7f1e37a56af5bff0551b3d03c5e2fdc0a6",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2006363_gap.npz",
+          "features_sha256": "ff829d23c268ac5963f162d53dc82839143d154fcae8bde5e7330ac093a1b902"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2007448",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29032,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2007448_clean.npz",
+      "original_pack_sha256": "736c9a4d72f4a43a73d3cb62bd50b8a11488fe9731b66caa57388816502ceba5",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2007448_clean.npz",
+      "original_features_sha256": "8467f45f7fe055de0c2cc05b562a160d8278a43e1cf6d529a39be38c5b80cbca",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2007448.npz",
+      "label_sha256": "607956100e8e886f3f3e333b3a68c065878966a5e0667f9313e85a1d256a144e",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2007448_clean.npz",
+          "observations_sha256": "4734e9d121b4257ae90f2f21e779b9a05beee9563edc306f07e5724ad7442203",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2007448_clean.npz",
+          "features_sha256": "8467f45f7fe055de0c2cc05b562a160d8278a43e1cf6d529a39be38c5b80cbca"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2007448_gap.npz",
+          "observations_sha256": "59eea43ed7f630d09e22fd3faa9e5625117c7d37704d5664837454e7abb6bc60",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2007448_gap.npz",
+          "features_sha256": "620108a4746f88580d82cfa4f168114ac329553132371c254e434f36b054a9ea"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2007721",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 28772,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2007721_clean.npz",
+      "original_pack_sha256": "129046b962cc58592f3557602b634bec72c9950e1728e3b0d4b9713a9605d41d",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2007721_clean.npz",
+      "original_features_sha256": "7b8a298fb7160c962edbff3988a896ff96f1a480b3ad1a26ceaa3e6015c4da20",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2007721.npz",
+      "label_sha256": "ace1b91cb76c496c521aca53467bc0f20889273c9a27ffea0ddf8c3019668957",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2007721_clean.npz",
+          "observations_sha256": "48caca4480e38173a33baf516f4466d7c339d07d848154bd509a1ea7651506b2",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2007721_clean.npz",
+          "features_sha256": "7b8a298fb7160c962edbff3988a896ff96f1a480b3ad1a26ceaa3e6015c4da20"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2007721_gap.npz",
+          "observations_sha256": "abb2d424f0b9e1043a572a766f03e42108abce46e6ac0a939cf553744c199f87",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2007721_gap.npz",
+          "features_sha256": "f4f4bb58f76c7644209bfa59929ce9b9ddc1119e693331ec3a29dedb224e99df"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2010085",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29487,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2010085_clean.npz",
+      "original_pack_sha256": "f2bca80cb0c2a863445de96e38a3f91e0d07aa0d897bc89d1bca954d3d07b4e3",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2010085_clean.npz",
+      "original_features_sha256": "2dd101f56954229d969e6eb269f182d00b571869d01fc7fafcae34f46e9f3715",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2010085.npz",
+      "label_sha256": "488495e1bda630217bbb48ce765a3cf60e7b6f73eeea9d3161ef48747469b73e",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2010085_clean.npz",
+          "observations_sha256": "c468a7058f419de68376826df012e88607a79969d14e6fc880e6838399a860ed",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2010085_clean.npz",
+          "features_sha256": "2dd101f56954229d969e6eb269f182d00b571869d01fc7fafcae34f46e9f3715"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2010085_gap.npz",
+          "observations_sha256": "b9841d8e97760e92d6ac24978285956e475c91a457886312b4a3cd8ba8dcde14",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2010085_gap.npz",
+          "features_sha256": "aa12f0fac009b33fa54ce375912494ac725e0cc28076c21dc7e666396bccf1c3"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2011166",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29647,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2011166_clean.npz",
+      "original_pack_sha256": "f8020b11d048a9b79d798de86565745205bd42d70eaf180bbb4b3f6bfccf9809",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2011166_clean.npz",
+      "original_features_sha256": "a8e50cafe70f296265f9e1b6aef9ddd8ee5ae0f549ab96583454ab92e31bce20",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2011166.npz",
+      "label_sha256": "5138b8b89a34ff0dc3d27139bb376a5cb2256344ec5efb323f72a778cb0abbbe",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2011166_clean.npz",
+          "observations_sha256": "192fd3c2c269e5181dbc34fbb9c498cf19f95295eac41a5712238cdbaa63e939",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2011166_clean.npz",
+          "features_sha256": "a8e50cafe70f296265f9e1b6aef9ddd8ee5ae0f549ab96583454ab92e31bce20"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2011166_gap.npz",
+          "observations_sha256": "dae96b3552c9726c270cece9639182b5665d010c7b3f349f5108e7a1f04926df",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2011166_gap.npz",
+          "features_sha256": "15ed6bccde150a1974fd62908eae2340626c3bed6dc580f77646df51f1895203"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2013725",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 28397,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2013725_clean.npz",
+      "original_pack_sha256": "57e3c9440527e473a8cee82aa238f83973a8180b493ca0e5b8a56562f92b65bb",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2013725_clean.npz",
+      "original_features_sha256": "5c187b6faf1ca0c2feba3c4acc187c59981c71204d167a451b79fcd3f328d603",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2013725.npz",
+      "label_sha256": "2baad7df6e7b1846c42ef1299c5a13046f3bcbaed8caac9b03574003090e611d",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2013725_clean.npz",
+          "observations_sha256": "30e728d96b0f27c0538839045468dd02e700215006b8ca1fdf46cc1cd2f6d98e",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2013725_clean.npz",
+          "features_sha256": "5c187b6faf1ca0c2feba3c4acc187c59981c71204d167a451b79fcd3f328d603"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2013725_gap.npz",
+          "observations_sha256": "980a988a24c52d50e11f1115e1daaf3c6a6c24b0fdb0bad300c3da663bdab56b",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2013725_gap.npz",
+          "features_sha256": "fb0a857db1ceeebad38e3747311f5a6a612b196135d8e59f2c5cdc59843bf060"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2015213",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29952,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2015213_clean.npz",
+      "original_pack_sha256": "27e9638163c0f5c810b308e76e9df699751e6c247ea0d8b5d7dfe77bdc8bdad5",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2015213_clean.npz",
+      "original_features_sha256": "066d2ff1523c39dff135604b456f25d6b3f7ccd8088a5d7f2ee2f96dc476ada7",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2015213.npz",
+      "label_sha256": "214a0470b7af00154d845c01664828938dadbe2d362ce08564f4a4f634c24c23",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2015213_clean.npz",
+          "observations_sha256": "cf6420179771295fe78c29f5d5adaf5b662ba59e18e415650a91311d76d0d263",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2015213_clean.npz",
+          "features_sha256": "066d2ff1523c39dff135604b456f25d6b3f7ccd8088a5d7f2ee2f96dc476ada7"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2015213_gap.npz",
+          "observations_sha256": "086e2399adb27753e9eb7dfb59e6255baa74a62e3b2f2e43b6d97f00e6251aa4",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2015213_gap.npz",
+          "features_sha256": "54231626049d4944fbd0eda66e3b6348207d988c88aed016521ddad121b8f576"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2016236",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 30022,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2016236_clean.npz",
+      "original_pack_sha256": "3e52ec7d4a3c29d585c6a78e35c1d37e43dcfd873c92b51abf2df3c5018416b3",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2016236_clean.npz",
+      "original_features_sha256": "c038695e97cbfab3089b7799fbf02f76e51a7e5d05f6d69e0561d24859ff4f4c",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2016236.npz",
+      "label_sha256": "4f06b6e9e058de9ec1e078536443510dc2c7a56329223c51f5ed4aa09bd9b25c",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2016236_clean.npz",
+          "observations_sha256": "39e8389c6be7bfb588716dbb6fdfde25ea40c872af940be7d9db353c70ccc90c",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2016236_clean.npz",
+          "features_sha256": "c038695e97cbfab3089b7799fbf02f76e51a7e5d05f6d69e0561d24859ff4f4c"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2016236_gap.npz",
+          "observations_sha256": "b3fa278b8438a5a5140e5d01b37276dc69b352b85c8ffd7b12b4412aef678b58",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2016236_gap.npz",
+          "features_sha256": "4254f579ceaef4a41e8972ff5e250d9f5ad2b08724f9bd3b28297e60953a9ba3"
+        }
+      ],
+      "observations_label_free": true
+    },
+    {
+      "match": "skillcorner_2017461",
+      "provider": "skillcorner",
+      "regime": "clean",
+      "samples": 29227,
+      "original_pack": "experiments/exp_farras/wave4/cache/data/skillcorner_2017461_clean.npz",
+      "original_pack_sha256": "3dc02d321462c7dfd1960ddf584fd131a80b1bdf20b0af7ea294b1abdac8e307",
+      "original_features": "experiments/exp_farras/wave4/cache/features/skillcorner_2017461_clean.npz",
+      "original_features_sha256": "eed7c1304598b33f8216dc88753d4e23bdc03f4e8db12442ac4083eb2dec91ac",
+      "label_path": "experiments/exp_farras/provider_generalization/cache/labels/skillcorner_2017461.npz",
+      "label_sha256": "c84de72af38527bb4633c9945ad632d89564544e4d8e37d151953d44a3a5e88d",
+      "cases": [
+        {
+          "condition": "clean",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2017461_clean.npz",
+          "observations_sha256": "84ef549b06b18e75d7dea7d1ccc1b775be0329ed66e89b0614667bba4a9f1460",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2017461_clean.npz",
+          "features_sha256": "eed7c1304598b33f8216dc88753d4e23bdc03f4e8db12442ac4083eb2dec91ac"
+        },
+        {
+          "condition": "gap",
+          "observations": "experiments/exp_farras/provider_generalization/cache/observations/skillcorner_2017461_gap.npz",
+          "observations_sha256": "29e15b93ad3be649b2b41d85456fcacc448bb6ce71740b207a4b77a41536d61b",
+          "features": "experiments/exp_farras/provider_generalization/cache/features/skillcorner_2017461_gap.npz",
+          "features_sha256": "557063066ef2ff09eedb6a89d49b9faffbfcf5b60eedd07599fac56a4195c113"
+        }
+      ],
+      "observations_label_free": true
+    }
+  ],
+  "guard": {
+    "installed": true,
+    "denied_roots": [
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\annotation_harness",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\data",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\evaluation\\gt",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\evaluation\\results",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\_cache",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\cross_branch\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\event_learning\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\fair_idsse\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\results",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\results\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\spell_training\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\temporal_methods\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave1\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave2\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave3\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave4\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave5\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave6\\out"
+    ],
+    "denied_files": [
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave3\\cache\\data\\target_clean.npz",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave4\\cache\\features\\target_clean.npz",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave4\\cache\\prior\\target_clean.npz"
+    ],
+    "blocked_attempts": 1,
+    "nonprobe_blocked_attempts": 0,
+    "probe_count": 1,
+    "blocked": [
+      {
+        "path": "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\evaluation\\gt\\bar-ath_possession_gt_public.csv",
+        "probe": true
+      }
+    ],
+    "probes": [
+      {
+        "path": "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\evaluation\\gt\\bar-ath_possession_gt_public.csv",
+        "probe": true
+      }
+    ],
+    "successful_forbidden_reads": 0,
+    "limitation": "Zero successful forbidden reads describes intercepted open events by construction, not independent security verification. This trusted Python guard is not an OS sandbox and cannot establish no overfit."
+  }
+}

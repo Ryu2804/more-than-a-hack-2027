@@ -1,0 +1,280 @@
+{
+  "selection_sha256": "47c023c3cea00842ca8b5cb7a112a1fd983605dac0b4bd4e0412ee867f16b686",
+  "results": [
+    {
+      "spell_f1_mean": 0.6574202496532594,
+      "macro_f1": 0.9109896460531525,
+      "accuracy": 0.9167866802486916,
+      "n_gt_spells": 401,
+      "n_pred_spells": 320,
+      "mean_spell_duration_s": 10.486875,
+      "count_error_ratio": -0.20199501246882792,
+      "candidate": "selected",
+      "family": "hybrid_tree25",
+      "decoder": "centered2",
+      "match": "J03WQQ",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6472630173564753,
+      "macro_f1": 0.910481201217196,
+      "accuracy": 0.9163370683901788,
+      "n_gt_spells": 401,
+      "n_pred_spells": 348,
+      "mean_spell_duration_s": 9.787931034482758,
+      "count_error_ratio": -0.13216957605985039,
+      "candidate": "adapted_jeremy",
+      "family": "setseq",
+      "decoder": "cost05",
+      "match": "J03WQQ",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.2496969696969697,
+      "macro_f1": 0.5742487031863299,
+      "accuracy": 0.5835540412378376,
+      "n_gt_spells": 401,
+      "n_pred_spells": 259,
+      "mean_spell_duration_s": 10.631660231660232,
+      "count_error_ratio": -0.3541147132169576,
+      "candidate": "prior_control",
+      "family": "anchor",
+      "decoder": "cost6",
+      "match": "J03WQQ",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.28369230769230774,
+      "macro_f1": 0.6736218464248989,
+      "accuracy": 0.6779795567108082,
+      "n_gt_spells": 401,
+      "n_pred_spells": 249,
+      "mean_spell_duration_s": 16.71325301204819,
+      "count_error_ratio": -0.3790523690773067,
+      "candidate": "prior_symmetric",
+      "family": "prior_symmetric",
+      "decoder": "cost6",
+      "match": "J03WQQ",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.537888198757764,
+      "macro_f1": 0.8671254093689981,
+      "accuracy": 0.8842858115932157,
+      "n_gt_spells": 370,
+      "n_pred_spells": 274,
+      "mean_spell_duration_s": 12.127007299270074,
+      "count_error_ratio": -0.2594594594594595,
+      "candidate": "selected",
+      "family": "hybrid_tree25",
+      "decoder": "centered2",
+      "match": "J03WR9",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.5010463378176382,
+      "macro_f1": 0.8685979197425465,
+      "accuracy": 0.8876779510932498,
+      "n_gt_spells": 370,
+      "n_pred_spells": 299,
+      "mean_spell_duration_s": 11.256856187290971,
+      "count_error_ratio": -0.1918918918918919,
+      "candidate": "adapted_jeremy",
+      "family": "setseq",
+      "decoder": "cost05",
+      "match": "J03WR9",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.2546689303904923,
+      "macro_f1": 0.6007495584707526,
+      "accuracy": 0.6163817178666303,
+      "n_gt_spells": 370,
+      "n_pred_spells": 219,
+      "mean_spell_duration_s": 12.336803652968037,
+      "count_error_ratio": -0.4081081081081081,
+      "candidate": "prior_control",
+      "family": "anchor",
+      "decoder": "cost6",
+      "match": "J03WR9",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.29409780775716693,
+      "macro_f1": 0.6660475716529669,
+      "accuracy": 0.6766637150057898,
+      "n_gt_spells": 370,
+      "n_pred_spells": 223,
+      "mean_spell_duration_s": 18.189237668161436,
+      "count_error_ratio": -0.3972972972972973,
+      "candidate": "prior_symmetric",
+      "family": "prior_symmetric",
+      "decoder": "cost6",
+      "match": "J03WR9",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.7402298850574713,
+      "macro_f1": 0.8529190697798977,
+      "accuracy": 0.8578396333515537,
+      "n_gt_spells": 343,
+      "n_pred_spells": 353,
+      "mean_spell_duration_s": 11.738583569405101,
+      "count_error_ratio": 0.029154518950437316,
+      "candidate": "selected",
+      "family": "hybrid_tree25",
+      "decoder": "centered2",
+      "match": "metrica3",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.7238636363636364,
+      "macro_f1": 0.8460262486254461,
+      "accuracy": 0.8518269352058193,
+      "n_gt_spells": 343,
+      "n_pred_spells": 361,
+      "mean_spell_duration_s": 11.631911357340721,
+      "count_error_ratio": 0.052478134110787174,
+      "candidate": "adapted_jeremy",
+      "family": "setseq",
+      "decoder": "cost05",
+      "match": "metrica3",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.5895093062605753,
+      "macro_f1": 0.8341671534864954,
+      "accuracy": 0.8361224403986041,
+      "n_gt_spells": 343,
+      "n_pred_spells": 248,
+      "mean_spell_duration_s": 16.073064516129033,
+      "count_error_ratio": -0.27696793002915454,
+      "candidate": "prior_control",
+      "family": "anchor",
+      "decoder": "cost6",
+      "match": "metrica3",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.5996638655462185,
+      "macro_f1": 0.8427759271885308,
+      "accuracy": 0.8437118950510869,
+      "n_gt_spells": 343,
+      "n_pred_spells": 252,
+      "mean_spell_duration_s": 16.25603174603175,
+      "count_error_ratio": -0.2653061224489796,
+      "candidate": "prior_symmetric",
+      "family": "prior_symmetric",
+      "decoder": "cost6",
+      "match": "metrica3",
+      "regime": "clean"
+    },
+    {
+      "spell_f1_mean": 0.6633385335413415,
+      "macro_f1": 0.8345472942840199,
+      "accuracy": 0.8380636028535788,
+      "n_gt_spells": 343,
+      "n_pred_spells": 298,
+      "mean_spell_duration_s": 13.2896644295302,
+      "count_error_ratio": -0.13119533527696792,
+      "candidate": "selected",
+      "family": "hybrid_tree25",
+      "decoder": "centered2",
+      "match": "metrica3",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.6397590361445784,
+      "macro_f1": 0.8279639124170294,
+      "accuracy": 0.8324223184627675,
+      "n_gt_spells": 343,
+      "n_pred_spells": 321,
+      "mean_spell_duration_s": 12.830280373831776,
+      "count_error_ratio": -0.0641399416909621,
+      "candidate": "adapted_jeremy",
+      "family": "setseq",
+      "decoder": "cost05",
+      "match": "metrica3",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.35931034482758617,
+      "macro_f1": 0.6181903217738205,
+      "accuracy": 0.6141291398618061,
+      "n_gt_spells": 343,
+      "n_pred_spells": 237,
+      "mean_spell_duration_s": 10.16253164556962,
+      "count_error_ratio": -0.30903790087463556,
+      "candidate": "prior_control",
+      "family": "anchor",
+      "decoder": "cost6",
+      "match": "metrica3",
+      "regime": "r0"
+    },
+    {
+      "spell_f1_mean": 0.3899497487437186,
+      "macro_f1": 0.7335123751287208,
+      "accuracy": 0.7316640737781889,
+      "n_gt_spells": 343,
+      "n_pred_spells": 254,
+      "mean_spell_duration_s": 14.982362204724408,
+      "count_error_ratio": -0.2594752186588921,
+      "candidate": "prior_symmetric",
+      "family": "prior_symmetric",
+      "decoder": "cost6",
+      "match": "metrica3",
+      "regime": "r0"
+    }
+  ],
+  "submissions": {
+    "selected": {
+      "path": "out/candidates/selected.csv",
+      "sha256": "337734b6bf9b70bda6c9a16b549e39e3c90bdbd53fc6073c140ab07cd06b6096",
+      "family": "hybrid_tree25",
+      "decoder": {
+        "name": "centered2",
+        "lambda_team": 2.0,
+        "lambda_dead": 2.0,
+        "gamma": 0.5
+      }
+    },
+    "adapted_jeremy": {
+      "path": "out/candidates/adapted_jeremy.csv",
+      "sha256": "c2b7b383d18fdad8713b7984402a34d1408938568e6f7dc5e4f31d817f08cc41",
+      "family": "setseq",
+      "decoder": {
+        "name": "cost05",
+        "lambda_team": 0.5,
+        "lambda_dead": 0.5,
+        "gamma": 0.0
+      }
+    },
+    "prior_control": {
+      "path": "out/candidates/prior_control.csv",
+      "sha256": "daa47000ae56c6d739aa2ed87681468ca4b1e79bb9118802738e06d760cbe761",
+      "family": "anchor",
+      "decoder": {
+        "name": "cost6",
+        "lambda_team": 6.0,
+        "lambda_dead": 6.0,
+        "gamma": 0.0
+      }
+    },
+    "prior_symmetric": {
+      "path": "out/candidates/prior_symmetric.csv",
+      "sha256": "45e03662fccbeb238e9df723c99829df60e3d8d641d539be9f6d1e1fd59b0446",
+      "family": "prior_symmetric",
+      "decoder": {
+        "name": "cost6",
+        "lambda_team": 6.0,
+        "lambda_dead": 6.0,
+        "gamma": 0.0
+      }
+    }
+  },
+  "reproduced_sha256": "337734b6bf9b70bda6c9a16b549e39e3c90bdbd53fc6073c140ab07cd06b6096",
+  "identical_target_rows": 199319,
+  "independent_refit_seconds": 544.7660000000033,
+  "selection_changed": false,
+  "warning": "Only four prespecified candidates; no holdout tuning. Metrica3 was previously exposed."
+}

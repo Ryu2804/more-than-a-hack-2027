@@ -1,0 +1,8 @@
+{
+  "manifest_sha256": "38829cd0f0f48a1ffffa2d4dd0cca57c14dcc7f684a95b58eed0e697b0076b75",
+  "identical_decoded_arrays": 133,
+  "identical_refitted_duration_priors": 7,
+  "predecessor_control_identical": true,
+  "old_weights_loaded": false,
+  "new_public_evaluation": false
+}

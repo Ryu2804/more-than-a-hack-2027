@@ -1,0 +1,10 @@
+{
+  "seconds": 82.34400000004098,
+  "configurations": 37,
+  "new_configurations": 36,
+  "development_evaluations": 851,
+  "training_seed_fits": 0,
+  "development_scenarios": 23,
+  "development_unique_matches": 21,
+  "runtime": "CPU cached-probability decoding"
+}

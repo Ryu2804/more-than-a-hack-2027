@@ -1,0 +1,38 @@
+{
+  "selection_sha256": "47c023c3cea00842ca8b5cb7a112a1fd983605dac0b4bd4e0412ee867f16b686",
+  "records": [
+    {
+      "candidate": "selected",
+      "family": "hybrid_tree25",
+      "decoder": "centered2",
+      "spellF1": 0.5756097560975609,
+      "macroF1": 0.7128435879738175,
+      "possessions": 24
+    },
+    {
+      "candidate": "adapted_jeremy",
+      "family": "setseq",
+      "decoder": "cost05",
+      "spellF1": 0.5263157894736843,
+      "macroF1": 0.7395753874486569,
+      "possessions": 21
+    },
+    {
+      "candidate": "prior_control",
+      "family": "anchor",
+      "decoder": "cost6",
+      "spellF1": 0.56,
+      "macroF1": 0.6505202364380355,
+      "possessions": 13
+    },
+    {
+      "candidate": "prior_symmetric",
+      "family": "prior_symmetric",
+      "decoder": "cost6",
+      "spellF1": 0.46060606060606074,
+      "macroF1": 0.7118304375211587,
+      "possessions": 16
+    }
+  ],
+  "warning": "Post-freeze diagnostic for four fixed candidates only; no ranking of66 by public scores."
+}

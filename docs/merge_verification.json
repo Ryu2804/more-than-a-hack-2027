@@ -1,0 +1,12 @@
+{
+  "scope": "Farras integration into main; published frozen candidate validation/export",
+  "method_id": "farras_wave5_short_gru25_dead45",
+  "farras_parent": "3d113d003fc5ab9f7a696635f4f0fe85570f616c",
+  "main_parent": "4cacd88a4fa846ae37402c12f263155eb5c14c97",
+  "official_validator_passed": true,
+  "rows": 199319,
+  "csv_sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+  "annotation_harness_in_worktree": false,
+  "new_training_or_scoring": false,
+  "raw_bundle_reproduction_verified": false
+}

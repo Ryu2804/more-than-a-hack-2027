@@ -1,0 +1,95 @@
+{
+  "cohorts": {
+    "idsse": {
+      "previous_wave5": 0.6671747363216525,
+      "best_new": 0.6635223651406124
+    },
+    "skillcorner_clean": {
+      "previous_wave5": 0.6783035885349468,
+      "best_new": 0.6840293427697923
+    },
+    "skillcorner_stress": {
+      "previous_wave5": 0.6630297382383543,
+      "best_new": 0.6677086731480353
+    },
+    "metrica3": {
+      "previous_wave5": 0.6900160821247665,
+      "best_new": 0.6984561096127725
+    }
+  },
+  "paired": {
+    "ordinary": {
+      "wins": 7,
+      "scenarios": 10,
+      "mean_delta": 0.004392983802300488,
+      "match_wins": 6,
+      "unique_matches": 9
+    },
+    "stress": {
+      "wins": 6,
+      "scenarios": 6,
+      "mean_delta": 0.004678934909680891,
+      "match_wins": 6,
+      "unique_matches": 6
+    }
+  },
+  "stress_iou075": {
+    "previous_wave5": {
+      "buckets": {
+        "lt_4s": {
+          "gt": 535,
+          "matched": 100,
+          "recall": 0.18691588785046728
+        },
+        "4_to_lt_15s": {
+          "gt": 765,
+          "matched": 384,
+          "recall": 0.5019607843137255
+        },
+        "gte_15s": {
+          "gt": 389,
+          "matched": 267,
+          "recall": 0.6863753213367609
+        }
+      },
+      "predicted": 1713,
+      "matched": 751,
+      "precision": 0.43841214244016347,
+      "gt": 1689
+    },
+    "best_new": {
+      "buckets": {
+        "lt_4s": {
+          "gt": 535,
+          "matched": 107,
+          "recall": 0.2
+        },
+        "4_to_lt_15s": {
+          "gt": 765,
+          "matched": 388,
+          "recall": 0.5071895424836601
+        },
+        "gte_15s": {
+          "gt": 389,
+          "matched": 265,
+          "recall": 0.6812339331619537
+        }
+      },
+      "predicted": 1669,
+      "matched": 760,
+      "precision": 0.45536249251048533,
+      "gt": 1689
+    }
+  },
+  "bootstrap": {
+    "lower": 0.0034116224841930567,
+    "upper": 0.006095556613464462,
+    "provider_deltas": [
+      -0.0024481893286348424,
+      0.00952151407863915,
+      0.007048904102043507
+    ]
+  },
+  "promotion": false,
+  "selection_sha256": "e387c08beef727217ffeb8385eeca722c1348a554d38e2b087cd1b4c2fa099ec"
+}

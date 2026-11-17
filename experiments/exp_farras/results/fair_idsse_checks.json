@@ -1,0 +1,20 @@
+{
+  "unit_tests_passed": 32,
+  "combined_cuda_smoke_exit": -1073740791,
+  "isolated_setseq_cuda_exit": 3221226505,
+  "corrected_smoke_families_exit_zero": [
+    "hgb",
+    "setseq_cpu",
+    "pp_tcn_cuda",
+    "short_tcn_cuda",
+    "touch_hold"
+  ],
+  "all_35_fit_memberships_verified": true,
+  "seven_test_matches_excluded_from_respective_fit": true,
+  "neural_seed_fits": 63,
+  "optimizer_updates": 31500,
+  "hgb_fits": 7,
+  "independent_decode_hash_matches": 63,
+  "manifest_sha256": "9e47a83be188a497aa2c0b6f4e02f0f231235d94c65dcd61b2f816ecd378dff9",
+  "new_public_evaluation": false
+}

@@ -1,0 +1,886 @@
+{
+  "jobs": [
+    {
+      "identity": {
+        "family": "combined_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "e03961220af5cc981dfc325648b0e10ddf0fba2da1d56060100ce296a6a20b3d",
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 68.06200000003446
+    },
+    {
+      "identity": {
+        "family": "combined_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "4cb4b1bb31d8e982a7b1b74f8fada12fe246c80dc4cc90d4f7278c19b9637022",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 67.26600000000326
+    },
+    {
+      "identity": {
+        "family": "combined_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "33a8a582f8ad20789d05608eecfce3bc3d32dba15f8efc4751e5f58057aca23c",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 67.53099999995902
+    },
+    {
+      "identity": {
+        "family": "combined_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "0211dfbe3b4112a5eab1c1bd3f42dc80b23f3b1e436cfd54d5a3a089c2f5db4c",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 66.65700000000652
+    },
+    {
+      "identity": {
+        "family": "combined_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "a3eb9b632486463df1fb003dc818a902d538e5e1e63106ce00c15f47a585c451",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 66.35999999998603
+    },
+    {
+      "identity": {
+        "family": "combined_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "a37b3bf93e6565ff95eb35b965ed77af54713db29619975185fa74c053008cf3",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 66.65700000000652
+    },
+    {
+      "identity": {
+        "family": "combined_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "410a79bfa8489dda50c000fd74d40558daa38a43b4bbfe4d611b555542ae16d4",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 69.34299999999348
+    },
+    {
+      "identity": {
+        "family": "contact_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "28c7731f6c2fe6b581ef4dfdc8b61da7a2f785e9f707c8f1bb55f00071779bb4",
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 69.5
+    },
+    {
+      "identity": {
+        "family": "contact_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "2edbfddeb6ab2caf1fb4b88874392b90491a8d840324b64dc4e8ce05984ab6c1",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 69.64100000000326
+    },
+    {
+      "identity": {
+        "family": "contact_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "5c4817ddde5aba029ffe51e807109f3fa64ecd83ef36c22bc7a871d6dc8e4a9f",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 67.0
+    },
+    {
+      "identity": {
+        "family": "contact_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "14eb319ce3bbcb9c4e8f5b3848c5c6a9f647f5c4d6d47cc266ffd8a42b19cd75",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 69.71799999999348
+    },
+    {
+      "identity": {
+        "family": "contact_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "8c566370780c23fb9be20b845f0c3f0ca8474fe97a46f0197e3e5e8d187c7c8e",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 66.92199999996228
+    },
+    {
+      "identity": {
+        "family": "contact_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "32a3f820b1f7a189d172f7e8863d4685fbe2470cfc76378b6f3b801c3dd3b9ee",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 66.42200000002049
+    },
+    {
+      "identity": {
+        "family": "contact_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "d8f9e89875fb5c21701d2deca83d91253c716b1ae58983abbec8aa1944722263",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 67.31300000002375
+    },
+    {
+      "identity": {
+        "family": "memory_tcn",
+        "heldout": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "fc7e8306c1b2d2dba51cbab7e60f2373f6d46104e124ba0b81836112993da979",
+      "actual_fit_names": [
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 70.34299999999348
+    },
+    {
+      "identity": {
+        "family": "memory_tcn",
+        "heldout": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "23c9c8fb6d40d2caf0a245ee05f9e5a11c285844c5815a4ea8f367b9be7118a8",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 68.34400000004098
+    },
+    {
+      "identity": {
+        "family": "memory_tcn",
+        "heldout": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "ec3bb6f1b46d8e2d94a62355e6706f8cca5528d047f7153a34384a860dd48c27",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 67.81300000002375
+    },
+    {
+      "identity": {
+        "family": "memory_tcn",
+        "heldout": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "14eeee61870749b05dc23d64a7e3163faf241ec83214131e64503339cdc3732d",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WPY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 67.31199999997625
+    },
+    {
+      "identity": {
+        "family": "memory_tcn",
+        "heldout": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "d8f84b3d1666fc33d8ba0e58685db409200413335d251b73b480b7ce1169ddaf",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WQQ",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 67.98500000004424
+    },
+    {
+      "identity": {
+        "family": "memory_tcn",
+        "heldout": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "0c7b792ada05dc901ae2e43223eb41e050a315c187b1a93dee32993694dbc3a8",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WR9"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 67.76500000001397
+    },
+    {
+      "identity": {
+        "family": "memory_tcn",
+        "heldout": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ],
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "steps": 500,
+        "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572"
+      },
+      "sha256": "9e8753954e2f08cbfd0736738760e5e9089bee02915414adf876efc7157ab3e9",
+      "actual_fit_names": [
+        "J03WMX",
+        "J03WN1",
+        "J03WOH",
+        "J03WOY",
+        "J03WPY",
+        "J03WQQ"
+      ],
+      "training": {
+        "matches": 6,
+        "rounds": 6,
+        "source_matches": {
+          "idsse": 6
+        },
+        "source_rounds": {
+          "idsse": 6
+        },
+        "device": "cuda"
+      },
+      "seconds": 66.75
+    }
+  ]
+}

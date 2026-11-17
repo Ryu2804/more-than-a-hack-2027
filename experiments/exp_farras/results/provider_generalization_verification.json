@@ -1,0 +1,58 @@
+{
+  "manifest_sha256": "6ac1740c290d3ab332b33eb7a0a1ab6452c23bd6b285835cd1c3ba1c84039279",
+  "seal_sha256": "6429e7462a2faf3353a914c29e99ed160aaf953d99e08fb267d40021474272c2",
+  "identical_metric_rows": 270,
+  "identical_probability_and_decoded_replays": 270,
+  "saved_model_replays": 10,
+  "sealed_artifacts": 300,
+  "full_training_refit": false,
+  "scorer_labels_opened_only_after_complete_seal": true,
+  "competition_public_read_denied": true,
+  "fresh_blind_test": false,
+  "overfit_absence_established": false,
+  "guard": {
+    "installed": true,
+    "denied_roots": [
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\annotation_harness",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\data",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\evaluation\\gt",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\evaluation\\results",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\_cache",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\cross_branch\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\event_learning\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\fair_idsse\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\results",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\results\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\spell_training\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\temporal_methods\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave1\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave2\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave3\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave4\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave5\\out",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave6\\out"
+    ],
+    "denied_files": [
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave3\\cache\\data\\target_clean.npz",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave4\\cache\\features\\target_clean.npz",
+      "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\experiments\\exp_farras\\wave4\\cache\\prior\\target_clean.npz"
+    ],
+    "blocked_attempts": 1,
+    "nonprobe_blocked_attempts": 0,
+    "probe_count": 1,
+    "blocked": [
+      {
+        "path": "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\evaluation\\gt\\bar-ath_possession_gt_public.csv",
+        "probe": true
+      }
+    ],
+    "probes": [
+      {
+        "path": "d:\\main_storage\\vscode\\competitions\\hackathon_barca\\more-than-a-hack-2027\\evaluation\\gt\\bar-ath_possession_gt_public.csv",
+        "probe": true
+      }
+    ],
+    "successful_forbidden_reads": 0,
+    "limitation": "Zero successful forbidden reads describes intercepted open events by construction, not independent security verification. This trusted Python guard is not an OS sandbox and cannot establish no overfit."
+  }
+}

@@ -1,19 +1,18 @@
 # Experiments
 
-## Final team method
+The final team method is **Farras wave5 `short_gru25/dead45`**.
+Report authors must use the [final specification](../docs/FINAL_METHOD.md),
+[Typst facts](../docs/final_method.json), and [branch/archive map](../docs/BRANCHES.md).
+The [submission package](../submission/README.md) contains the frozen CSV export and readiness status.
+All other primary/control decisions below are campaign-local research, not a replacement of the final method.
 
-The team selected **Farras wave5 `short_gru25/dead45`**.
-Use the [final specification](../docs/FINAL_METHOD.md), [Typst facts](../docs/final_method.json),
-and [branch/archive map](../docs/BRANCHES.md). Experiments and baselines here are research history;
-their primary/control or final labels do not replace the team selection.
-The pinned Farras release contains the candidate runtime and CSV; this branch does not.
-
-Each experiment is a notebook in the Three Makasih layout (header + Ringkasan, Metodologi, Environment,
+Notebook experiments use the Three Makasih layout (header + Ringkasan, Metodologi, Environment,
 numbered `[n]` sections: markdown intro, code, markdown reading of the result).
 
     00_eda.ipynb                 data understanding (no tuning on the public GT)
     001_baseline/001_baseline.ipynb
     <NNN_name>/<NNN_name>.ipynb  one folder per idea; writes only to its own out/ (gitignored)
+    exp_farras/                scripted campaigns, frozen evidence, and research history
 
 - `common.py`: `cached()` (parsed-tracking cache in `_cache/`), `save()`, `score()`.
 - Run: `jupyter nbconvert --to notebook --execute --inplace <notebook>` from any dir inside the repo.

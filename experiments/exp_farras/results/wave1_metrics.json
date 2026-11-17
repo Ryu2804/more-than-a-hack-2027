@@ -1,0 +1,1456 @@
+{
+  "batch": "wave1",
+  "source": "Completed original campaign; relocated reproduction checked separately.",
+  "selected": {
+    "method": "m01_hysteresis",
+    "config": {
+      "name": "r15",
+      "radius": 1.5,
+      "confirm_s": 0.4,
+      "gap_dead_s": 8
+    }
+  },
+  "public_is_diagnostic_only": true,
+  "records": [
+    {
+      "method": "m01_hysteresis",
+      "config": {
+        "name": "r15",
+        "radius": 1.5,
+        "confirm_s": 0.4,
+        "gap_dead_s": 8
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5490196078431373,
+          "macro_f1": 0.7771191350352629,
+          "accuracy": 0.7759955598723464,
+          "n_gt_spells": 322,
+          "n_pred_spells": 341,
+          "mean_spell_duration_s": 10.404692082111437,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.4022099447513813,
+          "macro_f1": 0.682416775171038,
+          "accuracy": 0.6842652976273068,
+          "n_gt_spells": 322,
+          "n_pred_spells": 221,
+          "mean_spell_duration_s": 12.620814479638009,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5195246179966044,
+          "macro_f1": 0.7712219152607994,
+          "accuracy": 0.7711476293103449,
+          "n_gt_spells": 295,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 12.199455782312926,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.37131474103585654,
+          "macro_f1": 0.6563364486034761,
+          "accuracy": 0.6536340176950998,
+          "n_gt_spells": 295,
+          "n_pred_spells": 207,
+          "mean_spell_duration_s": 13.588599033816424,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4605172279067449,
+      "external_mean_macroF1": 0.7217735685176441,
+      "submission_sha256": "6a022089301a08d9d469fbc4630cb65c3f4a34b1d4de1193488422370e63b52d",
+      "code_sha256": "2e235564c348170d0b6657b47df2bfc4fcab2e9b303c5a8a7b1595a0924b40c7",
+      "public": {
+        "selected": true,
+        "spellF1": 0.44210526315789467,
+        "macroF1": 0.6885524523788553,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "m04_persistence",
+      "config": {
+        "name": "fast",
+        "half_life_s": 0.5,
+        "threshold": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5033280507131537,
+          "macro_f1": 0.7842285610922932,
+          "accuracy": 0.7849868183710281,
+          "n_gt_spells": 322,
+          "n_pred_spells": 309,
+          "mean_spell_duration_s": 11.812297734627832,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3377289377289377,
+          "macro_f1": 0.6769010590147402,
+          "accuracy": 0.6830026363257944,
+          "n_gt_spells": 322,
+          "n_pred_spells": 224,
+          "mean_spell_duration_s": 12.539285714285713,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5212543554006969,
+          "macro_f1": 0.7924581193269127,
+          "accuracy": 0.7922314541742287,
+          "n_gt_spells": 295,
+          "n_pred_spells": 279,
+          "mean_spell_duration_s": 12.762867383512544,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.37260273972602737,
+          "macro_f1": 0.6693142946308629,
+          "accuracy": 0.6707123411978222,
+          "n_gt_spells": 295,
+          "n_pred_spells": 216,
+          "mean_spell_duration_s": 12.812222222222221,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4337285208922039,
+      "external_mean_macroF1": 0.7307255085162022,
+      "submission_sha256": "08c21cf5782eb3051ebe9d9a45fcbcb77785fde7b89716466600239df55bf20d",
+      "code_sha256": "cd755b9429ed1d9ae9ad211a008aa3de90962706c1e14fd677e8de8ef93df9c8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.44848484848484854,
+        "macroF1": 0.6795549013499226,
+        "possessions": 16
+      }
+    },
+    {
+      "method": "m01_hysteresis",
+      "config": {
+        "name": "r25",
+        "radius": 2.5,
+        "confirm_s": 0.8,
+        "gap_dead_s": 12
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5197231833910034,
+          "macro_f1": 0.7578139964018193,
+          "accuracy": 0.7568405716664354,
+          "n_gt_spells": 322,
+          "n_pred_spells": 256,
+          "mean_spell_duration_s": 13.75703125,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3424,
+          "macro_f1": 0.6508644521943999,
+          "accuracy": 0.6552865269876509,
+          "n_gt_spells": 322,
+          "n_pred_spells": 178,
+          "mean_spell_duration_s": 15.087640449438203,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4914933837429111,
+          "macro_f1": 0.7519284013883688,
+          "accuracy": 0.7518786864791288,
+          "n_gt_spells": 295,
+          "n_pred_spells": 234,
+          "mean_spell_duration_s": 15.343760683760683,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.33698030634573306,
+          "macro_f1": 0.6363636915881082,
+          "accuracy": 0.6344501474591652,
+          "n_gt_spells": 295,
+          "n_pred_spells": 162,
+          "mean_spell_duration_s": 17.102716049382718,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4226492183699119,
+      "external_mean_macroF1": 0.6992426353931741,
+      "submission_sha256": "1280c6e5907657f53ae72e5db715c8f2765b5c8d6bc5f7096c2e9632ae6d50d0",
+      "code_sha256": "2e235564c348170d0b6657b47df2bfc4fcab2e9b303c5a8a7b1595a0924b40c7",
+      "public": {
+        "selected": false,
+        "spellF1": 0.3885714285714286,
+        "macroF1": 0.6713868561717212,
+        "possessions": 18
+      }
+    },
+    {
+      "method": "m03_duration",
+      "config": {
+        "name": "dur20",
+        "min_seconds": 2.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.5221476510067115,
+          "macro_f1": 0.7849292752411863,
+          "accuracy": 0.7860829748855279,
+          "n_gt_spells": 322,
+          "n_pred_spells": 274,
+          "mean_spell_duration_s": 13.828175182481752,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.32920353982300893,
+          "macro_f1": 0.6564402125588304,
+          "accuracy": 0.6670389898709588,
+          "n_gt_spells": 322,
+          "n_pred_spells": 243,
+          "mean_spell_duration_s": 13.135473251028806,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.5054205607476636,
+          "macro_f1": 0.7852944657000366,
+          "accuracy": 0.7852909482758621,
+          "n_gt_spells": 295,
+          "n_pred_spells": 240,
+          "mean_spell_duration_s": 14.685833333333333,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.32123552123552124,
+          "macro_f1": 0.6494684398001995,
+          "accuracy": 0.6562429106170599,
+          "n_gt_spells": 295,
+          "n_pred_spells": 223,
+          "mean_spell_duration_s": 13.82421524663677,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.4195018182032263,
+      "external_mean_macroF1": 0.7190330983250632,
+      "submission_sha256": "979183f7edb6851acca17f46cde6f2a1cf6c1eca810d424b61db5f23322bc777",
+      "code_sha256": "10dd3c8d521e42593dbced5cd9574fd014afd0a9f5aa1bd9a9b42c943069b968",
+      "public": {
+        "selected": false,
+        "spellF1": 0.44571428571428573,
+        "macroF1": 0.6901224030662702,
+        "possessions": 18
+      }
+    },
+    {
+      "method": "m03_duration",
+      "config": {
+        "name": "dur10",
+        "min_seconds": 1.0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.49446254071661244,
+          "macro_f1": 0.7841089976289201,
+          "accuracy": 0.7852990148466769,
+          "n_gt_spells": 322,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 12.967534246575342,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.31280276816609,
+          "macro_f1": 0.653777272990767,
+          "accuracy": 0.6644859164700985,
+          "n_gt_spells": 322,
+          "n_pred_spells": 256,
+          "mean_spell_duration_s": 12.4340625,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.49721706864564,
+          "macro_f1": 0.7853645871041254,
+          "accuracy": 0.7853334845735027,
+          "n_gt_spells": 295,
+          "n_pred_spells": 244,
+          "mean_spell_duration_s": 14.445081967213113,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3163147792706334,
+          "macro_f1": 0.6498230659406531,
+          "accuracy": 0.656647005444646,
+          "n_gt_spells": 295,
+          "n_pred_spells": 226,
+          "mean_spell_duration_s": 13.638938053097345,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40519928919974396,
+      "external_mean_macroF1": 0.7182684809161164,
+      "submission_sha256": "2bce877e68cc7751e6282d55350a4367032738d354a347da34e6d7fa2a3c0cf1",
+      "code_sha256": "10dd3c8d521e42593dbced5cd9574fd014afd0a9f5aa1bd9a9b42c943069b968",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.6854151554382865,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "m03_duration",
+      "config": {
+        "name": "dur04",
+        "min_seconds": 0.4
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.492706645056726,
+          "macro_f1": 0.7841409385365479,
+          "accuracy": 0.78534064104343,
+          "n_gt_spells": 322,
+          "n_pred_spells": 295,
+          "mean_spell_duration_s": 12.833627118644067,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.31241379310344825,
+          "macro_f1": 0.6534238223912766,
+          "accuracy": 0.6642084084917441,
+          "n_gt_spells": 322,
+          "n_pred_spells": 258,
+          "mean_spell_duration_s": 12.333798449612402,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4962962962962963,
+          "macro_f1": 0.785507776433379,
+          "accuracy": 0.785475272232305,
+          "n_gt_spells": 295,
+          "n_pred_spells": 245,
+          "mean_spell_duration_s": 14.38530612244898,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3157088122605364,
+          "macro_f1": 0.6499628405485076,
+          "accuracy": 0.6567887931034483,
+          "n_gt_spells": 295,
+          "n_pred_spells": 227,
+          "mean_spell_duration_s": 13.577973568281939,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40428138667925173,
+      "external_mean_macroF1": 0.7182588444774277,
+      "submission_sha256": "4d686aa9cfc52697be01d5acd64c3625683c1d624cd20e8453e66f95e7e72a6f",
+      "code_sha256": "10dd3c8d521e42593dbced5cd9574fd014afd0a9f5aa1bd9a9b42c943069b968",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.6854151554382865,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "m02_viterbi",
+      "config": {
+        "name": "medium",
+        "switch_cost": 6
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.48571428571428565,
+          "macro_f1": 0.7823547901805825,
+          "accuracy": 0.7835299014846677,
+          "n_gt_spells": 322,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 12.86095238095238,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.30433275563258233,
+          "macro_f1": 0.6522665717426269,
+          "accuracy": 0.6634383238518108,
+          "n_gt_spells": 322,
+          "n_pred_spells": 255,
+          "mean_spell_duration_s": 12.447529411764705,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.49889298892988937,
+          "macro_f1": 0.7852156502018195,
+          "accuracy": 0.7851987862976406,
+          "n_gt_spells": 295,
+          "n_pred_spells": 247,
+          "mean_spell_duration_s": 14.23157894736842,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3256704980842912,
+          "macro_f1": 0.6468105563855345,
+          "accuracy": 0.654172810798548,
+          "n_gt_spells": 295,
+          "n_pred_spells": 227,
+          "mean_spell_duration_s": 13.451101321585902,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.40365263209026214,
+      "external_mean_macroF1": 0.7166618921276409,
+      "submission_sha256": "801c50427e50c6337447a7fe6c779fb21b9b313d2ce2e9b086eda36bd7897c90",
+      "code_sha256": "9f23c7c5450a12dc23316e4684258848d5306166cadc3e88ad5788b8056b4fda",
+      "public": {
+        "selected": false,
+        "spellF1": 0.41052631578947374,
+        "macroF1": 0.684902017127846,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "m02_viterbi",
+      "config": {
+        "name": "high",
+        "switch_cost": 12
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.4803118908382066,
+          "macro_f1": 0.7823827180167298,
+          "accuracy": 0.7835784653808797,
+          "n_gt_spells": 322,
+          "n_pred_spells": 191,
+          "mean_spell_duration_s": 19.74931937172775,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3008196721311476,
+          "macro_f1": 0.6640731661708598,
+          "accuracy": 0.6737199944498404,
+          "n_gt_spells": 322,
+          "n_pred_spells": 166,
+          "mean_spell_duration_s": 19.479036144578313,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.44880174291939,
+          "macro_f1": 0.7840492546163471,
+          "accuracy": 0.784114110707804,
+          "n_gt_spells": 295,
+          "n_pred_spells": 164,
+          "mean_spell_duration_s": 21.560975609756095,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.31842105263157894,
+          "macro_f1": 0.6641077342316365,
+          "accuracy": 0.6698899727767695,
+          "n_gt_spells": 295,
+          "n_pred_spells": 161,
+          "mean_spell_duration_s": 19.372670807453417,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.38708858963008075,
+      "external_mean_macroF1": 0.7236532182588933,
+      "submission_sha256": "6c9f552fb11cc423caef56f88c8d2d3688201d74675cdc632d20801e0ea29c97",
+      "code_sha256": "9f23c7c5450a12dc23316e4684258848d5306166cadc3e88ad5788b8056b4fda",
+      "public": {
+        "selected": false,
+        "spellF1": 0.45714285714285713,
+        "macroF1": 0.6469904914473349,
+        "possessions": 11
+      }
+    },
+    {
+      "method": "m01_hysteresis",
+      "config": {
+        "name": "r35",
+        "radius": 3.5,
+        "confirm_s": 1.2,
+        "gap_dead_s": 16
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.4542857142857143,
+          "macro_f1": 0.7349743432514607,
+          "accuracy": 0.7345636187040377,
+          "n_gt_spells": 322,
+          "n_pred_spells": 238,
+          "mean_spell_duration_s": 14.850420168067226,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2829875518672199,
+          "macro_f1": 0.643583560205604,
+          "accuracy": 0.6499098099070348,
+          "n_gt_spells": 322,
+          "n_pred_spells": 160,
+          "mean_spell_duration_s": 16.90875,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4385542168674699,
+          "macro_f1": 0.7319973516426107,
+          "accuracy": 0.7319433416515426,
+          "n_gt_spells": 295,
+          "n_pred_spells": 203,
+          "mean_spell_duration_s": 17.732216748768472,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.3098850574712644,
+          "macro_f1": 0.6214380193638526,
+          "accuracy": 0.621618364337568,
+          "n_gt_spells": 295,
+          "n_pred_spells": 140,
+          "mean_spell_duration_s": 19.814571428571426,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.3714281351229171,
+      "external_mean_macroF1": 0.682998318615882,
+      "submission_sha256": "b45c1c9c1d181d2ead686ed9d1683f9faa6b84f5e2c00d6b89e5e4013b3c1148",
+      "code_sha256": "2e235564c348170d0b6657b47df2bfc4fcab2e9b303c5a8a7b1595a0924b40c7",
+      "public": {
+        "selected": false,
+        "spellF1": 0.44210526315789467,
+        "macroF1": 0.5957295637492594,
+        "possessions": 21
+      }
+    },
+    {
+      "method": "m04_persistence",
+      "config": {
+        "name": "medium",
+        "half_life_s": 1.5,
+        "threshold": 4
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.439568345323741,
+          "macro_f1": 0.7780197341953837,
+          "accuracy": 0.7790412099347857,
+          "n_gt_spells": 322,
+          "n_pred_spells": 234,
+          "mean_spell_duration_s": 15.598290598290598,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2904109589041096,
+          "macro_f1": 0.6708390764692741,
+          "accuracy": 0.6778548633273207,
+          "n_gt_spells": 322,
+          "n_pred_spells": 189,
+          "mean_spell_duration_s": 14.861375661375662,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4291913214990138,
+          "macro_f1": 0.7835862885711625,
+          "accuracy": 0.7836107645190563,
+          "n_gt_spells": 295,
+          "n_pred_spells": 212,
+          "mean_spell_duration_s": 16.796415094339622,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.31037344398340244,
+          "macro_f1": 0.6527393760355085,
+          "accuracy": 0.6561578380217786,
+          "n_gt_spells": 295,
+          "n_pred_spells": 187,
+          "mean_spell_duration_s": 14.79914438502674,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.3673860174275667,
+      "external_mean_macroF1": 0.7212961188178322,
+      "submission_sha256": "16098e7951b366b886b50f0c139b71b50c856f93e2ae75e5a8ad3ff6bffbc134",
+      "code_sha256": "cd755b9429ed1d9ae9ad211a008aa3de90962706c1e14fd677e8de8ef93df9c8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.48275862068965514,
+        "macroF1": 0.6924874814187127,
+        "possessions": 12
+      }
+    },
+    {
+      "method": "m05_logistic",
+      "config": {
+        "name": "smooth3",
+        "smooth_s": 3
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.45080946450809467,
+          "macro_f1": 0.7871720826637428,
+          "accuracy": 0.7882405994172332,
+          "n_gt_spells": 322,
+          "n_pred_spells": 481,
+          "mean_spell_duration_s": 7.828523908523908,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2586734693877551,
+          "macro_f1": 0.6408178700630097,
+          "accuracy": 0.6528513944775912,
+          "n_gt_spells": 322,
+          "n_pred_spells": 462,
+          "mean_spell_duration_s": 6.828398268398269,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.4333761232349166,
+          "macro_f1": 0.7807643290609151,
+          "accuracy": 0.7807821007259528,
+          "n_gt_spells": 295,
+          "n_pred_spells": 484,
+          "mean_spell_duration_s": 7.245867768595041,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.26932270916334666,
+          "macro_f1": 0.6295386138195761,
+          "accuracy": 0.6376049228675136,
+          "n_gt_spells": 295,
+          "n_pred_spells": 458,
+          "mean_spell_duration_s": 6.569868995633187,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.35304544157352824,
+      "external_mean_macroF1": 0.709573223901811,
+      "submission_sha256": "4e04210925d159e67cec6d08f4d07b33419162b3bdecb423617a1a1abe1fc824",
+      "code_sha256": "a8079340bddfe56a4d0ee1cdcc205c154c7020a5e570d11c0a428686ba08c9b8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.3659574468085106,
+        "macroF1": 0.6787820512333732,
+        "possessions": 30
+      }
+    },
+    {
+      "method": "m04_persistence",
+      "config": {
+        "name": "slow",
+        "half_life_s": 3.0,
+        "threshold": 6
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.3537001897533207,
+          "macro_f1": 0.7586156051484708,
+          "accuracy": 0.7606493686693493,
+          "n_gt_spells": 322,
+          "n_pred_spells": 205,
+          "mean_spell_duration_s": 17.804878048780488,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.25029702970297035,
+          "macro_f1": 0.6515326070735521,
+          "accuracy": 0.6612806993201055,
+          "n_gt_spells": 322,
+          "n_pred_spells": 183,
+          "mean_spell_duration_s": 15.34863387978142,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.3844262295081967,
+          "macro_f1": 0.7687153201064699,
+          "accuracy": 0.7689002949183303,
+          "n_gt_spells": 295,
+          "n_pred_spells": 193,
+          "mean_spell_duration_s": 18.4499481865285,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2804301075268817,
+          "macro_f1": 0.6452312924856541,
+          "accuracy": 0.6493874773139746,
+          "n_gt_spells": 295,
+          "n_pred_spells": 170,
+          "mean_spell_duration_s": 16.27905882352941,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.31721338912284236,
+      "external_mean_macroF1": 0.7060237062035368,
+      "submission_sha256": "78d3f0acd409dddbb1b4e548b4f11bd1a78df5e1155814f19183ca4b4b621111",
+      "code_sha256": "cd755b9429ed1d9ae9ad211a008aa3de90962706c1e14fd677e8de8ef93df9c8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.26153846153846155,
+        "macroF1": 0.6893901898182738,
+        "possessions": 9
+      }
+    },
+    {
+      "method": "m02_viterbi",
+      "config": {
+        "name": "low",
+        "switch_cost": 2
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.35,
+          "macro_f1": 0.7727010741895559,
+          "accuracy": 0.774136256417372,
+          "n_gt_spells": 322,
+          "n_pred_spells": 614,
+          "mean_spell_duration_s": 6.157198697068404,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.23036144578313253,
+          "macro_f1": 0.6396754019614901,
+          "accuracy": 0.6518731788538921,
+          "n_gt_spells": 322,
+          "n_pred_spells": 508,
+          "mean_spell_duration_s": 6.202598425196851,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.3826309067688378,
+          "macro_f1": 0.7734927606198854,
+          "accuracy": 0.7737494328493648,
+          "n_gt_spells": 295,
+          "n_pred_spells": 488,
+          "mean_spell_duration_s": 7.173360655737705,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.2537931034482758,
+          "macro_f1": 0.6279664691456488,
+          "accuracy": 0.6368888951905626,
+          "n_gt_spells": 295,
+          "n_pred_spells": 430,
+          "mean_spell_duration_s": 6.986046511627907,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.30419636400006156,
+      "external_mean_macroF1": 0.703458926479145,
+      "submission_sha256": "6dc0a4041fe727f3d899dd06cb22882416eaf75e402d4092637a3a6d8edfb7db",
+      "code_sha256": "9f23c7c5450a12dc23316e4684258848d5306166cadc3e88ad5788b8056b4fda",
+      "public": {
+        "selected": false,
+        "spellF1": 0.2596491228070176,
+        "macroF1": 0.6594835284439784,
+        "possessions": 40
+      }
+    },
+    {
+      "method": "m08_temporalboost",
+      "config": {
+        "name": "context7",
+        "context_s": 7
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.33955223880597013,
+          "macro_f1": 0.7656907581222852,
+          "accuracy": 0.7658803940613292,
+          "n_gt_spells": 322,
+          "n_pred_spells": 750,
+          "mean_spell_duration_s": 5.371359999999999,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.20016570008285006,
+          "macro_f1": 0.6572836271787322,
+          "accuracy": 0.6592965172748717,
+          "n_gt_spells": 322,
+          "n_pred_spells": 885,
+          "mean_spell_duration_s": 4.217988700564971,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.35712881022615534,
+          "macro_f1": 0.7990671474181679,
+          "accuracy": 0.7990585299455535,
+          "n_gt_spells": 295,
+          "n_pred_spells": 722,
+          "mean_spell_duration_s": 5.049639889196676,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.20163191296464186,
+          "macro_f1": 0.6797341360359472,
+          "accuracy": 0.6823389292196007,
+          "n_gt_spells": 295,
+          "n_pred_spells": 808,
+          "mean_spell_duration_s": 4.18,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.27461966551990435,
+      "external_mean_macroF1": 0.7254439171887831,
+      "submission_sha256": "755a8e509b66a52d50124ae70ec0f69c36cf712f2e667b830cbd0eefa4d935d8",
+      "code_sha256": "7e3a8332b8ba664fa203ae21c0f0d0ad3a1af4725e29be72318c1b278346448d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.25882352941176473,
+        "macroF1": 0.6822053084045225,
+        "possessions": 51
+      }
+    },
+    {
+      "method": "m08_temporalboost",
+      "config": {
+        "name": "context3",
+        "context_s": 3
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.2643694004135079,
+          "macro_f1": 0.7515370519213204,
+          "accuracy": 0.7517621756625503,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1129,
+          "mean_spell_duration_s": 3.645527015057573,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.14794520547945206,
+          "macro_f1": 0.6357465395911368,
+          "accuracy": 0.6375190786735119,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1284,
+          "mean_spell_duration_s": 2.965732087227414,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.3066554338668913,
+          "macro_f1": 0.7874206983485404,
+          "accuracy": 0.7875311932849365,
+          "n_gt_spells": 295,
+          "n_pred_spells": 892,
+          "mean_spell_duration_s": 4.137219730941704,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.16216216216216214,
+          "macro_f1": 0.6647262325130726,
+          "accuracy": 0.6668415381125227,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1074,
+          "mean_spell_duration_s": 3.182495344506518,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.22028305048050337,
+      "external_mean_macroF1": 0.7098576305935176,
+      "submission_sha256": "81250d786972957ece580867e4f697a98818fa84bfad96c858081916d286ed5f",
+      "code_sha256": "7e3a8332b8ba664fa203ae21c0f0d0ad3a1af4725e29be72318c1b278346448d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.30163934426229505,
+        "macroF1": 0.6756731363342987,
+        "possessions": 44
+      }
+    },
+    {
+      "method": "m07_extratrees",
+      "config": {
+        "name": "leaf60",
+        "min_samples_leaf": 60
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.2459940652818991,
+          "macro_f1": 0.781474771346938,
+          "accuracy": 0.7833633966976551,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1026,
+          "mean_spell_duration_s": 3.602105263157895,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.15093696763202727,
+          "macro_f1": 0.6411414029459787,
+          "accuracy": 0.6570001387539892,
+          "n_gt_spells": 322,
+          "n_pred_spells": 852,
+          "mean_spell_duration_s": 3.4100469483568077,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.2244648318042813,
+          "macro_f1": 0.7851993995357228,
+          "accuracy": 0.7855674342105263,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1013,
+          "mean_spell_duration_s": 3.429417571569595,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.15510204081632653,
+          "macro_f1": 0.6352092702162054,
+          "accuracy": 0.6460554673321234,
+          "n_gt_spells": 295,
+          "n_pred_spells": 832,
+          "mean_spell_duration_s": 3.4632211538461535,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.19412447638363356,
+      "external_mean_macroF1": 0.7107562110112112,
+      "submission_sha256": "e55a368454ca39975a5977b2cf673a0e8383c4a64338fca384b6282483a2fe29",
+      "code_sha256": "6072c13a7ed10b057262c809983cb700b6d5e56845df06deb63b599a74cb22ec",
+      "public": {
+        "selected": false,
+        "spellF1": 0.11555555555555556,
+        "macroF1": 0.6500330896775605,
+        "possessions": 73
+      }
+    },
+    {
+      "method": "m07_extratrees",
+      "config": {
+        "name": "leaf20",
+        "min_samples_leaf": 20
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.25003711952487007,
+          "macro_f1": 0.7800615299356001,
+          "accuracy": 0.7815179686415984,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1025,
+          "mean_spell_duration_s": 3.6442536585365857,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.15734439834024896,
+          "macro_f1": 0.6457302122888977,
+          "accuracy": 0.6595046482586374,
+          "n_gt_spells": 322,
+          "n_pred_spells": 883,
+          "mean_spell_duration_s": 3.449784824462061,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.21038575667655784,
+          "macro_f1": 0.7842232220689551,
+          "accuracy": 0.7845111161524501,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1053,
+          "mean_spell_duration_s": 3.331054131054131,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.1399830938292477,
+          "macro_f1": 0.6389023054955096,
+          "accuracy": 0.6482177291288567,
+          "n_gt_spells": 295,
+          "n_pred_spells": 888,
+          "mean_spell_duration_s": 3.3353603603603603,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.18943759209273114,
+      "external_mean_macroF1": 0.7122293174472406,
+      "submission_sha256": "81662c7c39d50221a3c5cce9331bae04114d3a465635be2a4d6a85b766b9c0fa",
+      "code_sha256": "6072c13a7ed10b057262c809983cb700b6d5e56845df06deb63b599a74cb22ec",
+      "public": {
+        "selected": false,
+        "spellF1": 0.09545454545454544,
+        "macroF1": 0.651620596183304,
+        "possessions": 71
+      }
+    },
+    {
+      "method": "m07_extratrees",
+      "config": {
+        "name": "leaf5",
+        "min_samples_leaf": 5
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.23650680028632784,
+          "macro_f1": 0.7659565891553547,
+          "accuracy": 0.7667753572915221,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1075,
+          "mean_spell_duration_s": 3.5789395348837214,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.1425531914893617,
+          "macro_f1": 0.6377241228270315,
+          "accuracy": 0.6472665464132094,
+          "n_gt_spells": 322,
+          "n_pred_spells": 994,
+          "mean_spell_duration_s": 3.2905030181086516,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.20623145400593473,
+          "macro_f1": 0.7774071504193079,
+          "accuracy": 0.7774288225952813,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1053,
+          "mean_spell_duration_s": 3.39661918328585,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.1339712918660287,
+          "macro_f1": 0.6408516988803751,
+          "accuracy": 0.6473811819419237,
+          "n_gt_spells": 295,
+          "n_pred_spells": 959,
+          "mean_spell_duration_s": 3.2430031282586027,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.17981568441191326,
+      "external_mean_macroF1": 0.7054848903205172,
+      "submission_sha256": "ba575198b3ade66c5b95f149c5d61deca75a552dd03ff7d91634edd44fc78922",
+      "code_sha256": "6072c13a7ed10b057262c809983cb700b6d5e56845df06deb63b599a74cb22ec",
+      "public": {
+        "selected": false,
+        "spellF1": 0.09777777777777777,
+        "macroF1": 0.649681526246445,
+        "possessions": 73
+      }
+    },
+    {
+      "method": "m05_logistic",
+      "config": {
+        "name": "smooth1",
+        "smooth_s": 1
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.22296511627906973,
+          "macro_f1": 0.7605221816983195,
+          "accuracy": 0.762342167337311,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1054,
+          "mean_spell_duration_s": 3.58550284629981,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.14037985136251033,
+          "macro_f1": 0.6233194063916573,
+          "accuracy": 0.6365894269460247,
+          "n_gt_spells": 322,
+          "n_pred_spells": 889,
+          "mean_spell_duration_s": 3.548166479190101,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.19088235294117648,
+          "macro_f1": 0.7504349094223458,
+          "accuracy": 0.7509925136116152,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1065,
+          "mean_spell_duration_s": 3.298967136150235,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.13987941429801895,
+          "macro_f1": 0.6110385275797618,
+          "accuracy": 0.620250113430127,
+          "n_gt_spells": 295,
+          "n_pred_spells": 866,
+          "mean_spell_duration_s": 3.4653579676674364,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.1735266837201939,
+      "external_mean_macroF1": 0.6863287562730211,
+      "submission_sha256": "b15ada8cf11e9fdf79b6aae9fa2caa5015f540f633338b9c70918714e9b67edd",
+      "code_sha256": "a8079340bddfe56a4d0ee1cdcc205c154c7020a5e570d11c0a428686ba08c9b8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.0853932584269663,
+        "macroF1": 0.6601439528462741,
+        "possessions": 72
+      }
+    },
+    {
+      "method": "m06_histboost",
+      "config": {
+        "name": "leaves7",
+        "learning_rate": 0.08,
+        "max_iter": 100,
+        "max_leaf_nodes": 7,
+        "l2_regularization": 1,
+        "early_stopping": false,
+        "random_state": 2027
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.21105121293800538,
+          "macro_f1": 0.7281456624368805,
+          "accuracy": 0.728035243513251,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1162,
+          "mean_spell_duration_s": 3.5200344234079175,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.14453531598513011,
+          "macro_f1": 0.6122338164447894,
+          "accuracy": 0.6163729707229083,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1023,
+          "mean_spell_duration_s": 3.57466275659824,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.1838822704975473,
+          "macro_f1": 0.755413617777144,
+          "accuracy": 0.7552957690562614,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1132,
+          "mean_spell_duration_s": 3.2360777385159007,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.12821316614420064,
+          "macro_f1": 0.6265431632255819,
+          "accuracy": 0.6315576792196007,
+          "n_gt_spells": 295,
+          "n_pred_spells": 981,
+          "mean_spell_duration_s": 3.2966768603465852,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.16692049139122087,
+      "external_mean_macroF1": 0.6805840649710989,
+      "submission_sha256": "3db753113d3f8da2b7e5d09156661bd1623ba0f3263d19e78b7b6f7669a37514",
+      "code_sha256": "5dd91c1553ac47bfe65675a58955958e11f90b7c76e5b33687503faf8f6abda0",
+      "public": {
+        "selected": false,
+        "spellF1": 0.12413793103448274,
+        "macroF1": 0.6467052644788261,
+        "possessions": 70
+      }
+    },
+    {
+      "method": "m06_histboost",
+      "config": {
+        "name": "leaves15",
+        "learning_rate": 0.08,
+        "max_iter": 100,
+        "max_leaf_nodes": 15,
+        "l2_regularization": 1,
+        "early_stopping": false,
+        "random_state": 2027
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.20437756497948018,
+          "macro_f1": 0.7194639534230225,
+          "accuracy": 0.7193006798945469,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1140,
+          "mean_spell_duration_s": 3.6295438596491225,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.13568281938325993,
+          "macro_f1": 0.603932880472986,
+          "accuracy": 0.606417371999445,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1040,
+          "mean_spell_duration_s": 3.6089230769230767,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.19149825783972124,
+          "macro_f1": 0.7523186667213037,
+          "accuracy": 0.752084278584392,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1140,
+          "mean_spell_duration_s": 3.2496842105263157,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.12747918243754733,
+          "macro_f1": 0.628210885102845,
+          "accuracy": 0.6318625226860254,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1026,
+          "mean_spell_duration_s": 3.211929824561403,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.16475945616000218,
+      "external_mean_macroF1": 0.6759815964300393,
+      "submission_sha256": "55e5945c85f051657fad117aaf06abcc8630e43295e0e53f57f1a725912bcf6c",
+      "code_sha256": "5dd91c1553ac47bfe65675a58955958e11f90b7c76e5b33687503faf8f6abda0",
+      "public": {
+        "selected": false,
+        "spellF1": 0.10909090909090909,
+        "macroF1": 0.6607310413561928,
+        "possessions": 71
+      }
+    },
+    {
+      "method": "m06_histboost",
+      "config": {
+        "name": "leaves31",
+        "learning_rate": 0.08,
+        "max_iter": 100,
+        "max_leaf_nodes": 31,
+        "l2_regularization": 1,
+        "early_stopping": false,
+        "random_state": 2027
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.19237458193979934,
+          "macro_f1": 0.7074391446816707,
+          "accuracy": 0.7075343416123213,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1173,
+          "mean_spell_duration_s": 3.577936913895993,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.13323741007194245,
+          "macro_f1": 0.5975710100947785,
+          "accuracy": 0.5990009712779243,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1068,
+          "mean_spell_duration_s": 3.6047940074906366,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.18271954674220964,
+          "macro_f1": 0.7395554168057153,
+          "accuracy": 0.7391674228675136,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1117,
+          "mean_spell_duration_s": 3.3547358997314234,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.12272727272727273,
+          "macro_f1": 0.6189656304245111,
+          "accuracy": 0.6222351406533575,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1025,
+          "mean_spell_duration_s": 3.2554536585365854,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.15776470287030603,
+      "external_mean_macroF1": 0.6658828005016689,
+      "submission_sha256": "6cefe0e2d547cf540b0df8283bad12363481f5a48dae75a19f8036c418db3a81",
+      "code_sha256": "5dd91c1553ac47bfe65675a58955958e11f90b7c76e5b33687503faf8f6abda0",
+      "public": {
+        "selected": false,
+        "spellF1": 0.0588235294117647,
+        "macroF1": 0.6170709829524679,
+        "possessions": 85
+      }
+    },
+    {
+      "method": "m08_temporalboost",
+      "config": {
+        "name": "context1",
+        "context_s": 1
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.14598955861414334,
+          "macro_f1": 0.7357945818601422,
+          "accuracy": 0.7357291522131262,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1785,
+          "mean_spell_duration_s": 2.2860056022408966,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.0933852140077821,
+          "macro_f1": 0.6173743704504934,
+          "accuracy": 0.6201123907312335,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1734,
+          "mean_spell_duration_s": 2.1532410611303345,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.12223816355810617,
+          "macro_f1": 0.7564773786987499,
+          "accuracy": 0.7563662658802178,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1796,
+          "mean_spell_duration_s": 2.049576837416481,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.07698744769874477,
+          "macro_f1": 0.6338189437331682,
+          "accuracy": 0.637562386569873,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1617,
+          "mean_spell_duration_s": 2.0527149041434756,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.10965009596969409,
+      "external_mean_macroF1": 0.6858663186856384,
+      "submission_sha256": "7e70844831f0ec12e00f82bf40efbebe39b18a69287b7d6e769a1e96e1d06824",
+      "code_sha256": "7e3a8332b8ba664fa203ae21c0f0d0ad3a1af4725e29be72318c1b278346448d",
+      "public": {
+        "selected": false,
+        "spellF1": 0.08849557522123894,
+        "macroF1": 0.6589364477388793,
+        "possessions": 96
+      }
+    },
+    {
+      "method": "m05_logistic",
+      "config": {
+        "name": "raw",
+        "smooth_s": 0
+      },
+      "external_folds": [
+        {
+          "spell_f1_mean": 0.11130742049469966,
+          "macro_f1": 0.747459526412408,
+          "accuracy": 0.7495351741362564,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1942,
+          "mean_spell_duration_s": 1.9450669412976314,
+          "heldout_game": 1,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.0775796866558617,
+          "macro_f1": 0.6148682919152527,
+          "accuracy": 0.6290134591369502,
+          "n_gt_spells": 322,
+          "n_pred_spells": 1529,
+          "mean_spell_duration_s": 2.062995421844343,
+          "heldout_game": 1,
+          "regime": "occluded"
+        },
+        {
+          "spell_f1_mean": 0.08847139197267292,
+          "macro_f1": 0.7371253658761515,
+          "accuracy": 0.7379480490018149,
+          "n_gt_spells": 295,
+          "n_pred_spells": 2047,
+          "mean_spell_duration_s": 1.7142159257449927,
+          "heldout_game": 2,
+          "regime": "clean"
+        },
+        {
+          "spell_f1_mean": 0.07313516545148627,
+          "macro_f1": 0.602474209199204,
+          "accuracy": 0.6123029151542649,
+          "n_gt_spells": 295,
+          "n_pred_spells": 1488,
+          "mean_spell_duration_s": 2.0145161290322577,
+          "heldout_game": 2,
+          "regime": "occluded"
+        }
+      ],
+      "external_mean_spellF1": 0.08762341614368013,
+      "external_mean_macroF1": 0.6754818483507541,
+      "submission_sha256": "83193f671ab43d6016b5a1f7c9def6350e455a79b50d8a1751b8b119a526b438",
+      "code_sha256": "a8079340bddfe56a4d0ee1cdcc205c154c7020a5e570d11c0a428686ba08c9b8",
+      "public": {
+        "selected": false,
+        "spellF1": 0.032298136645962726,
+        "macroF1": 0.6457319737472789,
+        "possessions": 144
+      }
+    }
+  ]
+}

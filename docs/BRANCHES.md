@@ -4,7 +4,7 @@ Metode final tim pada semua branch adalah **Farras wave5 `short_gru25/dead45`**.
 
 | Branch | Peran setelah penyelarasan | Bahan yang bukan deskripsi metode final |
 |---|---|---|
-| `main` | Pintu masuk repo, aturan resmi, dan rujukan laporan final | Baseline kompetisi bukan kandidat tim |
+| `main` | Pintu masuk repo, implementasi dan CSV wave5 hasil merge Farras, aturan resmi, dan laporan final | Baseline kompetisi tetap referensi, bukan kandidat tim |
 | `farras` | Source implementasi dan artefak kandidat terpilih; riwayat riset Farras | Wave1/2, wave6 dan campaign lanjutan tetap eksperimen, bukan pengganti wave5 |
 | `ryu` | Arsip riset Ryu dan fondasi PP-TCN/fitur | `TECHNICAL_DOCUMENT.md`, `writeup.md`, `experiments/RESEARCH.md`, dan folder `015_final_pipeline` menjelaskan varian Ryu lama |
 | `jeremy` | Arsip riset SetSeq, auxiliary tasks dan recovery | `exp_1` sampai `exp_7` memakai protokol/keputusan campaign sendiri; exp7 tidak diadopsi |
@@ -36,4 +36,6 @@ Commit di bawah mengidentifikasi sumber riset sebelum penyelarasan dokumentasi. 
 
 Gunakan identitas, parameter, cohort metric, atribusi, dan batas klaim dari dokumen final. Bila fakta tidak tercantum atau belum diverifikasi, tandai belum diketahui; jangan melengkapinya dari nama folder atau skor maksimum. Perubahan angka atau metode harus merujuk artefak dan hash yang baru, bukan mengganti label pada hasil lama.
 
-Branch `farras` memuat paket CSV dan exporter. Branch penelitian lain hanya mendapat rujukan yang konsisten; source eksperimennya tidak dipindah atau diubah algoritmenya. Membaca dokumentasi final di branch mana pun tidak berarti kode wave5 sudah disalin ke branch itu.
+Branch `main` dan `farras` memuat paket CSV serta exporter wave5. Branch penelitian lain merujuk metode yang sama tanpa memindahkan atau mengubah algoritme eksperimennya. Sumber implementasi yang dikunci untuk provenance tetap release Farras `7254990d82ce5dec3bf1fff6baa4fe2f639e3a60`.
+
+Integrasi Farras ke `main` diverifikasi dengan exporter dan validator resmi: 199.319 baris, hash identik dengan kandidat frozen, tanpa `annotation_harness`. [Bukti integrasi](merge_verification.json). `report_verification.json` merekam penyelarasan dokumentasi sebelum integrasi ini, bukan hash peta branch yang telah diperbarui.

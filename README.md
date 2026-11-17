@@ -1,17 +1,5 @@
 # More than a Hack 2027 — Phase 1: Ball Possession
 
-## Metode final tim dan laporan teknis
-
-Tim memakai **Farras wave5 `short_gru25/dead45`**. Mulai penulisan laporan dari
-[spesifikasi final](docs/FINAL_METHOD.md), [data fakta untuk Typst](docs/final_method.json),
-dan [peta branch/arsip](docs/BRANCHES.md).
-
-Source dan CSV terpilih dikunci pada
-[release Farras `7254990`](https://github.com/Ryu2804/more-than-a-hack-2027/tree/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60).
-Kode starter/baseline di branch ini tetap referensi kompetisi, bukan metode tim.
-Metode sudah dipilih; reproduksi raw bundle ke CSV identik belum lengkap.
-Dokumen kompetisi di bawah tetap berlaku, sedangkan laporan eksperimen lama bukan spesifikasi final.
-
 **Organised by [Metrica Sports](https://metrica-sports.com), [FC Barcelona](https://www.fcbarcelona.com)
 and the [Mobile World Capital Barcelona](https://www.mwcbarcelona.com)**, at the Talent Arena in Barcelona.
 
@@ -21,6 +9,24 @@ player and the ball, automatic tactical tagging, and the camera-to-pitch geometr
 question to answer with it.
 
 ---
+
+## Metode final tim dan laporan teknis
+
+Tim memakai **Farras wave5 `short_gru25/dead45`**. Sumber penulisan laporan:
+[spesifikasi final](docs/FINAL_METHOD.md), [data fakta untuk Typst](docs/final_method.json),
+dan [peta branch/arsip](docs/BRANCHES.md). Fakta metode yang sama menjadi rujukan laporan seluruh tim.
+Eksperimen lain tetap riset pembanding, bukan pengganti metode final.
+
+Branch `main` kini memuat source dan CSV terpilih dari `farras`. Ekspor CSV:
+
+```bash
+python -B submission/export.py
+```
+
+CSV sumber ada di `submission/artifacts/farras_wave5.csv`; output ekspor
+`submission/out/farras.csv` diperiksa hash dan validator resmi tanpa cache/model lokal.
+Ini bukan inference raw bundle; paket belum memenuhi seluruh syarat reproduksi.
+Detail artefak dan status: [submission/README.md](submission/README.md).
 
 ## The task
 

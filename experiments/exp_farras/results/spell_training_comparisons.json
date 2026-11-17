@@ -1,0 +1,40 @@
+{
+  "status": "exploratory post-run contrasts, no promotion decision",
+  "bootstrap": {
+    "draws": 5000,
+    "seed": 20261117,
+    "unit": "unique match",
+    "multiple_comparison_adjusted": false
+  },
+  "old_short_dead45_mean_spellF1": 0.5957554001098855,
+  "pure_vs_old_short": {
+    "spell_pure/dead45": {
+      "mean_delta": 0.008535110371517107,
+      "lower": 0.0034027822599693724,
+      "upper": 0.012539556136469922,
+      "wins": 6,
+      "ties": 0
+    },
+    "event_pure/dead45": {
+      "mean_delta": 0.01226717965466982,
+      "lower": 0.006049097223897222,
+      "upper": 0.017749778629860553,
+      "wins": 6,
+      "ties": 0
+    },
+    "dual_pure/dead45": {
+      "mean_delta": -0.008227748206642642,
+      "lower": -0.014494784002299591,
+      "upper": -0.0032026958441435183,
+      "wins": 1,
+      "ties": 0
+    }
+  },
+  "best_vs_same_consensus_control": {
+    "mean_delta": 0.0026413395098334735,
+    "lower": -0.0005110195422673357,
+    "upper": 0.00601190972269252,
+    "wins": 4,
+    "ties": 0
+  }
+}

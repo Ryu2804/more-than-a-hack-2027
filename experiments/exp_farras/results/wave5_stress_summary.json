@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "seed": 20261113,
+  "drop_fraction": 0.35,
+  "span_samples": [
+    10,
+    60
+  ],
+  "selection_sha256": "6d69b0e4c702144a0ef2877c1522c2c6478f0ca5bb6b7089f315526bfc367b95",
+  "packs": {
+    "skillcorner_2010085_stress": {
+      "match_id": 2010085,
+      "source_sha256": "f2bca80cb0c2a863445de96e38a3f91e0d07aa0d897bc89d1bca954d3d07b4e3",
+      "pack_sha256": "9686106a4c15215858708190db77aef4ce42f641549ada677d0db7956449e226",
+      "feature_sha256": "c085ef3c76f74af61106374bab959f73508f27b70c261c69d54c47dba5ed62e3",
+      "labels_preserved": true,
+      "original_visible": 19531,
+      "dropped_visible": 6836,
+      "after_visible": 12695,
+      "original_visible_fraction": 0.6623596839285109,
+      "after_visible_fraction": 0.43052870756604605,
+      "dropped_fraction_of_original_visible": 0.35000768009830524
+    },
+    "skillcorner_2011166_stress": {
+      "match_id": 2011166,
+      "source_sha256": "f8020b11d048a9b79d798de86565745205bd42d70eaf180bbb4b3f6bfccf9809",
+      "pack_sha256": "e0d24ce676e21ae05bb62743f24e623ae719495df1a8713f2a7827548119b5e9",
+      "feature_sha256": "36805dc38e2112d8f0a5cb68b57b3ac5f904eeaf1bc659a562bac9c60ce346fa",
+      "labels_preserved": true,
+      "original_visible": 16123,
+      "dropped_visible": 5643,
+      "after_visible": 10480,
+      "original_visible_fraction": 0.543832428238945,
+      "after_visible_fraction": 0.353492764866597,
+      "dropped_fraction_of_original_visible": 0.3499968988401662
+    },
+    "skillcorner_2013725_stress": {
+      "match_id": 2013725,
+      "source_sha256": "57e3c9440527e473a8cee82aa238f83973a8180b493ca0e5b8a56562f92b65bb",
+      "pack_sha256": "0c7319ca429a35128adf75093df314ada2abad76928851a1e598cc1edf1abe5c",
+      "feature_sha256": "f32cc633a7e30d64c025938a0807ddac7ea7d2a492fc2c0bb46f8e34c03b8ce5",
+      "labels_preserved": true,
+      "original_visible": 18352,
+      "dropped_visible": 6423,
+      "after_visible": 11929,
+      "original_visible_fraction": 0.646265450575765,
+      "after_visible_fraction": 0.42007958587174704,
+      "dropped_fraction_of_original_visible": 0.34998910200523103
+    },
+    "skillcorner_2015213_stress": {
+      "match_id": 2015213,
+      "source_sha256": "27e9638163c0f5c810b308e76e9df699751e6c247ea0d8b5d7dfe77bdc8bdad5",
+      "pack_sha256": "ce277207656faa741be8b00a3175c76e290162139cce113f0741c5b191d3e6a8",
+      "feature_sha256": "74e3a35a91049dd7a61cb4b6b74684bd57ac5386e52eef8a4e87718ec93c7f24",
+      "labels_preserved": true,
+      "original_visible": 19019,
+      "dropped_visible": 6657,
+      "after_visible": 12362,
+      "original_visible_fraction": 0.6349826388888888,
+      "after_visible_fraction": 0.4127270299145299,
+      "dropped_fraction_of_original_visible": 0.3500184026499816
+    },
+    "skillcorner_2016236_stress": {
+      "match_id": 2016236,
+      "source_sha256": "3e52ec7d4a3c29d585c6a78e35c1d37e43dcfd873c92b51abf2df3c5018416b3",
+      "pack_sha256": "90a6709fa40ca7581dc0d41db258c9ea9e67a69da1a56559880235ffcfd11a40",
+      "feature_sha256": "ad5cdc666faedf57e982abe3610db1528f22e2b26c76c10c9843c87b58ba89c4",
+      "labels_preserved": true,
+      "original_visible": 18315,
+      "dropped_visible": 6410,
+      "after_visible": 11905,
+      "original_visible_fraction": 0.6100526280727466,
+      "after_visible_fraction": 0.39654253547398577,
+      "dropped_fraction_of_original_visible": 0.34998634998635
+    },
+    "skillcorner_2017461_stress": {
+      "match_id": 2017461,
+      "source_sha256": "3dc02d321462c7dfd1960ddf584fd131a80b1bdf20b0af7ea294b1abdac8e307",
+      "pack_sha256": "12c9818781b31e38b948bb6dd84910c4114d1aa858a9f25888f7a46b71412736",
+      "feature_sha256": "8045651a7cf6fce6577b23a4603fe7086787415764952138b58baba8eeb52f9a",
+      "labels_preserved": true,
+      "original_visible": 16503,
+      "dropped_visible": 5776,
+      "after_visible": 10727,
+      "original_visible_fraction": 0.5646491258083279,
+      "after_visible_fraction": 0.3670236425223252,
+      "dropped_fraction_of_original_visible": 0.3499969702478337
+    }
+  }
+}

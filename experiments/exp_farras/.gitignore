@@ -1,0 +1,11 @@
+**/cache/
+**/out/
+**/__pycache__/
+*.py[cod]
+*.npy
+*.npz
+*.pkl
+*.pt
+*.mp4
+*.gzip
+*.pl3container

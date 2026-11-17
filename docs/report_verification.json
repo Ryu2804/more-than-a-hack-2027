@@ -1,5 +1,5 @@
 {
-  "scope": "six-branch report documentation and selected-method metadata alignment",
+  "scope": "historical six-branch documentation alignment before main integration; hashes describe that snapshot",
   "method_id": "farras_wave5_short_gru25_dead45",
   "implementation_release": "7254990d82ce5dec3bf1fff6baa4fe2f639e3a60",
   "branches": [

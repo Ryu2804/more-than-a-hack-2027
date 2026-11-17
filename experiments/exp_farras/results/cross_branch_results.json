@@ -1,0 +1,5539 @@
+{
+  "primary": {
+    "family": "triple_combined",
+    "decoder": "hysteresis",
+    "rows": [
+      {
+        "spell_f1_mean": 0.5465346534653466,
+        "macro_f1": 0.9122401375711635,
+        "accuracy": 0.9210026923893757,
+        "n_gt_spells": 511,
+        "n_pred_spells": 297,
+        "mean_spell_duration_s": 11.31111111111111,
+        "count_error_ratio": -0.4187866927592955,
+        "match": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.5628571428571428,
+        "macro_f1": 0.8791848025837007,
+        "accuracy": 0.9030806507442022,
+        "n_gt_spells": 500,
+        "n_pred_spells": 340,
+        "mean_spell_duration_s": 7.696823529411764,
+        "count_error_ratio": -0.32,
+        "match": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6430906389301635,
+        "macro_f1": 0.9171394724111441,
+        "accuracy": 0.9292273383182474,
+        "n_gt_spells": 402,
+        "n_pred_spells": 271,
+        "mean_spell_duration_s": 10.550553505535056,
+        "count_error_ratio": -0.32587064676616917,
+        "match": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6241645244215938,
+        "macro_f1": 0.9106574366250114,
+        "accuracy": 0.9231632710332828,
+        "n_gt_spells": 456,
+        "n_pred_spells": 322,
+        "mean_spell_duration_s": 9.440372670807454,
+        "count_error_ratio": -0.29385964912280704,
+        "match": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6110953058321479,
+        "macro_f1": 0.9115158064097275,
+        "accuracy": 0.9265718721573616,
+        "n_gt_spells": 421,
+        "n_pred_spells": 282,
+        "mean_spell_duration_s": 11.304964539007091,
+        "count_error_ratio": -0.33016627078384797,
+        "match": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6585915492957748,
+        "macro_f1": 0.9180909126352109,
+        "accuracy": 0.9247462151814254,
+        "n_gt_spells": 401,
+        "n_pred_spells": 309,
+        "mean_spell_duration_s": 10.689320388349515,
+        "count_error_ratio": -0.22942643391521197,
+        "match": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6168750000000001,
+        "macro_f1": 0.9162046119002442,
+        "accuracy": 0.9274232000544922,
+        "n_gt_spells": 370,
+        "n_pred_spells": 270,
+        "mean_spell_duration_s": 12.36962962962963,
+        "count_error_ratio": -0.2702702702702703,
+        "match": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ]
+      }
+    ],
+    "mean_spellF1": 0.6090298306860242,
+    "mean_macroF1": 0.9092904543051717,
+    "paired_vs_control": {
+      "mean_delta": 0.013274430576138687,
+      "lower": 0.005245345806686215,
+      "upper": 0.021056508357142366,
+      "wins": 6,
+      "ties": 0
+    }
+  },
+  "control": {
+    "family": "short",
+    "decoder": "dead45",
+    "rows": [
+      {
+        "spell_f1_mean": 0.5331713244228432,
+        "macro_f1": 0.9061859382779565,
+        "accuracy": 0.9152274144155871,
+        "n_gt_spells": 511,
+        "n_pred_spells": 312,
+        "mean_spell_duration_s": 10.920512820512819,
+        "count_error_ratio": -0.38943248532289626,
+        "match": "J03WMX",
+        "training_names": [
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.5432098765432098,
+        "macro_f1": 0.8726437258293932,
+        "accuracy": 0.8979662477659808,
+        "n_gt_spells": 500,
+        "n_pred_spells": 391,
+        "mean_spell_duration_s": 6.885728900255755,
+        "count_error_ratio": -0.218,
+        "match": "J03WN1",
+        "training_names": [
+          "J03WMX",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6347949080622348,
+        "macro_f1": 0.9111528403134478,
+        "accuracy": 0.9236812570145904,
+        "n_gt_spells": 402,
+        "n_pred_spells": 305,
+        "mean_spell_duration_s": 9.52393442622951,
+        "count_error_ratio": -0.24129353233830847,
+        "match": "J03WOH",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6289926289926291,
+        "macro_f1": 0.9027601425047607,
+        "accuracy": 0.9145899983162149,
+        "n_gt_spells": 456,
+        "n_pred_spells": 358,
+        "mean_spell_duration_s": 8.672067039106146,
+        "count_error_ratio": -0.2149122807017544,
+        "match": "J03WOY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WPY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.5873626373626374,
+        "macro_f1": 0.9038812602635623,
+        "accuracy": 0.9199102666694025,
+        "n_gt_spells": 421,
+        "n_pred_spells": 307,
+        "mean_spell_duration_s": 10.61498371335505,
+        "count_error_ratio": -0.27078384798099764,
+        "match": "J03WPY",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WQQ",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6304993252361674,
+        "macro_f1": 0.9099588757536599,
+        "accuracy": 0.9166251009870385,
+        "n_gt_spells": 401,
+        "n_pred_spells": 340,
+        "mean_spell_duration_s": 9.90764705882353,
+        "count_error_ratio": -0.15211970074812967,
+        "match": "J03WQQ",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WR9"
+        ]
+      },
+      {
+        "spell_f1_mean": 0.6122571001494769,
+        "macro_f1": 0.9139604550844632,
+        "accuracy": 0.9249574279681221,
+        "n_gt_spells": 370,
+        "n_pred_spells": 299,
+        "mean_spell_duration_s": 11.352508361204013,
+        "count_error_ratio": -0.1918918918918919,
+        "match": "J03WR9",
+        "training_names": [
+          "J03WMX",
+          "J03WN1",
+          "J03WOH",
+          "J03WOY",
+          "J03WPY",
+          "J03WQQ"
+        ]
+      }
+    ],
+    "mean_spellF1": 0.5957554001098855,
+    "mean_macroF1": 0.9029347482896061,
+    "paired_vs_control": {
+      "mean_delta": 0.0,
+      "lower": 0.0,
+      "upper": 0.0,
+      "wins": 0,
+      "ties": 7
+    }
+  },
+  "primary_promoted_for_research": true,
+  "best_raw": {
+    "family": "short_setseq25",
+    "decoder": "dead45"
+  },
+  "records": [
+    {
+      "family": "short_setseq25",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5466666666666666,
+          "macro_f1": 0.9117178325993022,
+          "accuracy": 0.9203176060342406,
+          "n_gt_spells": 511,
+          "n_pred_spells": 299,
+          "mean_spell_duration_s": 11.386622073578597,
+          "count_error_ratio": -0.41487279843444225,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5666283084004603,
+          "macro_f1": 0.8814152312199827,
+          "accuracy": 0.9047689688544162,
+          "n_gt_spells": 500,
+          "n_pred_spells": 369,
+          "mean_spell_duration_s": 7.253441734417343,
+          "count_error_ratio": -0.262,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6517441860465116,
+          "macro_f1": 0.9166547664671109,
+          "accuracy": 0.9284693981663679,
+          "n_gt_spells": 402,
+          "n_pred_spells": 286,
+          "mean_spell_duration_s": 10.13986013986014,
+          "count_error_ratio": -0.2885572139303483,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6418022528160201,
+          "macro_f1": 0.9092155859215548,
+          "accuracy": 0.9208270191390245,
+          "n_gt_spells": 456,
+          "n_pred_spells": 343,
+          "mean_spell_duration_s": 9.023906705539359,
+          "count_error_ratio": -0.24780701754385964,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6189944134078212,
+          "macro_f1": 0.9121068464591255,
+          "accuracy": 0.9266265876028479,
+          "n_gt_spells": 421,
+          "n_pred_spells": 295,
+          "mean_spell_duration_s": 10.976949152542373,
+          "count_error_ratio": -0.2992874109263658,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6544959128065395,
+          "macro_f1": 0.9166487869576243,
+          "accuracy": 0.9231023218237381,
+          "n_gt_spells": 401,
+          "n_pred_spells": 333,
+          "mean_spell_duration_s": 10.05945945945946,
+          "count_error_ratio": -0.16957605985037408,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6278713629402757,
+          "macro_f1": 0.9193525430586558,
+          "accuracy": 0.9298753490906614,
+          "n_gt_spells": 370,
+          "n_pred_spells": 283,
+          "mean_spell_duration_s": 11.973851590106008,
+          "count_error_ratio": -0.23513513513513515,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.6154575861548992,
+      "mean_macroF1": 0.9095873703833366,
+      "paired_vs_control": {
+        "mean_delta": 0.019702186045013788,
+        "lower": 0.015308386091458856,
+        "upper": 0.02476260960648649,
+        "wins": 7,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short_setseq25",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5417596034696406,
+          "macro_f1": 0.910395639506909,
+          "accuracy": 0.9193653360006029,
+          "n_gt_spells": 511,
+          "n_pred_spells": 296,
+          "mean_spell_duration_s": 11.368918918918919,
+          "count_error_ratio": -0.4207436399217221,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5641025641025641,
+          "macro_f1": 0.8779577251602463,
+          "accuracy": 0.9020281009600102,
+          "n_gt_spells": 500,
+          "n_pred_spells": 358,
+          "mean_spell_duration_s": 7.32659217877095,
+          "count_error_ratio": -0.284,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6521106259097526,
+          "macro_f1": 0.9166749837461196,
+          "accuracy": 0.9287317620650954,
+          "n_gt_spells": 402,
+          "n_pred_spells": 285,
+          "mean_spell_duration_s": 10.051929824561403,
+          "count_error_ratio": -0.291044776119403,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.638685208596713,
+          "macro_f1": 0.9112254485875546,
+          "accuracy": 0.9233807599483639,
+          "n_gt_spells": 456,
+          "n_pred_spells": 335,
+          "mean_spell_duration_s": 9.07820895522388,
+          "count_error_ratio": -0.26535087719298245,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6211565585331453,
+          "macro_f1": 0.9120754057591837,
+          "accuracy": 0.9269275225530227,
+          "n_gt_spells": 421,
+          "n_pred_spells": 288,
+          "mean_spell_duration_s": 11.108333333333333,
+          "count_error_ratio": -0.3159144893111639,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6563535911602209,
+          "macro_f1": 0.9174446675189504,
+          "accuracy": 0.9241279988759703,
+          "n_gt_spells": 401,
+          "n_pred_spells": 323,
+          "mean_spell_duration_s": 10.237151702786377,
+          "count_error_ratio": -0.19451371571072318,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6251162790697675,
+          "macro_f1": 0.9178702973489852,
+          "accuracy": 0.9285879708466726,
+          "n_gt_spells": 370,
+          "n_pred_spells": 275,
+          "mean_spell_duration_s": 12.183272727272726,
+          "count_error_ratio": -0.25675675675675674,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.6141834901202576,
+      "mean_macroF1": 0.9090920239468498,
+      "paired_vs_control": {
+        "mean_delta": 0.018428090010372187,
+        "lower": 0.012591073063583829,
+        "upper": 0.025019573492361884,
+        "wins": 7,
+        "ties": 0
+      }
+    },
+    {
+      "family": "triple_combined",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5501234567901234,
+          "macro_f1": 0.9127767423602909,
+          "accuracy": 0.9212082182959161,
+          "n_gt_spells": 511,
+          "n_pred_spells": 299,
+          "mean_spell_duration_s": 11.365217391304348,
+          "count_error_ratio": -0.41487279843444225,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5692126909518214,
+          "macro_f1": 0.883150461267385,
+          "accuracy": 0.9062806846518462,
+          "n_gt_spells": 500,
+          "n_pred_spells": 351,
+          "mean_spell_duration_s": 7.604900284900285,
+          "count_error_ratio": -0.298,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6427299703264094,
+          "macro_f1": 0.916754990708977,
+          "accuracy": 0.9285058375967467,
+          "n_gt_spells": 402,
+          "n_pred_spells": 272,
+          "mean_spell_duration_s": 10.659558823529412,
+          "count_error_ratio": -0.32338308457711445,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6255102040816326,
+          "macro_f1": 0.9090975249734033,
+          "accuracy": 0.9210795869113768,
+          "n_gt_spells": 456,
+          "n_pred_spells": 328,
+          "mean_spell_duration_s": 9.41890243902439,
+          "count_error_ratio": -0.2807017543859649,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6144680851063828,
+          "macro_f1": 0.9115145135815436,
+          "accuracy": 0.9260178782718127,
+          "n_gt_spells": 421,
+          "n_pred_spells": 284,
+          "mean_spell_duration_s": 11.376760563380282,
+          "count_error_ratio": -0.3254156769596199,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6535367545076284,
+          "macro_f1": 0.9175774577572865,
+          "accuracy": 0.9239734447996066,
+          "n_gt_spells": 401,
+          "n_pred_spells": 320,
+          "mean_spell_duration_s": 10.445625,
+          "count_error_ratio": -0.20199501246882792,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6190769230769231,
+          "macro_f1": 0.9184930135260982,
+          "accuracy": 0.9293099925073224,
+          "n_gt_spells": 370,
+          "n_pred_spells": 280,
+          "mean_spell_duration_s": 12.085,
+          "count_error_ratio": -0.24324324324324326,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.61066544069156,
+      "mean_macroF1": 0.9099092434535693,
+      "paired_vs_control": {
+        "mean_delta": 0.01491004058167465,
+        "lower": 0.006751793890646158,
+        "upper": 0.022727171405492994,
+        "wins": 6,
+        "ties": 0
+      }
+    },
+    {
+      "family": "triple_combined",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5465346534653466,
+          "macro_f1": 0.9122401375711635,
+          "accuracy": 0.9210026923893757,
+          "n_gt_spells": 511,
+          "n_pred_spells": 297,
+          "mean_spell_duration_s": 11.31111111111111,
+          "count_error_ratio": -0.4187866927592955,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5628571428571428,
+          "macro_f1": 0.8791848025837007,
+          "accuracy": 0.9030806507442022,
+          "n_gt_spells": 500,
+          "n_pred_spells": 340,
+          "mean_spell_duration_s": 7.696823529411764,
+          "count_error_ratio": -0.32,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6430906389301635,
+          "macro_f1": 0.9171394724111441,
+          "accuracy": 0.9292273383182474,
+          "n_gt_spells": 402,
+          "n_pred_spells": 271,
+          "mean_spell_duration_s": 10.550553505535056,
+          "count_error_ratio": -0.32587064676616917,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6241645244215938,
+          "macro_f1": 0.9106574366250114,
+          "accuracy": 0.9231632710332828,
+          "n_gt_spells": 456,
+          "n_pred_spells": 322,
+          "mean_spell_duration_s": 9.440372670807454,
+          "count_error_ratio": -0.29385964912280704,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6110953058321479,
+          "macro_f1": 0.9115158064097275,
+          "accuracy": 0.9265718721573616,
+          "n_gt_spells": 421,
+          "n_pred_spells": 282,
+          "mean_spell_duration_s": 11.304964539007091,
+          "count_error_ratio": -0.33016627078384797,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6585915492957748,
+          "macro_f1": 0.9180909126352109,
+          "accuracy": 0.9247462151814254,
+          "n_gt_spells": 401,
+          "n_pred_spells": 309,
+          "mean_spell_duration_s": 10.689320388349515,
+          "count_error_ratio": -0.22942643391521197,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6168750000000001,
+          "macro_f1": 0.9162046119002442,
+          "accuracy": 0.9274232000544922,
+          "n_gt_spells": 370,
+          "n_pred_spells": 270,
+          "mean_spell_duration_s": 12.36962962962963,
+          "count_error_ratio": -0.2702702702702703,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.6090298306860242,
+      "mean_macroF1": 0.9092904543051717,
+      "paired_vs_control": {
+        "mean_delta": 0.013274430576138687,
+        "lower": 0.005245345806686215,
+        "upper": 0.021056508357142366,
+        "wins": 6,
+        "ties": 0
+      }
+    },
+    {
+      "family": "triple_contact",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5409429280397022,
+          "macro_f1": 0.9110823883150913,
+          "accuracy": 0.9197352826323758,
+          "n_gt_spells": 511,
+          "n_pred_spells": 295,
+          "mean_spell_duration_s": 11.522033898305086,
+          "count_error_ratio": -0.4227005870841487,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5564402810304448,
+          "macro_f1": 0.8813480725526354,
+          "accuracy": 0.904846673872041,
+          "n_gt_spells": 500,
+          "n_pred_spells": 354,
+          "mean_spell_duration_s": 7.530282485875706,
+          "count_error_ratio": -0.292,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6351550960118169,
+          "macro_f1": 0.9164760464351938,
+          "accuracy": 0.928403807191686,
+          "n_gt_spells": 402,
+          "n_pred_spells": 275,
+          "mean_spell_duration_s": 10.536,
+          "count_error_ratio": -0.31592039800995025,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6160509554140127,
+          "macro_f1": 0.9067718163672819,
+          "accuracy": 0.9190520289611046,
+          "n_gt_spells": 456,
+          "n_pred_spells": 329,
+          "mean_spell_duration_s": 9.389665653495442,
+          "count_error_ratio": -0.27850877192982454,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6141643059490084,
+          "macro_f1": 0.9114602516706665,
+          "accuracy": 0.9260178782718127,
+          "n_gt_spells": 421,
+          "n_pred_spells": 285,
+          "mean_spell_duration_s": 11.32842105263158,
+          "count_error_ratio": -0.32304038004750596,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6510460251046025,
+          "macro_f1": 0.9173845229011217,
+          "accuracy": 0.9237205381291932,
+          "n_gt_spells": 401,
+          "n_pred_spells": 316,
+          "mean_spell_duration_s": 10.575949367088608,
+          "count_error_ratio": -0.2119700748129676,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.623529411764706,
+          "macro_f1": 0.91919518095201,
+          "accuracy": 0.9298140453647572,
+          "n_gt_spells": 370,
+          "n_pred_spells": 276,
+          "mean_spell_duration_s": 12.26159420289855,
+          "count_error_ratio": -0.25405405405405407,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.6053327147591848,
+      "mean_macroF1": 0.9091026113134287,
+      "paired_vs_control": {
+        "mean_delta": 0.009577314649299276,
+        "lower": 0.0002360782272683437,
+        "upper": 0.01825417065287359,
+        "wins": 6,
+        "ties": 0
+      }
+    },
+    {
+      "family": "triple_contact",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5379825653798257,
+          "macro_f1": 0.9105347763647212,
+          "accuracy": 0.9195229058622839,
+          "n_gt_spells": 511,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 11.507534246575341,
+          "count_error_ratio": -0.42857142857142855,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5488703923900119,
+          "macro_f1": 0.8760030572567903,
+          "accuracy": 0.9003751033123529,
+          "n_gt_spells": 500,
+          "n_pred_spells": 341,
+          "mean_spell_duration_s": 7.646099706744868,
+          "count_error_ratio": -0.318,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6379821958456973,
+          "macro_f1": 0.9163845447094289,
+          "accuracy": 0.9286297316600347,
+          "n_gt_spells": 402,
+          "n_pred_spells": 272,
+          "mean_spell_duration_s": 10.520588235294117,
+          "count_error_ratio": -0.32338308457711445,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.617157490396927,
+          "macro_f1": 0.9084276004469302,
+          "accuracy": 0.9212409496548241,
+          "n_gt_spells": 456,
+          "n_pred_spells": 325,
+          "mean_spell_duration_s": 9.335384615384616,
+          "count_error_ratio": -0.28728070175438597,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6125356125356125,
+          "macro_f1": 0.9119496279480505,
+          "accuracy": 0.9268317705234216,
+          "n_gt_spells": 421,
+          "n_pred_spells": 281,
+          "mean_spell_duration_s": 11.361565836298933,
+          "count_error_ratio": -0.332541567695962,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6543909348441926,
+          "macro_f1": 0.9182171474269979,
+          "accuracy": 0.9248164670343181,
+          "n_gt_spells": 401,
+          "n_pred_spells": 305,
+          "mean_spell_duration_s": 10.827540983606557,
+          "count_error_ratio": -0.23940149625935161,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6244514106583072,
+          "macro_f1": 0.9173323092841992,
+          "accuracy": 0.9283427559430556,
+          "n_gt_spells": 370,
+          "n_pred_spells": 268,
+          "mean_spell_duration_s": 12.469402985074629,
+          "count_error_ratio": -0.2756756756756757,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.6047672288643676,
+      "mean_macroF1": 0.9084070090624454,
+      "paired_vs_control": {
+        "mean_delta": 0.009011828754482238,
+        "lower": 0.0001867076000242057,
+        "upper": 0.017851357791448794,
+        "wins": 6,
+        "ties": 0
+      }
+    },
+    {
+      "family": "quality_combined",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5353233830845772,
+          "macro_f1": 0.9067010465366714,
+          "accuracy": 0.9157686326361438,
+          "n_gt_spells": 511,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 11.504436860068258,
+          "count_error_ratio": -0.42661448140900193,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.547906976744186,
+          "macro_f1": 0.8748239446220882,
+          "accuracy": 0.8996545658761947,
+          "n_gt_spells": 500,
+          "n_pred_spells": 360,
+          "mean_spell_duration_s": 7.328111111111111,
+          "count_error_ratio": -0.28,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6284040995607614,
+          "macro_f1": 0.9114688306987441,
+          "accuracy": 0.9243080152171061,
+          "n_gt_spells": 402,
+          "n_pred_spells": 281,
+          "mean_spell_duration_s": 10.199288256227758,
+          "count_error_ratio": -0.3009950248756219,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.617490494296578,
+          "macro_f1": 0.9044610355647493,
+          "accuracy": 0.9167017455239378,
+          "n_gt_spells": 456,
+          "n_pred_spells": 333,
+          "mean_spell_duration_s": 9.177777777777779,
+          "count_error_ratio": -0.26973684210526316,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6022408963585434,
+          "macro_f1": 0.908910614150383,
+          "accuracy": 0.9245200429516247,
+          "n_gt_spells": 421,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 10.974061433447098,
+          "count_error_ratio": -0.30403800475059384,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.63601108033241,
+          "macro_f1": 0.915205365518415,
+          "accuracy": 0.9219501914362991,
+          "n_gt_spells": 401,
+          "n_pred_spells": 321,
+          "mean_spell_duration_s": 10.368224299065421,
+          "count_error_ratio": -0.19950124688279303,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6276073619631901,
+          "macro_f1": 0.914552253495688,
+          "accuracy": 0.9255908998024658,
+          "n_gt_spells": 370,
+          "n_pred_spells": 282,
+          "mean_spell_duration_s": 11.890070921985817,
+          "count_error_ratio": -0.23783783783783785,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5992834703343208,
+      "mean_macroF1": 0.9051604415123913,
+      "paired_vs_control": {
+        "mean_delta": 0.0035280702244353535,
+        "lower": -0.0035249106315821915,
+        "upper": 0.010421805550280985,
+        "wins": 5,
+        "ties": 0
+      }
+    },
+    {
+      "family": "quality_combined",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5390875462392108,
+          "macro_f1": 0.9079437205385764,
+          "accuracy": 0.9166866483520247,
+          "n_gt_spells": 511,
+          "n_pred_spells": 300,
+          "mean_spell_duration_s": 11.356,
+          "count_error_ratio": -0.41291585127201563,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5511520737327189,
+          "macro_f1": 0.8778713117148248,
+          "accuracy": 0.901964524127408,
+          "n_gt_spells": 500,
+          "n_pred_spells": 368,
+          "mean_spell_duration_s": 7.304130434782609,
+          "count_error_ratio": -0.264,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6274170274170274,
+          "macro_f1": 0.9120105677604934,
+          "accuracy": 0.9245120760272275,
+          "n_gt_spells": 402,
+          "n_pred_spells": 291,
+          "mean_spell_duration_s": 9.977319587628866,
+          "count_error_ratio": -0.27611940298507465,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6130653266331658,
+          "macro_f1": 0.9039069307659465,
+          "accuracy": 0.9157967110063423,
+          "n_gt_spells": 456,
+          "n_pred_spells": 340,
+          "mean_spell_duration_s": 9.135882352941177,
+          "count_error_ratio": -0.2543859649122807,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.601386962552011,
+          "macro_f1": 0.9076131759174141,
+          "accuracy": 0.9227281121119478,
+          "n_gt_spells": 421,
+          "n_pred_spells": 300,
+          "mean_spell_duration_s": 10.842,
+          "count_error_ratio": -0.28741092636579574,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6341597796143251,
+          "macro_f1": 0.9124500404027495,
+          "accuracy": 0.9188591099090239,
+          "n_gt_spells": 401,
+          "n_pred_spells": 325,
+          "mean_spell_duration_s": 10.360615384615384,
+          "count_error_ratio": -0.18952618453865336,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6218181818181818,
+          "macro_f1": 0.9156948458294191,
+          "accuracy": 0.9266058170424358,
+          "n_gt_spells": 370,
+          "n_pred_spells": 290,
+          "mean_spell_duration_s": 11.684827586206898,
+          "count_error_ratio": -0.21621621621621623,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.598298128286663,
+      "mean_macroF1": 0.9053557989899177,
+      "paired_vs_control": {
+        "mean_delta": 0.0025427281767774756,
+        "lower": -0.005212138256619243,
+        "upper": 0.00924138387145593,
+        "wins": 5,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short_combined25",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5331670822942642,
+          "macro_f1": 0.9063130951088035,
+          "accuracy": 0.9154945980940897,
+          "n_gt_spells": 511,
+          "n_pred_spells": 291,
+          "mean_spell_duration_s": 11.583505154639175,
+          "count_error_ratio": -0.43052837573385516,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5535962877030163,
+          "macro_f1": 0.8752073441801945,
+          "accuracy": 0.8998947450215808,
+          "n_gt_spells": 500,
+          "n_pred_spells": 362,
+          "mean_spell_duration_s": 7.2909392265193365,
+          "count_error_ratio": -0.276,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6273127753303964,
+          "macro_f1": 0.9112700091808698,
+          "accuracy": 0.9242934394449546,
+          "n_gt_spells": 402,
+          "n_pred_spells": 279,
+          "mean_spell_duration_s": 10.26021505376344,
+          "count_error_ratio": -0.30597014925373134,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6136708860759493,
+          "macro_f1": 0.9035960983637213,
+          "accuracy": 0.9160282314643318,
+          "n_gt_spells": 456,
+          "n_pred_spells": 334,
+          "mean_spell_duration_s": 9.14311377245509,
+          "count_error_ratio": -0.2675438596491228,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.600278164116829,
+          "macro_f1": 0.9074632280135018,
+          "accuracy": 0.9231863539678957,
+          "n_gt_spells": 421,
+          "n_pred_spells": 298,
+          "mean_spell_duration_s": 10.783892617449665,
+          "count_error_ratio": -0.2921615201900237,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6339310344827586,
+          "macro_f1": 0.9135630752489718,
+          "accuracy": 0.920362499560926,
+          "n_gt_spells": 401,
+          "n_pred_spells": 324,
+          "mean_spell_duration_s": 10.279012345679012,
+          "count_error_ratio": -0.19201995012468828,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6235114503816794,
+          "macro_f1": 0.9142830758568089,
+          "accuracy": 0.9253729309992508,
+          "n_gt_spells": 370,
+          "n_pred_spells": 285,
+          "mean_spell_duration_s": 11.756491228070177,
+          "count_error_ratio": -0.22972972972972974,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.597923954340699,
+      "mean_macroF1": 0.9045279894218389,
+      "paired_vs_control": {
+        "mean_delta": 0.002168554230813524,
+        "lower": -0.005537934875951841,
+        "upper": 0.009008638290198854,
+        "wins": 4,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short_memory25",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5298377028714107,
+          "macro_f1": 0.906021720411928,
+          "accuracy": 0.915206861824933,
+          "n_gt_spells": 511,
+          "n_pred_spells": 290,
+          "mean_spell_duration_s": 11.633793103448276,
+          "count_error_ratio": -0.4324853228962818,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5535962877030163,
+          "macro_f1": 0.8750671336396887,
+          "accuracy": 0.8998523604665126,
+          "n_gt_spells": 500,
+          "n_pred_spells": 362,
+          "mean_spell_duration_s": 7.297569060773481,
+          "count_error_ratio": -0.276,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6311499272197962,
+          "macro_f1": 0.912317786257162,
+          "accuracy": 0.9250513795968341,
+          "n_gt_spells": 402,
+          "n_pred_spells": 285,
+          "mean_spell_duration_s": 10.047719298245614,
+          "count_error_ratio": -0.291044776119403,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6162025316455696,
+          "macro_f1": 0.9035644599856631,
+          "accuracy": 0.9159019475781557,
+          "n_gt_spells": 456,
+          "n_pred_spells": 334,
+          "mean_spell_duration_s": 9.148502994011976,
+          "count_error_ratio": -0.2675438596491228,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.59860529986053,
+          "macro_f1": 0.9072549409164884,
+          "accuracy": 0.9231589962451525,
+          "n_gt_spells": 421,
+          "n_pred_spells": 296,
+          "mean_spell_duration_s": 10.86418918918919,
+          "count_error_ratio": -0.29691211401425177,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6314917127071823,
+          "macro_f1": 0.9131689409328242,
+          "accuracy": 0.9200042151111736,
+          "n_gt_spells": 401,
+          "n_pred_spells": 323,
+          "mean_spell_duration_s": 10.312074303405574,
+          "count_error_ratio": -0.19451371571072318,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6241960183767227,
+          "macro_f1": 0.9137451696465523,
+          "accuracy": 0.9249369933928206,
+          "n_gt_spells": 370,
+          "n_pred_spells": 283,
+          "mean_spell_duration_s": 11.842402826855123,
+          "count_error_ratio": -0.23513513513513515,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5978684971977468,
+      "mean_macroF1": 0.9044485931129008,
+      "paired_vs_control": {
+        "mean_delta": 0.0021130970878613215,
+        "lower": -0.004631084105255542,
+        "upper": 0.008268299459146708,
+        "wins": 4,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short_contact25",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5323420074349443,
+          "macro_f1": 0.9058462982139409,
+          "accuracy": 0.9151520549165222,
+          "n_gt_spells": 511,
+          "n_pred_spells": 296,
+          "mean_spell_duration_s": 11.387837837837838,
+          "count_error_ratio": -0.4207436399217221,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5498839907192575,
+          "macro_f1": 0.8732885718558109,
+          "accuracy": 0.8985101828893551,
+          "n_gt_spells": 500,
+          "n_pred_spells": 362,
+          "mean_spell_duration_s": 7.290386740331492,
+          "count_error_ratio": -0.276,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6369723435225618,
+          "macro_f1": 0.9114515114753098,
+          "accuracy": 0.9243007273310304,
+          "n_gt_spells": 402,
+          "n_pred_spells": 285,
+          "mean_spell_duration_s": 10.026666666666666,
+          "count_error_ratio": -0.291044776119403,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.616751269035533,
+          "macro_f1": 0.9029291353073056,
+          "accuracy": 0.9154318908907223,
+          "n_gt_spells": 456,
+          "n_pred_spells": 332,
+          "mean_spell_duration_s": 9.213253012048193,
+          "count_error_ratio": -0.2719298245614035,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5955182072829132,
+          "macro_f1": 0.907599644770627,
+          "accuracy": 0.9235420043635568,
+          "n_gt_spells": 421,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 10.963822525597271,
+          "count_error_ratio": -0.30403800475059384,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6320441988950277,
+          "macro_f1": 0.9127363456040144,
+          "accuracy": 0.9196599810319998,
+          "n_gt_spells": 401,
+          "n_pred_spells": 323,
+          "mean_spell_duration_s": 10.300309597523219,
+          "count_error_ratio": -0.19451371571072318,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6214067278287462,
+          "macro_f1": 0.9139392714408313,
+          "accuracy": 0.9250800354199306,
+          "n_gt_spells": 370,
+          "n_pred_spells": 284,
+          "mean_spell_duration_s": 11.8,
+          "count_error_ratio": -0.23243243243243245,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5978455349598548,
+      "mean_macroF1": 0.903970111238263,
+      "paired_vs_control": {
+        "mean_delta": 0.0020901348499693067,
+        "lower": -0.003411749670789245,
+        "upper": 0.006576518968125638,
+        "wins": 5,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short_combined25",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5349814585908529,
+          "macro_f1": 0.9071653292264195,
+          "accuracy": 0.9159399042249275,
+          "n_gt_spells": 511,
+          "n_pred_spells": 298,
+          "mean_spell_duration_s": 11.43020134228188,
+          "count_error_ratio": -0.41682974559686886,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5566016073478759,
+          "macro_f1": 0.8773518421559552,
+          "accuracy": 0.9015406785767266,
+          "n_gt_spells": 500,
+          "n_pred_spells": 371,
+          "mean_spell_duration_s": 7.241832884097035,
+          "count_error_ratio": -0.258,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6258345428156747,
+          "macro_f1": 0.9107246097917531,
+          "accuracy": 0.9233751657994083,
+          "n_gt_spells": 402,
+          "n_pred_spells": 287,
+          "mean_spell_duration_s": 10.11149825783972,
+          "count_error_ratio": -0.2860696517412935,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6110552763819095,
+          "macro_f1": 0.9022458565780119,
+          "accuracy": 0.9142953359151372,
+          "n_gt_spells": 456,
+          "n_pred_spells": 340,
+          "mean_spell_duration_s": 9.125294117647059,
+          "count_error_ratio": -0.2543859649122807,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5977900552486187,
+          "macro_f1": 0.9071468184855048,
+          "accuracy": 0.9224955714686309,
+          "n_gt_spells": 421,
+          "n_pred_spells": 303,
+          "mean_spell_duration_s": 10.726732673267326,
+          "count_error_ratio": -0.28028503562945367,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6331053351573187,
+          "macro_f1": 0.9115151449399724,
+          "accuracy": 0.9180371632301801,
+          "n_gt_spells": 401,
+          "n_pred_spells": 330,
+          "mean_spell_duration_s": 10.195757575757575,
+          "count_error_ratio": -0.1770573566084788,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6198795180722891,
+          "macro_f1": 0.9154118968696863,
+          "accuracy": 0.9264355289149241,
+          "n_gt_spells": 370,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 11.522448979591836,
+          "count_error_ratio": -0.20540540540540542,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5970353990877914,
+      "mean_macroF1": 0.9045087854353291,
+      "paired_vs_control": {
+        "mean_delta": 0.001279998977905856,
+        "lower": -0.007103196164855251,
+        "upper": 0.008525265627609722,
+        "wins": 5,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short_memory25",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5298636926889715,
+          "macro_f1": 0.9068912411866776,
+          "accuracy": 0.915734378318387,
+          "n_gt_spells": 511,
+          "n_pred_spells": 296,
+          "mean_spell_duration_s": 11.513513513513512,
+          "count_error_ratio": -0.4207436399217221,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5578826237054084,
+          "macro_f1": 0.8775471677951444,
+          "accuracy": 0.9016607681494196,
+          "n_gt_spells": 500,
+          "n_pred_spells": 369,
+          "mean_spell_duration_s": 7.292466124661247,
+          "count_error_ratio": -0.262,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6300429184549355,
+          "macro_f1": 0.9116492041579285,
+          "accuracy": 0.9240602270905302,
+          "n_gt_spells": 402,
+          "n_pred_spells": 297,
+          "mean_spell_duration_s": 9.769023569023568,
+          "count_error_ratio": -0.26119402985074625,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6122961104140526,
+          "macro_f1": 0.9025064299142068,
+          "accuracy": 0.9144707302014929,
+          "n_gt_spells": 456,
+          "n_pred_spells": 341,
+          "mean_spell_duration_s": 9.097360703812317,
+          "count_error_ratio": -0.25219298245614036,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5966850828729282,
+          "macro_f1": 0.9065482546765381,
+          "accuracy": 0.9220236507513114,
+          "n_gt_spells": 421,
+          "n_pred_spells": 303,
+          "mean_spell_duration_s": 10.732673267326732,
+          "count_error_ratio": -0.28028503562945367,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6314637482900136,
+          "macro_f1": 0.9111729621405252,
+          "accuracy": 0.9177421054480311,
+          "n_gt_spells": 401,
+          "n_pred_spells": 330,
+          "mean_spell_duration_s": 10.201212121212121,
+          "count_error_ratio": -0.1770573566084788,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6205438066465258,
+          "macro_f1": 0.9146834539136518,
+          "accuracy": 0.9258156801307813,
+          "n_gt_spells": 370,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 11.604794520547946,
+          "count_error_ratio": -0.21081081081081082,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5969682832961194,
+      "mean_macroF1": 0.9044283876835246,
+      "paired_vs_control": {
+        "mean_delta": 0.0012128831862338676,
+        "lower": -0.006378831635114274,
+        "upper": 0.008262832420068913,
+        "wins": 4,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short_contact25",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5361282367447596,
+          "macro_f1": 0.9068052760676651,
+          "accuracy": 0.9157412291819383,
+          "n_gt_spells": 511,
+          "n_pred_spells": 300,
+          "mean_spell_duration_s": 11.351333333333335,
+          "count_error_ratio": -0.41291585127201563,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5509174311926606,
+          "macro_f1": 0.875875442097407,
+          "accuracy": 0.9004174878674212,
+          "n_gt_spells": 500,
+          "n_pred_spells": 372,
+          "mean_spell_duration_s": 7.219139784946236,
+          "count_error_ratio": -0.256,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6342446043165467,
+          "macro_f1": 0.9121528868887268,
+          "accuracy": 0.9245558033436821,
+          "n_gt_spells": 402,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 9.889419795221842,
+          "count_error_ratio": -0.27114427860696516,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6132998745294855,
+          "macro_f1": 0.901452543353325,
+          "accuracy": 0.9136428691698939,
+          "n_gt_spells": 456,
+          "n_pred_spells": 341,
+          "mean_spell_duration_s": 9.092668621700879,
+          "count_error_ratio": -0.25219298245614036,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5936022253129346,
+          "macro_f1": 0.9065682239425575,
+          "accuracy": 0.921941577583082,
+          "n_gt_spells": 421,
+          "n_pred_spells": 298,
+          "mean_spell_duration_s": 10.913422818791947,
+          "count_error_ratio": -0.2921615201900237,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6286493860845839,
+          "macro_f1": 0.9101077779957162,
+          "accuracy": 0.9167796550634023,
+          "n_gt_spells": 401,
+          "n_pred_spells": 332,
+          "mean_spell_duration_s": 10.134939759036145,
+          "count_error_ratio": -0.17206982543640897,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6157099697885196,
+          "macro_f1": 0.9145114632048971,
+          "accuracy": 0.9255295960765615,
+          "n_gt_spells": 370,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 11.615068493150684,
+          "count_error_ratio": -0.21081081081081082,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5960788182813558,
+      "mean_macroF1": 0.9039248019357563,
+      "paired_vs_control": {
+        "mean_delta": 0.00032341817147027045,
+        "lower": -0.005683721242480336,
+        "upper": 0.004872033717430992,
+        "wins": 4,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5277845777233782,
+          "macro_f1": 0.9046709253374212,
+          "accuracy": 0.9140285132941007,
+          "n_gt_spells": 511,
+          "n_pred_spells": 306,
+          "mean_spell_duration_s": 11.021568627450982,
+          "count_error_ratio": -0.40117416829745595,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5428571428571429,
+          "macro_f1": 0.8705196142304102,
+          "accuracy": 0.8964474678760394,
+          "n_gt_spells": 500,
+          "n_pred_spells": 382,
+          "mean_spell_duration_s": 6.9317277486911,
+          "count_error_ratio": -0.236,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6373563218390805,
+          "macro_f1": 0.9109601370349161,
+          "accuracy": 0.923878029938636,
+          "n_gt_spells": 402,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 9.754421768707482,
+          "count_error_ratio": -0.26865671641791045,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6336239103362391,
+          "macro_f1": 0.9040622110708115,
+          "accuracy": 0.9162948307795925,
+          "n_gt_spells": 456,
+          "n_pred_spells": 347,
+          "mean_spell_duration_s": 8.824207492795388,
+          "count_error_ratio": -0.23903508771929824,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5867036011080332,
+          "macro_f1": 0.905619240856499,
+          "accuracy": 0.9220510084740546,
+          "n_gt_spells": 421,
+          "n_pred_spells": 301,
+          "mean_spell_duration_s": 10.695016611295681,
+          "count_error_ratio": -0.2850356294536817,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6300546448087431,
+          "macro_f1": 0.912286329966255,
+          "accuracy": 0.9193368225086936,
+          "n_gt_spells": 401,
+          "n_pred_spells": 331,
+          "mean_spell_duration_s": 10.059818731117826,
+          "count_error_ratio": -0.1745635910224439,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6135746606334841,
+          "macro_f1": 0.9128186698276034,
+          "accuracy": 0.9240651181799605,
+          "n_gt_spells": 370,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 11.453924914675767,
+          "count_error_ratio": -0.20810810810810812,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5959935513294431,
+      "mean_macroF1": 0.9029910183319882,
+      "paired_vs_control": {
+        "mean_delta": 0.00023815121955750307,
+        "lower": -0.0019490033206766779,
+        "upper": 0.0023376866750036444,
+        "wins": 3,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5331713244228432,
+          "macro_f1": 0.9061859382779565,
+          "accuracy": 0.9152274144155871,
+          "n_gt_spells": 511,
+          "n_pred_spells": 312,
+          "mean_spell_duration_s": 10.920512820512819,
+          "count_error_ratio": -0.38943248532289626,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5432098765432098,
+          "macro_f1": 0.8726437258293932,
+          "accuracy": 0.8979662477659808,
+          "n_gt_spells": 500,
+          "n_pred_spells": 391,
+          "mean_spell_duration_s": 6.885728900255755,
+          "count_error_ratio": -0.218,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6347949080622348,
+          "macro_f1": 0.9111528403134478,
+          "accuracy": 0.9236812570145904,
+          "n_gt_spells": 402,
+          "n_pred_spells": 305,
+          "mean_spell_duration_s": 9.52393442622951,
+          "count_error_ratio": -0.24129353233830847,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6289926289926291,
+          "macro_f1": 0.9027601425047607,
+          "accuracy": 0.9145899983162149,
+          "n_gt_spells": 456,
+          "n_pred_spells": 358,
+          "mean_spell_duration_s": 8.672067039106146,
+          "count_error_ratio": -0.2149122807017544,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5873626373626374,
+          "macro_f1": 0.9038812602635623,
+          "accuracy": 0.9199102666694025,
+          "n_gt_spells": 421,
+          "n_pred_spells": 307,
+          "mean_spell_duration_s": 10.61498371335505,
+          "count_error_ratio": -0.27078384798099764,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6304993252361674,
+          "macro_f1": 0.9099588757536599,
+          "accuracy": 0.9166251009870385,
+          "n_gt_spells": 401,
+          "n_pred_spells": 340,
+          "mean_spell_duration_s": 9.90764705882353,
+          "count_error_ratio": -0.15211970074812967,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6122571001494769,
+          "macro_f1": 0.9139604550844632,
+          "accuracy": 0.9249574279681221,
+          "n_gt_spells": 370,
+          "n_pred_spells": 299,
+          "mean_spell_duration_s": 11.352508361204013,
+          "count_error_ratio": -0.1918918918918919,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5957554001098855,
+      "mean_macroF1": 0.9029347482896061,
+      "paired_vs_control": {
+        "mean_delta": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "wins": 0,
+        "ties": 7
+      }
+    },
+    {
+      "family": "short_pp25",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5296894409937888,
+          "macro_f1": 0.9053624287738743,
+          "accuracy": 0.9146313892866196,
+          "n_gt_spells": 511,
+          "n_pred_spells": 294,
+          "mean_spell_duration_s": 11.455102040816328,
+          "count_error_ratio": -0.4246575342465753,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5390300230946882,
+          "macro_f1": 0.869243086708015,
+          "accuracy": 0.8955432640345858,
+          "n_gt_spells": 500,
+          "n_pred_spells": 366,
+          "mean_spell_duration_s": 7.2123497267759555,
+          "count_error_ratio": -0.268,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6363901018922853,
+          "macro_f1": 0.9119007033394159,
+          "accuracy": 0.9245922427740609,
+          "n_gt_spells": 402,
+          "n_pred_spells": 285,
+          "mean_spell_duration_s": 10.051929824561403,
+          "count_error_ratio": -0.291044776119403,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6177215189873417,
+          "macro_f1": 0.9022517663943139,
+          "accuracy": 0.9148074872312959,
+          "n_gt_spells": 456,
+          "n_pred_spells": 334,
+          "mean_spell_duration_s": 9.152694610778443,
+          "count_error_ratio": -0.2675438596491228,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5971910112359551,
+          "macro_f1": 0.9069803075525694,
+          "accuracy": 0.9230564047848657,
+          "n_gt_spells": 421,
+          "n_pred_spells": 291,
+          "mean_spell_duration_s": 11.046048109965636,
+          "count_error_ratio": -0.3087885985748218,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6204986149584488,
+          "macro_f1": 0.9120403128421933,
+          "accuracy": 0.9191611928764621,
+          "n_gt_spells": 401,
+          "n_pred_spells": 321,
+          "mean_spell_duration_s": 10.358878504672898,
+          "count_error_ratio": -0.19950124688279303,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.619571865443425,
+          "macro_f1": 0.9131942314701501,
+          "accuracy": 0.9243852598596826,
+          "n_gt_spells": 370,
+          "n_pred_spells": 284,
+          "mean_spell_duration_s": 11.799295774647888,
+          "count_error_ratio": -0.23243243243243245,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5942989395151334,
+      "mean_macroF1": 0.9029961195829331,
+      "paired_vs_control": {
+        "mean_delta": -0.0014564605947522402,
+        "lower": -0.006762826269424086,
+        "upper": 0.004300625697509994,
+        "wins": 3,
+        "ties": 0
+      }
+    },
+    {
+      "family": "short_pp25",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5308641975308642,
+          "macro_f1": 0.90684714660898,
+          "accuracy": 0.9158234395445546,
+          "n_gt_spells": 511,
+          "n_pred_spells": 299,
+          "mean_spell_duration_s": 11.377926421404682,
+          "count_error_ratio": -0.41487279843444225,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5404789053591791,
+          "macro_f1": 0.8719188076453944,
+          "accuracy": 0.89749295356772,
+          "n_gt_spells": 500,
+          "n_pred_spells": 377,
+          "mean_spell_duration_s": 7.131352785145889,
+          "count_error_ratio": -0.246,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.636441893830703,
+          "macro_f1": 0.9119881211330938,
+          "accuracy": 0.9243663183057123,
+          "n_gt_spells": 402,
+          "n_pred_spells": 295,
+          "mean_spell_duration_s": 9.825084745762712,
+          "count_error_ratio": -0.26616915422885573,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6145,
+          "macro_f1": 0.9013644935176846,
+          "accuracy": 0.9135306168266263,
+          "n_gt_spells": 456,
+          "n_pred_spells": 344,
+          "mean_spell_duration_s": 9.009883720930233,
+          "count_error_ratio": -0.24561403508771928,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5949860724233983,
+          "macro_f1": 0.9057570228893993,
+          "accuracy": 0.9212507950838172,
+          "n_gt_spells": 421,
+          "n_pred_spells": 297,
+          "mean_spell_duration_s": 10.95959595959596,
+          "count_error_ratio": -0.29453681710213775,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.621673525377229,
+          "macro_f1": 0.9092162634273097,
+          "accuracy": 0.916020935052162,
+          "n_gt_spells": 401,
+          "n_pred_spells": 328,
+          "mean_spell_duration_s": 10.253048780487804,
+          "count_error_ratio": -0.18204488778054864,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6151057401812687,
+          "macro_f1": 0.9138953146177636,
+          "accuracy": 0.9249301818677201,
+          "n_gt_spells": 370,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 11.604794520547946,
+          "count_error_ratio": -0.21081081081081082,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5934357621003776,
+      "mean_macroF1": 0.9029981671199466,
+      "paired_vs_control": {
+        "mean_delta": -0.002319638009508026,
+        "lower": -0.0073915266405599755,
+        "upper": 0.002507576839652002,
+        "wins": 3,
+        "ties": 0
+      }
+    },
+    {
+      "family": "combined",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5197994987468672,
+          "macro_f1": 0.9076399827353554,
+          "accuracy": 0.9164811224454843,
+          "n_gt_spells": 511,
+          "n_pred_spells": 287,
+          "mean_spell_duration_s": 11.811149825783973,
+          "count_error_ratio": -0.4383561643835616,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5573141486810552,
+          "macro_f1": 0.8780939145200747,
+          "accuracy": 0.9018232422771809,
+          "n_gt_spells": 500,
+          "n_pred_spells": 334,
+          "mean_spell_duration_s": 7.973413173652695,
+          "count_error_ratio": -0.332,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6087218045112783,
+          "macro_f1": 0.910246998133046,
+          "accuracy": 0.9233022869386506,
+          "n_gt_spells": 402,
+          "n_pred_spells": 263,
+          "mean_spell_duration_s": 10.997718631178707,
+          "count_error_ratio": -0.34577114427860695,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5850980392156863,
+          "macro_f1": 0.9009481832448186,
+          "accuracy": 0.9137761688275243,
+          "n_gt_spells": 456,
+          "n_pred_spells": 309,
+          "mean_spell_duration_s": 10.01294498381877,
+          "count_error_ratio": -0.3223684210526316,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.58830242510699,
+          "macro_f1": 0.9067521465452759,
+          "accuracy": 0.9225297686220599,
+          "n_gt_spells": 421,
+          "n_pred_spells": 280,
+          "mean_spell_duration_s": 11.51142857142857,
+          "count_error_ratio": -0.334916864608076,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6321678321678321,
+          "macro_f1": 0.913181830903708,
+          "accuracy": 0.9196248551055534,
+          "n_gt_spells": 401,
+          "n_pred_spells": 314,
+          "mean_spell_duration_s": 10.672611464968154,
+          "count_error_ratio": -0.2169576059850374,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6165137614678899,
+          "macro_f1": 0.9127302273696242,
+          "accuracy": 0.9245010557863905,
+          "n_gt_spells": 370,
+          "n_pred_spells": 284,
+          "mean_spell_duration_s": 11.91619718309859,
+          "count_error_ratio": -0.23243243243243245,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5868453585567999,
+      "mean_macroF1": 0.9042276119217004,
+      "paired_vs_control": {
+        "mean_delta": -0.008910041553085644,
+        "lower": -0.023677035751914013,
+        "upper": 0.004080414759145493,
+        "wins": 4,
+        "ties": 0
+      }
+    },
+    {
+      "family": "combined",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5173803526448363,
+          "macro_f1": 0.9070198181795107,
+          "accuracy": 0.9163509560380086,
+          "n_gt_spells": 511,
+          "n_pred_spells": 283,
+          "mean_spell_duration_s": 11.824028268551238,
+          "count_error_ratio": -0.4461839530332681,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5526570048309178,
+          "macro_f1": 0.8754406653017678,
+          "accuracy": 0.8998170400039559,
+          "n_gt_spells": 500,
+          "n_pred_spells": 328,
+          "mean_spell_duration_s": 7.981463414634146,
+          "count_error_ratio": -0.344,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6009049773755656,
+          "macro_f1": 0.9100648333760484,
+          "accuracy": 0.9235427871791508,
+          "n_gt_spells": 402,
+          "n_pred_spells": 261,
+          "mean_spell_duration_s": 10.94176245210728,
+          "count_error_ratio": -0.35074626865671643,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5858267716535434,
+          "macro_f1": 0.9012874118943154,
+          "accuracy": 0.9144216198013133,
+          "n_gt_spells": 456,
+          "n_pred_spells": 306,
+          "mean_spell_duration_s": 9.960130718954249,
+          "count_error_ratio": -0.32894736842105265,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5777142857142857,
+          "macro_f1": 0.9057181524036789,
+          "accuracy": 0.9219689353058251,
+          "n_gt_spells": 421,
+          "n_pred_spells": 279,
+          "mean_spell_duration_s": 11.40573476702509,
+          "count_error_ratio": -0.33729216152019004,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6379603399433427,
+          "macro_f1": 0.9135258602122621,
+          "accuracy": 0.9201095928905125,
+          "n_gt_spells": 401,
+          "n_pred_spells": 305,
+          "mean_spell_duration_s": 10.881311475409836,
+          "count_error_ratio": -0.23940149625935161,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6179566563467492,
+          "macro_f1": 0.9119349514842096,
+          "accuracy": 0.9237926571759417,
+          "n_gt_spells": 370,
+          "n_pred_spells": 276,
+          "mean_spell_duration_s": 12.08695652173913,
+          "count_error_ratio": -0.25405405405405407,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5843429126441773,
+      "mean_macroF1": 0.9035702418359703,
+      "paired_vs_control": {
+        "mean_delta": -0.011412487465708268,
+        "lower": -0.026302408926592573,
+        "upper": 0.002186656419186115,
+        "wins": 3,
+        "ties": 0
+      }
+    },
+    {
+      "family": "memory",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5279799247176913,
+          "macro_f1": 0.9083465100473821,
+          "accuracy": 0.9173306295258518,
+          "n_gt_spells": 511,
+          "n_pred_spells": 286,
+          "mean_spell_duration_s": 11.765734265734265,
+          "count_error_ratio": -0.44031311154598823,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5432399512789281,
+          "macro_f1": 0.8740199733593234,
+          "accuracy": 0.8987998106823207,
+          "n_gt_spells": 500,
+          "n_pred_spells": 321,
+          "mean_spell_duration_s": 8.200996884735202,
+          "count_error_ratio": -0.358,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6075872534142641,
+          "macro_f1": 0.9085411087791618,
+          "accuracy": 0.9223184223184223,
+          "n_gt_spells": 402,
+          "n_pred_spells": 257,
+          "mean_spell_duration_s": 11.095719844357978,
+          "count_error_ratio": -0.36069651741293535,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.585545335085414,
+          "macro_f1": 0.9000535246691629,
+          "accuracy": 0.9133482067688163,
+          "n_gt_spells": 456,
+          "n_pred_spells": 305,
+          "mean_spell_duration_s": 9.996065573770492,
+          "count_error_ratio": -0.33114035087719296,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5899569583931135,
+          "macro_f1": 0.9077495503780068,
+          "accuracy": 0.9238224210216741,
+          "n_gt_spells": 421,
+          "n_pred_spells": 276,
+          "mean_spell_duration_s": 11.58840579710145,
+          "count_error_ratio": -0.34441805225653205,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6171919770773638,
+          "macro_f1": 0.9123931394168371,
+          "accuracy": 0.9191541676911729,
+          "n_gt_spells": 401,
+          "n_pred_spells": 297,
+          "mean_spell_duration_s": 11.182491582491583,
+          "count_error_ratio": -0.2593516209476309,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6114374034003092,
+          "macro_f1": 0.9111012727424278,
+          "accuracy": 0.9234861385464206,
+          "n_gt_spells": 370,
+          "n_pred_spells": 277,
+          "mean_spell_duration_s": 12.044765342960288,
+          "count_error_ratio": -0.25135135135135134,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5832769719095835,
+      "mean_macroF1": 0.9031721541989003,
+      "paired_vs_control": {
+        "mean_delta": -0.012478428200302094,
+        "lower": -0.025271301962856478,
+        "upper": -0.0017178500789770043,
+        "wins": 2,
+        "ties": 0
+      }
+    },
+    {
+      "family": "memory",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5266583229036295,
+          "macro_f1": 0.9083374986198387,
+          "accuracy": 0.916905875985668,
+          "n_gt_spells": 511,
+          "n_pred_spells": 288,
+          "mean_spell_duration_s": 11.82013888888889,
+          "count_error_ratio": -0.436399217221135,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5429951690821256,
+          "macro_f1": 0.8768280117981321,
+          "accuracy": 0.9011450893960907,
+          "n_gt_spells": 500,
+          "n_pred_spells": 328,
+          "mean_spell_duration_s": 8.15219512195122,
+          "count_error_ratio": -0.344,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6008968609865472,
+          "macro_f1": 0.908549744527381,
+          "accuracy": 0.9217353914323612,
+          "n_gt_spells": 402,
+          "n_pred_spells": 267,
+          "mean_spell_duration_s": 10.8374531835206,
+          "count_error_ratio": -0.3358208955223881,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5871559633027523,
+          "macro_f1": 0.9011374162025915,
+          "accuracy": 0.9140217208284223,
+          "n_gt_spells": 456,
+          "n_pred_spells": 307,
+          "mean_spell_duration_s": 10.08599348534202,
+          "count_error_ratio": -0.3267543859649123,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5945636623748212,
+          "macro_f1": 0.9064481483485007,
+          "accuracy": 0.9222425125332567,
+          "n_gt_spells": 421,
+          "n_pred_spells": 278,
+          "mean_spell_duration_s": 11.62158273381295,
+          "count_error_ratio": -0.33966745843230406,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6115983026874116,
+          "macro_f1": 0.9118457352829795,
+          "accuracy": 0.9184656995328252,
+          "n_gt_spells": 401,
+          "n_pred_spells": 306,
+          "mean_spell_duration_s": 10.964705882352941,
+          "count_error_ratio": -0.23690773067331672,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6042813455657493,
+          "macro_f1": 0.9109428292220964,
+          "accuracy": 0.923159185341598,
+          "n_gt_spells": 370,
+          "n_pred_spells": 284,
+          "mean_spell_duration_s": 11.919014084507042,
+          "count_error_ratio": -0.23243243243243245,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5811642324147195,
+      "mean_macroF1": 0.9034413405716457,
+      "paired_vs_control": {
+        "mean_delta": -0.014591167695165996,
+        "lower": -0.027543180297757673,
+        "upper": -0.0027481983543597827,
+        "wins": 1,
+        "ties": 0
+      }
+    },
+    {
+      "family": "setseq",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5584999999999999,
+          "macro_f1": 0.9112508241280106,
+          "accuracy": 0.9194955024080785,
+          "n_gt_spells": 511,
+          "n_pred_spells": 289,
+          "mean_spell_duration_s": 11.615916955017301,
+          "count_error_ratio": -0.4344422700587084,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5303370786516854,
+          "macro_f1": 0.8644923256486705,
+          "accuracy": 0.8908950911621139,
+          "n_gt_spells": 500,
+          "n_pred_spells": 301,
+          "mean_spell_duration_s": 8.394418604651163,
+          "count_error_ratio": -0.398,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5975609756097561,
+          "macro_f1": 0.906816906814937,
+          "accuracy": 0.9209555876222543,
+          "n_gt_spells": 402,
+          "n_pred_spells": 254,
+          "mean_spell_duration_s": 11.111811023622046,
+          "count_error_ratio": -0.3681592039800995,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6161458333333333,
+          "macro_f1": 0.906607808452535,
+          "accuracy": 0.9195922433630802,
+          "n_gt_spells": 456,
+          "n_pred_spells": 312,
+          "mean_spell_duration_s": 9.722435897435897,
+          "count_error_ratio": -0.3157894736842105,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5973645680819912,
+          "macro_f1": 0.9040268425882432,
+          "accuracy": 0.9182482850127556,
+          "n_gt_spells": 421,
+          "n_pred_spells": 262,
+          "mean_spell_duration_s": 11.908396946564885,
+          "count_error_ratio": -0.37767220902612825,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6209631728045327,
+          "macro_f1": 0.9093209592839867,
+          "accuracy": 0.9159085320875338,
+          "n_gt_spells": 401,
+          "n_pred_spells": 305,
+          "mean_spell_duration_s": 10.867540983606556,
+          "count_error_ratio": -0.23940149625935161,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5399075500770417,
+          "macro_f1": 0.8637790801216241,
+          "accuracy": 0.8839043661875894,
+          "n_gt_spells": 370,
+          "n_pred_spells": 279,
+          "mean_spell_duration_s": 11.852329749103943,
+          "count_error_ratio": -0.24594594594594596,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.58011131122262,
+      "mean_macroF1": 0.8951849638625724,
+      "paired_vs_control": {
+        "mean_delta": -0.01564408888726546,
+        "lower": -0.03880166677151511,
+        "upper": 0.004577545559778263,
+        "wins": 2,
+        "ties": 0
+      }
+    },
+    {
+      "family": "contact",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5193877551020408,
+          "macro_f1": 0.9050282098254027,
+          "accuracy": 0.9144669685613872,
+          "n_gt_spells": 511,
+          "n_pred_spells": 273,
+          "mean_spell_duration_s": 12.302564102564101,
+          "count_error_ratio": -0.4657534246575342,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5357575757575759,
+          "macro_f1": 0.8695849961394831,
+          "accuracy": 0.8953807899068246,
+          "n_gt_spells": 500,
+          "n_pred_spells": 325,
+          "mean_spell_duration_s": 8.029292307692309,
+          "count_error_ratio": -0.35,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5975975975975976,
+          "macro_f1": 0.9095350814425149,
+          "accuracy": 0.9229087410905593,
+          "n_gt_spells": 402,
+          "n_pred_spells": 264,
+          "mean_spell_duration_s": 10.811363636363637,
+          "count_error_ratio": -0.34328358208955223,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5728129205921938,
+          "macro_f1": 0.898595757531694,
+          "accuracy": 0.9123730145366784,
+          "n_gt_spells": 456,
+          "n_pred_spells": 287,
+          "mean_spell_duration_s": 10.536585365853659,
+          "count_error_ratio": -0.3706140350877193,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5823444283646888,
+          "macro_f1": 0.9076697597758955,
+          "accuracy": 0.9238634576057889,
+          "n_gt_spells": 421,
+          "n_pred_spells": 270,
+          "mean_spell_duration_s": 11.808148148148147,
+          "count_error_ratio": -0.3586698337292161,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6284090909090909,
+          "macro_f1": 0.9129807803277442,
+          "accuracy": 0.919667006217289,
+          "n_gt_spells": 401,
+          "n_pred_spells": 303,
+          "mean_spell_duration_s": 10.934653465346535,
+          "count_error_ratio": -0.24438902743142144,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6223622047244094,
+          "macro_f1": 0.9135854814246227,
+          "accuracy": 0.9249846740685239,
+          "n_gt_spells": 370,
+          "n_pred_spells": 265,
+          "mean_spell_duration_s": 12.584150943396226,
+          "count_error_ratio": -0.28378378378378377,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5798102247210853,
+      "mean_macroF1": 0.902425723781051,
+      "paired_vs_control": {
+        "mean_delta": -0.0159451753888002,
+        "lower": -0.032723220014207986,
+        "upper": -0.0014606198012389684,
+        "wins": 1,
+        "ties": 0
+      }
+    },
+    {
+      "family": "contact",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5235069885641678,
+          "macro_f1": 0.9055346136754739,
+          "accuracy": 0.914542328060452,
+          "n_gt_spells": 511,
+          "n_pred_spells": 276,
+          "mean_spell_duration_s": 12.317391304347826,
+          "count_error_ratio": -0.4598825831702544,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5338146811070998,
+          "macro_f1": 0.8730270376221334,
+          "accuracy": 0.8981993628188555,
+          "n_gt_spells": 500,
+          "n_pred_spells": 331,
+          "mean_spell_duration_s": 8.037220543806647,
+          "count_error_ratio": -0.338,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6027067669172932,
+          "macro_f1": 0.9108767784309449,
+          "accuracy": 0.9239217572550906,
+          "n_gt_spells": 402,
+          "n_pred_spells": 263,
+          "mean_spell_duration_s": 10.967300380228137,
+          "count_error_ratio": -0.34577114427860695,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5644859813084113,
+          "macro_f1": 0.8971416303468316,
+          "accuracy": 0.9104787562440366,
+          "n_gt_spells": 456,
+          "n_pred_spells": 293,
+          "mean_spell_duration_s": 10.526279863481228,
+          "count_error_ratio": -0.3574561403508772,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5835497835497835,
+          "macro_f1": 0.9074403654685331,
+          "accuracy": 0.9231179596610378,
+          "n_gt_spells": 421,
+          "n_pred_spells": 272,
+          "mean_spell_duration_s": 11.845588235294118,
+          "count_error_ratio": -0.35391923990498814,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6268741159830269,
+          "macro_f1": 0.9128227224878461,
+          "accuracy": 0.9192665706558011,
+          "n_gt_spells": 401,
+          "n_pred_spells": 306,
+          "mean_spell_duration_s": 10.933986928104575,
+          "count_error_ratio": -0.23690773067331672,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6195956454121306,
+          "macro_f1": 0.913506063236543,
+          "accuracy": 0.9248075744159118,
+          "n_gt_spells": 370,
+          "n_pred_spells": 273,
+          "mean_spell_duration_s": 12.412454212454213,
+          "count_error_ratio": -0.26216216216216215,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5792191375488447,
+      "mean_macroF1": 0.9029070301811866,
+      "paired_vs_control": {
+        "mean_delta": -0.016536262561040776,
+        "lower": -0.03467292616032353,
+        "upper": -0.0022065304412303938,
+        "wins": 1,
+        "ties": 0
+      }
+    },
+    {
+      "family": "setseq",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5558312655086848,
+          "macro_f1": 0.9111782859296503,
+          "accuracy": 0.9190501962772407,
+          "n_gt_spells": 511,
+          "n_pred_spells": 295,
+          "mean_spell_duration_s": 11.535593220338983,
+          "count_error_ratio": -0.4227005870841487,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5256441717791411,
+          "macro_f1": 0.8693723300552904,
+          "accuracy": 0.8950911621138591,
+          "n_gt_spells": 500,
+          "n_pred_spells": 315,
+          "mean_spell_duration_s": 8.215619047619048,
+          "count_error_ratio": -0.37,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5954614220877458,
+          "macro_f1": 0.9073584975915958,
+          "accuracy": 0.9212325272931333,
+          "n_gt_spells": 402,
+          "n_pred_spells": 259,
+          "mean_spell_duration_s": 11.033976833976833,
+          "count_error_ratio": -0.35572139303482586,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6165374677002584,
+          "macro_f1": 0.9060888759094426,
+          "accuracy": 0.9187713981029354,
+          "n_gt_spells": 456,
+          "n_pred_spells": 318,
+          "mean_spell_duration_s": 9.652830188679244,
+          "count_error_ratio": -0.3026315789473684,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5991240875912409,
+          "macro_f1": 0.9063789809420589,
+          "accuracy": 0.9203548296639787,
+          "n_gt_spells": 421,
+          "n_pred_spells": 264,
+          "mean_spell_duration_s": 11.995454545454544,
+          "count_error_ratio": -0.37292161520190026,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6165497896213183,
+          "macro_f1": 0.9090223314032606,
+          "accuracy": 0.9153184165232358,
+          "n_gt_spells": 401,
+          "n_pred_spells": 312,
+          "mean_spell_duration_s": 10.7525641025641,
+          "count_error_ratio": -0.22194513715710723,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5410687022900763,
+          "macro_f1": 0.866233710267596,
+          "accuracy": 0.8858456508412234,
+          "n_gt_spells": 370,
+          "n_pred_spells": 285,
+          "mean_spell_duration_s": 11.782456140350877,
+          "count_error_ratio": -0.22972972972972974,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.578602415225495,
+      "mean_macroF1": 0.8965190017284136,
+      "paired_vs_control": {
+        "mean_delta": -0.017152984884390415,
+        "lower": -0.040036747434495444,
+        "upper": 0.002827291141422788,
+        "wins": 2,
+        "ties": 0
+      }
+    },
+    {
+      "family": "pp",
+      "decoder": "dead45",
+      "rows": [
+        {
+          "spell_f1_mean": 0.5041025641025642,
+          "macro_f1": 0.9029305171975682,
+          "accuracy": 0.9124665164043928,
+          "n_gt_spells": 511,
+          "n_pred_spells": 269,
+          "mean_spell_duration_s": 12.586617100371747,
+          "count_error_ratio": -0.4735812133072407,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5239570917759238,
+          "macro_f1": 0.8699878282787893,
+          "accuracy": 0.8961860964531192,
+          "n_gt_spells": 500,
+          "n_pred_spells": 339,
+          "mean_spell_duration_s": 7.877050147492626,
+          "count_error_ratio": -0.322,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6050822122571002,
+          "macro_f1": 0.9088381709981231,
+          "accuracy": 0.9222528313437405,
+          "n_gt_spells": 402,
+          "n_pred_spells": 267,
+          "mean_spell_duration_s": 10.795505617977529,
+          "count_error_ratio": -0.3358208955223881,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5863157894736842,
+          "macro_f1": 0.8964520563694028,
+          "accuracy": 0.9095947690408037,
+          "n_gt_spells": 456,
+          "n_pred_spells": 304,
+          "mean_spell_duration_s": 10.170394736842105,
+          "count_error_ratio": -0.3333333333333333,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5680232558139534,
+          "macro_f1": 0.9028667796227424,
+          "accuracy": 0.9190690166950503,
+          "n_gt_spells": 421,
+          "n_pred_spells": 267,
+          "mean_spell_duration_s": 12.149063670411985,
+          "count_error_ratio": -0.3657957244655582,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6095238095238096,
+          "macro_f1": 0.9090282132296612,
+          "accuracy": 0.9161684639432365,
+          "n_gt_spells": 401,
+          "n_pred_spells": 292,
+          "mean_spell_duration_s": 11.459589041095889,
+          "count_error_ratio": -0.2718204488778055,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6006230529595016,
+          "macro_f1": 0.9123018664239776,
+          "accuracy": 0.9237109188747361,
+          "n_gt_spells": 370,
+          "n_pred_spells": 272,
+          "mean_spell_duration_s": 12.41470588235294,
+          "count_error_ratio": -0.2648648648648649,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5710896822723625,
+      "mean_macroF1": 0.9003436331600378,
+      "paired_vs_control": {
+        "mean_delta": -0.02466571783752309,
+        "lower": -0.03195617817562426,
+        "upper": -0.017900137416979187,
+        "wins": 0,
+        "ties": 0
+      }
+    },
+    {
+      "family": "pp",
+      "decoder": "hysteresis",
+      "rows": [
+        {
+          "spell_f1_mean": 0.49871465295629813,
+          "macro_f1": 0.9023838892137978,
+          "accuracy": 0.912295244815609,
+          "n_gt_spells": 511,
+          "n_pred_spells": 267,
+          "mean_spell_duration_s": 12.546067415730338,
+          "count_error_ratio": -0.4774951076320939,
+          "match": "J03WMX",
+          "training_names": [
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.520863309352518,
+          "macro_f1": 0.8659042049145528,
+          "accuracy": 0.8929366138978956,
+          "n_gt_spells": 500,
+          "n_pred_spells": 334,
+          "mean_spell_duration_s": 7.841077844311377,
+          "count_error_ratio": -0.332,
+          "match": "J03WN1",
+          "training_names": [
+            "J03WMX",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6039097744360903,
+          "macro_f1": 0.9074187242448263,
+          "accuracy": 0.9212471030652849,
+          "n_gt_spells": 402,
+          "n_pred_spells": 263,
+          "mean_spell_duration_s": 10.82509505703422,
+          "count_error_ratio": -0.34577114427860695,
+          "match": "J03WOH",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.5828269484808455,
+          "macro_f1": 0.896427661596888,
+          "accuracy": 0.9101630465285963,
+          "n_gt_spells": 456,
+          "n_pred_spells": 301,
+          "mean_spell_duration_s": 10.097009966777408,
+          "count_error_ratio": -0.3399122807017544,
+          "match": "J03WOY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WPY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.56992700729927,
+          "macro_f1": 0.9034257808134809,
+          "accuracy": 0.9200402158524325,
+          "n_gt_spells": 421,
+          "n_pred_spells": 264,
+          "mean_spell_duration_s": 12.168181818181818,
+          "count_error_ratio": -0.37292161520190026,
+          "match": "J03WPY",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WQQ",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6116279069767441,
+          "macro_f1": 0.9097959531304264,
+          "accuracy": 0.9172643928483614,
+          "n_gt_spells": 401,
+          "n_pred_spells": 287,
+          "mean_spell_duration_s": 11.496864111498258,
+          "count_error_ratio": -0.28428927680798005,
+          "match": "J03WQQ",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WR9"
+          ]
+        },
+        {
+          "spell_f1_mean": 0.6050314465408805,
+          "macro_f1": 0.9113662081703525,
+          "accuracy": 0.9230638239901914,
+          "n_gt_spells": 370,
+          "n_pred_spells": 266,
+          "mean_spell_duration_s": 12.54360902255639,
+          "count_error_ratio": -0.2810810810810811,
+          "match": "J03WR9",
+          "training_names": [
+            "J03WMX",
+            "J03WN1",
+            "J03WOH",
+            "J03WOY",
+            "J03WPY",
+            "J03WQQ"
+          ]
+        }
+      ],
+      "mean_spellF1": 0.5704144351489495,
+      "mean_macroF1": 0.8995317745834749,
+      "paired_vs_control": {
+        "mean_delta": -0.025340964960936012,
+        "lower": -0.034350085896044824,
+        "upper": -0.01658952101324867,
+        "wins": 0,
+        "ties": 0
+      }
+    }
+  ],
+  "native_rule": [
+    {
+      "match": "J03WMX",
+      "spell_f1_mean": 0.3142857142857143,
+      "macro_f1": 0.6377527568150122,
+      "accuracy": 0.6424534312550096,
+      "n_gt_spells": 511,
+      "n_pred_spells": 259,
+      "mean_spell_duration_s": 18.4211583011583,
+      "count_error_ratio": -0.4931506849315068
+    },
+    {
+      "match": "J03WN1",
+      "spell_f1_mean": 0.30769230769230765,
+      "macro_f1": 0.543230851016138,
+      "accuracy": 0.5432145859382175,
+      "n_gt_spells": 500,
+      "n_pred_spells": 267,
+      "mean_spell_duration_s": 17.36119850187266,
+      "count_error_ratio": -0.466
+    },
+    {
+      "match": "J03WOH",
+      "spell_f1_mean": 0.31383647798742137,
+      "macro_f1": 0.5673902189741932,
+      "accuracy": 0.5704009794918886,
+      "n_gt_spells": 402,
+      "n_pred_spells": 234,
+      "mean_spell_duration_s": 19.53145299145299,
+      "count_error_ratio": -0.417910447761194
+    },
+    {
+      "match": "J03WOY",
+      "spell_f1_mean": 0.3100817438692099,
+      "macro_f1": 0.5518445820145522,
+      "accuracy": 0.555270247516417,
+      "n_gt_spells": 456,
+      "n_pred_spells": 278,
+      "mean_spell_duration_s": 17.524604316546764,
+      "count_error_ratio": -0.39035087719298245
+    },
+    {
+      "match": "J03WPY",
+      "spell_f1_mean": 0.3529411764705882,
+      "macro_f1": 0.5708135728903172,
+      "accuracy": 0.5854142301194849,
+      "n_gt_spells": 421,
+      "n_pred_spells": 225,
+      "mean_spell_duration_s": 22.33688888888889,
+      "count_error_ratio": -0.4655581947743468
+    },
+    {
+      "match": "J03WQQ",
+      "spell_f1_mean": 0.3252747252747253,
+      "macro_f1": 0.48147621845664373,
+      "accuracy": 0.519800484737785,
+      "n_gt_spells": 401,
+      "n_pred_spells": 236,
+      "mean_spell_duration_s": 22.79237288135593,
+      "count_error_ratio": -0.4114713216957606
+    },
+    {
+      "match": "J03WR9",
+      "spell_f1_mean": 0.3301282051282052,
+      "macro_f1": 0.5756407712447061,
+      "accuracy": 0.5973366936857162,
+      "n_gt_spells": 370,
+      "n_pred_spells": 254,
+      "mean_spell_duration_s": 20.038425196850394,
+      "count_error_ratio": -0.31351351351351353
+    }
+  ],
+  "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572",
+  "decoded_sha256": [
+    {
+      "match": "J03WMX",
+      "family": "short",
+      "decoder": "dead45",
+      "sha256": "2cebde0a7f26c8920bab9f02a47f3d6cd634ed803a40fb66a71f4190fb044b3c"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short",
+      "decoder": "hysteresis",
+      "sha256": "936d64dc3e6c3588cb992bd7d3c6d485cc66d729ba3d2eab95a86e8bb417e3e2"
+    },
+    {
+      "match": "J03WMX",
+      "family": "setseq",
+      "decoder": "dead45",
+      "sha256": "17efe6ff303dec8c61168ad39937aeea56968a65f87a1c0c57a3ab1fca0b8a33"
+    },
+    {
+      "match": "J03WMX",
+      "family": "setseq",
+      "decoder": "hysteresis",
+      "sha256": "a009e34e4bb435bce771d56efa3034a7a53d120112c6f0895a10a05e6787dca9"
+    },
+    {
+      "match": "J03WMX",
+      "family": "pp",
+      "decoder": "dead45",
+      "sha256": "f726e7bcdc0435182da302569c982d71527af120621cf2dc1743771c031ee480"
+    },
+    {
+      "match": "J03WMX",
+      "family": "pp",
+      "decoder": "hysteresis",
+      "sha256": "49871cb5b09cdc62fbae80f8053388065c8aae4b9ea68f4a8dc4490081cda1c5"
+    },
+    {
+      "match": "J03WMX",
+      "family": "contact",
+      "decoder": "dead45",
+      "sha256": "36ff41829b76c44b8d73ec2baf5fac87b13dd48765bdc673de3d775b11397e01"
+    },
+    {
+      "match": "J03WMX",
+      "family": "contact",
+      "decoder": "hysteresis",
+      "sha256": "d97158aaacf795dad6c1eaa688862b48d095dd63e19e91948b719b067e32bb4f"
+    },
+    {
+      "match": "J03WMX",
+      "family": "memory",
+      "decoder": "dead45",
+      "sha256": "3e8705db2e0492d69e79b1c2074695dde39efc8eb17760a31b0462212a67cbac"
+    },
+    {
+      "match": "J03WMX",
+      "family": "memory",
+      "decoder": "hysteresis",
+      "sha256": "2ee96d258de4b95154039bfed032bc9d7386b0b5663062ddd1aa5b5e4c1305c1"
+    },
+    {
+      "match": "J03WMX",
+      "family": "combined",
+      "decoder": "dead45",
+      "sha256": "4f4dd80d43a56de336fccd3406cd61b12c74ec45e89de5d086dc06ee4db00f75"
+    },
+    {
+      "match": "J03WMX",
+      "family": "combined",
+      "decoder": "hysteresis",
+      "sha256": "8e48a0301376136a1db2bd5936ce98c4066d28b76e7a91e56b8418de633581a1"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_setseq25",
+      "decoder": "dead45",
+      "sha256": "36e8b792821117b9b6608ee30a472fd314adf8cb6dd9b494af936f759c5fbdfe"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_setseq25",
+      "decoder": "hysteresis",
+      "sha256": "e2dba80722e5a47aa153ab40319589859690a057a6c8fe77abfeee210fd99008"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_pp25",
+      "decoder": "dead45",
+      "sha256": "9da11f8809cb0c58c77bbe835f8fe7f189e2646fbd4e58f16bd12bd5b8a27019"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_pp25",
+      "decoder": "hysteresis",
+      "sha256": "3a284a6c88e522b1bc0f5afff60e9b02146b7c02b810c66b425f8eb53b467ecb"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_contact25",
+      "decoder": "dead45",
+      "sha256": "2efdd8de35658b3751bc4577a8dd389b15f5ddb00e7e48f6a28a2e2ba79c2513"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_contact25",
+      "decoder": "hysteresis",
+      "sha256": "4cb39ed28cb5c4ed26a1d9ae756c8c72252ba01b3392168688406c7cfc842311"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_memory25",
+      "decoder": "dead45",
+      "sha256": "96172499b3317cb0ab9df797cd4acf9c7795113078133f2fac1c77ed701874a7"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_memory25",
+      "decoder": "hysteresis",
+      "sha256": "0c91b07be337af58790fb72cfe41c26dad9962376607b5148e71e40166b1ab44"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_combined25",
+      "decoder": "dead45",
+      "sha256": "cfb659b026093fd2dc5467a4dc4a5c4d3660c1e526b8e0017aeee8c7358c07f2"
+    },
+    {
+      "match": "J03WMX",
+      "family": "short_combined25",
+      "decoder": "hysteresis",
+      "sha256": "f8a291536f47b8330d162f35508e88edc65c6ae1b93f8e34938ff869ce707cd0"
+    },
+    {
+      "match": "J03WMX",
+      "family": "triple_contact",
+      "decoder": "dead45",
+      "sha256": "254a198f1006481d1fe36a080c43660024b7c6210595944ff5376306cc19cf7f"
+    },
+    {
+      "match": "J03WMX",
+      "family": "triple_contact",
+      "decoder": "hysteresis",
+      "sha256": "fa284e36145e21da9306f0bd4fcad4cc75b9141d4073b3408953d4011fe25556"
+    },
+    {
+      "match": "J03WMX",
+      "family": "triple_combined",
+      "decoder": "dead45",
+      "sha256": "dd56cacbfe69ea7b5e1669b535eeb2bb2c700487c976a58aa52199dc2448f316"
+    },
+    {
+      "match": "J03WMX",
+      "family": "triple_combined",
+      "decoder": "hysteresis",
+      "sha256": "df23b498e76bf86b86eff7f82e0266413b7488840adfe5bbe6860d3958392583"
+    },
+    {
+      "match": "J03WMX",
+      "family": "quality_combined",
+      "decoder": "dead45",
+      "sha256": "581a38f778c688629f84ca4a6726c6a88c9fb8a355d4f554f94d961e806858e5"
+    },
+    {
+      "match": "J03WMX",
+      "family": "quality_combined",
+      "decoder": "hysteresis",
+      "sha256": "5ae9170bc5b0b8ac693bc2413b0c42a2397f0f4329f2fe3672a5d64bd9e17297"
+    },
+    {
+      "match": "J03WMX",
+      "family": "native25",
+      "decoder": "native",
+      "sha256": "55562d4ae06ca68c2cc7533961dbebba944dc3c5449085f383491b613e6d166f"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short",
+      "decoder": "dead45",
+      "sha256": "197950a3b820f4d9d1d50ecc2e6fbea5d7a86ed5df3de6b88eabaa173c1dd8fa"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short",
+      "decoder": "hysteresis",
+      "sha256": "74e35333a43ce7f639c5c50a993b708bf5fa2fac2a7115212163ca71a36c2237"
+    },
+    {
+      "match": "J03WN1",
+      "family": "setseq",
+      "decoder": "dead45",
+      "sha256": "b8962984c6bef37102c4c7372930aae86c81ca5fd2abcad6cf631445d98010a8"
+    },
+    {
+      "match": "J03WN1",
+      "family": "setseq",
+      "decoder": "hysteresis",
+      "sha256": "5ad13b1fcc6fa2be6f508e683b45db0803149afaa09bc174ff0686109eb698d5"
+    },
+    {
+      "match": "J03WN1",
+      "family": "pp",
+      "decoder": "dead45",
+      "sha256": "40582c9abe1c394da1befede78ff4dba7808ee921b8e5f810034c5c38bce3906"
+    },
+    {
+      "match": "J03WN1",
+      "family": "pp",
+      "decoder": "hysteresis",
+      "sha256": "ee9ab67351c9ed0ab2d79f426bb4a123a2fc20c52fcca9f0203e6ed464e0f528"
+    },
+    {
+      "match": "J03WN1",
+      "family": "contact",
+      "decoder": "dead45",
+      "sha256": "59401fae17e0b64a77fe93c997b2ff6306791c08c75137e3b2c2585ab7e67c55"
+    },
+    {
+      "match": "J03WN1",
+      "family": "contact",
+      "decoder": "hysteresis",
+      "sha256": "87b7ebd00074a5264054abc9eaeae54db19902bf7ebdb12b3f6f8f0dbf386759"
+    },
+    {
+      "match": "J03WN1",
+      "family": "memory",
+      "decoder": "dead45",
+      "sha256": "f6ae17846b775bc537d15a275b513e28a41839d839c11c116a2385d4819125cd"
+    },
+    {
+      "match": "J03WN1",
+      "family": "memory",
+      "decoder": "hysteresis",
+      "sha256": "1483356e4054d698671c8ff7e0b81d99b6d4db2378186038954bcbbcf24e907e"
+    },
+    {
+      "match": "J03WN1",
+      "family": "combined",
+      "decoder": "dead45",
+      "sha256": "a7f4453852bbd435f072e54d030434066919758f83998a1962fa0ec23cc3d765"
+    },
+    {
+      "match": "J03WN1",
+      "family": "combined",
+      "decoder": "hysteresis",
+      "sha256": "68913b4c10fa2dee7a30b9f87890a60c6ee0590023d7267f4390d625fdf443bb"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_setseq25",
+      "decoder": "dead45",
+      "sha256": "6c257062fb4b4a1149734b8144f0a12a00f24435e72a831e3b7200b149ecfda3"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_setseq25",
+      "decoder": "hysteresis",
+      "sha256": "444fcd3821dbc40816ad9101e8b526da523bcd6f0b6fdd524801d1dce13c5193"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_pp25",
+      "decoder": "dead45",
+      "sha256": "61cd620301ef3b0d947fafef0ba86b367197dd099cb41b921a093be0d3878ae3"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_pp25",
+      "decoder": "hysteresis",
+      "sha256": "b5f8c13facf3eeba683bcf3d2ffbc9291337fcaf862be028588c485d3628350e"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_contact25",
+      "decoder": "dead45",
+      "sha256": "850eda7eb4798f22a0053007b022e825204505a331ae1ce25ad8cfccfe898254"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_contact25",
+      "decoder": "hysteresis",
+      "sha256": "69c44c6e624cfa431e4ce4781a1e7987eaaffe94ac030eca123c8c774e3752d0"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_memory25",
+      "decoder": "dead45",
+      "sha256": "f083882632fd544c4dce14d60a7d165ca2609aa0eb13b6cb1cdf3c5dfc496b30"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_memory25",
+      "decoder": "hysteresis",
+      "sha256": "d5783606da89b4b46ce898603a63555e7bd3ea03d9c142eda96238a6059f48f0"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_combined25",
+      "decoder": "dead45",
+      "sha256": "8af076c46160a2a40f337b0e4d1bce923aa29423222b63963b1d67382f454181"
+    },
+    {
+      "match": "J03WN1",
+      "family": "short_combined25",
+      "decoder": "hysteresis",
+      "sha256": "7615a81bd1e45723b2e769af4af94ba6952f42ed6d8bee5249fb628fdab947c2"
+    },
+    {
+      "match": "J03WN1",
+      "family": "triple_contact",
+      "decoder": "dead45",
+      "sha256": "f393f1110ffe33d5514a98453ca645738c93ac7e2cd566e6faf21540124e5815"
+    },
+    {
+      "match": "J03WN1",
+      "family": "triple_contact",
+      "decoder": "hysteresis",
+      "sha256": "0bbe4fc81dcca8ace7a9571373473b0fc5b77427249a24ff34cc5f1f59af60e7"
+    },
+    {
+      "match": "J03WN1",
+      "family": "triple_combined",
+      "decoder": "dead45",
+      "sha256": "fdc342349c650bc9362e13ddb70c93c3be8ab345f6154abc008697374b7017d0"
+    },
+    {
+      "match": "J03WN1",
+      "family": "triple_combined",
+      "decoder": "hysteresis",
+      "sha256": "1c4a5d37144711639526898862b95bfecda31abd375116444fbe9cee8071fd84"
+    },
+    {
+      "match": "J03WN1",
+      "family": "quality_combined",
+      "decoder": "dead45",
+      "sha256": "25ab5d3f279236c45e83099ea35efb785674012715a9cb0eae50f86d6e64392e"
+    },
+    {
+      "match": "J03WN1",
+      "family": "quality_combined",
+      "decoder": "hysteresis",
+      "sha256": "b620620a3b0a4e730f56a3c42ba90bbe41abe90f6dc5a55dc70cb8adaba83580"
+    },
+    {
+      "match": "J03WN1",
+      "family": "native25",
+      "decoder": "native",
+      "sha256": "c8fdde436488df354aa92893b7cb423b0961cd61192694f2b63d26eb04e5f98e"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short",
+      "decoder": "dead45",
+      "sha256": "01166387175b196e0f7de15e89ad3cf91980c2092396c097f08e3f3af858ff54"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short",
+      "decoder": "hysteresis",
+      "sha256": "6c49a48a1bfe3d67184121bf5c6f28f27ac00bb63dbee54fd7db596ac88311dc"
+    },
+    {
+      "match": "J03WOH",
+      "family": "setseq",
+      "decoder": "dead45",
+      "sha256": "8dc56271b227a2c33f758a1875a5f59f0aad51d831302eb189e74b2f3b5a9d2e"
+    },
+    {
+      "match": "J03WOH",
+      "family": "setseq",
+      "decoder": "hysteresis",
+      "sha256": "59261a427653b6154feea9fded8f22f6a681458d3a0abe123274397a5717e7df"
+    },
+    {
+      "match": "J03WOH",
+      "family": "pp",
+      "decoder": "dead45",
+      "sha256": "72fcb16150dde58c917aac6f0d8939d6ba6789c95babc125fbdf411ad8f01535"
+    },
+    {
+      "match": "J03WOH",
+      "family": "pp",
+      "decoder": "hysteresis",
+      "sha256": "e6b0730ae7f1ebe3bf08950442729f38777a865e6116e5afa7cdb2717a08dde2"
+    },
+    {
+      "match": "J03WOH",
+      "family": "contact",
+      "decoder": "dead45",
+      "sha256": "4db961aa6fccd11759df7c157ba16177629c8ae528ae11df9d102c86c100b047"
+    },
+    {
+      "match": "J03WOH",
+      "family": "contact",
+      "decoder": "hysteresis",
+      "sha256": "0b13333f8365f36f8eddbc47b8293036a02d5605076a34f9515252e16b6c288f"
+    },
+    {
+      "match": "J03WOH",
+      "family": "memory",
+      "decoder": "dead45",
+      "sha256": "14f426cde7df4b433ccebf3f65d14af7dfd8c192e870359b135c54222e415d37"
+    },
+    {
+      "match": "J03WOH",
+      "family": "memory",
+      "decoder": "hysteresis",
+      "sha256": "25d052388c5632b6bac8c8cad5049352aeb3bb33dbc94bc4a6110bc24cfd74fe"
+    },
+    {
+      "match": "J03WOH",
+      "family": "combined",
+      "decoder": "dead45",
+      "sha256": "193cf9be4f34e339a8a178073cfec533696d832ffb56800572327d8bd681b805"
+    },
+    {
+      "match": "J03WOH",
+      "family": "combined",
+      "decoder": "hysteresis",
+      "sha256": "883ff8f89334e56bc01da90727b3ec2025d63f9d04e8dc64984f1d616e0a5662"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_setseq25",
+      "decoder": "dead45",
+      "sha256": "0874c207a90e491fe8d694393e2af53c4c559ee9c1b803a8979cb6f33eaf1250"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_setseq25",
+      "decoder": "hysteresis",
+      "sha256": "5a1daef5fa88af5a7cbb64494625296fd712749a81c5c45c842816cbc3e65133"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_pp25",
+      "decoder": "dead45",
+      "sha256": "821c0cf0e940b73c3758db2d783a83c4809ac19846597eb002cf836557365b7b"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_pp25",
+      "decoder": "hysteresis",
+      "sha256": "5c59d5bc264d695f80c33fe8474676716aff5c4770285e8f1abab1995b2e32c0"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_contact25",
+      "decoder": "dead45",
+      "sha256": "cad4ea219ea851c9d41d3e2bffc4314c83123107af872c7afe60a511e9f2ff80"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_contact25",
+      "decoder": "hysteresis",
+      "sha256": "5b818121a747fceb4f8b9035edec6731efd12ec8a00bbef19f0f8b24f3de4b58"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_memory25",
+      "decoder": "dead45",
+      "sha256": "f458f2ca153f6fd47282b2dd60cd89c9e58a5e2bf65c0c972c3456c182b143ae"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_memory25",
+      "decoder": "hysteresis",
+      "sha256": "a593a90c89814c1e1a98e5ed122229cb29dc5a66bea808fe0609952753017d15"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_combined25",
+      "decoder": "dead45",
+      "sha256": "0d0e7d64856b7f320b24b36f538070ae0134c7527b10c1998a8bbbe2ae214c27"
+    },
+    {
+      "match": "J03WOH",
+      "family": "short_combined25",
+      "decoder": "hysteresis",
+      "sha256": "b21ffead2879eafef7a70e36a8068a9172e1bc7e4871fbaa6588c08a7d23ca44"
+    },
+    {
+      "match": "J03WOH",
+      "family": "triple_contact",
+      "decoder": "dead45",
+      "sha256": "4f57995ee9e684cbda3039d3921865d80f5199e116b8f0f15a547f0d0d8ffc51"
+    },
+    {
+      "match": "J03WOH",
+      "family": "triple_contact",
+      "decoder": "hysteresis",
+      "sha256": "bf4a46d554910f93568277e1c5aa6daa82ef5ab491ddfb6091935f791a3a48d2"
+    },
+    {
+      "match": "J03WOH",
+      "family": "triple_combined",
+      "decoder": "dead45",
+      "sha256": "a9307eacefb99f7617300446aa22ab232376e870e1a112829b760d3539188e9d"
+    },
+    {
+      "match": "J03WOH",
+      "family": "triple_combined",
+      "decoder": "hysteresis",
+      "sha256": "c89169f071f6fd8abaf40f35936592c89d34b3e0a3600681df1071bd028e00b1"
+    },
+    {
+      "match": "J03WOH",
+      "family": "quality_combined",
+      "decoder": "dead45",
+      "sha256": "b87e410f57c5c28855d3942a87bef6a47acdad49209bcf4ca0e108360251b284"
+    },
+    {
+      "match": "J03WOH",
+      "family": "quality_combined",
+      "decoder": "hysteresis",
+      "sha256": "936f7387eda9b3c99949cf8c37efc2be2e192e7f28785cae8ff45ccdd598575b"
+    },
+    {
+      "match": "J03WOH",
+      "family": "native25",
+      "decoder": "native",
+      "sha256": "3a0266baa8cd1e9c9fd0b9bd7af967f6aa239d3a76a8f0d29c53915f95533189"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short",
+      "decoder": "dead45",
+      "sha256": "45b4ff2e085ae8f6b698bca730e4d87ccec66b9044840d914c0c45a584ce2f38"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short",
+      "decoder": "hysteresis",
+      "sha256": "23292b91f5a7a3d474c3f4bd4ef73e40ee7f19714cac10700a0b2445f53e0bf1"
+    },
+    {
+      "match": "J03WOY",
+      "family": "setseq",
+      "decoder": "dead45",
+      "sha256": "4e94cbba5450ddb90c0129003dc77557b7ac727f7316cbebdfecc57562202c57"
+    },
+    {
+      "match": "J03WOY",
+      "family": "setseq",
+      "decoder": "hysteresis",
+      "sha256": "67eae6974ef770462b7f9ca7620a27674cc554c366f28306afdb26ec75d947e0"
+    },
+    {
+      "match": "J03WOY",
+      "family": "pp",
+      "decoder": "dead45",
+      "sha256": "6e5a63d7d01edcb0399234a3ed03b83cb648203e328da98f3345810219affb8e"
+    },
+    {
+      "match": "J03WOY",
+      "family": "pp",
+      "decoder": "hysteresis",
+      "sha256": "1c18fccc0b0b466706e289e306c9aff215b06a81caabdcaeca52932cce6216a1"
+    },
+    {
+      "match": "J03WOY",
+      "family": "contact",
+      "decoder": "dead45",
+      "sha256": "3cace4b0537f73bf7bbc89402d5821b1462ae977043e384b57b80d2f26c73909"
+    },
+    {
+      "match": "J03WOY",
+      "family": "contact",
+      "decoder": "hysteresis",
+      "sha256": "3445221ea380f516acf9a1a67482b694f2c0739a918fe2ba2eb9af5e1426811f"
+    },
+    {
+      "match": "J03WOY",
+      "family": "memory",
+      "decoder": "dead45",
+      "sha256": "199c333d967b48f191578257e36b002ccfd7cb80949ebad7dc5207314c0eaa64"
+    },
+    {
+      "match": "J03WOY",
+      "family": "memory",
+      "decoder": "hysteresis",
+      "sha256": "eeb76a80fac97b385d7d89638d1a0515019819d16d83f496b6e83b08303bcc77"
+    },
+    {
+      "match": "J03WOY",
+      "family": "combined",
+      "decoder": "dead45",
+      "sha256": "d622b6264149a56419682d58d65c3ca21140f8aa4bf8f393d039321208ca34d2"
+    },
+    {
+      "match": "J03WOY",
+      "family": "combined",
+      "decoder": "hysteresis",
+      "sha256": "7e89c70a9756482772ae4347d281df87ece69427d6779aeec69495fa864d53be"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_setseq25",
+      "decoder": "dead45",
+      "sha256": "eb224864b821dee94f16df9a097c962744e3fa593a2f233c0c491c651728b6e1"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_setseq25",
+      "decoder": "hysteresis",
+      "sha256": "573493f0332d98ad1f55aed83c5cf55a152f146e4709112ff3f30fbb1202e972"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_pp25",
+      "decoder": "dead45",
+      "sha256": "bd6dcd5e0a5329e6f8ac99824297d7310ec81969c9bcdb66b7998d48a3b212df"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_pp25",
+      "decoder": "hysteresis",
+      "sha256": "c533a7b015575a6db4d96e47c42221702973743845841b43ed185eb1db4b774a"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_contact25",
+      "decoder": "dead45",
+      "sha256": "ca6841478f6e4e792ca868a5e914a10c0c46129bddda27f09812b6f6c1b17e99"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_contact25",
+      "decoder": "hysteresis",
+      "sha256": "0e5f1159b76320a79525c5f95519474a9835eda59e9a83f02b0b9c4be76d3ff9"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_memory25",
+      "decoder": "dead45",
+      "sha256": "84131b45ff98d960a055e16574e446a0896abfbdca2b0b2d326ce8c0165b7f37"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_memory25",
+      "decoder": "hysteresis",
+      "sha256": "84640dfad6799acd3a4de66b0b2c9c7ac0e36cb720a8a1e89170a554acee3033"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_combined25",
+      "decoder": "dead45",
+      "sha256": "1567d3aa3554d70eea138f6b4dddf883ba6bbbeeb7f9120c7f48c06145060a48"
+    },
+    {
+      "match": "J03WOY",
+      "family": "short_combined25",
+      "decoder": "hysteresis",
+      "sha256": "03802c02f235b695a9967b7778f949b3bd206fdbc62f302b23c26ad2cddbfc1e"
+    },
+    {
+      "match": "J03WOY",
+      "family": "triple_contact",
+      "decoder": "dead45",
+      "sha256": "e9ac22df041303d765a130701361a17710ce6a780f287b51a55d0a91637019f4"
+    },
+    {
+      "match": "J03WOY",
+      "family": "triple_contact",
+      "decoder": "hysteresis",
+      "sha256": "cd457d1a741a9c0f1fa8199fa57f3e2276d6d9ca242578110857d880974a7b9c"
+    },
+    {
+      "match": "J03WOY",
+      "family": "triple_combined",
+      "decoder": "dead45",
+      "sha256": "da5745d0b79fb556e827928fb2bc9da5ed20b5bd5edb151ca1d75c1bf4cfecb4"
+    },
+    {
+      "match": "J03WOY",
+      "family": "triple_combined",
+      "decoder": "hysteresis",
+      "sha256": "d33d21e59b33ca855dea090665bf3659f855bafb45f6da6cfa8ba94874c8aa15"
+    },
+    {
+      "match": "J03WOY",
+      "family": "quality_combined",
+      "decoder": "dead45",
+      "sha256": "b404c74674449b4da571ab3a70af1e69183de25412853f09f94466c4812b9381"
+    },
+    {
+      "match": "J03WOY",
+      "family": "quality_combined",
+      "decoder": "hysteresis",
+      "sha256": "30d62fc1410b3a99119736cf10910dc2610aeb5018ebe99ca9285148d00eefdb"
+    },
+    {
+      "match": "J03WOY",
+      "family": "native25",
+      "decoder": "native",
+      "sha256": "072256d58a6873bdbda734641d498c43ccc41d630eaa986fbdd3e230d700b4af"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short",
+      "decoder": "dead45",
+      "sha256": "d7a5424dd2dbcdb81bffd539210c1d8794861fdb66df04c8498bdf047a55d6aa"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short",
+      "decoder": "hysteresis",
+      "sha256": "db3d424406dc5a653a3980dc5c45933ee6293fb4a4b2d993b1d02e270b50a290"
+    },
+    {
+      "match": "J03WPY",
+      "family": "setseq",
+      "decoder": "dead45",
+      "sha256": "b0d09a213f25625e9e6bfd2a7a42f1ab396b335df79329180ab65d2f3361816a"
+    },
+    {
+      "match": "J03WPY",
+      "family": "setseq",
+      "decoder": "hysteresis",
+      "sha256": "781ae6a2204b21760f4ebddb4eb6a1777695f4cf5813f6e4643c2de4f471532d"
+    },
+    {
+      "match": "J03WPY",
+      "family": "pp",
+      "decoder": "dead45",
+      "sha256": "3432bcba76afd5b152efaf7ba11f3013d08e67dfea008c23915dc8bb2d0f2acc"
+    },
+    {
+      "match": "J03WPY",
+      "family": "pp",
+      "decoder": "hysteresis",
+      "sha256": "f7619cd408d9b61148d14ac8a2ff44c890738f6be4e540cfb87bdeaf51e2efb2"
+    },
+    {
+      "match": "J03WPY",
+      "family": "contact",
+      "decoder": "dead45",
+      "sha256": "181a237f2f3e32feb47c09b5a0572a63d28fc170f894d030a36132f5d0da8cd7"
+    },
+    {
+      "match": "J03WPY",
+      "family": "contact",
+      "decoder": "hysteresis",
+      "sha256": "45ff32dfe35e3aa1506b923ab612085e1a7394a8158a03d80db9071b50c65742"
+    },
+    {
+      "match": "J03WPY",
+      "family": "memory",
+      "decoder": "dead45",
+      "sha256": "bb0fbeb85cb0976bc405346ab1a8eac85b83c5ae19be8ec80bcf317dfe4ea67a"
+    },
+    {
+      "match": "J03WPY",
+      "family": "memory",
+      "decoder": "hysteresis",
+      "sha256": "831439c00e347d4c87f682e1fe8c88778c3711a64ab85d9505e20c53272e5104"
+    },
+    {
+      "match": "J03WPY",
+      "family": "combined",
+      "decoder": "dead45",
+      "sha256": "946a5c8caa9c0b91966579c654a1c8a96df3a9c55d9e63ddfa4d4daf4c115317"
+    },
+    {
+      "match": "J03WPY",
+      "family": "combined",
+      "decoder": "hysteresis",
+      "sha256": "5141a6e7eb9fe2705d1a4c3fac79e1be264a7872d993acdd9d5e44df68daa59c"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_setseq25",
+      "decoder": "dead45",
+      "sha256": "3f0ba23b512b0b8ed3f592376153560a0e5722d7c5e11cc6246116ec5fae9208"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_setseq25",
+      "decoder": "hysteresis",
+      "sha256": "6b4b46bc1c1d511447a81cde0d97cae21bcdb4b033956f7c676f9760118e528f"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_pp25",
+      "decoder": "dead45",
+      "sha256": "36851052f25002b305cc9cd304baefc19f86c597d2cce671d140b995c3a110c5"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_pp25",
+      "decoder": "hysteresis",
+      "sha256": "c7dc77c6da33f45417348b7a8f65bb638cea1ed50e6029fbaf28ccd059ce047b"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_contact25",
+      "decoder": "dead45",
+      "sha256": "c2292613e6bfbb4f35557fbd40347024a7f3489ac10cb5b202736726373ee14a"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_contact25",
+      "decoder": "hysteresis",
+      "sha256": "f677085c36d1b4180d9246c7d6ccc16619c916b8feaaa03dfe22c372311ec71c"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_memory25",
+      "decoder": "dead45",
+      "sha256": "035879601652292032466a2801acc42036a8dfd4d4010a5a1acee23637ed7279"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_memory25",
+      "decoder": "hysteresis",
+      "sha256": "354beb2bdc650edad64862131f89085a9b3cc378cce0a3373b12765a98158422"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_combined25",
+      "decoder": "dead45",
+      "sha256": "c266b195b8615429e4b5b732b50406343a0fbf06151dccafff6fd4a933eb7bc8"
+    },
+    {
+      "match": "J03WPY",
+      "family": "short_combined25",
+      "decoder": "hysteresis",
+      "sha256": "db5fb2caec6ff1aaed8b7290b23390303ac89a6d661ce8afedb4503271e652e4"
+    },
+    {
+      "match": "J03WPY",
+      "family": "triple_contact",
+      "decoder": "dead45",
+      "sha256": "0068488df86f55d8ab8f77c57ddd4e67760cecf7ccc00a2bfb89498f9d5b81c7"
+    },
+    {
+      "match": "J03WPY",
+      "family": "triple_contact",
+      "decoder": "hysteresis",
+      "sha256": "bf0309d14543ea5593e8eee4110b8a61d97d6fc4af8e61d1087b67206fbc166e"
+    },
+    {
+      "match": "J03WPY",
+      "family": "triple_combined",
+      "decoder": "dead45",
+      "sha256": "d53b635653e8e7377ee084745175690065c1ea3049d8225983cdd464bc1c91a7"
+    },
+    {
+      "match": "J03WPY",
+      "family": "triple_combined",
+      "decoder": "hysteresis",
+      "sha256": "458c0914c92607904dac82a16c6a0d044e3bb8b91c9e056b169734c6757ef70b"
+    },
+    {
+      "match": "J03WPY",
+      "family": "quality_combined",
+      "decoder": "dead45",
+      "sha256": "f91c57f3f39c8c02a502c0e7700a9b865a750104751b768846d376765e6266e8"
+    },
+    {
+      "match": "J03WPY",
+      "family": "quality_combined",
+      "decoder": "hysteresis",
+      "sha256": "e4856fc6692bb21cc053e36f55c8a6f6d1b9b78e899d75044193d9bc5e753ed9"
+    },
+    {
+      "match": "J03WPY",
+      "family": "native25",
+      "decoder": "native",
+      "sha256": "a5354f1bb94d09e80ed5042c145cb30504673213bc079a7042e9438122a90a50"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short",
+      "decoder": "dead45",
+      "sha256": "372efbbb9f78d5451c2b95ae97294d30de54de4a3474a6df88d37d6503f43389"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short",
+      "decoder": "hysteresis",
+      "sha256": "352770c368c54becad26c795dd4a2473a76978f5effd46e16a505790886d9f41"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "setseq",
+      "decoder": "dead45",
+      "sha256": "ecd29ed3eeea7fd3a7aefd624b32e61fd5795194d4a89013fe7ec4a00300fa27"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "setseq",
+      "decoder": "hysteresis",
+      "sha256": "8d10d6f3af231e31140509e864ba269e8c93d14b433cf2e058f41c49496e248f"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "pp",
+      "decoder": "dead45",
+      "sha256": "5fe9685fea6d3a27efb036ad187c3ae4137d74247c079b352013517dacd073f9"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "pp",
+      "decoder": "hysteresis",
+      "sha256": "99dc83fd741534ce7ff05a760f88178b86a58c39e87e1e64e79469a4dfbc0a1e"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "contact",
+      "decoder": "dead45",
+      "sha256": "b63a58f3ece4829aab464991b1e7e05b7ee0d6618a2ecba7719e48d75f731b7e"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "contact",
+      "decoder": "hysteresis",
+      "sha256": "c39a38e5c34e66c587d003e1e7a8035308e759f270d262b0b6d9389a6a298135"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "memory",
+      "decoder": "dead45",
+      "sha256": "9e1f06b5862b1cd76a0f0359df1bd0a662b4006c9c7e0f449ce59edd2c3eb3f1"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "memory",
+      "decoder": "hysteresis",
+      "sha256": "5c01a1cc9c5c29c01fdd01fb4da8a5cead7a3b9e02dee07fc2a6d35ac4411d31"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "combined",
+      "decoder": "dead45",
+      "sha256": "e03006405014ba3c4040d5d688c4f2766d11d77f349c892a8652633e72daa6da"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "combined",
+      "decoder": "hysteresis",
+      "sha256": "4873ec6950e8752fec359e9410d7eb711a65efebc7ed075cb3b1354afaa160af"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_setseq25",
+      "decoder": "dead45",
+      "sha256": "23f511af43bb94249f6112543834867dc5f9e5ff064472c1968962b5b414a6a1"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_setseq25",
+      "decoder": "hysteresis",
+      "sha256": "f62305b60e00b52b247dd8f016dc592379d661a8d5b3c173f72fe7e6c2524c48"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_pp25",
+      "decoder": "dead45",
+      "sha256": "86b4d17f44dc88c6f7d9490800ff003a0a9f06bd6be4eb49b9f38b857859c1ff"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_pp25",
+      "decoder": "hysteresis",
+      "sha256": "cfc46826174a58481285501fdb7fc8b157f2fd270fdb0310d5cb1de258c65855"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_contact25",
+      "decoder": "dead45",
+      "sha256": "baf7c2371d6fa91c0b6e6b8ff90b2bcfe692149cbee1692338be2296d368767d"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_contact25",
+      "decoder": "hysteresis",
+      "sha256": "76610dcfff50d5c14361ba85519fff67297b9fc6b67bb390d6feb1e1d4d76374"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_memory25",
+      "decoder": "dead45",
+      "sha256": "5d9ffa2dfe9a1399fdb6024aa6af93c9f20e46f9c4e46b140575673dae38a61d"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_memory25",
+      "decoder": "hysteresis",
+      "sha256": "b8e4f3d1ef59ac98f449d112a05ebcefe231edb474e8e18d3ff24f4d4efd2c46"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_combined25",
+      "decoder": "dead45",
+      "sha256": "84fbe182bf0474b556daf21fb72d4733f3a02150d2e39ed8bf74644fc3bd3380"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "short_combined25",
+      "decoder": "hysteresis",
+      "sha256": "e46d45277b91cd13dda6a81afa78cd6f55c48934e696d7d3b4e9b1bf3c504dd2"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "triple_contact",
+      "decoder": "dead45",
+      "sha256": "b7000c019993f66bf4d86aa3fc24914cb65344434094bf7c6ae5a66dc5c6c420"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "triple_contact",
+      "decoder": "hysteresis",
+      "sha256": "1a8145ee921a713c514570e17d279763578b89e4e5e5e0a53d5218b680eb78e3"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "triple_combined",
+      "decoder": "dead45",
+      "sha256": "1f8c9b5df8f3fb62129d9c265c34e9227fe22bd8307d34ef0123f75446bedbc8"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "triple_combined",
+      "decoder": "hysteresis",
+      "sha256": "1de720be0d53afd25de6548a71362336cd6fde70c197524d4fdd0d777c52b766"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "quality_combined",
+      "decoder": "dead45",
+      "sha256": "09b4abf75eba90d73d641fc7ce9de9fa823b125ebdbf8c93768e277bf2375a4b"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "quality_combined",
+      "decoder": "hysteresis",
+      "sha256": "44a62bad2de806c17d51eef17fc6e2cc5c885025b69c6a2d83795c4e6e844e84"
+    },
+    {
+      "match": "J03WQQ",
+      "family": "native25",
+      "decoder": "native",
+      "sha256": "763814f889bc3abadb6f78f21dc49186517eef428ff2032116ec903a6d998bb4"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short",
+      "decoder": "dead45",
+      "sha256": "42fa6c30145315f74f87ba9f9b9ff67e08df2b919d4a77c8e47d6e27497a120c"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short",
+      "decoder": "hysteresis",
+      "sha256": "63f3c72110656103daec553467d9ec74e16b5af082ac4f47f31045a061b9fe8f"
+    },
+    {
+      "match": "J03WR9",
+      "family": "setseq",
+      "decoder": "dead45",
+      "sha256": "80caf45d849c24431f2ad52e398059d9b01445ce83e344c68836a456f45d46e3"
+    },
+    {
+      "match": "J03WR9",
+      "family": "setseq",
+      "decoder": "hysteresis",
+      "sha256": "fdaf61f0e92acb9f6bb9ce35d308a4b8be071ba3c8015f4eceec556c999cdcff"
+    },
+    {
+      "match": "J03WR9",
+      "family": "pp",
+      "decoder": "dead45",
+      "sha256": "4792b1551bf3540687b54b9cd5818db8d003df052fafd7ac5280800425990786"
+    },
+    {
+      "match": "J03WR9",
+      "family": "pp",
+      "decoder": "hysteresis",
+      "sha256": "2f0af62d35f35465012958a4e6185714675711b67b4d51fabb82208b8a25b097"
+    },
+    {
+      "match": "J03WR9",
+      "family": "contact",
+      "decoder": "dead45",
+      "sha256": "290e3d787085d51a2dc52725f2dfc837857e605a16f0c1e3e5d212a529e7d3e7"
+    },
+    {
+      "match": "J03WR9",
+      "family": "contact",
+      "decoder": "hysteresis",
+      "sha256": "325f3f08bba3487fe4a8689b004fc81beac838ab8ecf08d9722a2702a3e0f056"
+    },
+    {
+      "match": "J03WR9",
+      "family": "memory",
+      "decoder": "dead45",
+      "sha256": "da0d85d5982e22d3b91762f7040f6bfdc48ec44b59c6c34f8bd8150ae0202f9d"
+    },
+    {
+      "match": "J03WR9",
+      "family": "memory",
+      "decoder": "hysteresis",
+      "sha256": "0885036746474c9a2dd39eed9d612c41ede596c3b33edd643b0a9d79e2d0376b"
+    },
+    {
+      "match": "J03WR9",
+      "family": "combined",
+      "decoder": "dead45",
+      "sha256": "2927390f68feb5c5ac17ca1f5502bb19807fa974493d4a053ab799a95b4c5c81"
+    },
+    {
+      "match": "J03WR9",
+      "family": "combined",
+      "decoder": "hysteresis",
+      "sha256": "dcc7be2674e3cb6ac541110d01590de37a7616324af44d9e23c1c19b915e3383"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_setseq25",
+      "decoder": "dead45",
+      "sha256": "4e7f7813d612261f802ccec3748855b39da7a8bcd0c98416385ea31b2b3c142b"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_setseq25",
+      "decoder": "hysteresis",
+      "sha256": "5c74d842337987c82aca6ef761010bb60889272d1fbd72a8a3ac1c61e2751182"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_pp25",
+      "decoder": "dead45",
+      "sha256": "147060b3668ceb71b126afe64504a97645dc81ada834bfd1e1c396f530744303"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_pp25",
+      "decoder": "hysteresis",
+      "sha256": "0c34ef438bfa7981cb5d37baa37aa0882addff5d746f7aa0acf896f58dc67cc1"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_contact25",
+      "decoder": "dead45",
+      "sha256": "24276c06555ca7845b9010e8546e21788c6840437752491dfab8283b3bb84766"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_contact25",
+      "decoder": "hysteresis",
+      "sha256": "b8568bc1ae7990018726a7eadccd442f0f7a274ed5d5b374b4509e6a4f267f5e"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_memory25",
+      "decoder": "dead45",
+      "sha256": "adf88f1cdeba0669a7927b190e6417a4644f53f6d565da0a962dedbbe95152e2"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_memory25",
+      "decoder": "hysteresis",
+      "sha256": "8c9a4592d0a43ce2a9d1660b2f76b16b33dbba6dfe57dfd57d95389a5511bc90"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_combined25",
+      "decoder": "dead45",
+      "sha256": "7bd6a7262e9dd1cd5df952a03b0fddc815c13abe60bf0ebe28f5b5248c8b5d3b"
+    },
+    {
+      "match": "J03WR9",
+      "family": "short_combined25",
+      "decoder": "hysteresis",
+      "sha256": "a3e2e14b61b015d02c08d58534ef7542c8376d67bb151474bd225ef44e9056ed"
+    },
+    {
+      "match": "J03WR9",
+      "family": "triple_contact",
+      "decoder": "dead45",
+      "sha256": "4d5de6cc0b7cb69366e300084d91bc7b49b4010d20b63dd16e6dc8db05c21366"
+    },
+    {
+      "match": "J03WR9",
+      "family": "triple_contact",
+      "decoder": "hysteresis",
+      "sha256": "379ea6ab3e081d29ec95678546018e75da26dc3f8c73f2942ec2fef39085b7b9"
+    },
+    {
+      "match": "J03WR9",
+      "family": "triple_combined",
+      "decoder": "dead45",
+      "sha256": "51c2d474649c31cf94c2d455966e3cace194bf82da0a2e0ad92b34af5f44fed4"
+    },
+    {
+      "match": "J03WR9",
+      "family": "triple_combined",
+      "decoder": "hysteresis",
+      "sha256": "2017cd0ed29d33ba30da911e96029c530b3fcc3eee0469105285ee68d0733c7c"
+    },
+    {
+      "match": "J03WR9",
+      "family": "quality_combined",
+      "decoder": "dead45",
+      "sha256": "360afdce1abb18b5011c2d199bdb62a485994032f19d15873939cb11ae88c610"
+    },
+    {
+      "match": "J03WR9",
+      "family": "quality_combined",
+      "decoder": "hysteresis",
+      "sha256": "2aacfacc12ad5081fa5e325dd85cdac3854042f25d1bcb011160d4bff1517985"
+    },
+    {
+      "match": "J03WR9",
+      "family": "native25",
+      "decoder": "native",
+      "sha256": "4f05e100823a8441c22920f0ff979840a1e5a74b3d25b23fdc13ffc23b35502e"
+    }
+  ],
+  "configuration_rows": 28,
+  "development_evaluations": 196,
+  "new_neural_seed_fits": 63,
+  "new_optimizer_updates": 31500,
+  "new_public_evaluation": false,
+  "selection_from_public": false,
+  "outer_label_meta_fit": false
+}

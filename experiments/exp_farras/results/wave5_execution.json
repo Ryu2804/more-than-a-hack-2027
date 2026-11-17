@@ -1,0 +1,10 @@
+{
+  "seconds": 5037.109999999986,
+  "ensemble_fits": 21,
+  "seed_fits": 63,
+  "configurations": 96,
+  "development_evaluations": 2208,
+  "development_matches": 21,
+  "evaluation_scenarios": 23,
+  "device": "cuda"
+}

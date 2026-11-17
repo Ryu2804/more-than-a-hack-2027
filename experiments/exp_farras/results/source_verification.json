@@ -1,0 +1,103 @@
+{
+  "identical_method_files": [
+    {
+      "path": "wave1/methods/m01_hysteresis.py",
+      "sha256": "2e235564c348170d0b6657b47df2bfc4fcab2e9b303c5a8a7b1595a0924b40c7"
+    },
+    {
+      "path": "wave1/methods/m02_viterbi.py",
+      "sha256": "9f23c7c5450a12dc23316e4684258848d5306166cadc3e88ad5788b8056b4fda"
+    },
+    {
+      "path": "wave1/methods/m03_duration.py",
+      "sha256": "10dd3c8d521e42593dbced5cd9574fd014afd0a9f5aa1bd9a9b42c943069b968"
+    },
+    {
+      "path": "wave1/methods/m04_persistence.py",
+      "sha256": "cd755b9429ed1d9ae9ad211a008aa3de90962706c1e14fd677e8de8ef93df9c8"
+    },
+    {
+      "path": "wave1/methods/m05_logistic.py",
+      "sha256": "a8079340bddfe56a4d0ee1cdcc205c154c7020a5e570d11c0a428686ba08c9b8"
+    },
+    {
+      "path": "wave1/methods/m06_histboost.py",
+      "sha256": "5dd91c1553ac47bfe65675a58955958e11f90b7c76e5b33687503faf8f6abda0"
+    },
+    {
+      "path": "wave1/methods/m07_extratrees.py",
+      "sha256": "6072c13a7ed10b057262c809983cb700b6d5e56845df06deb63b599a74cb22ec"
+    },
+    {
+      "path": "wave1/methods/m08_temporalboost.py",
+      "sha256": "7e3a8332b8ba664fa203ae21c0f0d0ad3a1af4725e29be72318c1b278346448d"
+    },
+    {
+      "path": "wave2/methods/w01_hist_viterbi.py",
+      "sha256": "8bb5472a5e2ad99b2e6eb79b075526f0a0d31accb55c03ca802b36a59971cc10"
+    },
+    {
+      "path": "wave2/methods/w02_extra_viterbi.py",
+      "sha256": "6c853ae3e8bca80d689f181e06fdbc80eeff1511d033af4138ebed225338489c"
+    },
+    {
+      "path": "wave2/methods/w03_temporal_viterbi.py",
+      "sha256": "500b10d7895608779ebc91ed6a7b0d5c15cc62f6bc59ba2ef58cbedcb5c3fc59"
+    },
+    {
+      "path": "wave2/methods/w04_learned_markov.py",
+      "sha256": "ca0504cb8a8b3c896f9576bfcf9d1992c62876d5fc598662896e17aaa8a207d3"
+    },
+    {
+      "path": "wave2/methods/w05_hist_duration.py",
+      "sha256": "cd07019da0911803745bdaf13d9679d7b703bed673cb37aa1d34fc207cdaf9b1"
+    },
+    {
+      "path": "wave2/methods/w06_asymmetric_dwell.py",
+      "sha256": "2d18498179e9edaf7676fd7f1a880ccbdc6c7238b9cff0803b8c7c3ac2023b43"
+    },
+    {
+      "path": "wave2/methods/w07_control_gate.py",
+      "sha256": "62799926071402cb73f9449fd81182b9f0e9362b91087a562057615db001b95c"
+    },
+    {
+      "path": "wave2/methods/w08_symmetric_boost.py",
+      "sha256": "c34f7bdfeeafa2282991f26a10a92686f3a09be6ac79d0525ddeef407ec057af"
+    },
+    {
+      "path": "wave2/methods/w09_logistic_cascade.py",
+      "sha256": "35de6a83b23efa3f9099a4627dede1a30fd3369cb02d70744442e74168da97b9"
+    },
+    {
+      "path": "wave2/methods/w10_boost_cascade.py",
+      "sha256": "0a5582631098e724c5ca6ceb5821473594fb0d3d80f06f4fbb13a7c6895c3d5e"
+    },
+    {
+      "path": "wave2/methods/w11_emission_ensemble.py",
+      "sha256": "db15af3dbf9f4660922caa185407e2ae31656df9dce405361ff229fa63f235fe"
+    },
+    {
+      "path": "wave2/methods/w12_confidence_gate.py",
+      "sha256": "fe6387ababf309c6850040153c81355da2494bc7f33f707ad09f4898012fde9d"
+    },
+    {
+      "path": "wave2/methods/w13_gaussian_markov.py",
+      "sha256": "3e3500f74cfa29fa2ca68a9dbc32b6792dc1086cce767ef81dc14d6c945eb7e8"
+    },
+    {
+      "path": "wave2/methods/w14_feature_ablation.py",
+      "sha256": "ae597d0b4e0a8a588e2dafca35b7c32c5a5b6d76c63c9e74d44167420f2bbd3d"
+    },
+    {
+      "path": "wave2/methods/w15_dead_bridge.py",
+      "sha256": "099e5340ab10d98a8cd8a46ae542d7d87a42b25702cca7a9742ef4e5011ab7a5"
+    },
+    {
+      "path": "wave2/methods/w16_occlusion_cost.py",
+      "sha256": "4c7a1cfa2790ca658fd06959d286b300479ee9170c63befd2d1919c4fce50318"
+    }
+  ],
+  "syntax_checked_python_files": 30,
+  "path_changes": "Repository root and sibling wave1 paths; source cache selected with FARRAS_SOURCE_EXPERIMENTS. Algorithms/configurations unchanged.",
+  "privacy": "No training data, frame labels, predictions, or weights included."
+}

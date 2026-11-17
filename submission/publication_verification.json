@@ -1,0 +1,18 @@
+{
+  "method_id": "farras_wave5_short_gru25_dead45",
+  "artifact": "submission/artifacts/farras_wave5.csv",
+  "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+  "rows": 199319,
+  "scenario": "isolated minimal repository snapshot containing only published runtime inputs",
+  "official_validator_passed": true,
+  "export_matches_frozen_candidate": true,
+  "raw_data_present": false,
+  "tracking_cache_present": false,
+  "model_weights_present": false,
+  "ground_truth_present": false,
+  "training_executed": false,
+  "public_scoring_executed": false,
+  "private_scoring_executed": false,
+  "raw_bundle_reproduction_verified": false,
+  "submission_ready": false
+}

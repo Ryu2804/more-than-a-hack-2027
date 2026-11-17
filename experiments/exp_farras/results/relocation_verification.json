@@ -1,0 +1,47 @@
+{
+  "campaigns": [
+    {
+      "batch": "wave1",
+      "configurations": 24,
+      "all_target_csv_sha256_match_original": true,
+      "all_external_metrics_match_original": true,
+      "all_public_metrics_match_original": true,
+      "selected_method": "m01_hysteresis",
+      "selected_config": {
+        "name": "r15",
+        "radius": 1.5,
+        "confirm_s": 0.4,
+        "gap_dead_s": 8
+      },
+      "selected_csv_sha256": "6a022089301a08d9d469fbc4630cb65c3f4a34b1d4de1193488422370e63b52d"
+    },
+    {
+      "batch": "wave2",
+      "configurations": 48,
+      "all_target_csv_sha256_match_original": true,
+      "all_external_metrics_match_original": true,
+      "all_public_metrics_match_original": true,
+      "selected_method": "w08_symmetric_boost",
+      "selected_config": {
+        "name": "cost6",
+        "switch_cost": 6
+      },
+      "selected_csv_sha256": "45e03662fccbeb238e9df723c99829df60e3d8d641d539be9f6d1e1fd59b0446"
+    }
+  ],
+  "total_configurations": 72,
+  "external_evaluations": 288,
+  "valid_target_submissions": 72,
+  "rows_per_submission": 199319,
+  "regression_tests_passed": 7,
+  "holdout_scores_identical": true,
+  "selected_target_regenerated_identically": true,
+  "public_best_diagnostic": {
+    "method": "w14_feature_ablation",
+    "config": "control",
+    "spellF1": 0.56,
+    "selected_by_external_validation": false
+  },
+  "commands_run_from": "repository root",
+  "private_artifacts_published": false
+}

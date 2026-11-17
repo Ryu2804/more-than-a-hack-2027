@@ -1,0 +1,17 @@
+{
+  "unit_tests_passed": 31,
+  "initial_preparation_failure": "duplicate seed metadata key",
+  "preparation_repaired_before_registration": true,
+  "regenerated_raw25_matches_verified": 7,
+  "smoke_seed_fits": 9,
+  "smoke_steps": 1,
+  "full_seed_fits": 63,
+  "full_optimizer_updates": 31500,
+  "actual_training_memberships_verified": 21,
+  "all_training_test_disjoint": true,
+  "control_reproduced_exactly": true,
+  "decoded_arrays_rebuilt": 203,
+  "new_public_evaluation": false,
+  "manifest_sha256": "dce422c8eb38801630c4909f648274e0b793ceadf5de001e614ab57b9c71b572",
+  "model_refit": false
+}

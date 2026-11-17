@@ -1,0 +1,52 @@
+{
+  "configurations": 64,
+  "development_evaluations": 1472,
+  "grouped_folds": 6,
+  "development_training_matches": 19,
+  "development_scored_matches": 21,
+  "seed_fits": 63,
+  "ensemble_fits": 21,
+  "holdout_scenario_rows": 32,
+  "public_fixed_candidates": 4,
+  "feature_packs": 48,
+  "prior_development_prediction_packs": 23,
+  "regression_tests_passed": 11,
+  "train_device": "cuda",
+  "selected": {
+    "family": "pp_gru25",
+    "decoder": {
+      "name": "no_shift",
+      "gate_r": 0.35,
+      "kappa": 0.05,
+      "merge_s": 1.0,
+      "dead_threshold": 0.5,
+      "min_dead_s": 2.0,
+      "tau": 3.0,
+      "rate_scale": 1.0,
+      "shift": false,
+      "lambda_mode": "rate",
+      "fixed_lambda": 2.0
+    }
+  },
+  "independent_selected_new_component_refit_identical": true,
+  "unchanged_prior_checkpoint_refit_proof_inherited": true,
+  "target_rows": 199319,
+  "selected_csv_sha256": "ddd75416e7929183954d27191b11ddab1ac049fc0e703f802db2209884635e9a",
+  "selection_sha256": "b5269672e86cce891c7ce28054ce17a6acfa4c4979e11236757212d908acdd05",
+  "previous_wave3_csv_reproduced_identically": true,
+  "selection_unchanged_after_holdout_public": true,
+  "shipped_source_commit": "5eaf3e595e91fa0502aac48037d0cae8c356ec6f",
+  "shipped_ryu_adaptations": [
+    "No-Metrica27-match checkpoint, not necessarily the full-mix checkpoint behind reported0.747",
+    "Original25fps feature code but cached target teams mask unknown slots21/22/43",
+    "5fps conditional/state predictions decoded on sample grid, then repeated25fps",
+    "Nearest-grid train-rate calibration rather than original log interpolation",
+    "No target-specific forced second-half dead interval in adapted decoder"
+  ],
+  "privacy": "No raw tracking, frame labels, model weights, or submission CSV committed; aggregate files only",
+  "new_selected_model_training_sources": [
+    "IDSSE CC BY4.0",
+    "SkillCorner MIT"
+  ],
+  "metrica_use": "Zero-shot development/holdout diagnostics; selected GRU component also trained only IDSSE. Other tree-anchor families inherit Metrica training."
+}
