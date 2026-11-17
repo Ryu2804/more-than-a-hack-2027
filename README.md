@@ -46,6 +46,7 @@
 | Possession file (scored) | [`submission.csv`](submission.csv): 199,319 rows, SHA-256 `cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8` |
 | Technical document | [`TECHNICAL_REPORT.pdf`](TECHNICAL_REPORT.pdf) (IEEE format, source [`docs/report/`](docs/report/)) |
 | Code | this repository; the final method lives in [`experiments/E06_wave5/`](experiments/E06_wave5/) |
+| Web dashboard | [`web/`](web/): English match review, synchronized local video and saved-method replay; [live application](https://possession-match-review.vercel.app) |
 
 ---
 

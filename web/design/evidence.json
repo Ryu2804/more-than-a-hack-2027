@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "phase": "design_only",
+  "display_scope": "public_ground_truth_window_only",
+  "method_id": "farras_wave5_short_gru25_dead45",
+  "source_artifact": {
+    "path": "../../submission/artifacts/farras_wave5.csv",
+    "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+    "source_file_rows": 199319,
+    "source_file_is_not_ground_truth": true
+  },
+  "displayed_window": {
+    "first_source_frame": 11185,
+    "end_source_frame_exclusive": 18685,
+    "rows": 7500,
+    "fps": 25,
+    "duration_seconds": 300,
+    "counts": {"H": 3585, "A": 2860, "D": 1055, "X": 0},
+    "percentages_one_decimal": {"H": 47.8, "A": 38.1, "D": 14.1, "X": 0.0},
+    "home_share_among_live": {"numerator": 3585, "denominator": 6445, "display_percent": 55.6},
+    "binning": {
+      "frames_per_bin": 250,
+      "seconds_per_bin": 10,
+      "bins": 30,
+      "values": "empirical hard-label frequencies including every row in each bin",
+      "drawing": "step areas and step lines; no spline interpolation"
+    },
+    "time_axis": "seconds since the start of the public clip, not the full video or match clock"
+  },
+  "label_names": {
+    "H": "Barcelona",
+    "A": "Athletic Club",
+    "D": "Bola mati",
+    "X": "Belum diketahui"
+  },
+  "published_evaluation_metadata": {
+    "source": "../../docs/final_method.json",
+    "public_spellF1": 0.7724137931034483,
+    "public_macroF1": 0.9020586271571484,
+    "external_development_spellF1": 0.670099305497763,
+    "new_metric_computation": false,
+    "display_scale": "metric multiplied by 100, rounded to one decimal; a score, not percent accuracy",
+    "public_spellF1_display": "77,2",
+    "public_macroF1_display": "90,2",
+    "external_development_display": "67,0",
+    "external_development_not_shown_as_public_replay_score": true
+  },
+  "comparison": "replay.json",
+  "unavailable": [
+    "tracking positions",
+    "model probability vectors",
+    "private or full-match ground truth",
+    "private model score",
+    "working web playback"
+  ],
+  "technical_report_unchanged": true
+}

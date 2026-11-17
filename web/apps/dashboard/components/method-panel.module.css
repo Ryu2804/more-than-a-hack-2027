@@ -1,0 +1,60 @@
+.panel { min-width: 0; }
+.heading { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: .8rem; }
+.heading p { color: var(--secondary); font-size: .75rem; margin-top: .35rem; }
+.loadButton { font-size: .6875rem; padding: .55rem .8rem; flex-shrink: 0; }
+.disclosure { color: var(--secondary); font-size: .6875rem; line-height: 1.65; margin: .9rem 0 1.2rem; }
+.loading { font-size: .8125rem; padding: .8rem 0; color: var(--secondary); }
+.trackingHeader { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .4rem; margin: 1rem 0 .65rem; }
+.trackingHeader strong { font-size: .8125rem; }
+.trackingHeader span { color: var(--secondary); font-size: .6875rem; }
+.pitchStage { border-radius: 14px; background: var(--canvas); padding: .4rem .25rem .6rem; }
+.pitch { width: 100%; display: block; height: auto; }
+.pitchStatus { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding: 0 .8rem; font-size: .6875rem; color: var(--secondary); }
+.pitchTools { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
+.pitchLegend { display: flex; flex-wrap: wrap; list-style: none; padding: 0; gap: .4rem .8rem; }
+.pitchLegend li { font-size: .6875rem; display: inline-flex; align-items: center; gap: .4rem; }
+.homeSymbol, .awaySymbol, .ballSymbol { width: 9px; height: 9px; display: inline-block; border: 1px solid var(--ink); flex-shrink: 0; }
+.homeSymbol { border-radius: 50%; background: var(--blue); }
+.awaySymbol { border-radius: 1px; background: var(--green); }
+.ballSymbol { border-radius: 50%; background: var(--surface); border-width: 2px; }
+.distanceRow { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding: .7rem 0; border-top: 1px solid var(--border); }
+.distanceRow > span { font-size: .6875rem; color: var(--secondary); }
+.distanceRow strong { color: var(--ink); display: block; font-size: .875rem; margin-top: .25rem; font-variant-numeric: tabular-nums; }
+.note { color: var(--secondary); font-size: .6875rem; line-height: 1.65; margin-top: .65rem; }
+.step { margin-top: 1.3rem; padding-top: 1.1rem; border-top: 1px solid var(--border); }
+.step h3 { font-size: .8125rem; line-height: 1.5; }
+.step > p { font-size: .6875rem; line-height: 1.65; color: var(--secondary); margin-top: .4rem; }
+.probabilityRow { margin-top: .95rem; }
+.probabilityRow:last-child { border-top: 1px solid var(--border); padding-top: .8rem; }
+.probabilityHeading { display: flex; justify-content: space-between; align-items: baseline; gap: .8rem; font-size: .6875rem; margin-bottom: .4rem; }
+.probabilityHeading span { color: var(--secondary); }
+.probabilityBar { display: flex; width: 100%; height: 13px; border: 1px solid var(--ink); border-radius: 2px; }
+.probabilityBar span { display: block; height: 100%; border-right: 1px solid var(--ink); }
+.probabilityBar span:last-child { border-right: 0; }
+.probabilityValues { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem .7rem; font-size: .6875rem; color: var(--secondary); margin-top: .3rem; }
+.probabilityValues strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.decision { display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: 1rem; }
+.decision > div { flex: 1; background: var(--canvas); border-radius: 10px; padding: .75rem; }
+.decision span { color: var(--secondary); font-size: .6875rem; }
+.decision strong { display: block; font-size: .8125rem; margin-top: .3rem; }
+.context { display: flex; height: 16px; gap: 1px; margin-top: 1.1rem; border: 1px solid var(--ink); }
+.context span { flex: 1; min-width: 0; position: relative; }
+.context span[data-current="true"]::after { content: ""; position: absolute; inset: -5px -1px; border: 2px solid var(--ink); box-shadow: 0 0 0 1px var(--surface); }
+.contextAxis { display: flex; justify-content: space-between; gap: .5rem; margin-top: .4rem; font-size: .6875rem; color: var(--secondary); }
+.contextAxis span:nth-child(2) { text-align: center; }
+.resultFooter { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem; border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 1.1rem; }
+.resultFooter output { font-size: .875rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.loadedFile { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; margin-top: .6rem; }
+.loadedFile > span { font-size: .6875rem; overflow-wrap: anywhere; color: var(--secondary); flex: 1; }
+.emptyPitch { min-height: 230px; position: relative; display: grid; place-items: center; background: var(--canvas); border-radius: 14px; }
+.emptyPitch svg { width: 100%; display: block; }
+.emptyPitch > div { position: absolute; inset-inline: 7%; background: var(--surface); border-radius: 12px; padding: 1rem; }
+.emptyPitch h3 { font-size: .9375rem; }
+.emptyPitch p { font-size: .75rem; line-height: 1.6; color: var(--secondary); margin-top: .5rem; }
+.emptyPitch p strong { color: var(--ink); overflow-wrap: anywhere; font-weight: 600; }
+.methodOutline { list-style-position: outside; margin: 1rem 0 0; padding-left: 1.25rem; }
+.methodOutline li { padding: .7rem 0 .7rem .3rem; font-size: .8125rem; }
+.methodOutline li + li { border-top: 1px solid var(--border); }
+.methodOutline li p { color: var(--secondary); font-size: .75rem; margin-top: .25rem; line-height: 1.6; }
+@media (min-width: 1100px) { .emptyPitch { min-height: 250px; } }
+@media (forced-colors: active) { .homeSymbol, .awaySymbol, .ballSymbol { forced-color-adjust: none; } }

@@ -1,0 +1,13 @@
+{
+  "name": "possession-web",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "npm run dev --workspace @possession/dashboard",
+    "build": "npm run build --workspace @possession/dashboard",
+    "start": "npm run start --workspace @possession/dashboard",
+    "typecheck": "npm run typecheck --workspace @possession/dashboard",
+    "test": "node --experimental-strip-types --test packages/possession/src/*.test.ts"
+  },
+  "engines": { "node": "24.x" }
+}

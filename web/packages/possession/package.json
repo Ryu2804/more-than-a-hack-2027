@@ -1,0 +1,12 @@
+{
+  "name": "@possession/core",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./method-replay": "./src/method-replay.ts"
+  },
+  "scripts": {
+    "test": "node --test src/*.test.ts"
+  }
+}

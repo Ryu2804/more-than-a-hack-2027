@@ -1,0 +1,19 @@
+# Restricted match recordings are opened locally, never bundled or published.
+*.mp4
+*.m4v
+*.mov
+*.webm
+*.mkv
+*.avi
+
+node_modules/
+.next/
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+.env*
+!.env.example
+*.private.json
+*.npz
+*.npy
+__pycache__/

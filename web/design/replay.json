@@ -1,0 +1,88 @@
+{
+  "schema_version": 2,
+  "phase": "design_only",
+  "runtime_playback_implemented": false,
+  "display_language": "id",
+  "display_scope": "public_ground_truth_window_only",
+  "method_id": "farras_wave5_short_gru25_dead45",
+  "prediction_sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+  "reference": {
+    "post": "https://lnkd.in/p/gDmRew2e",
+    "author": "Dr. Hadi Sotudeh",
+    "image_source": "user-provided screenshot",
+    "poster_file": "reference-video-poster.png",
+    "poster_sha256": "b2d44b48964113356d62c556067ef3dc262e69d6efba3f465ba1a975a76e82b2",
+    "not_loaded_match_video": true,
+    "temporally_aligned_to_public_window": false,
+    "redistribution_license_verified": false,
+    "production_use": false
+  },
+  "window": {
+    "metadata": "../../evaluation/gt/BAR-ATH_possession_gt_public_meta.json",
+    "first_source_frame": 11185,
+    "last_source_frame_inclusive": 18684,
+    "end_source_frame_exclusive": 18685,
+    "fps": 25,
+    "frames": 7500,
+    "duration_seconds": 300,
+    "source_start_seconds": 447.4,
+    "source_end_seconds_exclusive": 747.4,
+    "display_start": "00:00",
+    "display_end": "05:00",
+    "clip_frame_to_source_frame": "source_frame = 11185 + clip_frame",
+    "full_match_displayed": false
+  },
+  "comparison": {
+    "ground_truth": {
+      "display_name": "Label acuan",
+      "path": "../../evaluation/gt/BAR-ATH_possession_gt_public.csv",
+      "rows_in_window": 7500,
+      "segments": 21,
+      "possessions_H_A": 17,
+      "counts": {"H": 3454, "A": 2577, "D": 1469, "X": 0}
+    },
+    "prediction": {
+      "display_name": "Hasil model",
+      "path": "../../submission/artifacts/farras_wave5.csv",
+      "rows_in_window": 7500,
+      "segments": 15,
+      "possessions_H_A": 12,
+      "counts": {"H": 3585, "A": 2860, "D": 1055, "X": 0}
+    },
+    "construction": "Clip both frame,label sources to the identical half-open window, then run-length encode each without smoothing or relabeling.",
+    "shared_horizontal_scale": true,
+    "private_ground_truth_used": false,
+    "public_ground_truth_used_for_display_only": true,
+    "model_or_decoder_changed": false,
+    "new_metric_computation": false
+  },
+  "cursor": {
+    "source_frame": 11185,
+    "clip_frame": 0,
+    "clip_seconds": 0,
+    "ground_truth_label": "A",
+    "prediction_label": "A",
+    "tracking_positions_loaded": false
+  },
+  "private_local_clip": {
+    "filename": "cuplikan-acuan-5-menit.mp4",
+    "created_outside_repository": true,
+    "frames": 7500,
+    "fps": 25,
+    "duration_seconds": 300,
+    "width": 1920,
+    "height": 1080,
+    "bytes": 92531195,
+    "first_and_last_frame_decoded": true,
+    "first_frame_closest_source_frame": 11185,
+    "gated_media_copied_to_web": false,
+    "public_redistribution_allowed": false
+  },
+  "runtime_acceptance_not_executed": [
+    "web playback, seek and frame stepping",
+    "web presented-frame synchronization",
+    "broadcast mapping",
+    "browser keyboard navigation",
+    "Vercel build"
+  ]
+}
