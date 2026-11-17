@@ -2,7 +2,7 @@
 
 The team chose `short_gru25/dead45` as the final method. Report authors use the [cross-branch specification](../docs/FINAL_METHOD.md) and the [Typst facts](../docs/final_method.json). The candidate's runtime identity, CSV hash and selection evidence are locked in [method.json](method.json). A new campaign does not automatically replace this choice.
 
-The submission deliverables themselves are at the repository root: [`submission.csv`](../submission.csv) and [`TECHNICAL_REPORT.pdf`](../TECHNICAL_REPORT.pdf) (see the root [README](../README.md#final-submission)).
+The submission deliverables themselves are at the repository root: [`carried_by_admin.csv`](../carried_by_admin.csv) and [`carried_by_admin.pdf`](../carried_by_admin.pdf) (see the root [README](../README.md)). The submitted CSV is this method **retrained from scratch** by the E06 notebook (`artifacts/e06_retrained.csv`, SHA-256 `850e6d25…`); the frozen campaign candidate stays in `artifacts/farras_wave5.csv` as the reference that the selection evidence describes. `export.py` checks the submitted file against both the selection receipt and the retrain receipt (`experiments/E06_wave5/results/wave5_retrain_verification.json`).
 
 ## Exporting the selected CSV
 
@@ -17,7 +17,7 @@ Output: `submission/out/farras.csv`. For a different file name:
 
 ```bash
 python -B submission/export.py --output submission/out/teamname.csv
-python -B submission/export.py --output submission.csv     # the root deliverable
+python -B submission/export.py --output carried_by_admin.csv     # the root deliverable
 ```
 
 The command checks the hashes of the selection evidence and the CSV, runs the official validator, and copies the frozen candidate byte for byte. It does not train, score, read GT or re-select a candidate. A different existing target file is never overwritten; repeating an export to an identical file is safe.

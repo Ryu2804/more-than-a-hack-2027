@@ -1,8 +1,10 @@
 """Render the README figures into image/ (PNG, web width).
 
-Every number comes from committed evidence: the frozen CSV (read from the release commit), the
-public ground truth, the official baseline CSVs and each experiment's results/*.json. Data handling
-is shared with the technical report (docs/report/make_figures.py); only the rendering differs.
+Every number comes from committed evidence: the submitted CSV (carried_by_admin.csv, the final method
+retrained from scratch), the public ground truth, the official baseline CSVs and each experiment's
+results/*.json. Data handling is shared with the technical report (docs/report/make_figures.py).
+The explainability figures (fig10-fig14) are the matplotlib outputs of the executed E06 notebook
+(final_notebook.ipynb), copied unchanged.
 
     python image/make_figures.py
 
@@ -26,6 +28,9 @@ EXP = ROOT / "experiments"
 spec = importlib.util.spec_from_file_location("report_figures", ROOT / "docs/report/make_figures.py")
 R = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(R)  # loads GT, frozen CSV, baselines; draws nothing
+# the README describes the submitted file: the same method retrained from scratch
+SUBMITTED_TEXT = (ROOT / "carried_by_admin.csv").read_text()
+R.w5 = R.labels_csv(ROOT / "carried_by_admin.csv")
 
 # Okabe-Ito
 BLUE, ORANGE, VERM, GREEN, SKY, PURPLE, BLACK, GREY = (
@@ -53,26 +58,14 @@ def load(exp, name):
 
 # ------------------------------------------------------------------ 1. pipeline
 def fig_pipeline():
-    fig, ax = plt.subplots(figsize=(12, 3.3), layout="constrained")
-    ax.set(xlim=(0, 100), ylim=(0, 26)); ax.axis("off")
-
-    def box(x, y, w, h, title, body, fc, ec=BLACK):
-        ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.3,rounding_size=1.0", fc=fc, ec=ec, lw=1.0))
-        ax.text(x + w / 2, y + h - 1.4, title, ha="center", va="top", weight="bold", fontsize=10)
-        ax.text(x + w / 2, y + h - 4.8, body, ha="center", va="top", fontsize=8.6, linespacing=1.35)
-
-    def arrow(x0, y0, x1, y1):
-        ax.annotate("", (x1, y1), (x0, y0), arrowprops=dict(arrowstyle="-|>", lw=1.1, color=BLACK))
-
-    box(0.5, 6, 14, 16, "Automatic tracking", "ATD: 46 track slots\n+ ball (missing on\n~41% of graded frames)\n25 fps → 5 fps", "#F2F2F2")
-    box(18.5, 6, 15, 16, "Observations", "23 team-shape channels\n1 validity + 5 ball channels\n≤ 48 player vectors × 10\n(two mirrored team views)", "#F2F2F2")
-    box(37.5, 15, 18, 10, "Short-loss PP-TCN", "3 seeds × 2 views\nweight 0.75", "#D6EAF8", BLUE)
-    box(37.5, 2, 18, 10, "Set-sequence BiGRU", "frozen (wave3)\nweight 0.25", "#FDEBD0", ORANGE)
-    box(59.5, 6, 15, 16, "Joint fusion", "p(H), p(A), p(D)\n0.75·TCN + 0.25·GRU\nrenormalised", "#F2F2F2")
-    box(78.5, 6, 21, 16, "Decoder dead45", "dead: p(D) > 0.45 for ≥ 1 s\nH/A Viterbi, reset per live\ninterval; λ matched to the\ntraining possession rate;\nruns < 1 s merged → 25 fps", "#FADBD8", VERM)
-    arrow(14.8, 14, 18.3, 14); arrow(33.8, 14, 37.3, 20); arrow(33.8, 14, 37.3, 7)
-    arrow(55.8, 20, 59.3, 15.5); arrow(55.8, 7, 59.3, 12.5); arrow(74.8, 14, 78.3, 14)
-    save(fig, "fig01_pipeline")
+    """The paper's Fig. 1, drawn by the report's own code and style, saved as a README PNG."""
+    orig = R.save
+    R.save = lambda fig, name: (fig.savefig(HERE / "fig01_pipeline.png", dpi=300), plt.close(fig))
+    try:
+        with mpl.rc_context(R.RC):
+            R.fig_pipeline()
+    finally:
+        R.save = orig
 
 
 # ------------------------------------------------------------------ 2. public timeline
@@ -297,12 +290,59 @@ def fig_anatomy(report, dur):
     save(fig, "fig07_output_anatomy")
 
 
+def score_submitted():
+    """Official scorer on the public GT for the submitted CSV and the four baselines."""
+    import subprocess, sys, tempfile
+    import pandas as pd
+    with tempfile.TemporaryDirectory() as tmp:
+        sub = Path(tmp) / "sub"; sub.mkdir()
+        (sub / "wave5.csv").write_text(SUBMITTED_TEXT)
+        for b in ("raw", "smooth25", "smooth50", "smooth125"):
+            (sub / f"baseline_{b}.csv").write_bytes((ROOT / f"evaluation/results/baseline_{b}.csv").read_bytes())
+        subprocess.run([sys.executable, str(ROOT / "evaluation/run_evaluation.py"), "--results", str(sub),
+                        "--out", tmp, "--no-detail"], check=True, capture_output=True)
+        board = pd.read_csv(Path(tmp) / "scoreboard.csv")
+        rep = json.loads((Path(tmp) / "reports" / "wave5.json").read_text())
+    return board, rep
+
+
+def export_notebook_figures():
+    """Copy the explainability figures of the executed E06 notebook (if present) into image/."""
+    import base64
+    nb_path = ROOT / "final_notebook.ipynb"
+    if not nb_path.exists():
+        print("final_notebook.ipynb not found; keeping existing fig10-fig14"); return
+    wanted = {"## [9] Anatomy of a decision": "fig10_decision_anatomy", "## [11] Which inputs drive": "fig11_integrated_gradients",
+              "## [12] How far in time": "fig12_temporal_receptive_field", "## [13] Which players": "fig13_player_attention",
+              "## [15] Where the three seeds": "fig14_seed_disagreement",
+              "## [10] Counterfactual stage ablation": "fig15_stage_ablation", "## [14] Feature-group occlusion": "fig16_occlusion",
+              "## [16] Error anatomy": "fig17_error_anatomy"}
+    cells = json.loads(nb_path.read_text())["cells"]
+    for i, c in enumerate(cells):
+        head = "".join(c["source"]) if c["cell_type"] == "markdown" else ""
+        for key, name in wanted.items():
+            if key in head:
+                code = next(x for x in cells[i + 1:] if x["cell_type"] == "code")
+                png = next(o["data"]["image/png"] for o in code["outputs"] if "data" in o and "image/png" in o["data"])
+                (HERE / f"{name}.png").write_bytes(base64.b64decode(png))
+                whiten(HERE / f"{name}.png")
+
+
+def whiten(path, cream=(0xF6, 0xF7, 0xEB)):
+    """The notebook draws on its cream palette background; README figures use plain white."""
+    from PIL import Image
+    im = np.array(Image.open(path).convert("RGB")).astype(int)
+    im[(np.abs(im - cream) <= 2).all(-1)] = 255
+    Image.fromarray(im.astype(np.uint8)).save(path)
+
+
 def main():
-    board, report, _ = R.score_public()
+    board, report = score_submitted()
     full = np.concatenate([R.w5[a:b + 1] for a, b in R.halves])
     durinfo = {"full_share": {l: float(np.mean(full == l)) for l in "HAD"}}
     fig_pipeline(); fig_timeline(); fig_scoreboard(board); fig_forest(); fig_grid()
     fig_provider(); fig_recall(); fig_benchmark(); fig_anatomy(report, durinfo)
+    export_notebook_figures()
     print("wrote", sorted(p.name for p in HERE.glob("*.png")))
 
 

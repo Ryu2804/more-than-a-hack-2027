@@ -1,0 +1,2 @@
+# Same environment as the final method (torch, numba, scikit-learn, lxml ...); Python 3.10.
+-r ../E06_wave5/requirements.txt

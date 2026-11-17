@@ -1,0 +1,2 @@
+# Notebook experiment: numpy, pandas, matplotlib and Jupyter (repository-wide pins).
+-r ../../requirements-starter.txt

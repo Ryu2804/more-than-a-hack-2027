@@ -31,7 +31,7 @@ This checks the public-GT facts the notebook reports from the committed `evaluat
    ```
 
    The first run parses the full ATD (about a minute) and caches it in `experiments/_cache/`.
-3. Compare the printed values with the original run (also quoted in Table I of [`TECHNICAL_REPORT.pdf`](../../TECHNICAL_REPORT.pdf)):
+3. Compare the printed values with the original run (also quoted in Table I of [`carried_by_admin.pdf`](../../carried_by_admin.pdf)):
 
 | Cell output | Expected |
 |---|---|

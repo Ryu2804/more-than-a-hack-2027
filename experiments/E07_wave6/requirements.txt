@@ -1,1 +1,1 @@
--r ../wave5/requirements.txt
+-r ../E06_wave5/requirements.txt

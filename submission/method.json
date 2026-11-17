@@ -6,14 +6,23 @@
   "decoder": "dead45",
   "selection_sha256": "6d69b0e4c702144a0ef2877c1522c2c6478f0ca5bb6b7089f315526bfc367b95",
   "artifact": {
-    "path": "submission/artifacts/farras_wave5.csv",
-    "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+    "path": "submission/artifacts/e06_retrained.csv",
+    "sha256": "850e6d25d96ea051d0f746548ab59de9b4c04fdededca53fff16fbe9c2053b5c",
     "rows": 199319
   },
   "verification": {
     "path": "experiments/E06_wave5/results/wave5_verification.json",
     "sha256": "a57072202ae4ab9fe8432342c361d1f0ea0da65396bc00eb4bcc90ce89b4f01c"
   },
-  "reproduction": "frozen_csv_export_only",
-  "submission_ready": false
+  "reproduction": "retrained_from_scratch_notebook",
+  "submission_ready": false,
+  "retrain": {
+    "path": "experiments/E06_wave5/results/wave5_retrain_verification.json",
+    "sha256": "20c830fd1a4455546943300dbe3e4c3c639a7220ebe8c32d57ad5d7aa30e0a76"
+  },
+  "frozen_artifact": {
+    "path": "submission/artifacts/farras_wave5.csv",
+    "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+    "rows": 199319
+  }
 }

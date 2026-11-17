@@ -1,3 +1,4 @@
 out/
 *.csv
 !artifacts/farras_wave5.csv
+!artifacts/e06_retrained.csv

@@ -6,7 +6,7 @@ The team chose **Farras wave5 `short_gru25/dead45`** as the submission candidate
 
 - Method ID: `farras_wave5_short_gru25_dead45`.
 - Release source: commit [`7254990d82ce5dec3bf1fff6baa4fe2f639e3a60`](https://github.com/Ryu2804/more-than-a-hack-2027/tree/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60), originating branch `farras`.
-- [Algorithmic prediction CSV](https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/submission/artifacts/farras_wave5.csv): `submission/artifacts/farras_wave5.csv`, 199,319 rows, `frame,label`, BAR-ATH tactical timeline at 25 fps. The same file is published at the repository root as `submission.csv`.
+- [Algorithmic prediction CSV](https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/submission/artifacts/farras_wave5.csv): `submission/artifacts/farras_wave5.csv`, 199,319 rows, `frame,label`, BAR-ATH tactical timeline at 25 fps. This is the frozen candidate that the selection evidence describes. The **submitted** file, `carried_by_admin.csv` at the repository root (SHA-256 `850e6d25d96ea051d0f746548ab59de9b4c04fdededca53fff16fbe9c2053b5c`), is the same method retrained from scratch by `experiments/E06_wave5/E06_wave5.ipynb`; it agrees with the frozen candidate on 99.52% of graded frames and scores public spellF1 0.772414 / macroF1 0.901002 ([record](../experiments/E06_wave5/results/wave5_retrain_verification.json)).
 - CSV SHA-256: `cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8`.
 - Campaign selection SHA-256: `6d69b0e4c702144a0ef2877c1522c2c6478f0ca5bb6b7089f315526bfc367b95`.
 

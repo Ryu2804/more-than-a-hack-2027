@@ -36,7 +36,7 @@ The commits below identify the research sources before the documentation alignme
 
 Take identity, parameters, metric cohorts, attribution and claim limits from the final document. If a fact is not listed or not verified, mark it unknown; do not complete it from a folder name or the maximum score. A change to numbers or method must point to new artifacts and hashes, not relabel old results.
 
-`main` contains the wave5 CSV package and exporter (also at the root as `submission.csv`). Other research branches refer to the same method without moving or changing their experimental algorithms. The implementation source locked for provenance remains Farras release `7254990d82ce5dec3bf1fff6baa4fe2f639e3a60`.
+`main` contains the wave5 CSV package and exporter (the submitted file, retrained from scratch, is at the root as `carried_by_admin.csv`). Other research branches refer to the same method without moving or changing their experimental algorithms. The implementation source locked for provenance remains Farras release `7254990d82ce5dec3bf1fff6baa4fe2f639e3a60`.
 
 The Farras integration into `main` was verified with the exporter and the official validator: 199,319 rows, hash identical to the frozen candidate, without `annotation_harness`. [Integration evidence](merge_verification.json). `report_verification.json` records the documentation alignment before this integration, not the hash of the updated branch map.
 

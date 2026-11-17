@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "method_id": "farras_wave5_short_gru25_dead45",
+ "kind": "retrained_from_scratch",
+ "selection_sha256": "6d69b0e4c702144a0ef2877c1522c2c6478f0ca5bb6b7089f315526bfc367b95",
+ "family": "short_gru25",
+ "decoder": "dead45",
+ "notebook": "experiments/E06_wave5/E06_wave5.ipynb (run copy: final_notebook.ipynb)",
+ "run": {
+  "platform": "Modal, NVIDIA L40S (path recorded in notebook output: e06-l40s-20261117-152922)",
+  "bigru_training": "BiGRU trained in 260 s -> experiments/E04_wave3/out/models/hybrid.pt sha256 ee26c3e117e12322",
+  "pp_tcn_training": "PP-TCN trained in 79 s -> experiments/E06_wave5/out/models/short_tcn.pt sha256 94f137dd844b5fbf; training {'idsse': 5, 'skillcorner': 14}",
+  "training_stats_provider_balanced": {
+   "rate_per_min": 3.643,
+   "dead_share": 0.461
+  },
+  "replica_checks": [
+   "per-seed replica matches models.predict (max abs diff 1.8e-07)",
+   "rebuilt dead mask -> evidence -> Viterbi -> merge reproduces decoder.decode"
+  ]
+ },
+ "selected_csv_sha256": "850e6d25d96ea051d0f746548ab59de9b4c04fdededca53fff16fbe9c2053b5c",
+ "target_rows": 199319,
+ "full_match_possessions": 302,
+ "public_diagnostic": {
+  "spellF1": 0.7724137931034483,
+  "macroF1": 0.9010016369961317,
+  "predicted_possessions": 12,
+  "gt_possessions": 17
+ },
+ "frozen_reference": {
+  "path": "submission/artifacts/farras_wave5.csv",
+  "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+  "graded_frame_agreement": 0.9951528733389149
+ },
+ "note": "Same method, recipe and selection as the frozen wave5 candidate; weights retrained from public data. External development/holdout scores were measured for the frozen candidate only."
+}

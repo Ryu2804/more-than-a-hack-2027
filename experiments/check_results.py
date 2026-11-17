@@ -113,8 +113,21 @@ def e06():
             ("public diagnostic macroF1", pub["macroF1"], 0.902059),
             ("public audit CSV hash = locked", pub["sha256"], LOCKED_CSV),
             ("independent rebuild hash = locked", holdout["reproduced_sha256"], LOCKED_CSV),
-            ("root submission.csv hash = locked", sha256(ROOT / "submission.csv"), LOCKED_CSV),
-            ("submission/artifacts CSV hash = locked", sha256(ROOT / "submission/artifacts/farras_wave5.csv"), LOCKED_CSV)]
+            ("frozen reference CSV hash = locked", sha256(ROOT / "submission/artifacts/farras_wave5.csv"), LOCKED_CSV),
+            *e06_retrained()]
+
+
+def e06_retrained():
+    """The submitted CSV: the same method retrained from scratch by the E06 notebook."""
+    method = json.loads((ROOT / "submission/method.json").read_text())
+    receipt = load("E06_wave5", "wave5_retrain_verification.json")
+    submitted = method["artifact"]["sha256"]
+    return [("root carried_by_admin.csv = submitted artifact", sha256(ROOT / "carried_by_admin.csv"), submitted),
+            ("submission/artifacts retrained CSV hash", sha256(ROOT / method["artifact"]["path"]), submitted),
+            ("retrain receipt records the submitted CSV", receipt["selected_csv_sha256"], submitted),
+            ("retrained: public spellF1", receipt["public_diagnostic"]["spellF1"], 0.772414),
+            ("retrained: public macroF1", receipt["public_diagnostic"]["macroF1"], 0.901002),
+            ("retrained: graded-frame agreement with frozen", receipt["frozen_reference"]["graded_frame_agreement"], 0.995153)]
 
 
 def e07():

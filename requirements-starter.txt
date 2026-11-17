@@ -1,15 +1,18 @@
-# Optional. Only needed for the helpers and notebooks in starter/.
-# The evaluation needs none of this -- see requirements.txt, which is numpy and pandas.
+# Notebooks and helpers: experiments/E00_eda/E00_eda.ipynb, experiments/E06_wave5/E06_wave5.ipynb
+# (train from scratch + explainability), starter/ and the Typst technical report.
+#
+#   python -m pip install -r requirements-starter.txt
+#   jupyter lab
 #
 # kloppy is pinned to the version the 2026 starter repository used, because that is the version
 # the Metrica FIFA/EPTS export is known to load under.
-#
-# Nothing here is needed to produce a submission: starter/baseline.py reads the raw ATD and writes
-# a scored entry with numpy alone.
 -r requirements.txt
 
 kloppy==3.18.0
-matplotlib
 
-# For the notebooks in starter/
-notebook
+# Jupyter
+notebook>=7
+ipykernel>=6
+
+# technical report: typst compile --root . docs/report/report.typ (Python binding of the Typst compiler)
+typst>=0.13

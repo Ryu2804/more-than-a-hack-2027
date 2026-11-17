@@ -1,7 +1,8 @@
 """Generate every figure and data table used by docs/report/report.typ.
 
-Inputs are files already in the repository plus the frozen wave5 CSV, which is read
-straight from the locked release commit with `git show` (it is not copied into main).
+Inputs are files already in the repository: the submitted CSV (carried_by_admin.csv, the method
+retrained from scratch) and the frozen wave5 candidate, read from the locked release commit with
+`git show`. Figures describe the submitted file; the frozen one is re-scored for comparison.
 Run from anywhere:  python docs/report/make_figures.py
 """
 from __future__ import annotations
@@ -32,7 +33,7 @@ C_H, C_A, C_D = "#e94f37", "#393e41", "#c9c9c9"
 C_OLD, C_NEW = "#9aa5ab", "#1f6f8b"
 COL1, COL2 = 3.45, 7.16  # IEEE single / double column width, inches
 
-mpl.rcParams.update({
+RC = {  # also reused by image/make_figures.py for the README copy of the pipeline figure
     "font.family": "serif",
     "font.serif": ["STIXGeneral", "Times New Roman", "DejaVu Serif"],
     "mathtext.fontset": "stix",
@@ -51,7 +52,8 @@ mpl.rcParams.update({
     "savefig.bbox": "tight",
     "savefig.pad_inches": 0.02,
     "pdf.fonttype": 42,
-})
+}
+mpl.rcParams.update(RC)
 
 
 def save(fig, name):
@@ -76,8 +78,10 @@ def runs(lab):
 # ---------------------------------------------------------------- data
 meta = json.loads((ROOT / "evaluation/gt/BAR-ATH_possession_gt_public_meta.json").read_text())
 gt = labels_csv(ROOT / "evaluation/gt/BAR-ATH_possession_gt_public.csv")
-w5_text = subprocess.check_output(
+RETRAIN = json.loads((RES / "wave5_retrain_verification.json").read_text())
+frozen_text = subprocess.check_output(
     ["git", "-C", str(ROOT), "show", f"{RELEASE}:{METHOD['artifact']['path']}"], text=True)
+w5_text = (ROOT / "carried_by_admin.csv").read_text()   # submitted file
 w5 = labels_csv(io.StringIO(w5_text))
 b50 = labels_csv(ROOT / "evaluation/results/baseline_smooth50.csv")
 assert len(w5) == METHOD["artifact"]["rows"] == len(gt) == len(b50)
@@ -90,36 +94,109 @@ halves = [(a - meta["frame_offsets"][h], b - meta["frame_offsets"][h])
 
 # ---------------------------------------------------------------- Fig. 1 pipeline
 def fig_pipeline():
-    fig, ax = plt.subplots(figsize=(COL2, 1.55))
-    ax.set(xlim=(0, 100), ylim=(0, 22)); ax.axis("off")
+    """Four stage panels: input -> representation -> models -> decoding. Boxes carry a title and at most
+    one short line; dimensions and details sit on the connectors or under the boxes."""
+    from matplotlib.patches import Circle, Polygon, Rectangle
+    fig, ax = plt.subplots(figsize=(COL2, 2.45))
+    fig.patch.set_facecolor("white")
+    ax.set(xlim=(0, 200), ylim=(7, 70)); ax.axis("off")
+    INK, LINE = "#1a1a1a", dict(color="#1a1a1a", lw=1.0, solid_capstyle="butt", zorder=4)
 
-    def box(x, y, w, h, title, body, fc):
-        ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0.25,rounding_size=1.2",
-                                    fc=fc, ec="#393e41", lw=0.6))
-        ax.text(x + w / 2, y + h - 1.6, title, ha="center", va="top", weight="bold", fontsize=7)
-        ax.text(x + w / 2, y + h - 4.6, body, ha="center", va="top", fontsize=6.1, linespacing=1.25)
+    def panel(x, w, title, ec, fc):
+        ax.add_patch(FancyBboxPatch((x, 8), w, 60, boxstyle="round,pad=0,rounding_size=2.5",
+                                    fc=fc, ec=ec, lw=0.9, ls=(0, (4, 2))))
+        ax.text(x + w / 2, 64.6, title, ha="center", va="center", weight="bold", fontsize=6.8, color=INK)
 
-    def arrow(x0, y0, x1, y1, txt=None):
-        ax.annotate("", (x1, y1), (x0, y0), arrowprops=dict(arrowstyle="-|>", lw=0.7, color="#393e41"))
-        if txt:
-            ax.text((x0 + x1) / 2, (y0 + y1) / 2 + 0.9, txt, ha="center", va="bottom", fontsize=5.8)
+    def box(x, y, w, h, title, sub=None, fc="white", ec=INK):
+        ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle="round,pad=0,rounding_size=1.4",
+                                    fc=fc, ec=ec, lw=0.8, zorder=3))
+        cy = y + h / 2
+        if sub:
+            ax.text(x + w / 2, cy + 1.9, title, ha="center", va="center", weight="bold", fontsize=5.5, color=INK, zorder=6)
+            ax.text(x + w / 2, cy - 2.2, sub, ha="center", va="center", fontsize=5.0, color=INK, zorder=6)
+        else:
+            ax.text(x + w / 2, cy, title, ha="center", va="center", weight="bold", fontsize=5.5, color=INK,
+                    linespacing=1.1, zorder=6)
 
-    box(0.5, 4, 14, 15, "Tracking", "automatic ATD\n(players + ball,\ngaps, ID switches)\n25 fps → 5 fps", "#f6f7eb")
-    box(19, 4, 15, 15, "Features", "team-view channels\nball channels\nper-player set\n(two mirrored views)", "#f6f7eb")
-    box(39, 12, 17, 9, "Short-loss PP-TCN", "3 seeds, w = 0.75", "#d9ecf2")
-    box(39, 0.5, 17, 10, "BiGRU (frozen)", "player-set encoder, wave3\nw = 0.25", "#e8e8e8")
-    box(60.5, 4, 15, 15, "Fusion", "joint P(H), P(A),\nP(D): weighted\nmean, renormalised", "#f6f7eb")
-    box(79.5, 4, 20, 15, "Decoder dead45", "dead mask  P(D) > 0.45, ≥ 1 s\nH/A Viterbi, reset per live\nλ: training possession rate\nmerge runs < 1 s → 25 fps", "#fbe3de")
-    arrow(14.9, 11.5, 18.9, 11.5)
-    arrow(34.1, 11.5, 38.9, 16); arrow(34.1, 11.5, 38.9, 5.5)
-    arrow(56.1, 16, 60.4, 12.5); arrow(56.1, 5.5, 60.4, 10.5)
-    arrow(75.6, 11.5, 79.4, 11.5)
+
+    def path(*pts, label=None, at=0):
+        xs, ys = zip(*pts)
+        ax.plot(xs[:-1], ys[:-1], **LINE)
+        ax.annotate("", pts[-1], pts[-2], zorder=4, arrowprops=dict(
+            arrowstyle="-|>,head_length=0.45,head_width=0.22", lw=1.0, color=INK, shrinkA=0, shrinkB=0))
+        if label:
+            (x0, y0), (x1, y1) = pts[at], pts[at + 1]
+            ax.text((x0 + x1) / 2, (y0 + y1) / 2 + 2.6, label, ha="center", va="center", fontsize=4.7, color=INK,
+                    bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none"), zorder=6)
+
+    def line(*pts):
+        xs, ys = zip(*pts); ax.plot(xs, ys, **LINE)
+
+    def dot(x, y):
+        ax.plot(x, y, "o", ms=2.6, color=INK, zorder=5)
+
+    # ---------------- 1. input
+    panel(1, 33, "Input", "#8c8c8c", "#f4f4f4")
+    box(4, 36, 27, 24, "Automatic tracking")
+    ax.texts[-1].set_position((17.5, 56.5))
+    ax.add_patch(Rectangle((7.5, 39), 20, 12, fc="#e3f0dc", ec="#5b8c4a", lw=0.6, zorder=5))
+    ax.plot([17.5, 17.5], [39, 51], color="#5b8c4a", lw=0.5, zorder=5)
+    rng = np.random.default_rng(3)
+    for c, n in ((C_H, 7), (C_A, 7)):
+        ax.plot(rng.uniform(8.5, 26.5, n), rng.uniform(40, 50, n), "o", ms=1.6, color=c, zorder=6)
+    ax.plot(19.5, 45, "o", ms=1.8, mfc="white", mec=INK, mew=0.5, zorder=6)
+    box(4, 14, 27, 13, "Resample + mirror", "25 → 5 fps · 2 views")
+    path((17.5, 36), (17.5, 27))
+    # ---------------- 2. representation
+    panel(37, 50, "Representation", "#1f6f8b", "#eaf3f6")
+    for y, title, fc in ((51, "Team shape", "#d9ecf2"), (35, "Ball + validity", "#fbe3de"),
+                         (19, "Player set", "#ece4f2")):
+        box(42, y, 20.5, 10, title, fc=fc)
+    line((31, 20.5), (39, 20.5)); line((39, 20.5), (39, 56)); dot(39, 24); dot(39, 40)
+    for y in (56, 40, 24):
+        path((39, y), (42, y))
+    for y, lab in ((56, "23"), (40, "1+5"), (24, "48×10")):
+        line((62.5, y), (70, y)); ax.text(66.3, y + 1.2, lab, ha="center", va="bottom", fontsize=4.4, color=INK)
+    line((70, 24), (70, 56)); dot(70, 40)
+    grid = mpl.colormaps["viridis"](np.random.default_rng(7).uniform(0.15, 0.95, (5, 5)))
+    for i in range(5):
+        for j in range(5):
+            ax.add_patch(Rectangle((72.5 + 2.4 * j, 34 + 2.4 * i), 2.4, 2.4, fc=grid[i, j], ec="white", lw=0.3, zorder=5))
+    path((70, 40), (72.5, 40))
+    ax.text(78.5, 30.6, "29 ch × T\n+ player set", ha="center", va="center", fontsize=4.9, weight="bold", color=INK)
+    # ---------------- 3. models
+    panel(90, 33, "Models", "#2a9d6f", "#eaf6f0")
+    box(92.5, 46, 28, 12, "Short-loss PP-TCN", "3 seeds × 2 views", fc="#d9ecf2", ec="#1f6f8b")
+    box(92.5, 20, 28, 12, "Set-sequence BiGRU", "2-layer, hidden 32", fc="#fdebd0", ec="#c47f1a")
+    line((84.5, 40), (89, 40)); line((89, 26), (89, 52)); dot(89, 40)
+    path((89, 52), (92.5, 52)); path((89, 26), (92.5, 26))
+    # ---------------- 4. decoding and output: one straight chain, rate from above, output below
+    panel(126, 73, "Decoding (dead45) and output", "#c0392b", "#fbeeec")
+    ax.add_patch(Circle((130.5, 39), 2.2, fc="white", ec=INK, lw=0.9, zorder=5))
+    ax.text(130.5, 39.1, "+", ha="center", va="center", fontsize=7, weight="bold", zorder=6)
+    path((120.5, 52), (130.5, 52), (130.5, 41.2)); path((120.5, 26), (130.5, 26), (130.5, 36.8))
+    for y, w in ((47, "0.75"), (31, "0.25")):
+        ax.text(131.6, y, w, ha="left", va="center", fontsize=4.9, color=INK)
+    box(135.5, 34, 17, 10, "Dead mask", r"$p_D > 0.45$")
+    box(156, 34, 19, 10, "Team evidence", r"$\kappa \log p_T$")
+    box(178.5, 34, 19.5, 10, "Interval-reset\nViterbi", fc="#fadbd8", ec="#c0392b")
+    box(178.5, 51, 19.5, 10, "Rate ρ", "3.64 / min", fc="#fff6dc", ec="#c47f1a")
+    box(178.5, 15, 19.5, 10, "Merge < 1 s", "→ 25 fps")
+    path((132.7, 39), (135.5, 39)); path((152.5, 39), (156, 39)); path((175, 39), (178.5, 39))
+    path((188.25, 51), (188.25, 44)); ax.text(189.7, 47.5, "λ", ha="left", va="center", fontsize=5.4, color=INK)
+    path((188.25, 34), (188.25, 25))
+    # output document icon, left of the merge step
+    ax.add_patch(Polygon([(163, 12), (171, 12), (171, 26), (168.6, 28.4), (163, 28.4)], closed=True,
+                         fc="white", ec=INK, lw=0.8, zorder=5))
+    for k, c in enumerate((C_H, C_A, C_D, C_H)):
+        ax.add_patch(Rectangle((164.2, 14 + 3 * k), 5.6, 1.9, fc=c, ec="none", zorder=6))
+    path((178.5, 20), (171, 20))
     save(fig, "fig_pipeline")
 
 
 # ---------------------------------------------------------------- Fig. 2 public window
 def fig_public_timeline():
-    rows = [("Ground truth", gt[win]), ("Wave5 (ours)", w5[win]), ("Baseline smooth50", b50[win])]
+    rows = [("Ground truth", gt[win]), ("Submitted (ours)", w5[win]), ("Baseline smooth50", b50[win])]
     t0 = lo / FPS / 60
     fig, ax = plt.subplots(figsize=(COL2, 1.45))
     cmap = {"H": C_H, "A": C_A, "D": C_D, "X": "white"}
@@ -157,7 +234,7 @@ def fig_durations():
     fig, ax = plt.subplots(1, 2, figsize=(COL1, 1.75), gridspec_kw=dict(width_ratios=[1.6, 1]))
     bins = np.logspace(np.log10(0.2), np.log10(200), 22)
     ax[0].hist(w5_full, bins=bins, weights=np.full(len(w5_full), 1 / len(w5_full)), color=C_NEW, alpha=0.85,
-               label=f"wave5, full match (n={len(w5_full)})")
+               label=f"submitted, full match (n={len(w5_full)})")
     ax[0].hist(gt_d, bins=bins, weights=np.full(len(gt_d), 1 / len(gt_d)), histtype="step", color=C_H, lw=1.1,
                label=f"GT, public window (n={len(gt_d)})")
     ax[0].axvline(4, color="k", ls=":", lw=0.7)
@@ -171,8 +248,8 @@ def fig_durations():
     pub_w5 = [float(np.mean(w5[win] == l)) for l in "HAD"]
     x = np.arange(3); w = 0.27
     ax[1].bar(x - w, pub_gt, w, color=C_H, label="GT pub.")
-    ax[1].bar(x, pub_w5, w, color=C_NEW, label="wave5 pub.")
-    ax[1].bar(x + w, [share[l] for l in "HAD"], w, color=C_OLD, label="wave5 full")
+    ax[1].bar(x, pub_w5, w, color=C_NEW, label="submitted pub.")
+    ax[1].bar(x + w, [share[l] for l in "HAD"], w, color=C_OLD, label="submitted full")
     ax[1].set(xticks=x, xticklabels=list("HAD"), ylabel="Share of graded frames", ylim=(0, 0.75))
     ax[1].legend(loc="lower left", bbox_to_anchor=(-0.05, 1.0), frameon=False, fontsize=5.6, handlelength=1.0)
     ax[1].text(0.97, 0.95, "(b)", transform=ax[1].transAxes, ha="right", va="top", weight="bold")
@@ -356,19 +433,30 @@ def score_public():
     with tempfile.TemporaryDirectory() as tmp:
         sub = Path(tmp) / "sub"; sub.mkdir()
         (sub / "wave5.csv").write_text(w5_text)
+        (sub / "frozen.csv").write_text(frozen_text)
         for b in ("raw", "smooth25", "smooth50", "smooth125"):
             (sub / f"baseline_{b}.csv").write_bytes((ROOT / f"evaluation/results/baseline_{b}.csv").read_bytes())
         subprocess.run([sys.executable, str(ROOT / "evaluation/run_evaluation.py"), "--results", str(sub),
                         "--out", tmp, "--no-detail"], check=True, capture_output=True)
         board = pd.read_csv(Path(tmp) / "scoreboard.csv")
         rep = json.loads((Path(tmp) / "reports" / "wave5.json").read_text())
+        rep_frozen = json.loads((Path(tmp) / "reports" / "frozen.json").read_text())
         trans = pd.read_csv(Path(tmp) / "reports" / "wave5_transitions.csv")
     w = board[board.submission == "wave5"].iloc[0]
     pub = METHOD["metrics"]["competition_public"]
-    assert abs(rep["spell_f1_mean"] - pub["spellF1"]) < 1e-9 and abs(rep["macro_f1"] - pub["macroF1"]) < 1e-9
-    assert abs(w.spell_f1_mean - pub["spellF1"]) < 1e-4
+    assert abs(rep_frozen["spell_f1_mean"] - pub["spellF1"]) < 1e-9 and abs(rep_frozen["macro_f1"] - pub["macroF1"]) < 1e-9
+    sub_pub = RETRAIN["public_diagnostic"]
+    assert abs(rep["spell_f1_mean"] - sub_pub["spellF1"]) < 1e-9 and abs(rep["macro_f1"] - sub_pub["macroF1"]) < 1e-9
+    assert abs(w.spell_f1_mean - sub_pub["spellF1"]) < 1e-4
     cols = ["submission", "spell_f1_mean", "macro_f1", "poss", "dur", "kappa", "trans_f1_25", "mean_abs_latency"]
-    return board[cols], rep, trans
+    return board[board.submission != "frozen"][cols], rep, trans  # frozen scored only as a consistency check
+
+
+def crop_error_iou():
+    """Panel A of the notebook's error-anatomy figure; panel B repeats Fig. 7."""
+    from PIL import Image
+    im = Image.open(ROOT / "image/fig17_error_anatomy.png")
+    im.crop((0, 0, int(im.width * 0.655), im.height)).save(FIG / "fig_error_iou.png")
 
 
 def main():
@@ -380,6 +468,7 @@ def main():
     prov = fig_provider_holdout()
     rec = fig_duration_recall()
     fig_public_confusion(rep)
+    crop_error_iou()
     out = dict(
         public_board=board.to_dict(orient="records"),
         public_report={k: rep[k] for k in ("accuracy", "kappa", "alive_dead_f1", "per_class", "n_gt_spells",

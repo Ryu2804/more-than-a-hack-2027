@@ -1,10 +1,17 @@
-# Everything the evaluation needs. Deliberately two lines.
+# Every experiment script and test (experiments/E00_eda ... E13_provider_generalization), the final
+# method rerun, the official scorer and the figure scripts. Python 3.10.
 #
-# The scorer is dependency-light on purpose: no sklearn, no torch, nothing that pins a Python
-# version. It runs under 3.8 and 3.11 alike and produces identical output, so "it scored
-# differently on my machine" is not a conversation anyone has to have.
+# The numerical pins come from the selection campaigns (experiments/E02_wave1 -> E06_wave5 chain:
+# numpy, pandas, scipy, scikit-learn, numba, threadpoolctl, torch, requests, lxml, joblib); changing
+# numpy/torch/numba can change retrained weights slightly. The scorer alone (evaluation/) needs only
+# numpy and pandas. Notebooks, kloppy and the report compiler are in requirements-starter.txt.
 #
-# Optional tooling -- the ATD loader and anything that opens the video -- lives in
-# requirements-starter.txt.
-numpy
-pandas
+#   python -m pip install -r requirements.txt
+#   python -B experiments/check_results.py            # recorded results of E00-E13
+#   python -B -m pytest -q experiments                # unit tests of every experiment
+-r experiments/E06_wave5/requirements.txt
+
+# figures (image/make_figures.py, docs/report/make_figures.py) and tests
+matplotlib>=3.9,<3.11
+pillow>=10
+pytest>=8

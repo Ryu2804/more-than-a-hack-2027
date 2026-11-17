@@ -1,1 +1,1 @@
--r ../wave1/requirements.txt
+-r ../E02_wave1/requirements.txt

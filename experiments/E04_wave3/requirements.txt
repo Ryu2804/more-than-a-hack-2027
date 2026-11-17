@@ -1,4 +1,4 @@
--r ../wave2/requirements.txt
+-r ../E03_wave2/requirements.txt
 torch==2.13.0
 requests==2.32.5
 lxml==6.1.3

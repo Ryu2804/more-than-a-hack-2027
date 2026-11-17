@@ -1,4 +1,8 @@
-"""Export the frozen primary CSV without training or reading ground truth."""
+"""Export the submitted CSV (final method, retrained from scratch) without training or reading ground truth.
+
+The selection evidence is the frozen wave5 receipt; the submitted file is tied to it through the
+retrain receipt written from the E06 notebook run. The frozen wave5 CSV stays in artifacts/ as reference.
+"""
 
 import argparse
 import hashlib
@@ -28,19 +32,29 @@ def export_selected(output):
             or not receipt['promoted']
             or receipt['selected']['family'] != method['family']
             or receipt['selected']['decoder']['name'] != method['decoder']
-            or receipt['selection_sha256'] != method['selection_sha256']
-            or receipt['selected_csv_sha256'] != artifact['sha256']
-            or receipt['target_rows'] != artifact['rows']):
+            or receipt['selection_sha256'] != method['selection_sha256']):
         raise ValueError('Primary method differs from the frozen wave5 selection')
+    frozen = method['frozen_artifact']
+    if receipt['selected_csv_sha256'] != frozen['sha256'] or receipt['target_rows'] != frozen['rows']:
+        raise ValueError('Frozen wave5 reference differs from the selection receipt')
+    retrain_bytes = (REPO / method['retrain']['path']).read_bytes()
+    if sha256(retrain_bytes) != method['retrain']['sha256']:
+        raise ValueError('Retrain verification receipt changed')
+    retrain = json.loads(retrain_bytes)
+    if (retrain['selection_sha256'] != method['selection_sha256']
+            or retrain['family'] != method['family'] or retrain['decoder'] != method['decoder']
+            or retrain['selected_csv_sha256'] != artifact['sha256']
+            or retrain['target_rows'] != artifact['rows']):
+        raise ValueError('Submitted CSV is not the one recorded by the retrain receipt')
 
     source = REPO / artifact['path']
     if not source.is_file():
         raise FileNotFoundError(
-            'Published wave5 CSV is missing; see submission/README.md. '
+            'Published submission CSV is missing; see submission/README.md. '
             'This command exports an existing artifact, not raw-data inference.')
     payload = source.read_bytes()
     if sha256(payload) != artifact['sha256']:
-        raise ValueError('Frozen wave5 CSV changed; refusing to export another candidate')
+        raise ValueError('Submitted CSV changed; refusing to export another candidate')
 
     output = output.resolve()
     exists = output.exists()
@@ -56,11 +70,11 @@ def export_selected(output):
             handle.write(payload)
     actual = sha256(output.read_bytes())
     if actual != artifact['sha256']:
-        raise ValueError('Exported CSV does not match the frozen artifact')
+        raise ValueError('Exported CSV does not match the submitted artifact')
     print(f'METHOD  {method["id"]}')
     print(f'{"UNCHANGED" if exists else "EXPORTED"}  {output}')
     print(f'SHA256  {actual}')
-    print('STATUS  Primary method; frozen CSV export only, not submission-ready.')
+    print('STATUS  Final method retrained from scratch (E06 notebook); frozen wave5 CSV kept as reference.')
     return output
 
 

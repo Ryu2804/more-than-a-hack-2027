@@ -1,6 +1,6 @@
 # E06: Wave5, short-possession loss (FINAL METHOD)
 
-**This is the team's final method**, `farras_wave5_short_gru25_dead45`. Its output is the submission file [`submission.csv`](../../submission.csv) (SHA-256 `cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8`).
+**This is the team's final method**, `farras_wave5_short_gru25_dead45`. The submitted file [`carried_by_admin.csv`](../../carried_by_admin.csv) (SHA-256 `850e6d25d96ea051d0f746548ab59de9b4c04fdededca53fff16fbe9c2053b5c`) is this method **retrained from scratch** by [`E06_wave5.ipynb`](E06_wave5.ipynb); the frozen campaign candidate (`cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8`) is kept in [`submission/artifacts/farras_wave5.csv`](../../submission/artifacts/farras_wave5.csv). They agree on 99.52% of graded frames ([record](results/wave5_retrain_verification.json)).
 
 [PLAN.md](PLAN.md) fixed the 96 configurations and the adoption rule before training. The three new models use the wave4 PP-TCN with separate interventions: an auxiliary boundary head, double loss weight for short live spells, or more frequent full ball masking. The decoders compare calibration before/after merging and an H/A reset at dead intervals. The quality mixtures use visibility/entropy, not target labels.
 
@@ -8,7 +8,7 @@ Result: `short_gru25/dead45` passes the adoption rule with external spellF1 0.67
 
 ## Test the result
 
-Levels 1 and 2 need no match data; level 3 needs the frozen caches; level 4 needs the data bundle and a GPU.
+Levels 1 and 2 need no match data; level 3 needs internet, the match bundle and preferably a GPU; level 4 reruns the whole selection campaign.
 
 ### 1. Check the recorded numbers and the submission hash
 
@@ -16,13 +16,13 @@ Levels 1 and 2 need no match data; level 3 needs the frozen caches; level 4 need
 python experiments/check_results.py E06
 ```
 
-Expected: 12 `PASS` lines. These cover selection `short_gru25/dead45`, promoted, 6 eligible configurations, development 0.670099 vs control 0.656490 (gain 0.013609), public 0.772414 / 0.902059, and identical hashes for the public-audit CSV, the independent rebuild, `submission/artifacts/farras_wave5.csv` and the root `submission.csv`.
+Expected: 17 `PASS` lines. The frozen candidate: selection `short_gru25/dead45`, promoted, 6 eligible configurations, development 0.670099 vs control 0.656490 (gain 0.013609), public 0.772414 / 0.902059, and identical hashes for the public-audit CSV, the independent rebuild and `submission/artifacts/farras_wave5.csv`. The submitted retrained file: `carried_by_admin.csv` = the artifact recorded in `submission/method.json` and in the retrain receipt, public 0.772414 / 0.901002, 99.52% graded-frame agreement with the frozen candidate.
 
 Then validate and re-export the submission file:
 
 ```bash
-python evaluation/validate_submission.py submission.csv
-python -B submission/export.py --output submission.csv    # prints SHA256 cd59fb90… if unchanged
+python evaluation/validate_submission.py carried_by_admin.csv
+python -B submission/export.py --output carried_by_admin.csv    # prints SHA256 850e6d25… if unchanged
 ```
 
 ### 2. Run the unit tests
@@ -57,7 +57,7 @@ Copy the two checkpoints (`E04_wave3/out/models/hybrid.pt`, `E06_wave5/out/model
 
 What to expect:
 - Section [1] stops with a list of any missing files.
-- A retrained checkpoint has a different hash from the frozen one; section [7] then reports how many frames agree with `submission.csv` instead of `reproduced: True`. Different hardware or library versions can change the trained weights slightly.
+- A retrained checkpoint has a different hash from the frozen one; section [7] then reports how many frames agree with the frozen candidate instead of `reproduced: True` (the submitted run: 99.61% of all frames, 99.52% of graded frames). Different hardware or library versions can change the trained weights slightly.
 - Section [8] gives the public spellF1/macroF1 of the retrained model; the frozen submission scores 0.772414 / 0.902059.
 - With `RETRAIN = False` and the original frozen files, section [7] must print `reproduced: True` (hash `cd59fb90…`).
 - Sections [9]–[16] explain the predictions of whichever model was run.
