@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <b>More than a Hack 2027, Phase 1</b> · Submission of Admin Team, Institut Teknologi Sepuluh Nopember (Indonesia)<br>
+  <b>More than a Hack 2027, Phase 1</b> · Submission of carried by admin, Institut Teknologi Sepuluh Nopember (Indonesia)<br>
   Challenge organised by <a href="https://metrica-sports.com">Metrica Sports</a>, the <a href="https://www.fcbarcelona.com">FC Barcelona Innovation Hub</a> and the <a href="https://www.mwcbarcelona.com">Mobile World Capital Barcelona</a>.
 </p>
 
