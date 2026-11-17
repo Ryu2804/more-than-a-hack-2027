@@ -1,5 +1,7 @@
 # Research notes: what the literature says about our open problems
 
+> Historical Ryu literature and research notes, not the final team specification. Findings, scores, and plans below retain their original campaign context. The team selected Farras wave5 `short_gru25/dead45`; use the [canonical method and limitations](../docs/FINAL_METHOD.md), [report data](../docs/final_method.json), and [branch/archive map](../docs/BRANCHES.md), which pin the selected Farras release and artifact.
+
 Collected with the Firecrawl CLI on 2026-11-08. Sources are public papers and articles about other matches and other providers; no match data was sent anywhere. Raw scrapes are kept outside the repo (scratchpad), not committed.
 
 ## Problems this research targets

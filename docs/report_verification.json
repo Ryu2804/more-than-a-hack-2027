@@ -1,0 +1,30 @@
+{
+  "scope": "six-branch report documentation and selected-method metadata alignment",
+  "method_id": "farras_wave5_short_gru25_dead45",
+  "implementation_release": "7254990d82ce5dec3bf1fff6baa4fe2f639e3a60",
+  "branches": [
+    "main",
+    "ryu",
+    "jeremy",
+    "rasya",
+    "consolidation",
+    "farras"
+  ],
+  "canonical_files": [
+    "docs/FINAL_METHOD.md",
+    "docs/BRANCHES.md",
+    "docs/final_method.json"
+  ],
+  "report_links_checked": 105,
+  "candidate_sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+  "new_training_or_scoring": false,
+  "canonical_sha256": {
+    "docs/FINAL_METHOD.md": "9448ffcd934beb69427306ce41c622f65babd1ef1e7abfe2d594430c25d0a56c",
+    "docs/BRANCHES.md": "647371d2fef4bcc45f02ffdcacdca9a318727e41dacb2cdbb1202caa1c373031",
+    "docs/final_method.json": "82341dffb3cc7fd3ff04a794f494ba8b893addce8d8f9279c0450216496176f4"
+  },
+  "model_or_metric_reevaluation_executed": false,
+  "typst_document_compiled": false,
+  "raw_bundle_reproduction_verified": false,
+  "submission_ready": false
+}

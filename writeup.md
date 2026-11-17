@@ -1,5 +1,7 @@
 # Writeup: how our possession labeller works
 
+> Historical Ryu writeup, not the final team specification. The dated status, method, scores, and proposed updates below remain research history. The team selected Farras wave5 `short_gru25/dead45`; use the [canonical method and limitations](docs/FINAL_METHOD.md), [report data](docs/final_method.json), and [branch/archive map](docs/BRANCHES.md), which pin the selected Farras release and artifact. Neither this writeup nor the older technical document is the current report specification.
+
 Status as of 2026-11-08. This is a plain-language explanation for the team. It is not the official technical document (`TECHNICAL_DOCUMENT.md`), which still describes an older 3-game version and needs updating.
 
 ## 1. The task

@@ -1,5 +1,7 @@
 # Technical document: frame-level ball possession (More than a Hack 2027, Phase 1)
 
+> Historical Ryu technical document, not the final team specification. The descriptions, scores, and submission instructions below belong to the original research campaign. The team selected Farras wave5 `short_gru25/dead45`; use the [canonical method and limitations](docs/FINAL_METHOD.md), [report data](docs/final_method.json), and [branch/archive map](docs/BRANCHES.md), which pin the selected Farras release and artifact.
+
 Team: [team name] (members: [names]). Rename this file to `<team_name>.md` before submitting.
 
 ## Approach and why

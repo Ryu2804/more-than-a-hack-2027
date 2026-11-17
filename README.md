@@ -1,5 +1,13 @@
 # More than a Hack 2027 — Phase 1: Ball Possession
 
+## Final team method
+
+For the technical report, use **Farras wave5 `short_gru25/dead45`**: [method specification and limitations](docs/FINAL_METHOD.md), [report data](docs/final_method.json), and [branch/archive map](docs/BRANCHES.md).
+
+This Ryu branch is research source, not the selected runtime. The exact selected code and prediction artifact remain pinned to [Farras release `7254990d82ce5dec3bf1fff6baa4fe2f639e3a60`](https://github.com/Ryu2804/more-than-a-hack-2027/tree/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60). Local experiment selections and older technical writeups describe their original research campaigns, not the final team specification. This documentation decision does not establish raw-data reproduction readiness, blind evaluation, or private-score superiority; see the canonical limitations.
+
+The challenge introduction and baseline instructions below remain as background.
+
 **Organised by [Metrica Sports](https://metrica-sports.com), [FC Barcelona](https://www.fcbarcelona.com)
 and the [Mobile World Capital Barcelona](https://www.mwcbarcelona.com)**, at the Talent Arena in Barcelona.
 
