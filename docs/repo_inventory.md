@@ -1,5 +1,12 @@
 # Repo Inventory (generated 2026-11-11)
 
+> Historical snapshot, not the current branch inventory or final-method specification.
+> The team selected **Farras wave5 `short_gru25/dead45`**. Use
+> [FINAL_METHOD.md](FINAL_METHOD.md), [final_method.json](final_method.json), and
+> [BRANCHES.md](BRANCHES.md) for report facts and pinned source.
+> Branch tips, working-tree status, and backup paths below describe the 2026-11-11 snapshot only.
+> In particular, the old statement that no local Farras branch exists is not a current instruction.
+
 ## Branches
 
 | Branch | Type | Commit | Date | Subject | Ahead of local `main` |

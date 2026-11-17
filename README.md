@@ -1,5 +1,24 @@
 # More than a Hack 2027 — Phase 1: Ball Possession
 
+## Team report: final method and branch status
+
+The team selected **Farras wave5 `short_gru25/dead45`**. Start the technical report with
+[FINAL_METHOD.md](docs/FINAL_METHOD.md), the [machine-readable evidence](docs/final_method.json),
+and the [branch/archive map](docs/BRANCHES.md).
+
+This branch preserves historical consolidation work, migration adapters, and benchmark results.
+Local experimental code is not automatically the selected pipeline. Use the
+[pinned Farras release](https://github.com/Ryu2804/more-than-a-hack-2027/tree/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60)
+for wave5 source and CSV; its exporter is not provided by this archive branch.
+The [candidate registry](experiments/CANDIDATES.md) separates the final selection from historical
+metrics. Old adapters do not establish a ranking of exact final candidates.
+
+Final-method public diagnostics are spellF1 **0.7724137931034483** and macroF1
+**0.9020586271571484**. External development spellF1 **0.670099305497763** is a different
+cohort, not a competition score. Private performance is unknown. Method selection does not
+establish raw-bundle reproducibility, blind evaluation, leakage-free history, or submission readiness.
+The challenge guide and baseline scores below remain reference material.
+
 **Organised by [Metrica Sports](https://metrica-sports.com), [FC Barcelona](https://www.fcbarcelona.com)
 and the [Mobile World Capital Barcelona](https://www.mwcbarcelona.com)**, at the Talent Arena in Barcelona.
 
