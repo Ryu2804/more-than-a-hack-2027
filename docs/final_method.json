@@ -3,7 +3,7 @@
   "method_id": "farras_wave5_short_gru25_dead45",
   "team_selection": "final_method",
   "display_name": "Farras wave5: short_gru25/dead45",
-  "submission_ready": false,
+  "submission_ready": true,
   "source": {
     "branch": "farras",
     "release_commit": "7254990d82ce5dec3bf1fff6baa4fe2f639e3a60",
@@ -13,6 +13,7 @@
     "selection_sha256": "6d69b0e4c702144a0ef2877c1522c2c6478f0ca5bb6b7089f315526bfc367b95"
   },
   "artifact": {
+    "role": "frozen_selection_candidate",
     "kind": "algorithmic_prediction_not_ground_truth",
     "match": "BAR-ATH",
     "timeline": "tactical_video",
@@ -34,11 +35,22 @@
       "X"
     ]
   },
+  "submitted_artifact": {
+    "role": "submitted_file_retrained_from_scratch",
+    "path": "carried_by_admin.csv",
+    "copy": "submission/artifacts/e06_retrained.csv",
+    "sha256": "850e6d25d96ea051d0f746548ab59de9b4c04fdededca53fff16fbe9c2053b5c",
+    "rows": 199319,
+    "receipt": "experiments/E06_wave5/results/wave5_retrain_verification.json",
+    "public_spellF1": 0.7724137931034483,
+    "public_macroF1": 0.9010016369961317,
+    "graded_frame_agreement_with_frozen": 0.9951528733389149
+  },
   "pipeline": {
     "mode": "offline",
     "model_fps": 5,
     "output_fps": 25,
-    "input": "prepared automatic tracking observations; target raw-to-cache reproduction incomplete",
+    "input": "automatic tracking of the target, rebuilt from the raw match bundle by experiments/E06_wave5/E06_wave5.ipynb",
     "components": [
       {
         "name": "short_tcn",
@@ -185,6 +197,7 @@
       "competition_score": false
     },
     "competition_public": {
+      "csv": "frozen candidate (artifact); the submitted file is in submitted_artifact",
       "purpose": "post_freeze_diagnostic_not_leaderboard",
       "spellF1": 0.7724137931034483,
       "macroF1": 0.9020586271571484,
@@ -230,12 +243,14 @@
     }
   ],
   "reproduction": {
-    "available": "published frozen CSV validation/export",
+    "available": "from-scratch retrain notebook (public data + raw match bundle -> CSV) and export of the published CSV",
     "command_in_farras_release": "python -B submission/export.py",
     "raw_bundle_to_identical_csv_complete": false,
     "cached_input_new_component_refit_identical": true,
     "frozen_gru_refit_in_wave5": false,
-    "all_branches_contain_wave5_runtime": false
+    "all_branches_contain_wave5_runtime": false,
+    "retrain_notebook": "experiments/E06_wave5/E06_wave5.ipynb",
+    "rerun_byte_identical_guaranteed": false
   },
   "limitations": [
     "historically exposed external matches and public diagnostics; adaptive research, not blind evaluation",

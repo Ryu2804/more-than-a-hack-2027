@@ -4,13 +4,13 @@ Ball-possession experiments in `experiments/`, following the team's experiment l
 
 ## Team final method
 
-**Farras wave5 `short_gru25/dead45` is the team's final method for the submission candidate and the method section of the technical report.** Report authors start from the [cross-branch specification](../docs/FINAL_METHOD.md) and the [Typst facts](../docs/final_method.json). Runtime identity/hash: [submission/method.json](../submission/method.json). Export path and readiness status: [submission/README.md](../submission/README.md).
+**Wave5 `short_gru25/dead45` ([E06](E06_wave5/)) is the submitted method.** Description: [docs/FINAL_METHOD.md](../docs/FINAL_METHOD.md) (facts as data in [final_method.json](../docs/final_method.json)). Runtime identity and hashes: [submission/method.json](../submission/method.json). Export: [submission/README.md](../submission/README.md).
 
 ```bash
 python -B submission/export.py
 ```
 
-This command validates and exports the frozen CSV published in `submission/artifacts/farras_wave5.csv`, without training, local caches or reading GT. It is not a raw-bundle inference path, and it does not replace the method with wave6's higher public score.
+This command validates and exports the submitted CSV (`submission/artifacts/e06_retrained.csv`, the method retrained from scratch by the E06 notebook), without training, local caches or reading GT. It is not a raw-bundle inference path (that is the E06 notebook), and it does not replace the method with wave6's higher public score.
 
 ## Campaign history and comparison research
 
@@ -67,7 +67,7 @@ Example:
 export FARRAS_SOURCE_EXPERIMENTS=/path/to/workspace/experiments      # PowerShell: $env:FARRAS_SOURCE_EXPERIMENTS = "D:\workspace\experiments"
 ```
 
-Raw tracking, feature caches, model weights and label/frame-level arrays are gitignored. Each campaign's `out/` and `cache/` are ignored by Git. The `results/` folders contain only aggregate metrics, configurations and hashes. One selected prediction CSV is published separately in `submission/artifacts/farras_wave5.csv` (and as `submission.csv` at the root) for harness checks; it is not GT.
+Raw tracking, feature caches, model weights and label/frame-level arrays are gitignored. Each campaign's `out/` and `cache/` are ignored by Git. The `results/` folders contain only aggregate metrics, configurations and hashes. Two prediction CSVs are published in `submission/artifacts/`: the frozen wave5 candidate (`farras_wave5.csv`) and the submitted retrained file (`e06_retrained.csv`, copied to the root as `carried_by_admin.csv`). Neither is GT.
 
 ## Reproduction
 

@@ -1,9 +1,9 @@
 # Experiments
 
-The final team method is **Farras wave5 `short_gru25/dead45`**.
-Report authors must use the [final specification](../docs/FINAL_METHOD.md),
-[Typst facts](../docs/final_method.json), and [branch/archive map](../docs/BRANCHES.md).
-The [submission package](../submission/README.md) contains the frozen CSV export and readiness status.
+The final method is wave5 `short_gru25/dead45` ([E06](E06_wave5/)), described in
+[docs/FINAL_METHOD.md](../docs/FINAL_METHOD.md) (facts as data in [final_method.json](../docs/final_method.json);
+branches in [BRANCHES.md](../docs/BRANCHES.md)).
+The [submission package](../submission/README.md) holds the submitted CSV and its export tool.
 All other primary/control decisions below are campaign-local research, not a replacement of the final method.
 
 **All experiments in run order, with one record card each: [REGISTRY.md](REGISTRY.md).**

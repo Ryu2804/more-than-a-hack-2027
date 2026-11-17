@@ -455,7 +455,7 @@ def score_public():
 def crop_error_iou():
     """Panel A of the notebook's error-anatomy figure; panel B repeats Fig. 7."""
     from PIL import Image
-    im = Image.open(ROOT / "image/fig17_error_anatomy.png")
+    im = Image.open(ROOT / "image/fig15_error_anatomy.png")
     im.crop((0, 0, int(im.width * 0.655), im.height)).save(FIG / "fig_error_iou.png")
 
 

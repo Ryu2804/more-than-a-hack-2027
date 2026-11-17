@@ -58,7 +58,7 @@ Copy the two checkpoints (`E04_wave3/out/models/hybrid.pt`, `E06_wave5/out/model
 What to expect:
 - Section [1] stops with a list of any missing files.
 - A retrained checkpoint has a different hash from the frozen one; section [7] then reports how many frames agree with the frozen candidate instead of `reproduced: True` (the submitted run: 99.61% of all frames, 99.52% of graded frames). Different hardware or library versions can change the trained weights slightly.
-- Section [8] gives the public spellF1/macroF1 of the retrained model; the frozen submission scores 0.772414 / 0.902059.
+- Section [8] gives the public spellF1/macroF1 of the retrained model; the submitted retrained file scores 0.772414 / 0.901002 and the frozen candidate 0.772414 / 0.902059.
 - With `RETRAIN = False` and the original frozen files, section [7] must print `reproduced: True` (hash `cd59fb90…`).
 - Sections [9]–[16] explain the predictions of whichever model was run.
 

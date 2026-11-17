@@ -8,7 +8,9 @@
 #
 #   python -m pip install -r requirements.txt
 #   python -B experiments/check_results.py            # recorded results of E00-E13
-#   python -B -m pytest -q experiments                # unit tests of every experiment
+#   for d in experiments/E*/; do python -B -m pytest -q "$d"; done   # unit tests, one folder per run
+#                                                     (campaigns share module names, so one pytest run over
+#                                                     experiments/ fails to collect)
 -r experiments/E06_wave5/requirements.txt
 
 # figures (image/make_figures.py, docs/report/make_figures.py) and tests

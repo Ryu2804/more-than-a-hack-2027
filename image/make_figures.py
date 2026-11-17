@@ -3,8 +3,8 @@
 Every number comes from committed evidence: the submitted CSV (carried_by_admin.csv, the final method
 retrained from scratch), the public ground truth, the official baseline CSVs and each experiment's
 results/*.json. Data handling is shared with the technical report (docs/report/make_figures.py).
-The explainability figures (fig10-fig14) are the matplotlib outputs of the executed E06 notebook
-(final_notebook.ipynb), copied unchanged.
+The explainability figures (fig08-fig15) are the matplotlib outputs of the executed E06 notebook
+(carried_by_admin.ipynb at the repository root), copied unchanged.
 
     python image/make_figures.py
 
@@ -151,7 +151,7 @@ def fig_forest():
               loc="upper left")
     fig.text(0.01, -0.02, "Controls differ per campaign (cohorts: E06/E07 three providers; E09–E12 seven IDSSE LOSO folds; "
              "E13 cross-provider transfer). Compare a row only with its own threshold.", fontsize=8, color="#555555")
-    save(fig, "fig08_decision_forest")
+    save(fig, "fig16_decision_forest")
 
 
 # ------------------------------------------------------------------ 5. development grid
@@ -255,7 +255,7 @@ def fig_benchmark():
            title="E08 shared benchmark: 7 IDSSE leave-one-match-out folds, same decoder (dead45)")
     fig.text(0.01, -0.03, "Grey dots: one held-out match each (lines join the same match). Bars: mean over 7 matches. "
              "Equal update budget (3 seeds × 500 updates); adapted families, not each branch's exact submission.", fontsize=8, color="#555555")
-    save(fig, "fig09_fair_benchmark")
+    save(fig, "fig17_fair_benchmark")
 
 
 # ------------------------------------------------------------------ 9. output anatomy
@@ -309,14 +309,14 @@ def score_submitted():
 def export_notebook_figures():
     """Copy the explainability figures of the executed E06 notebook (if present) into image/."""
     import base64
-    nb_path = ROOT / "final_notebook.ipynb"
+    nb_path = ROOT / "carried_by_admin.ipynb"
     if not nb_path.exists():
-        print("final_notebook.ipynb not found; keeping existing fig10-fig14"); return
-    wanted = {"## [9] Anatomy of a decision": "fig10_decision_anatomy", "## [11] Which inputs drive": "fig11_integrated_gradients",
-              "## [12] How far in time": "fig12_temporal_receptive_field", "## [13] Which players": "fig13_player_attention",
+        print("carried_by_admin.ipynb not found; keeping existing fig08-fig15"); return
+    wanted = {"## [9] Anatomy of a decision": "fig08_decision_anatomy", "## [11] Which inputs drive": "fig10_integrated_gradients",
+              "## [12] How far in time": "fig11_temporal_receptive_field", "## [13] Which players": "fig12_player_attention",
               "## [15] Where the three seeds": "fig14_seed_disagreement",
-              "## [10] Counterfactual stage ablation": "fig15_stage_ablation", "## [14] Feature-group occlusion": "fig16_occlusion",
-              "## [16] Error anatomy": "fig17_error_anatomy"}
+              "## [10] Counterfactual stage ablation": "fig09_stage_ablation", "## [14] Feature-group occlusion": "fig13_occlusion",
+              "## [16] Error anatomy": "fig15_error_anatomy"}
     cells = json.loads(nb_path.read_text())["cells"]
     for i, c in enumerate(cells):
         head = "".join(c["source"]) if c["cell_type"] == "markdown" else ""

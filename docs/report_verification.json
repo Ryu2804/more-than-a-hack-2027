@@ -26,5 +26,6 @@
   "model_or_metric_reevaluation_executed": false,
   "typst_document_compiled": false,
   "raw_bundle_reproduction_verified": false,
-  "submission_ready": false
+  "submission_ready": false,
+  "superseded_note": "Historical record, kept unchanged. The canonical files were edited afterwards, so their hashes no longer match: the submitted CSV is now the retrained 850e6d25d96ea051d0f746548ab59de9b4c04fdededca53fff16fbe9c2053b5c (experiments/E06_wave5/results/wave5_retrain_verification.json) and the report was compiled from docs/report/report.typ."
 }

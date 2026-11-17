@@ -15,7 +15,7 @@
     "sha256": "a57072202ae4ab9fe8432342c361d1f0ea0da65396bc00eb4bcc90ce89b4f01c"
   },
   "reproduction": "retrained_from_scratch_notebook",
-  "submission_ready": false,
+  "submission_ready": true,
   "retrain": {
     "path": "experiments/E06_wave5/results/wave5_retrain_verification.json",
     "sha256": "20c830fd1a4455546943300dbe3e4c3c639a7220ebe8c32d57ad5d7aa30e0a76"

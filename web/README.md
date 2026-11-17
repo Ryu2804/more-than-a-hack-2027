@@ -156,6 +156,6 @@ Design delivery gate: **Hard Gate PASS** (working controls, keyboard/recovery st
 The [editable FigCraft file](design/possession-ai.figcraft), [desktop](design/desktop.png),
 [mobile](design/mobile.png), [replay](design/replay.png), [mobile replay](design/replay-mobile.png),
 [results explanation](design/method.png), [state specimens](design/states.png),
-[tokens](design/tokens.json) and [handoff](design/HANDOFF.md) preserve the earlier Indonesian design phase.
+[tokens](design/tokens.json) and [handoff](design/HANDOFF.md) (translated to English) preserve the earlier design phase, whose mockups are in Indonesian.
 Its static [design verification](design/verification.json) is not the application's runtime test report.
 The live English application is the current implementation.

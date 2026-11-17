@@ -1,6 +1,6 @@
 # Wave5: short-possession weighting passes validation, public score unchanged
 
-> Report status: frozen campaign results underlying the team's final method. The cross-branch technical-report specification is in [FINAL_METHOD.md](../../docs/FINAL_METHOD.md) and [final_method.json](../../docs/final_method.json). The publication notes at the end record the situation when the campaign finished; one selected CSV was later published at `submission/artifacts/farras_wave5.csv` (and at the root as `submission.csv`), without changing the results or the candidate hash.
+> Report status: frozen campaign results underlying the team's final method. The cross-branch technical-report specification is in [FINAL_METHOD.md](../../docs/FINAL_METHOD.md) and [final_method.json](../../docs/final_method.json). The publication notes at the end record the situation when the campaign finished; this frozen candidate CSV was later published at `submission/artifacts/farras_wave5.csv`, without changing the results or the candidate hash. The submitted file (`carried_by_admin.csv`) is the same method retrained from scratch ([README](README.md)).
 
 **Frozen candidate: `short_gru25/dead45`.** It passes the adoption rule written before training. External mean spellF1 rises under the same protocol; public spellF1 does not rise. The negative result on the paired ball-drop stress test is kept, not hidden behind the gain in short-spell recall.
 
@@ -150,7 +150,7 @@ Additional aggregate evidence: [execution](results/wave5_execution.json), [verif
 
 ## Publication and conclusion
 
-Raw tracking, per-frame masks/labels/probabilities, model weights and the campaign's candidate CSVs are gitignored; only code and aggregate metrics/provenance are committed. The selected CSV is published as `submission.csv` at the repository root and in `submission/artifacts/`.
+Raw tracking, per-frame masks/labels/probabilities, model weights and the campaign's candidate CSVs are gitignored; only code and aggregate metrics/provenance are committed. The frozen candidate CSV is published in `submission/artifacts/farras_wave5.csv`; the submitted retrained file is `carried_by_admin.csv` at the repository root.
 
 SkillCorner MIT, IDSSE CC BY 4.0. Credit and provenance for Ryu and the data are inherited from [E05_wave4/reference/SOURCE.md](../E05_wave4/reference/SOURCE.md). Wave5 adds no Metrica training and uses no anchor tree; Metrica remains event-proxy evaluation, not evidence of equivalence with the corrected target GT.
 

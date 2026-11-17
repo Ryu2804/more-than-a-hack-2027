@@ -1,71 +1,73 @@
-# Penguasaan Bola: design handoff
+# Ball Possession (Penguasaan Bola): design handoff
 
 ## Status
 
-Arsip handoff untuk fase desain FigCraft. File desain dan preview di folder ini tetap merekam UI bahasa Indonesia pada fase tersebut. Aplikasi web sudah diimplementasikan dalam bahasa Inggris; gunakan [README web](../README.md) untuk status implementasi, verifikasi browser, dan deployment. Dokumen teknis serta kode penelitian di luar `web/` tidak diubah.
+Archived handoff from the FigCraft design phase. The design files and previews in this folder still show the Indonesian UI of that phase. The web application itself is implemented in English; see the [web README](../README.md) for implementation status, browser verification and deployment. Technical documents and research code outside `web/` were not changed.
 
-Arah visual tetap mengikuti [brief](../football_match_ball_possession_dashboard_ui_ux_spec.md): light workspace, Inter, canvas `#F6F7F9`, kartu putih, biru Barcelona, hijau Athletic Club, amber bola mati. ENERGY 2 / RHYTHM 2 / MOTION 1.
+The visual direction follows the [brief](../football_match_ball_possession_dashboard_ui_ux_spec.md): light workspace, Inter, canvas `#F6F7F9`, white cards, Barcelona blue, Athletic Club green, amber for dead ball. ENERGY 2 / RHYTHM 2 / MOTION 1.
 
-## Cakupan tampilan
+## Scope of the views
 
-Semua ringkasan dan grafik sekarang memakai **5 menit yang memiliki label acuan publik**, bukan seluruh pertandingan.
+All summaries and charts use **the 5 minutes that have public reference labels**, not the whole match.
 
-- Acuan batas: [metadata publik](../../evaluation/gt/BAR-ATH_possession_gt_public_meta.json).
-- Sumber video tactical: frame 11185 sampai 18684, inklusif.
-- Interval setengah terbuka: `[11185, 18685)`, 7.500 frame pada 25 fps.
-- Bagian file asli: `07:27.40` sampai `12:27.40`, batas akhir eksklusif.
-- Waktu yang terlihat: `00:00` sampai `05:00`, dihitung dari awal cuplikan.
-- Bila memakai cuplikan terpotong: `source_frame = 11185 + clip_frame`.
-- Bila membuka file pertandingan asli: batasi pemutaran/seek pada `[447.4, 747.4)` detik. Jangan menampilkan bagian lain sebagai bagian evaluasi publik.
-- Kamera broadcast tidak punya pemetaan waktu yang diverifikasi; jangan menganggap waktunya sama dengan tactical.
+- Boundary reference: [public metadata](../../evaluation/gt/BAR-ATH_possession_gt_public_meta.json).
+- Tactical video source: frames 11185 to 18684, inclusive.
+- Half-open interval: `[11185, 18685)`, 7,500 frames at 25 fps.
+- Part of the original file: `07:27.40` to `12:27.40`, end exclusive.
+- Displayed time: `00:00` to `05:00`, counted from the start of the clip.
+- With a trimmed clip: `source_frame = 11185 + clip_frame`.
+- With the original match file: limit playback/seek to `[447.4, 747.4)` seconds, and do not present any other part as the public evaluation window.
+- The broadcast camera has no verified time mapping; its time is not the tactical time.
 
-Detail yang diperlukan implementasi tetap berada di metadata ini dan [games.py](../../games.py), bukan di teks antarmuka.
+The details the implementation needs live in this metadata and in [games.py](../../games.py), not in interface text.
 
-## Perbandingan yang adil
+## Fair comparison
 
-[Label acuan publik](../../evaluation/gt/BAR-ATH_possession_gt_public.csv) dan [hasil model](../../submission/artifacts/farras_wave5.csv) dipotong pada interval yang identik. Dua baris di Replay dan MobileReplay memakai titik awal, lebar, warna, dan skala waktu yang sama:
+The [public reference labels](../../evaluation/gt/BAR-ATH_possession_gt_public.csv) and the [model output](../../submission/artifacts/farras_wave5.csv) are cut to the identical interval. The two rows in Replay and MobileReplay share start point, width, colours and time scale:
 
-1. **Label acuan**: 21 run label, termasuk 17 penguasaan Barcelona/Athletic Club.
-2. **Hasil model**: 15 run label, termasuk 12 penguasaan Barcelona/Athletic Club.
+1. **Reference labels**: 21 label runs, including 17 Barcelona/Athletic Club possessions.
+2. **Model output**: 15 label runs, including 12 Barcelona/Athletic Club possessions.
 
-Segmen digambar langsung dari run-length encoding setiap sumber. Tidak ada smoothing, koreksi label, pergeseran waktu, pelatihan, pemilihan model, atau penghitungan ulang skor. GT publik dibaca hanya untuk perbandingan visual yang diminta pengguna. GT privat tidak digunakan.
+Segments are drawn directly from each source's run-length encoding. There is no smoothing, label correction, time shift, training, model selection or score recomputation. The public GT is read only for the visual comparison; the private GT is not used.
 
-Lihat [replay.json](replay.json) untuk kontrak interval dan sumber; [evidence.json](evidence.json) untuk distribusi yang ditampilkan. Jumlah prediksi pada cuplikan: Barcelona 3.585, Athletic Club 2.860, bola mati 1.055, tidak diketahui 0. Persentase memakai denominator 7.500. `55,6%` memakai denominator Barcelona + Athletic Club dan diberi keterangan “Barcelona saat bola aktif”.
+The model output here is the **frozen campaign candidate** (`farras_wave5.csv`). The submitted file (`carried_by_admin.csv`) is the same method retrained from scratch and agrees with it on 99.52% of graded frames ([FINAL_METHOD.md](../../docs/FINAL_METHOD.md)).
 
-Ringkasan area/garis memakai 30 interval masing-masing 250 frame atau 10 detik. Nilainya frekuensi label nyata, digambar sebagai step, bukan probabilitas atau spline.
+See [replay.json](replay.json) for the interval and source contract and [evidence.json](evidence.json) for the displayed distribution. Predicted counts in the clip: Barcelona 3,585, Athletic Club 2,860, dead ball 1,055, unknown 0. Percentages use 7,500 as denominator. `55.6%` uses Barcelona + Athletic Club as denominator and is labelled "Barcelona while the ball is live".
 
-## Bahasa dan skor
+The area/line summary uses 30 intervals of 250 frames (10 seconds) each. Values are actual label frequencies drawn as steps, not probabilities or splines.
 
-Nama metode final dan rincian riset tetap tersedia di [sumber laporan](../../docs/final_method.json); tidak ditampilkan dalam UI.
+## Language and scores
 
-Skor terpublikasi hanya diubah skala tampilannya, bukan dihitung ulang:
+The final method name and research details are in the [report source](../../docs/final_method.json); they are not shown in the UI.
 
-| Label UI | Sumber | Tampilan |
+Published scores are only rescaled for display, not recomputed:
+
+| UI label | Source | Display |
 | --- | --- | --- |
-| Penguasaan bola / 100 | Public spellF1 0.7724137931034483 | 77,2 |
-| Tiap momen / 100 | Public macroF1 0.9020586271571484 | 90,2 |
-| Pertandingan lain / 100 | External-development spellF1 0.670099305497763 | 67,0 |
+| Possession / 100 (Penguasaan bola) | Public spellF1 0.7724137931034483 | 77.2 |
+| Every moment / 100 (Tiap momen) | Public macroF1 0.9020586271571484 (frozen candidate) | 90.2 |
+| Other matches / 100 (Pertandingan lain) | External-development spellF1 0.670099305497763 | 67.0 |
 
-Ini **skor dari 100, bukan persentase akurasi**. Nilai pertandingan lain hanya ada pada halaman penjelasan dan dipisahkan dari penilaian cuplikan. Kartu Replay berisi dua skor publik serta jumlah penguasaan acuan/hasil model.
+These are **scores out of 100, not accuracy percentages**. The other-matches value appears only on the explanation page, separate from the clip assessment. The Replay card shows the two public scores and the reference/model possession counts.
 
-Batas penilaian tetap dijelaskan dengan bahasa biasa: cuplikan sudah pernah dilihat selama pengembangan, pengujian baru masih diperlukan, hasil seluruh pertandingan belum diketahui, dan pembuatan ulang dari awal belum lengkap.
+The limits of the assessment are explained in plain language: the clip was seen during development, new testing is still needed, and the full-match result is unknown. (At design time the from-scratch rebuild was not yet complete; it has since been done by the E06 notebook.)
 
-## Video lokal dan gambar contoh
+## Local video and sample image
 
-Cuplikan `cuplikan-acuan-5-menit.mp4` dibuat secara lokal **di luar repo**, berdurasi 300 detik, 7.500 frame, 1920 × 1080. Frame pertama dan terakhir dapat didekode. Frame pertama paling dekat dengan frame sumber 11185 saat dibandingkan dengan tetangganya; perbedaan kompresi tetap ada.
+The clip `cuplikan-acuan-5-menit.mp4` was made locally, **outside the repo**: 300 seconds, 7,500 frames, 1920 × 1080. Its first and last frames decode. Its first frame is closest to source frame 11185 when compared with its neighbours; compression differences remain.
 
-Jangan menyalin atau memublikasikan cuplikan, video asli, maupun frame dari bundle ke GitHub, Vercel, atau dokumen publik. Aturan [RULES.md](../../RULES.md) melarang redistribusi data dan clipped video. Implementasi web menggunakan file lokal; revoke object URL saat file diganti.
+Do not copy or publish the clip, the original video or frames from the bundle to GitHub, Vercel or public documents. [RULES.md](../../RULES.md) forbids redistributing the data and clipped video. The web implementation uses local files and revokes the object URL when the file is replaced.
 
-Poster di FigCraft masih merupakan potongan gambar yang diberikan pengguna, dengan kredit [Hadi Sotudeh / LinkedIn](https://lnkd.in/p/gDmRew2e). Label “Gambar contoh” tetap terlihat. Poster bukan bukti video sedang diputar atau sesuai dengan momen yang ditunjuk; izin reuse production belum diverifikasi. Tidak ada GT, posisi pemain, atau skor model referensi yang disalin dari screenshot.
+The poster in FigCraft is still a crop of an image supplied by the user, credited to [Hadi Sotudeh / LinkedIn](https://lnkd.in/p/gDmRew2e). The "Sample image" label stays visible. The poster is not evidence that the video is playing or matches the indicated moment; permission for production reuse has not been verified. No GT, player positions or reference model scores were copied from the screenshot.
 
-## Layar dan interaksi
+## Screens and interaction
 
-Sepuluh frame tetap tersedia: Desktop, Tablet, Mobile, Evidence, MobileEvidence, States, Replay, MobileReplay, MediaSetup, MobileMediaSetup. File menyimpan 6 flow dan 39 koneksi prototype. Ikon transport adalah contoh tombol, bukan pemutar aktif.
+Ten frames remain: Desktop, Tablet, Mobile, Evidence, MobileEvidence, States, Replay, MobileReplay, MediaSetup, MobileMediaSetup. The file stores 6 flows and 39 prototype connections. The transport icons are sample buttons, not an active player.
 
-Grid overview desktop tetap 2 × 2, gap 20, card 638 × 356. Mobile memakai satu kolom; ringkasan dan perbandingan tetap terbaca. Target sentuh minimum 44 px, font minimum 11 px, focus ring 2 px, dan setiap warna disertai nama tim/keadaan bola. Teks di atas poster memakai bidang gelap buram.
+The desktop overview grid stays 2 × 2, gap 20, cards 638 × 356. Mobile uses one column; the summary and comparison stay readable. Minimum touch target 44 px, minimum font 11 px, focus ring 2 px, and every colour is paired with a team/ball-state name. Text over the poster sits on a blurred dark panel.
 
-Saat implementasi: satu cursor relatif cuplikan memperbarui video dan dua baris label bersama. Jangan membiarkan hasil dari momen lama tampil seolah cocok setelah seek. Tampilkan belum memilih video, buffering, seek, decode error, dan akhir cuplikan secara jelas. Kegagalan video tidak boleh menghilangkan perbandingan label. Jangan membuat posisi pemain dari label penguasaan.
+For the implementation: one clip-relative cursor updates the video and both label rows together. Results from an earlier moment must not appear to match after a seek. Show no-video-selected, buffering, seek, decode error and end-of-clip clearly. A video failure must not remove the label comparison. Do not derive player positions from possession labels.
 
-## Implementasi berikutnya
+## Next implementation
 
-Bagian implementasi pada handoff ini bersifat historis. Monorepo, aplikasi, lockfile, build produksi, dan pemutaran video lokal sekarang tersedia. Status deployment serta verifikasi aplikasi mengikuti [README web](../README.md), bukan hasil pemeriksaan desain statis di folder ini.
+The implementation part of this handoff is historical. The monorepo, application, lockfile, production build and local video playback now exist. Deployment status and application verification follow the [web README](../README.md), not the static design checks in this folder.

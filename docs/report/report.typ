@@ -147,6 +147,22 @@ The second component is the hybrid model of an earlier campaign (wave3): a playe
 
 *Viterbi.* A two-state Viterbi pass @viterbi1967 with switch cost $lambda$ decodes H/A. It is *reset in every live interval*, so a stoppage never carries a possession across it. Rather than fixing $lambda$, we pick it from an 18-value grid so that the number of decoded possessions matches a target $hat(n) = rho dot T_"graded"$. Here $rho$ is the possession rate per minute estimated from the *training folds only*, balanced across providers, and possessions are counted after merging. Finally, live runs shorter than #dec.merge_s s are absorbed into the preceding run. No rule specific to the target match (forced dead balls, kickoff handling) is used. The match-half boundaries come from the competition metadata.
 
+== Possession rules <sec:rules>
+
+We write no hand-coded definition of "controlled" possession. The networks learn where the line lies from the external labels: IDSSE provider possession and SkillCorner phases of play. The decoder then enforces the challenge's structural rules. Each case is handled as follows.
+
+*Ball in play.* There is no referee signal in the tracking, so a frame is `D` only when the learned dead-ball probability exceeds #dec.dead_threshold for at least #dec.min_dead_s s. Shorter dips stay live. A dead ball carries no team: ownership of restarts is not modelled, as the challenge asks.
+
+*Restarts.* Because the Viterbi pass is reset in every live interval, the team after a stoppage is decided only by the evidence inside that interval. Nothing is carried over from before the stoppage. Set pieces are not detected explicitly: there is no rule that the restarting team, or the team that conceded the throw-in or kick-off, gets the ball.
+
+*Loose and contested balls.* There is no third state. The two-state Viterbi keeps the current team until the evidence for the other team outweighs the switch cost $lambda$. This matches the rule that possession stays with the last team while the ball is loose or contested. The same holds while the ball is invisible, where the network relies on team shape and the player set.
+
+*Touches, deflections and duels.* A change of possession needs evidence that lasts. Live runs shorter than #dec.merge_s s are absorbed into the preceding run, so a touch, deflection or duel shorter than #dec.merge_s s never creates a possession. The only exception is the first run after a stoppage, which is kept. A player within #dec.gate_r m of a visible ball adds evidence for that player's team but cannot switch possession on its own.
+
+*Abstention.* Frames outside the two halves are `X`. Every graded frame receives `H`, `A` or `D`, with no abstention.
+
+The cost of these choices is that genuinely controlled possessions shorter than about 2 s are lost. On the public window, every GT possession under 2 s is missed (@sec:xai).
+
 #figure(
   caption: [Locked configuration (`docs/final_method.json`; CSV hash from the retrain record).],
   placement: top,
@@ -251,7 +267,7 @@ All numbers and figures in this section come from the executed notebook run and 
 *Anatomy of a decision.* @fig:anatomy follows the public window through every stage. The two components agree on dead/live for 92.0% of samples and on the team for 85.3%; fusion mostly smooths the TCN with the BiGRU. The decoder's team evidence is dominated by the network: the proximity gate fires on only 4.3% of samples over the full match (7.0% in the public window).
 
 #figure(
-  image("../../image/fig10_decision_anatomy.png", width: 100%),
+  image("../../image/fig08_decision_anatomy.png", width: 100%),
   caption: [One decision through every stage on the public window: (A) dead-ball probability of each component and the dead mask; (B) P(home | live) of each component; (C) decoder team evidence $ell_H - ell_A$ and the samples where the proximity gate fired; (D) labels after Viterbi, after the 1-s merge, and the GT.],
   placement: top,
   scope: "parent",
@@ -295,7 +311,7 @@ All numbers and figures in this section come from the executed notebook run and 
 ) <tab:occlusion>
 
 #figure(
-  image("../../image/fig11_integrated_gradients.png", width: 100%),
+  image("../../image/fig10_integrated_gradients.png", width: 100%),
   caption: [Integrated Gradients: share of total |attribution| per input for the dead-ball logit (A) and the team logit (B), mean ± sd over the three seeds. Red: frame channels; blue: player-set features.],
   placement: top,
   scope: "parent",
@@ -304,7 +320,7 @@ All numbers and figures in this section come from the executed notebook run and 
 *How far in time.* Although the receptive field spans ±12.8 s, 50% of the input-gradient mass lies within ±2.0–2.2 s of the decided sample and 90% within ±7.0 s, symmetric in past and future (@fig:rf). The TCN decides locally; long-range consistency comes from the BiGRU and the decoder.
 
 #figure(
-  image("../../image/fig12_temporal_receptive_field.png", width: 100%),
+  image("../../image/fig11_temporal_receptive_field.png", width: 100%),
   caption: [Effective temporal receptive field of the PP-TCN. (A) Share of the input gradient by time offset from the decided sample. (B) Cumulative share by absolute offset.],
   placement: top,
 ) <fig:rf>
@@ -312,7 +328,7 @@ All numbers and figures in this section come from the executed notebook run and 
 *Which players.* The attention pooling is not a "nearest player" detector. With the ball visible, the nearest player receives 0.83× the uniform weight and attention grows with distance to the ball; with the ball missing it is uniform (1.01×), and it is split evenly between the teams. Proximity reaches the model through the per-player distance features and the max-pooling path (@fig:attn).
 
 #figure(
-  image("../../image/fig13_player_attention.png", width: 100%),
+  image("../../image/fig12_player_attention.png", width: 100%),
   caption: [Player-set attention. (A) Mean attention weight by the player's distance rank to the ball. (B) Weight on the nearest player relative to uniform (box: quartiles).],
   placement: top,
 ) <fig:attn>

@@ -47,12 +47,14 @@
 | Technical document | [`carried_by_admin.pdf`](carried_by_admin.pdf) (IEEE format, source [`docs/report/`](docs/report/)) |
 | Code | this repository; the final method lives in [`experiments/E06_wave5/`](experiments/E06_wave5/) |
 | Web dashboard | [`web/`](web/): English match review, synchronized local video and saved-method replay; [live application](https://possession-match-review.vercel.app) |
+| Executed notebook | [`carried_by_admin.ipynb`](carried_by_admin.ipynb): the run that produced the submitted CSV, with its outputs. The maintained source is [`E06_wave5.ipynb`](experiments/E06_wave5/E06_wave5.ipynb) |
+| Demo video | [`carried_by_admin.webm`](carried_by_admin.webm) |
 
 ## Demo
 
-<p align="center"><a href="docs/demo.webm"><img src="docs/demo.gif" alt="Walkthrough of the possession review web app: clip review, match possession and results explained" width="960"></a></p>
+<p align="center"><a href="carried_by_admin.webm"><img src="docs/demo.gif" alt="Walkthrough of the possession review web app: clip review, match possession and results explained" width="960"></a></p>
 
-[Play/download the demo video (WebM)](docs/demo.webm) · [GIF fallback](docs/demo.gif)
+[Play/download the demo video (WebM)](carried_by_admin.webm) · [GIF fallback](docs/demo.gif)
 
 ---
 
@@ -78,8 +80,8 @@ Every one of the 199,319 frames of a full LaLiga match (FC Barcelona vs Athletic
 - [7. Limitations and threats to validity](#7-limitations-and-threats-to-validity)
 - [8. Reproducibility](#8-reproducibility)
 - [9. Repository layout](#9-repository-layout)
-- [10. Challenge documents, licence and citation](#10-challenge-documents-licence-and-citation)
-- [11. Web review application](#11-web-review-application)
+- [10. Web review application](#10-web-review-application)
+- [11. Challenge documents, licence and citation](#11-challenge-documents-licence-and-citation)
 
 ---
 
@@ -229,17 +231,17 @@ Retraining on other hardware or library versions can change the weights slightly
 
 All figures in this section are outputs of the same notebook run, computed on the submitted model.
 
-![Anatomy of a decision](image/fig10_decision_anatomy.png)
+![Anatomy of a decision](image/fig08_decision_anatomy.png)
 
-*Figure 10. One decision through every stage on the public window: (A) dead-ball probability of each component and the resulting dead mask; (B) P(home | live) of each component; (C) the decoder's team evidence ℓ_H − ℓ_A, with the samples where the proximity gate fired; (D) labels from Viterbi, after the 1-s merge, and the GT.*
+*Figure 8. One decision through every stage on the public window: (A) dead-ball probability of each component and the resulting dead mask; (B) P(home | live) of each component; (C) the decoder's team evidence ℓ_H − ℓ_A, with the samples where the proximity gate fired; (D) labels from Viterbi, after the 1-s merge, and the GT.*
 
 The two components agree on dead/live for 92.0% of samples and on the team (argmax) for 85.3%; fusion mostly smooths the TCN with the BiGRU (panels A–B). The proximity gate fires on only 4.3% of samples (7.0% in the public window), so the decoder relies on the network's probabilities almost everywhere. The calibrated switch cost hits the smallest grid value (λ = 0.05) and still decodes 302 possessions against the 386 implied by the training rate: the possession count is limited by the dead mask and the merge, not by λ.
 
 **Stage ablation** (one stage changed at a time; public columns are diagnostics on 17 possessions):
 
-![Stage ablation](image/fig15_stage_ablation.png)
+![Stage ablation](image/fig09_stage_ablation.png)
 
-*Figure 15. Stage ablation. (A) Full-match possessions per variant; the dashed line is the count implied by the training possession rate (386). (B) Public-window spellF1 (diagnostic).*
+*Figure 9. Stage ablation. (A) Full-match possessions per variant; the dashed line is the count implied by the training possession rate (386). (B) Public-window spellF1 (diagnostic).*
 
 | Variant | Full-match possessions | Median (s) | Share < 4 s | D share | Public spellF1 | Public macroF1 |
 |---|---:|---:|---:|---:|---:|---:|
@@ -256,9 +258,9 @@ The two components agree on dead/live for 92.0% of samples and on the team (argm
 
 Removing the merge fragments the output (352 possessions, spellF1 drops). Giving the BiGRU more weight over-segments sharply. The TCN alone scores higher on the public window (0.786); with 17 possessions this is within the noise of one possession (≈ 0.06) and was not used to change the pre-registered method.
 
-![Integrated Gradients](image/fig11_integrated_gradients.png)
+![Integrated Gradients](image/fig10_integrated_gradients.png)
 
-*Figure 11. Integrated Gradients: share of total |attribution| per input for the dead-ball logit (A) and the team logit (B), mean ± sd over the three seeds (16 crops × 512 samples, 64 steps; completeness error median 0.9%).*
+*Figure 10. Integrated Gradients: share of total |attribution| per input for the dead-ball logit (A) and the team logit (B), mean ± sd over the three seeds (16 crops × 512 samples, 64 steps; completeness error median 0.9%).*
 
 | Input block | Dead logit | Team logit |
 |---|---:|---:|
@@ -269,17 +271,17 @@ Removing the merge fragments the output (352 possessions, spellF1 drops). Giving
 
 The single most important input for both heads is the players' **attacking velocity** (x); the dead-ball head additionally relies on **ball speed**, nearest-opponent distance and player speed (play stops when motion stops). The ball contributes only 13–17%, which is why the method keeps working when the ball is missing. The ranking is stable across seeds (rank correlation 0.74 dead, 0.77 team).
 
-![Temporal receptive field](image/fig12_temporal_receptive_field.png)
+![Temporal receptive field](image/fig11_temporal_receptive_field.png)
 
-*Figure 12. Effective temporal receptive field of the PP-TCN: share of the input gradient by time offset from the decided sample.*
+*Figure 11. Effective temporal receptive field of the PP-TCN: share of the input gradient by time offset from the decided sample.*
 
 Although the receptive field spans ±12.8 s, 50% of the gradient mass lies within ±2.0–2.2 s and 90% within ±7.0 s, symmetric in past and future. The network decides locally; long-range consistency comes from the BiGRU and the decoder.
 
-![Player attention](image/fig13_player_attention.png)
+![Player attention](image/fig12_player_attention.png)
 
-*Figure 13. Attention of the player-set encoder by the player's distance rank to the ball (A) and the weight on the nearest player relative to uniform (B).*
+*Figure 12. Attention of the player-set encoder by the player's distance rank to the ball (A) and the weight on the nearest player relative to uniform (B).*
 
-The attention pooling is **not** a "nearest player" detector: with the ball visible, attention increases with distance and the nearest player receives 0.83× the uniform weight; with the ball missing it is uniform (1.01×). Attention is split evenly between the two teams (50%). Proximity information reaches the model through the per-player ball and opponent distances (Figure 11) and the max-pooling path.
+The attention pooling is **not** a "nearest player" detector: with the ball visible, attention increases with distance and the nearest player receives 0.83× the uniform weight; with the ball missing it is uniform (1.01×). Attention is split evenly between the two teams (50%). Proximity information reaches the model through the per-player ball and opponent distances (Figure 10) and the max-pooling path.
 
 **Feature-group occlusion** (group set to its baseline over the whole match, full pipeline rerun):
 
@@ -290,9 +292,9 @@ The attention pooling is **not** a "nearest player" detector: with the ball visi
 | Ball channels | 4.0% | 276 | 0.787 |
 | Validity flag | 0.8% | 305 | 0.772 |
 
-![Feature-group occlusion](image/fig16_occlusion.png)
+![Feature-group occlusion](image/fig13_occlusion.png)
 
-*Figure 16. Share of samples whose final label changes when one input group is occluded.*
+*Figure 13. Share of samples whose final label changes when one input group is occluded.*
 
 | Occluded group | Mean \|Δ P(dead)\| | Mean \|Δ P(home \| live)\| |
 |---|---:|---:|
@@ -311,9 +313,9 @@ The seeds agree on the team almost everywhere (sd of P(home) 0.033 near decoded 
 
 **Error anatomy on the public window.** 11 of 17 GT possessions are recovered at IoU 0.5; recovered possessions last 17.8 s on average, missed ones 7.5 s. The misses cluster between minutes 9.9 and 11.6: three short Barcelona touches (0.8, 1.3 and 3.5 s) inside Athletic possessions and the Athletic spells they split. The ball is visible throughout these misses and the model's P(home) stays at 0.09–0.46, so the failure is brief contested exchanges, not ball loss.
 
-![Error anatomy](image/fig17_error_anatomy.png)
+![Error anatomy](image/fig15_error_anatomy.png)
 
-*Figure 17. (A) Best IoU of each public GT possession against the prediction, by duration (red: home, charcoal: away; size: ball visibility); dashed line: IoU 0.5. (B) Frame confusion on the public window.*
+*Figure 15. (A) Best IoU of each public GT possession against the prediction, by duration (red: home, charcoal: away; size: ball visibility); dashed line: IoU 0.5. (B) Frame confusion on the public window.*
 
 | Missed Barcelona touch | Start (min) | Duration (s) | Ball visible | Mean P(home) | Seed sd |
 |---|---:|---:|---:|---:|---:|
@@ -344,13 +346,13 @@ Fourteen experiments were run in sequence; each campaign's control is the previo
 | [E12](experiments/E12_event_learning/) | Event learning | Six training recipes | 0.619 (−0.0004) | rejected |
 | [E13](experiments/E13_provider_generalization/) | Provider transfer | Regularisers for unseen providers | 0.530 (−0.010) | rejected |
 
-![Decision forest](image/fig08_decision_forest.png)
+![Decision forest](image/fig16_decision_forest.png)
 
-*Figure 8. Every campaign's pre-registered primary against its own control, with 95% paired match-bootstrap intervals where recorded and the pre-registered minimum gain (black tick). Only E06 (the final method) and E09 (research-only) passed; E07 missed its threshold by 0.0003 and was not promoted even though it scores higher on the public window (0.786). Cohorts differ between rows, so compare each row only with its own threshold.*
+*Figure 16. Every campaign's pre-registered primary against its own control, with 95% paired match-bootstrap intervals where recorded and the pre-registered minimum gain (black tick). Only E06 (the final method) and E09 (research-only) passed; E07 missed its threshold by 0.0003 and was not promoted even though it scores higher on the public window (0.786). Cohorts differ between rows, so compare each row only with its own threshold.*
 
-![Fair benchmark](image/fig09_fair_benchmark.png)
+![Fair benchmark](image/fig17_fair_benchmark.png)
 
-*Figure 9. E08: the team's model families retrained on the same 7 IDSSE leave-one-match-out folds and decoded with the same decoder. Grey dots are individual held-out matches. The short-loss PP-TCN leads on the mean, but its interval against SetSeq still crosses zero.*
+*Figure 17. E08: the team's model families retrained on the same 7 IDSSE leave-one-match-out folds and decoded with the same decoder. Grey dots are individual held-out matches. The short-loss PP-TCN leads on the mean, but its interval against SetSeq still crosses zero.*
 
 ## 7. Limitations and threats to validity
 
@@ -388,7 +390,9 @@ python -B -m pytest -q experiments/E06_wave5                # unit tests of one 
 
 ```
 carried_by_admin.csv        final possession file (method retrained from scratch)
-carried_by_admin.pdf        technical document
+carried_by_admin.pdf        technical document (built from docs/report/)
+carried_by_admin.ipynb      executed run of the E06 notebook that produced the CSV (outputs kept)
+carried_by_admin.webm       demo video of the web app (docs/demo.gif is its GIF preview)
 image/                      README figures and the script that draws them (make_figures.py)
 submission/                 export tool: export.py, method.json, artifacts/, verification records
 web/                        possession review dashboard
@@ -410,7 +414,21 @@ data/                       unpack the match bundle here (gitignored)
 
 Match data, caches, model weights and per-frame predictions other than the submitted CSV are not in the repository; the match data is not redistributable.
 
-## 10. Challenge documents, licence and citation
+## 10. Web review application
+
+English match-review application for the saved result, implemented from the approved FigCraft design. Live application: <https://possession-match-review.vercel.app>.
+
+- Routes: `/` for possession overview, measured shares and reference/model comparison; `/replay` for local video with synchronized 2D method replay, frame stepping and aligned timelines; `/evidence` for published scores, sources and evaluation limitations.
+- Run locally from `web/` with Node.js 24 and npm: `npm ci`, then `npm run dev`, and open `http://127.0.0.1:3000`. Production server: `npm test`, `npm run build`, `npm start`.
+- Video input is selected by the user. The five-minute reference clip is the 300-second tactical clip starting at original recording time `07:27.40` (frame 11185). The original tactical recording is limited to `07:27.40` through the last frame before `12:27.40`. MP4 with H.264 video is recommended.
+- All views use source frames `[11185, 18685)`: 7,500 frames at 25 fps. The bundled model segments come from the same window of the frozen candidate `submission/artifacts/farras_wave5.csv` (public macroF1 0.902059); the submitted file agrees with it on 99.52% of graded frames.
+- Public reference labels are fetched in the browser from a pinned public repository revision; a local reference file can be opened if that source is unavailable. Files must have continuous absolute `frame,label` rows for the entire match or the exact public window.
+- `/replay` can load `method-replay.private.json` for synchronized observed tracking positions and saved model outputs. Neither that file nor match media is deployed.
+- Deployment: see [web/README.md](web/README.md).
+
+Full details, including monorepo layout, exporter usage and verification, are in [web/README.md](web/README.md).
+
+## 11. Challenge documents, licence and citation
 
 Organisers' documents defining the task and rules: [CHALLENGE.md](CHALLENGE.md) · [DATA.md](DATA.md) · [EVALUATION.md](EVALUATION.md) · [SUBMISSION.md](SUBMISSION.md) · [RULES.md](RULES.md) · [FAQ.md](FAQ.md) · [OVERVIEW.md](OVERVIEW.md).
 
@@ -433,17 +451,3 @@ The challenge code and documentation are released by the organisers under the MI
 ```
 
 Figures were produced with Matplotlib using colour-blind-safe Okabe–Ito colours, with the help of the Scientific Agent Skills library (Kassis et al., 2026, [arXiv:2609.00065](https://doi.org/10.48550/arXiv.2609.00065)).
-
-## 11. Web review application
-
-English match-review application for the saved result, implemented from the approved FigCraft design. Live application: <https://possession-match-review.vercel.app>.
-
-- Routes: `/` for possession overview, measured shares and reference/model comparison; `/replay` for local video with synchronized 2D method replay, frame stepping and aligned timelines; `/evidence` for published scores, sources and evaluation limitations.
-- Run locally from `web/` with Node.js 24 and npm: `npm ci`, then `npm run dev`, and open `http://127.0.0.1:3000`. Production server: `npm test`, `npm run build`, `npm start`.
-- Video input is selected by the user. The five-minute reference clip is the 300-second tactical clip starting at original recording time `07:27.40` (frame 11185). The original tactical recording is limited to `07:27.40` through the last frame before `12:27.40`. MP4 with H.264 video is recommended.
-- All views use source frames `[11185, 18685)`: 7,500 frames at 25 fps. The bundled model segments match the same window of `submission/artifacts/farras_wave5.csv`.
-- Public reference labels are fetched in the browser from a pinned public repository revision; a local reference file can be opened if that source is unavailable. Files must have continuous absolute `frame,label` rows for the entire match or the exact public window.
-- `/replay` can load `method-replay.private.json` for synchronized observed tracking positions and saved model outputs. Neither that file nor match media is deployed.
-- Deployment is CLI-managed from `web/`: `npx vercel deploy --prod --yes --scope eycoos-projects`.
-
-Full details, including monorepo layout, exporter usage and verification, are in [web/README.md](web/README.md).

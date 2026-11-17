@@ -1,6 +1,6 @@
 # Branch map and document status
 
-The team's final method on every branch is **Farras wave5 `short_gru25/dead45`**. Start the report from [FINAL_METHOD.md](FINAL_METHOD.md) and [final_method.json](final_method.json). Folders, primary/control terminology and final names inside older experiments do not override this decision.
+The final method on every branch is **wave5 `short_gru25/dead45`**, described in [FINAL_METHOD.md](FINAL_METHOD.md) (facts as data in [final_method.json](final_method.json)). Folder names, primary/control terms and "final" labels inside older experiments do not override it.
 
 | Branch | Role after alignment | Material that does not describe the final method |
 |---|---|---|
@@ -32,9 +32,9 @@ The commits below identify the research sources before the documentation alignme
 - Farras's later fair benchmark retrained the model families on a shared split, but it is not an exact reproduction of each branch's final pipeline. The mean advantage of the short loss over SetSeq is not yet clearly separated by its interval.
 - Campaign result files are kept as evidence, including negative results. "Archive" means the material must not be used as the final specification, not that every result in it is wrong.
 
-## Report workflow
+## How the documents relate
 
-Take identity, parameters, metric cohorts, attribution and claim limits from the final document. If a fact is not listed or not verified, mark it unknown; do not complete it from a folder name or the maximum score. A change to numbers or method must point to new artifacts and hashes, not relabel old results.
+Identity, parameters, metric cohorts, attribution and limitations come from [FINAL_METHOD.md](FINAL_METHOD.md). Facts not listed there are unknown, not inferred from a folder name or the best score anywhere. A change to numbers or method points to new artifacts and hashes.
 
 `main` contains the wave5 CSV package and exporter (the submitted file, retrained from scratch, is at the root as `carried_by_admin.csv`). Other research branches refer to the same method without moving or changing their experimental algorithms. The implementation source locked for provenance remains Farras release `7254990d82ce5dec3bf1fff6baa4fe2f639e3a60`.
 
