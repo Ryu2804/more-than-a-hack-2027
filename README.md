@@ -1,16 +1,51 @@
-# Possession as Segmentation: Frame-level Ball Possession from Noisy Tracking
+<h2 align="center">Possession as Segmentation: Frame-level Ball Possession from Noisy Tracking</h2>
 
-**More than a Hack 2027 — Phase 1 · Submission of Admin Team, Institut Teknologi Sepuluh Nopember (Indonesia)**
+<p align="center">
+  <a href="https://www.python.org/downloads/release/python-3100/"><img src="https://img.shields.io/badge/Python-3.10-blue.svg" alt="Python 3.10"></a>
+  <a href="https://pytorch.org/get-started/locally/"><img src="https://img.shields.io/badge/PyTorch-2.13.0-ee4c2c.svg" alt="PyTorch 2.13.0"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/Code%20License-MIT-green.svg" alt="MIT License (code only)"></a>
+  <img src="https://img.shields.io/badge/Challenge-More%20than%20a%20Hack%202027-a50044.svg" alt="More than a Hack 2027">
+  <img src="https://img.shields.io/badge/Public%20spellF1-0.772-orange.svg" alt="Public spellF1 0.772">
+  <img src="https://img.shields.io/badge/Method-PP--TCN%20%2B%20BiGRU-black.svg" alt="PP-TCN + BiGRU">
+</p>
 
-Rasya Arya Ramadhan · Benedictus Ryu Gunawan · Ahmad Naufal Farras · Jeremy Mattathis Mboe · Jylan Annisa Mumtaza Syidana
+<p align="center">
+  <b>More than a Hack 2027, Phase 1</b> · Submission of Admin Team, Institut Teknologi Sepuluh Nopember (Indonesia)<br>
+  Challenge organised by <a href="https://metrica-sports.com">Metrica Sports</a>, the <a href="https://www.fcbarcelona.com">FC Barcelona Innovation Hub</a> and the <a href="https://www.mwcbarcelona.com">Mobile World Capital Barcelona</a>.
+</p>
 
-Challenge organised by [Metrica Sports](https://metrica-sports.com), the [FC Barcelona Innovation Hub](https://www.fcbarcelona.com) and the [Mobile World Capital Barcelona](https://www.mwcbarcelona.com).
+<table align="center">
+  <tr>
+    <th>Name</th>
+    <th>Campus</th>
+  </tr>
+  <tr>
+    <td>Rasya Arya Ramadhan</td>
+    <td>Sepuluh Nopember Institute of Technology</td>
+  </tr>
+  <tr>
+    <td>Benedictus Ryu Gunawan</td>
+    <td>Sepuluh Nopember Institute of Technology</td>
+  </tr>
+  <tr>
+    <td>Ahmad Naufal Farras</td>
+    <td>Sepuluh Nopember Institute of Technology</td>
+  </tr>
+  <tr>
+    <td>Jeremy Mattathis Mboe</td>
+    <td>Sepuluh Nopember Institute of Technology</td>
+  </tr>
+  <tr>
+    <td>Jylan Annisa Mumtaza Syidana</td>
+    <td>Sepuluh Nopember Institute of Technology</td>
+  </tr>
+</table>
 
 | Deliverable | File |
 |---|---|
-| Possession file (scored) | [`submission.csv`](submission.csv) — 199,319 rows, SHA-256 `cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8` |
+| Possession file (scored) | [`submission.csv`](submission.csv): 199,319 rows, SHA-256 `cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8` |
 | Technical document | [`TECHNICAL_REPORT.pdf`](TECHNICAL_REPORT.pdf) (IEEE format, source [`docs/report/`](docs/report/)) |
-| Code | this repository — final method in [`experiments/E06_wave5/`](experiments/E06_wave5/) |
+| Code | this repository; the final method lives in [`experiments/E06_wave5/`](experiments/E06_wave5/) |
 
 ---
 
@@ -40,7 +75,7 @@ Every one of the 199,319 frames of a full LaLiga match (FC Barcelona vs Athletic
 | **Input** | tactical video (reference timeline), broadcast video (not synchronised), automatic tracking (ATD) with the ball, Smart Tagging, homography |
 | **Output** | `frame,label` CSV, 199,319 rows, labels `H` / `A` / `D` / `X` |
 | **Graded frames** | 158,857 (two halves); everything else is free `X` |
-| **Public GT** | 7,500 frames, 17 possessions — for checking the pipeline, never for tuning ([RULES.md](RULES.md)) |
+| **Public GT** | 7,500 frames, 17 possessions, used to check the pipeline and never for tuning ([RULES.md](RULES.md)) |
 | **Private GT** | the full match, used for the official ranking |
 
 A *possession* (spell) is a maximal run of one team with the ball alive. Predicted and true spells of the same team are matched one-to-one; the F1 of that matching is averaged over five IoU thresholds:
@@ -216,7 +251,7 @@ python image/make_figures.py                                # regenerate every f
 
 **With the match data:**
 
-1. Enrol, download the bundle and unpack it into `data/` (or set `MTAH_DATA_DIR`) — [DATA.md](DATA.md).
+1. Enrol, download the bundle and unpack it into `data/` (or set `MTAH_DATA_DIR`), as described in [DATA.md](DATA.md).
 2. Data analysis: [`experiments/E00_eda/E00_eda.ipynb`](experiments/E00_eda/E00_eda.ipynb). Baselines: `python starter/baseline.py` ([E01](experiments/E01_baseline/README.md)).
 3. Rebuild and explain the final CSV: [`experiments/E06_wave5/E06_wave5.ipynb`](experiments/E06_wave5/E06_wave5.ipynb). It needs the frozen caches and checkpoint listed in [its README](experiments/E06_wave5/README.md). It checks the rebuilt CSV's hash against the one above, then explains the predictions (stage ablations, Integrated Gradients, temporal receptive field, attention, occlusion, seed uncertainty, error anatomy).
 4. Technical report: [docs/report/README.md](docs/report/README.md).
