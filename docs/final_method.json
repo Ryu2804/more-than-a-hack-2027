@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "method_id": "farras_wave5_short_gru25_dead45",
+  "team_selection": "final_method",
+  "display_name": "Farras wave5: short_gru25/dead45",
+  "submission_ready": false,
+  "source": {
+    "branch": "farras",
+    "release_commit": "7254990d82ce5dec3bf1fff6baa4fe2f639e3a60",
+    "repository": "https://github.com/Ryu2804/more-than-a-hack-2027",
+    "runtime_manifest": "https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/submission/method.json",
+    "campaign_path": "experiments/exp_farras/wave5",
+    "selection_sha256": "6d69b0e4c702144a0ef2877c1522c2c6478f0ca5bb6b7089f315526bfc367b95"
+  },
+  "artifact": {
+    "kind": "algorithmic_prediction_not_ground_truth",
+    "match": "BAR-ATH",
+    "timeline": "tactical_video",
+    "fps": 25,
+    "path": "submission/artifacts/farras_wave5.csv",
+    "url": "https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/submission/artifacts/farras_wave5.csv",
+    "sha256": "cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8",
+    "rows": 199319,
+    "columns": [
+      "frame",
+      "label"
+    ],
+    "frame_first": 0,
+    "frame_last": 199318,
+    "labels": [
+      "H",
+      "A",
+      "D",
+      "X"
+    ]
+  },
+  "pipeline": {
+    "mode": "offline",
+    "model_fps": 5,
+    "output_fps": 25,
+    "input": "prepared automatic tracking observations; target raw-to-cache reproduction incomplete",
+    "components": [
+      {
+        "name": "short_tcn",
+        "weight": 0.75,
+        "training_matches": 19,
+        "training_sources": {
+          "idsse": 5,
+          "skillcorner": 14
+        },
+        "config": {
+          "steps": 1500,
+          "batch": 16,
+          "crop": 384,
+          "ch": 64,
+          "dilations": [
+            1,
+            2,
+            4,
+            8,
+            16,
+            1
+          ],
+          "seeds": [
+            0,
+            1,
+            2
+          ],
+          "mask_full": 0.3,
+          "noise": 0.5,
+          "lr": 0.002,
+          "weight_decay": 0.01,
+          "dropout": 0.15,
+          "name": "short_tcn"
+        },
+        "loss": {
+          "short_complete_live_spell_seconds_lt": 4,
+          "state_loss_weight": 2.0,
+          "crop_or_unknown_fragments_are_not_complete_short_spells": true
+        }
+      },
+      {
+        "name": "wave3_hybrid_setsequence_bidirectional_gru",
+        "weight": 0.25,
+        "frozen": true,
+        "training_matches": 5,
+        "training_sources": {
+          "idsse": 5
+        },
+        "config": {
+          "window": 300,
+          "batch": 16,
+          "epochs": 8,
+          "coverage": 1.0,
+          "seed": 2027,
+          "lr": 0.002,
+          "weight_decay": 0.0001,
+          "width": 32,
+          "hidden": 32,
+          "boundary_weight": 0.5,
+          "boundary_pos_weight": 3.0,
+          "name": "hybrid",
+          "global_features": 19,
+          "mirror": true
+        },
+        "gru_layers": 2,
+        "bidirectional": true,
+        "is_shipped_ryu_checkpoint": false,
+        "contains_metrica_anchor_probability": false
+      }
+    ],
+    "mixing": "joint H/A/D probabilities, renormalized",
+    "decoder": {
+      "name": "dead45",
+      "gate_r": 0.35,
+      "kappa": 0.05,
+      "merge_s": 1.0,
+      "dead_threshold": 0.45,
+      "min_dead_s": 1.0,
+      "tau": 3.0,
+      "rate_scale": 1.0,
+      "shift": false,
+      "lambda_mode": "rate",
+      "fixed_lambda": 2.0
+    },
+    "team_dp_reset": "each_live_interval",
+    "rate_calibration_count": "after_merge",
+    "rate_statistics": "training_only_provider_balanced",
+    "target_specific_forced_dead_or_kickoff_rule": false,
+    "auxiliary_boundary_head_in_selected_short_tcn": false,
+    "not_inference_inputs": [
+      "competition_possession_gt",
+      "human_target_event_labels",
+      "video",
+      "smart_tagging",
+      "homography"
+    ]
+  },
+  "selection": {
+    "objective": "equal mean provider spellF1 after within-match condition aggregation",
+    "providers": [
+      "idsse",
+      "skillcorner",
+      "metrica"
+    ],
+    "short_tcn_grouped_folds": 6,
+    "configurations": 96,
+    "development_scenarios": 23,
+    "development_matches": 21,
+    "development_evaluations": 2208,
+    "minimum_gain": 0.01,
+    "minimum_winning_providers": 2,
+    "maximum_provider_drop": 0.03,
+    "promoted": true,
+    "public_used_in_campaign_selection_code": false,
+    "historical_public_exposure": true,
+    "fresh_blind_holdout": false,
+    "campaign_seed_fits": 63,
+    "campaign_seed_fits_are_not_final_inference_model_count": true
+  },
+  "metrics": {
+    "primary": {
+      "name": "spellF1",
+      "iou_thresholds": [
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7
+      ],
+      "all_short_H_A_spells_included": true
+    },
+    "secondary": {
+      "name": "macroF1",
+      "classes": [
+        "H",
+        "A",
+        "D"
+      ]
+    },
+    "external_development": {
+      "cohort": "wave5_equal_provider_development",
+      "spellF1": 0.670099305497763,
+      "delta_vs_wave4": 0.013608981205591952,
+      "competition_score": false
+    },
+    "competition_public": {
+      "purpose": "post_freeze_diagnostic_not_leaderboard",
+      "spellF1": 0.7724137931034483,
+      "macroF1": 0.9020586271571484,
+      "graded_frames": 7500,
+      "gt_possessions": 17,
+      "predicted_possessions": 12
+    },
+    "competition_private": {
+      "spellF1": null,
+      "macroF1": null,
+      "status": "unknown"
+    },
+    "official_baseline_smooth50": {
+      "public_spellF1": 0.325581,
+      "published_full_match_spellF1": 0.2433,
+      "cohorts_are_different": true
+    },
+    "display_decimal_places": 6
+  },
+  "data": [
+    {
+      "provider": "IDSSE",
+      "training_in_selected_model": true,
+      "license": "CC BY 4.0",
+      "labels": "dataset provider possession labels",
+      "annotator_individual_names": "not documented in repository evidence",
+      "source": "https://doi.org/10.6084/m9.figshare.28196177"
+    },
+    {
+      "provider": "SkillCorner",
+      "training_in_selected_model": true,
+      "license": "MIT",
+      "labels": "provider phases-of-play proxy labels",
+      "source": "https://github.com/SkillCorner/opendata"
+    },
+    {
+      "provider": "Metrica sample-data",
+      "training_in_selected_model": false,
+      "role": "external development selection and evaluation",
+      "license": "no explicit license identified by repository source audit",
+      "labels": "event-derived proxy labels",
+      "source": "https://github.com/metrica-sports/sample-data"
+    }
+  ],
+  "reproduction": {
+    "available": "published frozen CSV validation/export",
+    "command_in_farras_release": "python -B submission/export.py",
+    "raw_bundle_to_identical_csv_complete": false,
+    "cached_input_new_component_refit_identical": true,
+    "frozen_gru_refit_in_wave5": false,
+    "all_branches_contain_wave5_runtime": false
+  },
+  "limitations": [
+    "historically exposed external matches and public diagnostics; adaptive research, not blind evaluation",
+    "no guarantee of no overfitting or universal leakage freedom",
+    "no private/full-match model score or exact final-candidate ranking across all branches",
+    "paired ball-drop stress slightly worse and long-spell precision/recall unresolved",
+    "cache hashes do not independently establish equivalence to raw inputs",
+    "raw-data reproduction requirement remains incomplete"
+  ],
+  "not_selected": [
+    "wave6_public_best_hysteresis",
+    "wave2_hgb_consolidation_adapter",
+    "ryu_weights_nometrica",
+    "jeremy_exp7",
+    "rasya_touch_hold"
+  ],
+  "evidence": {
+    "recipe": "https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/experiments/exp_farras/wave5/PLAN.md",
+    "results": "https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/experiments/exp_farras/wave5/RESULTS.md",
+    "verification": "https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/experiments/exp_farras/results/wave5_verification.json",
+    "public_audit": "https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/experiments/exp_farras/results/wave5_public.json",
+    "data_and_code_attribution": "https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/experiments/exp_farras/wave4/reference/SOURCE.md",
+    "exposure_audit": "https://github.com/Ryu2804/more-than-a-hack-2027/blob/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60/experiments/exp_farras/provider_generalization/EXPOSURE.md"
+  }
+}

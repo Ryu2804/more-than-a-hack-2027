@@ -1,5 +1,7 @@
 # CONTEXT — More than a Hack 2027, Phase 1: Ball Possession
 
+> Historical Rasya research context, not the current team entry point or final specification. The original “read this first” notice, local candidate selections, scores, and plans below describe that campaign only. The team selected Farras wave5 `short_gru25/dead45`; start with the [canonical method and limitations](docs/FINAL_METHOD.md), [report data](docs/final_method.json), and [branch/archive map](docs/BRANCHES.md), which pin the selected Farras release and artifact.
+
 > Read this first. It is the single entry point for any agent or teammate joining this repository.
 > Companion code lives in `experiments/012_spellf1/`. Vault notes (LEDGER, STATE, AUDIT_LOG,
 > SOTA, cycles/) live in the Obsidian vault at `research_loop/riset_methodology/experiments/long_run_2026-11-07/`

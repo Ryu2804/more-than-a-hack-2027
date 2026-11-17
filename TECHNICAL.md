@@ -1,5 +1,7 @@
 # Technical document - ball possession, BAR-ATH
 
+> Historical Rasya technical document, not the final team specification. The descriptions, scores, and submission instructions below belong to the original research campaign. The team selected Farras wave5 `short_gru25/dead45`; use the [canonical method and limitations](docs/FINAL_METHOD.md), [report data](docs/final_method.json), and [branch/archive map](docs/BRANCHES.md), which pin the selected Farras release and artifact.
+
 Rename this file to `<team_name>.md` (or `.pdf`) before uploading, so the organisers can match it to
 the submission CSV.
 
