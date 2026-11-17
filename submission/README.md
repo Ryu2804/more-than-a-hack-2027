@@ -1,83 +1,86 @@
-# Metode final tim: Farras wave5
+# Team final method: Farras wave5
 
-Tim menetapkan `short_gru25/dead45` sebagai metode final. Penulis laporan memakai [spesifikasi lintas branch](../docs/FINAL_METHOD.md) dan [fakta untuk Typst](../docs/final_method.json). Identitas runtime kandidat, hash CSV, dan bukti seleksi tetap dikunci di [method.json](method.json). Campaign baru tidak otomatis mengganti pilihan ini.
+The team chose `short_gru25/dead45` as the final method. Report authors use the [cross-branch specification](../docs/FINAL_METHOD.md) and the [Typst facts](../docs/final_method.json). The candidate's runtime identity, CSV hash and selection evidence are locked in [method.json](method.json). A new campaign does not automatically replace this choice.
 
-## Ekspor CSV terpilih
+The submission deliverables themselves are at the repository root: [`submission.csv`](../submission.csv) and [`TECHNICAL_REPORT.pdf`](../TECHNICAL_REPORT.pdf) (see the root [README](../README.md#final-submission)).
 
-Dari root repo, Python 3.10 dan dependencies evaluasi:
+## Exporting the selected CSV
 
-```powershell
+From the repository root, with Python 3.10 and the evaluation dependencies:
+
+```bash
 python -m pip install -r requirements.txt
 python -B submission/export.py
 ```
 
-Output: `submission/out/farras.csv`. Untuk nama tim yang berbeda:
+Output: `submission/out/farras.csv`. For a different file name:
 
-```powershell
+```bash
 python -B submission/export.py --output submission/out/teamname.csv
+python -B submission/export.py --output submission.csv     # the root deliverable
 ```
 
-Perintah ini memeriksa hash bukti seleksi dan CSV, menjalankan validator resmi, lalu menyalin byte kandidat frozen. Tidak melakukan training, scoring, membaca GT, atau memilih ulang kandidat. File tujuan yang berbeda tidak ditimpa; ekspor berulang ke file identik tetap aman.
+The command checks the hashes of the selection evidence and the CSV, runs the official validator, and copies the frozen candidate byte for byte. It does not train, score, read GT or re-select a candidate. A different existing target file is never overwritten; repeating an export to an identical file is safe.
 
-CSV prediksi terpilih disertakan di Git untuk pemeriksaan harness:
+The selected prediction CSV is committed for harness checks:
 
 ```text
 submission/artifacts/farras_wave5.csv
 ```
 
-Fresh clone dapat membaca CSV tersebut atau menjalankan ekspor tanpa cache, model, raw data, maupun GT. File ini adalah output algoritme frozen wave5, bukan ground truth. Tidak ada CSV kandidat lain yang dipublikasikan. Prosedur campaign dan dependensi cache/model untuk training/inference ulang tetap di [wave5/README.md](../experiments/exp_farras/wave5/README.md).
+A fresh clone can read this CSV or run the export without caches, models, raw data or GT. The file is the output of the frozen wave5 algorithm, not ground truth. No other candidate CSV is published. The campaign procedure and the cache/model dependencies for re-training or re-inference are in [E06_wave5/README.md](../experiments/E06_wave5/README.md).
 
-SHA-256 CSV utama:
+SHA-256 of the main CSV:
 
 ```text
 cd59fb902882f34d53983cf78478b93a3757bafde65d83e5502f157be214fdb8
 ```
 
-## Untuk harness tim
+## For the team harness
 
-Gunakan [artifacts/farras_wave5.csv](artifacts/farras_wave5.csv) sebagai prediksi BAR-ATH: kolom `frame,label`, 199.319 baris pada timeline tactical 25 fps. Identitas mesin-baca ada di [method.json](method.json); rincian konfigurasi dan hasil ada di `experiments/exp_farras/`.
+Use [artifacts/farras_wave5.csv](artifacts/farras_wave5.csv) as the BAR-ATH prediction: columns `frame,label`, 199,319 rows on the 25-fps tactical timeline. The machine-readable identity is in [method.json](method.json); configuration and results are in [`experiments/E06_wave5/`](../experiments/E06_wave5/).
 
-Jangan mengadaptasikan file BAR-ATH ini menjadi prediksi match eksternal dan jangan memakai adapter wave2 sebagai wakil wave5. Paket ini menyediakan exact target CSV untuk harness dan source untuk inspeksi; bukan API inference match baru atau bukti validasi blind.
+Do not adapt this BAR-ATH file into predictions for external matches, and do not use the wave2 adapter as a stand-in for wave5. This package provides the exact target CSV for the harness and the source for inspection; it is not an inference API for new matches or evidence of blind validation.
 
-## Metode dan alasan pemilihan
+## Method and reasons for the choice
 
-- Campuran probabilitas: 75% short-loss PP-TCN wave5 dan 25% hybrid GRU wave3 yang frozen. Short live spells lengkap di bawah 4 detik mendapat bobot state-loss dua kali; crop/unknown fragments tidak dianggap short spells lengkap.
-- Decoder `dead45`: dead threshold 0.45, minimum dead 1 detik, reset H/A DP pada setiap live interval, kalibrasi jumlah possessions setelah merge.
-- Gate 0.35 m, kappa 0.05, tau 3, merge 1 detik, rate scale 1. Tanpa dead-prior shift atau aturan kickoff khusus target.
-- Wave5 memenuhi aturan adopsi eksternal yang ditetapkan sebelum training. Public score bukan dasar pemilihan. Wave6 memiliki public score lebih tinggi, tetapi gain development tidak mencapai batas promosi; tetap riset pembanding.
+- Probability mixture: 75% wave5 short-loss PP-TCN and 25% frozen wave3 hybrid GRU. Complete live spells shorter than 4 seconds get double state-loss weight; crop/unknown fragments are not treated as complete short spells.
+- Decoder `dead45`: dead threshold 0.45, minimum dead 1 second, H/A DP reset in every live interval, possession count calibrated after merging.
+- Gate 0.35 m, kappa 0.05, tau 3, merge 1 second, rate scale 1. No dead-prior shift and no target-specific kickoff rule.
+- Wave5 met the external adoption rule fixed before training. The public score was not the basis for selection. Wave6 has a higher public score, but its development gain did not reach the promotion threshold; it remains a research comparison.
 
-| Evaluasi yang sudah tercatat | Nilai | Bukti |
+| Recorded evaluation | Value | Evidence |
 |---|---:|---|
-| Development spellF1, equal mean provider | 0.670099 | [Verifikasi wave5](../experiments/exp_farras/results/wave5_verification.json) |
-| Gain development terhadap wave4 | +0.013609 | Verifikasi wave5 |
-| Public diagnostic spellF1 | 0.772414 | [Audit publik wave5](../experiments/exp_farras/results/wave5_public.json) |
-| Public diagnostic macroF1 | 0.902059 | Audit publik wave5 |
+| Development spellF1, equal provider mean | 0.670099 | [Wave5 verification](../experiments/E06_wave5/results/wave5_verification.json) |
+| Development gain over wave4 | +0.013609 | Wave5 verification |
+| Public diagnostic spellF1 | 0.772414 | [Wave5 public audit](../experiments/E06_wave5/results/wave5_public.json) |
+| Public diagnostic macroF1 | 0.902059 | Wave5 public audit |
 
-Skor di atas adalah rekaman campaign, bukan evaluasi publik baru. Private/full-match score belum diketahui. Development, public diagnostic, dan benchmark riset IDSSE memakai protokol berbeda; angkanya bukan satu leaderboard.
+These scores are campaign records, not a new public evaluation. The private/full-match score is unknown. Development, the public diagnostic and the IDSSE research benchmarks use different protocols; their numbers are not one leaderboard.
 
-## Status penyerahan
+## Submission status
 
-**Metode utama sudah ditetapkan; paket belum siap dikirim sebagai submission resmi.** Fresh clone dapat mengekspor dan memeriksa CSV yang dipublikasikan, tetapi itu bukan reproduksi inference dari raw bundle. Jalur raw bundle resmi ke CSV yang sama belum tersedia end-to-end di branch ini. Cache target serta model/prasyarat wave3/4/5 masih diperlukan untuk reproduksi campaign.
+**The main method is fixed; the package is not yet ready as an official submission.** A fresh clone can export and check the published CSV, but that is not a reproduction of inference from the raw bundle. The official raw bundle → identical CSV path is not available end-to-end on this branch. The target cache and the wave3/4/5 models and prerequisites are still needed to reproduce the campaign.
 
-Laporan teknis final harus mengikuti metode ini, bukan writeup lama Ryu atau kandidat public tertinggi. Bahan sumbernya: [hasil wave5](../experiments/exp_farras/wave5/RESULTS.md), [rencana sebelum training](../experiments/exp_farras/wave5/PLAN.md), dan [atribusi data/kode](../experiments/exp_farras/wave4/reference/SOURCE.md). Dokumen ini adalah status metode, bukan laporan teknis final.
+The final technical report must follow this method, not Ryu's old write-up or the highest public candidate. Its sources: [wave5 results](../experiments/E06_wave5/RESULTS.md), [plan before training](../experiments/E06_wave5/PLAN.md), and [data/code attribution](../experiments/E05_wave4/reference/SOURCE.md). This document is the method status, not the technical report.
 
-Paired ball-drop stress sedikit memburuk dan undercount belum selesai. External matches sudah terekspos historis; belum ada bukti bebas overfit atau keunggulan pada private GT. Histori dan hasil negatif tetap di [experiments/exp_farras/](../experiments/exp_farras/README.md).
+The paired ball-drop stress is slightly worse and the under-count is not solved. The external matches have been exposed historically; there is no evidence of being overfit-free or of superiority on the private GT. History and negative results remain in the [experiment registry](../experiments/REGISTRY.md) and [CAMPAIGNS.md](../experiments/CAMPAIGNS.md).
 
-## Pembagian folder
+## Folder layout
 
-- `submission/`: pilihan utama, ekspor CSV terverifikasi, dan status kesiapan.
-- `experiments/exp_farras/wave1/` sampai `wave6/`: campaign historis, tanpa pemindahan path atau perubahan source frozen.
-- Campaign `fair_idsse`, `cross_branch`, `temporal_methods`, `spell_training`, `event_learning`, dan `provider_generalization`: benchmark/riset lanjutan. Kontrol atau primary dalam laporan campaign hanya berlaku pada protokol riset masing-masing, bukan pengganti metode submission.
-- `experiments/exp_farras/results/`: bukti agregat dan hash. Raw data, cache, model, serta label/frame-level arrays tetap diabaikan Git. Satu pengecualian publikasi adalah CSV prediksi terpilih di `submission/artifacts/`.
+- `submission/`: the main choice, the verified CSV export, and readiness status.
+- `experiments/E02_wave1/` to `experiments/E07_wave6/`: historical campaigns. Moved from `experiments/exp_farras/` with `git mv`; only path constants were changed (see the [relocation note](../experiments/REGISTRY.md#relocation-note)). The original frozen source remains at the release commit.
+- Campaigns `E08_fair_idsse` to `E13_provider_generalization`: benchmarks and further research. A control or primary inside a campaign report applies only to that campaign's protocol and does not replace the submission method.
+- `experiments/EXX_*/results/`: aggregate evidence and hashes per campaign. Raw data, caches, models and label/frame-level arrays stay out of Git. The one publication exception is the selected prediction CSV in `submission/artifacts/` (and its copy `submission.csv` at the root).
 
-Source runtime dan CSV tersedia di `main` setelah merge riwayat `farras`; branch asal `farras` tetap dipertahankan. Branch penelitian lain merujuk keputusan dan fakta laporan yang sama tanpa mengganti kode riset anggota. Perintah ekspor tidak menjalankan commit/push otomatis.
+The runtime source and CSV are on `main` after merging the `farras` history; the original `farras` branch is kept. Other research branches refer to the same decision and report facts without replacing members' research code. The export command never commits or pushes.
 
-## Verifikasi penetapan
+## Verification of the decision
 
-Jalur `submission/export.py` sudah dijalankan. Validator resmi menerima 199.319 baris dengan frame 0..199318; hash hasil ekspor identik dengan kandidat wave5. Pemeriksaan juga mencakup ekspor berulang yang idempotent, penolakan menimpa file berbeda, error saat CSV lokal tidak tersedia, serta penolakan kandidat yang hash-nya berubah. Sebanyak 61 tautan lokal di dokumen indeks dan petunjuk juga lolos pemeriksaan.
+The `submission/export.py` path has been run. The official validator accepts 199,319 rows with frames 0..199318; the exported hash is identical to the wave5 candidate. The checks also covered idempotent repeated export, refusal to overwrite a different file, an error when the local CSV is missing, and refusal of a candidate whose hash changed. 61 local links in the index and guide documents also passed.
 
-Rekaman terstruktur: [verification.json](verification.json). Verifikasi ini tidak menjalankan training atau scoring publik/private dan tidak membuktikan reproduksi raw bundle.
+Structured record: [verification.json](verification.json). This verification did not train or score on public/private GT and does not prove a raw-bundle reproduction.
 
-## Verifikasi paket harness
+## Verification of the harness package
 
-Ekspor kandidat publik juga lulus pada snapshot minimum yang hanya berisi file runtime yang dipublikasikan, tanpa raw data, tracking cache, weights atau GT. Validator resmi menerima 199.319 baris dan hash hasilnya identik dengan wave5 frozen. [Bukti publikasi](publication_verification.json). Ini pemeriksaan akses/format artefak, bukan scoring baru atau bukti inference raw bundle.
+The public candidate export also passed on a minimal snapshot containing only the published runtime files, without raw data, tracking caches, weights or GT. The official validator accepts 199,319 rows and the resulting hash is identical to the frozen wave5 candidate. [Publication evidence](publication_verification.json). This is an access/format check of the artifact, not a new score or evidence of raw-bundle inference.

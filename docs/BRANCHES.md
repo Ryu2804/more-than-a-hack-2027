@@ -1,21 +1,21 @@
-# Peta branch dan status dokumen
+# Branch map and document status
 
-Metode final tim pada semua branch adalah **Farras wave5 `short_gru25/dead45`**. Mulai laporan dari [FINAL_METHOD.md](FINAL_METHOD.md) dan [final_method.json](final_method.json). Folder, istilah primary/control, dan nama final pada eksperimen lama tidak mengganti keputusan ini.
+The team's final method on every branch is **Farras wave5 `short_gru25/dead45`**. Start the report from [FINAL_METHOD.md](FINAL_METHOD.md) and [final_method.json](final_method.json). Folders, primary/control terminology and final names inside older experiments do not override this decision.
 
-| Branch | Peran setelah penyelarasan | Bahan yang bukan deskripsi metode final |
+| Branch | Role after alignment | Material that does not describe the final method |
 |---|---|---|
-| `main` | Pintu masuk repo, implementasi dan CSV wave5 hasil merge Farras, aturan resmi, dan laporan final | Baseline kompetisi tetap referensi, bukan kandidat tim |
-| `farras` | Source implementasi dan artefak kandidat terpilih; riwayat riset Farras | Wave1/2, wave6 dan campaign lanjutan tetap eksperimen, bukan pengganti wave5 |
-| `ryu` | Arsip riset Ryu dan fondasi PP-TCN/fitur | `TECHNICAL_DOCUMENT.md`, `writeup.md`, `experiments/RESEARCH.md`, dan folder `015_final_pipeline` menjelaskan varian Ryu lama |
-| `jeremy` | Arsip riset SetSeq, auxiliary tasks dan recovery | `exp_1` sampai `exp_7` memakai protokol/keputusan campaign sendiri; exp7 tidak diadopsi |
-| `rasya` | Arsip riset rule-based touch/dead cues | `TECHNICAL.md` dan `CONTEXT.md` bukan laporan teknis final wave5 |
-| `consolidation` | Arsip integrasi/adapters dan pembanding historis | `CANDIDATES.md`, `docs/repo_inventory.md`, dan common benchmark bukan ranking exact kandidat final |
+| `main` | Entry point: wave5 implementation and CSV merged from Farras, official rules, final report, and the experiment registry ([experiments/REGISTRY.md](../experiments/REGISTRY.md)) | Competition baselines remain references, not team candidates |
+| `farras` | Source of the implementation and of the selected artifact; Farras's research history | Wave1/2, wave6 and later campaigns remain experiments, not replacements for wave5 |
+| `ryu` | Archive of Ryu's research and the PP-TCN/feature foundation | `TECHNICAL_DOCUMENT.md`, `writeup.md`, `experiments/RESEARCH.md` and the `015_final_pipeline` folder describe older Ryu variants |
+| `jeremy` | Archive of SetSeq, auxiliary-task and recovery research | `exp_1` to `exp_7` use their own campaign protocols/decisions; exp7 was not adopted |
+| `rasya` | Archive of rule-based touch/dead-cue research | `TECHNICAL.md` and `CONTEXT.md` are not the final wave5 technical report |
+| `consolidation` | Archive of integration/adapters and historical comparisons | `CANDIDATES.md`, `docs/repo_inventory.md` and the common benchmark are not an exact ranking of final candidates |
 
 ## Snapshot provenance
 
-Commit di bawah mengidentifikasi sumber riset sebelum penyelarasan dokumentasi. Ini **bukan** daftar HEAD terbaru setelah commit dokumentasi. Histori branch tidak di-rebase, di-reset, di-force-push, atau diganti dengan branch anggota lain.
+The commits below identify the research sources before the documentation alignment. They are **not** the latest HEADs after documentation commits. Branch histories were not rebased, reset, force-pushed or replaced by other members' branches.
 
-| Branch | Commit sumber riset |
+| Branch | Research source commit |
 |---|---|
 | main | `ef22d025b0c02bcdbcec53df34973ece0f53a701` |
 | farras | `7254990d82ce5dec3bf1fff6baa4fe2f639e3a60` |
@@ -24,18 +24,20 @@ Commit di bawah mengidentifikasi sumber riset sebelum penyelarasan dokumentasi. 
 | rasya | `a13249724b994728b5686d01bc48e6647cd1e40e` |
 | consolidation | `264efa67e1a2e74cce22fea81ed784acf159b258` |
 
-## Membaca angka historis dengan benar
+## Reading historical numbers correctly
 
-- Public diagnostic, provider-balanced development, IDSSE-only proxy, frame statistics, dan private score adalah jenis hasil berbeda. Jangan membuat leaderboard gabungan dari kolom yang berbeda.
-- Angka Jeremy exp2/3/5 sekitar 0.408/0.410/0.488 pada registry lama adalah dead-share prediksi target, bukan public spellF1. Bukti public Jeremy yang teridentifikasi berasal dari exp1, bukan otomatis exp7.
-- Common benchmark lama memakai Farras wave2 dengan training terbatas, shipped Ryu weights yang sudah melihat IDSSE benchmark, Rasya GT-assisted orientation/X mask pada evaluasi eksternal, serta adapter Jeremy lama. Angka tabel itu tidak menetapkan urutan kualitas exact submission atau kepatuhan aturan.
-- Benchmark adil Farras berikutnya melatih ulang keluarga model dengan split bersama, tetapi bukan reproduksi exact final pipeline tiap branch. Keunggulan mean short-loss atas SetSeq belum terpisah jelas oleh intervalnya.
-- File hasil campaign tetap dipertahankan sebagai bukti, termasuk hasil negatif. Label arsip berarti tidak boleh dipakai sebagai spesifikasi final, bukan berarti semua hasil di dalamnya salah.
+- Public diagnostics, provider-balanced development, IDSSE-only proxies, frame statistics and private scores are different kinds of result. Do not build one combined leaderboard from different columns.
+- Jeremy's exp2/3/5 values of about 0.408/0.410/0.488 in the old registry are predicted target dead shares, not public spellF1. The identified public evidence for Jeremy comes from exp1, not automatically from exp7.
+- The old common benchmark used Farras wave2 with limited training, shipped Ryu weights that had already seen the IDSSE benchmark, Rasya's GT-assisted orientation/X mask on external evaluation, and Jeremy's old adapter. That table does not establish an exact quality ranking of submissions or rule compliance.
+- Farras's later fair benchmark retrained the model families on a shared split, but it is not an exact reproduction of each branch's final pipeline. The mean advantage of the short loss over SetSeq is not yet clearly separated by its interval.
+- Campaign result files are kept as evidence, including negative results. "Archive" means the material must not be used as the final specification, not that every result in it is wrong.
 
-## Alur kerja laporan
+## Report workflow
 
-Gunakan identitas, parameter, cohort metric, atribusi, dan batas klaim dari dokumen final. Bila fakta tidak tercantum atau belum diverifikasi, tandai belum diketahui; jangan melengkapinya dari nama folder atau skor maksimum. Perubahan angka atau metode harus merujuk artefak dan hash yang baru, bukan mengganti label pada hasil lama.
+Take identity, parameters, metric cohorts, attribution and claim limits from the final document. If a fact is not listed or not verified, mark it unknown; do not complete it from a folder name or the maximum score. A change to numbers or method must point to new artifacts and hashes, not relabel old results.
 
-Branch `main` dan `farras` memuat paket CSV serta exporter wave5. Branch penelitian lain merujuk metode yang sama tanpa memindahkan atau mengubah algoritme eksperimennya. Sumber implementasi yang dikunci untuk provenance tetap release Farras `7254990d82ce5dec3bf1fff6baa4fe2f639e3a60`.
+`main` contains the wave5 CSV package and exporter (also at the root as `submission.csv`). Other research branches refer to the same method without moving or changing their experimental algorithms. The implementation source locked for provenance remains Farras release `7254990d82ce5dec3bf1fff6baa4fe2f639e3a60`.
 
-Integrasi Farras ke `main` diverifikasi dengan exporter dan validator resmi: 199.319 baris, hash identik dengan kandidat frozen, tanpa `annotation_harness`. [Bukti integrasi](merge_verification.json). `report_verification.json` merekam penyelarasan dokumentasi sebelum integrasi ini, bukan hash peta branch yang telah diperbarui.
+The Farras integration into `main` was verified with the exporter and the official validator: 199,319 rows, hash identical to the frozen candidate, without `annotation_harness`. [Integration evidence](merge_verification.json). `report_verification.json` records the documentation alignment before this integration, not the hash of the updated branch map.
+
+On `main`, Farras's campaigns were later moved from `experiments/exp_farras/` into numbered folders `experiments/E02_wave1/` … `experiments/E13_provider_generalization/` ([relocation note](../experiments/REGISTRY.md#relocation-note)).

@@ -1,7 +1,7 @@
 {
   "id": "farras_wave5_short_gru25_dead45",
   "status": "primary",
-  "campaign": "experiments/exp_farras/wave5",
+  "campaign": "experiments/E06_wave5",
   "family": "short_gru25",
   "decoder": "dead45",
   "selection_sha256": "6d69b0e4c702144a0ef2877c1522c2c6478f0ca5bb6b7089f315526bfc367b95",
@@ -11,7 +11,7 @@
     "rows": 199319
   },
   "verification": {
-    "path": "experiments/exp_farras/results/wave5_verification.json",
+    "path": "experiments/E06_wave5/results/wave5_verification.json",
     "sha256": "a57072202ae4ab9fe8432342c361d1f0ea0da65396bc00eb4bcc90ce89b4f01c"
   },
   "reproduction": "frozen_csv_export_only",

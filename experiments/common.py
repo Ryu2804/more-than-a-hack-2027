@@ -63,3 +63,22 @@ def load_atd_arrays():
 
     flat = cached("atd_full", build)
     return flat[:, :-3].reshape(n, 46, 3), flat[:, -3:], team_of_each_track(paths["atd_meta"])
+
+
+def team_distances():
+    """Nearest-player distance to the ball in metres for each team, cached. (N,2) [home, away]; NaN if unknown."""
+    def build():
+        P, B, T = load_atd_arrays()
+        n = len(B)
+        out = np.full((n, 2), np.nan, np.float32)
+        L, W = 105.3, 68.0
+        for a in range(0, n, 20000):
+            b = min(n, a + 20000)
+            d = np.hypot(P[a:b, :, 0] * L - (B[a:b, 0] * L)[:, None],
+                         P[a:b, :, 1] * W - (B[a:b, 1] * W)[:, None])
+            d = np.where(np.isnan(d), np.inf, d)      # absent player = infinitely far (np.min would propagate NaN)
+            for t in (0, 1):
+                dt = np.where((T == t)[None], d, np.inf).min(1)
+                out[a:b, t] = np.where(np.isfinite(dt), dt, np.nan)
+        return out
+    return cached("team_dist", build)
