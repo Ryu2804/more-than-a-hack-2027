@@ -1,5 +1,17 @@
 # More than a Hack 2027 — Phase 1: Ball Possession
 
+## Metode final tim dan laporan teknis
+
+Tim memakai **Farras wave5 `short_gru25/dead45`**. Mulai penulisan laporan dari
+[spesifikasi final](docs/FINAL_METHOD.md), [data fakta untuk Typst](docs/final_method.json),
+dan [peta branch/arsip](docs/BRANCHES.md).
+
+Source dan CSV terpilih dikunci pada
+[release Farras `7254990`](https://github.com/Ryu2804/more-than-a-hack-2027/tree/7254990d82ce5dec3bf1fff6baa4fe2f639e3a60).
+Kode starter/baseline di branch ini tetap referensi kompetisi, bukan metode tim.
+Metode sudah dipilih; reproduksi raw bundle ke CSV identik belum lengkap.
+Dokumen kompetisi di bawah tetap berlaku, sedangkan laporan eksperimen lama bukan spesifikasi final.
+
 **Organised by [Metrica Sports](https://metrica-sports.com), [FC Barcelona](https://www.fcbarcelona.com)
 and the [Mobile World Capital Barcelona](https://www.mwcbarcelona.com)**, at the Talent Arena in Barcelona.
 
