@@ -48,6 +48,14 @@
 | Code | this repository; the final method lives in [`experiments/E06_wave5/`](experiments/E06_wave5/) |
 | Web dashboard | [`web/`](web/): English match review, synchronized local video and saved-method replay; [live application](https://possession-match-review.vercel.app) |
 
+## Demo
+
+<video src="docs/demo.webm" controls poster="docs/demo.gif" width="960">
+  <img src="docs/demo.gif" alt="Possession review demo (fallback)">
+</video>
+
+[Play/download the demo video (WebM)](docs/demo.webm) · [GIF fallback](docs/demo.gif)
+
 ---
 
 ## Abstract
@@ -66,6 +74,7 @@ Every one of the 199,319 frames of a full LaLiga match (FC Barcelona vs Athletic
 8. [Reproducibility](#8-reproducibility)
 9. [Repository layout](#9-repository-layout)
 10. [Challenge documents, licence and citation](#10-challenge-documents-licence-and-citation)
+11. [Web review application](#11-web-review-application)
 
 ---
 
@@ -307,3 +316,17 @@ The challenge code and documentation are released by the organisers under the MI
 ```
 
 Figures were produced with Matplotlib using colour-blind-safe Okabe–Ito colours, with the help of the Scientific Agent Skills library (Kassis et al., 2026, [arXiv:2609.00065](https://doi.org/10.48550/arXiv.2609.00065)).
+
+## 11. Web review application
+
+English match-review application for the saved result, implemented from the approved FigCraft design. Live application: <https://possession-match-review.vercel.app>.
+
+- Routes: `/` for possession overview, measured shares and reference/model comparison; `/replay` for local video with synchronized 2D method replay, frame stepping and aligned timelines; `/evidence` for published scores, sources and evaluation limitations.
+- Run locally from `web/` with Node.js 24 and npm: `npm ci`, then `npm run dev`, and open `http://127.0.0.1:3000`. Production server: `npm test`, `npm run build`, `npm start`.
+- Video input is selected by the user. The five-minute reference clip is the 300-second tactical clip starting at original recording time `07:27.40` (frame 11185). The original tactical recording is limited to `07:27.40` through the last frame before `12:27.40`. MP4 with H.264 video is recommended.
+- All views use source frames `[11185, 18685)`: 7,500 frames at 25 fps. The bundled model segments match the same window of `submission/artifacts/farras_wave5.csv`.
+- Public reference labels are fetched in the browser from a pinned public repository revision; a local reference file can be opened if that source is unavailable. Files must have continuous absolute `frame,label` rows for the entire match or the exact public window.
+- `/replay` can load `method-replay.private.json` for synchronized observed tracking positions and saved model outputs. Neither that file nor match media is deployed.
+- Deployment is CLI-managed from `web/`: `npx vercel deploy --prod --yes --scope eycoos-projects`.
+
+Full details, including monorepo layout, exporter usage and verification, are in [web/README.md](web/README.md).
