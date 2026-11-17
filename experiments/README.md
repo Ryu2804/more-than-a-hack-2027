@@ -1,8 +1,10 @@
 # Experiments
 
-The primary submission candidate on branch `farras` is **Farras wave5 `short_gru25/dead45`**.
-Use [submission/README.md](../submission/README.md) for the frozen CSV export and readiness status.
-Later research campaigns do not automatically replace it.
+The final team method is **Farras wave5 `short_gru25/dead45`**.
+Report authors must use the [final specification](../docs/FINAL_METHOD.md),
+[Typst facts](../docs/final_method.json), and [branch/archive map](../docs/BRANCHES.md).
+The [submission package](../submission/README.md) contains the frozen CSV export and readiness status.
+All other primary/control decisions below are campaign-local research, not a replacement of the final method.
 
 Notebook experiments use the Three Makasih layout (header + Ringkasan, Metodologi, Environment,
 numbered `[n]` sections: markdown intro, code, markdown reading of the result).

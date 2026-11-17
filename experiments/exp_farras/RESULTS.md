@@ -1,8 +1,8 @@
 # Hasil eksperimen Farras
 
-## Penetapan metode utama
+## Penetapan metode final tim
 
-Branch `farras` memakai **wave5 `short_gru25/dead45`** untuk persiapan submission dan laporan teknis. Penetapan ini memakai seleksi frozen yang sudah lolos aturan adopsi eksternal, bukan evaluasi publik atau training baru. [Identitas/hash kandidat](../../submission/method.json), [ekspor dan status kesiapan](../../submission/README.md), [hasil wave5](wave5/RESULTS.md).
+Tim memakai **wave5 `short_gru25/dead45`** sebagai metode final. Laporan teknis mengikuti [spesifikasi lintas branch](../../docs/FINAL_METHOD.md) dan [data fakta Typst](../../docs/final_method.json). Penetapan ini memakai seleksi frozen yang sudah lolos aturan adopsi eksternal, bukan evaluasi publik atau training baru. [Identitas/hash kandidat](../../submission/method.json), [ekspor dan status kesiapan](../../submission/README.md), [hasil wave5](wave5/RESULTS.md).
 
 Wave6 dan campaign berikutnya tetap sebagai riset pembanding. Keputusan primary/kontrol di tiap benchmark hanya berlaku pada protokolnya sendiri. Histori di bawah tidak ditulis ulang. Paket belum siap untuk penyerahan resmi karena reproduksi raw bundle ke CSV yang sama belum lengkap.
 

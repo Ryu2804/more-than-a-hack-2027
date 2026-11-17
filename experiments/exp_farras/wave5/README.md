@@ -4,9 +4,9 @@
 
 Hasil: `short_gru25/dead45` lolos aturan adopsi dengan spellF1 eksternal0.670099. SpellF1 publik tetap0.772414; macroF1 kandidat0.902059. Short-spell recall membaik, tetapi mean spellF1 paired ball-drop stress sedikit turun.10 regression tests dan actual CUDA fitting/checkpoint/refit lolos. Hasil negatif, seluruh96 konfigurasi, dan hash reproduksi: [RESULTS.md](RESULTS.md).
 
-## Status metode utama
+## Status metode final tim
 
-Wave5 `short_gru25/dead45` ditetapkan sebagai metode utama branch `farras`. Gunakan [submission/README.md](../../../submission/README.md) untuk ekspor CSV yang dikunci hash dan status kesiapan. Source, PLAN, selection, model, dan output frozen campaign tidak diubah oleh penetapan ini; bukan training atau public evaluation baru.
+Wave5 `short_gru25/dead45` adalah metode final tim. Penulis laporan memakai [spesifikasi lintas branch](../../../docs/FINAL_METHOD.md) dan [fakta untuk Typst](../../../docs/final_method.json); [submission/README.md](../../../submission/README.md) menjelaskan ekspor dan kesiapan. Source, PLAN, selection, model, dan output frozen campaign tidak diubah; ini bukan training atau public evaluation baru.
 
 Ekspor cukup dengan `python -B submission/export.py` dari root repo; CSV prediksi terpilih disertakan di `submission/artifacts/farras_wave5.csv` untuk harness. Prosedur di bawah untuk reproduksi campaign dengan cache/model lama, bukan langkah wajib setiap ekspor dan belum merupakan jalur raw bundle end-to-end.
 

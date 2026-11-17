@@ -1,6 +1,6 @@
-# Metode utama: Farras wave5
+# Metode final tim: Farras wave5
 
-Branch `farras` menetapkan `short_gru25/dead45` sebagai metode utama untuk persiapan submission dan laporan teknis. Identitas kandidat, hash CSV, dan bukti seleksi dikunci di [method.json](method.json). Campaign baru tidak otomatis mengganti pilihan ini.
+Tim menetapkan `short_gru25/dead45` sebagai metode final. Penulis laporan memakai [spesifikasi lintas branch](../docs/FINAL_METHOD.md) dan [fakta untuk Typst](../docs/final_method.json). Identitas runtime kandidat, hash CSV, dan bukti seleksi tetap dikunci di [method.json](method.json). Campaign baru tidak otomatis mengganti pilihan ini.
 
 ## Ekspor CSV terpilih
 
@@ -70,7 +70,7 @@ Paired ball-drop stress sedikit memburuk dan undercount belum selesai. External 
 - Campaign `fair_idsse`, `cross_branch`, `temporal_methods`, `spell_training`, `event_learning`, dan `provider_generalization`: benchmark/riset lanjutan. Kontrol atau primary dalam laporan campaign hanya berlaku pada protokol riset masing-masing, bukan pengganti metode submission.
 - `experiments/exp_farras/results/`: bukti agregat dan hash. Raw data, cache, model, serta label/frame-level arrays tetap diabaikan Git. Satu pengecualian publikasi adalah CSV prediksi terpilih di `submission/artifacts/`.
 
-Branch tetap `farras`; publikasi hanya ke branch tersebut, bukan `main` atau branch anggota lain. Perintah ekspor tidak menjalankan commit/push otomatis.
+Source runtime dan CSV tetap di branch `farras`. Dokumentasi keputusan dan fakta laporan diselaraskan ke `main`, `farras`, `ryu`, `jeremy`, `rasya`, dan `consolidation`; kode riset anggota tidak diganti. Perintah ekspor tidak menjalankan commit/push otomatis.
 
 ## Verifikasi penetapan
 

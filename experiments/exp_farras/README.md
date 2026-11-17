@@ -2,9 +2,9 @@
 
 Eksperimen penguasaan bola di `experiments/`, mengikuti lokasi eksperimen tim. Campaign dan benchmark dipisahkan agar konfigurasi, pilihan kandidat, dan hasil negatif tetap dapat dilacak.
 
-## Metode utama branch
+## Metode final tim
 
-**Farras wave5 `short_gru25/dead45` adalah metode utama untuk persiapan submission dan laporan teknis.** Identitas/hash kandidat: [submission/method.json](../../submission/method.json). Jalur ekspor dan status kesiapan: [submission/README.md](../../submission/README.md).
+**Farras wave5 `short_gru25/dead45` adalah metode final tim untuk kandidat submission dan isi metode laporan teknis.** Penulis laporan mulai dari [spesifikasi lintas branch](../../docs/FINAL_METHOD.md) dan [fakta untuk Typst](../../docs/final_method.json). Identitas/hash runtime: [submission/method.json](../../submission/method.json). Jalur ekspor dan status kesiapan: [submission/README.md](../../submission/README.md).
 
 ```powershell
 python -B submission/export.py

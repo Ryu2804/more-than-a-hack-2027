@@ -1,5 +1,7 @@
 # Wave5: short-possession weighting lolos validasi, publik tetap
 
+> Status laporan: hasil campaign frozen yang mendasari metode final tim. Spesifikasi laporan teknis lintas branch ada di [FINAL_METHOD.md](../../../docs/FINAL_METHOD.md) dan [final_method.json](../../../docs/final_method.json). Catatan publikasi di bagian akhir merekam kondisi saat campaign selesai; satu CSV terpilih kemudian diterbitkan di `submission/artifacts/farras_wave5.csv`, tanpa mengubah hasil atau hash kandidat.
+
 **Kandidat frozen: `short_gru25/dead45`.** Lolos aturan adopsi yang ditulis sebelum training. Mean spellF1 eksternal naik pada protokol yang sama; spellF1 publik tidak naik. Hasil negatif pada paired ball-drop stress dipertahankan, bukan disembunyikan oleh kenaikan short-spell recall.
 
 ## Keputusan sebelum hasil publik

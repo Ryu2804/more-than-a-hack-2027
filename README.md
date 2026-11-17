@@ -10,21 +10,23 @@ question to answer with it.
 
 ---
 
-## Metode utama branch `farras`
+## Metode final tim dan laporan teknis
 
-Metode utama untuk persiapan submission: **Farras wave5 `short_gru25/dead45`**.
-Pilihan kandidat, ekspor CSV, bukti seleksi, dan batas kesiapan ada di
-[submission/README.md](submission/README.md).
+Tim memakai **Farras wave5 `short_gru25/dead45`**. Sumber penulisan laporan:
+[spesifikasi final](docs/FINAL_METHOD.md), [data fakta untuk Typst](docs/final_method.json),
+dan [peta branch/arsip](docs/BRANCHES.md). Dokumen yang sama tersedia di seluruh branch.
+Eksperimen lain tetap riset pembanding, bukan pengganti metode final.
+
+Branch `farras` memuat source dan CSV terpilih. Ekspor CSV:
 
 ```bash
 python -B submission/export.py
 ```
 
-CSV wave5 frozen disertakan di `submission/artifacts/farras_wave5.csv` agar harness
-dapat langsung memeriksanya. Ekspor menghasilkan `submission/out/farras.csv`
-setelah pemeriksaan hash dan validasi resmi, tanpa cache/model lokal.
-Ini bukan inference dari raw bundle; paket belum siap untuk penyerahan resmi.
-Eksperimen lanjutan tetap terpisah sebagai riset, bukan pengganti otomatis metode utama.
+CSV sumber ada di `submission/artifacts/farras_wave5.csv`; output ekspor
+`submission/out/farras.csv` diperiksa hash dan validator resmi tanpa cache/model lokal.
+Ini bukan inference raw bundle; paket belum memenuhi seluruh syarat reproduksi.
+Detail artefak dan status: [submission/README.md](submission/README.md).
 
 ## The task
 
